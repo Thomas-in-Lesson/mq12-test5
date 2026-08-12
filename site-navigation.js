@@ -27,35 +27,6 @@
   const go = (page) => { window.location.href = href(page); };
   const isHome = !isSubfolder || path.includes('beranda_mobile_dark');
 
-  // PWA Head Meta Tags Injection
-  document.documentElement.lang = 'id';
-  const head = document.head;
-  const addMetaIfMissing = (name, content, attr = 'name') => {
-    if (!head.querySelector(`meta[${attr}="${name}"]`)) {
-      const meta = document.createElement('meta');
-      meta.setAttribute(attr, name);
-      meta.content = content;
-      head.appendChild(meta);
-    }
-  };
-  const addLinkIfMissing = (rel, hrefUrl, extraAttrs = {}) => {
-    if (!head.querySelector(`link[rel="${rel}"]`)) {
-      const link = document.createElement('link');
-      link.rel = rel;
-      link.href = hrefUrl;
-      Object.assign(link, extraAttrs);
-      head.appendChild(link);
-    }
-  };
-
-  addMetaIfMissing('theme-color', '#1c0704');
-  addMetaIfMissing('description', 'Aplikasi PWA Safari Chubbul Wathon Minal Iman Maqooshidul Qur-aan 12 - Informasi Kamar, Bus, & Tata Tertib Musafir');
-  addMetaIfMissing('apple-mobile-web-app-capable', 'yes');
-  addMetaIfMissing('apple-mobile-web-app-status-bar-style', 'black-translucent');
-  addMetaIfMissing('og:title', 'Safari HWMI MQ 12', 'property');
-  addMetaIfMissing('og:description', 'Panduan Lengkap, Daftar Kamar, & Bus Safari Chubbul Wathon Minal Iman 12', 'property');
-  addLinkIfMissing('manifest', new URL('manifest.json', root).href);
-
   // Back button binding
   document.querySelectorAll('button[aria-label="Go back"]').forEach((button) => 
     button.addEventListener('click', () => history.length > 1 ? history.back() : go('rules'))
@@ -181,7 +152,7 @@
     .site-sos-bullet:active { transform: scale(0.9); }
     .site-sos-bullet .material-symbols-outlined { color: #ffdad6; }
 
-    /* SOS Modal Overlay & Content */
+    /* SOS Modal Overlay & Content (P1-3 Accessibility Enabled) */
     .site-sos-modal-overlay {
       position: fixed;
       inset: 0;
@@ -362,7 +333,7 @@
       filter: drop-shadow(0 0 4px currentColor);
     }
 
-    /* Toast Notification for Lamp Status Click */
+    /* Toast Notification */
     .site-toast {
       position: fixed;
       top: 64px;
@@ -387,7 +358,7 @@
       visibility: visible;
     }
 
-    /* Autocomplete dropdown for Kartu Peserta input */
+    /* Strict P0-1 Autocomplete dropdown (NAME ONLY - No Room Leakage) */
     .personal-autocomplete-box {
       position: absolute;
       left: 0; right: 0; top: 100%;
@@ -396,7 +367,7 @@
       background: #2b0b07;
       border: 1px solid #573a34;
       border-radius: 12px;
-      max-height: 180px;
+      max-height: 200px;
       overflow-y: auto;
       box-shadow: 0 8px 24px rgba(0,0,0,0.6);
       display: none;
@@ -408,6 +379,7 @@
       cursor: pointer;
       color: #ffdad4;
       font-size: 13px;
+      font-weight: 600;
     }
     .personal-autocomplete-item:last-child { border-bottom: 0; }
     .personal-autocomplete-item:hover { background: #3d120c; color: #e9c176; }
@@ -559,6 +531,7 @@
   trigger.className = 'site-menu-trigger';
   trigger.type = 'button';
   trigger.setAttribute('aria-label', 'Buka menu');
+  trigger.setAttribute('aria-expanded', 'false');
   trigger.innerHTML = '<span class="site-menu-bars"><i></i><i></i><i></i></span>';
 
   const backdrop = document.createElement('div');
@@ -646,13 +619,19 @@
   mobileBar.append(trigger, badge);
   document.body.prepend(mobileBar);
 
-  const closeMenu = () => document.body.classList.remove('site-menu-open');
-  const openMenu = () => document.body.classList.add('site-menu-open');
+  const closeMenu = () => {
+    document.body.classList.remove('site-menu-open');
+    trigger.setAttribute('aria-expanded', 'false');
+  };
+  const openMenu = () => {
+    document.body.classList.add('site-menu-open');
+    trigger.setAttribute('aria-expanded', 'true');
+  };
   trigger.addEventListener('click', () => document.body.classList.contains('site-menu-open') ? closeMenu() : openMenu());
   backdrop.addEventListener('click', closeMenu);
   panel.querySelector('.site-menu-close').addEventListener('click', closeMenu);
 
-  // Global Emergency SOS Modal Definition with REAL Contact PIC Data (Sesi 2 & Sesi 3)
+  // Global Emergency SOS Modal Definition (P1-3 Accessibility + Real Contacts)
   const picDataSesi2 = [
     { cat: 'Kesehatan (Medis)', name: 'Anastasya Yosa K.', role: 'Tim Medis Bus 1', phone: '085717925886' },
     { cat: 'Kesehatan (Medis)', name: 'Siti Aisyah', role: 'Tim Medis Bus 2', phone: '085745696646' },
@@ -683,13 +662,16 @@
 
   const sosModal = document.createElement('div');
   sosModal.className = 'site-sos-modal-overlay';
+  sosModal.setAttribute('role', 'dialog');
+  sosModal.setAttribute('aria-modal', 'true');
+  sosModal.setAttribute('aria-labelledby', 'sos-modal-title');
   sosModal.innerHTML = `
     <div class="site-sos-card">
-      <button class="site-sos-close" type="button">×</button>
+      <button class="site-sos-close" type="button" aria-label="Tutup modal bantuan">×</button>
       <div class="site-sos-header">
         <span class="material-symbols-outlined" style="color:#ffb4ab;font-size:28px;" aria-hidden="true">emergency</span>
         <div>
-          <h3>Pusat Bantuan & Kontak PIC</h3>
+          <h3 id="sos-modal-title">Pusat Bantuan & Kontak PIC</h3>
           <p>Hubungi panitia safari jika butuh bantuan mendesak</p>
         </div>
       </div>
@@ -753,10 +735,22 @@
     });
   }
 
-  const openSos = () => sosModal.classList.add('is-open');
-  const closeSos = () => sosModal.classList.remove('is-open');
+  const openSos = () => {
+    sosModal.classList.add('is-open');
+    sosModal.querySelector('.site-sos-close').focus();
+  };
+  const closeSos = () => {
+    sosModal.classList.remove('is-open');
+  };
+  
   sosModal.querySelector('.site-sos-close').addEventListener('click', closeSos);
   sosModal.addEventListener('click', (e) => { if (e.target === sosModal) closeSos(); });
+  
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && sosModal.classList.contains('is-open')) {
+      closeSos();
+    }
+  });
 
   const drawerSosBtn = panel.querySelector('#drawer-sos-btn');
   if (drawerSosBtn) {
@@ -798,7 +792,7 @@
   `;
   document.body.append(navBar);
 
-  // Real Participant Lookup Engine for Kartu Peserta Saya Widget
+  // Real Multi-Stay Participant Lookup Engine (P0-2, P0-3, P0-1 Privacy Compliant)
   let pesertaData = null;
   async function loadPesertaData() {
     if (pesertaData) return pesertaData;
@@ -811,6 +805,14 @@
     return pesertaData;
   }
 
+  function normalizeInputName(name) {
+    let n = name.toLowerCase();
+    n = n.replace(/\b(bpk|pak|ibu|bu|mba|mbak|drs|h|hj)\b\.?/g, '');
+    n = n.replace(/^(m|muh|moh|muhammad)\.?\s+/, '');
+    n = n.replace(/[^a-z0-9\s]/g, '');
+    return n.split(/\s+/).filter(Boolean).join(' ');
+  }
+
   function initPersonalCardWidget() {
     const inputView = document.getElementById('personal-input-view');
     const profileView = document.getElementById('personal-profile-view');
@@ -818,12 +820,10 @@
     const btnSave = document.getElementById('btn-save-personal');
     const btnEdit = document.getElementById('btn-edit-personal');
     const displayName = document.getElementById('user-display-name');
-    const roomInfo = document.getElementById('user-room-info');
-    const busInfo = document.getElementById('user-bus-info');
 
     if (!inputView || !profileView || !nameInput || !btnSave) return;
 
-    // Autocomplete Box Setup
+    // Autocomplete Box Setup (P0-1 Strict Privacy: Name Only, 4 chars threshold)
     let autoBox = document.querySelector('.personal-autocomplete-box');
     if (!autoBox) {
       autoBox = document.createElement('div');
@@ -832,64 +832,143 @@
       nameInput.parentNode.appendChild(autoBox);
     }
 
-    const renderProfile = async (queryName) => {
-      if (!queryName || !queryName.trim()) return;
-      const data = await loadPesertaData();
-      const q = queryName.trim().toLowerCase();
-      
-      let match = data[q];
-      if (!match) {
-        const foundKey = Object.keys(data).find(k => k.includes(q) || q.includes(k));
-        if (foundKey) match = data[foundKey];
-      }
+    const renderCanonicalProfile = (entry) => {
+      displayName.textContent = entry.name;
 
-      displayName.textContent = match ? match.name : queryName.trim();
+      const profileContentBox = profileView.querySelector('.grid-cols-2') || profileView;
       
-      if (match) {
-        roomInfo.innerHTML = `<a href="${href('rooms')}#${match.hotelKey}" class="hover:underline text-secondary flex items-center gap-1"><span class="material-symbols-outlined text-[14px]" aria-hidden="true">hotel</span> ${match.hotelName} - <strong>${match.roomNo}</strong> (${match.type})</a>`;
-        busInfo.innerHTML = `<a href="${href('seats')}" class="hover:underline text-secondary flex items-center gap-1"><span class="material-symbols-outlined text-[14px]" aria-hidden="true">directions_bus</span> <strong>${match.bus}</strong></a>`;
+      // Render Multi-stay hotel list & transport info
+      const transportUnit = entry.transport ? entry.transport.unit : 'Bus 1';
+      
+      let staysHtml = '';
+      if (entry.menginap && entry.menginap.length > 0) {
+        staysHtml = entry.menginap.map(m => `
+          <div class="p-2.5 rounded-xl bg-surface-container border border-outline-variant/20 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-secondary uppercase font-bold tracking-wider">${m.kota} (${m.hotel})</span>
+              <strong class="text-xs text-on-surface block font-bold mt-0.5">Kamar ${m.kamar} (${m.tipe})</strong>
+            </div>
+            <a href="${href('rooms')}#${m.kota}" class="px-2.5 py-1 rounded-lg bg-secondary/15 text-secondary border border-secondary/30 text-[11px] font-bold hover:bg-secondary hover:text-surface-container-lowest transition-colors">Lihat Kamar</a>
+          </div>
+        `).join('');
       } else {
-        roomInfo.innerHTML = `<span class="text-on-surface-variant font-normal">Belum terdaftar di sistem</span>`;
-        busInfo.innerHTML = `<span class="text-on-surface-variant font-normal">Belum terdaftar di sistem</span>`;
+        staysHtml = `<div class="p-2 text-xs text-on-surface-variant">Detail penginapan belum terdaftar</div>`;
       }
 
-      localStorage.setItem('user_safari_name', queryName.trim());
+      profileView.innerHTML = `
+        <div class="flex items-center justify-between border-b border-surface-variant/30 pb-3">
+          <div>
+            <span class="text-[10px] text-on-surface-variant uppercase font-semibold">Nama Peserta</span>
+            <h4 id="user-display-name" class="font-title-lg font-bold text-primary">${entry.name}</h4>
+          </div>
+          <button id="btn-edit-personal" type="button" class="text-xs text-secondary hover:underline flex items-center gap-1 min-h-[44px] px-3 py-1.5 rounded-lg border border-secondary/20 bg-secondary/10"><span class="material-symbols-outlined text-[14px]" aria-hidden="true">edit</span> Ganti Nama</button>
+        </div>
+
+        <div class="space-y-2 pt-2">
+          <div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container border border-outline-variant/20">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">directions_bus</span>
+              <div>
+                <span class="text-[10px] text-on-surface-variant uppercase font-semibold">Armada Transportasi</span>
+                <strong class="text-xs text-on-surface block font-bold">${transportUnit}</strong>
+              </div>
+            </div>
+            <a href="${href('seats')}" class="px-2.5 py-1 rounded-lg bg-secondary/15 text-secondary border border-secondary/30 text-[11px] font-bold hover:bg-secondary hover:text-surface-container-lowest transition-colors">Lihat Bus</a>
+          </div>
+
+          <div class="space-y-1.5 pt-1">
+            <span class="text-[10px] text-on-surface-variant uppercase font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-secondary" aria-hidden="true">hotel</span> Daftar Penginapan (Multi-Kota)</span>
+            <div class="space-y-2">
+              ${staysHtml}
+            </div>
+          </div>
+        </div>
+      `;
+
+      profileView.querySelector('#btn-edit-personal').addEventListener('click', () => {
+        profileView.classList.add('hidden');
+        inputView.classList.remove('hidden');
+        nameInput.focus();
+      });
+
+      localStorage.setItem('user_safari_name', entry.name);
       inputView.classList.add('hidden');
       profileView.classList.remove('hidden');
       if (autoBox) autoBox.classList.remove('is-open');
     };
 
-    // Autocomplete typing listener
+    const searchParticipant = async (queryName) => {
+      if (!queryName || !queryName.trim()) return;
+      const data = await loadPesertaData();
+      const normQ = normalizeInputName(queryName);
+
+      if (!normQ || normQ.length < 3) return;
+
+      // Match canonical key or aliases
+      let matches = [];
+      Object.keys(data).forEach(key => {
+        const item = data[key];
+        const normKey = normalizeInputName(item.name);
+        const matchAlias = item.aliases && item.aliases.some(a => normalizeInputName(a) === normQ);
+        if (normKey === normQ || key === normQ || matchAlias) {
+          matches.unshift(item);
+        } else if (normKey.includes(normQ) || normQ.includes(normKey)) {
+          matches.push(item);
+        }
+      });
+
+      if (matches.length === 1) {
+        renderCanonicalProfile(matches[0]);
+      } else if (matches.length > 1) {
+        // Render Candidate Selection List if Multiple Matches (P0-3)
+        autoBox.innerHTML = matches.map(m => 
+          `<div class="personal-autocomplete-item" data-key="${normalizeInputName(m.name)}">${m.name} <small style="color:#e9c176;">(Pilih Profil)</small></div>`
+        ).join('');
+        autoBox.classList.add('is-open');
+      } else {
+        showToast('⚠️ Nama belum terdaftar di sistem. Silakan hubungi PIC Bantuan.');
+      }
+    };
+
+    // Autocomplete typing listener (P0-1 Strict Privacy: Minimum 4 chars threshold, NAME ONLY)
     nameInput.addEventListener('input', async () => {
-      const val = nameInput.value.trim().toLowerCase();
-      if (val.length < 2) {
+      const val = nameInput.value.trim();
+      if (val.length < 4) {
         autoBox.classList.remove('is-open');
         return;
       }
       const data = await loadPesertaData();
-      const matches = Object.keys(data).filter(k => k.includes(val)).slice(0, 5);
+      const normV = normalizeInputName(val);
+      const matches = Object.keys(data).filter(k => {
+        const item = data[k];
+        const normKey = normalizeInputName(item.name);
+        return normKey.includes(normV) || (item.aliases && item.aliases.some(a => normalizeInputName(a).includes(normV)));
+      }).slice(0, 5);
+
       if (matches.length > 0) {
-        autoBox.innerHTML = matches.map(k => `<div class="personal-autocomplete-item" data-name="${data[k].name}">${data[k].name} <small style="color:#e9c176">(${data[k].hotelName} - ${data[k].roomNo})</small></div>`).join('');
+        autoBox.innerHTML = matches.map(k => `<div class="personal-autocomplete-item" data-name="${data[k].name}">${data[k].name}</div>`).join('');
         autoBox.classList.add('is-open');
       } else {
         autoBox.classList.remove('is-open');
       }
     });
 
-    autoBox.addEventListener('click', (e) => {
+    autoBox.addEventListener('click', async (e) => {
       const item = e.target.closest('.personal-autocomplete-item');
       if (item) {
         const selectedName = item.getAttribute('data-name');
-        nameInput.value = selectedName;
-        renderProfile(selectedName);
+        if (selectedName) {
+          nameInput.value = selectedName;
+          await searchParticipant(selectedName);
+        }
       }
     });
 
-    btnSave.addEventListener('click', () => renderProfile(nameInput.value));
+    btnSave.addEventListener('click', () => searchParticipant(nameInput.value));
     nameInput.addEventListener('keydown', (e) => {
       if (e.key === 'Enter') {
         e.preventDefault();
-        renderProfile(nameInput.value);
+        searchParticipant(nameInput.value);
       }
     });
 
@@ -904,7 +983,7 @@
     // Auto-load saved user name
     const savedName = localStorage.getItem('user_safari_name');
     if (savedName) {
-      renderProfile(savedName);
+      searchParticipant(savedName);
     }
   }
 

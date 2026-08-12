@@ -1,0 +1,58 @@
+{
+  "crew bus": {
+    "name": "Crew Bus",
+    "hotelKey": "Solo",
+    "hotelName": "Hotel Sahid Solo",
+    "roomNo": "Kamar 6",
+    "type": "Deluxe",
+    "bus": "Bus 3"
+  },
+  "patwal": {
+    "name": "Patwal",
+    "hotelKey": "Semarang",
+    "hotelName": "Hotel Oak Tree Semarang",
+    "roomNo": "Kamar 621",
+    "type": "DELUXE CORRIDOR",
+    "bus": "Bus 3"
+  },
+  "driver": {
+    "name": "Driver",
+    "hotelKey": "Solo",
+    "hotelName": "Hotel Sahid Solo",
+    "roomNo": "Kamar 14",
+    "type": "Deluxe",
+    "bus": "Bus 3"
+  },
+  "perawat": {
+    "name": "Perawat",
+    "hotelKey": "Solo",
+    "hotelName": "Hotel Sahid Solo",
+    "roomNo": "Kamar 14",
+    "type": "Deluxe",
+    "bus": "Bus 2"
+  },
+  "zona 3": {
+    "name": "Zona 3",
+    "hotelKey": "Jakarta",
+    "hotelName": "Swiss-Belhotel Epicentrum Jakarta",
+    "roomNo": "Kamar 52",
+    "type": "Deluxe",
+    "bus": "Bus 3"
+  },
+  "zona 1": {
+    "name": "Zona 1",
+    "hotelKey": "Gresik",
+    "hotelName": "Hotel Gresik",
+    "roomNo": "Kamar 920",
+    "type": "Twin Bed",
+    "bus": "Bus 1"
+  },
+  "nama": {
+    "name": "NAMA",
+    "hotelKey": "Pemalang",
+    "hotelName": "Hotel R-Gina Pemalang",
+    "roomNo": "Kamar 62",
+    "type": "Deluxe",
+    "bus": "Bus 1"
+  }
+}
