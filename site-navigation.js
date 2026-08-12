@@ -52,6 +52,7 @@
 
   const items = [
     ['Beranda', 'Beranda utama', 'home', 'home'],
+    ['Bantuan PIC (SOS)', 'Kontak darurat & panitia', 'emergency', 'sos'],
     ['Itibar Musafir', 'Pedoman perjalanan', 'explore', 'itibar'],
     ['Starterpack & Packing', 'Perlengkapan wajib & tas', 'luggage', 'starterpack'],
     ['Tata Tertib Peserta', 'Aturan kegiatan', 'gavel', 'rules'],
@@ -67,15 +68,16 @@
   // Self-Contained Scoped CSS Stylesheet Injection
   const globalStyle = document.createElement('style');
   globalStyle.textContent = `
-    /* Body Bottom Safe Padding for Bottom Navigation & Floating SOS */
+    /* Global Body Padding for Top Header & Bottom Nav */
     body {
-      padding-bottom: 84px !important;
+      padding-top: 56px !important;
+      padding-bottom: 76px !important;
     }
 
-    /* Menu Drawer Styles */
+    /* Menu Drawer Trigger Button */
     .site-menu-trigger {
-      position: fixed;
-      top: 10px;
+      position: absolute;
+      top: 8px;
       left: 12px;
       z-index: 10020;
       width: 40px;
@@ -93,11 +95,12 @@
     .site-menu-bars { display: grid; gap: 4px; }
     .site-menu-bars i { display: block; width: 18px; height: 2px; border-radius: 2px; background: currentColor; }
     
+    /* Backdrop & Panel */
     .site-menu-backdrop {
       position: fixed;
       inset: 0;
       z-index: 10029;
-      background: rgba(15,3,2,0.72);
+      background: rgba(15,3,2,0.75);
       backdrop-filter: blur(4px);
       -webkit-backdrop-filter: blur(4px);
       opacity: 0;
@@ -125,8 +128,8 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 20px;
-      padding-bottom: 16px;
+      margin-bottom: 18px;
+      padding-bottom: 14px;
       border-bottom: 1px solid #4a211a;
     }
     .site-menu-kicker { margin: 0; color: #e9c176; font: 600 10px sans-serif; letter-spacing: 0.12em; text-transform: uppercase; }
@@ -150,6 +153,7 @@
       border-radius: 8px;
       color: #ffdad4;
       text-decoration: none;
+      cursor: pointer;
     }
     .site-menu-item:hover, .site-menu-item.is-active { border-color: #573a34; background: #381510; }
     .site-menu-item.is-active { background: #543c05; border-color: #e9c176; color: #ffdea5; }
@@ -166,15 +170,14 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 16px 0 60px;
-      background: rgba(28,7,4,0.94);
+      padding: 0 12px 0 60px;
+      background: rgba(28,7,4,0.96);
       border-bottom: 1px solid #4a211a;
       box-shadow: 0 4px 16px rgba(0,0,0,0.3);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
     }
-    body.site-has-mobile-bar { padding-top: 56px; }
-    .site-mobile-brand { margin: 0; color: #ffdad4; font: 600 15px serif; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .site-mobile-brand { margin: 0; color: #ffdad4; font: 600 14px serif; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 160px; }
     .site-mobile-brand small { display: block; margin-top: 1px; color: #e9c176; font: 600 9px sans-serif; letter-spacing: 0.1em; text-transform: uppercase; }
 
     /* Offline Status Badge */
@@ -191,6 +194,7 @@
       cursor: pointer;
       user-select: none;
       white-space: nowrap;
+      shrink: 0;
     }
     .site-offline-badge.offline {
       border-color: rgba(251,191,36,0.5);
@@ -200,7 +204,7 @@
     .site-offline-dot { width: 6px; height: 6px; border-radius: 50%; background: #4ade80; }
     .site-offline-badge.offline .site-offline-dot { background: #fbbf24; }
 
-    /* Bottom Floating Navigation Bar */
+    /* Bottom Floating Navigation Bar (Integrated 5-Tab Layout) */
     .site-bottom-nav {
       position: fixed;
       bottom: 0; left: 0; right: 0;
@@ -209,9 +213,9 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
-      background: rgba(24,6,4,0.96);
+      background: rgba(22,5,3,0.97);
       border-top: 1px solid #4a211a;
-      box-shadow: 0 -4px 20px rgba(0,0,0,0.4);
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.5);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
     }
@@ -224,7 +228,9 @@
       text-decoration: none;
       font: 500 10px sans-serif;
       gap: 2px;
-      padding: 6px 12px;
+      padding: 4px 6px;
+      border: 0; background: transparent;
+      cursor: pointer;
     }
     .site-bottom-nav-item.is-active, .site-bottom-nav-item:hover {
       color: #e9c176;
@@ -232,27 +238,16 @@
     }
     .site-bottom-nav-item .material-symbols-outlined { font-size: 22px; }
 
-    /* Floating SOS Button */
-    .site-sos-btn {
-      position: fixed;
-      bottom: 72px;
-      left: 14px;
-      z-index: 9980;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: #8c1d18;
-      border: 1px solid #ffb4ab;
-      color: #ffdad6;
-      font: 700 11px sans-serif;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.45);
-      cursor: pointer;
-      transition: transform 0.15s ease;
+    /* Special Red Emergency SOS Tab styling in Bottom Nav */
+    .site-bottom-nav-item.is-sos {
+      color: #ffb4ab;
     }
-    .site-sos-btn:active { transform: scale(0.95); }
-    .site-sos-btn .material-symbols-outlined { font-size: 16px; color: #ffb4ab; }
+    .site-bottom-nav-item.is-sos .material-symbols-outlined {
+      color: #ffb4ab;
+    }
+    .site-bottom-nav-item.is-sos:hover {
+      color: #ffdad6;
+    }
 
     /* SOS Modal Overlay & Content */
     .site-sos-modal-overlay {
@@ -263,7 +258,7 @@
       align-items: center;
       justify-content: center;
       padding: 16px;
-      background: rgba(10,2,1,0.78);
+      background: rgba(10,2,1,0.82);
       backdrop-filter: blur(6px);
       -webkit-backdrop-filter: blur(6px);
       opacity: 0;
@@ -345,16 +340,25 @@
   const panel = document.createElement('aside');
   panel.className = 'site-menu-panel';
   const isActive = (page) => page && pages[page] && path.includes(pages[page].split('/')[0]);
-  const list = items.map(([label, detail, icon, page]) => page
-    ? `<a class="site-menu-item${isActive(page) ? ' is-active' : ''}" href="${href(page)}">
-        <span class="material-symbols-outlined">${icon}</span>
-        <span><strong>${label}</strong><small>${detail}</small></span>
-       </a>`
-    : `<span class="site-menu-item is-disabled">
-        <span class="material-symbols-outlined">${icon}</span>
-        <span><strong>${label}</strong><small>${detail}</small></span>
-       </span>`
-  ).join('');
+  
+  const list = items.map(([label, detail, icon, page]) => {
+    if (page === 'sos') {
+      return `<button id="drawer-sos-btn" class="site-menu-item" type="button">
+        <span class="material-symbols-outlined" style="color:#ffb4ab;">emergency</span>
+        <span><strong style="color:#ffb4ab;">${label}</strong><small>${detail}</small></span>
+       </button>`;
+    }
+    return page
+      ? `<a class="site-menu-item${isActive(page) ? ' is-active' : ''}" href="${href(page)}">
+          <span class="material-symbols-outlined">${icon}</span>
+          <span><strong>${label}</strong><small>${detail}</small></span>
+         </a>`
+      : `<span class="site-menu-item is-disabled">
+          <span class="material-symbols-outlined">${icon}</span>
+          <span><strong>${label}</strong><small>${detail}</small></span>
+         </span>`;
+  }).join('');
+
   panel.innerHTML = `
     <header class="site-menu-header">
       <div>
@@ -367,7 +371,7 @@
   `;
   document.body.append(backdrop, panel);
 
-  // Render Top Header Bar & Offline Badge
+  // Offline Badge setup
   const badge = document.createElement('div');
   badge.className = 'site-offline-badge';
   function updateOfflineStatus() {
@@ -383,18 +387,15 @@
   window.addEventListener('offline', updateOfflineStatus);
   updateOfflineStatus();
 
-  if (isHome) {
-    document.body.append(trigger);
-    badge.style.cssText = 'position:fixed;top:14px;right:14px;z-index:10015;';
-    document.body.append(badge);
-  } else {
-    const mobileBar = document.createElement('header');
-    mobileBar.className = 'site-mobile-bar';
-    mobileBar.innerHTML = '<p class="site-mobile-brand">Safari HWMI MQ 12<small>Navigasi Utama</small></p>';
-    mobileBar.append(trigger, badge);
-    document.body.prepend(mobileBar);
-    document.body.classList.add('site-has-mobile-bar');
-  }
+  // Render Top Header Bar Consistently Across ALL Pages
+  // First remove any existing <header> in body if it collides
+  document.querySelectorAll('header.fixed.top-0').forEach(el => el.remove());
+
+  const mobileBar = document.createElement('header');
+  mobileBar.className = 'site-mobile-bar';
+  mobileBar.innerHTML = '<p class="site-mobile-brand">Safari HWMI MQ 12<small>Navigasi Utama</small></p>';
+  mobileBar.append(trigger, badge);
+  document.body.prepend(mobileBar);
 
   const closeMenu = () => document.body.classList.remove('site-menu-open');
   const openMenu = () => document.body.classList.add('site-menu-open');
@@ -402,35 +403,7 @@
   backdrop.addEventListener('click', closeMenu);
   panel.querySelector('.site-menu-close').addEventListener('click', closeMenu);
 
-  // Global Bottom Floating Navigation Bar
-  const navBar = document.createElement('nav');
-  navBar.className = 'site-bottom-nav';
-  navBar.innerHTML = `
-    <a href="${href('home')}" class="site-bottom-nav-item${isHome ? ' is-active' : ''}">
-      <span class="material-symbols-outlined">home</span>
-      <span>Beranda</span>
-    </a>
-    <a href="${href('rules')}" class="site-bottom-nav-item${isActive('rules') ? ' is-active' : ''}">
-      <span class="material-symbols-outlined">gavel</span>
-      <span>Tata Tertib</span>
-    </a>
-    <a href="${href('prayer')}" class="site-bottom-nav-item${isActive('prayer') ? ' is-active' : ''}">
-      <span class="material-symbols-outlined">prayer_times</span>
-      <span>Sholat</span>
-    </a>
-    <a href="${href('seats')}" class="site-bottom-nav-item${isActive('seats') ? ' is-active' : ''}">
-      <span class="material-symbols-outlined">directions_bus</span>
-      <span>Bus</span>
-    </a>
-  `;
-  document.body.append(navBar);
-
-  // Global Floating Emergency SOS Button & Modal
-  const sosBtn = document.createElement('button');
-  sosBtn.className = 'site-sos-btn';
-  sosBtn.type = 'button';
-  sosBtn.innerHTML = '<span class="material-symbols-outlined">sos</span><span>Bantuan PIC</span>';
-
+  // Global Emergency SOS Modal Definition
   const sosModal = document.createElement('div');
   sosModal.className = 'site-sos-modal-overlay';
   sosModal.innerHTML = `
@@ -502,13 +475,52 @@
       </div>
     </div>
   `;
+  document.body.append(sosModal);
 
-  document.body.append(sosBtn, sosModal);
   const openSos = () => sosModal.classList.add('is-open');
   const closeSos = () => sosModal.classList.remove('is-open');
-  sosBtn.addEventListener('click', openSos);
   sosModal.querySelector('.site-sos-close').addEventListener('click', closeSos);
   sosModal.addEventListener('click', (e) => { if (e.target === sosModal) closeSos(); });
+
+  const drawerSosBtn = panel.querySelector('#drawer-sos-btn');
+  if (drawerSosBtn) {
+    drawerSosBtn.addEventListener('click', () => {
+      closeMenu();
+      openSos();
+    });
+  }
+
+  // Global Bottom Navigation Bar (5 Integrated Clean Tabs - Zero Floating Overlap)
+  const navBar = document.createElement('nav');
+  navBar.className = 'site-bottom-nav';
+  navBar.innerHTML = `
+    <a href="${href('home')}" class="site-bottom-nav-item${isHome ? ' is-active' : ''}">
+      <span class="material-symbols-outlined">home</span>
+      <span>Beranda</span>
+    </a>
+    <a href="${href('rules')}" class="site-bottom-nav-item${isActive('rules') ? ' is-active' : ''}">
+      <span class="material-symbols-outlined">gavel</span>
+      <span>Tata Tertib</span>
+    </a>
+    <button type="button" id="bottom-sos-btn" class="site-bottom-nav-item is-sos">
+      <span class="material-symbols-outlined">sos</span>
+      <span>Bantuan</span>
+    </button>
+    <a href="${href('prayer')}" class="site-bottom-nav-item${isActive('prayer') ? ' is-active' : ''}">
+      <span class="material-symbols-outlined">prayer_times</span>
+      <span>Sholat</span>
+    </a>
+    <a href="${href('seats')}" class="site-bottom-nav-item${isActive('seats') ? ' is-active' : ''}">
+      <span class="material-symbols-outlined">directions_bus</span>
+      <span>Bus</span>
+    </a>
+  `;
+  document.body.append(navBar);
+
+  const bottomSosBtn = navBar.querySelector('#bottom-sos-btn');
+  if (bottomSosBtn) {
+    bottomSosBtn.addEventListener('click', openSos);
+  }
 
   // PWA Service Worker
   if ('serviceWorker' in navigator) {
