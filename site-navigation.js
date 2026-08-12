@@ -1260,9 +1260,10 @@
       if (matches.length === 1) {
         renderCanonicalProfile(matches[0]);
       } else if (matches.length > 1) {
-        // Render Candidate Selection List if Multiple Matches (P0-3)
+        // Automatically render top candidate, but also show dropdown to pick alternative if available
+        renderCanonicalProfile(matches[0]);
         autoBox.innerHTML = matches.map(m => 
-          `<div class="personal-autocomplete-item" data-key="${normalizeInputName(m.name)}">${m.name} <small style="color:#e9c176;">(Pilih Profil)</small></div>`
+          `<div class="personal-autocomplete-item" data-name="${m.name}">${m.name} <small style="color:#e9c176;">(Pilih Profil)</small></div>`
         ).join('');
         autoBox.classList.add('is-open');
       } else {
@@ -1296,10 +1297,18 @@
     autoBox.addEventListener('click', async (e) => {
       const item = e.target.closest('.personal-autocomplete-item');
       if (item) {
-        const selectedName = item.getAttribute('data-name');
+        const selectedName = item.getAttribute('data-name') || item.textContent.replace('(Pilih Profil)', '').trim();
         if (selectedName) {
           nameInput.value = selectedName;
-          await searchParticipant(selectedName);
+          const data = await loadPesertaData();
+          const normS = normalizeInputName(selectedName);
+          let target = Object.values(data).find(v => normalizeInputName(v.name) === normS || (v.aliases && v.aliases.some(a => normalizeInputName(a) === normS)));
+          if (!target) target = Object.values(data).find(v => normalizeInputName(v.name).includes(normS) || normS.includes(normalizeInputName(v.name)));
+          if (target) {
+            renderCanonicalProfile(target);
+          } else {
+            await searchParticipant(selectedName);
+          }
         }
       }
     });
