@@ -1,8 +1,10 @@
-const CACHE_NAME = 'safari-hwmi-mq12-v1';
+const CACHE_NAME = 'safari-hwmi-mq12-v2';
 const ASSETS = [
   './',
   './index.html',
   './site-navigation.js',
+  './peserta.json',
+  './manifest.json',
   './beranda_mobile_dark_safari_hwmi_mq_12/code.html',
   './i_tibar_musafir_final_safari_hwmi_mq_12/code.html',
   './tata_tertib_dark_safari_hwmi_mq_12/code.html',
@@ -51,14 +53,14 @@ self.addEventListener('fetch', (event) => {
     caches.match(event.request).then((cachedResponse) => {
       if (cachedResponse) {
         fetch(event.request).then((networkResponse) => {
-          if (networkResponse && networkResponse.status === 200) {
+          if (networkResponse && (networkResponse.status === 200 || networkResponse.status === 0)) {
             caches.open(CACHE_NAME).then((cache) => cache.put(event.request, networkResponse));
           }
         }).catch(() => {});
         return cachedResponse;
       }
       return fetch(event.request).then((networkResponse) => {
-        if (networkResponse && networkResponse.status === 200 && networkResponse.type === 'basic') {
+        if (networkResponse && (networkResponse.status === 200 || networkResponse.type === 'opaque')) {
           const responseToCache = networkResponse.clone();
           caches.open(CACHE_NAME).then((cache) => cache.put(event.request, responseToCache));
         }

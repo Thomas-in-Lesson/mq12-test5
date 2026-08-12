@@ -27,6 +27,35 @@
   const go = (page) => { window.location.href = href(page); };
   const isHome = !isSubfolder || path.includes('beranda_mobile_dark');
 
+  // PWA Head Meta Tags Injection
+  document.documentElement.lang = 'id';
+  const head = document.head;
+  const addMetaIfMissing = (name, content, attr = 'name') => {
+    if (!head.querySelector(`meta[${attr}="${name}"]`)) {
+      const meta = document.createElement('meta');
+      meta.setAttribute(attr, name);
+      meta.content = content;
+      head.appendChild(meta);
+    }
+  };
+  const addLinkIfMissing = (rel, hrefUrl, extraAttrs = {}) => {
+    if (!head.querySelector(`link[rel="${rel}"]`)) {
+      const link = document.createElement('link');
+      link.rel = rel;
+      link.href = hrefUrl;
+      Object.assign(link, extraAttrs);
+      head.appendChild(link);
+    }
+  };
+
+  addMetaIfMissing('theme-color', '#1c0704');
+  addMetaIfMissing('description', 'Aplikasi PWA Safari Chubbul Wathon Minal Iman Maqooshidul Qur-aan 12 - Informasi Kamar, Bus, & Tata Tertib Musafir');
+  addMetaIfMissing('apple-mobile-web-app-capable', 'yes');
+  addMetaIfMissing('apple-mobile-web-app-status-bar-style', 'black-translucent');
+  addMetaIfMissing('og:title', 'Safari HWMI MQ 12', 'property');
+  addMetaIfMissing('og:description', 'Panduan Lengkap, Daftar Kamar, & Bus Safari Chubbul Wathon Minal Iman 12', 'property');
+  addLinkIfMissing('manifest', new URL('manifest.json', root).href);
+
   // Back button binding
   document.querySelectorAll('button[aria-label="Go back"]').forEach((button) => 
     button.addEventListener('click', () => history.length > 1 ? history.back() : go('rules'))
@@ -316,13 +345,38 @@
       visibility: visible;
     }
 
+    /* Autocomplete dropdown for Kartu Peserta input */
+    .personal-autocomplete-box {
+      position: absolute;
+      left: 0; right: 0; top: 100%;
+      margin-top: 4px;
+      z-index: 99;
+      background: #2b0b07;
+      border: 1px solid #573a34;
+      border-radius: 12px;
+      max-height: 180px;
+      overflow-y: auto;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+      display: none;
+    }
+    .personal-autocomplete-box.is-open { display: block; }
+    .personal-autocomplete-item {
+      padding: 10px 14px;
+      border-bottom: 1px solid #4a211a;
+      cursor: pointer;
+      color: #ffdad4;
+      font-size: 13px;
+    }
+    .personal-autocomplete-item:last-child { border-bottom: 0; }
+    .personal-autocomplete-item:hover { background: #3d120c; color: #e9c176; }
+
     /* ========================================================= */
     /* MOBILE DEVICE STYLES (screen width <= 768px)              */
     /* ========================================================= */
     @media (max-width: 768px) {
       body {
         padding-top: 56px !important;
-        padding-bottom: 76px !important;
+        padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px)) !important;
       }
 
       .site-mobile-bar {
@@ -364,7 +418,8 @@
         position: fixed;
         bottom: 0; left: 0; right: 0;
         z-index: 9990;
-        height: 60px;
+        height: calc(60px + env(safe-area-inset-bottom, 0px));
+        padding-bottom: env(safe-area-inset-bottom, 0px);
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -390,7 +445,7 @@
       .site-bottom-nav-item .material-symbols-outlined { font-size: 22px; }
 
       .site-sos-bullet {
-        bottom: 74px;
+        bottom: calc(74px + env(safe-area-inset-bottom, 0px));
         right: 14px;
         width: 42px;
         height: 42px;
@@ -474,17 +529,17 @@
   const list = items.map(([label, detail, icon, page]) => {
     if (page === 'sos') {
       return `<button id="drawer-sos-btn" class="site-menu-item" type="button">
-        <span class="material-symbols-outlined" style="color:#ffb4ab;">emergency</span>
+        <span class="material-symbols-outlined" style="color:#ffb4ab;" aria-hidden="true">emergency</span>
         <span><strong style="color:#ffb4ab;">${label}</strong><small>${detail}</small></span>
        </button>`;
     }
     return page
       ? `<a class="site-menu-item${isActive(page) ? ' is-active' : ''}" href="${href(page)}">
-          <span class="material-symbols-outlined">${icon}</span>
+          <span class="material-symbols-outlined" aria-hidden="true">${icon}</span>
           <span><strong>${label}</strong><small>${detail}</small></span>
          </a>`
       : `<span class="site-menu-item is-disabled">
-          <span class="material-symbols-outlined">${icon}</span>
+          <span class="material-symbols-outlined" aria-hidden="true">${icon}</span>
           <span><strong>${label}</strong><small>${detail}</small></span>
          </span>`;
   }).join('');
@@ -519,11 +574,11 @@
     if (navigator.onLine) {
       badge.className = 'site-offline-badge';
       badge.setAttribute('aria-label', 'Indikator Lampu Hijau: Mode Offline Ready');
-      badge.innerHTML = '<span class="material-symbols-outlined">lightbulb</span>';
+      badge.innerHTML = '<span class="material-symbols-outlined" aria-hidden="true">lightbulb</span>';
     } else {
       badge.className = 'site-offline-badge offline';
       badge.setAttribute('aria-label', 'Indikator Lampu Kuning: Anda Sedang Offline');
-      badge.innerHTML = '<span class="material-symbols-outlined">lightbulb</span>';
+      badge.innerHTML = '<span class="material-symbols-outlined" aria-hidden="true">lightbulb</span>';
     }
   }
 
@@ -562,7 +617,7 @@
     <div class="site-sos-card">
       <button class="site-sos-close" type="button">×</button>
       <div class="site-sos-header">
-        <span class="material-symbols-outlined" style="color:#ffb4ab;font-size:28px;">emergency</span>
+        <span class="material-symbols-outlined" style="color:#ffb4ab;font-size:28px;" aria-hidden="true">emergency</span>
         <div>
           <h3>Pusat Bantuan & Kontak PIC</h3>
           <p>Hubungi panitia safari jika butuh bantuan mendesak</p>
@@ -571,7 +626,7 @@
       <div class="site-sos-list">
         <div class="site-sos-item">
           <div class="site-sos-item-info">
-            <span class="material-symbols-outlined" style="color:#e9c176;">medical_services</span>
+            <span class="material-symbols-outlined" style="color:#e9c176;" aria-hidden="true">medical_services</span>
             <div>
               <strong>Tim Medis & Kesehatan</strong>
               <span>Pertolongan Pertama / Obat</span>
@@ -585,7 +640,7 @@
 
         <div class="site-sos-item">
           <div class="site-sos-item-info">
-            <span class="material-symbols-outlined" style="color:#e9c176;">directions_bus</span>
+            <span class="material-symbols-outlined" style="color:#e9c176;" aria-hidden="true">directions_bus</span>
             <div>
               <strong>Koordinator Bus 1 & 2</strong>
               <span>Pengondisian Armada</span>
@@ -599,7 +654,7 @@
 
         <div class="site-sos-item">
           <div class="site-sos-item-info">
-            <span class="material-symbols-outlined" style="color:#e9c176;">directions_bus</span>
+            <span class="material-symbols-outlined" style="color:#e9c176;" aria-hidden="true">directions_bus</span>
             <div>
               <strong>Koordinator Bus 3 & Elf</strong>
               <span>Pengondisian Armada</span>
@@ -613,7 +668,7 @@
 
         <div class="site-sos-item">
           <div class="site-sos-item-info">
-            <span class="material-symbols-outlined" style="color:#e9c176;">shield</span>
+            <span class="material-symbols-outlined" style="color:#e9c176;" aria-hidden="true">shield</span>
             <div>
               <strong>Keamanan & Pembimbing</strong>
               <span>Pengawalan & Panduan</span>
@@ -647,7 +702,7 @@
   sosBullet.type = 'button';
   sosBullet.className = 'site-sos-bullet';
   sosBullet.setAttribute('aria-label', 'Bantuan PIC SOS');
-  sosBullet.innerHTML = '<span class="material-symbols-outlined">sos</span>';
+  sosBullet.innerHTML = '<span class="material-symbols-outlined" aria-hidden="true">sos</span>';
   sosBullet.addEventListener('click', openSos);
   document.body.append(sosBullet);
 
@@ -656,25 +711,141 @@
   navBar.className = 'site-bottom-nav';
   navBar.innerHTML = `
     <a href="${href('home')}" class="site-bottom-nav-item${isHome ? ' is-active' : ''}">
-      <span class="material-symbols-outlined">home</span>
+      <span class="material-symbols-outlined" aria-hidden="true">home</span>
       <span>Beranda</span>
     </a>
     <a href="${href('rules')}" class="site-bottom-nav-item${isActive('rules') ? ' is-active' : ''}">
-      <span class="material-symbols-outlined">gavel</span>
+      <span class="material-symbols-outlined" aria-hidden="true">gavel</span>
       <span>Tata Tertib</span>
     </a>
     <a href="${href('prayer')}" class="site-bottom-nav-item${isActive('prayer') ? ' is-active' : ''}">
-      <span class="material-symbols-outlined">prayer_times</span>
+      <span class="material-symbols-outlined" aria-hidden="true">prayer_times</span>
       <span>Sholat</span>
     </a>
     <a href="${href('seats')}" class="site-bottom-nav-item${isActive('seats') ? ' is-active' : ''}">
-      <span class="material-symbols-outlined">directions_bus</span>
+      <span class="material-symbols-outlined" aria-hidden="true">directions_bus</span>
       <span>Bus</span>
     </a>
   `;
   document.body.append(navBar);
 
-  // PWA Service Worker
+  // Real Participant Lookup Engine for Kartu Peserta Saya Widget
+  let pesertaData = null;
+  async function loadPesertaData() {
+    if (pesertaData) return pesertaData;
+    try {
+      const res = await fetch(new URL('peserta.json', root).href);
+      pesertaData = await res.json();
+    } catch (e) {
+      pesertaData = {};
+    }
+    return pesertaData;
+  }
+
+  function initPersonalCardWidget() {
+    const inputView = document.getElementById('personal-input-view');
+    const profileView = document.getElementById('personal-profile-view');
+    const nameInput = document.getElementById('personal-name-input');
+    const btnSave = document.getElementById('btn-save-personal');
+    const btnEdit = document.getElementById('btn-edit-personal');
+    const displayName = document.getElementById('user-display-name');
+    const roomInfo = document.getElementById('user-room-info');
+    const busInfo = document.getElementById('user-bus-info');
+
+    if (!inputView || !profileView || !nameInput || !btnSave) return;
+
+    // Autocomplete Box Setup
+    let autoBox = document.querySelector('.personal-autocomplete-box');
+    if (!autoBox) {
+      autoBox = document.createElement('div');
+      autoBox.className = 'personal-autocomplete-box';
+      nameInput.parentNode.style.position = 'relative';
+      nameInput.parentNode.appendChild(autoBox);
+    }
+
+    const renderProfile = async (queryName) => {
+      if (!queryName || !queryName.trim()) return;
+      const data = await loadPesertaData();
+      const q = queryName.trim().toLowerCase();
+      
+      let match = data[q];
+      if (!match) {
+        const foundKey = Object.keys(data).find(k => k.includes(q) || q.includes(k));
+        if (foundKey) match = data[foundKey];
+      }
+
+      displayName.textContent = match ? match.name : queryName.trim();
+      
+      if (match) {
+        roomInfo.innerHTML = `<a href="${href('rooms')}#${match.hotelKey}" class="hover:underline text-secondary flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">hotel</span> ${match.hotelName} - <strong>${match.roomNo}</strong> (${match.type})</a>`;
+        busInfo.innerHTML = `<a href="${href('seats')}" class="hover:underline text-secondary flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">directions_bus</span> <strong>${match.bus}</strong></a>`;
+      } else {
+        roomInfo.innerHTML = `<span class="text-on-surface-variant font-normal">Belum terdaftar di sistem</span>`;
+        busInfo.innerHTML = `<span class="text-on-surface-variant font-normal">Belum terdaftar di sistem</span>`;
+      }
+
+      localStorage.setItem('user_safari_name', queryName.trim());
+      inputView.classList.add('hidden');
+      profileView.classList.remove('hidden');
+      if (autoBox) autoBox.classList.remove('is-open');
+    };
+
+    // Autocomplete typing listener
+    nameInput.addEventListener('input', async () => {
+      const val = nameInput.value.trim().toLowerCase();
+      if (val.length < 2) {
+        autoBox.classList.remove('is-open');
+        return;
+      }
+      const data = await loadPesertaData();
+      const matches = Object.keys(data).filter(k => k.includes(val)).slice(0, 5);
+      if (matches.length > 0) {
+        autoBox.innerHTML = matches.map(k => `<div class="personal-autocomplete-item" data-name="${data[k].name}">${data[k].name} <small style="color:#e9c176">(${data[k].hotelName} - ${data[k].roomNo})</small></div>`).join('');
+        autoBox.classList.add('is-open');
+      } else {
+        autoBox.classList.remove('is-open');
+      }
+    });
+
+    autoBox.addEventListener('click', (e) => {
+      const item = e.target.closest('.personal-autocomplete-item');
+      if (item) {
+        const selectedName = item.getAttribute('data-name');
+        nameInput.value = selectedName;
+        renderProfile(selectedName);
+      }
+    });
+
+    btnSave.addEventListener('click', () => renderProfile(nameInput.value));
+    nameInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        renderProfile(nameInput.value);
+      }
+    });
+
+    if (btnEdit) {
+      btnEdit.addEventListener('click', () => {
+        profileView.classList.add('hidden');
+        inputView.classList.remove('hidden');
+        nameInput.focus();
+      });
+    }
+
+    // Auto-load saved user name
+    const savedName = localStorage.getItem('user_safari_name');
+    if (savedName) {
+      renderProfile(savedName);
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initPersonalCardWidget);
+  } else {
+    initPersonalCardWidget();
+  }
+
+  // PWA Service Worker Registration
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
       const swUrl = new URL('sw.js', root).href;
