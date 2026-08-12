@@ -203,7 +203,10 @@
     }
     .site-sos-card {
       position: relative;
-      width: min(380px, 100%);
+      width: min(420px, 100%);
+      max-height: 85vh;
+      display: flex;
+      flex-direction: column;
       background: #2b0b07;
       border: 1px solid #5d2821;
       border-radius: 20px;
@@ -226,32 +229,71 @@
       align-items: center;
       gap: 12px;
       padding-bottom: 14px;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
       border-bottom: 1px solid #4a211a;
+      shrink: 0;
     }
     .site-sos-header h3 { margin: 0; font: 700 16px sans-serif; color: #ffdad4; }
     .site-sos-header p { margin: 2px 0 0; font: 400 11px sans-serif; color: #cbb2ad; }
-    .site-sos-list { display: grid; gap: 10px; }
+
+    .site-sos-tabs {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 12px;
+      shrink: 0;
+    }
+    .site-sos-tab-btn {
+      flex: 1;
+      padding: 6px 12px;
+      border-radius: 8px;
+      border: 1px solid #5d2821;
+      background: #381410;
+      color: #cbb2ad;
+      font: 600 11px sans-serif;
+      cursor: pointer;
+      text-align: center;
+    }
+    .site-sos-tab-btn.is-active {
+      background: #543c05;
+      border-color: #e9c176;
+      color: #ffdea5;
+    }
+
+    .site-sos-list {
+      display: grid;
+      gap: 8px;
+      overflow-y: auto;
+      padding-right: 4px;
+      flex: 1;
+    }
+    .site-sos-section-title {
+      font: 700 11px sans-serif;
+      color: #e9c176;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-top: 6px;
+      margin-bottom: 2px;
+    }
     .site-sos-item {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 10px 12px;
+      padding: 8px 10px;
       background: #381410;
       border: 1px solid #57251d;
-      border-radius: 12px;
+      border-radius: 10px;
     }
-    .site-sos-item-info { display: flex; align-items: center; gap: 10px; }
+    .site-sos-item-info { display: flex; align-items: center; gap: 8px; }
     .site-sos-item-info strong { display: block; font: 600 12px sans-serif; color: #ffdad4; }
     .site-sos-item-info span { display: block; font: 400 10px sans-serif; color: #cbb2ad; }
-    .site-sos-actions { display: flex; gap: 6px; }
+    .site-sos-actions { display: flex; gap: 6px; shrink: 0; }
     .site-sos-act-btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 6px 10px;
+      padding: 5px 9px;
       border-radius: 999px;
-      font: 700 11px sans-serif;
+      font: 700 10px sans-serif;
       text-decoration: none;
     }
     .site-sos-act-wa { background: #1b4d2e; border: 1px solid #2e7d48; color: #7be495; }
@@ -610,7 +652,35 @@
   backdrop.addEventListener('click', closeMenu);
   panel.querySelector('.site-menu-close').addEventListener('click', closeMenu);
 
-  // Global Emergency SOS Modal Definition
+  // Global Emergency SOS Modal Definition with REAL Contact PIC Data (Sesi 2 & Sesi 3)
+  const picDataSesi2 = [
+    { cat: 'Kesehatan (Medis)', name: 'Anastasya Yosa K.', role: 'Tim Medis Bus 1', phone: '085717925886' },
+    { cat: 'Kesehatan (Medis)', name: 'Siti Aisyah', role: 'Tim Medis Bus 2', phone: '085745696646' },
+    { cat: 'Kesehatan (Medis)', name: 'Viddi Puspita Sari', role: 'Tim Medis Bus 2', phone: '085708114552' },
+    { cat: 'Kesehatan (Medis)', name: 'Resta Lestari', role: 'Tim Medis Bus 3', phone: '082338849394' },
+    { cat: 'Kesehatan (Medis)', name: 'Suci Novia Andriani', role: 'Tim Medis Bus 3', phone: '081275491949' },
+    { cat: 'Kesehatan (Medis)', name: 'Habib Am', role: 'Tim Medis Bus 4', phone: '081991599255' },
+    { cat: 'Keamanan', name: 'Rodliyatan Mardliyah', role: 'Keamanan Bus 1', phone: '085704247949' },
+    { cat: 'Keamanan', name: 'Afiq Nur Rohman', role: 'Keamanan Bus 1', phone: '081359017643' },
+    { cat: 'Keamanan', name: 'Salwa Muniroh', role: 'Keamanan Bus 2', phone: '08986872277' },
+    { cat: 'Keamanan', name: 'M Irfan Fanani', role: 'Keamanan Bus 4', phone: '081915410723' },
+    { cat: 'Keamanan', name: 'Achmad Shodiqin', role: 'Keamanan Bus 3', phone: '085731831480' }
+  ];
+
+  const picDataSesi3 = [
+    { cat: 'Kesehatan (Medis)', name: 'Anastasya Yosa K.', role: 'Tim Medis Bus 1', phone: '085717925886' },
+    { cat: 'Kesehatan (Medis)', name: 'Siti Aisyah', role: 'Tim Medis Bus 2', phone: '085745696646' },
+    { cat: 'Kesehatan (Medis)', name: 'Viddi Puspita Sari', role: 'Tim Medis Bus 2', phone: '085708114552' },
+    { cat: 'Kesehatan (Medis)', name: 'Resta Lestari', role: 'Tim Medis Bus 3', phone: '082338849394' },
+    { cat: 'Kesehatan (Medis)', name: 'Habib Am', role: 'Tim Medis Bus 5', phone: '081991599255' },
+    { cat: 'Kesehatan (Medis)', name: 'Syuhada\' Ridlo Billah', role: 'Tim Medis Bus 6', phone: '082143345952' },
+    { cat: 'Keamanan', name: 'Rodliyatan Mardliyah', role: 'Keamanan Bus 1', phone: '085704247949' },
+    { cat: 'Keamanan', name: 'Afiq Nur Rohman', role: 'Keamanan Bus 1', phone: '081359017643' },
+    { cat: 'Keamanan', name: 'Salwa Muniroh', role: 'Keamanan Bus 2', phone: '08986872277' },
+    { cat: 'Keamanan', name: 'Fatimah binti Maimun', role: 'Keamanan Bus 4', phone: '085730020079' },
+    { cat: 'Keamanan', name: 'M Irfan Fanani', role: 'Keamanan Bus 5', phone: '081915410723' }
+  ];
+
   const sosModal = document.createElement('div');
   sosModal.className = 'site-sos-modal-overlay';
   sosModal.innerHTML = `
@@ -623,66 +693,65 @@
           <p>Hubungi panitia safari jika butuh bantuan mendesak</p>
         </div>
       </div>
-      <div class="site-sos-list">
-        <div class="site-sos-item">
-          <div class="site-sos-item-info">
-            <span class="material-symbols-outlined" style="color:#e9c176;" aria-hidden="true">medical_services</span>
-            <div>
-              <strong>Tim Medis & Kesehatan</strong>
-              <span>Pertolongan Pertama / Obat</span>
-            </div>
-          </div>
-          <div class="site-sos-actions">
-            <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Medis%20MQ12,%20saya%20butuh%20bantuan" target="_blank" class="site-sos-act-btn site-sos-act-wa">WA</a>
-            <a href="tel:+6281234567890" class="site-sos-act-btn site-sos-act-call">📞</a>
-          </div>
-        </div>
-
-        <div class="site-sos-item">
-          <div class="site-sos-item-info">
-            <span class="material-symbols-outlined" style="color:#e9c176;" aria-hidden="true">directions_bus</span>
-            <div>
-              <strong>Koordinator Bus 1 & 2</strong>
-              <span>Pengondisian Armada</span>
-            </div>
-          </div>
-          <div class="site-sos-actions">
-            <a href="https://wa.me/6281234567891?text=Halo%20PIC%20Bus,%20saya%20peserta%20MQ12" target="_blank" class="site-sos-act-btn site-sos-act-wa">WA</a>
-            <a href="tel:+6281234567891" class="site-sos-act-btn site-sos-act-call">📞</a>
-          </div>
-        </div>
-
-        <div class="site-sos-item">
-          <div class="site-sos-item-info">
-            <span class="material-symbols-outlined" style="color:#e9c176;" aria-hidden="true">directions_bus</span>
-            <div>
-              <strong>Koordinator Bus 3 & Elf</strong>
-              <span>Pengondisian Armada</span>
-            </div>
-          </div>
-          <div class="site-sos-actions">
-            <a href="https://wa.me/6281234567892?text=Halo%20PIC%20Bus,%20saya%20peserta%20MQ12" target="_blank" class="site-sos-act-btn site-sos-act-wa">WA</a>
-            <a href="tel:+6281234567892" class="site-sos-act-btn site-sos-act-call">📞</a>
-          </div>
-        </div>
-
-        <div class="site-sos-item">
-          <div class="site-sos-item-info">
-            <span class="material-symbols-outlined" style="color:#e9c176;" aria-hidden="true">shield</span>
-            <div>
-              <strong>Keamanan & Pembimbing</strong>
-              <span>Pengawalan & Panduan</span>
-            </div>
-          </div>
-          <div class="site-sos-actions">
-            <a href="https://wa.me/6281234567893?text=Halo%20Keamanan%20MQ12,%20saya%20butuh%20bantuan" target="_blank" class="site-sos-act-btn site-sos-act-wa">WA</a>
-            <a href="tel:+6281234567893" class="site-sos-act-btn site-sos-act-call">📞</a>
-          </div>
-        </div>
+      <div class="site-sos-tabs">
+        <button id="sos-tab-sesi2" class="site-sos-tab-btn is-active" type="button">Sesi 2</button>
+        <button id="sos-tab-sesi3" class="site-sos-tab-btn" type="button">Sesi 3</button>
+      </div>
+      <div id="sos-pic-list-container" class="site-sos-list">
       </div>
     </div>
   `;
   document.body.append(sosModal);
+
+  function renderPicList(data) {
+    const container = sosModal.querySelector('#sos-pic-list-container');
+    if (!container) return;
+    
+    let html = '';
+    let currentCat = '';
+    data.forEach(item => {
+      if (item.cat !== currentCat) {
+        currentCat = item.cat;
+        html += `<div class="site-sos-section-title">${currentCat}</div>`;
+      }
+      const cleanPhone = item.phone.replace(/[^0-9]/g, '');
+      const intPhone = cleanPhone.startsWith('0') ? '62' + cleanPhone.slice(1) : cleanPhone;
+      html += `
+        <div class="site-sos-item">
+          <div class="site-sos-item-info">
+            <span class="material-symbols-outlined" style="color:#e9c176;" aria-hidden="true">${item.cat.includes('Kesehatan') ? 'medical_services' : 'shield'}</span>
+            <div>
+              <strong>${item.name}</strong>
+              <span>${item.role} (${item.phone})</span>
+            </div>
+          </div>
+          <div class="site-sos-actions">
+            <a href="https://wa.me/${intPhone}?text=Halo%20${encodeURIComponent(item.name)},%20saya%20peserta%20Safari%20MQ12%20butuh%20bantuan" target="_blank" class="site-sos-act-btn site-sos-act-wa">WA</a>
+            <a href="tel:+${intPhone}" class="site-sos-act-btn site-sos-act-call">📞</a>
+          </div>
+        </div>
+      `;
+    });
+    container.innerHTML = html;
+  }
+
+  renderPicList(picDataSesi2);
+
+  const tabSesi2 = sosModal.querySelector('#sos-tab-sesi2');
+  const tabSesi3 = sosModal.querySelector('#sos-tab-sesi3');
+
+  if (tabSesi2 && tabSesi3) {
+    tabSesi2.addEventListener('click', () => {
+      tabSesi2.classList.add('is-active');
+      tabSesi3.classList.remove('is-active');
+      renderPicList(picDataSesi2);
+    });
+    tabSesi3.addEventListener('click', () => {
+      tabSesi3.classList.add('is-active');
+      tabSesi2.classList.remove('is-active');
+      renderPicList(picDataSesi3);
+    });
+  }
 
   const openSos = () => sosModal.classList.add('is-open');
   const closeSos = () => sosModal.classList.remove('is-open');
@@ -777,8 +846,8 @@
       displayName.textContent = match ? match.name : queryName.trim();
       
       if (match) {
-        roomInfo.innerHTML = `<a href="${href('rooms')}#${match.hotelKey}" class="hover:underline text-secondary flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">hotel</span> ${match.hotelName} - <strong>${match.roomNo}</strong> (${match.type})</a>`;
-        busInfo.innerHTML = `<a href="${href('seats')}" class="hover:underline text-secondary flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">directions_bus</span> <strong>${match.bus}</strong></a>`;
+        roomInfo.innerHTML = `<a href="${href('rooms')}#${match.hotelKey}" class="hover:underline text-secondary flex items-center gap-1"><span class="material-symbols-outlined text-[14px]" aria-hidden="true">hotel</span> ${match.hotelName} - <strong>${match.roomNo}</strong> (${match.type})</a>`;
+        busInfo.innerHTML = `<a href="${href('seats')}" class="hover:underline text-secondary flex items-center gap-1"><span class="material-symbols-outlined text-[14px]" aria-hidden="true">directions_bus</span> <strong>${match.bus}</strong></a>`;
       } else {
         roomInfo.innerHTML = `<span class="text-on-surface-variant font-normal">Belum terdaftar di sistem</span>`;
         busInfo.innerHTML = `<span class="text-on-surface-variant font-normal">Belum terdaftar di sistem</span>`;
