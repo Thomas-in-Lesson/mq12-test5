@@ -1,10 +1,21 @@
-const CACHE_NAME = 'safari-hwmi-mq12-v3';
+const CACHE_NAME = 'safari-hwmi-mq12-v4';
 const ASSETS = [
   './',
   './index.html',
   './site-navigation.js',
+  './styles.css',
   './peserta.json',
   './manifest.json',
+  './favicon.ico',
+  './icon-192.png',
+  './icon-512.png',
+  './icon-maskable-512.png',
+  './icon-180.png',
+  './fonts/material-symbols-outlined-fallback-100_700.woff2',
+  './fonts/noto-serif-latin-400.woff2',
+  './fonts/noto-serif-latin-ext-400.woff2',
+  './fonts/plus-jakarta-sans-latin-400.woff2',
+  './fonts/plus-jakarta-sans-latin-ext-400.woff2',
   './beranda_mobile_dark_safari_hwmi_mq_12/code.html',
   './i_tibar_musafir_final_safari_hwmi_mq_12/code.html',
   './tata_tertib_dark_safari_hwmi_mq_12/code.html',
@@ -53,14 +64,16 @@ self.addEventListener('fetch', (event) => {
     caches.match(event.request).then((cachedResponse) => {
       if (cachedResponse) {
         fetch(event.request).then((networkResponse) => {
-          if (networkResponse && (networkResponse.status === 200 || networkResponse.status === 0)) {
+          if (networkResponse && networkResponse.status === 200 && networkResponse.type === 'basic') {
             caches.open(CACHE_NAME).then((cache) => cache.put(event.request, networkResponse));
           }
         }).catch(() => {});
         return cachedResponse;
       }
       return fetch(event.request).then((networkResponse) => {
-        if (networkResponse && (networkResponse.status === 200 || networkResponse.type === 'opaque')) {
+        // Semua aset sudah same-origin sejak Tailwind & font di-host sendiri,
+        // jadi respons opaque lintas-origin tidak perlu ikut disimpan lagi.
+        if (networkResponse && networkResponse.status === 200 && networkResponse.type === 'basic') {
           const responseToCache = networkResponse.clone();
           caches.open(CACHE_NAME).then((cache) => cache.put(event.request, responseToCache));
         }

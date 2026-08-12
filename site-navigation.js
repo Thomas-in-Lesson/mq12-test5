@@ -5,6 +5,8 @@
     rules: 'tata_tertib_dark_safari_hwmi_mq_12/code.html',
     prayer: 'panduan_sholat_musafir_safari_hwmi_mq_12/code.html',
     seats: 'denah_bus_safari_hwmi_mq_12/code.html',
+    seatsSesi1: 'denah_tempat_duduk_elf_safari_hwmi_mq_12/code.html',
+    seatsSesi3: 'denah_bus_sesi_3_safari_hwmi_mq_12/code.html',
     departure: 'tata_tertib_berangkat_verbatim_safari_hwmi_mq_12/code.html',
     speaking: 'etika_dalam_berbicara_safari_hwmi_mq_12/code.html',
     attire: 'etika_dalam_berpakaian_safari_hwmi_mq_12/code.html',
@@ -32,23 +34,9 @@
     button.addEventListener('click', () => history.length > 1 ? history.back() : go('rules'))
   );
 
-  // Link bindings
-  document.querySelectorAll('a[href="#"], a[href^="../"]').forEach((link) => {
-    const text = link.textContent.replace(/\s+/g, ' ').trim();
-    let page = null;
-    if (text.includes('Itibar Musafir')) page = 'itibar';
-    else if (text.includes('Tata Tertib Peserta')) page = 'rules';
-    else if (text.includes('Panduan Sholat Musafir')) page = 'prayer';
-    else if (text.includes('Rundown Kegiatan')) page = 'rundown';
-    else if (text.includes('Daftar Kamar Peserta')) page = 'rooms';
-    else if (text.includes('Denah Bus')) page = 'seats';
-    else if (text.includes('Jadwal Seragam')) page = 'uniforms';
-    else if (text.includes('Skema Foto Bersama')) page = 'photos';
-    else if (text.includes('Peta Safari')) page = 'map';
-    else if (text.includes('Starterpack') || text.includes('Teknis Packing')) page = 'starterpack';
-    else if (text.includes('Daftar dan Informasi Peserta')) page = 'home';
-    if (page) link.href = href(page);
-  });
+  // Penulisan ulang tautan berbasis teks sudah dihapus: seluruh href="../..." di
+  // halaman memang sudah menunjuk berkas yang benar, jadi kode itu hanya menimpa
+  // tautan dengan alamat yang sama persis.
 
   const items = [
     ['Beranda', 'Beranda utama', 'home', 'home'],
@@ -472,13 +460,40 @@
     /* ========================================================= */
     @media (min-width: 769px) {
       body {
-        padding-top: 60px !important;
+        padding-top: 104px !important;
         padding-bottom: 0 !important;
       }
 
+      /* Di desktop bilah yang sama dipindah ke atas, menempel di bawah header,
+         supaya navigasi cepat tidak hilang begitu bilah bawah disembunyikan. */
       .site-bottom-nav {
-        display: none !important;
+        position: fixed;
+        top: 60px; left: 0; right: 0;
+        z-index: 9990;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        background: rgba(22,5,3,0.97);
+        border-bottom: 1px solid #4a211a;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        backdrop-filter: blur(16px);
       }
+
+      .site-bottom-nav-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 14px;
+        border-radius: 8px;
+        color: #cbb2ad;
+        text-decoration: none;
+        font: 500 13px sans-serif;
+      }
+      .site-bottom-nav-item.is-active, .site-bottom-nav-item:hover { color: #e9c176; font-weight: 700; background: #2b0b07; }
+      .site-bottom-nav-item .material-symbols-outlined { font-size: 18px; }
 
       .site-mobile-bar {
         height: 60px;
@@ -522,6 +537,27 @@
         height: 48px;
       }
       .site-sos-bullet .material-symbols-outlined { font-size: 24px; }
+    }
+
+    /* Panitia mencetak rundown, daftar kamar, dan denah bus. Tema gelap dicetak
+       jadi lembar hitam pekat, jadi warna dipaksa terang dan semua elemen
+       navigasi disembunyikan. */
+    @media print {
+      .site-menu-trigger, .site-menu-backdrop, .site-menu-panel,
+      .site-bottom-nav, .site-sos-bullet, .site-sos-modal,
+      .site-offline-badge, .site-header-center-title { display: none !important; }
+
+      html, body, body * {
+        background: #fff !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+      }
+      body, main { padding-top: 0 !important; padding-bottom: 0 !important; }
+      main, section, .rounded-2xl, .rounded-xl { border-color: #999 !important; }
+      a { text-decoration: underline; }
+      table, tr, .site-print-keep { break-inside: avoid; page-break-inside: avoid; }
+      h1, h2, h3 { break-after: avoid; page-break-after: avoid; }
     }
   `;
   document.head.append(globalStyle);
@@ -1132,6 +1168,7 @@
   document.body.append(navBar);
 
   // Real Multi-Stay Participant Lookup Engine (P0-2, P0-3, P0-1 Privacy Compliant)
+  const PROFIL_KEY = 'user_safari_profile_v2'; // naikkan bila bentuk peserta.json berubah
   let pesertaData = null;
   async function loadPesertaData() {
     if (pesertaData) return pesertaData;
@@ -1144,12 +1181,41 @@
     return pesertaData;
   }
 
+  /* --- NAME-PHONETIC-START (sinkron dengan tools/name-utils.js, dijaga tools/test-nama.js) --- */
   function normalizeInputName(name) {
-    let n = name.toLowerCase();
-    n = n.replace(/\b(bpk|pak|ibu|bu|mba|mbak|drs|h|hj)\b\.?/g, '');
-    n = n.replace(/^(m|muh|moh|muhammad)[\.\s]*/g, '');
+    let n = String(name).toLowerCase();
+    n = n.replace(/^\s*(bpk|bp|pak|ibu|bu|mba|mbak|drs|hj|ny|ust|ustadz|ustadzah|h)\b\.?\s*/g, '');
+    // Prefiks hanya dipotong bila diikuti titik atau spasi, supaya "Mustofa"/"Maimun" utuh
+    n = n.replace(/^(muhammad|moch|moh|muh|m)(\.\s*|\s+)/, '');
     n = n.replace(/[^a-z0-9\s]/g, '');
     return n.split(/\s+/).filter(Boolean).join(' ');
+  }
+
+  function phoneticWord(w) {
+    return w
+      .replace(/kh/g, 'h').replace(/dh/g, 'd').replace(/ts/g, 's')
+      .replace(/sh/g, 's').replace(/hs/g, 's').replace(/ch/g, 'h')
+      .replace(/y/g, 'i').replace(/j/g, 'z').replace(/q/g, 'k').replace(/f/g, 'p')
+      .replace(/(.)\1+/g, '$1')
+      .replace(/[aeiou]/g, '')
+      .replace(/h+$/, '');
+  }
+
+  // Kunci pemaaf: ejaan berbeda yang sebunyi menghasilkan kunci yang sama (C-4)
+  const phoneticKey = (name) => normalizeInputName(name).split(' ').map(phoneticWord).join(' ');
+  /* --- NAME-PHONETIC-END --- */
+
+  // Semua ejaan satu profil, dalam bentuk normal dan bentuk bunyi. Dihitung
+  // sekali per profil; WeakMap supaya tidak ikut terbawa ke localStorage.
+  const cacheKunci = new WeakMap();
+  function kunciEjaan(item) {
+    let k = cacheKunci.get(item);
+    if (!k) {
+      const ejaan = [item.name, ...(item.aliases || [])];
+      k = { norm: new Set(ejaan.map(normalizeInputName)), fon: new Set(ejaan.map(phoneticKey)) };
+      cacheKunci.set(item, k);
+    }
+    return k;
   }
 
   function initPersonalCardWidget() {
@@ -1174,11 +1240,26 @@
     const renderCanonicalProfile = (entry) => {
       displayName.textContent = entry.name;
 
-      const profileContentBox = profileView.querySelector('.grid-cols-2') || profileView;
-      
-      // Render Multi-stay hotel list & transport info
-      const transportUnit = entry.transport ? entry.transport.unit : 'Bus 1';
-      
+      // Satu baris per sesi (B-7, D-3). Sesi 2 belum punya denah, jadi ditulis
+      // apa adanya — lebih baik kosong daripada menebak nomor kendaraan.
+      const transport = entry.transport || {};
+      const sesiHtml = [
+        { label: 'Sesi 1', unit: transport.sesi1, page: 'seatsSesi1' },
+        { label: 'Sesi 2', unit: null, page: null, catatan: 'Denah Sesi 2 belum tersedia' },
+        { label: 'Sesi 3', unit: transport.sesi3, page: 'seatsSesi3' }
+      ].map(s => `
+        <div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container border border-outline-variant/20">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">directions_bus</span>
+            <div>
+              <span class="text-[11px] text-on-surface-variant uppercase font-semibold">${s.label}</span>
+              <strong class="text-xs text-on-surface block font-bold">${s.unit || s.catatan || 'Belum terdaftar'}</strong>
+            </div>
+          </div>
+          ${s.unit && s.page ? `<a href="${href(s.page)}" class="px-2.5 py-1 rounded-lg bg-secondary/15 text-secondary border border-secondary/30 text-[11px] font-bold hover:bg-secondary hover:text-surface-container-lowest transition-colors">Lihat Denah</a>` : ''}
+        </div>
+      `).join('');
+
       let staysHtml = '';
       if (entry.menginap && entry.menginap.length > 0) {
         staysHtml = entry.menginap.map(m => {
@@ -1207,19 +1288,11 @@
         </div>
 
         <div class="space-y-2 pt-2">
-          <div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container border border-outline-variant/20">
-            <div class="flex items-center gap-2">
-              <span class="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">directions_bus</span>
-              <div>
-                <span class="text-[10px] text-on-surface-variant uppercase font-semibold">Armada Transportasi</span>
-                <strong class="text-xs text-on-surface block font-bold">${transportUnit}</strong>
-              </div>
-            </div>
-            <a href="${href('seats')}" class="px-2.5 py-1 rounded-lg bg-secondary/15 text-secondary border border-secondary/30 text-[11px] font-bold hover:bg-secondary hover:text-surface-container-lowest transition-colors">Lihat Bus</a>
-          </div>
+          <span class="text-[11px] text-on-surface-variant uppercase font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-secondary" aria-hidden="true">directions_bus</span> Armada Transportasi</span>
+          ${sesiHtml}
 
           <div class="space-y-1.5 pt-1">
-            <span class="text-[10px] text-on-surface-variant uppercase font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-secondary" aria-hidden="true">hotel</span> Daftar Penginapan (Multi-Kota)</span>
+            <span class="text-[11px] text-on-surface-variant uppercase font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-secondary" aria-hidden="true">hotel</span> Daftar Penginapan (Multi-Kota)</span>
             <div class="space-y-2">
               ${staysHtml}
             </div>
@@ -1234,7 +1307,9 @@
       });
 
       localStorage.setItem('user_safari_name', entry.name);
-      localStorage.setItem('user_safari_profile', JSON.stringify(entry));
+      // Kunci ikut versi skema: kartu lama (transport.unit, "kamar": "Kamar 4")
+      // tidak boleh dirender oleh kode baru, cukup dicari ulang dari namanya.
+      localStorage.setItem(PROFIL_KEY, JSON.stringify(entry));
       inputView.classList.add('hidden');
       profileView.classList.remove('hidden');
       if (autoBox) autoBox.classList.remove('is-open');
@@ -1247,30 +1322,32 @@
 
       if (!normQ || normQ.length < 3) return;
 
-      // Match canonical key or aliases
-      let matches = [];
+      // Exact > sebunyi > sebagian. Exact menang mutlak atas partial (B-2b).
+      const fonQ = phoneticKey(queryName);
+      const exact = [];
+      const sebunyi = [];
+      const partial = [];
       Object.keys(data).forEach(key => {
         const item = data[key];
-        const normKey = normalizeInputName(item.name);
-        const matchAlias = item.aliases && item.aliases.some(a => normalizeInputName(a) === normQ);
-        if (normKey === normQ || key === normQ || matchAlias) {
-          matches.unshift(item);
-        } else if (normKey.includes(normQ)) {
-          matches.push(item);
-        }
+        const k = kunciEjaan(item);
+        if (key === normQ || k.norm.has(normQ)) exact.push(item);
+        else if (fonQ && k.fon.has(fonQ)) sebunyi.push(item);
+        else if ([...k.norm].some(n => n.includes(normQ))) partial.push(item);
       });
 
-      if (matches.length === 1) {
-        renderCanonicalProfile(matches[0]);
-      } else if (matches.length > 1) {
-        // Automatically render top candidate, but also show dropdown to pick alternative if available
-        renderCanonicalProfile(matches[0]);
-        autoBox.innerHTML = matches.map(m => 
+      const matches = exact.length ? exact : (sebunyi.length ? sebunyi : partial);
+      if (!matches.length) {
+        showToast('⚠️ Nama belum terdaftar di sistem. Silakan hubungi PIC Bantuan.');
+        return;
+      }
+
+      renderCanonicalProfile(matches[0]);
+      // Picker hanya muncul kalau memang masih ambigu setelah exact diprioritaskan
+      if (matches.length > 1) {
+        autoBox.innerHTML = matches.map(m =>
           `<div class="personal-autocomplete-item" data-name="${m.name}">${m.name} <small style="color:#e9c176;">(Pilih Profil)</small></div>`
         ).join('');
         autoBox.classList.add('is-open');
-      } else {
-        showToast('⚠️ Nama belum terdaftar di sistem. Silakan hubungi PIC Bantuan.');
       }
     };
 
@@ -1283,10 +1360,10 @@
         return;
       }
       const data = await loadPesertaData();
+      const fonV = phoneticKey(val);
       const matches = Object.keys(data).filter(k => {
-        const item = data[k];
-        const normKey = normalizeInputName(item.name);
-        return normKey.includes(normV) || (item.aliases && item.aliases.some(a => normalizeInputName(a).includes(normV)));
+        const key = kunciEjaan(data[k]);
+        return [...key.norm].some(n => n.includes(normV)) || (fonV && [...key.fon].some(f => f.includes(fonV)));
       }).slice(0, 5);
 
       if (matches.length > 0) {
@@ -1305,8 +1382,8 @@
           nameInput.value = selectedName;
           const data = await loadPesertaData();
           const normS = normalizeInputName(selectedName);
-          let target = Object.values(data).find(v => normalizeInputName(v.name) === normS || (v.aliases && v.aliases.some(a => normalizeInputName(a) === normS)));
-          if (!target) target = Object.values(data).find(v => normalizeInputName(v.name).includes(normS));
+          let target = Object.values(data).find(v => kunciEjaan(v).norm.has(normS));
+          if (!target) target = Object.values(data).find(v => [...kunciEjaan(v).norm].some(n => n.includes(normS)));
           if (target) {
             renderCanonicalProfile(target);
           } else {
@@ -1333,7 +1410,8 @@
     }
 
     // Auto-load saved user profile with offline fallback support (B-5)
-    const savedProfileStr = localStorage.getItem('user_safari_profile');
+    localStorage.removeItem('user_safari_profile'); // sisa skema lama
+    const savedProfileStr = localStorage.getItem(PROFIL_KEY);
     if (savedProfileStr) {
       try {
         const cachedProfile = JSON.parse(savedProfileStr);
