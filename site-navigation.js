@@ -1234,6 +1234,7 @@
       });
 
       localStorage.setItem('user_safari_name', entry.name);
+      localStorage.setItem('user_safari_profile', JSON.stringify(entry));
       inputView.classList.add('hidden');
       profileView.classList.remove('hidden');
       if (autoBox) autoBox.classList.remove('is-open');
@@ -1254,7 +1255,7 @@
         const matchAlias = item.aliases && item.aliases.some(a => normalizeInputName(a) === normQ);
         if (normKey === normQ || key === normQ || matchAlias) {
           matches.unshift(item);
-        } else if (normKey.includes(normQ) || normQ.includes(normKey)) {
+        } else if (normKey.includes(normQ)) {
           matches.push(item);
         }
       });
@@ -1273,15 +1274,15 @@
       }
     };
 
-    // Autocomplete typing listener (P0-1 Strict Privacy: Minimum 4 chars threshold, NAME ONLY)
+    // Autocomplete typing listener (P0-1 Strict Privacy: Minimum 4 normalized chars threshold, NAME ONLY)
     nameInput.addEventListener('input', async () => {
       const val = nameInput.value.trim();
-      if (val.length < 4) {
+      const normV = normalizeInputName(val);
+      if (normV.length < 4) {
         autoBox.classList.remove('is-open');
         return;
       }
       const data = await loadPesertaData();
-      const normV = normalizeInputName(val);
       const matches = Object.keys(data).filter(k => {
         const item = data[k];
         const normKey = normalizeInputName(item.name);
@@ -1305,7 +1306,7 @@
           const data = await loadPesertaData();
           const normS = normalizeInputName(selectedName);
           let target = Object.values(data).find(v => normalizeInputName(v.name) === normS || (v.aliases && v.aliases.some(a => normalizeInputName(a) === normS)));
-          if (!target) target = Object.values(data).find(v => normalizeInputName(v.name).includes(normS) || normS.includes(normalizeInputName(v.name)));
+          if (!target) target = Object.values(data).find(v => normalizeInputName(v.name).includes(normS));
           if (target) {
             renderCanonicalProfile(target);
           } else {
@@ -1331,10 +1332,20 @@
       });
     }
 
-    // Auto-load saved user name
-    const savedName = localStorage.getItem('user_safari_name');
-    if (savedName) {
-      searchParticipant(savedName);
+    // Auto-load saved user profile with offline fallback support (B-5)
+    const savedProfileStr = localStorage.getItem('user_safari_profile');
+    if (savedProfileStr) {
+      try {
+        const cachedProfile = JSON.parse(savedProfileStr);
+        if (cachedProfile && cachedProfile.name) {
+          renderCanonicalProfile(cachedProfile);
+        }
+      } catch(e) {}
+    } else {
+      const savedName = localStorage.getItem('user_safari_name');
+      if (savedName) {
+        searchParticipant(savedName);
+      }
     }
   }
 

@@ -1,58 +1,782 @@
-{
-  "crew bus": {
-    "name": "Crew Bus",
-    "hotelKey": "Solo",
-    "hotelName": "Hotel Sahid Solo",
-    "roomNo": "Kamar 6",
-    "type": "Deluxe",
-    "bus": "Bus 3"
+[
+  {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "Kamar 820",
+    "name": "Patwal"
   },
-  "patwal": {
-    "name": "Patwal",
-    "hotelKey": "Semarang",
-    "hotelName": "Hotel Oak Tree Semarang",
-    "roomNo": "Kamar 621",
-    "type": "DELUXE CORRIDOR",
-    "bus": "Bus 3"
+  {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "Kamar 820",
+    "name": "Patwal"
   },
-  "driver": {
-    "name": "Driver",
-    "hotelKey": "Solo",
-    "hotelName": "Hotel Sahid Solo",
-    "roomNo": "Kamar 14",
-    "type": "Deluxe",
-    "bus": "Bus 3"
+  {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "Kamar 920",
+    "name": "Zona 1"
   },
-  "perawat": {
-    "name": "Perawat",
-    "hotelKey": "Solo",
-    "hotelName": "Hotel Sahid Solo",
-    "roomNo": "Kamar 14",
-    "type": "Deluxe",
-    "bus": "Bus 2"
+  {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "Kamar 920",
+    "name": "Zona 1"
   },
-  "zona 3": {
-    "name": "Zona 3",
-    "hotelKey": "Jakarta",
-    "hotelName": "Swiss-Belhotel Epicentrum Jakarta",
-    "roomNo": "Kamar 52",
-    "type": "Deluxe",
-    "bus": "Bus 3"
+  {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "Kamar 822",
+    "name": "Crew Bus"
   },
-  "zona 1": {
-    "name": "Zona 1",
-    "hotelKey": "Gresik",
-    "hotelName": "Hotel Gresik",
-    "roomNo": "Kamar 920",
-    "type": "Twin Bed",
-    "bus": "Bus 1"
+  {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "Kamar 822",
+    "name": "Crew Bus"
   },
-  "nama": {
-    "name": "NAMA",
-    "hotelKey": "Pemalang",
-    "hotelName": "Hotel R-Gina Pemalang",
-    "roomNo": "Kamar 62",
-    "type": "Deluxe",
-    "bus": "Bus 1"
+  {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "Kamar 818",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "Kamar 818",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "Kamar 906",
+    "name": "Driver"
+  },
+  {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "Kamar 906",
+    "name": "Perawat"
+  },
+  {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "Kamar 808",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "Kamar 808",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "Kamar 810",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "Kamar 810",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "Kamar 910",
+    "name": "Driver"
+  },
+  {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "Kamar 910",
+    "name": "Driver"
+  },
+  {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "Kamar 602",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "Kamar 602",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "Kamar 605",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "Kamar 605",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "Kamar 607",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "Kamar 607",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "Kamar 609",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "Kamar 609",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "Kamar 611",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "Kamar 611",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "Kamar 612",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "Kamar 612",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "Kamar 705",
+    "name": "Driver"
+  },
+  {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "Kamar 705",
+    "name": "Driver"
+  },
+  {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "Kamar 707",
+    "name": "Driver"
+  },
+  {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "Kamar 615",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "Kamar 615",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "Kamar 616",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "Kamar 616",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "Kamar 617",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "Kamar 617",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "Kamar 621",
+    "name": "Patwal"
+  },
+  {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "Kamar 621",
+    "name": "Patwal"
+  },
+  {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "Kamar 1",
+    "name": "NAMA"
+  },
+  {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "Kamar 11",
+    "name": "NAMA"
+  },
+  {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "Kamar 14",
+    "name": "patwal"
+  },
+  {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "Kamar 14",
+    "name": "patwal"
+  },
+  {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "Kamar 18",
+    "name": "NAMA"
+  },
+  {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "Kamar 27",
+    "name": "NAMA"
+  },
+  {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "Kamar 30",
+    "name": "driver"
+  },
+  {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "Kamar 30",
+    "name": "perawat"
+  },
+  {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "Kamar 30",
+    "name": "driver"
+  },
+  {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "Kamar 31",
+    "name": "driver"
+  },
+  {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "Kamar 32",
+    "name": "NAMA"
+  },
+  {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "Kamar 33",
+    "name": "NAMA"
+  },
+  {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "Kamar 44",
+    "name": "NAMA"
+  },
+  {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "Kamar 50",
+    "name": "NAMA"
+  },
+  {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "Kamar 52",
+    "name": "NAMA"
+  },
+  {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "Kamar 62",
+    "name": "NAMA"
+  },
+  {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "Kamar 1",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "Kamar 1",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "Kamar 1",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "Kamar 2",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "Kamar 2",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "Kamar 2",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "Kamar 3",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "Kamar 3",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "Kamar 3",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "Kamar 4",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "Kamar 4",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "Kamar 4",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "Kamar 5",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "Kamar 5",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "Kamar 5",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "Kamar 6",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "Kamar 6",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "Kamar 6",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "Kamar 13",
+    "name": "Driver"
+  },
+  {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "Kamar 13",
+    "name": "Driver"
+  },
+  {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "Kamar 14",
+    "name": "Driver"
+  },
+  {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "Kamar 14",
+    "name": "Perawat"
+  },
+  {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "Kamar 203",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "Kamar 203",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "Kamar 203",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "Kamar 204",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "Kamar 204",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "Kamar 204",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "Kamar 205",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "Kamar 205",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "Kamar 205",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "Kamar 206",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "Kamar 206",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "Kamar 206",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "Kamar 207",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "Kamar 207",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "Kamar 207",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "Kamar 208",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "Kamar 208",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "Kamar 208",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "Kamar 210",
+    "name": "Patwal"
+  },
+  {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "Kamar 210",
+    "name": "Patwal"
+  },
+  {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "Kamar 211",
+    "name": "Driver"
+  },
+  {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "Kamar 211",
+    "name": "Driver"
+  },
+  {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "Kamar 212",
+    "name": "Driver"
+  },
+  {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "Kamar 212",
+    "name": "Perawat"
+  },
+  {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "Kamar 217",
+    "name": "Zona 3"
+  },
+  {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "Kamar 217",
+    "name": "Zona 3"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 52",
+    "name": "Zona 3"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 52",
+    "name": "Zona 3"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 53",
+    "name": "Patwal"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 53",
+    "name": "Patwal"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 54",
+    "name": "Driver"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 54",
+    "name": "Driver"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 55",
+    "name": "Driver"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 55",
+    "name": "Perawat"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 56",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 56",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 57",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 57",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 58",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 58",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 59",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 59",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 60",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 60",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 61",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 61",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 62",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 62",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 63",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 63",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 64",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 64",
+    "name": "Crew Bus"
+  },
+  {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "Kamar 701",
+    "name": "NAMA"
   }
-}
+]
