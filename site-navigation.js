@@ -1,29 +1,56 @@
 (() => {
   const pages = {
     home: 'beranda_mobile_dark_safari_hwmi_mq_12/code.html',
-    itibar: 'i_tibar_musafir_final_safari_hwmi_mq_12/code.html', rules: 'tata_tertib_dark_safari_hwmi_mq_12/code.html', prayer: 'panduan_sholat_musafir_safari_hwmi_mq_12/code.html', seats: 'denah_bus_safari_hwmi_mq_12/code.html',
-    departure: 'tata_tertib_berangkat_verbatim_safari_hwmi_mq_12/code.html', speaking: 'etika_dalam_berbicara_safari_hwmi_mq_12/code.html', attire: 'etika_dalam_berpakaian_safari_hwmi_mq_12/code.html',
-    lodging: 'tata_tertib_di_penginapan_safari_hwmi_mq_12/code.html', publicArea: 'tata_tertib_selain_makam_safari_hwmi_mq_12/code.html', cemetery: 'tata_tertib_di_area_makam_safari_hwmi_mq_12/code.html', bus: 'tata_tertib_di_dalam_bus_safari_hwmi_mq_12/code.html'
+    itibar: 'i_tibar_musafir_final_safari_hwmi_mq_12/code.html',
+    rules: 'tata_tertib_dark_safari_hwmi_mq_12/code.html',
+    prayer: 'panduan_sholat_musafir_safari_hwmi_mq_12/code.html',
+    seats: 'denah_bus_safari_hwmi_mq_12/code.html',
+    departure: 'tata_tertib_berangkat_verbatim_safari_hwmi_mq_12/code.html',
+    speaking: 'etika_dalam_berbicara_safari_hwmi_mq_12/code.html',
+    attire: 'etika_dalam_berpakaian_safari_hwmi_mq_12/code.html',
+    lodging: 'tata_tertib_di_penginapan_safari_hwmi_mq_12/code.html',
+    publicArea: 'tata_tertib_selain_makam_safari_hwmi_mq_12/code.html',
+    cemetery: 'tata_tertib_di_area_makam_safari_hwmi_mq_12/code.html',
+    bus: 'tata_tertib_di_dalam_bus_safari_hwmi_mq_12/code.html',
+    rundown: 'rundown_kegiatan_safari_hwmi_mq_12/code.html',
+    rooms: 'daftar_kamar_safari_hwmi_mq_12/code.html',
+    uniforms: 'jadwal_seragam_safari_hwmi_mq_12/code.html',
+    photos: 'skema_foto_safari_hwmi_mq_12/code.html',
+    map: 'peta_safari_hwmi_mq_12/code.html'
   };
-  const root = new URL('../', window.location.href);
+
+  const path = window.location.pathname;
+  const isSubfolder = path.split('/').filter(Boolean).pop() === 'code.html';
+  const root = isSubfolder ? new URL('../', window.location.href) : new URL('./', window.location.href);
   const href = (page) => new URL(pages[page], root).href;
   const go = (page) => { window.location.href = href(page); };
-  const isHome = window.location.pathname.includes('beranda_mobile_dark');
+  const isHome = !isSubfolder || path.includes('beranda_mobile_dark');
 
   document.querySelectorAll('button[aria-label="Go back"]').forEach((button) => button.addEventListener('click', () => history.length > 1 ? history.back() : go('rules')));
-  document.querySelectorAll('button').forEach((button) => {
-    const text = button.textContent.replace(/\s+/g, ' ').trim().toLowerCase();
-    if (text.includes('sebelum berangkat')) button.addEventListener('click', () => go('departure'));
-    else if (text.includes('sebagai peserta') || text.includes('dalam berbicara')) button.addEventListener('click', () => go('speaking'));
-    else if (text.includes('dalam berpakaian')) button.addEventListener('click', () => go('attire'));
-    else if (text.includes('penginapan')) button.addEventListener('click', () => go('lodging'));
-    else if (text.includes('area umum') || text.includes('selain makam')) button.addEventListener('click', () => go('publicArea'));
-    else if (text.includes('area makam')) button.addEventListener('click', () => go('cemetery'));
-    else if (text.includes('didalam bus') || text.includes('di dalam bus')) button.addEventListener('click', () => go('bus'));
+  document.querySelectorAll('button, a').forEach((element) => {
+    const text = element.textContent.replace(/\s+/g, ' ').trim().toLowerCase();
+    if (text.includes('sebelum berangkat')) element.addEventListener('click', (e) => { if(element.tagName==='BUTTON') go('departure'); });
+    else if (text.includes('sebagai peserta') || text.includes('dalam berbicara')) element.addEventListener('click', (e) => { if(element.tagName==='BUTTON') go('speaking'); });
+    else if (text.includes('dalam berpakaian')) element.addEventListener('click', (e) => { if(element.tagName==='BUTTON') go('attire'); });
+    else if (text.includes('penginapan')) element.addEventListener('click', (e) => { if(element.tagName==='BUTTON') go('lodging'); });
+    else if (text.includes('area umum') || text.includes('selain makam')) element.addEventListener('click', (e) => { if(element.tagName==='BUTTON') go('publicArea'); });
+    else if (text.includes('area makam')) element.addEventListener('click', (e) => { if(element.tagName==='BUTTON') go('cemetery'); });
+    else if (text.includes('didalam bus') || text.includes('di dalam bus')) element.addEventListener('click', (e) => { if(element.tagName==='BUTTON') go('bus'); });
   });
-  if (isHome) document.querySelectorAll('a[href="#"]').forEach((link) => {
+
+  document.querySelectorAll('a[href="#"], a[href^="../"]').forEach((link) => {
     const text = link.textContent.replace(/\s+/g, ' ').trim();
-    const page = text.includes('Itibar Musafir') ? 'itibar' : text.includes('Tata Tertib Peserta') ? 'rules' : text.includes('Panduan Sholat Musafir') ? 'prayer' : (text.includes('Denah Bus Peserta') || text.includes('Denah Bus Sesi 3') || text.includes('Denah Bus')) ? 'seats' : null;
+    let page = null;
+    if (text.includes('Itibar Musafir')) page = 'itibar';
+    else if (text.includes('Tata Tertib Peserta')) page = 'rules';
+    else if (text.includes('Panduan Sholat Musafir')) page = 'prayer';
+    else if (text.includes('Rundown Kegiatan')) page = 'rundown';
+    else if (text.includes('Daftar Kamar Peserta')) page = 'rooms';
+    else if (text.includes('Denah Bus')) page = 'seats';
+    else if (text.includes('Jadwal Seragam')) page = 'uniforms';
+    else if (text.includes('Skema Foto Bersama')) page = 'photos';
+    else if (text.includes('Peta Safari')) page = 'map';
+    else if (text.includes('Daftar dan Informasi Peserta')) page = 'home';
     if (page) link.href = href(page);
   });
 
@@ -32,13 +59,14 @@
     ['Itibar Musafir', 'Pedoman perjalanan', 'explore', 'itibar'],
     ['Tata Tertib Peserta', 'Aturan kegiatan', 'gavel', 'rules'],
     ['Panduan Sholat Musafir', 'Panduan ibadah', 'prayer_times', 'prayer'],
-    ['Rundown Kegiatan', 'Segera hadir', 'schedule'],
-    ['Daftar Kamar Peserta', 'Segera hadir', 'hotel'],
+    ['Rundown Kegiatan', 'Jadwal acara', 'schedule', 'rundown'],
+    ['Daftar Kamar Peserta', 'Pembagian penginapan', 'hotel', 'rooms'],
     ['Denah Bus', 'Pembagian tempat duduk', 'directions_bus', 'seats'],
-    ['Jadwal Seragam', 'Segera hadir', 'apparel'],
-    ['Skema Foto Bersama', 'Segera hadir', 'groups'],
-    ['Peta Safari', 'Segera hadir', 'map']
+    ['Jadwal Seragam', 'Ketentuan seragam harian', 'apparel', 'uniforms'],
+    ['Skema Foto Bersama', 'Formasi & jadwal foto', 'groups', 'photos'],
+    ['Peta Safari', 'Rute & titik lokasi', 'map', 'map']
   ];
+
   const menuStyle = document.createElement('style');
   menuStyle.textContent = '.site-menu-trigger{position:fixed;top:16px;left:16px;z-index:10020;width:44px;height:44px;display:grid;place-items:center;border:1px solid #a58b86;border-radius:6px;background:#381510;color:#e9c176;box-shadow:0 8px 22px rgba(34,5,3,.32);cursor:pointer}.site-menu-trigger:hover,.site-menu-trigger:focus-visible{background:#550000;border-color:#ffb4a8;outline:0}.site-menu-bars{display:grid;gap:5px}.site-menu-bars i{display:block;width:19px;height:2px;border-radius:3px;background:currentColor}.site-menu-backdrop{position:fixed;inset:0;z-index:10029;background:rgba(20,3,2,.64);opacity:0;visibility:hidden;transition:opacity .22s ease,visibility .22s ease}.site-menu-panel{position:fixed;z-index:10030;top:0;left:0;bottom:0;width:min(370px,calc(100vw - 32px));padding:24px 18px 32px;overflow-y:auto;background:#280905;border-right:1px solid #57423e;box-shadow:18px 0 54px rgba(0,0,0,.38);transform:translateX(-104%);transition:transform .25s ease}.site-menu-open .site-menu-backdrop{opacity:1;visibility:visible}.site-menu-open .site-menu-panel{transform:translateX(0)}.site-menu-header{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin:2px 4px 24px;padding-bottom:20px;border-bottom:1px solid #57423e}.site-menu-kicker{margin:0 0 4px;color:#e9c176;font:600 11px "Plus Jakarta Sans",sans-serif;letter-spacing:.12em;text-transform:uppercase}.site-menu-title{margin:0;color:#ffdad4;font:600 23px "Noto Serif",serif}.site-menu-close{width:38px;height:38px;display:grid;place-items:center;border:1px solid #57423e;border-radius:4px;background:#381510;color:#e9c176;font-size:23px;line-height:1;cursor:pointer}.site-menu-list{display:grid;gap:7px}.site-menu-item{display:grid;grid-template-columns:36px 1fr;gap:10px;align-items:center;min-height:60px;padding:10px 12px;border:1px solid transparent;border-radius:6px;color:#ffdad4;text-decoration:none}.site-menu-item:hover,.site-menu-item:focus-visible,.site-menu-item.is-active{border-color:#57423e;background:#451f19;outline:0}.site-menu-item.is-active{background:#604403;color:#ffdea5}.site-menu-item.is-disabled{opacity:.52;cursor:not-allowed}.site-menu-item .material-symbols-outlined{color:#e9c176;font-size:23px}.site-menu-item strong{display:block;font:600 13px "Plus Jakarta Sans",sans-serif}.site-menu-item small{display:block;margin-top:3px;color:#dec0bb;font:400 11px "Plus Jakarta Sans",sans-serif}.site-menu-item.is-active small{color:#ffdea5}.site-mobile-bar{display:none}@media(max-width:720px){body.site-has-mobile-bar{padding-top:62px}.site-mobile-bar{position:fixed;z-index:10010;top:0;right:0;left:0;height:62px;display:flex;align-items:center;padding:0 20px 0 68px;background:rgba(40,9,5,.92);border-bottom:1px solid rgba(87,66,62,.7);box-shadow:0 4px 18px rgba(34,5,3,.22);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}.site-mobile-brand{margin:0;overflow:hidden;color:#ffdad4;font:600 17px "Noto Serif",serif;white-space:nowrap;text-overflow:ellipsis}.site-mobile-brand small{display:block;margin-top:2px;color:#e9c176;font:600 9px "Plus Jakarta Sans",sans-serif;letter-spacing:.11em;text-transform:uppercase}.site-mobile-bar .site-menu-trigger{position:absolute;top:10px;left:14px;width:42px;height:42px}.site-menu-panel{width:min(340px,calc(100vw - 24px));padding-top:20px}body.site-menu-open{overflow:hidden}}';
   document.head.append(menuStyle);
@@ -54,13 +82,14 @@
   const panel = document.createElement('aside');
   panel.className = 'site-menu-panel';
   panel.setAttribute('aria-label', 'Menu utama');
-  const isActive = (page) => page && window.location.pathname.includes(pages[page].split('/')[0]);
+  const isActive = (page) => page && pages[page] && path.includes(pages[page].split('/')[0]);
   const list = items.map(([label, detail, icon, page]) => page
     ? '<a class="site-menu-item' + (isActive(page) ? ' is-active' : '') + '" href="' + href(page) + '"><span class="material-symbols-outlined">' + icon + '</span><span><strong>' + label + '</strong><small>' + detail + '</small></span></a>'
     : '<span class="site-menu-item is-disabled" aria-disabled="true"><span class="material-symbols-outlined">' + icon + '</span><span><strong>' + label + '</strong><small>' + detail + '</small></span></span>'
   ).join('');
   panel.innerHTML = '<header class="site-menu-header"><div><p class="site-menu-kicker">Safari HWMI MQ 12</p><h2 class="site-menu-title">Menu</h2></div><button class="site-menu-close" type="button" aria-label="Tutup menu">×</button></header><nav class="site-menu-list">' + list + '</nav>';
   document.body.append(backdrop, panel);
+
   if (isHome) {
     document.body.append(trigger);
   } else {
@@ -79,4 +108,27 @@
   document.addEventListener('keydown', (event) => { if (event.key === 'Escape') close(); });
 
   if (!isHome) { const homeButton = document.createElement('a'); homeButton.href = href('home'); homeButton.setAttribute('aria-label', 'Kembali ke beranda'); homeButton.textContent = 'Beranda'; homeButton.style.cssText = 'position:fixed;right:16px;bottom:16px;z-index:9999;padding:10px 14px;border-radius:999px;background:#d1bd68;color:#201f18;font:600 14px system-ui;text-decoration:none;box-shadow:0 4px 16px #0008'; document.body.append(homeButton); }
+
+  // Auto-populate bottom navigation bar across all pages
+  document.querySelectorAll('nav.fixed.bottom-0').forEach((nav) => {
+    nav.innerHTML = `
+      <a href="${href('home')}" class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors ${isHome ? 'text-primary font-semibold' : ''}">
+        <span class="material-symbols-outlined text-[24px]">home</span>
+        <span class="text-[11px] mt-1">Beranda</span>
+      </a>
+      <a href="${href('rules')}" class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors ${isActive('rules') ? 'text-primary font-semibold' : ''}">
+        <span class="material-symbols-outlined text-[24px]">gavel</span>
+        <span class="text-[11px] mt-1">Tata Tertib</span>
+      </a>
+      <a href="${href('prayer')}" class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors ${isActive('prayer') ? 'text-primary font-semibold' : ''}">
+        <span class="material-symbols-outlined text-[24px]">prayer_times</span>
+        <span class="text-[11px] mt-1">Sholat</span>
+      </a>
+      <a href="${href('seats')}" class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors ${isActive('seats') ? 'text-primary font-semibold' : ''}">
+        <span class="material-symbols-outlined text-[24px]">directions_bus</span>
+        <span class="text-[11px] mt-1">Bus</span>
+      </a>
+    `;
+  });
 })();
+
