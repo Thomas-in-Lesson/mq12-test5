@@ -1,0 +1,21 @@
+{
+  "name": "Safari HWMI MQ 12",
+  "short_name": "Safari MQ12",
+  "description": "Panduan Resmi Safari Hubbul Wathon Minal Iman 12",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#280905",
+  "theme_color": "#280905",
+  "icons": [
+    {
+      "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAhNraClA3gUdb-QUg0l_s4RNmVjNg0txU0FqdY1Va7QFN4T-XoqYebi5jzjOewg0mxfLOzCyIP_pN1zEboM-2AKGfyi5YBT54WNAJC3Uqj_e4ptBGkPcQlm1nuUaVtIgJe679HOH4rRXKGCoWnHUrXUkYU2Vx39FFvOy_Ca04j_IlFybLFskI_7sOpeIa-mea0LQiUbmAZP6IdIVFAwD4JM6W-z4BEp5VX7O1OZ_05hxOsxOL_WiB5XSvyaFWsxNddhU8ui1L6OYo",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAhNraClA3gUdb-QUg0l_s4RNmVjNg0txU0FqdY1Va7QFN4T-XoqYebi5jzjOewg0mxfLOzCyIP_pN1zEboM-2AKGfyi5YBT54WNAJC3Uqj_e4ptBGkPcQlm1nuUaVtIgJe679HOH4rRXKGCoWnHUrXUkYU2Vx39FFvOy_Ca04j_IlFybLFskI_7sOpeIa-mea0LQiUbmAZP6IdIVFAwD4JM6W-z4BEp5VX7O1OZ_05hxOsxOL_WiB5XSvyaFWsxNddhU8ui1L6OYo",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

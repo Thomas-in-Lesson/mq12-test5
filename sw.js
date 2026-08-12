@@ -1,0 +1,70 @@
+const CACHE_NAME = 'safari-hwmi-mq12-v1';
+const ASSETS = [
+  './',
+  './index.html',
+  './site-navigation.js',
+  './beranda_mobile_dark_safari_hwmi_mq_12/code.html',
+  './i_tibar_musafir_final_safari_hwmi_mq_12/code.html',
+  './tata_tertib_dark_safari_hwmi_mq_12/code.html',
+  './panduan_sholat_musafir_safari_hwmi_mq_12/code.html',
+  './denah_bus_safari_hwmi_mq_12/code.html',
+  './denah_bus_sesi_3_safari_hwmi_mq_12/code.html',
+  './denah_tempat_duduk_elf_safari_hwmi_mq_12/code.html',
+  './tata_tertib_berangkat_verbatim_safari_hwmi_mq_12/code.html',
+  './etika_dalam_berbicara_safari_hwmi_mq_12/code.html',
+  './etika_dalam_berpakaian_safari_hwmi_mq_12/code.html',
+  './tata_tertib_di_penginapan_safari_hwmi_mq_12/code.html',
+  './tata_tertib_selain_makam_safari_hwmi_mq_12/code.html',
+  './tata_tertib_di_area_makam_safari_hwmi_mq_12/code.html',
+  './tata_tertib_di_dalam_bus_safari_hwmi_mq_12/code.html',
+  './rundown_kegiatan_safari_hwmi_mq_12/code.html',
+  './daftar_kamar_safari_hwmi_mq_12/code.html',
+  './jadwal_seragam_safari_hwmi_mq_12/code.html',
+  './skema_foto_safari_hwmi_mq_12/code.html',
+  './peta_safari_hwmi_mq_12/code.html'
+];
+
+self.addEventListener('install', (event) => {
+  event.waitUntil(
+    caches.open(CACHE_NAME).then((cache) => {
+      return cache.addAll(ASSETS).catch(() => Promise.resolve());
+    })
+  );
+  self.skipWaiting();
+});
+
+self.addEventListener('activate', (event) => {
+  event.waitUntil(
+    caches.keys().then((keys) => {
+      return Promise.all(
+        keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key))
+      );
+    })
+  );
+  self.clients.claim();
+});
+
+self.addEventListener('fetch', (event) => {
+  if (event.request.method !== 'GET') return;
+  event.respondWith(
+    caches.match(event.request).then((cachedResponse) => {
+      if (cachedResponse) {
+        fetch(event.request).then((networkResponse) => {
+          if (networkResponse && networkResponse.status === 200) {
+            caches.open(CACHE_NAME).then((cache) => cache.put(event.request, networkResponse));
+          }
+        }).catch(() => {});
+        return cachedResponse;
+      }
+      return fetch(event.request).then((networkResponse) => {
+        if (networkResponse && networkResponse.status === 200 && networkResponse.type === 'basic') {
+          const responseToCache = networkResponse.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, responseToCache));
+        }
+        return networkResponse;
+      }).catch(() => {
+        return caches.match('./index.html');
+      });
+    })
+  );
+});

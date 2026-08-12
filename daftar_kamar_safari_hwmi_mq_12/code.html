@@ -118,11 +118,17 @@
                 Daftar nomor kamar dan alokasi tempat tidur untuk seluruh peserta Safari HWMI MQ 12.
             </p>
 <div class="w-16 h-1 bg-secondary mx-auto rounded-full opacity-50"></div>
+
+<!-- Search Input -->
+<div class="max-w-md mx-auto relative pt-2">
+<span class="material-symbols-outlined absolute left-3.5 top-[21px] text-on-surface-variant text-[20px]">search</span>
+<input id="room-search" type="text" placeholder="Cari nama peserta / nomor kamar..." class="w-full bg-surface-container border border-outline-variant/40 rounded-full py-2.5 pl-10 pr-4 text-sm text-on-surface placeholder:text-on-surface-variant/60 focus:border-secondary focus:outline-none transition-colors">
+</div>
 </section>
 
-<section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<section id="room-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <!-- Kamar 101 -->
-<div class="bg-surface-container-low rounded-xl p-6 border-t border-l border-surface-variant/30 shadow-md space-y-4">
+<div class="room-card bg-surface-container-low rounded-xl p-6 border-t border-l border-surface-variant/30 shadow-md space-y-4">
 <div class="flex items-center justify-between border-b border-surface-variant/40 pb-3">
 <div class="flex items-center gap-2 text-secondary">
 <span class="material-symbols-outlined text-[24px]">hotel</span>
@@ -139,7 +145,7 @@
 </div>
 
 <!-- Kamar 102 -->
-<div class="bg-surface-container-low rounded-xl p-6 border-t border-l border-surface-variant/30 shadow-md space-y-4">
+<div class="room-card bg-surface-container-low rounded-xl p-6 border-t border-l border-surface-variant/30 shadow-md space-y-4">
 <div class="flex items-center justify-between border-b border-surface-variant/40 pb-3">
 <div class="flex items-center gap-2 text-secondary">
 <span class="material-symbols-outlined text-[24px]">hotel</span>
@@ -156,7 +162,7 @@
 </div>
 
 <!-- Kamar 201 -->
-<div class="bg-surface-container-low rounded-xl p-6 border-t border-l border-surface-variant/30 shadow-md space-y-4">
+<div class="room-card bg-surface-container-low rounded-xl p-6 border-t border-l border-surface-variant/30 shadow-md space-y-4">
 <div class="flex items-center justify-between border-b border-surface-variant/40 pb-3">
 <div class="flex items-center gap-2 text-secondary">
 <span class="material-symbols-outlined text-[24px]">hotel</span>
@@ -175,4 +181,13 @@
 </main>
 <nav class="fixed bottom-0 w-full z-50 bg-surface/90 backdrop-blur-lg border-t border-outline-variant/20 shadow-md md:hidden flex justify-around items-center h-20 px-4">
 </nav>
+<script>
+  document.getElementById('room-search').addEventListener('input', (e) => {
+    const q = e.target.value.toLowerCase().trim();
+    document.querySelectorAll('.room-card').forEach((card) => {
+      const text = card.textContent.toLowerCase();
+      card.style.display = text.includes(q) ? 'block' : 'none';
+    });
+  });
+</script>
 <script src="../site-navigation.js"></script></body></html>

@@ -130,5 +130,21 @@
       </a>
     `;
   });
+
+  // PWA & Service Worker Registration
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      const swUrl = new URL('sw.js', root).href;
+      navigator.serviceWorker.register(swUrl).catch(() => {});
+    });
+  }
+
+  // Inject Web App Manifest
+  if (!document.querySelector('link[rel="manifest"]')) {
+    const manifestLink = document.createElement('link');
+    manifestLink.rel = 'manifest';
+    manifestLink.href = new URL('manifest.json', root).href;
+    document.head.append(manifestLink);
+  }
 })();
 
