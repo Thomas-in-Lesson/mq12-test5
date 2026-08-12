@@ -68,7 +68,6 @@
   // Self-Contained Scoped CSS Stylesheet Injection
   const globalStyle = document.createElement('style');
   globalStyle.textContent = `
-    /* Global Body Padding for Top Header & Bottom Nav */
     body {
       padding-top: 56px !important;
       padding-bottom: 76px !important;
@@ -132,7 +131,7 @@
       padding-bottom: 14px;
       border-bottom: 1px solid #4a211a;
     }
-    .site-menu-kicker { margin: 0; color: #e9c176; font: 600 10px sans-serif; letter-spacing: 0.12em; text-transform: uppercase; }
+    .site-menu-kicker { margin: 0; color: #e9c176; font: 700 9px sans-serif; letter-spacing: 0.12em; text-transform: uppercase; }
     .site-menu-title { margin: 2px 0 0; color: #ffdad4; font: 700 20px serif; }
     .site-menu-close {
       width: 34px; height: 34px;
@@ -177,8 +176,8 @@
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
     }
-    .site-mobile-brand { margin: 0; color: #ffdad4; font: 600 14px serif; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 160px; }
-    .site-mobile-brand small { display: block; margin-top: 1px; color: #e9c176; font: 600 9px sans-serif; letter-spacing: 0.1em; text-transform: uppercase; }
+    .site-mobile-brand { margin: 0; color: #ffdad4; font: 600 14px serif; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 170px; }
+    .site-mobile-brand small { display: block; margin-top: 1px; color: #e9c176; font: 700 8px sans-serif; letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
     /* Offline Status Badge */
     .site-offline-badge {
@@ -204,7 +203,7 @@
     .site-offline-dot { width: 6px; height: 6px; border-radius: 50%; background: #4ade80; }
     .site-offline-badge.offline .site-offline-dot { background: #fbbf24; }
 
-    /* Bottom Floating Navigation Bar (Integrated 5-Tab Layout) */
+    /* Bottom Floating Navigation Bar */
     .site-bottom-nav {
       position: fixed;
       bottom: 0; left: 0; right: 0;
@@ -228,7 +227,7 @@
       text-decoration: none;
       font: 500 10px sans-serif;
       gap: 2px;
-      padding: 4px 6px;
+      padding: 4px 8px;
       border: 0; background: transparent;
       cursor: pointer;
     }
@@ -238,16 +237,27 @@
     }
     .site-bottom-nav-item .material-symbols-outlined { font-size: 22px; }
 
-    /* Special Red Emergency SOS Tab styling in Bottom Nav */
-    .site-bottom-nav-item.is-sos {
-      color: #ffb4ab;
-    }
-    .site-bottom-nav-item.is-sos .material-symbols-outlined {
-      color: #ffb4ab;
-    }
-    .site-bottom-nav-item.is-sos:hover {
+    /* Compact Bullet SOS FAB Button (Round 44px Floating Bullet) */
+    .site-sos-bullet {
+      position: fixed;
+      bottom: 72px;
+      right: 14px;
+      z-index: 9985;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #a8000b, #670007);
+      border: 1.5px solid #ffb4ab;
       color: #ffdad6;
+      display: grid;
+      place-items: center;
+      box-shadow: 0 6px 20px rgba(147,0,10,0.55);
+      cursor: pointer;
+      transition: transform 0.15s ease;
     }
+    .site-sos-bullet:active { transform: scale(0.9); }
+    .site-sos-bullet .material-symbols-outlined { font-size: 22px; color: #ffdad6; }
+    .site-sos-bullet span.sos-badge-txt { font: 800 9px sans-serif; letter-spacing: -0.02em; margin-top: -2px; }
 
     /* SOS Modal Overlay & Content */
     .site-sos-modal-overlay {
@@ -362,8 +372,8 @@
   panel.innerHTML = `
     <header class="site-menu-header">
       <div>
-        <p class="site-menu-kicker">Safari HWMI MQ 12</p>
-        <h2 class="site-menu-title">Menu</h2>
+        <p class="site-menu-kicker">ATAS BERKAT ROCHMAT ALLOH YANG MAHA KUASA</p>
+        <h2 class="site-menu-title">Safari HWMI MQ 12</h2>
       </div>
       <button class="site-menu-close" type="button" aria-label="Tutup menu">×</button>
     </header>
@@ -388,12 +398,11 @@
   updateOfflineStatus();
 
   // Render Top Header Bar Consistently Across ALL Pages
-  // First remove any existing <header> in body if it collides
   document.querySelectorAll('header.fixed.top-0').forEach(el => el.remove());
 
   const mobileBar = document.createElement('header');
   mobileBar.className = 'site-mobile-bar';
-  mobileBar.innerHTML = '<p class="site-mobile-brand">Safari HWMI MQ 12<small>Navigasi Utama</small></p>';
+  mobileBar.innerHTML = '<p class="site-mobile-brand"><small>ATAS BERKAT ROCHMAT ALLOH YANG MAHA KUASA</small>Safari HWMI MQ 12</p>';
   mobileBar.append(trigger, badge);
   document.body.prepend(mobileBar);
 
@@ -490,7 +499,16 @@
     });
   }
 
-  // Global Bottom Navigation Bar (5 Integrated Clean Tabs - Zero Floating Overlap)
+  // Compact Floating Round Bullet SOS FAB Button (44px Bullet)
+  const sosBullet = document.createElement('button');
+  sosBullet.type = 'button';
+  sosBullet.className = 'site-sos-bullet';
+  sosBullet.setAttribute('aria-label', 'Bantuan PIC SOS');
+  sosBullet.innerHTML = '<span class="material-symbols-outlined">sos</span>';
+  sosBullet.addEventListener('click', openSos);
+  document.body.append(sosBullet);
+
+  // Global Bottom Navigation Bar (4 Clean Main Tabs)
   const navBar = document.createElement('nav');
   navBar.className = 'site-bottom-nav';
   navBar.innerHTML = `
@@ -502,10 +520,6 @@
       <span class="material-symbols-outlined">gavel</span>
       <span>Tata Tertib</span>
     </a>
-    <button type="button" id="bottom-sos-btn" class="site-bottom-nav-item is-sos">
-      <span class="material-symbols-outlined">sos</span>
-      <span>Bantuan</span>
-    </button>
     <a href="${href('prayer')}" class="site-bottom-nav-item${isActive('prayer') ? ' is-active' : ''}">
       <span class="material-symbols-outlined">prayer_times</span>
       <span>Sholat</span>
@@ -516,11 +530,6 @@
     </a>
   `;
   document.body.append(navBar);
-
-  const bottomSosBtn = navBar.querySelector('#bottom-sos-btn');
-  if (bottomSosBtn) {
-    bottomSosBtn.addEventListener('click', openSos);
-  }
 
   // PWA Service Worker
   if ('serviceWorker' in navigator) {
