@@ -135,30 +135,6 @@
     .site-menu-item strong { display: block; font: 600 13px sans-serif; }
     .site-menu-item small { display: block; margin-top: 2px; color: #cbb2ad; font: 400 11px sans-serif; }
 
-    /* Offline Status Badge */
-    .site-offline-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      padding: 3px 8px;
-      border-radius: 999px;
-      font: 700 10px sans-serif;
-      border: 1px solid rgba(74,222,128,0.4);
-      background: rgba(5,46,22,0.85);
-      color: #86efac;
-      cursor: pointer;
-      user-select: none;
-      white-space: nowrap;
-      shrink: 0;
-    }
-    .site-offline-badge.offline {
-      border-color: rgba(251,191,36,0.5);
-      background: rgba(69,26,3,0.9);
-      color: #fde047;
-    }
-    .site-offline-dot { width: 6px; height: 6px; border-radius: 50%; background: #4ade80; }
-    .site-offline-badge.offline .site-offline-dot { background: #fbbf24; }
-
     /* Compact Bullet SOS FAB Button */
     .site-sos-bullet {
       position: fixed;
@@ -267,7 +243,7 @@
       -webkit-backdrop-filter: blur(12px);
     }
 
-    /* True 50% Absolute Center Alignment for Sacred Text Aligned with Logo Center Line */
+    /* True 50% Absolute Center Alignment for Sacred Text */
     .site-header-center-title {
       position: absolute;
       left: 50%;
@@ -276,7 +252,6 @@
       text-align: center;
       pointer-events: none;
       width: max-content;
-      max-width: calc(100vw - 120px);
     }
     .site-header-center-title span {
       display: block;
@@ -285,8 +260,30 @@
       font-weight: 700;
       text-transform: uppercase;
       white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+    }
+
+    /* Toast Notification for Offline Badge */
+    .site-toast {
+      position: fixed;
+      top: 64px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10060;
+      background: #2b0b07;
+      border: 1px solid #e9c176;
+      color: #ffdad4;
+      padding: 8px 16px;
+      border-radius: 12px;
+      font: 600 11px sans-serif;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.2s ease, visibility 0.2s ease;
+      white-space: nowrap;
+    }
+    .site-toast.is-show {
+      opacity: 1;
+      visibility: visible;
     }
 
     /* ========================================================= */
@@ -319,15 +316,44 @@
         cursor: pointer;
       }
 
-      .site-header-center-title span {
-        font-size: 9.5px;
-        letter-spacing: 0.04em;
+      .site-header-center-title {
+        max-width: calc(100vw - 90px);
       }
 
+      .site-header-center-title span {
+        font-size: 9px;
+        letter-spacing: 0.03em;
+      }
+
+      /* Ultra-Minimal 22px Glowing Dot Indicator on Mobile (Zero Collision) */
       .site-offline-badge {
         position: absolute;
-        top: 14px;
-        right: 10px;
+        top: 17px;
+        right: 12px;
+        padding: 4px 6px;
+        border-radius: 999px;
+        border: 1px solid rgba(74,222,128,0.4);
+        background: rgba(5,46,22,0.9);
+        color: #86efac;
+      }
+      .site-offline-badge.offline {
+        border-color: rgba(251,191,36,0.5);
+        background: rgba(69,26,3,0.95);
+        color: #fde047;
+      }
+      .site-offline-badge span.txt {
+        display: none !important; /* Hidden on mobile to give 100% width to centered sacred text */
+      }
+      .site-offline-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #4ade80;
+        box-shadow: 0 0 6px #4ade80;
+      }
+      .site-offline-badge.offline .site-offline-dot {
+        background: #fbbf24;
+        box-shadow: 0 0 6px #fbbf24;
       }
 
       .site-bottom-nav {
@@ -402,6 +428,10 @@
         cursor: pointer;
       }
 
+      .site-header-center-title {
+        max-width: calc(100vw - 260px);
+      }
+
       .site-header-center-title span {
         font-size: 13px;
         letter-spacing: 0.12em;
@@ -411,6 +441,11 @@
         position: absolute;
         top: 16px;
         right: 16px;
+        padding: 4px 10px;
+        border-radius: 999px;
+      }
+      .site-offline-badge span.txt {
+        display: inline !important;
       }
 
       .site-sos-bullet {
@@ -467,18 +502,35 @@
   `;
   document.body.append(backdrop, panel);
 
-  // Offline Badge setup
+  // Offline Badge setup with Toast
   const badge = document.createElement('div');
   badge.className = 'site-offline-badge';
+  
+  const toast = document.createElement('div');
+  toast.className = 'site-toast';
+  document.body.append(toast);
+
+  function showToast(msg) {
+    toast.textContent = msg;
+    toast.classList.add('is-show');
+    setTimeout(() => toast.classList.remove('is-show'), 3000);
+  }
+
   function updateOfflineStatus() {
     if (navigator.onLine) {
       badge.className = 'site-offline-badge';
-      badge.innerHTML = '<span class="site-offline-dot"></span><span>Offline Ready</span>';
+      badge.innerHTML = '<span class="site-offline-dot"></span><span class="txt">Offline Ready</span>';
     } else {
       badge.className = 'site-offline-badge offline';
-      badge.innerHTML = '<span class="site-offline-dot"></span><span>Offline Mode</span>';
+      badge.innerHTML = '<span class="site-offline-dot"></span><span class="txt">Offline Mode</span>';
     }
   }
+
+  badge.addEventListener('click', () => {
+    const isOff = !navigator.onLine;
+    showToast(isOff ? '⚡ Mode Offline (Tanpa Sinyal): Data tersimpan di HP' : '🟢 Offline Ready: Seluruh data aman tersimpan di HP Anda');
+  });
+
   window.addEventListener('online', updateOfflineStatus);
   window.addEventListener('offline', updateOfflineStatus);
   updateOfflineStatus();
