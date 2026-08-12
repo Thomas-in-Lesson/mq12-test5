@@ -65,36 +65,13 @@
     ['Peta Safari', 'Rute & titik lokasi', 'map', 'map']
   ];
 
-  // Self-Contained Scoped CSS Stylesheet Injection
+  // Self-Contained Responsive Scoped CSS (Mobile vs Laptop/Desktop)
   const globalStyle = document.createElement('style');
   globalStyle.textContent = `
-    body {
-      padding-top: 56px !important;
-      padding-bottom: 76px !important;
-    }
-
-    /* Menu Drawer Trigger Button */
-    .site-menu-trigger {
-      position: absolute;
-      top: 8px;
-      left: 12px;
-      z-index: 10020;
-      width: 40px;
-      height: 40px;
-      display: grid;
-      place-items: center;
-      border: 1px solid #573a34;
-      border-radius: 8px;
-      background: #2b0b07;
-      color: #e9c176;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.35);
-      cursor: pointer;
-    }
-    .site-menu-trigger:hover { background: #3d120c; border-color: #e9c176; }
+    /* Common Shared Styles */
     .site-menu-bars { display: grid; gap: 4px; }
     .site-menu-bars i { display: block; width: 18px; height: 2px; border-radius: 2px; background: currentColor; }
     
-    /* Backdrop & Panel */
     .site-menu-backdrop {
       position: fixed;
       inset: 0;
@@ -110,7 +87,7 @@
       position: fixed;
       z-index: 10030;
       top: 0; left: 0; bottom: 0;
-      width: min(320px, calc(100vw - 32px));
+      width: min(340px, calc(100vw - 32px));
       padding: 20px 16px 32px;
       overflow-y: auto;
       background: #1f0604;
@@ -160,40 +137,6 @@
     .site-menu-item strong { display: block; font: 600 13px sans-serif; }
     .site-menu-item small { display: block; margin-top: 2px; color: #cbb2ad; font: 400 11px sans-serif; }
 
-    /* Top Navigation Bar with Centered Head Text */
-    .site-mobile-bar {
-      position: fixed;
-      z-index: 10010;
-      top: 0; right: 0; left: 0;
-      height: 56px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 12px;
-      background: rgba(28,7,4,0.96);
-      border-bottom: 1px solid #4a211a;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-    }
-    .site-header-center-title {
-      position: absolute;
-      left: 56px;
-      right: 110px;
-      text-align: center;
-      pointer-events: none;
-    }
-    .site-header-center-title span {
-      display: block;
-      color: #e9c176;
-      font: 700 10px/1.2 "Noto Serif", "Plus Jakarta Sans", serif;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
     /* Offline Status Badge */
     .site-offline-badge {
       display: inline-flex;
@@ -218,48 +161,10 @@
     .site-offline-dot { width: 6px; height: 6px; border-radius: 50%; background: #4ade80; }
     .site-offline-badge.offline .site-offline-dot { background: #fbbf24; }
 
-    /* Bottom Floating Navigation Bar */
-    .site-bottom-nav {
-      position: fixed;
-      bottom: 0; left: 0; right: 0;
-      z-index: 9990;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      background: rgba(22,5,3,0.97);
-      border-top: 1px solid #4a211a;
-      box-shadow: 0 -4px 20px rgba(0,0,0,0.5);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-    }
-    .site-bottom-nav-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: #cbb2ad;
-      text-decoration: none;
-      font: 500 10px sans-serif;
-      gap: 2px;
-      padding: 4px 8px;
-      border: 0; background: transparent;
-      cursor: pointer;
-    }
-    .site-bottom-nav-item.is-active, .site-bottom-nav-item:hover {
-      color: #e9c176;
-      font-weight: 700;
-    }
-    .site-bottom-nav-item .material-symbols-outlined { font-size: 22px; }
-
-    /* Compact Bullet SOS FAB Button (Round 44px Floating Bullet) */
+    /* Compact Bullet SOS FAB Button */
     .site-sos-bullet {
       position: fixed;
-      bottom: 74px;
-      right: 14px;
       z-index: 9985;
-      width: 44px;
-      height: 44px;
       border-radius: 50%;
       background: linear-gradient(135deg, #a8000b, #670007);
       border: 1.5px solid #ffb4ab;
@@ -271,7 +176,7 @@
       transition: transform 0.15s ease;
     }
     .site-sos-bullet:active { transform: scale(0.9); }
-    .site-sos-bullet .material-symbols-outlined { font-size: 22px; color: #ffdad6; }
+    .site-sos-bullet .material-symbols-outlined { color: #ffdad6; }
 
     /* SOS Modal Overlay & Content */
     .site-sos-modal-overlay {
@@ -348,6 +253,179 @@
     }
     .site-sos-act-wa { background: #1b4d2e; border: 1px solid #2e7d48; color: #7be495; }
     .site-sos-act-call { background: #4d3800; border: 1px solid #7a5900; color: #ffdea5; }
+
+    /* ========================================================= */
+    /* MOBILE DEVICE STYLES (screen width <= 768px)              */
+    /* ========================================================= */
+    @media (max-width: 768px) {
+      body {
+        padding-top: 56px !important;
+        padding-bottom: 76px !important;
+      }
+
+      .site-mobile-bar {
+        position: fixed;
+        z-index: 10010;
+        top: 0; right: 0; left: 0;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+        background: rgba(28,7,4,0.96);
+        border-bottom: 1px solid #4a211a;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+
+      .site-menu-trigger {
+        position: absolute;
+        top: 8px;
+        left: 10px;
+        z-index: 10020;
+        width: 40px;
+        height: 40px;
+        display: grid;
+        place-items: center;
+        border: 1px solid #573a34;
+        border-radius: 8px;
+        background: #2b0b07;
+        color: #e9c176;
+        cursor: pointer;
+      }
+
+      .site-header-center-title {
+        position: absolute;
+        left: 54px;
+        right: 105px;
+        text-align: center;
+        pointer-events: none;
+      }
+
+      .site-header-center-title span {
+        display: block;
+        color: #e9c176;
+        font: 700 9.5px/1.2 "Noto Serif", "Plus Jakarta Sans", serif;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .site-offline-badge {
+        position: absolute;
+        top: 14px;
+        right: 10px;
+      }
+
+      .site-bottom-nav {
+        position: fixed;
+        bottom: 0; left: 0; right: 0;
+        z-index: 9990;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background: rgba(22,5,3,0.97);
+        border-top: 1px solid #4a211a;
+        box-shadow: 0 -4px 20px rgba(0,0,0,0.5);
+        backdrop-filter: blur(16px);
+      }
+
+      .site-bottom-nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #cbb2ad;
+        text-decoration: none;
+        font: 500 10px sans-serif;
+        gap: 2px;
+        padding: 4px 8px;
+        border: 0; background: transparent;
+      }
+      .site-bottom-nav-item.is-active, .site-bottom-nav-item:hover { color: #e9c176; font-weight: 700; }
+      .site-bottom-nav-item .material-symbols-outlined { font-size: 22px; }
+
+      .site-sos-bullet {
+        bottom: 74px;
+        right: 14px;
+        width: 42px;
+        height: 42px;
+      }
+      .site-sos-bullet .material-symbols-outlined { font-size: 20px; }
+    }
+
+    /* ========================================================= */
+    /* LAPTOP & DESKTOP STYLES (screen width > 768px)            */
+    /* ========================================================= */
+    @media (min-width: 769px) {
+      body {
+        padding-top: 64px !important;
+        padding-bottom: 0 !important;
+      }
+
+      /* HIDE MOBILE BOTTOM NAV BAR COMPLETELY ON LAPTOP/DESKTOP */
+      .site-bottom-nav {
+        display: none !important;
+      }
+
+      .site-mobile-bar {
+        position: fixed;
+        z-index: 10010;
+        top: 0; right: 0; left: 0;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 24px;
+        background: rgba(28,7,4,0.95);
+        border-bottom: 1px solid #4a211a;
+        backdrop-filter: blur(12px);
+      }
+
+      .site-menu-trigger {
+        position: relative;
+        top: auto; left: auto;
+        width: 44px; height: 44px;
+        border: 1px solid #573a34;
+        border-radius: 8px;
+        background: #2b0b07;
+        color: #e9c176;
+        cursor: pointer;
+      }
+
+      .site-header-center-title {
+        position: relative;
+        left: auto; right: auto;
+        flex: 1;
+        text-align: center;
+        pointer-events: none;
+      }
+
+      .site-header-center-title span {
+        display: inline-block;
+        color: #e9c176;
+        font: 700 14px "Noto Serif", "Plus Jakarta Sans", serif;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .site-offline-badge {
+        position: relative;
+        top: auto; right: auto;
+      }
+
+      .site-sos-bullet {
+        bottom: 28px;
+        right: 28px;
+        width: 48px;
+        height: 48px;
+      }
+      .site-sos-bullet .material-symbols-outlined { font-size: 24px; }
+    }
   `;
   document.head.append(globalStyle);
 
@@ -517,7 +595,7 @@
     });
   }
 
-  // Compact Floating Round Bullet SOS FAB Button (44px Bullet)
+  // Compact Floating Round Bullet SOS FAB Button (42px Bullet)
   const sosBullet = document.createElement('button');
   sosBullet.type = 'button';
   sosBullet.className = 'site-sos-bullet';
@@ -526,7 +604,7 @@
   sosBullet.addEventListener('click', openSos);
   document.body.append(sosBullet);
 
-  // Global Bottom Navigation Bar (4 Clean Main Tabs)
+  // Global Bottom Navigation Bar (Mobile Only - Hidden on Laptop/Desktop)
   const navBar = document.createElement('nav');
   navBar.className = 'site-bottom-nav';
   navBar.innerHTML = `
