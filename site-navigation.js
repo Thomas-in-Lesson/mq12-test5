@@ -262,7 +262,36 @@
       white-space: nowrap;
     }
 
-    /* Toast Notification for Offline Badge */
+    /* Sleek Glowing Lamp Symbol Badge Button */
+    .site-offline-badge {
+      position: absolute;
+      z-index: 10020;
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      border: 1.5px solid rgba(74,222,128,0.5);
+      background: rgba(5,46,22,0.9);
+      color: #4ade80;
+      box-shadow: 0 0 12px rgba(74,222,128,0.4);
+      cursor: pointer;
+      user-select: none;
+      transition: transform 0.15s ease, box-shadow 0.2s ease;
+    }
+    .site-offline-badge:active { transform: scale(0.92); }
+    .site-offline-badge.offline {
+      border-color: rgba(251,191,36,0.6);
+      background: rgba(69,26,3,0.95);
+      color: #fbbf24;
+      box-shadow: 0 0 12px rgba(251,191,36,0.4);
+    }
+    .site-offline-badge .material-symbols-outlined {
+      font-size: 20px;
+      filter: drop-shadow(0 0 4px currentColor);
+    }
+
+    /* Toast Notification for Lamp Status Click */
     .site-toast {
       position: fixed;
       top: 64px;
@@ -272,14 +301,15 @@
       background: #2b0b07;
       border: 1px solid #e9c176;
       color: #ffdad4;
-      padding: 8px 16px;
-      border-radius: 12px;
-      font: 600 11px sans-serif;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+      padding: 10px 18px;
+      border-radius: 14px;
+      font: 600 12px sans-serif;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.7);
       opacity: 0;
       visibility: hidden;
       transition: opacity 0.2s ease, visibility 0.2s ease;
       white-space: nowrap;
+      text-align: center;
     }
     .site-toast.is-show {
       opacity: 1;
@@ -317,7 +347,7 @@
       }
 
       .site-header-center-title {
-        max-width: calc(100vw - 90px);
+        max-width: calc(100vw - 110px);
       }
 
       .site-header-center-title span {
@@ -325,35 +355,9 @@
         letter-spacing: 0.03em;
       }
 
-      /* Ultra-Minimal 22px Glowing Dot Indicator on Mobile (Zero Collision) */
       .site-offline-badge {
-        position: absolute;
-        top: 17px;
-        right: 12px;
-        padding: 4px 6px;
-        border-radius: 999px;
-        border: 1px solid rgba(74,222,128,0.4);
-        background: rgba(5,46,22,0.9);
-        color: #86efac;
-      }
-      .site-offline-badge.offline {
-        border-color: rgba(251,191,36,0.5);
-        background: rgba(69,26,3,0.95);
-        color: #fde047;
-      }
-      .site-offline-badge span.txt {
-        display: none !important; /* Hidden on mobile to give 100% width to centered sacred text */
-      }
-      .site-offline-dot {
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background: #4ade80;
-        box-shadow: 0 0 6px #4ade80;
-      }
-      .site-offline-badge.offline .site-offline-dot {
-        background: #fbbf24;
-        box-shadow: 0 0 6px #fbbf24;
+        top: 10px;
+        right: 10px;
       }
 
       .site-bottom-nav {
@@ -429,7 +433,7 @@
       }
 
       .site-header-center-title {
-        max-width: calc(100vw - 260px);
+        max-width: calc(100vw - 200px);
       }
 
       .site-header-center-title span {
@@ -438,14 +442,8 @@
       }
 
       .site-offline-badge {
-        position: absolute;
-        top: 16px;
+        top: 12px;
         right: 16px;
-        padding: 4px 10px;
-        border-radius: 999px;
-      }
-      .site-offline-badge span.txt {
-        display: inline !important;
       }
 
       .site-sos-bullet {
@@ -502,8 +500,9 @@
   `;
   document.body.append(backdrop, panel);
 
-  // Offline Badge setup with Toast
-  const badge = document.createElement('div');
+  // Glowing Lamp Symbol Badge Setup with Toast Notification
+  const badge = document.createElement('button');
+  badge.type = 'button';
   badge.className = 'site-offline-badge';
   
   const toast = document.createElement('div');
@@ -513,22 +512,24 @@
   function showToast(msg) {
     toast.textContent = msg;
     toast.classList.add('is-show');
-    setTimeout(() => toast.classList.remove('is-show'), 3000);
+    setTimeout(() => toast.classList.remove('is-show'), 3500);
   }
 
   function updateOfflineStatus() {
     if (navigator.onLine) {
       badge.className = 'site-offline-badge';
-      badge.innerHTML = '<span class="site-offline-dot"></span><span class="txt">Offline Ready</span>';
+      badge.setAttribute('aria-label', 'Indikator Lampu Hijau: Mode Offline Ready');
+      badge.innerHTML = '<span class="material-symbols-outlined">lightbulb</span>';
     } else {
       badge.className = 'site-offline-badge offline';
-      badge.innerHTML = '<span class="site-offline-dot"></span><span class="txt">Offline Mode</span>';
+      badge.setAttribute('aria-label', 'Indikator Lampu Kuning: Anda Sedang Offline');
+      badge.innerHTML = '<span class="material-symbols-outlined">lightbulb</span>';
     }
   }
 
   badge.addEventListener('click', () => {
     const isOff = !navigator.onLine;
-    showToast(isOff ? '⚡ Mode Offline (Tanpa Sinyal): Data tersimpan di HP' : '🟢 Offline Ready: Seluruh data aman tersimpan di HP Anda');
+    showToast(isOff ? '💡 Lampu Kuning (Offline): Aplikasi tetap berfungsi penuh tanpa jaringan' : '💡 Lampu Hijau (Offline Ready): Seluruh data tersimpan aman di HP/Perangkat Anda');
   });
 
   window.addEventListener('online', updateOfflineStatus);
