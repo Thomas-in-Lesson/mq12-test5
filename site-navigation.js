@@ -160,7 +160,7 @@
     .site-menu-item strong { display: block; font: 600 13px sans-serif; }
     .site-menu-item small { display: block; margin-top: 2px; color: #cbb2ad; font: 400 11px sans-serif; }
 
-    /* Top Navigation Bar */
+    /* Top Navigation Bar with Centered Head Text */
     .site-mobile-bar {
       position: fixed;
       z-index: 10010;
@@ -169,15 +169,30 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 12px 0 60px;
+      padding: 0 12px;
       background: rgba(28,7,4,0.96);
       border-bottom: 1px solid #4a211a;
       box-shadow: 0 4px 16px rgba(0,0,0,0.3);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
     }
-    .site-mobile-brand { margin: 0; color: #ffdad4; font: 600 14px serif; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 170px; }
-    .site-mobile-brand small { display: block; margin-top: 1px; color: #e9c176; font: 700 8px sans-serif; letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .site-header-center-title {
+      position: absolute;
+      left: 56px;
+      right: 110px;
+      text-align: center;
+      pointer-events: none;
+    }
+    .site-header-center-title span {
+      display: block;
+      color: #e9c176;
+      font: 700 10px/1.2 "Noto Serif", "Plus Jakarta Sans", serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
 
     /* Offline Status Badge */
     .site-offline-badge {
@@ -240,7 +255,7 @@
     /* Compact Bullet SOS FAB Button (Round 44px Floating Bullet) */
     .site-sos-bullet {
       position: fixed;
-      bottom: 72px;
+      bottom: 74px;
       right: 14px;
       z-index: 9985;
       width: 44px;
@@ -257,7 +272,6 @@
     }
     .site-sos-bullet:active { transform: scale(0.9); }
     .site-sos-bullet .material-symbols-outlined { font-size: 22px; color: #ffdad6; }
-    .site-sos-bullet span.sos-badge-txt { font: 800 9px sans-serif; letter-spacing: -0.02em; margin-top: -2px; }
 
     /* SOS Modal Overlay & Content */
     .site-sos-modal-overlay {
@@ -402,7 +416,11 @@
 
   const mobileBar = document.createElement('header');
   mobileBar.className = 'site-mobile-bar';
-  mobileBar.innerHTML = '<p class="site-mobile-brand"><small>ATAS BERKAT ROCHMAT ALLOH YANG MAHA KUASA</small>Safari HWMI MQ 12</p>';
+  mobileBar.innerHTML = `
+    <div class="site-header-center-title">
+      <span>ATAS BERKAT ROCHMAT ALLOH YANG MAHA KUASA</span>
+    </div>
+  `;
   mobileBar.append(trigger, badge);
   document.body.prepend(mobileBar);
 
