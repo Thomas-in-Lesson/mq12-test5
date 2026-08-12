@@ -16,7 +16,8 @@
     rooms: 'daftar_kamar_safari_hwmi_mq_12/code.html',
     uniforms: 'jadwal_seragam_safari_hwmi_mq_12/code.html',
     photos: 'skema_foto_safari_hwmi_mq_12/code.html',
-    map: 'peta_safari_hwmi_mq_12/code.html'
+    map: 'peta_safari_hwmi_mq_12/code.html',
+    starterpack: 'starterpack_dan_packing_safari_hwmi_mq_12/code.html'
   };
 
   const path = window.location.pathname;
@@ -50,6 +51,7 @@
     else if (text.includes('Jadwal Seragam')) page = 'uniforms';
     else if (text.includes('Skema Foto Bersama')) page = 'photos';
     else if (text.includes('Peta Safari')) page = 'map';
+    else if (text.includes('Starterpack') || text.includes('Teknis Packing')) page = 'starterpack';
     else if (text.includes('Daftar dan Informasi Peserta')) page = 'home';
     if (page) link.href = href(page);
   });
@@ -57,6 +59,7 @@
   const items = [
     ['Beranda', 'Beranda utama', 'home', 'home'],
     ['Itibar Musafir', 'Pedoman perjalanan', 'explore', 'itibar'],
+    ['Starterpack & Packing', 'Perlengkapan wajib & tas', 'luggage', 'starterpack'],
     ['Tata Tertib Peserta', 'Aturan kegiatan', 'gavel', 'rules'],
     ['Panduan Sholat Musafir', 'Panduan ibadah', 'prayer_times', 'prayer'],
     ['Rundown Kegiatan', 'Jadwal acara', 'schedule', 'rundown'],

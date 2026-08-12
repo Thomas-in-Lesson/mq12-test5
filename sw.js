@@ -21,7 +21,8 @@ const ASSETS = [
   './daftar_kamar_safari_hwmi_mq_12/code.html',
   './jadwal_seragam_safari_hwmi_mq_12/code.html',
   './skema_foto_safari_hwmi_mq_12/code.html',
-  './peta_safari_hwmi_mq_12/code.html'
+  './peta_safari_hwmi_mq_12/code.html',
+  './starterpack_dan_packing_safari_hwmi_mq_12/code.html'
 ];
 
 self.addEventListener('install', (event) => {

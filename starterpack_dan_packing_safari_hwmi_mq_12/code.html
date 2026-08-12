@@ -1,0 +1,363 @@
+<!DOCTYPE html><html class="dark" lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Starterpack & Teknis Packing - Safari HWMI MQ 12</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#550006",
+                        "outline": "#a58b86",
+                        "on-secondary-container": "#dab36a",
+                        "inverse-on-surface": "#4d251f",
+                        "on-tertiary": "#68010a",
+                        "primary-container": "#550000",
+                        "on-primary-fixed": "#410000",
+                        "surface-tint": "#ffb4a8",
+                        "background": "#280905",
+                        "on-error-container": "#ffdad6",
+                        "surface-variant": "#522923",
+                        "surface-dim": "#280905",
+                        "surface-container-low": "#33110c",
+                        "secondary": "#e9c176",
+                        "tertiary": "#ffb3ad",
+                        "on-tertiary-fixed-variant": "#881d1e",
+                        "on-secondary": "#412d00",
+                        "inverse-surface": "#ffdad4",
+                        "primary": "#ffb4a8",
+                        "tertiary-fixed-dim": "#ffb3ad",
+                        "surface-bright": "#572e27",
+                        "tertiary-fixed": "#ffdad7",
+                        "on-background": "#ffdad4",
+                        "on-primary-container": "#e16857",
+                        "on-surface-variant": "#dec0bb",
+                        "secondary-fixed": "#ffdea5",
+                        "primary-fixed": "#ffdad4",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "secondary-container": "#604403",
+                        "on-secondary-fixed": "#261900",
+                        "on-tertiary-container": "#e7635c",
+                        "on-surface": "#ffdad4",
+                        "surface-container-highest": "#522923",
+                        "error": "#ffb4ab",
+                        "surface-container": "#381510",
+                        "surface": "#280905",
+                        "error-container": "#93000a",
+                        "on-primary": "#640b05",
+                        "inverse-primary": "#a43b2d",
+                        "secondary-fixed-dim": "#e9c176",
+                        "surface-container-lowest": "#220503",
+                        "outline-variant": "#57423e",
+                        "on-tertiary-fixed": "#410004",
+                        "on-error": "#690005",
+                        "surface-container-high": "#451f19",
+                        "on-primary-fixed-variant": "#842419",
+                        "primary-fixed-dim": "#ffb4a8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "container-max-width": "1200px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-md-mobile": ["Noto Serif"],
+                        "display-lg-mobile": ["Noto Serif"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "display-lg": ["Noto Serif"],
+                        "title-lg": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "headline-md": ["Noto Serif"],
+                        "body-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-md-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface antialiased min-h-screen flex flex-col pb-24 md:pb-0">
+<header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-surface-variant/30 shadow-sm flex items-center justify-between px-margin-mobile h-16 md:hidden">
+<button aria-label="Go back" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-surface-variant/50 text-primary">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<div class="font-headline-md-mobile text-headline-md-mobile font-bold text-secondary flex-1 text-center">
+            Starterpack & Packing
+        </div>
+<div class="w-10"></div>
+</header>
+
+<main class="flex-1 w-full max-w-container-max-width mx-auto pt-24 px-margin-mobile md:px-margin-desktop md:pt-32 space-y-8">
+<section class="text-center space-y-4">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg text-secondary">
+                STARTERPACK & TEKNIS PACKING
+            </h1>
+<p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">
+                Panduan perlengkapan wajib dan pembagian penataan tas selama perjalanan Safari HWMI MQ 12.
+            </p>
+<div class="w-16 h-1 bg-secondary mx-auto rounded-full opacity-50"></div>
+
+<!-- Gender Toggle -->
+<div class="flex justify-center gap-3 pt-2">
+<button id="btn-putra" type="button" class="px-6 py-2.5 rounded-full text-sm font-bold border transition-all duration-200 bg-secondary text-surface-container-lowest border-secondary shadow-md flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">man</span> Starterpack Putra
+</button>
+<button id="btn-putri" type="button" class="px-6 py-2.5 rounded-full text-sm font-bold border transition-all duration-200 bg-surface-container text-on-surface-variant border-outline-variant/30 hover:border-secondary/50 flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">woman</span> Starterpack Putri
+</button>
+</div>
+</section>
+
+<!-- Content Section -->
+<div id="content-container" class="space-y-8">
+</div>
+
+<!-- Notice Bar -->
+<div class="p-4 rounded-xl bg-surface-container border border-secondary/30 flex items-start gap-3 text-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">info</span>
+<div>
+<strong class="text-secondary block font-semibold mb-0.5">Catatan Panitia MQ 12:</strong>
+<span>Perlengkapan bersimbol (biru/disediakan) disiapkan oleh Panitia. Pastikan mencentang barang yang sudah siap di dalam tas.</span>
+</div>
+</div>
+</main>
+
+<nav class="fixed bottom-0 w-full z-50 bg-surface/90 backdrop-blur-lg border-t border-outline-variant/20 shadow-md md:hidden flex justify-around items-center h-20 px-4">
+</nav>
+
+<script>
+  let activeGender = 'putra';
+
+  const data = {
+    putra: {
+      title: 'PERLENGKAPAN WAJIB PUTRA',
+      items: [
+        { text: 'Setelan Lengkap Menerima Pelajaran MQ (alat tulis, sarung, kopyah, sandal, daleman)', panitia: true },
+        { text: 'Alat tulis catatan pribadi (Selain peralatan MQ)', panitia: false },
+        { text: 'Kopyah hitam polos 1 (Selain Seragam MQ)', panitia: false },
+        { text: 'Almamater MQ', panitia: true },
+        { text: 'Jasket Safari', panitia: true },
+        { text: 'Baju Salur Safari', panitia: true },
+        { text: 'Kemeja putih polos (7 buah)', panitia: false },
+        { text: 'Celana hitam formal (7 buah)', panitia: false },
+        { text: 'Kaos kaki hitam (8 buah)', panitia: false },
+        { text: 'Sepatu Pantofel hitam tanpa tali', panitia: false },
+        { text: 'Kaos dalam putih (7 buah)', panitia: false },
+        { text: 'Sarung & Sajadah pribadi', panitia: false },
+        { text: 'Kemeja rapi (di penginapan)', panitia: false },
+        { text: 'Pakaian istirahat (kondisional)', panitia: false },
+        { text: 'Sandal bebas sopan', panitia: false },
+        { text: 'Perlengkapan mandi', panitia: false },
+        { text: 'Koper', panitia: false },
+        { text: 'Tas ransel (di bus simpan seragam, sandal, sajadah)', panitia: false },
+        { text: 'Gantungan baju (1-2 buah)', panitia: false },
+        { text: 'Kantong baju kotor', panitia: false },
+        { text: 'Kantong sepatu & alas ziarah (goodie bag)', panitia: true },
+        { text: 'Lampiran Doa, air & madu media asma, payung, tas selempang', panitia: true },
+        { text: 'Obat pribadi & Alat cukur kumis', panitia: false },
+        { text: 'Plastik ziplock', panitia: false }
+      ],
+      packing: {
+        selempang: [
+          'Lampiran Do\'a (disediakan panitia)',
+          'Media asma\' air & madu (disediakan panitia)',
+          'Alat tulis',
+          'Sajadah pribadi',
+          'Kantong sepatu (Goodie bag)',
+          'Alas ziarah',
+          'Payung (dibawa ke lokasi saat ada instruksi)',
+          'Perlengkapan pribadi / obat-obatan'
+        ],
+        ransel: [
+          'Menyiapkan pakaian seragam Safari',
+          'Menyiapkan daleman, kemeja putih, celana formal hitam, kaos kaki cadangan',
+          'Menyiapkan pakaian untuk di penginapan (kemeja rapi, celana panjang)',
+          'Sarung & sajadah pribadi (bukan sarung MQ)',
+          'Pakaian istirahat',
+          'Perlengkapan mandi & sandal bebas sopan',
+          'Kantong baju kotor',
+          'Catatan: Tas Ransel ditaruh di dalam bus & penginapan'
+        ]
+      }
+    },
+    putri: {
+      title: 'PERLENGKAPAN WAJIB PUTRI',
+      items: [
+        { text: 'Setelan Lengkap Menerima Pelajaran MQ (alat tulis, sewek, kerudung, sandal, daleman)', panitia: true },
+        { text: 'Alat tulis catatan pribadi (Selain peralatan MQ)', panitia: false },
+        { text: 'Kerudung putih polos segi empat (Minimal 7, selain seragam MQ)', panitia: false },
+        { text: 'Almamater MQ', panitia: true },
+        { text: 'Jasket Safari', panitia: true },
+        { text: 'Baju Salur Safari', panitia: true },
+        { text: 'Kemeja putih polos (7 buah)', panitia: false },
+        { text: 'Rok hitam Klok A (minimal 7 buah)', panitia: false },
+        { text: 'Legging warna gelap (8 buah)', panitia: false },
+        { text: 'Kaos kaki hitam (8 buah)', panitia: false },
+        { text: 'Sepatu Pantofel hitam tanpa tali', panitia: false },
+        { text: 'Kaos dalam putih (8 buah)', panitia: false },
+        { text: 'Mukena & Sajadah pribadi', panitia: false },
+        { text: 'Kemeja rapi (di penginapan)', panitia: false },
+        { text: 'Pakaian istirahat (kondisional)', panitia: false },
+        { text: 'Sandal bebas sopan', panitia: false },
+        { text: 'Perlengkapan mandi', panitia: false },
+        { text: 'Koper max 24 inch', panitia: false },
+        { text: 'Tas ransel (di bus simpan seragam, sandal, sajadah)', panitia: false },
+        { text: 'Gantungan baju (2-3 buah)', panitia: false },
+        { text: 'Kantong baju kotor', panitia: false },
+        { text: 'Kantong sepatu & alas ziarah (goodie bag)', panitia: true },
+        { text: 'Lampiran Doa, air & madu media asma, payung, tas selempang', panitia: true },
+        { text: 'Obat pribadi & Plastik ziplock', panitia: false }
+      ],
+      packing: {
+        selempang: [
+          'Lampiran Do\'a (disediakan panitia)',
+          'Media asma\' air & madu (disediakan panitia)',
+          'Alat tulis',
+          'Mukena / Sajadah pribadi',
+          'Kantong sepatu (Goodie bag)',
+          'Alas ziarah',
+          'Payung (dibawa ke lokasi saat ada instruksi)',
+          'Perlengkapan pribadi / obat-obatan'
+        ],
+        ransel: [
+          'Menyiapkan pakaian seragam Safari (Gamis / Rok Klok A)',
+          'Menyiapkan daleman, kemeja putih, kerudung, legging, kaos kaki cadangan',
+          'Menyiapkan pakaian untuk di penginapan',
+          'Mukena & sajadah pribadi',
+          'Pakaian istirahat',
+          'Perlengkapan mandi & sandal bebas sopan',
+          'Kantong baju kotor',
+          'Catatan: Tas Ransel ditaruh di dalam bus & penginapan'
+        ]
+      }
+    }
+  };
+
+  const btnPutra = document.getElementById('btn-putra');
+  const btnPutri = document.getElementById('btn-putri');
+  const contentContainer = document.getElementById('content-container');
+
+  function renderContent() {
+    const cur = data[activeGender];
+    
+    // Checkbox item list
+    const checklistHTML = cur.items.map((item, idx) => {
+      const storageKey = `starterpack_${activeGender}_${idx}`;
+      const checked = localStorage.getItem(storageKey) === 'true';
+      return `
+        <label class="flex items-start gap-3 p-3.5 rounded-lg bg-surface-container/70 border border-outline-variant/30 hover:border-secondary/40 cursor-pointer transition-colors">
+          <input type="checkbox" ${checked ? 'checked' : ''} onchange="toggleCheck('${storageKey}', this.checked)" class="w-4 h-4 rounded text-secondary focus:ring-secondary mt-1 bg-surface-container-high border-outline-variant">
+          <div class="flex-1 text-sm text-on-surface">
+            <span class="${checked ? 'line-through text-on-surface-variant/60' : ''}">${item.text}</span>
+            ${item.panitia ? '<span class="ml-2 px-2 py-0.5 rounded text-[10px] font-bold bg-primary/20 text-primary border border-primary/30">Disediakan Panitia</span>' : ''}
+          </div>
+        </label>
+      `;
+    }).join('');
+
+    // Selempang list
+    const selempangHTML = cur.packing.selempang.map(s => 
+      `<li class="flex items-start gap-2 text-sm text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-secondary mt-1.5 shrink-0"></span><span>${s}</span></li>`
+    ).join('');
+
+    // Ransel list
+    const ranselHTML = cur.packing.ransel.map(r => 
+      `<li class="flex items-start gap-2 text-sm text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-primary mt-1.5 shrink-0"></span><span>${r}</span></li>`
+    ).join('');
+
+    contentContainer.innerHTML = `
+      <!-- Checklist Section -->
+      <section class="bg-surface-container-low rounded-xl p-6 border-t border-l border-surface-variant/30 shadow-md space-y-4">
+        <div class="flex items-center justify-between border-b border-surface-variant/40 pb-3">
+          <h2 class="font-headline-md-mobile text-headline-md-mobile text-secondary flex items-center gap-2">
+            <span class="material-symbols-outlined">checklist</span> ${cur.title}
+          </h2>
+          <span class="text-xs text-on-surface-variant font-medium">Klik untuk mencentang</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          ${checklistHTML}
+        </div>
+      </section>
+
+      <!-- Teknis Packing Section -->
+      <section class="bg-surface-container-low rounded-xl p-6 border-t border-l border-surface-variant/30 shadow-md space-y-6">
+        <div class="border-b border-surface-variant/40 pb-3">
+          <h2 class="font-headline-md-mobile text-headline-md-mobile text-secondary flex items-center gap-2">
+            <span class="material-symbols-outlined">backpack</span> TEKNIS PACKING TAS (${activeGender.toUpperCase()})
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Tas Selempang -->
+          <div class="p-5 rounded-xl bg-surface-container border border-secondary/30 space-y-3">
+            <div class="flex items-center gap-2 text-secondary border-b border-surface-variant/50 pb-2">
+              <span class="material-symbols-outlined text-[24px]">work</span>
+              <h3 class="font-title-lg font-bold">1. Tas Selempang (Ziarah & Lokasi)</h3>
+            </div>
+            <p class="text-xs text-on-surface-variant italic">Dibawa saat ziarah / mengunjungi lokasi tujuan acara.</p>
+            <ul class="space-y-2 pt-1">
+              ${selempangHTML}
+            </ul>
+          </div>
+
+          <!-- Tas Ransel -->
+          <div class="p-5 rounded-xl bg-surface-container border border-primary/30 space-y-3">
+            <div class="flex items-center gap-2 text-primary border-b border-surface-variant/50 pb-2">
+              <span class="material-symbols-outlined text-[24px]">backpack</span>
+              <h3 class="font-title-lg font-bold">2. Tas Ransel (Di Bus & Hotel)</h3>
+            </div>
+            <p class="text-xs text-on-surface-variant italic">Ditaruh di dalam bus dan kamar penginapan.</p>
+            <ul class="space-y-2 pt-1">
+              ${ranselHTML}
+            </ul>
+          </div>
+        </div>
+      </section>
+    `;
+  }
+
+  function toggleCheck(key, val) {
+    localStorage.setItem(key, val);
+    renderContent();
+  }
+
+  btnPutra.addEventListener('click', () => {
+    activeGender = 'putra';
+    btnPutra.className = 'px-6 py-2.5 rounded-full text-sm font-bold border transition-all duration-200 bg-secondary text-surface-container-lowest border-secondary shadow-md flex items-center gap-2';
+    btnPutri.className = 'px-6 py-2.5 rounded-full text-sm font-bold border transition-all duration-200 bg-surface-container text-on-surface-variant border-outline-variant/30 hover:border-secondary/50 flex items-center gap-2';
+    renderContent();
+  });
+
+  btnPutri.addEventListener('click', () => {
+    activeGender = 'putri';
+    btnPutri.className = 'px-6 py-2.5 rounded-full text-sm font-bold border transition-all duration-200 bg-secondary text-surface-container-lowest border-secondary shadow-md flex items-center gap-2';
+    btnPutra.className = 'px-6 py-2.5 rounded-full text-sm font-bold border transition-all duration-200 bg-surface-container text-on-surface-variant border-outline-variant/30 hover:border-secondary/50 flex items-center gap-2';
+    renderContent();
+  });
+
+  renderContent();
+</script>
+<script src="../site-navigation.js"></script></body></html>
