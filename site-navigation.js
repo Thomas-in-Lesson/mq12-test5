@@ -633,32 +633,370 @@
 
   // Global Emergency SOS Modal Definition (P1-3 Accessibility + Real Contacts)
   const picDataSesi2 = [
-    { cat: 'Kesehatan (Medis)', name: 'Anastasya Yosa K.', role: 'Tim Medis Bus 1', phone: '085717925886' },
-    { cat: 'Kesehatan (Medis)', name: 'Siti Aisyah', role: 'Tim Medis Bus 2', phone: '085745696646' },
-    { cat: 'Kesehatan (Medis)', name: 'Viddi Puspita Sari', role: 'Tim Medis Bus 2', phone: '085708114552' },
-    { cat: 'Kesehatan (Medis)', name: 'Resta Lestari', role: 'Tim Medis Bus 3', phone: '082338849394' },
-    { cat: 'Kesehatan (Medis)', name: 'Suci Novia Andriani', role: 'Tim Medis Bus 3', phone: '081275491949' },
-    { cat: 'Kesehatan (Medis)', name: 'Habib Am', role: 'Tim Medis Bus 4', phone: '081991599255' },
-    { cat: 'Keamanan', name: 'Rodliyatan Mardliyah', role: 'Keamanan Bus 1', phone: '085704247949' },
-    { cat: 'Keamanan', name: 'Afiq Nur Rohman', role: 'Keamanan Bus 1', phone: '081359017643' },
-    { cat: 'Keamanan', name: 'Salwa Muniroh', role: 'Keamanan Bus 2', phone: '08986872277' },
-    { cat: 'Keamanan', name: 'M Irfan Fanani', role: 'Keamanan Bus 4', phone: '081915410723' },
-    { cat: 'Keamanan', name: 'Achmad Shodiqin', role: 'Keamanan Bus 3', phone: '085731831480' }
-  ];
+  {
+    "cat": "Kesehatan",
+    "name": "Anastasya Yosa K.",
+    "role": "Tim Kesehatan Bus 1",
+    "phone": "085717925886"
+  },
+  {
+    "cat": "Kesehatan",
+    "name": "Siti Aisyah",
+    "role": "Tim Kesehatan Bus 2",
+    "phone": "085745696646"
+  },
+  {
+    "cat": "Kesehatan",
+    "name": "Viddi Puspita Sari",
+    "role": "Tim Kesehatan Bus 2",
+    "phone": "085708114552"
+  },
+  {
+    "cat": "Kesehatan",
+    "name": "Resta Lestari",
+    "role": "Tim Kesehatan Bus 3",
+    "phone": "082338849394"
+  },
+  {
+    "cat": "Kesehatan",
+    "name": "Suci Novia Andriani",
+    "role": "Tim Kesehatan Bus 3",
+    "phone": "081275491949"
+  },
+  {
+    "cat": "Kesehatan",
+    "name": "M. Sholikul Amin",
+    "role": "Tim Kesehatan Bus 3",
+    "phone": "082131044562"
+  },
+  {
+    "cat": "Kesehatan",
+    "name": "Syuhada' Ridlo Billah",
+    "role": "Tim Kesehatan Bus 3",
+    "phone": "082143345952"
+  },
+  {
+    "cat": "Kesehatan",
+    "name": "Habib Am",
+    "role": "Tim Kesehatan Bus 4",
+    "phone": "081991599255"
+  },
+  {
+    "cat": "Kesehatan",
+    "name": "Ahmad Nurdiansah",
+    "role": "Tim Kesehatan Bus 4",
+    "phone": "087796806147"
+  },
+  {
+    "cat": "Kesehatan",
+    "name": "J. Firmansyah Abadi",
+    "role": "Tim Kesehatan Bus 4",
+    "phone": "082244603774"
+  },
+  {
+    "cat": "Kesehatan",
+    "name": "Retma Aisyah",
+    "role": "Tim Kesehatan Bus 4",
+    "phone": "085745635308"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Rodliyatan Mardliyah",
+    "role": "Tim Keamanan Bus 1",
+    "phone": "085704247949"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Afiq Nur Rohman",
+    "role": "Tim Keamanan Bus 1",
+    "phone": "081359017643"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Ika Nurul Aini",
+    "role": "Tim Keamanan Bus 2",
+    "phone": "087834725099"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Rohmawati Fajrin",
+    "role": "Tim Keamanan Bus 2",
+    "phone": "085194571051"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Salwa Muniroh",
+    "role": "Tim Keamanan Bus 2",
+    "phone": "08986872277"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Ikhyak Maulana",
+    "role": "Tim Keamanan Bus 2",
+    "phone": "081231371644"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Al Irfan",
+    "role": "Tim Keamanan Bus 2",
+    "phone": "089674203783"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Hamrotul Mukarromah",
+    "role": "Tim Keamanan Bus 3",
+    "phone": "085748027392"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Alifiana Ahmad F",
+    "role": "Tim Keamanan Bus 3",
+    "phone": "082322967397"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Siti Nur Nisfiyah",
+    "role": "Tim Keamanan Bus 3",
+    "phone": "081615263612"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Achmad Shodiqin",
+    "role": "Tim Keamanan Bus 3",
+    "phone": "085731831480"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Siti Julaikah",
+    "role": "Tim Keamanan Bus 4",
+    "phone": "085856967713"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "M Irfan Fanani",
+    "role": "Tim Keamanan Bus 4",
+    "phone": "081915410723"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Nur Wahyu Muthi L",
+    "role": "Tim Keamanan Bus 4",
+    "phone": "0895604071022"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "A Syarifuddin",
+    "role": "Tim Keamanan Bus 4",
+    "phone": "085815671959"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "A Fikri Ulinnuha",
+    "role": "Tim Keamanan Bus 4",
+    "phone": "085608608786"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "M Amin Ariefulloh",
+    "role": "Tim Keamanan Bus 4",
+    "phone": "085168629872"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "M Ikhwan Syahrom",
+    "role": "Tim Keamanan Bus 4",
+    "phone": "085731456609"
+  }
+];
 
   const picDataSesi3 = [
-    { cat: 'Kesehatan (Medis)', name: 'Anastasya Yosa K.', role: 'Tim Medis Bus 1', phone: '085717925886' },
-    { cat: 'Kesehatan (Medis)', name: 'Siti Aisyah', role: 'Tim Medis Bus 2', phone: '085745696646' },
-    { cat: 'Kesehatan (Medis)', name: 'Viddi Puspita Sari', role: 'Tim Medis Bus 2', phone: '085708114552' },
-    { cat: 'Kesehatan (Medis)', name: 'Resta Lestari', role: 'Tim Medis Bus 3', phone: '082338849394' },
-    { cat: 'Kesehatan (Medis)', name: 'Habib Am', role: 'Tim Medis Bus 5', phone: '081991599255' },
-    { cat: 'Kesehatan (Medis)', name: 'Syuhada\' Ridlo Billah', role: 'Tim Medis Bus 6', phone: '082143345952' },
-    { cat: 'Keamanan', name: 'Rodliyatan Mardliyah', role: 'Keamanan Bus 1', phone: '085704247949' },
-    { cat: 'Keamanan', name: 'Afiq Nur Rohman', role: 'Keamanan Bus 1', phone: '081359017643' },
-    { cat: 'Keamanan', name: 'Salwa Muniroh', role: 'Keamanan Bus 2', phone: '08986872277' },
-    { cat: 'Keamanan', name: 'Fatimah binti Maimun', role: 'Keamanan Bus 4', phone: '085730020079' },
-    { cat: 'Keamanan', name: 'M Irfan Fanani', role: 'Keamanan Bus 5', phone: '081915410723' }
-  ];
+  {
+    "cat": "Kesehatan",
+    "name": "Anastasya Yosa K.",
+    "role": "Tim Kesehatan Bus 1",
+    "phone": "085717925886"
+  },
+  {
+    "cat": "Kesehatan",
+    "name": "Siti Aisyah",
+    "role": "Tim Kesehatan Bus 2",
+    "phone": "085745696646"
+  },
+  {
+    "cat": "Kesehatan",
+    "name": "Viddi Puspita Sari",
+    "role": "Tim Kesehatan Bus 2",
+    "phone": "085708114552"
+  },
+  {
+    "cat": "Kesehatan",
+    "name": "Resta Lestari",
+    "role": "Tim Kesehatan Bus 3",
+    "phone": "082338849394"
+  },
+  {
+    "cat": "Kesehatan",
+    "name": "Retma Aisyah",
+    "role": "Tim Kesehatan Bus 3",
+    "phone": "085745635308"
+  },
+  {
+    "cat": "Kesehatan",
+    "name": "Suci Novia Andriani",
+    "role": "Tim Kesehatan Bus 4",
+    "phone": "081275491949"
+  },
+  {
+    "cat": "Kesehatan",
+    "name": "Habib Am",
+    "role": "Tim Kesehatan Bus 5",
+    "phone": "081991599255"
+  },
+  {
+    "cat": "Kesehatan",
+    "name": "M. Mu'thi Syahrul Sya'ban",
+    "role": "Tim Kesehatan Bus 5",
+    "phone": "081217475407"
+  },
+  {
+    "cat": "Kesehatan",
+    "name": "J. Firmansyah Abadi",
+    "role": "Tim Kesehatan Bus 5",
+    "phone": "082244603774"
+  },
+  {
+    "cat": "Kesehatan",
+    "name": "Syuhada' Ridlo Billah",
+    "role": "Tim Kesehatan Bus 6",
+    "phone": "082143345952"
+  },
+  {
+    "cat": "Kesehatan",
+    "name": "Ahmad Nurdiansah",
+    "role": "Tim Kesehatan Bus 6",
+    "phone": "087796806147"
+  },
+  {
+    "cat": "Kesehatan",
+    "name": "M. Sholikul Amin",
+    "role": "Tim Kesehatan Bus 6",
+    "phone": "082131044562"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Rodliyatan Mardliyah",
+    "role": "Tim Keamanan Bus 1",
+    "phone": "085704247949"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Afiq Nur Rohman",
+    "role": "Tim Keamanan Bus 1",
+    "phone": "081359017643"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Salwa Muniroh",
+    "role": "Tim Keamanan Bus 2",
+    "phone": "08986872277"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Ika Nurul Aini",
+    "role": "Tim Keamanan Bus 2",
+    "phone": "087834725099"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Hamrotul Mukarromah",
+    "role": "Tim Keamanan Bus 3",
+    "phone": "085748027392"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Siti Julaikah",
+    "role": "Tim Keamanan Bus 3",
+    "phone": "085856967713"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Alifiana Ahmad F",
+    "role": "Tim Keamanan Bus 3",
+    "phone": "082322967397"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Rohmawati Fajrin",
+    "role": "Tim Keamanan Bus 4",
+    "phone": "085194571051"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Fatimah binti Maimun",
+    "role": "Tim Keamanan Bus 4",
+    "phone": "085730020079"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Siti Nur Nisfiyah",
+    "role": "Tim Keamanan Bus 4",
+    "phone": "081615263612"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "M Irfan Fanani",
+    "role": "Tim Keamanan Bus 5",
+    "phone": "081915410723"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "M Amin Ariefulloh",
+    "role": "Tim Keamanan Bus 5",
+    "phone": "085168629872"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "A Fikri Ulinnuha",
+    "role": "Tim Keamanan Bus 5",
+    "phone": "085608608786"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Achmad Shodiqin",
+    "role": "Tim Keamanan Bus 5",
+    "phone": "085731831480"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Ikhyak Maulana",
+    "role": "Tim Keamanan Bus 6",
+    "phone": "081231371644"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "A Syarifuddin",
+    "role": "Tim Keamanan Bus 6",
+    "phone": "085815671959"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "M Ikhwan Syahrom",
+    "role": "Tim Keamanan Bus 6",
+    "phone": "085731456609"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Nur Wahyu Muthi L",
+    "role": "Tim Keamanan Bus 6",
+    "phone": "0895604071022"
+  },
+  {
+    "cat": "Keamanan",
+    "name": "Al Irfan",
+    "role": "Tim Keamanan Bus 6",
+    "phone": "089674203783"
+  }
+];
 
   const sosModal = document.createElement('div');
   sosModal.className = 'site-sos-modal-overlay';
@@ -694,14 +1032,16 @@
     data.forEach(item => {
       if (item.cat !== currentCat) {
         currentCat = item.cat;
-        html += `<div class="site-sos-section-title">${currentCat}</div>`;
+        const iconSym = currentCat.includes('Kesehatan') ? '🩺' : '🛡️';
+        html += `<div class="site-sos-section-title">${iconSym} ${currentCat.toUpperCase()}</div>`;
       }
       const cleanPhone = item.phone.replace(/[^0-9]/g, '');
       const intPhone = cleanPhone.startsWith('0') ? '62' + cleanPhone.slice(1) : cleanPhone;
+      const iconName = item.cat.includes('Kesehatan') ? 'medical_services' : 'shield';
       html += `
         <div class="site-sos-item">
           <div class="site-sos-item-info">
-            <span class="material-symbols-outlined" style="color:#e9c176;" aria-hidden="true">${item.cat.includes('Kesehatan') ? 'medical_services' : 'shield'}</span>
+            <span class="material-symbols-outlined" style="color:#e9c176;" aria-hidden="true">${iconName}</span>
             <div>
               <strong>${item.name}</strong>
               <span>${item.role} (${item.phone})</span>
