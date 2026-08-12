@@ -134,6 +134,92 @@
     `;
   });
 
+  // Global Emergency Floating SOS Button & Modal (Opsi 1)
+  const sosBtn = document.createElement('button');
+  sosBtn.type = 'button';
+  sosBtn.setAttribute('aria-label', 'Bantuan Darurat PIC');
+  sosBtn.className = 'fixed left-4 bottom-24 z-[9990] bg-error-container text-on-error-container border border-error/40 px-3.5 py-2.5 rounded-full shadow-lg flex items-center gap-2 text-xs font-bold active:scale-95 transition-transform';
+  sosBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] text-error animate-pulse">sos</span><span>Bantuan PIC</span>';
+
+  const sosModal = document.createElement('div');
+  sosModal.className = 'fixed inset-0 z-[10050] bg-black/70 backdrop-blur-sm opacity-0 invisible transition-all duration-200 flex items-center justify-center p-4';
+  sosModal.innerHTML = `
+    <div class="bg-surface-container-low border border-surface-variant rounded-2xl max-w-sm w-full p-6 shadow-2xl space-y-5 relative">
+      <button id="sos-close" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary text-xl font-bold">×</button>
+      <div class="flex items-center gap-3 border-b border-surface-variant/40 pb-3">
+        <span class="material-symbols-outlined text-error text-[28px]">emergency</span>
+        <div>
+          <h3 class="font-title-lg font-bold text-on-surface">Pusat Bantuan & Kontak PIC</h3>
+          <p class="text-xs text-on-surface-variant">Hubungi panitia safari jika butuh bantuan mendesak</p>
+        </div>
+      </div>
+      <div class="space-y-3">
+        <div class="p-3 rounded-xl bg-surface-container flex items-center justify-between">
+          <div class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-secondary text-[22px]">medical_services</span>
+            <div>
+              <strong class="text-xs text-on-surface block font-semibold">Tim Medis & Kesehatan</strong>
+              <span class="text-[11px] text-on-surface-variant">Pertolongan Pertama / Obat</span>
+            </div>
+          </div>
+          <div class="flex gap-1.5">
+            <a href="https://wa.me/6281234567890?text=Halo%20Tim%20Medis%20MQ12,%20saya%20butuh%20bantuan" target="_blank" class="w-8 h-8 rounded-full bg-secondary/20 text-secondary border border-secondary/30 flex items-center justify-center text-xs font-bold">WA</a>
+            <a href="tel:+6281234567890" class="w-8 h-8 rounded-full bg-primary/20 text-primary border border-primary/30 flex items-center justify-center"><span class="material-symbols-outlined text-[16px]">call</span></a>
+          </div>
+        </div>
+
+        <div class="p-3 rounded-xl bg-surface-container flex items-center justify-between">
+          <div class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-secondary text-[22px]">directions_bus</span>
+            <div>
+              <strong class="text-xs text-on-surface block font-semibold">Koordinator Bus 1 & 2</strong>
+              <span class="text-[11px] text-on-surface-variant">Pengondisian Armada</span>
+            </div>
+          </div>
+          <div class="flex gap-1.5">
+            <a href="https://wa.me/6281234567891?text=Halo%20PIC%20Bus,%20saya%20peserta%20MQ12" target="_blank" class="w-8 h-8 rounded-full bg-secondary/20 text-secondary border border-secondary/30 flex items-center justify-center text-xs font-bold">WA</a>
+            <a href="tel:+6281234567891" class="w-8 h-8 rounded-full bg-primary/20 text-primary border border-primary/30 flex items-center justify-center"><span class="material-symbols-outlined text-[16px]">call</span></a>
+          </div>
+        </div>
+
+        <div class="p-3 rounded-xl bg-surface-container flex items-center justify-between">
+          <div class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-secondary text-[22px]">directions_bus</span>
+            <div>
+              <strong class="text-xs text-on-surface block font-semibold">Koordinator Bus 3 & Elf</strong>
+              <span class="text-[11px] text-on-surface-variant">Pengondisian Armada</span>
+            </div>
+          </div>
+          <div class="flex gap-1.5">
+            <a href="https://wa.me/6281234567892?text=Halo%20PIC%20Bus,%20saya%20peserta%20MQ12" target="_blank" class="w-8 h-8 rounded-full bg-secondary/20 text-secondary border border-secondary/30 flex items-center justify-center text-xs font-bold">WA</a>
+            <a href="tel:+6281234567892" class="w-8 h-8 rounded-full bg-primary/20 text-primary border border-primary/30 flex items-center justify-center"><span class="material-symbols-outlined text-[16px]">call</span></a>
+          </div>
+        </div>
+
+        <div class="p-3 rounded-xl bg-surface-container flex items-center justify-between">
+          <div class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-secondary text-[22px]">shield</span>
+            <div>
+              <strong class="text-xs text-on-surface block font-semibold">Keamanan & Pembimbing</strong>
+              <span class="text-[11px] text-on-surface-variant">Pengawalan & Panduan</span>
+            </div>
+          </div>
+          <div class="flex gap-1.5">
+            <a href="https://wa.me/6281234567893?text=Halo%20Keamanan%20MQ12,%20saya%20butuh%20bantuan" target="_blank" class="w-8 h-8 rounded-full bg-secondary/20 text-secondary border border-secondary/30 flex items-center justify-center text-xs font-bold">WA</a>
+            <a href="tel:+6281234567893" class="w-8 h-8 rounded-full bg-primary/20 text-primary border border-primary/30 flex items-center justify-center"><span class="material-symbols-outlined text-[16px]">call</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  document.body.append(sosBtn, sosModal);
+  const openSos = () => { sosModal.classList.remove('opacity-0', 'invisible'); };
+  const closeSos = () => { sosModal.classList.add('opacity-0', 'invisible'); };
+  sosBtn.addEventListener('click', openSos);
+  sosModal.querySelector('#sos-close').addEventListener('click', closeSos);
+  sosModal.addEventListener('click', (e) => { if(e.target === sosModal) closeSos(); });
+
   // PWA & Service Worker Registration
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
