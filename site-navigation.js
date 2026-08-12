@@ -1026,7 +1026,6 @@
   function renderPicList(data) {
     const container = sosModal.querySelector('#sos-pic-list-container');
     if (!container) return;
-    
     let html = '';
     let currentCat = '';
     data.forEach(item => {
@@ -1037,11 +1036,11 @@
       }
       const cleanPhone = item.phone.replace(/[^0-9]/g, '');
       const intPhone = cleanPhone.startsWith('0') ? '62' + cleanPhone.slice(1) : cleanPhone;
-      const iconName = item.cat.includes('Kesehatan') ? 'medical_services' : 'shield';
+      const visualSymbol = item.cat.includes('Kesehatan') ? '🩺' : '🛡️';
       html += `
         <div class="site-sos-item">
           <div class="site-sos-item-info">
-            <span class="material-symbols-outlined" style="color:#e9c176;" aria-hidden="true">${iconName}</span>
+            <span style="font-size:18px;line-height:1;" aria-hidden="true">${visualSymbol}</span>
             <div>
               <strong>${item.name}</strong>
               <span>${item.role} (${item.phone})</span>
@@ -1148,7 +1147,7 @@
   function normalizeInputName(name) {
     let n = name.toLowerCase();
     n = n.replace(/\b(bpk|pak|ibu|bu|mba|mbak|drs|h|hj)\b\.?/g, '');
-    n = n.replace(/^(m|muh|moh|muhammad)\.?\s+/, '');
+    n = n.replace(/^(m|muh|moh|muhammad)[\.\s]*/g, '');
     n = n.replace(/[^a-z0-9\s]/g, '');
     return n.split(/\s+/).filter(Boolean).join(' ');
   }
@@ -1182,15 +1181,18 @@
       
       let staysHtml = '';
       if (entry.menginap && entry.menginap.length > 0) {
-        staysHtml = entry.menginap.map(m => `
-          <div class="p-2.5 rounded-xl bg-surface-container border border-outline-variant/20 flex items-center justify-between">
-            <div>
-              <span class="text-[10px] text-secondary uppercase font-bold tracking-wider">${m.kota} (${m.hotel})</span>
-              <strong class="text-xs text-on-surface block font-bold mt-0.5">Kamar ${m.kamar} (${m.tipe})</strong>
+        staysHtml = entry.menginap.map(m => {
+          const roomText = m.kamar.toLowerCase().startsWith('kamar') ? m.kamar : `Kamar ${m.kamar}`;
+          return `
+            <div class="p-2.5 rounded-xl bg-surface-container border border-outline-variant/20 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] text-secondary uppercase font-bold tracking-wider">${m.kota} (${m.hotel})</span>
+                <strong class="text-xs text-on-surface block font-bold mt-0.5">${roomText} (${m.tipe})</strong>
+              </div>
+              <a href="${href('rooms')}#${m.kota}" class="px-2.5 py-1 rounded-lg bg-secondary/15 text-secondary border border-secondary/30 text-[11px] font-bold hover:bg-secondary hover:text-surface-container-lowest transition-colors">Lihat Kamar</a>
             </div>
-            <a href="${href('rooms')}#${m.kota}" class="px-2.5 py-1 rounded-lg bg-secondary/15 text-secondary border border-secondary/30 text-[11px] font-bold hover:bg-secondary hover:text-surface-container-lowest transition-colors">Lihat Kamar</a>
-          </div>
-        `).join('');
+          `;
+        }).join('');
       } else {
         staysHtml = `<div class="p-2 text-xs text-on-surface-variant">Detail penginapan belum terdaftar</div>`;
       }
