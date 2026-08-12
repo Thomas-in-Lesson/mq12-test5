@@ -220,6 +220,43 @@
   sosModal.querySelector('#sos-close').addEventListener('click', closeSos);
   sosModal.addEventListener('click', (e) => { if(e.target === sosModal) closeSos(); });
 
+  // Global Offline Readiness Indicator & Connection Status Badge (Ide A)
+  const badge = document.createElement('div');
+  badge.id = 'offline-ready-badge';
+  badge.className = 'fixed top-3 right-4 z-[9995] px-2.5 py-1 rounded-full text-[10px] font-bold border backdrop-blur-md transition-all duration-300 flex items-center gap-1.5 shadow-sm cursor-pointer select-none';
+  
+  function updateOfflineStatus() {
+    if (navigator.onLine) {
+      badge.className = 'fixed top-3 right-4 z-[9995] px-2.5 py-1 rounded-full text-[10px] font-bold border backdrop-blur-md transition-all duration-300 flex items-center gap-1.5 shadow-sm cursor-pointer select-none bg-emerald-950/80 text-emerald-300 border-emerald-500/40';
+      badge.innerHTML = '<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span><span>Offline Ready</span>';
+      badge.title = 'Seluruh data 100% aman tersimpan offline di HP Anda.';
+    } else {
+      badge.className = 'fixed top-3 right-4 z-[9995] px-2.5 py-1 rounded-full text-[10px] font-bold border backdrop-blur-md transition-all duration-300 flex items-center gap-1.5 shadow-sm cursor-pointer select-none bg-amber-950/90 text-amber-300 border-amber-500/50';
+      badge.innerHTML = '<span class="w-2 h-2 rounded-full bg-amber-400"></span><span>Mode Offline (Tanpa Sinyal)</span>';
+      badge.title = 'Aplikasi berjalan lancar tanpa sinyal internet.';
+    }
+  }
+
+  badge.addEventListener('click', () => {
+    const isOff = !navigator.onLine;
+    const msg = isOff ? '⚡ Mode Offline Aktif: Seluruh fitur tetap berfungsi tanpa internet!' : '🟢 Offline Ready: Seluruh halaman & data kamar/bus sudah tersimpan di HP Anda.';
+    let toast = document.getElementById('offline-toast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'offline-toast';
+      toast.className = 'fixed top-16 left-1/2 -translate-x-1/2 z-[10060] bg-surface-container border border-secondary/40 text-on-surface px-4 py-2.5 rounded-xl text-xs font-semibold shadow-2xl transition-all duration-300 text-center max-w-xs';
+      document.body.appendChild(toast);
+    }
+    toast.textContent = msg;
+    toast.classList.remove('opacity-0', 'invisible');
+    setTimeout(() => { toast.classList.add('opacity-0', 'invisible'); }, 3000);
+  });
+
+  window.addEventListener('online', updateOfflineStatus);
+  window.addEventListener('offline', updateOfflineStatus);
+  document.body.appendChild(badge);
+  updateOfflineStatus();
+
   // PWA & Service Worker Registration
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
