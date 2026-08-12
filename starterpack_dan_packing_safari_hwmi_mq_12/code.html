@@ -140,7 +140,7 @@
 <span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">info</span>
 <div>
 <strong class="text-secondary block font-semibold mb-0.5">Catatan Panitia MQ 12:</strong>
-<span>Perlengkapan bersimbol (biru/disediakan) disiapkan oleh Panitia. Pastikan mencentang barang yang sudah siap di dalam tas.</span>
+<span>Perlengkapan bersimbol (Disediakan Panitia) disiapkan langsung oleh Panitia Safari.</span>
 </div>
 </div>
 </main>
@@ -263,47 +263,42 @@
   function renderContent() {
     const cur = data[activeGender];
     
-    // Checkbox item list
-    const checklistHTML = cur.items.map((item, idx) => {
-      const storageKey = `starterpack_${activeGender}_${idx}`;
-      const checked = localStorage.getItem(storageKey) === 'true';
-      return `
-        <label class="flex items-start gap-3 p-3.5 rounded-lg bg-surface-container/70 border border-outline-variant/30 hover:border-secondary/40 cursor-pointer transition-colors">
-          <input type="checkbox" ${checked ? 'checked' : ''} onchange="toggleCheck('${storageKey}', this.checked)" class="w-4 h-4 rounded text-secondary focus:ring-secondary mt-1 bg-surface-container-high border-outline-variant">
-          <div class="flex-1 text-sm text-on-surface">
-            <span class="${checked ? 'line-through text-on-surface-variant/60' : ''}">${item.text}</span>
-            ${item.panitia ? '<span class="ml-2 px-2 py-0.5 rounded text-[10px] font-bold bg-primary/20 text-primary border border-primary/30">Disediakan Panitia</span>' : ''}
-          </div>
-        </label>
-      `;
-    }).join('');
+    // Clean list without checkboxes
+    const itemListHTML = cur.items.map((item) => `
+      <div class="flex items-start gap-3 p-3.5 rounded-xl bg-surface-container/80 border border-outline-variant/20 shadow-sm">
+        <span class="w-2.5 h-2.5 rounded-full bg-secondary shrink-0 mt-1.5"></span>
+        <div class="flex-1 text-sm text-on-surface leading-relaxed">
+          <span>${item.text}</span>
+          ${item.panitia ? '<span class="inline-block ml-2 px-2 py-0.5 rounded text-[10px] font-bold bg-primary/20 text-primary border border-primary/30">Disediakan Panitia</span>' : ''}
+        </div>
+      </div>
+    `).join('');
 
     // Selempang list
     const selempangHTML = cur.packing.selempang.map(s => 
-      `<li class="flex items-start gap-2 text-sm text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-secondary mt-1.5 shrink-0"></span><span>${s}</span></li>`
+      `<li class="flex items-start gap-2.5 text-sm text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-secondary mt-1.5 shrink-0"></span><span>${s}</span></li>`
     ).join('');
 
     // Ransel list
     const ranselHTML = cur.packing.ransel.map(r => 
-      `<li class="flex items-start gap-2 text-sm text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-primary mt-1.5 shrink-0"></span><span>${r}</span></li>`
+      `<li class="flex items-start gap-2.5 text-sm text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-primary mt-1.5 shrink-0"></span><span>${r}</span></li>`
     ).join('');
 
     contentContainer.innerHTML = `
-      <!-- Checklist Section -->
-      <section class="bg-surface-container-low rounded-xl p-6 border-t border-l border-surface-variant/30 shadow-md space-y-4">
-        <div class="flex items-center justify-between border-b border-surface-variant/40 pb-3">
+      <!-- Starterpack Section -->
+      <section class="bg-surface-container-low rounded-xl p-5 md:p-6 border-t border-l border-surface-variant/30 shadow-md space-y-4">
+        <div class="border-b border-surface-variant/40 pb-3">
           <h2 class="font-headline-md-mobile text-headline-md-mobile text-secondary flex items-center gap-2">
-            <span class="material-symbols-outlined">checklist</span> ${cur.title}
+            <span class="material-symbols-outlined">inventory_2</span> ${cur.title}
           </h2>
-          <span class="text-xs text-on-surface-variant font-medium">Klik untuk mencentang</span>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          ${checklistHTML}
+          ${itemListHTML}
         </div>
       </section>
 
       <!-- Teknis Packing Section -->
-      <section class="bg-surface-container-low rounded-xl p-6 border-t border-l border-surface-variant/30 shadow-md space-y-6">
+      <section class="bg-surface-container-low rounded-xl p-5 md:p-6 border-t border-l border-surface-variant/30 shadow-md space-y-6">
         <div class="border-b border-surface-variant/40 pb-3">
           <h2 class="font-headline-md-mobile text-headline-md-mobile text-secondary flex items-center gap-2">
             <span class="material-symbols-outlined">backpack</span> TEKNIS PACKING TAS (${activeGender.toUpperCase()})
@@ -318,7 +313,7 @@
               <h3 class="font-title-lg font-bold">1. Tas Selempang (Ziarah & Lokasi)</h3>
             </div>
             <p class="text-xs text-on-surface-variant italic">Dibawa saat ziarah / mengunjungi lokasi tujuan acara.</p>
-            <ul class="space-y-2 pt-1">
+            <ul class="space-y-2.5 pt-1">
               ${selempangHTML}
             </ul>
           </div>
@@ -330,7 +325,7 @@
               <h3 class="font-title-lg font-bold">2. Tas Ransel (Di Bus & Hotel)</h3>
             </div>
             <p class="text-xs text-on-surface-variant italic">Ditaruh di dalam bus dan kamar penginapan.</p>
-            <ul class="space-y-2 pt-1">
+            <ul class="space-y-2.5 pt-1">
               ${ranselHTML}
             </ul>
           </div>
@@ -339,22 +334,17 @@
     `;
   }
 
-  function toggleCheck(key, val) {
-    localStorage.setItem(key, val);
-    renderContent();
-  }
-
   btnPutra.addEventListener('click', () => {
     activeGender = 'putra';
-    btnPutra.className = 'px-6 py-2.5 rounded-full text-sm font-bold border transition-all duration-200 bg-secondary text-surface-container-lowest border-secondary shadow-md flex items-center gap-2';
-    btnPutri.className = 'px-6 py-2.5 rounded-full text-sm font-bold border transition-all duration-200 bg-surface-container text-on-surface-variant border-outline-variant/30 hover:border-secondary/50 flex items-center gap-2';
+    btnPutra.className = 'flex-1 md:flex-initial px-6 py-3 rounded-full text-sm font-bold border transition-all duration-200 bg-secondary text-surface-container-lowest border-secondary shadow-md flex items-center justify-center gap-2 min-h-[44px]';
+    btnPutri.className = 'flex-1 md:flex-initial px-6 py-3 rounded-full text-sm font-bold border transition-all duration-200 bg-surface-container text-on-surface-variant border-outline-variant/30 hover:border-secondary/50 flex items-center justify-center gap-2 min-h-[44px]';
     renderContent();
   });
 
   btnPutri.addEventListener('click', () => {
     activeGender = 'putri';
-    btnPutri.className = 'px-6 py-2.5 rounded-full text-sm font-bold border transition-all duration-200 bg-secondary text-surface-container-lowest border-secondary shadow-md flex items-center gap-2';
-    btnPutra.className = 'px-6 py-2.5 rounded-full text-sm font-bold border transition-all duration-200 bg-surface-container text-on-surface-variant border-outline-variant/30 hover:border-secondary/50 flex items-center gap-2';
+    btnPutri.className = 'flex-1 md:flex-initial px-6 py-3 rounded-full text-sm font-bold border transition-all duration-200 bg-secondary text-surface-container-lowest border-secondary shadow-md flex items-center justify-center gap-2 min-h-[44px]';
+    btnPutra.className = 'flex-1 md:flex-initial px-6 py-3 rounded-full text-sm font-bold border transition-all duration-200 bg-surface-container text-on-surface-variant border-outline-variant/30 hover:border-secondary/50 flex items-center justify-center gap-2 min-h-[44px]';
     renderContent();
   });
 
