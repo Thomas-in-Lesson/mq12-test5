@@ -1339,7 +1339,7 @@
       const data = await loadPesertaData();
       const normQ = normalizeInputName(queryName);
 
-      if (!normQ || normQ.length < 3) return;
+      if (!normQ || normQ.length < 2) return;
 
       // Exact > sebunyi > sebagian. Exact menang mutlak atas partial (B-2b).
       const fonQ = phoneticKey(queryName);
@@ -1363,30 +1363,36 @@
       renderCanonicalProfile(matches[0]);
       // Picker hanya muncul kalau memang masih ambigu setelah exact diprioritaskan
       if (matches.length > 1) {
-        autoBox.innerHTML = matches.map(m =>
+        autoBox.innerHTML = matches.slice(0, 8).map(m =>
           `<div class="personal-autocomplete-item" data-name="${m.name}">${m.name} <small style="color:#e9c176;">(Pilih Profil)</small></div>`
         ).join('');
         autoBox.classList.add('is-open');
       }
     };
 
-    // Autocomplete typing listener (P0-1 Strict Privacy: Minimum 4 normalized chars threshold, NAME ONLY)
+    // Autocomplete typing listener (Interactive matching for short/lowercase names, 2+ chars)
     nameInput.addEventListener('input', async () => {
       const val = nameInput.value.trim();
       const normV = normalizeInputName(val);
-      if (normV.length < 4) {
+      if (normV.length < 2) {
         autoBox.classList.remove('is-open');
         return;
       }
       const data = await loadPesertaData();
       const fonV = phoneticKey(val);
-      const matches = Object.keys(data).filter(k => {
-        const key = kunciEjaan(data[k]);
-        return [...key.norm].some(n => n.includes(normV)) || (fonV && [...key.fon].some(f => f.includes(fonV)));
-      }).slice(0, 5);
+      
+      const matchesMap = new Map();
+      Object.keys(data).forEach(k => {
+        const item = data[k];
+        const key = kunciEjaan(item);
+        if ([...key.norm].some(n => n.includes(normV)) || (fonV && [...key.fon].some(f => f.includes(fonV)))) {
+          matchesMap.set(item.name, item);
+        }
+      });
+      const matches = Array.from(matchesMap.values()).slice(0, 8);
 
       if (matches.length > 0) {
-        autoBox.innerHTML = matches.map(k => `<div class="personal-autocomplete-item" data-name="${data[k].name}">${data[k].name}</div>`).join('');
+        autoBox.innerHTML = matches.map(m => `<div class="personal-autocomplete-item" data-name="${m.name}">${m.name}</div>`).join('');
         autoBox.classList.add('is-open');
       } else {
         autoBox.classList.remove('is-open');
