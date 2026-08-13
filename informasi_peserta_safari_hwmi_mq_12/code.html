@@ -27,7 +27,7 @@
 <!-- TopAppBar -->
 <header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-surface-variant/30 shadow-sm flex items-center justify-between px-margin-mobile h-16 md:hidden">
 <button aria-label="Go back" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-surface-variant/50 text-primary">
-<span class="material-symbols-outlined">arrow_back</span>
+<span class="text-lg font-bold">←</span>
 </button>
 <div class="font-headline-md-mobile text-headline-md-mobile font-bold text-secondary flex-1 text-center">
   Daftar & Informasi Peserta
@@ -50,10 +50,10 @@
 
 <!-- Kolom Pencarian Nama -->
 <div class="max-w-xl mx-auto relative pt-2">
-  <span class="material-symbols-outlined absolute left-4 top-[22px] text-on-surface-variant text-[22px]">search</span>
-  <input id="participant-search" type="text" placeholder="Ketik nama peserta untuk mencari..." class="w-full bg-surface-container border border-outline-variant/40 rounded-full py-3 pl-12 pr-10 text-sm text-on-surface placeholder:text-on-surface-variant/60 focus:border-secondary focus:outline-none transition-colors shadow-inner">
-  <button id="clear-search" onclick="clearSearch()" class="hidden absolute right-4 top-[22px] text-on-surface-variant hover:text-secondary">
-    <span class="material-symbols-outlined text-[18px]">close</span>
+  <span class="absolute left-4 top-[22px] text-on-surface-variant text-[16px] opacity-70">🔍</span>
+  <input id="participant-search" type="text" placeholder="Ketik nama peserta untuk mencari..." class="w-full bg-surface-container border border-outline-variant/40 rounded-full py-3 pl-12 pr-12 text-sm text-on-surface placeholder:text-on-surface-variant/60 focus:border-secondary focus:outline-none transition-colors shadow-inner">
+  <button id="clear-search" onclick="clearSearch()" class="hidden absolute right-4 top-[20px] w-6 h-6 rounded-full bg-surface-variant/60 hover:bg-secondary text-on-surface hover:text-surface-container-lowest flex items-center justify-center text-xs font-bold transition-all" aria-label="Bersihkan pencarian">
+    ✕
   </button>
 </div>
 
@@ -90,7 +90,7 @@ function renderParticipants(filterText = '') {
   if (filtered.length === 0) {
     grid.innerHTML = `
       <div class="col-span-full text-center py-12 bg-surface-container-low rounded-2xl border border-surface-variant/30 space-y-3">
-        <span class="material-symbols-outlined text-4xl text-on-surface-variant/50">person_search</span>
+        <span class="text-3xl opacity-60">🔍</span>
         <p class="text-sm text-on-surface-variant font-medium">Tidak ada nama peserta yang cocok dengan "${filterText}"</p>
       </div>
     `;
