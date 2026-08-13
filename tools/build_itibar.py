@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+import os
+
+html_content = """<!DOCTYPE html>
 <html class="dark" lang="id">
 <head>
 <meta charset="utf-8">
@@ -444,3 +446,9 @@ Para anak-anak Hifdhul Ghulam wal Banat supaya membuat â€œKesimpulan-kesimpulanâ
 <script src="../site-navigation.js"></script>
 </body>
 </html>
+"""
+
+with open('i_tibar_musafir_final_safari_hwmi_mq_12/code.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print('Updated i_tibar_musafir_final_safari_hwmi_mq_12/code.html successfully!')
