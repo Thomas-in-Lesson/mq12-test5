@@ -1233,6 +1233,19 @@
 
     if (!inputView || !profileView || !nameInput || !btnSave) return;
 
+    document.querySelectorAll('a[href="#personal-card-box"]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const box = document.getElementById('personal-card-box');
+        if (box) {
+          box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          if (nameInput && nameInput.offsetParent !== null) {
+            setTimeout(() => nameInput.focus(), 300);
+          }
+        }
+      });
+    });
+
     // Autocomplete Box Setup (P0-1 Strict Privacy: Name Only, 4 chars threshold)
     let autoBox = document.querySelector('.personal-autocomplete-box');
     if (!autoBox) {
