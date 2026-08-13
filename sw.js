@@ -1,4 +1,4 @@
-const CACHE_NAME = 'safari-hwmi-mq12-v4';
+const CACHE_NAME = 'safari-hwmi-mq12-v5';
 const ASSETS = [
   './',
   './index.html',
@@ -17,6 +17,7 @@ const ASSETS = [
   './fonts/plus-jakarta-sans-latin-400.woff2',
   './fonts/plus-jakarta-sans-latin-ext-400.woff2',
   './beranda_mobile_dark_safari_hwmi_mq_12/code.html',
+  './informasi_peserta_safari_hwmi_mq_12/code.html',
   './i_tibar_musafir_final_safari_hwmi_mq_12/code.html',
   './tata_tertib_dark_safari_hwmi_mq_12/code.html',
   './panduan_sholat_musafir_safari_hwmi_mq_12/code.html',

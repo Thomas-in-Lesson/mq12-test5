@@ -19,7 +19,8 @@
     uniforms: 'jadwal_seragam_safari_hwmi_mq_12/code.html',
     photos: 'skema_foto_safari_hwmi_mq_12/code.html',
     map: 'peta_safari_hwmi_mq_12/code.html',
-    starterpack: 'starterpack_dan_packing_safari_hwmi_mq_12/code.html'
+    starterpack: 'starterpack_dan_packing_safari_hwmi_mq_12/code.html',
+    participants: 'informasi_peserta_safari_hwmi_mq_12/code.html'
   };
 
   const path = window.location.pathname;
