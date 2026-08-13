@@ -1,6 +1,6 @@
 import zipfile, xml.etree.ElementTree as ET, json, re, os
 
-# 1. Extract contact data from Informasi Peserta.xlsx
+# 1. Extract contact data strictly from Informasi Peserta.xlsx ONLY
 with zipfile.ZipFile('/Users/rizky/Documents/#Experiment/mq12-test5/Informasi Peserta.xlsx') as z:
     strings = []
     if 'xl/sharedStrings.xml' in z.namelist():
@@ -25,60 +25,33 @@ with zipfile.ZipFile('/Users/rizky/Documents/#Experiment/mq12-test5/Informasi Pe
             excel_rows.append(row_vals)
 
 rows = excel_rows[1:]
-contacts_map = {}
+full_list = []
+seen_names = set()
 
 for r in rows:
     name = r[0].strip() if len(r) > 0 else ''
     phone = r[2].strip() if len(r) > 2 else ''
-    if name:
-        clean_phone = re.sub(r'[^\d]', '', phone)
-        if clean_phone.startswith('0'):
-            wa_phone = '62' + clean_phone[1:]
-            fmt_phone = '0' + clean_phone[1:]
-        elif clean_phone.startswith('62'):
-            wa_phone = clean_phone
-            fmt_phone = '0' + clean_phone[2:]
-        else:
-            wa_phone = clean_phone
-            fmt_phone = clean_phone
-        contacts_map[name.lower()] = {
+    
+    if not name or name.upper() == 'NAMA':
+        continue
+        
+    clean_phone = re.sub(r'[^\d]', '', phone)
+    if clean_phone.startswith('0'):
+        wa_phone = '62' + clean_phone[1:]
+        fmt_phone = '0' + clean_phone[1:]
+    elif clean_phone.startswith('62'):
+        wa_phone = clean_phone
+        fmt_phone = '0' + clean_phone[2:]
+    else:
+        wa_phone = clean_phone
+        fmt_phone = clean_phone
+
+    if name.lower() not in seen_names:
+        seen_names.add(name.lower())
+        full_list.append({
             'name': name,
             'phone': fmt_phone,
             'wa': wa_phone
-        }
-
-# Read peserta.json
-with open('peserta.json', 'r', encoding='utf-8') as f:
-    peserta_json = json.load(f)
-
-full_list = []
-seen_names = set()
-
-# Combine list
-for key, pval in peserta_json.items():
-    p_name = pval.get('name', key)
-    if p_name.lower() in seen_names:
-        continue
-    seen_names.add(p_name.lower())
-    
-    match_info = contacts_map.get(p_name.lower())
-    if not match_info:
-        for a in pval.get('aliases', []):
-            if a.lower() in contacts_map:
-                match_info = contacts_map[a.lower()]
-                break
-    
-    if match_info:
-        full_list.append({
-            'name': p_name,
-            'phone': match_info['phone'],
-            'wa': match_info['wa']
-        })
-    else:
-        full_list.append({
-            'name': p_name,
-            'phone': '',
-            'wa': ''
         })
 
 # Sort list alphabetically
@@ -132,7 +105,7 @@ html_code = f"""<!DOCTYPE html>
   DAFTAR & KONTAK PESERTA
 </h1>
 <p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">
-  Informasi daftar nama dan kontak HP/WhatsApp peserta Safari HWMI MQ 12.
+  Informasi daftar nama dan kontak HP/WhatsApp resmi peserta Safari HWMI MQ 12.
 </p>
 <div class="w-16 h-1 bg-secondary mx-auto rounded-full opacity-50"></div>
 
@@ -247,4 +220,4 @@ renderParticipants('');
 with open('informasi_peserta_safari_hwmi_mq_12/code.html', 'w', encoding='utf-8') as f:
     f.write(html_code)
 
-print('Successfully generated updated informasi_peserta_safari_hwmi_mq_12/code.html!')
+print(f'Successfully generated informasi_peserta_safari_hwmi_mq_12/code.html with strictly {len(full_list)} participants from Informasi Peserta.xlsx!')
