@@ -7,7 +7,10 @@
 // Gelar hanya dibuang bila berada di depan. Kalau dibuang di mana saja, "H" pada
 // "Thousan Ahmad Alin HS" ikut hilang.
 const GELAR = new Set(['bpk', 'bp', 'pak', 'ibu', 'bu', 'mba', 'mbak', 'drs', 'hj', 'ny', 'kh', 'ust', 'ustadz', 'ustadzah', 'h']);
-const PREFIKS_M = new Set(['m', 'muh', 'moh', 'moch', 'muhammad']);
+// Prefiks "Muhammad" ditulis belasan cara: M, Muh, Moh, Moch, Much, Muhamad,
+// Muchamad, Mochammad... Semuanya menyusut ke awalan "mhmd" secara fonetik.
+// Syarat diawali "mu"/"mo" menjaga nama asli seperti Mahmud tetap utuh.
+const prefiksMuhammad = (t) => t === 'm' || (/^m[uo]/.test(t) && 'mhmd'.startsWith(phoneticWord(t)));
 
 function tokenize(name) {
   const raw = String(name)
@@ -20,7 +23,7 @@ function tokenize(name) {
   while (i < raw.length - 1 && GELAR.has(raw[i])) i++; // sisakan minimal satu token
   // Prefiks M./Muh./Muhammad ikut dibuang, sama seperti normalizeInputName() di
   // browser. "Mustofa" tetap utuh karena ia satu token, bukan prefiks + nama.
-  if (i < raw.length - 1 && PREFIKS_M.has(raw[i])) i++;
+  if (i < raw.length - 1 && prefiksMuhammad(raw[i])) i++;
   return raw.slice(i);
 }
 

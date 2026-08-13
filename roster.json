@@ -1,0 +1,638 @@
+[
+ {
+  "nama": "Afiq Nur Rohman",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Bagus Adib Khoiruddun",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Fariid Nashrulloh",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Fathul Bahri Gilang A.N",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Fuad Muhammad Taufik",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Hafid Dyantoro",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Irkham Rayindra Putra",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Lutfian Aditya",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Muchamad Alam Sahrul",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Ma'rifatul Azal",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Mochammad Rizky",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Mohamad Fatihul Aziz",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Muhammad Fadlur Rohman",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Muhammad Husna Listyanando",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Muhammad Luqman Hakim Cahyono",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Saifu Umar Ahmadi",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Syari' Naufal Al Badri",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Yuan Daviq Nuzul Qurnain",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Ananda Zahra Annisa",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Anastasya Yosa Karmelia",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Anggita Putri Utami",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Fatimah Ratna Dewi Purwati N.",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Lili Nur Rahma Wati",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Munta' Zemmahal",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Nimimmms Caini Lathiifah Hajarulloh",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Nur Mika Sari",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Riska Farah Za'idah",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "Roodliyatan Mardiiyah",
+  "bus": "Bus 1"
+ },
+ {
+  "nama": "M. Churul Ilmi",
+  "bus": "Bus 2"
+ },
+ {
+  "nama": "Mujahidul Abror",
+  "bus": "Bus 2"
+ },
+ {
+  "nama": "Ruben Ahmad Habil Arasyi",
+  "bus": "Bus 2"
+ },
+ {
+  "nama": "Thousan Ahmad Alin Hisan Syamsuddin",
+  "bus": "Bus 2"
+ },
+ {
+  "nama": "Abidatul Faricha CH",
+  "bus": "Bus 2"
+ },
+ {
+  "nama": "Adelia Margareta Fara",
+  "bus": "Bus 2"
+ },
+ {
+  "nama": "Ananda Mustika Sari",
+  "bus": "Bus 2"
+ },
+ {
+  "nama": "Anis Nurlaili",
+  "bus": "Bus 2"
+ },
+ {
+  "nama": "Annisa Kamalat",
+  "bus": "Bus 2"
+ },
+ {
+  "nama": "Devi Nuria Arsanti",
+  "bus": "Bus 2"
+ },
+ {
+  "nama": "Dewi Ratna Swari",
+  "bus": "Bus 2"
+ },
+ {
+  "nama": "Fianisa Showatul Ma'adin",
+  "bus": "Bus 2"
+ },
+ {
+  "nama": "Ida Rohayati",
+  "bus": "Bus 2"
+ },
+ {
+  "nama": "Ika Nurul Aini",
+  "bus": "Bus 2"
+ },
+ {
+  "nama": "Intan Muhajirotul Khasanah",
+  "bus": "Bus 2"
+ },
+ {
+  "nama": "Karima Fauky Ramadhani",
+  "bus": "Bus 2"
+ },
+ {
+  "nama": "Lu'lu' Khoirunnisa",
+  "bus": "Bus 2"
+ },
+ {
+  "nama": "Maul Fatihatur Rohmah",
+  "bus": "Bus 2"
+ },
+ {
+  "nama": "Najilah Jahsi",
+  "bus": "Bus 2"
+ },
+ {
+  "nama": "Putri Andini",
+  "bus": "Bus 2"
+ },
+ {
+  "nama": "Ratna Umi Tisiyanina",
+  "bus": "Bus 2"
+ },
+ {
+  "nama": "Salwa Muniroh",
+  "bus": "Bus 2"
+ },
+ {
+  "nama": "Santi Kartikasari",
+  "bus": "Bus 2"
+ },
+ {
+  "nama": "Siti Aisyah",
+  "bus": "Bus 2"
+ },
+ {
+  "nama": "Tya Aprillia Lestari",
+  "bus": "Bus 2"
+ },
+ {
+  "nama": "Viddi Puspita Sari",
+  "bus": "Bus 2"
+ },
+ {
+  "nama": "Fernandi Mendieta Syah",
+  "bus": "Bus 3"
+ },
+ {
+  "nama": "Muhammad Ikhlasul Abror Putra Djati",
+  "bus": "Bus 3"
+ },
+ {
+  "nama": "Muhammad Muchtar Amin",
+  "bus": "Bus 3"
+ },
+ {
+  "nama": "Muhammad Nurul Fuady",
+  "bus": "Bus 3"
+ },
+ {
+  "nama": "Alif Fiana Ahmad Fatih",
+  "bus": "Bus 3"
+ },
+ {
+  "nama": "Andes Rahayu Ningtyas",
+  "bus": "Bus 3"
+ },
+ {
+  "nama": "Bunga Arum Dani",
+  "bus": "Bus 3"
+ },
+ {
+  "nama": "Fajriyatul Farichah",
+  "bus": "Bus 3"
+ },
+ {
+  "nama": "Fani Dzurrotun Nafisah",
+  "bus": "Bus 3"
+ },
+ {
+  "nama": "Fina Dzurrotun Nasikhah",
+  "bus": "Bus 3"
+ },
+ {
+  "nama": "Hamrotul Mukarromah",
+  "bus": "Bus 3"
+ },
+ {
+  "nama": "Isna Maghfiroh",
+  "bus": "Bus 3"
+ },
+ {
+  "nama": "Khamdatul Mukaromah",
+  "bus": "Bus 3"
+ },
+ {
+  "nama": "Khikmatul Khasanah",
+  "bus": "Bus 3"
+ },
+ {
+  "nama": "Melly Kayyisa Aidiana",
+  "bus": "Bus 3"
+ },
+ {
+  "nama": "Mutiara Noor Rohmah",
+  "bus": "Bus 3"
+ },
+ {
+  "nama": "Naimatul Malikhah",
+  "bus": "Bus 3"
+ },
+ {
+  "nama": "Putri Lestari Ningsih",
+  "bus": "Bus 3"
+ },
+ {
+  "nama": "Resta Lestari",
+  "bus": "Bus 3"
+ },
+ {
+  "nama": "Retma Aisyah",
+  "bus": "Bus 3"
+ },
+ {
+  "nama": "Sita Janatul Munawaroh",
+  "bus": "Bus 3"
+ },
+ {
+  "nama": "Siti Julaikah",
+  "bus": "Bus 3"
+ },
+ {
+  "nama": "Sri Bela Yunita",
+  "bus": "Bus 3"
+ },
+ {
+  "nama": "Tamia Rizki Hana Puteri",
+  "bus": "Bus 3"
+ },
+ {
+  "nama": "Umu Cholifah",
+  "bus": "Bus 3"
+ },
+ {
+  "nama": "Yonsania Nurfadilla",
+  "bus": "Bus 3"
+ },
+ {
+  "nama": "Fachrizal Achmad Ghozali",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Herman Efendi",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Muchammad Ikhlasul Muttaqin",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Umar Muchtar Alif",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Annisa Humaira Nggobe",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Diyah Ayu Nur Surya Alfian Ningrum",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Dwi Ajeng Sasmita",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Dwi Lestari Agustina",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Fatimah Binti Maimun",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Hafida Azila",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Nella Rodhiyah",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Nova Nurayni",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Nur Hilmiyatul Azizah",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Nuril Fithriyyah",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Nurul Fauza",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Rahayu Cahya Mustika",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Rochmawati Fajrin",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Salma Dewi Atika",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Sintawati Prasetyani",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Siti Nur Nisfiyah",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Suci Novia Andriani",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Sulalatin Nuriyyah",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Tahdliyatul Ma'azah",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Tahshinatus Salamah",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Umi Jariyah",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Umi Nasikah Saptaningsih",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Upi Ramadhani Putri",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Zaskia Syamsuwirna",
+  "bus": "Bus 4"
+ },
+ {
+  "nama": "Achmad Ridwan Agustin",
+  "bus": "Bus 5"
+ },
+ {
+  "nama": "Achmad Shodiqin",
+  "bus": "Bus 5"
+ },
+ {
+  "nama": "Ade Iman hidayat",
+  "bus": "Bus 5"
+ },
+ {
+  "nama": "Aditiya Saputra",
+  "bus": "Bus 5"
+ },
+ {
+  "nama": "Ahmad Fikri Ulinnuha",
+  "bus": "Bus 5"
+ },
+ {
+  "nama": "Annas Sidik Permana",
+  "bus": "Bus 5"
+ },
+ {
+  "nama": "Dimas Fajar Johari",
+  "bus": "Bus 5"
+ },
+ {
+  "nama": "Habib Akhmad Mukharroman",
+  "bus": "Bus 5"
+ },
+ {
+  "nama": "Ibnu Adi Setiawan",
+  "bus": "Bus 5"
+ },
+ {
+  "nama": "Juwatono Firmansyah Abadi",
+  "bus": "Bus 5"
+ },
+ {
+  "nama": "Ja'far Shodiq Hidayat",
+  "bus": "Bus 5"
+ },
+ {
+  "nama": "Jonathan Leo Wijanarko",
+  "bus": "Bus 5"
+ },
+ {
+  "nama": "Khafid Dwi Candra",
+  "bus": "Bus 5"
+ },
+ {
+  "nama": "Muhammad Ali Ridho Fatahillah",
+  "bus": "Bus 5"
+ },
+ {
+  "nama": "Muchamad Irfan Fanani",
+  "bus": "Bus 5"
+ },
+ {
+  "nama": "Muhammad Misbahul Muflihin",
+  "bus": "Bus 5"
+ },
+ {
+  "nama": "Muhamad Fathur Rohim",
+  "bus": "Bus 5"
+ },
+ {
+  "nama": "Muhamad Nashruddin Tsani",
+  "bus": "Bus 5"
+ },
+ {
+  "nama": "Moch Amin Ariefulloh",
+  "bus": "Bus 5"
+ },
+ {
+  "nama": "Muhammad Danis Alfian Soba",
+  "bus": "Bus 5"
+ },
+ {
+  "nama": "Muhammad Irfan",
+  "bus": "Bus 5"
+ },
+ {
+  "nama": "Muhammad Kariim Almujtaba",
+  "bus": "Bus 5"
+ },
+ {
+  "nama": "Muhammad Mu'thi Syahrul Sya'ban",
+  "bus": "Bus 5"
+ },
+ {
+  "nama": "Mustofa Kamil",
+  "bus": "Bus 5"
+ },
+ {
+  "nama": "Novel Putra Atma Wahyudi",
+  "bus": "Bus 5"
+ },
+ {
+  "nama": "Yuaz Rizal Irvansyah",
+  "bus": "Bus 5"
+ },
+ {
+  "nama": "Achmad Prammuja Hadi",
+  "bus": "Bus 6"
+ },
+ {
+  "nama": "Achmad Syarifuddin",
+  "bus": "Bus 6"
+ },
+ {
+  "nama": "Ahmad Imadul Islam",
+  "bus": "Bus 6"
+ },
+ {
+  "nama": "Ahmad Kurniawan",
+  "bus": "Bus 6"
+ },
+ {
+  "nama": "Ahmad Nurdiansah",
+  "bus": "Bus 6"
+ },
+ {
+  "nama": "Al Irfan",
+  "bus": "Bus 6"
+ },
+ {
+  "nama": "Anang Fachurozi",
+  "bus": "Bus 6"
+ },
+ {
+  "nama": "Chodimul Ihsan",
+  "bus": "Bus 6"
+ },
+ {
+  "nama": "Dwi Ardiansyah Nur Rokhim",
+  "bus": "Bus 6"
+ },
+ {
+  "nama": "Fuad Husain",
+  "bus": "Bus 6"
+ },
+ {
+  "nama": "Ikhlasul Muttaqin",
+  "bus": "Bus 6"
+ },
+ {
+  "nama": "Ikhyak Maulana",
+  "bus": "Bus 6"
+ },
+ {
+  "nama": "Ismul Asom",
+  "bus": "Bus 6"
+ },
+ {
+  "nama": "Mochammad Agus Prasetiyo",
+  "bus": "Bus 6"
+ },
+ {
+  "nama": "Mohammad Bahrun Muchith",
+  "bus": "Bus 6"
+ },
+ {
+  "nama": "Mohammad Ibnu Muhajir",
+  "bus": "Bus 6"
+ },
+ {
+  "nama": "Muhammad Ikhwan Syahrom",
+  "bus": "Bus 6"
+ },
+ {
+  "nama": "Muhammad Kholidin",
+  "bus": "Bus 6"
+ },
+ {
+  "nama": "Muhammad Sholihul Amiin",
+  "bus": "Bus 6"
+ },
+ {
+  "nama": "Nur Muhammad",
+  "bus": "Bus 6"
+ },
+ {
+  "nama": "Nur Wahyu Mu'thi Legowo",
+  "bus": "Bus 6"
+ },
+ {
+  "nama": "Raka Biyan Pratama",
+  "bus": "Bus 6"
+ },
+ {
+  "nama": "Rifki Darmawan",
+  "bus": "Bus 6"
+ },
+ {
+  "nama": "Shiddiq Silo Handoko",
+  "bus": "Bus 6"
+ },
+ {
+  "nama": "Syuhada Ridlo Billah",
+  "bus": "Bus 6"
+ }
+]

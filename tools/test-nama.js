@@ -60,6 +60,11 @@ const web = new Function(`${blok[1]}; return { normalizeInputName, phoneticWord,
 for (const w of ['fadhilah', 'khoirunnisa', 'muttaqin', 'juwatono', 'syarifuddin', 'nurdiansyah', 'lulu', 'tahsinatus']) {
   assert.strictEqual(web.phoneticWord(w), phoneticWord(w), `salinan phoneticWord melenceng pada "${w}"`);
 }
+// normalizeInputName() di browser wajib menghasilkan token yang sama dengan tokenize()
+for (const n of ['Muchamad Alam Sahrul', 'Mochammad Rizky', 'Mahmud Yunus', 'Mustofa Kamil',
+  'Bpk. Irfan Fanani', "Lu'lu' Khoirunnisa'", 'M.Ikhlasul Muttaqin', 'Munta Zemmahal', 'Bpk', 'M']) {
+  assert.strictEqual(web.normalizeInputName(n), tokenize(n).join(' '), `normalizeInputName melenceng pada "${n}"`);
+}
 
 // C-4 "selesai bila": ejaan mana pun mendarat di profil yang sama.
 // Meniru pencarian di site-navigation.js: exact -> sebunyi -> sebagian.

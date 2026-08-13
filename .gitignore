@@ -1,0 +1,4 @@
+# Sumber mentah berisi nomor HP peserta; jangan pernah ter-push.
+Informasi Peserta.xlsx
+*.xlsx
+.DS_Store

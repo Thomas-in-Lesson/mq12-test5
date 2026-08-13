@@ -1182,13 +1182,18 @@
   }
 
   /* --- NAME-PHONETIC-START (sinkron dengan tools/name-utils.js, dijaga tools/test-nama.js) --- */
+  const GELAR = new Set(['bpk', 'bp', 'pak', 'ibu', 'bu', 'mba', 'mbak', 'drs', 'hj', 'ny', 'kh', 'ust', 'ustadz', 'ustadzah', 'h']);
+  const prefiksMuhammad = (t) => t === 'm' || (/^m[uo]/.test(t) && 'mhmd'.startsWith(phoneticWord(t)));
+
   function normalizeInputName(name) {
-    let n = String(name).toLowerCase();
-    n = n.replace(/^\s*(bpk|bp|pak|ibu|bu|mba|mbak|drs|hj|ny|ust|ustadz|ustadzah|h)\b\.?\s*/g, '');
-    // Prefiks hanya dipotong bila diikuti titik atau spasi, supaya "Mustofa"/"Maimun" utuh
-    n = n.replace(/^(muhammad|moch|moh|muh|m)(\.\s*|\s+)/, '');
-    n = n.replace(/[^a-z0-9\s]/g, '');
-    return n.split(/\s+/).filter(Boolean).join(' ');
+    const raw = String(name).toLowerCase()
+      .replace(/['’`]/g, '')
+      .replace(/[^a-z0-9]+/g, ' ')
+      .split(' ').filter(Boolean);
+    let i = 0;
+    while (i < raw.length - 1 && GELAR.has(raw[i])) i++;
+    if (i < raw.length - 1 && prefiksMuhammad(raw[i])) i++;
+    return raw.slice(i).join(' ');
   }
 
   function phoneticWord(w) {
