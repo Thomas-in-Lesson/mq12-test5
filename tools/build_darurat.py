@@ -10,9 +10,18 @@ if not m:
 
 pics = json.loads(m.group(1))
 
+# Enforce strict deduplication by phone number
+seen_phones = set()
+unique_pics = []
+for p in pics:
+    phone = p.get('phone', '').strip()
+    if phone and phone not in seen_phones:
+        seen_phones.add(phone)
+        unique_pics.append(p)
+
 # Group by category
 grouped = {}
-for p in pics:
+for p in unique_pics:
     cat = p.get('cat', 'Lainnya')
     if cat not in grouped:
         grouped[cat] = []
@@ -147,4 +156,4 @@ html_content += """  <div class="footer">
 with open('darurat.html', 'w', encoding='utf-8') as f:
     f.write(html_content)
 
-print('Successfully generated darurat.html!')
+print(f'Successfully generated darurat.html with strictly {len(unique_pics)} unique PIC contacts!')

@@ -1057,6 +1057,12 @@
       </div>
       <div id="sos-pic-list-container" class="site-sos-list">
       </div>
+      <div style="padding:10px 14px;text-align:center;border-top:1px solid rgba(87,66,62,0.3);background:rgba(34,5,3,0.4);border-bottom-left-radius:16px;border-bottom-right-radius:16px;">
+        <a href="${href('emergency')}" style="color:#e9c176;font-size:12px;font-weight:700;text-decoration:underline;display:inline-flex;align-items:center;gap:6px;">
+          <span>🆘</span>
+          <span>Buka Halaman Kontak Darurat (Statis / Luring) →</span>
+        </a>
+      </div>
     </div>
   `;
   document.body.append(sosModal);
