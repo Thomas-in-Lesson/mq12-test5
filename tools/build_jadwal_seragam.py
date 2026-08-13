@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+import os
+
+html_code = """<!DOCTYPE html>
 <html class="dark" lang="id">
 <head>
 <meta charset="utf-8">
@@ -379,3 +381,9 @@ function switchSesiTab(sesiId) {
 <script src="../site-navigation.js"></script>
 </body>
 </html>
+"""
+
+with open('jadwal_seragam_safari_hwmi_mq_12/code.html', 'w', encoding='utf-8') as f:
+    f.write(html_code)
+
+print('Updated jadwal_seragam_safari_hwmi_mq_12/code.html successfully!')
