@@ -31,7 +31,6 @@ for r in rows:
     name = r[0].strip() if len(r) > 0 else ''
     phone = r[2].strip() if len(r) > 2 else ''
     if name:
-        # Normalize phone
         clean_phone = re.sub(r'[^\d]', '', phone)
         if clean_phone.startswith('0'):
             wa_phone = '62' + clean_phone[1:]
@@ -62,7 +61,6 @@ for key, pval in peserta_json.items():
         continue
     seen_names.add(p_name.lower())
     
-    # Match phone from Excel map
     match_info = contacts_map.get(p_name.lower())
     if not match_info:
         for a in pval.get('aliases', []):
@@ -86,9 +84,6 @@ for key, pval in peserta_json.items():
 # Sort list alphabetically
 full_list.sort(key=lambda x: x['name'])
 
-print(f'Total participant contact records compiled: {len(full_list)}')
-
-# Generate HTML file
 os.makedirs('informasi_peserta_safari_hwmi_mq_12', exist_ok=True)
 
 html_code = f"""<!DOCTYPE html>
@@ -200,7 +195,7 @@ function renderParticipants(filterText = '') {{
           <div class="space-y-1">
             <h3 class="font-title-lg font-bold text-primary line-clamp-1">${{p.name}}</h3>
             <p class="text-xs text-on-surface-variant flex items-center gap-1.5 font-medium">
-              <span class="material-symbols-outlined text-[16px] text-secondary">call</span>
+              <span class="text-[14px]">📞</span>
               <span>${{phoneDisplay}}</span>
             </p>
           </div>
@@ -212,11 +207,11 @@ function renderParticipants(filterText = '') {{
         ${{hasPhone ? `
         <div class="flex items-center gap-2 pt-2 border-t border-surface-variant/30">
           <a href="tel:${{p.phone}}" class="flex-1 bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 text-on-surface font-semibold py-2 px-3 rounded-lg text-xs flex items-center justify-center gap-1.5 transition-colors">
-            <span class="material-symbols-outlined text-[16px] text-secondary">call</span>
+            <span class="text-[14px]">📞</span>
             <span>Telepon</span>
           </a>
           <a href="https://wa.me/${{p.wa}}" target="_blank" class="flex-1 bg-secondary text-surface-container-lowest font-bold py-2 px-3 rounded-lg text-xs flex items-center justify-center gap-1.5 hover:bg-secondary/90 transition-colors shadow-sm">
-            <span class="material-symbols-outlined text-[16px]">chat</span>
+            <span class="text-[14px]">💬</span>
             <span>WhatsApp</span>
           </a>
         </div>
@@ -252,4 +247,4 @@ renderParticipants('');
 with open('informasi_peserta_safari_hwmi_mq_12/code.html', 'w', encoding='utf-8') as f:
     f.write(html_code)
 
-print('Successfully generated informasi_peserta_safari_hwmi_mq_12/code.html!')
+print('Successfully generated updated informasi_peserta_safari_hwmi_mq_12/code.html!')
