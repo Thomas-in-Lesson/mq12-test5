@@ -1,7 +1,8 @@
-const CACHE_NAME = 'safari-hwmi-mq12-v5';
+const CACHE_NAME = 'safari-hwmi-mq12-v6';
 const ASSETS = [
   './',
   './index.html',
+  './darurat.html',
   './site-navigation.js',
   './styles.css',
   './peserta.json',

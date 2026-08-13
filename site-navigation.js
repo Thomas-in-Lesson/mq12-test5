@@ -20,7 +20,8 @@
     photos: 'skema_foto_safari_hwmi_mq_12/code.html',
     map: 'peta_safari_hwmi_mq_12/code.html',
     starterpack: 'starterpack_dan_packing_safari_hwmi_mq_12/code.html',
-    participants: 'informasi_peserta_safari_hwmi_mq_12/code.html'
+    participants: 'informasi_peserta_safari_hwmi_mq_12/code.html',
+    emergency: 'darurat.html'
   };
 
   const path = window.location.pathname;
