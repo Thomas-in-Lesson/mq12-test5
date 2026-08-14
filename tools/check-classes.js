@@ -1,0 +1,47 @@
+#!/usr/bin/env node
+// Cek class HTML yang tidak punya aturan CSS sama sekali.
+// styles.css adalah hasil build Tailwind yang sudah di-purge dan repo ini tidak punya
+// build pipeline, jadi class baru (mis. "border-gold/30") diam-diam tidak berefek apa pun.
+//
+// Pakai: node tools/check-classes.js <file.html> [file.html ...]
+// Keluar dengan kode 1 kalau ada class yang tidak terdefinisi.
+
+const fs = require('fs');
+const path = require('path');
+
+const root = path.join(__dirname, '..');
+const sheet = fs.readFileSync(path.join(root, 'styles.css'), 'utf8');
+
+// Class yang efeknya datang dari JS/atribut, bukan dari CSS.
+const IGNORE = /^(dark|group|material-symbols-outlined|is-active)$/;
+
+const defined = (css, name) => {
+  // Tailwind meng-escape "/", ".", ":" dengan backslash di output-nya.
+  const esc = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\\([/.:])/g, '\\\\$1');
+  return new RegExp('\\.' + esc.replace(/([/.:])/g, '\\\\\\$1') + '(?![\\w-])').test(css);
+};
+
+let failed = 0;
+
+for (const file of process.argv.slice(2)) {
+  const html = fs.readFileSync(file, 'utf8');
+  const inline = (html.match(/<style[^>]*>[\s\S]*?<\/style>/g) || []).join('\n');
+  const css = sheet + '\n' + inline;
+
+  const names = new Set();
+  for (const m of html.matchAll(/class="([^"]*)"/g)) {
+    for (const n of m[1].split(/\s+/)) if (n && !IGNORE.test(n)) names.add(n);
+  }
+
+  const dead = [...names].filter((n) => !defined(css, n)).sort();
+  const rel = path.relative(root, file);
+  if (dead.length) {
+    failed++;
+    console.log(`FAIL ${rel} — ${dead.length} class tanpa aturan CSS:`);
+    for (const n of dead) console.log(`       ${n}`);
+  } else {
+    console.log(`OK   ${rel} — ${names.size} class, semua terdefinisi`);
+  }
+}
+
+process.exit(failed ? 1 : 0);

@@ -17,21 +17,155 @@
 <title>Peta Safari - Safari HWMI MQ 12</title>
 <link rel="stylesheet" href="../styles.css">
 <style>
-  .card-inner-glow {
-    box-shadow: inset 1px 1px 0px 0px rgba(233, 193, 118, 0.1);
+  /* Gaya halaman ditulis eksplisit di sini: styles.css adalah hasil build Tailwind
+     yang sudah di-purge, sehingga class baru (mis. border-gold/30) tidak ikut ter-compile. */
+
+  /* Bilah atas */
+  .pg-bar-title {
+    flex: 1;
+    min-width: 0;
+    font-family: 'Noto Serif', serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(var(--c-secondary));
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
+
+  /* Judul halaman */
+  .pg-head { text-align: center; }
+  .pg-title {
+    margin: 0;
+    font-family: 'Noto Serif', serif;
+    font-size: 20px;
+    line-height: 1.25;
+    font-weight: 700;
+    color: rgb(var(--c-gold));
+  }
+  .pg-sub {
+    max-width: 36ch;
+    margin: 6px auto 0;
+    font-size: 12px;
+    line-height: 1.55;
+    color: rgb(var(--c-on-surface-variant));
+  }
+
+  /* Pemilih sesi: 3 kolom sama lebar, tidak pernah turun baris */
+  .sesi-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    padding: 6px;
+    border: 1px solid rgba(224, 184, 99, .4);
+    border-radius: 14px;
+    background: rgb(var(--c-surface-container));
+  }
+  .sesi-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 9px 4px;
+    border: 0;
+    border-radius: 10px;
+    background: transparent;
+    color: rgb(var(--c-gold));
+    font: 700 12px/1 -apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', sans-serif;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background .18s ease, color .18s ease;
+  }
+  .sesi-tab.is-active { background: rgb(var(--c-gold)); color: rgb(var(--c-on-gold)); }
+  .sesi-tab .dot { flex: none; width: 6px; height: 6px; border-radius: 50%; background: #4ADE80; }
+  .sesi-tab .soon { font-size: 9px; font-weight: 700; opacity: .8; }
+
+  /* Kartu peta */
+  .map-card {
+    padding: 12px;
+    border: 1px solid rgba(224, 184, 99, .3);
+    border-radius: 16px;
+    background: rgb(var(--c-surface-low));
+    box-shadow: inset 1px 1px 0 0 rgba(224, 184, 99, .1);
+  }
+  .map-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(224, 184, 99, .18);
+  }
+  .map-bar h2 {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    font-size: 13px;
+    font-weight: 700;
+    color: #FFFFFF;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .map-open {
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 11px;
+    border: 1px solid rgba(224, 184, 99, .45);
+    border-radius: 10px;
+    background: rgba(224, 184, 99, .16);
+    color: rgb(var(--c-gold));
+    font-size: 11px;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .map-open:hover { background: rgb(var(--c-gold)); color: rgb(var(--c-on-gold)); }
+  .map-open:hover svg { fill: rgb(var(--c-on-gold)); }
+
   .map-frame-wrapper {
     position: relative;
     width: 100%;
     height: 480px;
-    border-radius: 16px;
+    border: 1px solid rgba(224, 184, 99, .2);
+    border-radius: 14px;
     overflow: hidden;
-    background: #1a0505;
+    background: #1A0505;
   }
+  .map-note {
+    margin: 10px 0 0;
+    font-size: 11px;
+    line-height: 1.55;
+    color: rgb(var(--c-on-surface-variant));
+    text-align: center;
+  }
+
+  /* Status sesi belum tersedia */
+  .map-soon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 24px;
+    text-align: center;
+  }
+  .map-soon h3 { margin: 0; font-size: 15px; font-weight: 700; color: rgb(var(--c-gold)); }
+  .map-soon p { max-width: 32ch; margin: 0; font-size: 12px; line-height: 1.55; color: rgb(var(--c-on-surface-variant)); }
+
   @media (min-width: 768px) {
-    .map-frame-wrapper {
-      height: 600px;
-    }
+    .pg-title { font-size: 28px; }
+    .pg-sub { font-size: 14px; }
+    .sesi-tab { font-size: 13px; padding: 11px 6px; }
+    .map-card { padding: 20px; }
+    .map-bar h2 { font-size: 15px; }
+    .map-frame-wrapper { height: 600px; }
   }
 </style>
 </head>
@@ -39,79 +173,53 @@
 
 <!-- TopAppBar (Mobile) -->
 <header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-surface-variant/30 shadow-sm flex items-center justify-between px-margin-mobile h-16 md:hidden">
-  <button aria-label="Go back" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-surface-variant/50 text-primary" onclick="window.history.back()">
+  <button aria-label="Kembali" class="flex items-center justify-center w-10 h-10 rounded-full text-primary shrink-0" onclick="window.history.back()">
     <span class="material-symbols-outlined">arrow_back</span>
   </button>
-  <div class="font-headline-md-mobile text-headline-md-mobile font-bold text-secondary flex-1 text-center truncate">
-    Peta Rute Safari
-  </div>
-  <div class="w-10"></div>
+  <div class="pg-bar-title">Peta Rute Safari</div>
+  <div class="w-10 shrink-0"></div>
 </header>
 
 <!-- Main Content -->
-<main class="flex-1 w-full max-w-5xl mx-auto pt-20 px-3 md:px-margin-desktop md:pt-32 space-y-6">
-  
-  <!-- Header Title -->
-  <section class="text-center space-y-2">
-    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold/15 border border-gold/30 text-gold text-xs font-bold whitespace-nowrap">
-      <svg class="w-4 h-4 text-gold shrink-0" fill="#E0B863" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-      <span class="whitespace-nowrap">PETA RUTE SAFARI</span>
-    </div>
-    <h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg text-secondary font-bold">
-      PETA RUTE PERJALANAN
-    </h1>
-    <p class="text-xs md:text-sm text-on-surface-variant max-w-xl mx-auto">
-      Peta rute interaktif ziarah, penginapan, dan titik kumpul perjalanan Safari HWMI MQ 12.
-    </p>
+<main class="flex-1 w-full max-w-container-max-width mx-auto pt-20 px-3 md:px-margin-desktop md:pt-32 space-y-4">
+
+  <!-- Judul -->
+  <section class="pg-head">
+    <h1 class="pg-title">Peta Rute Perjalanan</h1>
+    <p class="pg-sub">Rute ziarah, penginapan, dan titik kumpul Safari HWMI MQ 12.</p>
   </section>
 
-  <!-- Tab Sesi Switcher (Professional Minimalist Pill Buttons) -->
-  <section class="flex justify-center">
-    <div class="inline-flex p-1.5 rounded-2xl bg-surface-container border border-gold/40 shadow-lg gap-2 flex-wrap justify-center">
-      <button id="btn-sesi-1" onclick="switchSesi('sesi1')" type="button" class="px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition-all bg-secondary text-surface-container-lowest shadow-md whitespace-nowrap">
-        <span>SESI 1</span>
-        <span class="w-2 h-2 rounded-full bg-green-400"></span>
+  <!-- Pemilih Sesi -->
+  <section>
+    <div class="sesi-tabs">
+      <button id="btn-sesi-1" type="button" onclick="switchSesi('sesi1')" class="sesi-tab is-active">
+        <span>SESI 1</span><span class="dot"></span>
       </button>
-      <button id="btn-sesi-2" onclick="switchSesi('sesi2')" type="button" class="px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition-all text-gold hover:bg-gold/10 whitespace-nowrap">
-        <span>SESI 2</span>
-        <span class="px-1.5 py-0.5 rounded bg-gold/20 text-[9px] font-bold">Segera</span>
+      <button id="btn-sesi-2" type="button" onclick="switchSesi('sesi2')" class="sesi-tab">
+        <span>SESI 2</span><span class="soon">Segera</span>
       </button>
-      <button id="btn-sesi-3" onclick="switchSesi('sesi3')" type="button" class="px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition-all text-gold hover:bg-gold/10 whitespace-nowrap">
-        <span>SESI 3</span>
-        <span class="px-1.5 py-0.5 rounded bg-gold/20 text-[9px] font-bold">Segera</span>
+      <button id="btn-sesi-3" type="button" onclick="switchSesi('sesi3')" class="sesi-tab">
+        <span>SESI 3</span><span class="soon">Segera</span>
       </button>
     </div>
   </section>
 
-  <!-- Interactive Map Canvas Card (Skema Foto Style Viewport) -->
-  <section class="bg-surface-container-low rounded-2xl p-4 md:p-6 card-inner-glow border border-gold/30 shadow-2xl space-y-4">
-    
-    <!-- Top Action Toolbar -->
-    <div class="flex items-center justify-between gap-2 border-b border-surface-variant/40 pb-3">
-      <div class="flex items-center gap-2 min-w-0">
-        <svg class="w-5 h-5 text-gold shrink-0" fill="#E0B863" viewBox="0 0 24 24"><path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"/></svg>
-        <h2 id="sesi-map-title" class="text-xs md:text-base font-bold text-white whitespace-nowrap truncate">Rute Safari Sesi 1</h2>
-      </div>
-      
-      <div id="sesi-action-buttons" class="shrink-0">
-        <a id="btn-open-maps" href="https://www.google.com/maps/d/edit?mid=1Ph0Sufcfky7gAJNmb0r8O_82phz4W3M&usp=sharing" target="_blank" rel="noopener" class="px-3 py-1.5 rounded-xl bg-gold/20 text-gold border border-gold/40 text-xs font-bold hover:bg-gold hover:text-surface-container-lowest transition-all flex items-center gap-1.5 whitespace-nowrap">
-          <svg class="w-4 h-4 text-gold shrink-0" fill="#E0B863" viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
-          <span class="whitespace-nowrap">Buka Maps App</span>
-        </a>
-      </div>
+  <!-- Kanvas Peta -->
+  <section class="map-card">
+
+    <div class="map-bar">
+      <h2 id="sesi-map-title">Rute Safari Sesi 1</h2>
+      <a id="btn-open-maps" class="map-open" href="https://www.google.com/maps/d/edit?mid=1Ph0Sufcfky7gAJNmb0r8O_82phz4W3M&usp=sharing" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="#E0B863" aria-hidden="true"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+        <span>Maps App</span>
+      </a>
     </div>
 
-    <!-- Map Viewport -->
-    <div id="map-container" class="map-frame-wrapper border border-gold/20 shadow-inner">
+    <div id="map-container" class="map-frame-wrapper">
       <iframe id="map-iframe" src="https://www.google.com/maps/d/embed?mid=1Ph0Sufcfky7gAJNmb0r8O_82phz4W3M" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="Peta Rute Safari HWMI MQ 12"></iframe>
     </div>
 
-    <!-- Footer Note -->
-    <div class="text-center pt-2">
-      <p class="text-[11px] text-on-surface-variant">
-        💡 <strong>Petunjuk Mobile:</strong> Geser dan perbesar peta menggunakan 2 jari. Tekan tombol <strong>Buka Google Maps App</strong> di atas untuk navigasi arah langsung di aplikasi HP Anda.
-      </p>
-    </div>
+    <p class="map-note">Geser dan perbesar peta menggunakan dua jari. Tekan <strong>Maps App</strong> untuk navigasi langsung di aplikasi.</p>
 
   </section>
 
@@ -145,13 +253,9 @@
     const data = sesiMapData[sesiKey];
     if (!data) return;
 
-    ['sesi1', 'sesi2', 'sesi3'].forEach(k => {
+    ['sesi1', 'sesi2', 'sesi3'].forEach((k) => {
       const btn = document.getElementById('btn-' + k.replace('sesi', 'sesi-'));
-      if (k === sesiKey) {
-        btn.className = "px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition-all bg-secondary text-surface-container-lowest shadow-md";
-      } else {
-        btn.className = "px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition-all text-gold hover:bg-gold/10";
-      }
+      if (btn) btn.classList.toggle('is-active', k === sesiKey);
     });
 
     document.getElementById('sesi-map-title').textContent = data.title;
@@ -161,16 +265,15 @@
     if (data.active) {
       btnOpenMaps.style.display = 'inline-flex';
       btnOpenMaps.href = data.mapsUrl;
-      container.innerHTML = `<iframe id="map-iframe" src="${data.embedUrl}" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="${data.title}"></iframe>`;
+      container.innerHTML = '<iframe id="map-iframe" src="' + data.embedUrl + '" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="' + data.title + '"></iframe>';
     } else {
       btnOpenMaps.style.display = 'none';
-      container.innerHTML = `
-        <div class="w-full h-full flex flex-col items-center justify-center text-center p-8 space-y-3 bg-surface-container-low">
-          <svg class="w-12 h-12 text-gold/60 mx-auto fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
-          <h3 class="text-base font-bold text-gold">Rute Sesi Ini Segera Hadir</h3>
-          <p class="text-xs text-on-surface-variant max-w-md mx-auto">${data.note}</p>
-        </div>
-      `;
+      container.innerHTML =
+        '<div class="map-soon">' +
+          '<svg width="40" height="40" viewBox="0 0 24 24" fill="#E0B863" opacity=".6" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>' +
+          '<h3>Rute Sesi Ini Segera Hadir</h3>' +
+          '<p>' + data.note + '</p>' +
+        '</div>';
     }
   }
 </script>
