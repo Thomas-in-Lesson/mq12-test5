@@ -1194,9 +1194,7 @@
   const prefiksMuhammad = (t) => t === 'm' || (/^m[uo]/.test(t) && 'mhmd'.startsWith(phoneticWord(t)));
 
   function normalizeInputName(name) {
-    const raw = String(name)
-      .replace(/\b[A-Z]{2,3}\b/g, (m) => m.split('').join(' '))
-      .toLowerCase()
+    const raw = String(name).toLowerCase()
       .replace(/['’`]/g, '')
       .replace(/[^a-z0-9]+/g, ' ')
       .split(' ').filter(Boolean);

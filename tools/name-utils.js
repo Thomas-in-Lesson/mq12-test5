@@ -14,7 +14,6 @@ const prefiksMuhammad = (t) => t === 'm' || (/^m[uo]/.test(t) && 'mhmd'.startsWi
 
 function tokenize(name) {
   const raw = String(name)
-    .replace(/\b[A-Z]{2,3}\b/g, (m) => m.split('').join(' '))
     .toLowerCase()
     .replace(/['’`]/g, '')      // apostrof dibuang, bukan dijadikan pemisah: lu'lu -> lulu
     .replace(/[^a-z0-9]+/g, ' ') // titik ikut jadi pemisah: "m.ikhlasul" -> "m ikhlasul"
@@ -73,18 +72,34 @@ function compareNames(nameA, nameB, { longgar = false } = {}) {
 
   let cursor = 0;
   let full = 0;
+  const used = new Set();
   for (const w of short) {
     let hit = -1;
     for (let k = cursor; k < long.length; k++) {
+      if (used.has(k)) continue;
       const kind = wordsMatch(w, long[k]);
       if (kind) {
         hit = k;
+        used.add(k);
         if (kind === 'full') full++;
         break;
       }
     }
+    if (hit === -1) {
+      // Fallback: search anywhere in long for unused match (handles transposed initial ordering e.g. Thousan Alin A H S)
+      for (let k = 0; k < long.length; k++) {
+        if (used.has(k)) continue;
+        const kind = wordsMatch(w, long[k]);
+        if (kind) {
+          hit = k;
+          used.add(k);
+          if (kind === 'full') full++;
+          break;
+        }
+      }
+    }
     if (hit === -1) return { match: false, reason: 'urutan kata tidak cocok' };
-    cursor = hit + 1;
+    if (hit >= cursor) cursor = hit + 1;
   }
 
   // Yang berbahaya adalah kecocokan lewat inisial/pemendekan. Selama masih ada

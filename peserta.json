@@ -39,13 +39,6 @@
   },
   "menginap": [
    {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "1008",
-    "tipe": "Twin Bed",
-    "urutan": 1
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "31",
@@ -73,13 +66,6 @@
   },
   "menginap": [
    {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "1012",
-    "tipe": "Twin Bed",
-    "urutan": 1
-   },
-   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "107",
@@ -88,117 +74,11 @@
    }
   ]
  },
- "a-syarifuddin": {
-  "name": "A Syarifuddin",
-  "aliases": [
-   "A Syarifuddin",
-   "A. Syarifuddin",
-   "A. Syarifudin"
-  ],
-  "peran": "",
-  "transport": {},
-  "menginap": [
-   {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "1112",
-    "tipe": "Queen Bed",
-    "urutan": 1
-   },
-   {
-    "kota": "Semarang",
-    "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "1115",
-    "tipe": "DELUXE CORRIDOR",
-    "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "12",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
-    "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
-    "kamar": "59",
-    "tipe": "Deluxe",
-    "urutan": 4
-   },
-   {
-    "kota": "Cianjur",
-    "hotel": "Hotel Gino Feruci Cianjur",
-    "kamar": "319",
-    "tipe": "Superior Twin",
-    "urutan": 5
-   }
-  ]
- },
- "a-fikri-ulin-nuha": {
-  "name": "A. Fikri Ulin Nuha",
-  "aliases": [
-   "A. Fikri Ulin Nuha",
-   "A Fikri Ulinnuha",
-   "Ahmad Fikri Ulinnuha",
-   "Fikri Ulinnuha",
-   "A. Fikri Ulinnuha"
-  ],
-  "peran": "Keamanan",
-  "transport": {
-   "sesi1": "ELF 6",
-   "sesi3": "Bus 5"
-  },
-  "menginap": [
-   {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "1210",
-    "tipe": "Queen Bed",
-    "urutan": 1
-   },
-   {
-    "kota": "Semarang",
-    "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "622",
-    "tipe": "DELUXE CORRIDOR",
-    "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "63",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
-    "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
-    "kamar": "59",
-    "tipe": "Deluxe",
-    "urutan": 4
-   },
-   {
-    "kota": "Cianjur",
-    "hotel": "Hotel Gino Feruci Cianjur",
-    "kamar": "303",
-    "tipe": "Superior",
-    "urutan": 5
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "24",
-    "tipe": "Deluxe",
-    "urutan": 6
-   }
-  ]
- },
  "a-shodiqin": {
-  "name": "A. Shodiqin",
+  "name": "A Shodiqin",
   "aliases": [
-   "A. Shodiqin",
    "A Shodiqin",
+   "A. Shodiqin",
    "A.SHODIQIN"
   ],
   "peran": "keamanan",
@@ -206,13 +86,6 @@
    "sesi3": "Bus 5"
   },
   "menginap": [
-   {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "1112",
-    "tipe": "Queen Bed",
-    "urutan": 1
-   },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
@@ -243,7 +116,47 @@
    }
   ]
  },
- "abidatul-faricha-c-h": {
+ "a-syarifuddin": {
+  "name": "A Syarifuddin",
+  "aliases": [
+   "A Syarifuddin",
+   "A. Syarifuddin",
+   "A. Syarifudin"
+  ],
+  "peran": "",
+  "transport": {},
+  "menginap": [
+   {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "1115",
+    "tipe": "DELUXE CORRIDOR",
+    "urutan": 2
+   },
+   {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "12",
+    "tipe": "Deluxe",
+    "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "59",
+    "tipe": "Deluxe",
+    "urutan": 4
+   },
+   {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "319",
+    "tipe": "Superior Twin",
+    "urutan": 5
+   }
+  ]
+ },
+ "abidatul-faricha-ch": {
   "name": "Abidatul Faricha CH",
   "aliases": [
    "Abidatul Faricha CH",
@@ -301,6 +214,65 @@
    }
   ]
  },
+ "achmad-prammuja-hadi": {
+  "name": "Achmad Prammuja Hadi",
+  "aliases": [
+   "Achmad Prammuja Hadi",
+   "A Pramuja Hadi",
+   "Ahmad pramuja hadi",
+   "Ahmad Pramuja Hadi",
+   "A.PRAMUJA HADI"
+  ],
+  "peran": "Penata Acara",
+  "transport": {
+   "sesi1": "ELF 8",
+   "sesi3": "Bus 6"
+  },
+  "menginap": [
+   {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "619",
+    "tipe": "Queen Bed",
+    "urutan": 1
+   },
+   {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "321",
+    "tipe": "DELUXE BALCONY",
+    "urutan": 2
+   },
+   {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "50",
+    "tipe": "Deluxe",
+    "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "22",
+    "tipe": "Deluxe",
+    "urutan": 4
+   },
+   {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "125",
+    "tipe": "Deluxe twin - Extrabed",
+    "urutan": 5
+   },
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "810",
+    "tipe": "Deluxe",
+    "urutan": 6
+   }
+  ]
+ },
  "achmad-ridwan-agustin": {
   "name": "Achmad Ridwan Agustin",
   "aliases": [
@@ -314,6 +286,13 @@
    "sesi1": "ELF 1"
   },
   "menginap": [
+   {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "1012",
+    "tipe": "Twin Bed",
+    "urutan": 1
+   },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
@@ -349,6 +328,13 @@
   },
   "menginap": [
    {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "1112",
+    "tipe": "Queen Bed",
+    "urutan": 1
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "35",
@@ -371,6 +357,13 @@
   },
   "menginap": [
    {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "1112",
+    "tipe": "Queen Bed",
+    "urutan": 1
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "35",
@@ -379,26 +372,17 @@
    }
   ]
  },
- "a-d-e-iman-h": {
-  "name": "ADE IMAN H.",
-  "aliases": [
-   "ADE IMAN H."
-  ],
-  "peran": "PJ.pelayan",
-  "transport": {
-   "sesi3": "Bus 5"
-  },
-  "menginap": []
- },
  "ade-iman-hidayat": {
   "name": "Ade Iman Hidayat",
   "aliases": [
    "Ade Iman Hidayat",
-   "Ade Iman hidayat"
+   "Ade Iman hidayat",
+   "ADE IMAN H."
   ],
   "peran": "Kenyamanan Pendamping",
   "transport": {
-   "sesi1": "ELF 7"
+   "sesi1": "ELF 7",
+   "sesi3": "Bus 5"
   },
   "menginap": [
    {
@@ -449,11 +433,11 @@
   "name": "Adelia Margareta Farah",
   "aliases": [
    "Adelia Margareta Farah",
-   "Adelia Margareta",
    "Adelia Margareta Fara",
    "Adelia Margareta f",
    "Adelia M Fara",
-   "Adelia Margareta F"
+   "Adelia Margareta F",
+   "Adelia Margareta"
   ],
   "peran": "Merchandise",
   "transport": {
@@ -509,8 +493,8 @@
   "name": "Aditiya Saputra",
   "aliases": [
    "Aditiya Saputra",
-   "Aditya Saputra",
-   "ADITYA S"
+   "ADITYA S",
+   "Aditya Saputra"
   ],
   "peran": "Penata Acara",
   "transport": {
@@ -620,6 +604,57 @@
    }
   ]
  },
+ "ahmad-fikri-ulinnuha": {
+  "name": "Ahmad Fikri Ulinnuha",
+  "aliases": [
+   "Ahmad Fikri Ulinnuha",
+   "A Fikri Ulinnuha",
+   "A. Fikri Ulinnuha",
+   "A. Fikri Ulin Nuha"
+  ],
+  "peran": "Keamanan",
+  "transport": {
+   "sesi1": "ELF 6",
+   "sesi3": "Bus 5"
+  },
+  "menginap": [
+   {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "1210",
+    "tipe": "Queen Bed",
+    "urutan": 1
+   },
+   {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "622",
+    "tipe": "DELUXE CORRIDOR",
+    "urutan": 2
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "59",
+    "tipe": "Deluxe",
+    "urutan": 4
+   },
+   {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "303",
+    "tipe": "Superior",
+    "urutan": 5
+   },
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "24",
+    "tipe": "Deluxe",
+    "urutan": 6
+   }
+  ]
+ },
  "ahmad-imadul-islam": {
   "name": "Ahmad Imadul Islam",
   "aliases": [
@@ -721,6 +756,13 @@
   },
   "menginap": [
    {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "1008",
+    "tipe": "Twin Bed",
+    "urutan": 1
+   },
+   {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
     "kamar": "109",
@@ -738,58 +780,6 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "816",
-    "tipe": "Deluxe",
-    "urutan": 6
-   }
-  ]
- },
- "ahmad-pramuja-hadi": {
-  "name": "Ahmad Pramuja Hadi",
-  "aliases": [
-   "Ahmad Pramuja Hadi",
-   "A Pramuja Hadi",
-   "Achmad Prammuja Hadi",
-   "Ahmad pramuja hadi",
-   "A.PRAMUJA HADI"
-  ],
-  "peran": "Penata Acara",
-  "transport": {
-   "sesi1": "ELF 8",
-   "sesi3": "Bus 6"
-  },
-  "menginap": [
-   {
-    "kota": "Semarang",
-    "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "321",
-    "tipe": "DELUXE BALCONY",
-    "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "50",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
-    "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
-    "kamar": "22",
-    "tipe": "Deluxe",
-    "urutan": 4
-   },
-   {
-    "kota": "Cianjur",
-    "hotel": "Hotel Gino Feruci Cianjur",
-    "kamar": "125",
-    "tipe": "Deluxe twin - Extrabed",
-    "urutan": 5
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "810",
     "tipe": "Deluxe",
     "urutan": 6
    }
@@ -851,29 +841,11 @@
    }
   ]
  },
- "ali-ridlo": {
-  "name": "Ali Ridlo",
-  "aliases": [
-   "Ali Ridlo"
-  ],
-  "peran": "",
-  "transport": {},
-  "menginap": [
-   {
-    "kota": "Semarang",
-    "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "802",
-    "tipe": "Superior",
-    "urutan": 2
-   }
-  ]
- },
  "alif-fiana-ahmad-fatih": {
   "name": "Alif Fiana Ahmad Fatih",
   "aliases": [
    "Alif Fiana Ahmad Fatih",
    "Alifiyana A Fatih",
-   "Alifiana Ahmad F",
    "Alifiana A.F",
    "Alifiana A Fatih",
    "Alifiyana Ahmad F",
@@ -951,7 +923,6 @@
   "aliases": [
    "Ananda Mustika Sari",
    "Ananda Mustika sari",
-   "Ananda Mustika",
    "Ananda Mustika S"
   ],
   "peran": "Konsumsi",
@@ -1070,8 +1041,8 @@
   "name": "Anang Fachurrozi",
   "aliases": [
    "Anang Fachurrozi",
-   "Anang fachurrozi",
-   "Anang Fachurozi"
+   "Anang Fachurozi",
+   "Anang fachurrozi"
   ],
   "peran": "Konsumsi",
   "transport": {
@@ -1136,7 +1107,6 @@
   "name": "Anastasya Yosa Karmelia",
   "aliases": [
    "Anastasya Yosa Karmelia",
-   "Anastasya Yosa K.",
    "Anastasya Yosa K",
    "ANASTASYA YOSA K."
   ],
@@ -1198,7 +1168,6 @@
   "aliases": [
    "Andes Rahayu Ningtyas",
    "Andes Rahayu N",
-   "Andes rahayu",
    "Andes Rahayu",
    "ANDES RAHAYU"
   ],
@@ -1211,8 +1180,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "621",
-    "tipe": "Queen Bed",
+    "kamar": "920",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
@@ -1443,13 +1412,13 @@
    }
   ]
  },
- "annas-shiddiq-permana": {
-  "name": "Annas Shiddiq Permana",
+ "annas-sidik-permana": {
+  "name": "Annas Sidik Permana",
   "aliases": [
-   "Annas Shiddiq Permana",
-   "Annas Sidiq Permana",
    "Annas Sidik Permana",
+   "Annas Sidiq Permana",
    "Anas shidiq permana",
+   "Annas Shiddiq Permana",
    "Annas Sidiq P",
    "ANNAS SHIDDIQ P.",
    "Annas Shidiq P / Ja'far S"
@@ -1564,8 +1533,8 @@
   "name": "Bagus Adib Khoiruddun",
   "aliases": [
    "Bagus Adib Khoiruddun",
-   "Bagus Adib",
    "Bagus adib choirudin",
+   "Bagus Adib",
    "Bagus Adib Choirudin",
    "BAGUS ADIB K."
   ],
@@ -1709,7 +1678,6 @@
   "aliases": [
    "Bpk Irfan Fanani",
    "Bpk Irfan fanani",
-   "Muchamad Irfan Fanani",
    "Bpk. Irfan Fanani",
    "M. IRFAN FANANI"
   ],
@@ -1745,13 +1713,6 @@
     "kamar": "104",
     "tipe": "Superior Twin",
     "urutan": 5
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "29",
-    "tipe": "Deluxe",
-    "urutan": 6
    }
   ]
  },
@@ -1894,10 +1855,13 @@
   "name": "Bpk Nur Hadi",
   "aliases": [
    "Bpk Nur Hadi",
-   "Bpk Nurhadi"
+   "Bpk Nurhadi",
+   "BPK NURHADI"
   ],
   "peran": "",
-  "transport": {},
+  "transport": {
+   "sesi3": "Bus 1"
+  },
   "menginap": [
    {
     "kota": "Gresik",
@@ -1943,25 +1907,18 @@
    }
   ]
  },
- "b-p-k-nurhadi": {
-  "name": "BPK NURHADI",
-  "aliases": [
-   "BPK NURHADI"
-  ],
-  "peran": "",
-  "transport": {
-   "sesi3": "Bus 1"
-  },
-  "menginap": []
- },
  "zakiyyul-fuad": {
   "name": "Bpk Zakiyyul Fuad",
   "aliases": [
    "Bpk Zakiyyul Fuad",
-   "Bpk zakiyyul Fuad"
+   "Bpk zakiyyul Fuad",
+   "Bpk  M Zakiyyul Fuad",
+   "BPK. M. ZAKIYYUL FUAD"
   ],
   "peran": "",
-  "transport": {},
+  "transport": {
+   "sesi3": "Bus 2"
+  },
   "menginap": [
    {
     "kota": "Gresik",
@@ -1999,17 +1956,6 @@
     "urutan": 6
    }
   ]
- },
- "b-p-k-m-zakiyyul-fuad": {
-  "name": "BPK. M. ZAKIYYUL FUAD",
-  "aliases": [
-   "BPK. M. ZAKIYYUL FUAD"
-  ],
-  "peran": "",
-  "transport": {
-   "sesi3": "Bus 2"
-  },
-  "menginap": []
  },
  "bunga-arum-dani": {
   "name": "Bunga Arum Dani",
@@ -2186,7 +2132,6 @@
   "aliases": [
    "Devi Nuria Arsanti",
    "Devi Nuriya Arsanti",
-   "Devi Nuria",
    "Devi Nur",
    "Devi N A",
    "Devi Nuria A"
@@ -2301,7 +2246,6 @@
   "name": "Dimas Fajar Jauhari",
   "aliases": [
    "Dimas Fajar Jauhari",
-   "Dhimas Fajar J.",
    "Dimas Fajar Johari",
    "Dimas Fajar jauhari",
    "DIMAS FAJAR J."
@@ -2360,13 +2304,10 @@
   "name": "Diyah Ayu Nur Surya Alfian Ningrum",
   "aliases": [
    "Diyah Ayu Nur Surya Alfian Ningrum",
-   "Diyah Ayu",
-   "Diyyah Ayu NS"
+   "Diyah Ayu"
   ],
-  "peran": "Peserta",
-  "transport": {
-   "sesi1": "ELF 5"
-  },
+  "peran": "",
+  "transport": {},
   "menginap": [
    {
     "kota": "Gresik",
@@ -2420,6 +2361,17 @@
   "peran": "Peserta",
   "transport": {
    "sesi3": "Bus 4"
+  },
+  "menginap": []
+ },
+ "diyyah-ayu-ns": {
+  "name": "Diyyah Ayu NS",
+  "aliases": [
+   "Diyyah Ayu NS"
+  ],
+  "peran": "Peserta",
+  "transport": {
+   "sesi1": "ELF 5"
   },
   "menginap": []
  },
@@ -2494,11 +2446,13 @@
   "aliases": [
    "Dwi Ardiansyah Nur Rokhim",
    "Dwi Ardiansyah",
-   "Dwi ardiyansyah"
+   "Dwi ardiyansyah",
+   "DWI ARDIANSYAH NR."
   ],
   "peran": "Konsumsi",
   "transport": {
-   "sesi1": "ELF 8"
+   "sesi1": "ELF 8",
+   "sesi3": "Bus 6"
   },
   "menginap": [
    {
@@ -2545,28 +2499,27 @@
    }
   ]
  },
- "d-w-i-lestari": {
-  "name": "DWI LESTARI",
-  "aliases": [
-   "DWI LESTARI"
-  ],
-  "peran": "Peserta",
-  "transport": {
-   "sesi3": "Bus 4"
-  },
-  "menginap": []
- },
  "dwi-lestari-agustina": {
   "name": "Dwi Lestari Agustina",
   "aliases": [
    "Dwi Lestari Agustina",
+   "Dwi Lestari Agustin",
+   "DWI LESTARI",
    "Dwi Lestari"
   ],
   "peran": "Peserta",
   "transport": {
-   "sesi1": "ELF 3"
+   "sesi1": "ELF 3",
+   "sesi3": "Bus 4"
   },
   "menginap": [
+   {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "621",
+    "tipe": "Queen Bed",
+    "urutan": 1
+   },
    {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
@@ -2599,13 +2552,6 @@
   "transport": {},
   "menginap": [
    {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "716",
-    "tipe": "Triple Bed",
-    "urutan": 1
-   },
-   {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
     "kamar": "59",
@@ -2619,7 +2565,6 @@
   "aliases": [
    "Fachrizal Achmad Ghozali",
    "Fahrizal A Ghozali",
-   "Fahrizal Ghozali",
    "F. Achmad Ghozali",
    "Fahrizal A Ghazali",
    "Fachrizal Achmad G",
@@ -2675,13 +2620,12 @@
    }
   ]
  },
- "fajriyatul-faricha": {
-  "name": "Fajriyatul Faricha",
+ "fajriyatul-farichah": {
+  "name": "Fajriyatul Farichah",
   "aliases": [
-   "Fajriyatul Faricha",
-   "Fajriyyatul Faricha",
-   "Fajriyatul faricha",
    "Fajriyatul Farichah",
+   "Fajriyyatul Faricha",
+   "Fajriyatul Faricha",
    "Fajriatul Faricha"
   ],
   "peran": "",
@@ -2773,6 +2717,13 @@
   },
   "menginap": [
    {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "718",
+    "tipe": "Triple Bed",
+    "urutan": 1
+   },
+   {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
     "kamar": "807",
@@ -2812,42 +2763,19 @@
  "fanni-dzurotun-khasanah": {
   "name": "Fanni Dzurotun Khasanah",
   "aliases": [
-   "Fanni Dzurotun Khasanah",
-   "Fani Dzurrotun"
+   "Fanni Dzurotun Khasanah"
   ],
   "peran": "Peserta",
   "transport": {
    "sesi1": "ELF 5"
   },
-  "menginap": [
-   {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "718",
-    "tipe": "Triple Bed",
-    "urutan": 1
-   },
-   {
-    "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
-    "kamar": "17",
-    "tipe": "Deluxe",
-    "urutan": 4
-   },
-   {
-    "kota": "Cianjur",
-    "hotel": "Hotel Gino Feruci Cianjur",
-    "kamar": "305",
-    "tipe": "Deluxe twin - Extrabed",
-    "urutan": 5
-   }
-  ]
+  "menginap": []
  },
- "farid-nasrulloh": {
-  "name": "Farid Nasrulloh",
+ "fariid-nashrulloh": {
+  "name": "Fariid Nashrulloh",
   "aliases": [
-   "Farid Nasrulloh",
    "Fariid Nashrulloh",
+   "Farid Nasrulloh",
    "Fariid Nasrulloh",
    "FARIID NASRULLOH"
   ],
@@ -2914,13 +2842,13 @@
   },
   "menginap": []
  },
- "fathul-bahri-gilang": {
-  "name": "Fathul Bahri Gilang",
+ "fathul-bahri-gilang-an": {
+  "name": "Fathul Bahri Gilang AN",
   "aliases": [
+   "Fathul Bahri Gilang AN",
    "Fathul Bahri Gilang",
    "Fathul Bahri Gilang A.N",
-   "Fathul bahri Gilang",
-   "Fathul Bahri Gilang AN"
+   "Fathul bahri Gilang"
   ],
   "peran": "Kenyamanan Pendamping",
   "transport": {
@@ -2976,7 +2904,6 @@
   "name": "Fatimah Binti Maimun",
   "aliases": [
    "Fatimah Binti Maimun",
-   "Fatimah BInti Maimun",
    "Fatimah Binti",
    "Fatimah Binti M"
   ],
@@ -3035,6 +2962,7 @@
   "aliases": [
    "Fatimah Ratna Dewi Purwati N.",
    "Fatimah Ratna Dewi",
+   "Fatimah Ratna DewiP",
    "Fatimah Ratna D",
    "FATIMAH RATNA D.P"
   ],
@@ -3047,8 +2975,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "301",
-    "tipe": "Twin Bed",
+    "kamar": "320",
+    "tipe": "Triple Bed",
     "urutan": 1
    },
    {
@@ -3093,7 +3021,6 @@
   "aliases": [
    "Fernandi Mendieta Syah",
    "Fernandi Mendietasya",
-   "Fernandi Mendietasyah",
    "Fernandi Menditasya",
    "Fernandi Mendieta",
    "Fernandi Mendy Tas"
@@ -3153,7 +3080,6 @@
   "aliases": [
    "Fianisa Shofwatul",
    "Fianisa Sofwatul M",
-   "Fianisa Sofwatul",
    "FIANISA SHOFWATUL"
   ],
   "peran": "Konsumsi",
@@ -3162,13 +3088,6 @@
    "sesi3": "Bus 2"
   },
   "menginap": [
-   {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "621",
-    "tipe": "Queen Bed",
-    "urutan": 1
-   },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
@@ -3208,6 +3127,13 @@
   "transport": {},
   "menginap": [
    {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "920",
+    "tipe": "Twin Bed",
+    "urutan": 1
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "36",
@@ -3216,10 +3142,29 @@
    }
   ]
  },
- "fina-dzurrotul": {
-  "name": "Fina Dzurrotul",
+ "fikri-ulinnuha": {
+  "name": "Fikri Ulinnuha",
   "aliases": [
-   "Fina Dzurrotul"
+   "Fikri Ulinnuha"
+  ],
+  "peran": "",
+  "transport": {},
+  "menginap": [
+   {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "63",
+    "tipe": "Deluxe",
+    "urutan": 3
+   }
+  ]
+ },
+ "fina-dzurrotun-nasikhah": {
+  "name": "Fina Dzurrotun Nasikhah",
+  "aliases": [
+   "Fina Dzurrotun Nasikhah",
+   "Fani Dzurrotun",
+   "Fina dzurrotun Nasikha"
   ],
   "peran": "",
   "transport": {},
@@ -3230,24 +3175,27 @@
     "kamar": "718",
     "tipe": "Triple Bed",
     "urutan": 1
-   }
-  ]
- },
- "fina-dzurrotun-nasikhah": {
-  "name": "Fina Dzurrotun Nasikhah",
-  "aliases": [
-   "Fina Dzurrotun Nasikhah",
-   "Fina dzurrotun Nasikha"
-  ],
-  "peran": "",
-  "transport": {},
-  "menginap": [
+   },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
     "kamar": "807",
     "tipe": "Superior",
     "urutan": 2
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "17",
+    "tipe": "Deluxe",
+    "urutan": 4
+   },
+   {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "305",
+    "tipe": "Deluxe twin - Extrabed",
+    "urutan": 5
    },
    {
     "kota": "Jakarta",
@@ -3320,7 +3268,6 @@
   "aliases": [
    "Fuad Muhammad Taufik",
    "Fuad M Taufiq",
-   "Fuad M. Taufiq",
    "FUAD M.TAUFIQ",
    "Fuad M. Taufik"
   ],
@@ -3389,13 +3336,6 @@
   },
   "menginap": [
    {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "515",
-    "tipe": "Queen Bed",
-    "urutan": 1
-   },
-   {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
     "kamar": "109",
@@ -3437,6 +3377,13 @@
   },
   "menginap": [
    {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "515",
+    "tipe": "Queen Bed",
+    "urutan": 1
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "816",
@@ -3449,8 +3396,7 @@
   "name": "Hafid Dyantoro",
   "aliases": [
    "Hafid Dyantoro",
-   "Hafid Diyantoro",
-   "KHAFID DWI C."
+   "Hafid Diyantoro"
   ],
   "peran": "Konsumsi",
   "transport": {
@@ -3567,23 +3513,6 @@
    }
   ]
  },
- "hamdatul": {
-  "name": "Hamdatul",
-  "aliases": [
-   "Hamdatul"
-  ],
-  "peran": "",
-  "transport": {},
-  "menginap": [
-   {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "315",
-    "tipe": "Twin Bed",
-    "urutan": 1
-   }
-  ]
- },
  "hamdatul-mukarromah": {
   "name": "Hamdatul Mukarromah",
   "aliases": [
@@ -3598,6 +3527,13 @@
    "sesi3": "Bus 3"
   },
   "menginap": [
+   {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "315",
+    "tipe": "Twin Bed",
+    "urutan": 1
+   },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
@@ -3862,8 +3798,7 @@
   "aliases": [
    "Ida Rohayati",
    "Ida rohayati",
-   "IDA ROHAYATI",
-   "DWI ARDIANSYAH NR."
+   "IDA ROHAYATI"
   ],
   "peran": "Dokumentasi Visual",
   "transport": {
@@ -4156,6 +4091,7 @@
   "aliases": [
    "Irfan Fanani",
    "M Irfan fanani",
+   "Muchamad Irfan Fanani",
    "M Irfan Fanani"
   ],
   "peran": "Keamanan",
@@ -4197,6 +4133,13 @@
     "kamar": "303",
     "tipe": "Superior",
     "urutan": 5
+   },
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "29",
+    "tipe": "Deluxe",
+    "urutan": 6
    }
   ]
  },
@@ -4368,26 +4311,18 @@
   },
   "menginap": []
  },
- "j-af-a-r-s-h": {
-  "name": "JA'FAR S.H",
+ "jafar-shodiq-hidayat": {
+  "name": "Ja'far Shodiq Hidayat",
   "aliases": [
+   "Ja'far Shodiq Hidayat",
+   "Ja'far Shodiq",
+   "Jafar shodiq hidayat",
    "JA'FAR S.H"
   ],
   "peran": "PJ. peelengkapan",
   "transport": {
    "sesi3": "Bus 5"
   },
-  "menginap": []
- },
- "jafar-shodiq-hidayat": {
-  "name": "Ja'far Shodiq Hidayat",
-  "aliases": [
-   "Ja'far Shodiq Hidayat",
-   "Ja'far Shodiq",
-   "Jafar shodiq hidayat"
-  ],
-  "peran": "",
-  "transport": {},
   "menginap": [
    {
     "kota": "Gresik",
@@ -4438,7 +4373,6 @@
   "aliases": [
    "Jonathan Leo Wijanarko",
    "Jonathan Leo W",
-   "Jonathan Leo W.",
    "Jonathan leo",
    "Jonathan Leo",
    "JONATHAN LEO W."
@@ -4507,7 +4441,6 @@
   "name": "Juwatono Firmansyah Abadi",
   "aliases": [
    "Juwatono Firmansyah Abadi",
-   "J Firmansyah Abadi",
    "Juwatono Firmansyah",
    "Juwatono Firmansyah A",
    "J. Firmansyah Abadi"
@@ -4561,12 +4494,12 @@
    }
   ]
  },
- "karimah-fauky": {
-  "name": "Karimah Fauky",
+ "karima-fauky": {
+  "name": "Karima Fauky",
   "aliases": [
-   "Karimah Fauky",
    "Karima Fauky",
    "Karima Fauky R.",
+   "Karimah Fauky",
    "KARIMA FAUKY R."
   ],
   "peran": "Dokumentasi Tulis",
@@ -4622,11 +4555,21 @@
  "khafid-dwi-candra": {
   "name": "Khafid Dwi Candra",
   "aliases": [
-   "Khafid Dwi Candra"
+   "Khafid Dwi Candra",
+   "KHAFID DWI C."
   ],
-  "peran": "",
-  "transport": {},
+  "peran": "PJ.perlengkapan",
+  "transport": {
+   "sesi3": "Bus 5"
+  },
   "menginap": [
+   {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "602",
+    "tipe": "Queen Bed",
+    "urutan": 1
+   },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
@@ -4669,13 +4612,6 @@
   },
   "menginap": [
    {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "602",
-    "tipe": "Queen Bed",
-    "urutan": 1
-   },
-   {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
     "kamar": "22",
@@ -4696,13 +4632,6 @@
   },
   "menginap": [
    {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "1110",
-    "tipe": "Queen Bed",
-    "urutan": 1
-   },
-   {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
     "kamar": "46",
@@ -4722,6 +4651,13 @@
    "sesi3": "Bus 3"
   },
   "menginap": [
+   {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "1110",
+    "tipe": "Queen Bed",
+    "urutan": 1
+   },
    {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
@@ -4745,34 +4681,25 @@
    }
   ]
  },
- "lili-n-u-r-r": {
-  "name": "LILI NUR R.",
-  "aliases": [
-   "LILI NUR R."
-  ],
-  "peran": "Bendahara",
-  "transport": {
-   "sesi3": "Bus 1"
-  },
-  "menginap": []
- },
  "lili-nur-rahma-wati": {
   "name": "Lili Nur Rahma Wati",
   "aliases": [
    "Lili Nur Rahma Wati",
    "Lili Nur Rahmawati",
-   "Lili Nur R"
+   "Lili Nur R",
+   "LILI NUR R."
   ],
   "peran": "Bendahara",
   "transport": {
-   "sesi1": "ELF 2"
+   "sesi1": "ELF 2",
+   "sesi3": "Bus 1"
   },
   "menginap": [
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "301",
-    "tipe": "Twin Bed",
+    "kamar": "320",
+    "tipe": "Triple Bed",
     "urutan": 1
    },
    {
@@ -4834,7 +4761,6 @@
   "aliases": [
    "Lulu' Khoirun Nisa'",
    "Lu'lu' Khoirunnisa",
-   "Lu'lu' Khoirunnisa'",
    "Lulu' Khoirunnisa'",
    "Lu'lu Khoirunisa",
    "Lulu' Khoirunnisa",
@@ -4902,6 +4828,13 @@
   },
   "menginap": [
    {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "506",
+    "tipe": "Queen Bed",
+    "urutan": 1
+   },
+   {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
     "kamar": "35",
@@ -4939,13 +4872,6 @@
   "peran": "",
   "transport": {},
   "menginap": [
-   {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "506",
-    "tipe": "Queen Bed",
-    "urutan": 1
-   },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
@@ -5075,23 +5001,11 @@
  "ali-ridlo-fatahillah": {
   "name": "M Ali Ridlo Fatahillah",
   "aliases": [
-   "M Ali Ridlo Fatahillah",
-   "M Ali Ridlo F",
-   "M Ali Ridlo",
-   "M. Ali Ridlo Fatahillah"
+   "M Ali Ridlo Fatahillah"
   ],
-  "peran": "Dokumen Tulis",
-  "transport": {
-   "sesi1": "ELF 6"
-  },
+  "peran": "",
+  "transport": {},
   "menginap": [
-   {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "702",
-    "tipe": "Triple Bed",
-    "urutan": 1
-   },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
@@ -5100,25 +5014,11 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "41",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "10",
     "tipe": "Deluxe",
     "urutan": 4
-   },
-   {
-    "kota": "Cianjur",
-    "hotel": "Hotel Gino Feruci Cianjur",
-    "kamar": "117",
-    "tipe": "Deluxe twin - Extrabed",
-    "urutan": 5
    }
   ]
  },
@@ -5361,7 +5261,6 @@
   "aliases": [
    "M Fathur Rohim",
    "M Fatchur Rohim",
-   "M Fatchurrohim",
    "Muhamad Fathur Rohim",
    "M. Fathur Rohim",
    "Fathurohim"
@@ -5420,9 +5319,9 @@
   "name": "M Fatihul Aziz",
   "aliases": [
    "M Fatihul Aziz",
-   "M. Fatihul Aziz",
    "Mohamad Fatihul Aziz",
    "Fatihul Aziz",
+   "M. Fatihul Aziz",
    "Fathul Aziz"
   ],
   "peran": "Kenyamanan Pendamping",
@@ -5537,7 +5436,6 @@
   "name": "M Ikhlasul Muttaqin",
   "aliases": [
    "M Ikhlasul Muttaqin",
-   "Muh. Ikhlasul Muttaqin",
    "Muchammad Ikhlasul Muttaqin",
    "M. Ikhlasul mutaqin",
    "M.Ikhlasul Muttaqin"
@@ -5593,7 +5491,6 @@
   "name": "M Ikhwan Syahrom",
   "aliases": [
    "M Ikhwan Syahrom",
-   "M IKhwan syahrom",
    "Muhammad Ikhwan Syahrom",
    "M Ikhwan S",
    "M. Ikhwan Syahrom"
@@ -5651,10 +5548,10 @@
   "name": "M Irfan",
   "aliases": [
    "M Irfan",
-   "M. Irfan",
    "Muhammad Irfan",
    "M.Irfan",
-   "M. IRFAN"
+   "M. IRFAN",
+   "M. Irfan"
   ],
   "peran": "Audio Visual",
   "transport": {
@@ -5710,7 +5607,6 @@
   "name": "M Kariim Al Mujtaba",
   "aliases": [
    "M Kariim Al Mujtaba",
-   "M. Karim Al-mujtaba",
    "Muhammad Kariim Almujtaba",
    "Karim Almujtaba",
    "M Karim Al-Mujtaba",
@@ -5826,23 +5722,6 @@
    }
   ]
  },
- "luman-hakim-c": {
-  "name": "M Luman Hakim C.",
-  "aliases": [
-   "M Luman Hakim C."
-  ],
-  "peran": "",
-  "transport": {},
-  "menginap": [
-   {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "509",
-    "tipe": "Queen Bed",
-    "urutan": 1
-   }
-  ]
- },
  "muthi-syahrul-syaban": {
   "name": "M Mu'thi Syahrul Sya'ban",
   "aliases": [
@@ -5899,56 +5778,6 @@
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "13",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
-   }
-  ]
- },
- "muchtar-amin": {
-  "name": "M Muchtar Amin",
-  "aliases": [
-   "M Muchtar Amin",
-   "M. Muchtar Amin",
-   "Muhammad Muchtar Amin",
-   "Muchtar Amin"
-  ],
-  "peran": "Shodaqoh",
-  "transport": {
-   "sesi1": "ELF 6"
-  },
-  "menginap": [
-   {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "316",
-    "tipe": "Triple Bed",
-    "urutan": 1
-   },
-   {
-    "kota": "Semarang",
-    "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "509",
-    "tipe": "Superior",
-    "urutan": 2
-   },
-   {
-    "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
-    "kamar": "24",
-    "tipe": "Deluxe",
-    "urutan": 4
-   },
-   {
-    "kota": "Cianjur",
-    "hotel": "Hotel Gino Feruci Cianjur",
-    "kamar": "333",
-    "tipe": "Superior Twin",
-    "urutan": 5
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "22",
-    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -6016,7 +5845,6 @@
   "name": "M Rizky",
   "aliases": [
    "M Rizky",
-   "M. Rizky",
    "Mochammad Rizky",
    "M.rizky",
    "Moch. Rizky"
@@ -6139,6 +5967,44 @@
    }
   ]
  },
+ "ali-ridlo-fatahillah-2": {
+  "name": "M. Ali Ridlo Fatahillah",
+  "aliases": [
+   "M. Ali Ridlo Fatahillah",
+   "M Ali Ridlo F",
+   "M Ali Ridlo",
+   "Ali Ridlo",
+   "M.ALI RIDLO F."
+  ],
+  "peran": "Dokumen Tulis",
+  "transport": {
+   "sesi1": "ELF 6",
+   "sesi3": "Bus 5"
+  },
+  "menginap": [
+   {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "802",
+    "tipe": "Superior",
+    "urutan": 2
+   },
+   {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "41",
+    "tipe": "Deluxe",
+    "urutan": 3
+   },
+   {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "117",
+    "tipe": "Deluxe twin - Extrabed",
+    "urutan": 5
+   }
+  ]
+ },
  "bahrul-muchit": {
   "name": "M. Bahrul Muchit",
   "aliases": [
@@ -6183,87 +6049,16 @@
   },
   "menginap": []
  },
- "nashruddin-tsani": {
-  "name": "M. Nashruddin Tsani",
-  "aliases": [
-   "M. Nashruddin Tsani",
-   "M Nasruddin Tsani",
-   "M Nasruddin tsani",
-   "Muhamad Nashruddin Tsani",
-   "Nasrudin tsani",
-   "M Nasrudin Sani",
-   "M Nasrudin Tsani",
-   "NASRUDDIN TSANI"
-  ],
-  "peran": "Konsumsi",
-  "transport": {
-   "sesi1": "ELF 8",
-   "sesi3": "Bus 5"
-  },
-  "menginap": [
-   {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "706",
-    "tipe": "Queen Bed",
-    "urutan": 1
-   },
-   {
-    "kota": "Semarang",
-    "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "720",
-    "tipe": "DELUXE CORRIDOR",
-    "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "19",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
-    "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
-    "kamar": "11",
-    "tipe": "Deluxe",
-    "urutan": 4
-   },
-   {
-    "kota": "Cianjur",
-    "hotel": "Hotel Gino Feruci Cianjur",
-    "kamar": "307",
-    "tipe": "Superior",
-    "urutan": 5
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "41",
-    "tipe": "Deluxe",
-    "urutan": 6
-   }
-  ]
- },
- "a-l-i-ridlo-f": {
-  "name": "M.ALI RIDLO F.",
-  "aliases": [
-   "M.ALI RIDLO F."
-  ],
-  "peran": "PJ.dokumen tulis",
-  "transport": {
-   "sesi3": "Bus 5"
-  },
-  "menginap": []
- },
  "marifatul-azal": {
   "name": "Ma'rifatul Azal",
   "aliases": [
-   "Ma'rifatul Azal"
+   "Ma'rifatul Azal",
+   "MA’RIFATUL AZAL"
   ],
   "peran": "Ketua",
   "transport": {
-   "sesi1": "ELF 1"
+   "sesi1": "ELF 1",
+   "sesi3": "Bus 1"
   },
   "menginap": [
    {
@@ -6310,41 +6105,20 @@
    }
   ]
  },
- "arifatul-azal": {
-  "name": "MA’RIFATUL AZAL",
-  "aliases": [
-   "MA’RIFATUL AZAL"
-  ],
-  "peran": "PJ Safari",
-  "transport": {
-   "sesi3": "Bus 1"
-  },
-  "menginap": []
- },
- "au-l-fatihatur-r": {
-  "name": "MA'UL FATIHATUR.R",
-  "aliases": [
-   "MA'UL FATIHATUR.R"
-  ],
-  "peran": "PJ.penata acara",
-  "transport": {
-   "sesi3": "Bus 2"
-  },
-  "menginap": []
- },
  "maul-fatihatur-rohmah": {
   "name": "Maul Fatihatur Rohmah",
   "aliases": [
    "Maul Fatihatur Rohmah",
-   "Maul fatihatur Rohmah",
    "Maul fatihatur rohma",
    "Maul F Rohmah",
    "Ma'ul Fatihatur Rohmah",
+   "MA'UL FATIHATUR.R",
    "Ma'ul Fatihatur R"
   ],
   "peran": "Penata Acara",
   "transport": {
-   "sesi1": "ELF 2"
+   "sesi1": "ELF 2",
+   "sesi3": "Bus 2"
   },
   "menginap": [
    {
@@ -6396,9 +6170,9 @@
   "aliases": [
    "Melly Kayyisa Aidiana",
    "Melly Keyyisa",
-   "Melly Keysa",
    "Melly Kayisa",
    "Melly Kayyisa",
+   "Melly Keysa",
    "Melly Kayisa A"
   ],
   "peran": "Penata Acara",
@@ -6455,7 +6229,6 @@
   "name": "Misbahul Muflihin",
   "aliases": [
    "Misbahul Muflihin",
-   "M Misbahul Muflihin",
    "Muhammad Mishbahul Muflihin",
    "M. Misbahul Muflihin"
   ],
@@ -6509,6 +6282,56 @@
    }
   ]
  },
+ "muchtar-amin": {
+  "name": "Muchtar Amin",
+  "aliases": [
+   "Muchtar Amin",
+   "M. Muchtar Amin",
+   "Muhammad Muchtar Amin",
+   "M Muchtar Amin"
+  ],
+  "peran": "Shodaqoh",
+  "transport": {
+   "sesi1": "ELF 6"
+  },
+  "menginap": [
+   {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "316",
+    "tipe": "Triple Bed",
+    "urutan": 1
+   },
+   {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "509",
+    "tipe": "Superior",
+    "urutan": 2
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "24",
+    "tipe": "Deluxe",
+    "urutan": 4
+   },
+   {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "333",
+    "tipe": "Superior Twin",
+    "urutan": 5
+   },
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "22",
+    "tipe": "Deluxe",
+    "urutan": 6
+   }
+  ]
+ },
  "muctar-amin": {
   "name": "MUCTAR AMIN",
   "aliases": [
@@ -6520,6 +6343,67 @@
   },
   "menginap": []
  },
+ "nashruddin-tsani": {
+  "name": "Muhamad Nashruddin Tsani",
+  "aliases": [
+   "Muhamad Nashruddin Tsani",
+   "M Nasruddin Tsani",
+   "Nasrudin tsani",
+   "M Nasrudin Sani",
+   "M Nasrudin Tsani",
+   "NASRUDDIN TSANI",
+   "M. Nashruddin Tsani"
+  ],
+  "peran": "Konsumsi",
+  "transport": {
+   "sesi1": "ELF 8",
+   "sesi3": "Bus 5"
+  },
+  "menginap": [
+   {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "706",
+    "tipe": "Queen Bed",
+    "urutan": 1
+   },
+   {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "720",
+    "tipe": "DELUXE CORRIDOR",
+    "urutan": 2
+   },
+   {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "19",
+    "tipe": "Deluxe",
+    "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "11",
+    "tipe": "Deluxe",
+    "urutan": 4
+   },
+   {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "307",
+    "tipe": "Superior",
+    "urutan": 5
+   },
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "41",
+    "tipe": "Deluxe",
+    "urutan": 6
+   }
+  ]
+ },
  "ali-ridho-fatahillah": {
   "name": "Muhammad Ali Ridho Fatahillah",
   "aliases": [
@@ -6528,6 +6412,13 @@
   "peran": "",
   "transport": {},
   "menginap": [
+   {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "702",
+    "tipe": "Triple Bed",
+    "urutan": 1
+   },
    {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
@@ -6610,6 +6501,13 @@
    "sesi3": "Bus 1"
   },
   "menginap": [
+   {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "509",
+    "tipe": "Queen Bed",
+    "urutan": 1
+   },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
@@ -7006,6 +6904,13 @@
   "transport": {},
   "menginap": [
    {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "626",
+    "tipe": "Queen Bed",
+    "urutan": 1
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "46",
@@ -7018,7 +6923,6 @@
   "name": "Nella Rodliyah",
   "aliases": [
    "Nella Rodliyah",
-   "Nella Rodliyatan",
    "Nela Rodliyah"
   ],
   "peran": "Konsumsi",
@@ -7027,13 +6931,6 @@
    "sesi3": "Bus 4"
   },
   "menginap": [
-   {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "626",
-    "tipe": "Queen Bed",
-    "urutan": 1
-   },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
@@ -7061,7 +6958,6 @@
   "name": "Nimimmms Caini Lathiifah Hajarulloh",
   "aliases": [
    "Nimimmms Caini Lathiifah Hajarulloh",
-   "Nimimmms Caini L.H",
    "NIMIMMMS CAINI L.H",
    "Nimimmms Caini L"
   ],
@@ -7158,8 +7054,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "320",
-    "tipe": "Triple Bed",
+    "kamar": "621",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
@@ -7197,7 +7093,6 @@
   "aliases": [
    "Novel Putra Atma Wahyudi",
    "Novel Putra Atma W",
-   "Novel Putra Atma W.",
    "Novel Putra",
    "Novel Putra Atma",
    "NOVEL PUTRA A.W"
@@ -7509,6 +7404,13 @@
   "transport": {},
   "menginap": [
    {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "611",
+    "tipe": "Queen Bed",
+    "urutan": 1
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "5",
@@ -7529,13 +7431,6 @@
    "sesi3": "Bus 4"
   },
   "menginap": [
-   {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "611",
-    "tipe": "Queen Bed",
-    "urutan": 1
-   },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
@@ -7570,7 +7465,6 @@
   "name": "Nurul Fauzah",
   "aliases": [
    "Nurul Fauzah",
-   "Nurul fauzah",
    "Nurul Fauza",
    "NURUL FAUZA"
   ],
@@ -7631,23 +7525,6 @@
     "kamar": "707",
     "tipe": "Superior",
     "urutan": 2
-   }
-  ]
- },
- "pramuja-hadi": {
-  "name": "Pramuja Hadi",
-  "aliases": [
-   "Pramuja Hadi"
-  ],
-  "peran": "",
-  "transport": {},
-  "menginap": [
-   {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "619",
-    "tipe": "Queen Bed",
-    "urutan": 1
    }
   ]
  },
@@ -8003,8 +7880,7 @@
  "retma-aisyah": {
   "name": "Retma Aisyah",
   "aliases": [
-   "Retma Aisyah",
-   "Retma Aisya"
+   "Retma Aisyah"
   ],
   "peran": "Kesehatan",
   "transport": {
@@ -8073,11 +7949,11 @@
    }
   ]
  },
- "rifky-darmawan": {
-  "name": "Rifky Darmawan",
+ "rifki-darmawan": {
+  "name": "Rifki Darmawan",
   "aliases": [
-   "Rifky Darmawan",
    "Rifki Darmawan",
+   "Rifky Darmawan",
    "Rifki dermawan"
   ],
   "peran": "Spiritual",
@@ -8134,7 +8010,6 @@
   "name": "Riska Farah Za'idah",
   "aliases": [
    "Riska Farah Za'idah",
-   "Riska Farah zaidah",
    "Riska Farah Zaidah"
   ],
   "peran": "Dokumen Tulis",
@@ -8210,14 +8085,14 @@
    }
   ]
  },
- "rodliyatan-mardiyyah": {
-  "name": "Rodliyatan Mardiyyah",
+ "rodliyatan-mardiiyah": {
+  "name": "Rodliyatan Mardiiyah",
   "aliases": [
-   "Rodliyatan Mardiyyah",
-   "Rodliyatan mardliyah",
-   "Rodliyatan Mardliyah",
    "Rodliyatan Mardiiyah",
+   "Rodliyatan mardliyah",
+   "Rodliyatan Mardiyyah",
    "Rodliyatan Mardliyyah",
+   "Rodliyatan Mardliyah",
    "RODLIYATAN M."
   ],
   "peran": "Keamanan",
@@ -8285,8 +8160,8 @@
   "name": "Rohmawati Fajrin",
   "aliases": [
    "Rohmawati Fajrin",
-   "Rohmawati fajrin",
-   "Rochmawati Fajrin"
+   "Rochmawati Fajrin",
+   "Rohmawati fajrin"
   ],
   "peran": "Keamanan",
   "transport": {
@@ -8573,10 +8448,9 @@
    }
   ]
  },
- "santi-kartika-sari": {
-  "name": "Santi Kartika sari",
+ "santi-kartikasari": {
+  "name": "Santi Kartikasari",
   "aliases": [
-   "Santi Kartika sari",
    "Santi Kartikasari",
    "Santi Kartika S",
    "Santi Kartika",
@@ -8696,7 +8570,6 @@
   "name": "Sinta Wati P",
   "aliases": [
    "Sinta Wati P",
-   "Sintawati prasetyani",
    "Sintawati Prasetyani",
    "Sintawati P",
    "SINTA WATI",
@@ -8752,21 +8625,48 @@
    }
   ]
  },
- "sita-jannatul-munawaroh": {
-  "name": "Sita Jannatul Munawaroh",
+ "sita-janatul-munawaroh": {
+  "name": "Sita Janatul Munawaroh",
   "aliases": [
+   "Sita Janatul Munawaroh",
+   "Sitta Jannatul",
    "Sita Jannatul Munawaroh",
-   "Sita Janatul Munawaroh"
+   "Sitta Jannatul M",
+   "Sita Janatul M"
   ],
-  "peran": "",
-  "transport": {},
+  "peran": "Kebersihan",
+  "transport": {
+   "sesi1": "ELF 3",
+   "sesi3": "Bus 3"
+  },
   "menginap": [
+   {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "712",
+    "tipe": "Triple Bed",
+    "urutan": 1
+   },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
     "kamar": "1109",
     "tipe": "Superior",
     "urutan": 2
+   },
+   {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "57",
+    "tipe": "Deluxe",
+    "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "16",
+    "tipe": "Deluxe",
+    "urutan": 4
    },
    {
     "kota": "Jakarta",
@@ -8908,27 +8808,18 @@
   },
   "menginap": []
  },
- "siti-n-u-r": {
-  "name": "SITI NUR",
-  "aliases": [
-   "SITI NUR"
-  ],
-  "peran": "Keamanan",
-  "transport": {
-   "sesi3": "Bus 4"
-  },
-  "menginap": []
- },
  "siti-nur-nisfiyah": {
   "name": "Siti Nur Nisfiyah",
   "aliases": [
    "Siti Nur Nisfiyah",
+   "Siti Nur",
    "Siti Nur Nisfiyyah",
-   "Siti Nur"
+   "SITI NUR"
   ],
   "peran": "Keamanan",
   "transport": {
-   "sesi1": "ELF 4"
+   "sesi1": "ELF 4",
+   "sesi3": "Bus 4"
   },
   "menginap": [
    {
@@ -8978,38 +8869,11 @@
  "sitta-jannatul-mukarromah": {
   "name": "Sitta Jannatul Mukarromah",
   "aliases": [
-   "Sitta Jannatul Mukarromah",
-   "Sitta Jannatul M",
-   "Sitta Jannatul",
-   "Sita Janatul M"
+   "Sitta Jannatul Mukarromah"
   ],
-  "peran": "Kebersihan",
-  "transport": {
-   "sesi1": "ELF 3",
-   "sesi3": "Bus 3"
-  },
+  "peran": "",
+  "transport": {},
   "menginap": [
-   {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "712",
-    "tipe": "Triple Bed",
-    "urutan": 1
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "57",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
-    "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
-    "kamar": "16",
-    "tipe": "Deluxe",
-    "urutan": 4
-   },
    {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
@@ -9023,7 +8887,6 @@
   "name": "Sri Bella Yunita",
   "aliases": [
    "Sri Bella Yunita",
-   "Sri Bella",
    "Sri Bela Yunita",
    "Sri bella Yunita"
   ],
@@ -9082,7 +8945,6 @@
   "aliases": [
    "Suci Novia Andriani",
    "Suci Novi A",
-   "Suci Novia A.",
    "Suci Novia",
    "Suci Novi",
    "Suci Novia A"
@@ -9162,8 +9024,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "320",
-    "tipe": "Triple Bed",
+    "kamar": "1202",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
@@ -9260,10 +9122,10 @@
   ]
  },
  "syuhada-ridlo-billah": {
-  "name": "Syuhada' Ridlo Billah",
+  "name": "Syuhada Ridlo Billah",
   "aliases": [
-   "Syuhada' Ridlo Billah",
    "Syuhada Ridlo Billah",
+   "Syuhada' Ridlo Billah",
    "syuhada' Ridlo Billah",
    "Syuhada' Ridlo",
    "SYUHADA RIDLO"
@@ -9338,6 +9200,13 @@
   "transport": {},
   "menginap": [
    {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "606",
+    "tipe": "Queen Bed",
+    "urutan": 1
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "811",
@@ -9357,13 +9226,6 @@
    "sesi3": "Bus 4"
   },
   "menginap": [
-   {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "606",
-    "tipe": "Queen Bed",
-    "urutan": 1
-   },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
@@ -9398,7 +9260,6 @@
   "name": "Tahsinatus Salamah",
   "aliases": [
    "Tahsinatus Salamah",
-   "Tahshinatus salamah",
    "Tahshinatus Salamah",
    "Tashinatus Salamah"
   ],
@@ -9469,8 +9330,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "320",
-    "tipe": "Triple Bed",
+    "kamar": "1202",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
@@ -9515,9 +9376,9 @@
   "aliases": [
    "Thousan Ahmad Alin Hisan Syamsuddin",
    "Thousand A.A. H. S.",
-   "Thousan Ahmad Alin HS",
    "Thousand A",
    "Thousan A. A. H. S.",
+   "Thousan Alin A H S",
    "THOUSAN AHMAD A.H.S",
    "Thousan Ahmad Alin"
   ],
@@ -9549,6 +9410,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "9",
+    "tipe": "Deluxe",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "116",
@@ -9561,23 +9429,6 @@
     "kamar": "702",
     "tipe": "Deluxe",
     "urutan": 6
-   }
-  ]
- },
- "thousan-alin-a-h-s": {
-  "name": "Thousan Alin A H S",
-  "aliases": [
-   "Thousan Alin A H S"
-  ],
-  "peran": "",
-  "transport": {},
-  "menginap": [
-   {
-    "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
-    "kamar": "9",
-    "tipe": "Deluxe",
-    "urutan": 4
    }
   ]
  },
@@ -9644,7 +9495,6 @@
   "aliases": [
    "Umar Muchtar Alif",
    "Umar Muchtar A",
-   "Umar Muchtar A.",
    "Umar M Alif"
   ],
   "peran": "Kenyamanan",
@@ -9764,6 +9614,13 @@
   "transport": {},
   "menginap": [
    {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "319",
+    "tipe": "Triple Bed",
+    "urutan": 1
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "32",
@@ -9776,7 +9633,6 @@
   "name": "Umi Nasikha",
   "aliases": [
    "Umi Nasikha",
-   "Umi Nasicha",
    "Ummi Nasichah"
   ],
   "peran": "Peserta",
@@ -9785,13 +9641,6 @@
    "sesi3": "Bus 4"
   },
   "menginap": [
-   {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "319",
-    "tipe": "Triple Bed",
-    "urutan": 1
-   },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
@@ -9992,7 +9841,6 @@
   "aliases": [
    "Yonsania Nur Fadillah",
    "Yonsania Nur Fadilah",
-   "Yonsania Nur Fadhilah",
    "Yonsania Nurfadilla",
    "Yonsania N Fadhila",
    "Yonsania Nur F.",
@@ -10053,9 +9901,9 @@
   "aliases": [
    "Yuan Daviq Nuzul Qurnain",
    "Yuan Daviq N",
-   "Yuan Daviq Nuzul Q",
    "Yuan daviq Nuzul",
-   "YUAN DAVIQ N.Q"
+   "YUAN DAVIQ N.Q",
+   "Yuan Daviq Nuzul Q"
   ],
   "peran": "Merchandise",
   "transport": {

@@ -85,7 +85,7 @@ function cari(q) {
 }
 
 for (const varian of [
-  ['Thousan Ahmad Alin HS', 'Thousan A. A. H. S.', 'Thousand A.A. H. S.', 'THOUSAN AHMAD A.H.S'],
+  ['Thousan Ahmad Alin Hisan Syamsuddin', 'Thousan A. A. H. S.', 'Thousand A.A. H. S.', 'THOUSAN AHMAD A.H.S'],
   ['Yonsania Nur Fadhilah', 'Yonsania Nur Fadilah', 'Yonsania Nur Fadillah'],
   ["Lu'lu' Khoirunnisa'", "Lulu' Khoirunnisa", 'lulu khoirunisa'],
   ['M Ikhlasul Muttaqin', 'M.Ikhlasul Muttaqin', 'Muh. Ikhlasul Muttaqin'],
