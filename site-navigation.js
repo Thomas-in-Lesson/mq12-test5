@@ -517,22 +517,22 @@
         display: flex !important;
         align-items: center !important;
         justify-content: space-around !important;
-        background: linear-gradient(180deg, #3A0C0C 0%, #200505 100%) !important;
-        border-top: 2px solid #E0B863 !important;
+        background: #FFFFFF !important;
+        border-top: 2px solid #C21A03 !important;
         border-bottom: 0 !important;
-        box-shadow: 0 -8px 28px rgba(0, 0, 0, 0.7) !important;
+        box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.18) !important;
         will-change: transform;
         transform: translateZ(0);
-        -webkit-}
+      }
 
       .site-bottom-nav-item {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
-        color: #FFFFFF !important;
+        color: #200505 !important;
         text-decoration: none !important;
-        font: 600 11px -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", sans-serif !important;
+        font: 700 11px -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", sans-serif !important;
         gap: 2px;
         padding: 5px 12px !important;
         border-radius: 12px !important;
@@ -561,13 +561,13 @@
         align-items: center !important;
         justify-content: center !important;
         gap: 12px !important;
-        background: linear-gradient(180deg, #3A0C0C 0%, #200505 100%) !important;
+        background: #FFFFFF !important;
         border-top: 0 !important;
-        border-bottom: 2px solid #E0B863 !important;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
+        border-bottom: 2px solid #C21A03 !important;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15) !important;
         will-change: transform;
         transform: translateZ(0);
-        -webkit-}
+      }
 
       .site-bottom-nav-item {
         display: flex !important;
@@ -576,9 +576,9 @@
         gap: 8px !important;
         padding: 6px 16px !important;
         border-radius: 10px !important;
-        color: #FFFFFF !important;
+        color: #200505 !important;
         text-decoration: none !important;
-        font: 600 13px -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", sans-serif !important;
+        font: 700 13px -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", sans-serif !important;
         border: 1px solid transparent !important;
         background: transparent !important;
         transition: transform 0.15s ease, opacity 0.15s ease !important;
@@ -588,7 +588,7 @@
     /* Common Active & Icon Styles (Mobile & Desktop) */
     .site-bottom-nav-item .material-symbols-outlined {
       font-size: 22px !important;
-      color: #E0B863 !important;
+      color: #C21A03 !important;
       transition: transform 0.2s ease, color 0.2s ease !important;
     }
 
@@ -596,8 +596,8 @@
       color: #FFFFFF !important;
       font-weight: 700 !important;
       background: linear-gradient(135deg, #C21A03 0%, #900B0B 100%) !important;
-      border: 1.5px solid #FFFFFF !important;
-      box-shadow: 0 4px 16px rgba(194, 26, 3, 0.6), 0 0 12px rgba(255, 255, 255, 0.3) !important;
+      border: 1.5px solid #C21A03 !important;
+      box-shadow: 0 4px 14px rgba(194, 26, 3, 0.4) !important;
     }
 
     .site-bottom-nav-item.is-active .material-symbols-outlined {
@@ -606,8 +606,8 @@
     }
 
     .site-bottom-nav-item:hover {
-      background: rgba(255, 255, 255, 0.15) !important;
-      color: #FFFFFF !important;
+      background: rgba(194, 26, 3, 0.08) !important;
+      color: #C21A03 !important;
     }
 
     /* Panitia mencetak rundown, daftar kamar, dan denah bus. Tema gelap dicetak
@@ -1340,7 +1340,7 @@
       const transport = entry.transport || {};
       const sesiHtml = [
         { label: 'Sesi 1', unit: transport.sesi1, page: 'seatsSesi1' },
-        { label: 'Sesi 2', unit: null, page: null, catatan: 'Denah Sesi 2 belum tersedia' },
+        { label: 'Sesi 2', unit: transport.sesi2, page: 'seatsSesi2' },
         { label: 'Sesi 3', unit: transport.sesi3, page: 'seatsSesi3' }
       ].map(s => `
         <div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container border border-outline-variant/20">

@@ -21,7 +21,7 @@
 <span class="material-symbols-outlined">arrow_back</span>
 </button>
 <div class="font-headline-md-mobile text-headline-md-mobile font-bold text-secondary flex-1 text-center">
-            Starterpack & Packing
+            Starterpack Per Sesi
         </div>
 <div class="w-10"></div>
 </header>
@@ -29,20 +29,33 @@
 <main class="flex-1 w-full max-w-container-max-width mx-auto pt-20 px-margin-mobile md:px-margin-desktop md:pt-32 space-y-8">
 <section class="text-center space-y-4">
 <h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg text-secondary">
-                STARTERPACK & TEKNIS PACKING
+                STARTERPACK & TEKNIS PACKING PER SESI
             </h1>
 <p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">
-                Panduan perlengkapan wajib dan pembagian penataan tas selama perjalanan Safari HWMI MQ 12.
+                Panduan perlengkapan wajib dan pembagian penataan tas per sesi (Sesi 1, Sesi 2, Sesi 3) selama kegiatan Safari HWMI MQ 12.
             </p>
 <div class="w-16 h-1 bg-secondary mx-auto rounded-full opacity-50"></div>
 
+<!-- Session Filter Tabs -->
+<div class="flex justify-center gap-2 pt-2 flex-wrap">
+  <button id="btn-sesi1" type="button" class="px-5 py-2 rounded-full text-xs font-bold border transition-all duration-200 bg-secondary text-surface-container-lowest border-secondary shadow-md flex items-center gap-1.5">
+    <span class="material-symbols-outlined text-[18px]">directions_bus</span> Sesi 1 (ELF)
+  </button>
+  <button id="btn-sesi2" type="button" class="px-5 py-2 rounded-full text-xs font-bold border transition-all duration-200 bg-surface-container text-on-surface-variant border-outline-variant/30 hover:border-secondary/50 flex items-center gap-1.5">
+    <span class="material-symbols-outlined text-[18px]">directions_bus</span> Sesi 2 (4 Bus)
+  </button>
+  <button id="btn-sesi3" type="button" class="px-5 py-2 rounded-full text-xs font-bold border transition-all duration-200 bg-surface-container text-on-surface-variant border-outline-variant/30 hover:border-secondary/50 flex items-center gap-1.5">
+    <span class="material-symbols-outlined text-[18px]">directions_bus</span> Sesi 3 (6 Bus)
+  </button>
+</div>
+
 <!-- Gender Toggle -->
-<div class="flex justify-center gap-3 pt-2">
-<button id="btn-putra" type="button" class="px-6 py-2.5 rounded-full text-sm font-bold border transition-all duration-200 bg-secondary text-surface-container-lowest border-secondary shadow-md flex items-center gap-2">
-<span class="material-symbols-outlined text-[20px]">man</span> Starterpack Putra
+<div class="flex justify-center gap-3 pt-1">
+<button id="btn-putra" type="button" class="px-6 py-2 rounded-full text-xs font-bold border transition-all duration-200 bg-primary/20 text-primary border-primary/40 shadow-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">man</span> Putra
 </button>
-<button id="btn-putri" type="button" class="px-6 py-2.5 rounded-full text-sm font-bold border transition-all duration-200 bg-surface-container text-on-surface-variant border-outline-variant/30 hover:border-secondary/50 flex items-center gap-2">
-<span class="material-symbols-outlined text-[20px]">woman</span> Starterpack Putri
+<button id="btn-putri" type="button" class="px-6 py-2 rounded-full text-xs font-bold border transition-all duration-200 bg-surface-container text-on-surface-variant border-outline-variant/30 hover:border-secondary/50 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">woman</span> Putri
 </button>
 </div>
 </section>
@@ -61,124 +74,216 @@
 </div>
 </main>
 
-
-
 <script>
+  let activeSesi = 'sesi1';
   let activeGender = 'putra';
 
-  const data = {
-    putra: {
-      title: 'PERLENGKAPAN WAJIB PUTRA',
-      items: [
-        { text: 'Setelan Lengkap Menerima Pelajaran MQ (alat tulis, sarung, kopyah, sandal)', panitia: false },
-        { text: 'Alat tulis catatan pribadi (Selain peralatan MQ)', panitia: false },
-        { text: 'Kopyah hitam polos 1 (Selain Seragam MQ)', panitia: false },
-        { text: 'Almamater MQ', panitia: false },
-        { text: 'Jasket Safari', panitia: true },
-        { text: 'Baju Salur Safari', panitia: true },
-        { text: 'Kemeja putih polos (7 buah)', panitia: false },
-        { text: 'Celana hitam formal (7 buah)', panitia: false },
-        { text: 'Kaos kaki hitam (8 buah)', panitia: false },
-        { text: 'Sepatu Pantofel hitam tanpa tali', panitia: false },
-        { text: 'Kaos dalam putih (7 buah)', panitia: false },
-        { text: 'Sarung & Sajadah pribadi', panitia: false },
-        { text: 'Kemeja rapi (di penginapan)', panitia: false },
-        { text: 'Pakaian istirahat (kondisional)', panitia: false },
-        { text: 'Sandal bebas sopan', panitia: false },
-        { text: 'Perlengkapan mandi', panitia: false },
-        { text: 'Koper', panitia: false },
-        { text: 'Tas ransel (di bus simpan seragam, sandal, sajadah)', panitia: false },
-        { text: 'Gantungan baju (1-2 buah)', panitia: false },
-        { text: 'Kantong baju kotor', panitia: false },
-        { text: 'Kantong sepatu & alas ziarah (goodie bag)', panitia: true },
-        { text: 'Lampiran Doa, air & madu media asma, payung, tas selempang', panitia: true },
-        { text: 'Obat pribadi & Alat cukur kumis', panitia: false },
-        { text: 'Plastik ziplock', panitia: false }
-      ],
-      packing: {
-        selempang: [
-          'Lampiran Do\'a (disediakan panitia)',
-          'Media asma\' air & madu (disediakan panitia)',
-          'Alat tulis',
-          'Sajadah pribadi',
-          'Kantong sepatu (Goodie bag)',
-          'Alas ziarah',
-          'Payung (dibawa ke lokasi saat ada instruksi)',
-          'Perlengkapan pribadi / obat-obatan'
+  const sesiData = {
+    sesi1: {
+      label: 'Sesi 1 — Keberangkatan Armada ELF',
+      putra: {
+        title: 'PERLENGKAPAN SESI 1 (PUTRA)',
+        items: [
+          { text: 'Setelan Lengkap Pelajaran MQ (Alat tulis, sarung, kopyah, sandal)', panitia: false },
+          { text: 'Almamater MQ', panitia: false },
+          { text: 'ID-Card Peserta & Tali Lanyard', panitia: true },
+          { text: 'Kemeja Putih Formal & Celana Hitam', panitia: false },
+          { text: 'Sepatu Pantofel Hitam & Kaos Kaki Hitam', panitia: false },
+          { text: 'Lampiran Doa & Media Asma (Air/Madu)', panitia: true },
+          { text: 'Perlengkapan Sholat Musafir & Sajadah Pribadi', panitia: false },
+          { text: 'Tas Selempang Ziarah Awal', panitia: false }
         ],
-        ransel: [
-          'Menyiapkan pakaian seragam Safari',
-          'Menyiapkan daleman, kemeja putih, celana formal hitam, kaos kaki cadangan',
-          'Menyiapkan pakaian untuk di penginapan (kemeja rapi, celana panjang)',
-          'Sarung & sajadah pribadi (bukan sarung MQ)',
-          'Pakaian istirahat',
-          'Perlengkapan mandi & sandal bebas sopan',
-          'Kantong baju kotor',
-          'Catatan: Tas Ransel ditaruh di dalam bus & penginapan'
-        ]
+        packing: {
+          selempang: [
+            'Lampiran Doa Ziarah Sesi 1 (Disediakan Panitia)',
+            'Media Asma Air & Madu Sesi 1',
+            'Alat tulis catatan pribadi',
+            'Sajadah lipat pribadi',
+            'Goodie bag kantong sepatu / alas ziarah'
+          ],
+          ransel: [
+            'Pakaian ganti cadangan untuk Sesi 1',
+            'Perlengkapan ibadah & perlengkapan pribadi',
+            'Catatan: Tas ransel ditaruh di bagasi ELF'
+          ]
+        }
+      },
+      putri: {
+        title: 'PERLENGKAPAN SESI 1 (PUTRI)',
+        items: [
+          { text: 'Setelan Lengkap Pelajaran MQ (Alat tulis, sewek, kerudung, sandal)', panitia: false },
+          { text: 'Almamater MQ & Kerudung Putih', panitia: false },
+          { text: 'ID-Card Peserta & Tali Lanyard', panitia: true },
+          { text: 'Gamis / Rok Hitam Klok A & Kemeja Putih', panitia: false },
+          { text: 'Sepatu Pantofel Hitam & Legging Gelap', panitia: false },
+          { text: 'Lampiran Doa & Media Asma (Air/Madu)', panitia: true },
+          { text: 'Mukena & Sajadah Pribadi', panitia: false },
+          { text: 'Tas Selempang Ziarah Awal', panitia: false }
+        ],
+        packing: {
+          selempang: [
+            'Lampiran Doa Ziarah Sesi 1 (Disediakan Panitia)',
+            'Media Asma Air & Madu Sesi 1',
+            'Alat tulis catatan pribadi',
+            'Mukena & sajadah lipat pribadi',
+            'Goodie bag kantong sepatu / alas ziarah'
+          ],
+          ransel: [
+            'Pakaian ganti cadangan untuk Sesi 1',
+            'Perlengkapan ibadah & perlengkapan pribadi',
+            'Catatan: Tas ransel ditaruh di bagasi ELF'
+          ]
+        }
       }
     },
-    putri: {
-      title: 'PERLENGKAPAN WAJIB PUTRI',
-      items: [
-        { text: 'Setelan Lengkap Menerima Pelajaran MQ (alat tulis, sewek, kerudung, sandal)', panitia: false },
-        { text: 'Alat tulis catatan pribadi (Selain peralatan MQ)', panitia: false },
-        { text: 'Kerudung putih polos segi empat (Minimal 7, selain seragam MQ)', panitia: false },
-        { text: 'Almamater MQ', panitia: false },
-        { text: 'Jasket Safari', panitia: true },
-        { text: 'Baju Salur Safari', panitia: true },
-        { text: 'Kemeja putih polos (7 buah)', panitia: false },
-        { text: 'Rok hitam Klok A (minimal 7 buah)', panitia: false },
-        { text: 'Legging warna gelap (8 buah)', panitia: false },
-        { text: 'Kaos kaki hitam (8 buah)', panitia: false },
-        { text: 'Sepatu Pantofel hitam tanpa tali', panitia: false },
-        { text: 'Kaos dalam putih (8 buah)', panitia: false },
-        { text: 'Mukena & Sajadah pribadi', panitia: false },
-        { text: 'Kemeja rapi (di penginapan)', panitia: false },
-        { text: 'Pakaian istirahat (kondisional)', panitia: false },
-        { text: 'Sandal bebas sopan', panitia: false },
-        { text: 'Perlengkapan mandi', panitia: false },
-        { text: 'Koper max 24 inch', panitia: false },
-        { text: 'Tas ransel (di bus simpan seragam, sandal, sajadah)', panitia: false },
-        { text: 'Gantungan baju (2-3 buah)', panitia: false },
-        { text: 'Kantong baju kotor', panitia: false },
-        { text: 'Kantong sepatu & alas ziarah (goodie bag)', panitia: true },
-        { text: 'Lampiran Doa, air & madu media asma, payung, tas selempang', panitia: true },
-        { text: 'Obat pribadi & Plastik ziplock', panitia: false }
-      ],
-      packing: {
-        selempang: [
-          'Lampiran Do\'a (disediakan panitia)',
-          'Media asma\' air & madu (disediakan panitia)',
-          'Alat tulis',
-          'Mukena / Sajadah pribadi',
-          'Kantong sepatu (Goodie bag)',
-          'Alas ziarah',
-          'Payung (dibawa ke lokasi saat ada instruksi)',
-          'Perlengkapan pribadi / obat-obatan'
+    sesi2: {
+      label: 'Sesi 2 — Ziarah Utama (4 Bus)',
+      putra: {
+        title: 'PERLENGKAPAN SESI 2 (PUTRA)',
+        items: [
+          { text: 'Jasket Safari HWMI MQ 12', panitia: true },
+          { text: 'Baju Salur Safari HWMI MQ 12', panitia: true },
+          { text: 'Almamater MQ (Dipakai di lokasi ziarah)', panitia: false },
+          { text: 'Kemeja Putih Formal (7 Buah)', panitia: false },
+          { text: 'Celana Hitam Formal (7 Buah)', panitia: false },
+          { text: 'Kantong Sepatu & Alas Ziarah (Goodie Bag)', panitia: true },
+          { text: 'Media Asma Air & Madu Utama', panitia: true },
+          { text: 'Payung & Obat-obatan Pribadi', panitia: false }
         ],
-        ransel: [
-          'Menyiapkan pakaian seragam Safari (Gamis / Rok Klok A)',
-          'Menyiapkan daleman, kemeja putih, kerudung, legging, kaos kaki cadangan',
-          'Menyiapkan pakaian untuk di penginapan',
-          'Mukena & sajadah pribadi',
-          'Pakaian istirahat',
-          'Perlengkapan mandi & sandal bebas sopan',
-          'Kantong baju kotor',
-          'Catatan: Tas Ransel ditaruh di dalam bus & penginapan'
-        ]
+        packing: {
+          selempang: [
+            'Lampiran Doa Ziarah Utama Sesi 2',
+            'Media Asma Air & Madu Utama (Disediakan Panitia)',
+            'Alat tulis catatan',
+            'Sajadah pribadi & alas ziarah',
+            'Payung (dibawa ke lokasi saat ada instruksi)',
+            'Obat-obatan pribadi'
+          ],
+          ransel: [
+            'Seragam Jasket & Baju Salur Safari',
+            'Cadangan kemeja putih & celana formal hitam',
+            'Sarung & sajadah pribadi (bukan sarung MQ)',
+            'Kantong baju kotor',
+            'Catatan: Ransel ditaruh di kompartemen Bus Sesi 2'
+          ]
+        }
+      },
+      putri: {
+        title: 'PERLENGKAPAN SESI 2 (PUTRI)',
+        items: [
+          { text: 'Jasket Safari HWMI MQ 12', panitia: true },
+          { text: 'Baju Salur Safari HWMI MQ 12', panitia: true },
+          { text: 'Almamater MQ & Kerudung Putih Polos Segi Empat', panitia: false },
+          { text: 'Rok Hitam Klok A (Minimal 7 Buah)', panitia: false },
+          { text: 'Legging Warna Gelap (8 Buah)', panitia: false },
+          { text: 'Kantong Sepatu & Alas Ziarah (Goodie Bag)', panitia: true },
+          { text: 'Media Asma Air & Madu Utama', panitia: true },
+          { text: 'Payung & Obat-obatan Pribadi', panitia: false }
+        ],
+        packing: {
+          selempang: [
+            'Lampiran Doa Ziarah Utama Sesi 2',
+            'Media Asma Air & Madu Utama (Disediakan Panitia)',
+            'Alat tulis catatan',
+            'Mukena & sajadah pribadi',
+            'Payung (dibawa ke lokasi saat ada instruksi)',
+            'Obat-obatan pribadi'
+          ],
+          ransel: [
+            'Seragam Jasket & Baju Salur Safari',
+            'Cadangan kemeja putih & rok klok A hitam',
+            'Mukena & sajadah pribadi',
+            'Kantong baju kotor',
+            'Catatan: Ransel ditaruh di kompartemen Bus Sesi 2'
+          ]
+        }
+      }
+    },
+    sesi3: {
+      label: 'Sesi 3 — Acara Puncak & Penginapan (6 Bus)',
+      putra: {
+        title: 'PERLENGKAPAN SESI 3 (PUTRA)',
+        items: [
+          { text: 'Pakaian Rapi Penginapan (Kemeja Rapi)', panitia: false },
+          { text: 'Pakaian Istirahat & Pakaian Mandi', panitia: false },
+          { text: 'Perlengkapan Mandi Lengkap & Sandal Bebas Sopan', panitia: false },
+          { text: 'Koper & Tas Ransel Penginapan', panitia: false },
+          { text: 'Gantungan Baju (1–2 Buah)', panitia: false },
+          { text: 'Kantong Baju Kotor & Plastik Ziplock', panitia: false },
+          { text: 'Alat Cukur Kumis & Perlengkapan Kebersihan', panitia: false },
+          { text: 'Merchandise & Cinderamata Safari', panitia: true }
+        ],
+        packing: {
+          selempang: [
+            'Kertas Panduan & Jadwal Acara Puncak Sesi 3',
+            'Dompet, HP, & barang berharga',
+            'Alat tulis & ID-Card Peserta'
+          ],
+          ransel: [
+            'Pakaian rapi di penginapan (Kemeja & Celana panjang)',
+            'Pakaian istirahat & perlengkapan mandi',
+            'Sandal bebas sopan',
+            'Gantungan baju & kantong baju kotor',
+            'Catatan: Koper ditaruh di kamar hotel / penginapan Sesi 3'
+          ]
+        }
+      },
+      putri: {
+        title: 'PERLENGKAPAN SESI 3 (PUTRI)',
+        items: [
+          { text: 'Pakaian Rapi Penginapan (Kemeja/Gamis Rapi)', panitia: false },
+          { text: 'Pakaian Istirahat & Pakaian Mandi', panitia: false },
+          { text: 'Perlengkapan Mandi Lengkap & Sandal Bebas Sopan', panitia: false },
+          { text: 'Koper Max 24 Inch & Tas Ransel Penginapan', panitia: false },
+          { text: 'Gantungan Baju (2–3 Buah)', panitia: false },
+          { text: 'Kantong Baju Kotor & Plastik Ziplock', panitia: false },
+          { text: 'Kerudung Cadangan & Perlengkapan Kebersihan', panitia: false },
+          { text: 'Merchandise & Cinderamata Safari', panitia: true }
+        ],
+        packing: {
+          selempang: [
+            'Kertas Panduan & Jadwal Acara Puncak Sesi 3',
+            'Dompet, HP, & barang berharga',
+            'Alat tulis & ID-Card Peserta'
+          ],
+          ransel: [
+            'Pakaian rapi di penginapan (Gamis & Kerudung)',
+            'Pakaian istirahat & perlengkapan mandi',
+            'Sandal bebas sopan',
+            'Gantungan baju & kantong baju kotor',
+            'Catatan: Koper ditaruh di kamar hotel / penginapan Sesi 3'
+          ]
+        }
       }
     }
   };
 
+  const btnSesi1 = document.getElementById('btn-sesi1');
+  const btnSesi2 = document.getElementById('btn-sesi2');
+  const btnSesi3 = document.getElementById('btn-sesi3');
   const btnPutra = document.getElementById('btn-putra');
   const btnPutri = document.getElementById('btn-putri');
   const contentContainer = document.getElementById('content-container');
 
-  function renderContent() {
-    const cur = data[activeGender];
+  function updateTabsUI() {
+    const activeClass = 'px-5 py-2 rounded-full text-xs font-bold border transition-all duration-200 bg-secondary text-surface-container-lowest border-secondary shadow-md flex items-center gap-1.5';
+    const inactiveClass = 'px-5 py-2 rounded-full text-xs font-bold border transition-all duration-200 bg-surface-container text-on-surface-variant border-outline-variant/30 hover:border-secondary/50 flex items-center gap-1.5';
     
-    // Clean list without checkboxes
+    btnSesi1.className = activeSesi === 'sesi1' ? activeClass : inactiveClass;
+    btnSesi2.className = activeSesi === 'sesi2' ? activeClass : inactiveClass;
+    btnSesi3.className = activeSesi === 'sesi3' ? activeClass : inactiveClass;
+
+    const genderActiveClass = 'px-6 py-2 rounded-full text-xs font-bold border transition-all duration-200 bg-primary/20 text-primary border-primary/40 shadow-sm flex items-center gap-1.5';
+    const genderInactiveClass = 'px-6 py-2 rounded-full text-xs font-bold border transition-all duration-200 bg-surface-container text-on-surface-variant border-outline-variant/30 hover:border-secondary/50 flex items-center gap-1.5';
+
+    btnPutra.className = activeGender === 'putra' ? genderActiveClass : genderInactiveClass;
+    btnPutri.className = activeGender === 'putri' ? genderActiveClass : genderInactiveClass;
+  }
+
+  function renderContent() {
+    updateTabsUI();
+    const cur = sesiData[activeSesi][activeGender];
+    
     const itemListHTML = cur.items.map((item) => `
       <div class="flex items-start gap-3 p-3.5 rounded-xl bg-surface-container/80 border border-outline-variant/20 shadow-sm">
         <span class="w-2.5 h-2.5 rounded-full bg-secondary shrink-0 mt-1.5"></span>
@@ -189,12 +294,10 @@
       </div>
     `).join('');
 
-    // Selempang list
     const selempangHTML = cur.packing.selempang.map(s => 
       `<li class="flex items-start gap-2.5 text-sm text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-secondary mt-1.5 shrink-0"></span><span>${s}</span></li>`
     ).join('');
 
-    // Ransel list
     const ranselHTML = cur.packing.ransel.map(r => 
       `<li class="flex items-start gap-2.5 text-sm text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-primary mt-1.5 shrink-0"></span><span>${r}</span></li>`
     ).join('');
@@ -202,10 +305,11 @@
     contentContainer.innerHTML = `
       <!-- Starterpack Section -->
       <section class="bg-surface-container-low rounded-xl p-5 md:p-6 border-t border-l border-surface-variant/30 shadow-md space-y-4">
-        <div class="border-b border-surface-variant/40 pb-3">
+        <div class="border-b border-surface-variant/40 pb-3 flex items-center justify-between">
           <h2 class="font-headline-md-mobile text-headline-md-mobile text-secondary flex items-center gap-2">
             <span class="material-symbols-outlined">inventory_2</span> ${cur.title}
           </h2>
+          <span class="text-xs uppercase font-bold text-primary px-2.5 py-1 rounded-full bg-primary/10 border border-primary/30">${sesiData[activeSesi].label}</span>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
           ${itemListHTML}
@@ -216,7 +320,7 @@
       <section class="bg-surface-container-low rounded-xl p-5 md:p-6 border-t border-l border-surface-variant/30 shadow-md space-y-6">
         <div class="border-b border-surface-variant/40 pb-3">
           <h2 class="font-headline-md-mobile text-headline-md-mobile text-secondary flex items-center gap-2">
-            <span class="material-symbols-outlined">backpack</span> TEKNIS PACKING TAS (${activeGender.toUpperCase()})
+            <span class="material-symbols-outlined">backpack</span> TEKNIS PACKING TAS — ${activeSesi.toUpperCase()} (${activeGender.toUpperCase()})
           </h2>
         </div>
 
@@ -237,7 +341,7 @@
           <div class="p-5 rounded-xl bg-surface-container border border-primary/30 space-y-3">
             <div class="flex items-center gap-2 text-primary border-b border-surface-variant/50 pb-2">
               <span class="material-symbols-outlined text-[24px]">backpack</span>
-              <h3 class="font-title-lg font-bold">2. Tas Ransel (Di Bus & Hotel)</h3>
+              <h3 class="font-title-lg font-bold">2. Tas Ransel & Koper (${activeSesi.toUpperCase()})</h3>
             </div>
             <p class="text-xs text-on-surface-variant italic">Ditaruh di dalam bus dan kamar penginapan.</p>
             <ul class="space-y-2.5 pt-1">
@@ -249,19 +353,11 @@
     `;
   }
 
-  btnPutra.addEventListener('click', () => {
-    activeGender = 'putra';
-    btnPutra.className = 'flex-1 md:flex-initial px-6 py-3 rounded-full text-sm font-bold border transition-all duration-200 bg-secondary text-surface-container-lowest border-secondary shadow-md flex items-center justify-center gap-2 min-h-[44px]';
-    btnPutri.className = 'flex-1 md:flex-initial px-6 py-3 rounded-full text-sm font-bold border transition-all duration-200 bg-surface-container text-on-surface-variant border-outline-variant/30 hover:border-secondary/50 flex items-center justify-center gap-2 min-h-[44px]';
-    renderContent();
-  });
-
-  btnPutri.addEventListener('click', () => {
-    activeGender = 'putri';
-    btnPutri.className = 'flex-1 md:flex-initial px-6 py-3 rounded-full text-sm font-bold border transition-all duration-200 bg-secondary text-surface-container-lowest border-secondary shadow-md flex items-center justify-center gap-2 min-h-[44px]';
-    btnPutra.className = 'flex-1 md:flex-initial px-6 py-3 rounded-full text-sm font-bold border transition-all duration-200 bg-surface-container text-on-surface-variant border-outline-variant/30 hover:border-secondary/50 flex items-center justify-center gap-2 min-h-[44px]';
-    renderContent();
-  });
+  btnSesi1.addEventListener('click', () => { activeSesi = 'sesi1'; renderContent(); });
+  btnSesi2.addEventListener('click', () => { activeSesi = 'sesi2'; renderContent(); });
+  btnSesi3.addEventListener('click', () => { activeSesi = 'sesi3'; renderContent(); });
+  btnPutra.addEventListener('click', () => { activeGender = 'putra'; renderContent(); });
+  btnPutri.addEventListener('click', () => { activeGender = 'putri'; renderContent(); });
 
   renderContent();
 </script>
