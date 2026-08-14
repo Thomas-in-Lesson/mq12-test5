@@ -15,7 +15,7 @@ html_code = """<!DOCTYPE html>
 <link rel="apple-touch-icon" href="../icon-180.png">
 <link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="manifest" href="../manifest.json">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
 <title>Jadwal Seragam - Safari HWMI MQ 12</title>
 <style>
   .card-inner-glow {
@@ -92,7 +92,7 @@ html_code = """<!DOCTYPE html>
         <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">7</td><td class="p-3">Makam Kholifah Sumadji & Salamun</td><td class="p-3 font-semibold text-secondary">Almamater</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Ngoro</td></tr>
         <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">8</td><td class="p-3">Makam Kholifah Dukhan Iskandar</td><td class="p-3 font-semibold text-secondary">Almamater</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Ngoro</td></tr>
         <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">9</td><td class="p-3">Makam Syekh Imam Dzipuro</td><td class="p-3 font-semibold text-secondary">Almamater</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Ngoro</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">10</td><td class="p-3">Makam Syekh Jumal Kubro (Troloyo)</td><td class="p-3 font-semibold text-secondary">Almamater</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Mojokerto</td></tr>
+        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">10</td><td class="p-3">Makam Syekh Jumadil Kubro (Troloyo)</td><td class="p-3 font-semibold text-secondary">Almamater</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Mojokerto</td></tr>
       </tbody>
     </table>
   </div>
@@ -161,9 +161,9 @@ html_code = """<!DOCTYPE html>
         <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">3</td><td class="p-3">Makam Sayyid Ali Murtadlo (Raden Santri)</td><td class="p-3 font-semibold text-secondary">Almamater</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Gresik</td></tr>
         <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">4</td><td class="p-3">Makam Sunan Deket</td><td class="p-3 font-semibold text-secondary">Almamater</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Lamongan</td></tr>
         <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">5</td><td class="p-3">Makam Sunan Drajat</td><td class="p-3 font-semibold text-secondary">Almamater</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Lamongan</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">6</td><td class="p-3">Makam Maulana Ibrohim Asmoroqondi & ISHOMA</td><td class="p-3 font-semibold text-secondary">Almamater</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Tuban</td></tr>
+        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">6</td><td class="p-3">Makam Maulana Ibrohim Asmoroqondi (ISHOMA)</td><td class="p-3 font-semibold text-secondary">Almamater</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Tuban</td></tr>
         <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">7</td><td class="p-3">Makam Sunan Bonang</td><td class="p-3 font-semibold text-secondary">Almamater</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Tuban</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">8</td><td class="p-3">Sholat berjamaah & makan Masjid Agung Tuban</td><td class="p-3 font-semibold text-secondary">Almamater</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Tuban</td></tr>
+        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">8</td><td class="p-3">Masjid Agung Tuban (ISHOMA)</td><td class="p-3 font-semibold text-secondary">Almamater</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Tuban</td></tr>
       </tbody>
     </table>
   </div>
@@ -328,7 +328,7 @@ html_code = """<!DOCTYPE html>
       <tbody class="divide-y divide-surface-variant/20">
         <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">1</td><td class="p-3">Museum Sumpah Pemuda</td><td class="p-3 font-semibold text-secondary">Salur</td><td class="p-3 text-primary">Salur</td><td class="p-3">Jakarta Pusat</td></tr>
         <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">2</td><td class="p-3">MONAS</td><td class="p-3 font-semibold text-secondary">Salur</td><td class="p-3 text-primary">Salur</td><td class="p-3">Jakarta Pusat</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">3</td><td class="p-3">Masjid Istiqlal Dan ISHOMA</td><td class="p-3 font-semibold text-secondary">Salur</td><td class="p-3 text-primary">Salur</td><td class="p-3">Jakarta Pusat</td></tr>
+        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">3</td><td class="p-3">Masjid Istiqlal (ISHOMA)</td><td class="p-3 font-semibold text-secondary">Salur</td><td class="p-3 text-primary">Salur</td><td class="p-3">Jakarta Pusat</td></tr>
         <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">4</td><td class="p-3">Istirahat di Penginapan</td><td class="p-3 font-semibold text-secondary">Bebas Sopan</td><td class="p-3 text-primary">Bebas</td><td class="p-3">Hotel R.Gina</td></tr>
       </tbody>
     </table>
@@ -351,7 +351,7 @@ html_code = """<!DOCTYPE html>
       <tbody class="divide-y divide-surface-variant/20">
         <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">1</td><td class="p-3">Makam Sunan Kalijaga</td><td class="p-3 font-semibold text-secondary">Almamater, Kemeja Putih</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Demak</td></tr>
         <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">2</td><td class="p-3">Makam Raden Abdul Fattah</td><td class="p-3 font-semibold text-secondary">Almamater, Kemeja Putih</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Demak</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">3</td><td class="p-3">ISHOMA Masjid Agung Demak</td><td class="p-3 font-semibold text-secondary">Kemeja Putih</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Demak</td></tr>
+        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">3</td><td class="p-3">Masjid Agung Demak (ISHOMA)</td><td class="p-3 font-semibold text-secondary">Kemeja Putih</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Demak</td></tr>
         <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">4</td><td class="p-3">Kembali ke LOSPLOS</td><td class="p-3 font-semibold text-secondary">Kemeja Putih</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Losplos</td></tr>
         <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">5</td><td class="p-3">Acara di Ndalem</td><td class="p-3 font-semibold text-secondary">Almamater, Kemeja Putih</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Losplos</td></tr>
       </tbody>
