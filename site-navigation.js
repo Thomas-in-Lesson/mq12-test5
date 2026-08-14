@@ -136,24 +136,26 @@
     .site-menu-item small { display: block; margin-top: 2px; color: #DEC0BB !important; font: 500 11px "Plus Jakarta Sans", sans-serif !important; }
     .site-menu-item.is-active small { color: #FFDAD4 !important; }
 
-    /* Compact Bullet SOS FAB Button */
+    /* Compact Bullet SOS FAB Button (High Contrast White Text) */
     .site-sos-bullet {
       will-change: transform;
       transform: translateZ(0);
       position: fixed;
       z-index: 9985;
       border-radius: 50%;
-      background: linear-gradient(135deg, #a8000b, #670007);
-      border: 1.5px solid #ffb4ab;
-      color: var(--c-on-surface);
+      background: linear-gradient(135deg, #C21A03, #800000);
+      border: 1.5px solid #FFDAD4;
+      color: #FFFFFF !important;
       display: grid;
       place-items: center;
-      box-shadow: 0 6px 20px rgba(147,0,10,0.55);
+      box-shadow: 0 6px 20px rgba(194, 26, 3, 0.6);
       cursor: pointer;
       transition: transform 0.15s ease;
     }
     .site-sos-bullet:active { transform: scale(0.9); }
-    .site-sos-bullet .material-symbols-outlined { color: var(--c-on-surface); }
+    .site-sos-bullet, .site-sos-bullet *, .site-sos-bullet span, .site-sos-bullet strong {
+      color: #FFFFFF !important;
+    }
 
     /* SOS Modal Overlay & Content (P1-3 Accessibility Enabled) */
     .site-sos-modal-overlay {
@@ -1259,12 +1261,12 @@
     });
   }
 
-  // Compact Floating Round Bullet SOS FAB Button (42px Bullet)
+  // Compact Floating Round Bullet SOS FAB Button (42px Bullet - Pure White SOS Text)
   const sosBullet = document.createElement('button');
   sosBullet.type = 'button';
   sosBullet.className = 'site-sos-bullet';
   sosBullet.setAttribute('aria-label', 'Bantuan PIC SOS');
-  sosBullet.innerHTML = '<span class="material-symbols-outlined" aria-hidden="true">sos</span>';
+  sosBullet.innerHTML = '<strong style="color:#FFFFFF !important; font-size:11px; font-weight:800; letter-spacing:0.5px; line-height:1;">SOS</strong>';
   sosBullet.addEventListener('click', openSos);
   document.body.append(sosBullet);
 

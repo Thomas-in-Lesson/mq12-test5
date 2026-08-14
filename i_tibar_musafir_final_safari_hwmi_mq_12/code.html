@@ -30,7 +30,7 @@
 
 <!-- TopAppBar -->
 <header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 flex justify-between items-center px-margin-mobile h-16 transition-colors duration-300">
-<button class="text-primary hover:bg-surface-variant/50 p-2 rounded-full transition-colors" aria-label="Go back">
+<button class="text-primary hover:bg-surface-variant/50 p-2 rounded-full transition-colors" aria-label="Go back" onclick="window.history.back()">
 <span class="material-symbols-outlined">arrow_back</span>
 </button>
 <h1 class="font-headline-md-mobile text-headline-md-mobile font-bold text-secondary text-center flex-1">I'tibar Musafir</h1>
@@ -45,7 +45,7 @@
 <div class="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-48 bg-secondary/10 rounded-full blur-3xl -z-10"></div>
 <p class="arabic-text text-2xl text-secondary">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
 <h2 class="font-display-lg-mobile text-display-lg-mobile text-secondary tracking-tight font-bold">SAFARI CHUBBUL WATHON MINAL IMAN</h2>
-<div class="space-y-1 text-sm text-on-surface-variant">
+<div class="space-y-1 text-sm text-on-surface">
 <p class="font-medium"><span class="text-secondary">Penyusun:</span> Syekh Muchammad Mukhtarullohil Mujtaba Mu’thi</p>
 <p class="italic">(Mursyid Thoriqoh Shiddiqiyyah Indonesia)</p>
 </div>
@@ -57,15 +57,14 @@
 
 <!-- Section 1: TUJUAN HIDUP -->
 <section class="bg-surface-container-low rounded-xl p-6 card-inner-glow border border-surface-variant/40 shadow-lg space-y-4">
-<div class="flex items-center gap-3 border-b border-surface-variant/30 pb-3">
-<span class="material-symbols-outlined text-secondary">flag</span>
+<div class="border-b border-surface-variant/30 pb-3">
 <h3 class="font-title-lg text-title-lg text-secondary font-bold">1. TUJUAN HIDUP</h3>
 </div>
 <div class="bg-surface p-4 rounded-lg border-l-4 border-secondary space-y-2">
 <p class="arabic-text text-2xl text-primary leading-loose text-right">وَمَا خَلَقْتُ الْجِنَّ وَالْاِنْسَ اِلَّا لِيَعْبُدُوْنِ</p>
-<p class="text-sm text-on-surface-variant italic">“Dan Aku tidak menjadikan jin dan manusia kecuali untuk beribadah Kepada-KU” (QS. Ad-Duriyat 56)</p>
+<p class="text-sm text-on-surface italic">“Dan Aku tidak menjadikan jin dan manusia kecuali untuk beribadah Kepada-KU” (QS. Ad-Duriyat 56)</p>
 </div>
-<ol class="list-decimal pl-5 space-y-3 text-sm text-on-surface-variant leading-relaxed">
+<ol class="list-decimal pl-5 space-y-3 text-sm text-on-surface leading-relaxed">
 <li>Jasmani/ruhani yakni hidup. Pendengaran, penglihatan, tangan, kaki, otak, hati, lisan, akal, pikiran, khayal, angan-angan, perasaan, kesadaran, kemauan dan lain-lainnya diciptakan oleh Alloh Ta’ala hanyalah sebagai wadah. Dan wadah itu tujuannya untuk diisi Ibadah, diisi Khidmah, diisi pengabdian pada Alloh Ta’ala.</li>
 <li>Oleh sebab itu, aktifitas hidup tanpa isi ibadah kepada Alloh Ta’ala adalah hidup yang kosong, hidup yang muspro, hidup yang sia-sia, hidup yang tidak ada arti, hidup yang tidak bermakna bagi Alloh.</li>
 <li>Oleh sebab itu bagi orang yang beragama Islam, maka wajiblah berusaha agar hidup kita ini menjadi hidup yang bermakna bagi Alloh Ta’ala. Dan wajib berusaha agar terhindar dari hidup yang sia-sia.</li>
@@ -75,32 +74,30 @@
 
 <!-- Section 2: NIAT -->
 <section class="bg-surface-container-low rounded-xl p-6 card-inner-glow border border-surface-variant/40 shadow-lg space-y-4">
-<div class="flex items-center gap-3 border-b border-surface-variant/30 pb-3">
-<span class="material-symbols-outlined text-secondary">favorite</span>
+<div class="border-b border-surface-variant/30 pb-3">
 <h3 class="font-title-lg text-title-lg text-secondary font-bold">2. اَلنِّيَة (NIAT)</h3>
 </div>
-<p class="text-sm text-on-surface-variant leading-relaxed">Apakah Niat itu? Menurut syara’ niat itu ialah melaksanakan perintah-perintah Alloh dan menjauhi larangan-larangan Alloh. Baikpun perintah dhohir maupun perintah bathin. Baikpun larangan dhohir maupun larangan bathin yang dibarengi dengan kehendak berkhidmat kepada Alloh Ta’ala semata-mata.</p>
-<p class="text-sm text-on-surface-variant leading-relaxed">Adapun bentuknya aktifitas hidup kita apabila tanpa dibarengi “Niat” berkhidmat kepada Alloh Ta’ala bukan ibadah namanya.</p>
+<p class="text-sm text-on-surface leading-relaxed">Apakah Niat itu? Menurut syara’ niat itu ialah melaksanakan perintah-perintah Alloh dan menjauhi larangan-larangan Alloh. Baikpun perintah dhohir maupun perintah bathin. Baikpun larangan dhohir maupun larangan bathin yang dibarengi dengan kehendak berkhidmat kepada Alloh Ta’ala semata-mata.</p>
+<p class="text-sm text-on-surface leading-relaxed">Adapun bentuknya aktifitas hidup kita apabila tanpa dibarengi “Niat” berkhidmat kepada Alloh Ta’ala bukan ibadah namanya.</p>
 <div class="bg-surface p-4 rounded-lg border-l-4 border-secondary space-y-2">
 <p class="arabic-text text-xl text-primary text-right">قال رسول الله صلى الله عليه وسلم :</p>
 <p class="arabic-text text-2xl text-secondary text-right leading-loose">اِنَّمَا الاَعْمَالُ بِالنِّيَّاتِ وَاINَّمَا لِكُلِّ اِمْرِىءٍ مَانَوَى (عن عمر - متفق عليه)</p>
-<p class="text-sm text-on-surface-variant pt-1">Bersabda Rosululloh S.A.W:<br>“Sesungguhnya amal itu dengan niat dan sesungguhnya bagi tiap-tiap seorang itu terserah niatnya”.</p>
+<p class="text-sm text-on-surface pt-1">Bersabda Rosululloh S.A.W:<br>“Sesungguhnya amal itu dengan niat dan sesungguhnya bagi tiap-tiap seorang itu terserah niatnya”.</p>
 </div>
-<p class="text-sm text-on-surface-variant leading-relaxed">Makan, minum, berpakaian, mandi, mencuci pakaian, melihat, mendengar, bercakap-cakap baik, berpergian, bangun, tidur, apabila tidak ada niat untuk melaksanakan perintah Alloh Ta’ala, itu perbuatan “Adat” namanya. Akan tetapi apabila dilaksanakan dengan niat berkhidmat kepada Alloh Ta’ala, itu namanya “Ibadat”.</p>
+<p class="text-sm text-on-surface leading-relaxed">Makan, minum, berpakaian, mandi, mencuci pakaian, melihat, mendengar, bercakap-cakap baik, berpergian, bangun, tidur, apabila tidak ada niat untuk melaksanakan perintah Alloh Ta’ala, itu perbuatan “Adat” namanya. Akan tetapi apabila dilaksanakan dengan niat berkhidmat kepada Alloh Ta’ala, itu namanya “Ibadat”.</p>
 </section>
 
 <!-- Section 3: AL-MASAAFIR -->
 <section class="bg-surface-container-low rounded-xl p-6 card-inner-glow border border-surface-variant/40 shadow-lg space-y-4">
-<div class="flex items-center gap-3 border-b border-surface-variant/30 pb-3">
-<span class="material-symbols-outlined text-secondary">explore</span>
+<div class="border-b border-surface-variant/30 pb-3">
 <h3 class="font-title-lg text-title-lg text-secondary font-bold">3. اَلمَسَافِر (AL-MASAAFIR)</h3>
 </div>
-<p class="text-sm text-on-surface-variant font-medium">1. Di dalam Al Qur-an ada beberapa ayat yang memerintahkan kepada kita supaya kita mengadakan musafir:</p>
+<p class="text-sm text-on-surface font-medium">1. Di dalam Al Qur-an ada beberapa ayat yang memerintahkan kepada kita supaya kita mengadakan musafir:</p>
 <div class="space-y-4 pl-2 border-l-2 border-secondary/30">
 <div class="space-y-1">
 <p class="text-xs text-secondary font-bold">1) Al-An'ām (Surat 6 : Ayat 11)</p>
 <p class="arabic-text text-xl text-primary text-right">قُلْ سِيْرُوْا فِي الْأَرْضِ ثُمَّ انْظُرُوْا</p>
-<p class="text-xs text-on-surface-variant italic">Artinya: “Katakan Muhammad Hendaklah Kamu Musafir dimuka bumi, maka lihatlah dengan fikiranmu”.</p>
+<p class="text-xs text-on-surface italic">Artinya: “Katakan Muhammad Hendaklah Kamu Musafir dimuka bumi, maka lihatlah dengan fikiranmu”.</p>
 </div>
 <div class="space-y-1">
 <p class="text-xs text-secondary font-bold">2) An-Naml (Surat 27 : Ayat 69)</p>
@@ -117,7 +114,7 @@
 <div class="space-y-1">
 <p class="text-xs text-secondary font-bold">5) Āli 'Imrān (Surat 3 : Ayat 137)</p>
 <p class="arabic-text text-xl text-primary text-right">فَسِيْرُوْا فِي الْأَرْضِ فَانْظُرُوْا</p>
-<p class="text-xs text-on-surface-variant italic">Artinya: “Maka berjalanlah kamu dimuka bumi, kemudian lihatlah dengan fikiranmu”.</p>
+<p class="text-xs text-on-surface italic">Artinya: “Maka berjalanlah kamu dimuka bumi, kemudian lihatlah dengan fikiranmu”.</p>
 </div>
 <div class="space-y-1">
 <p class="text-xs text-secondary font-bold">6) An-Naḥl (Surat 16 : Ayat 36)</p>
@@ -125,8 +122,8 @@
 </div>
 </div>
 
-<p class="text-sm text-on-surface-variant font-medium pt-2">2. Pertanyaan-pertanyaan dari Alloh Ta’ala kepada kita sekalian:</p>
-<div class="space-y-3 text-sm text-on-surface-variant pl-2 border-l-2 border-secondary/30">
+<p class="text-sm text-on-surface font-medium pt-2">2. Pertanyaan-pertanyaan dari Alloh Ta’ala kepada kita sekalian:</p>
+<div class="space-y-3 text-sm text-on-surface pl-2 border-l-2 border-secondary/30">
 <div>
 <p class="arabic-text text-lg text-primary text-right">1) Yūsuf Ayat 109: فَلَمْ يَسِيْرُوْا فِي الْأَرْضِ فَيَنْظُرُوْا</p>
 <p class="text-xs italic">Artinya: “Apakah kamu tidak musafir dimuka bumi, kemudian kamu melihat dengan fikiranmu?”</p>
@@ -148,18 +145,17 @@
 <div class="bg-surface p-4 rounded-lg border border-surface-variant text-center my-4 space-y-2">
 <p class="arabic-text text-xl text-primary text-right">قَالَ رَسُوْلُ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمْ :</p>
 <p class="arabic-text text-2xl text-secondary leading-loose">سَافِرُوْا تَصِحُّوْا وَتُرْزَقُوْا</p>
-<p class="text-xs text-on-surface-variant">(Rawaahu Ibn 'Adiyy, 'an Muhammad bin 'Abdirrohman, Jaami'us Shoghir, Jilid II/47)</p>
+<p class="text-xs text-on-surface">(Rawaahu Ibn 'Adiyy, 'an Muhammad bin 'Abdirrohman, Jaami'us Shoghir, Jilid II/47)</p>
 <p class="text-sm text-on-surface font-medium">Bersabda Rosululloh SAW:<br>“Musafirlah kamu!, kamu akan menjadi sehat dan diberi rezeki.”</p>
 </div>
 </section>
 
 <!-- Section 4: PERINTAH ALLOH TA'ALA -->
 <section class="bg-surface-container-low rounded-xl p-6 card-inner-glow border border-surface-variant/40 shadow-lg space-y-4">
-<div class="flex items-center gap-3 border-b border-surface-variant/30 pb-3">
-<span class="material-symbols-outlined text-secondary">directions_walk</span>
+<div class="border-b border-surface-variant/30 pb-3">
 <h3 class="font-title-lg text-title-lg text-secondary font-bold">4. PERINTAH ALLOH TA'ALA</h3>
 </div>
-<ol class="list-decimal pl-5 space-y-3 text-sm text-on-surface-variant leading-relaxed">
+<ol class="list-decimal pl-5 space-y-3 text-sm text-on-surface leading-relaxed">
 <li>Berapa kali Alloh Ta’ala perintah kepada kita supaya kita mengadakan musafir atau berjalan di muka bumi <span class="arabic-text text-lg text-primary">(قُلْ سِيْرُوْا)</span> artinya katakanlah, hendaklah kamu berjalan <span class="arabic-text text-lg text-primary">(فِى الاَرْضِ)</span> di muka bumi <span class="arabic-text text-lg text-primary">(فَانْظُرُوْا)</span> maka hendaklah kamu melihat. Artinya melihat apa-apa di muka bumi sepanjang dengan akal, pikiran, perasaan.
 <ul class="list-disc pl-5 mt-2 space-y-1">
 <li><span class="arabic-text text-lg text-secondary">(سِيْرُوْا)</span> adalah perintah berjalan dengan kaki, atau jasmaniyyah.</li>
@@ -172,17 +168,16 @@
 
 <!-- Section 5: AL-HIKMAH -->
 <section class="bg-surface-container-low rounded-xl p-6 card-inner-glow border border-surface-variant/40 shadow-lg space-y-4">
-<div class="flex items-center gap-3 border-b border-surface-variant/30 pb-3">
-<span class="material-symbols-outlined text-secondary">lightbulb</span>
+<div class="border-b border-surface-variant/30 pb-3">
 <h3 class="font-title-lg text-title-lg text-secondary font-bold">5. AL-HIKMAH</h3>
 </div>
-<p class="text-sm text-on-surface-variant leading-relaxed">Dalam melaksanakan ibadah musafir itu, kita akan memperoleh hikmah-hikmah yang sangat banyak, diantaranya sebagaimana tersebut di dalam hadits di atas yaitu:</p>
-<ol class="list-decimal pl-5 space-y-3 text-sm text-on-surface-variant">
+<p class="text-sm text-on-surface leading-relaxed">Dalam melaksanakan ibadah musafir itu, kita akan memperoleh hikmah-hikmah yang sangat banyak, diantaranya sebagaimana tersebut di dalam hadits di atas yaitu:</p>
+<ol class="list-decimal pl-5 space-y-3 text-sm text-on-surface">
 <li><strong class="arabic-text text-xl text-secondary block">تَصِحُّوْا (Tashihhu).</strong> Kita memperoleh kesehatan. Kesehatan jasmani, kesehatan pikiran, kesehatan kesadaran, kesehatan perasaan. Dengan kesehatan-kesehatan itu kita akan merasakan kesegaran jasmani dan ruhani, hilang kepenatan dalam pikiran.</li>
 <li><strong class="arabic-text text-xl text-secondary block">تُرْزَقُوْا (Turzaquu).</strong> Kita akan memperoleh rizki dari Alloh Ta’ala, baik Rizki Dhohir maupun Rizki Bathin. Itulah sebabnya, para Rosul-Rosul Alloh semuanya mengadakan “Musafir”:</li>
 </ol>
 
-<ul class="list-disc pl-5 space-y-2 text-sm text-on-surface-variant bg-surface p-4 rounded-lg border border-surface-variant/30">
+<ul class="list-disc pl-5 space-y-2 text-sm text-on-surface bg-surface p-4 rounded-lg border border-surface-variant/30">
 <li>Nabiyulloh Ibrohim AS. mengadakan musafir dari Babylonia ke Syam, ke Mesir dan lain-lain Negeri.</li>
 <li>Nabiyulloh Luth AS. mengadakan musafir dari Babylonia ke Negeri Yordania.</li>
 <li>Nabiyulloh Ya’qub AS. musafir dari Kan’an ke Madyan.</li>
@@ -190,7 +185,7 @@
 <li>Nabiyulloh Muhammad S.A.W. musafir dari Makkah ke Syria.</li>
 </ul>
 
-<div class="p-3 bg-secondary/10 border-l-4 border-secondary rounded-r-lg space-y-1 text-sm text-on-surface-variant">
+<div class="p-3 bg-secondary/10 border-l-4 border-secondary rounded-r-lg space-y-1 text-sm text-on-surface">
 <p>Jika orang lain banyak bepergian hanya rekreasi, tetapi kita mengadakan “Berpergian”, niat melaksanakan perintah Alloh Ta’ala <span class="arabic-text text-lg text-primary">(سِيْرُوْا فِى الاَْرْضِ)</span>.</p>
 <p class="italic font-medium">Meskipun sama yang dikunjungi oleh orang-orang banyak, akan tetapi “lain” niatnya.</p>
 </div>
@@ -198,12 +193,11 @@
 
 <!-- Section 6: TEMPAT-TEMPAT YANG AKAN DIKUNJUNGI -->
 <section class="bg-surface-container-low rounded-xl p-6 card-inner-glow border border-surface-variant/40 shadow-lg space-y-4">
-<div class="flex items-center gap-3 border-b border-surface-variant/30 pb-3">
-<span class="material-symbols-outlined text-secondary">location_on</span>
+<div class="border-b border-surface-variant/30 pb-3">
 <h3 class="font-title-lg text-title-lg text-secondary font-bold">6. TEMPAT-TEMPAT YANG AKAN DIKUNJUNGI</h3>
 </div>
-<p class="text-sm text-on-surface-variant leading-relaxed">Jika Alloh Ta’ala memberikan kesempatan kepada kita, fainsyaalloh akan mengunjungi beberapa tempat, diantaranya Ialah:</p>
-<ol class="list-decimal pl-5 space-y-2 text-sm text-on-surface-variant font-medium">
+<p class="text-sm text-on-surface leading-relaxed">Jika Alloh Ta’ala memberikan kesempatan kepada kita, fainsyaalloh akan mengunjungi beberapa tempat, diantaranya Ialah:</p>
+<ol class="list-decimal pl-5 space-y-2 text-sm text-on-surface font-medium">
 <li>Ziarah Makam Mbah Kyai Ahmad Syuhada’ – Losari</li>
 <li>Ziarah Makam Para Auliya’ di wilayah Jawa Timur</li>
 <li>Ziarah Makam Auliya’ di wilayah Jawa Tengah</li>
@@ -217,60 +211,58 @@
 
 <!-- Section 7: CINTA TANAH AIR -->
 <section class="bg-surface-container-low rounded-xl p-6 card-inner-glow border border-surface-variant/40 shadow-lg space-y-4">
-<div class="flex items-center gap-3 border-b border-surface-variant/30 pb-3">
-<span class="material-symbols-outlined text-secondary">public</span>
+<div class="border-b border-surface-variant/30 pb-3">
 <h3 class="font-title-lg text-title-lg text-secondary font-bold">7. CINTA TANAH AIR</h3>
 </div>
 <div class="bg-surface p-4 rounded-lg border-l-4 border-secondary space-y-2">
 <p class="arabic-text text-2xl text-primary text-right leading-loose">قَالَ رَسُوْلُ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمْ: حُبُّ الْوَطَنِ مِنَ الْاِيْمَانِ</p>
-<p class="text-sm text-on-surface-variant">Bersabda Rosululloh S.A.W: “Cinta Tanah Air Bagian Iman”<br><span class="text-xs italic">(Kitab Dalilul Falihin, Hal/26, oleh Muhammad Bin Aslan Ash-Shidiqqiy. Wafat: 1057 Hijriyyah)</span></p>
+<p class="text-sm text-on-surface">Bersabda Rosululloh S.A.W: “Cinta Tanah Air Bagian Iman”<br><span class="text-xs italic">(Kitab Dalilul Falihin, Hal/26, oleh Muhammad Bin Aslan Ash-Shidiqqiy. Wafat: 1057 Hijriyyah)</span></p>
 </div>
-<p class="text-sm text-on-surface-variant">Hadits ini oleh Beliau (Muhammad bin Aslan) diterangkan demikian:</p>
+<p class="text-sm text-on-surface">Hadits ini oleh Beliau (Muhammad bin Aslan) diterangkan demikian:</p>
 <div class="bg-surface p-4 rounded-lg border border-surface-variant space-y-2">
 <p class="arabic-text text-xl text-secondary text-right leading-loose">فَيَنْبَغِى لِكَامِلِ الْاِيْمَانِ اَنْ يَعْمُرَ وَطَنَهُ بِالْعَمَلِ الصَّالِحِ وَالْاِحْسَانِ</p>
-<p class="text-sm text-on-surface-variant">“Maka seyogyanya bagi orang yang sempurna imannya, berbuat memakmurkan tanah airnya dengan amal sholeh dan ihsan”.</p>
+<p class="text-sm text-on-surface">“Maka seyogyanya bagi orang yang sempurna imannya, berbuat memakmurkan tanah airnya dengan amal sholeh dan ihsan”.</p>
 </div>
-<p class="text-sm text-on-surface-variant font-medium">Pada hakekatnya, tiap-tiap manusia itu mempunyai dua macam tanah air yaitu:</p>
-<ol class="list-decimal pl-5 space-y-1 text-sm text-on-surface-variant">
+<p class="text-sm text-on-surface font-medium">Pada hakekatnya, tiap-tiap manusia itu mempunyai dua macam tanah air yaitu:</p>
+<ol class="list-decimal pl-5 space-y-1 text-sm text-on-surface">
 <li>Tanah Air bagi Ruhani.</li>
 <li>Tanah Air bagi Jasmani.</li>
 </ol>
-<p class="text-sm text-on-surface-variant leading-relaxed">Tanah air bagi jasmani itu ialah “Dunia”. Tanah air bagi ruhani itu ialah “Akhirat”.</p>
-<p class="text-sm text-on-surface-variant leading-relaxed">Adapun Maksud Hadits <span class="arabic-text text-lg text-primary">(حُبُّ الْوَطَنِ مِنَ الْاِيْمَانِ)</span> tersebut di atas, mengenai kedua-duanya, tanah air dunia dan tanah air akhirat. Kedua Tanah air itu wajib kita makmurkan dengan: “Amal sholih dan Ihsan”.</p>
+<p class="text-sm text-on-surface leading-relaxed">Tanah air bagi jasmani itu ialah “Dunia”. Tanah air bagi ruhani itu ialah “Akhirat”.</p>
+<p class="text-sm text-on-surface leading-relaxed">Adapun Maksud Hadits <span class="arabic-text text-lg text-primary">(حُبُّ الْوَطَنِ مِنَ الْاِيْمَانِ)</span> tersebut di atas, mengenai kedua-duanya, tanah air dunia dan tanah air akhirat. Kedua Tanah air itu wajib kita makmurkan dengan: “Amal sholih dan Ihsan”.</p>
 </section>
 
 <!-- Section 8: BERMACAM-MACAM BANGSA DAN SUKU BANGSA -->
 <section class="bg-surface-container-low rounded-xl p-6 card-inner-glow border border-surface-variant/40 shadow-lg space-y-4">
-<div class="flex items-center gap-3 border-b border-surface-variant/30 pb-3">
-<span class="material-symbols-outlined text-secondary">groups</span>
+<div class="border-b border-surface-variant/30 pb-3">
 <h3 class="font-title-lg text-title-lg text-secondary font-bold">8. BERMACAM-MACAM BANGSA DAN SUKU BANGSA</h3>
 </div>
 <div class="space-y-4">
 <div class="bg-surface p-4 rounded-lg border-l-4 border-secondary space-y-2">
 <p class="arabic-text text-xl text-primary text-right leading-loose">يٰٓاَيُّهَا النَّاسُ اِنَّا خَلَقْنٰكُمْ مِّنْ ذَكَرٍ وَّاُنْثٰى وَجَعَلْنٰكُمْ شُعُوْبًا وَّقَبَاۤىِٕلَ لِتَعَارَفُوْا ۚ</p>
-<p class="text-xs text-on-surface-variant italic">“Wahai manusia! Sesungguhnya aku telah menciptakan kamu terdiri dari laki-laki dan perempuan, dan aku jadikan kamu bangsa-bangsa dan suku-suku bangsa, agar kamu saling mengenal” (QS. Al-Hujrot Ayat 13)</p>
+<p class="text-xs text-on-surface italic">“Wahai manusia! Sesungguhnya aku telah menciptakan kamu terdiri dari laki-laki dan perempuan, dan aku jadikan kamu bangsa-bangsa dan suku-suku bangsa, agar kamu saling mengenal” (QS. Al-Hujrot Ayat 13)</p>
 </div>
 <div class="bg-surface p-4 rounded-lg border-l-4 border-secondary space-y-2">
 <p class="arabic-text text-xl text-primary text-right leading-loose">وَمِنْ اٰيٰتِه خَلْقُ السَّمٰوٰتِ وَالْاَرْضِ وَاخْتِلَافُ اَلْسِنَتِكُمْ وَاَلْوَانِكُمْۗ اِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّلْعٰلِمِيْنَ</p>
-<p class="text-xs text-on-surface-variant italic">“Dan sebagian ayat-ayat Nya kejadian langit dan bumi dan perbedaan bahasa dan warna kulitmu. Sesungguhnya yang demikian itu adalah ayat-ayat bagi orang yang berilmu” (QS. Ar-Ruum Ayat 22)</p>
+<p class="text-xs text-on-surface italic">“Dan sebagian ayat-ayat Nya kejadian langit dan bumi dan perbedaan bahasa dan warna kulitmu. Sesungguhnya yang demikian itu adalah ayat-ayat bagi orang yang berilmu” (QS. Ar-Ruum Ayat 22)</p>
 </div>
 </div>
 
-<p class="text-sm text-on-surface-variant leading-relaxed">Bangsa Indonesia terdiri dari beberapa suku dan bermacam-macam adat kebudayaannya/bahasanya.</p>
-<ul class="list-disc pl-5 space-y-3 text-sm text-on-surface-variant leading-relaxed">
+<p class="text-sm text-on-surface leading-relaxed">Bangsa Indonesia terdiri dari beberapa suku dan bermacam-macam adat kebudayaannya/bahasanya.</p>
+<ul class="list-disc pl-5 space-y-3 text-sm text-on-surface leading-relaxed">
 <li>Di dalam mengunjungi makam-makam waliyulloh nanti kita dapat mengambil pelajaran, bagaimanakah pejuang-pejuang islam dengan begitu uletnya dalam memperjuangkan agama islam di masyarakat yang luas.</li>
 <li>Dalam mengunjungi Masjid Istiqlal (Masjid untuk memperingati kemerdekaan Indonesia). Kita dapat menyaksikan ditengah-tengah Ibukota Republik Indonesia, berdirilah Masjid yang terbesar di Asia Tenggara.</li>
 <li>Sepanjang perjalanan kita dapat menyaksikan betapa agungnya nikmat Alloh Ta’ala yang di berikan kepada bangsa Indonesia, tanahnya subur airnya jernih, udaranya nyaman, bukit-bukitnya tinggi, tanamannya yang rimbun, hayawannya yang bermacam-macam, penduduknya yang ramah tamah.</li>
 </ul>
 
 <div class="bg-surface p-4 rounded-lg border border-surface-variant/30 space-y-2">
-<p class="text-xs text-on-surface-variant">Sebagaimana Alloh Ta’ala menyatakan dalam Al Qur-an:</p>
+<p class="text-xs text-on-surface">Sebagaimana Alloh Ta’ala menyatakan dalam Al Qur-an:</p>
 <p class="arabic-text text-xl text-primary text-right">وَالدَّوَابِّ وَالاَنْعَامِ مُخْتَلَفٌ اَلْوَانُهُ</p>
-<p class="text-xs text-on-surface-variant italic">“Dan binatang-binatang yang melata dan hayawan-hayawan ternak yang bermacam-macam warnanya”</p>
+<p class="text-xs text-on-surface italic">“Dan binatang-binatang yang melata dan hayawan-hayawan ternak yang bermacam-macam warnanya”</p>
 </div>
 
-<p class="text-sm text-on-surface-variant font-medium pt-2">Walhasil dalam safari kita itu adalah:</p>
-<ul class="list-disc pl-5 space-y-1 text-sm text-on-surface-variant font-semibold">
+<p class="text-sm text-on-surface font-medium pt-2">Walhasil dalam safari kita itu adalah:</p>
+<ul class="list-disc pl-5 space-y-1 text-sm text-on-surface font-semibold">
 <li>Safari Spiritual</li>
 <li>Safari Hubbul Wathon</li>
 <li>Safari Perjuangan</li>
@@ -285,12 +277,11 @@ Para anak-anak Hifdhul Ghulam wal Banat supaya membuat “Kesimpulan-kesimpulan�
 
 <!-- Section 9: AL-AKHLAQ -->
 <section class="bg-surface-container-low rounded-xl p-6 card-inner-glow border border-surface-variant/40 shadow-lg space-y-4">
-<div class="flex items-center gap-3 border-b border-surface-variant/30 pb-3">
-<span class="material-symbols-outlined text-secondary">self_improvement</span>
+<div class="border-b border-surface-variant/30 pb-3">
 <h3 class="font-title-lg text-title-lg text-secondary font-bold">9. AL-AKHLAQ</h3>
 </div>
 <p class="text-sm text-secondary font-bold uppercase tracking-wider">DALAM PERJALANAN, HENDAKLAH:</p>
-<ol class="list-decimal pl-5 space-y-2 text-sm text-on-surface-variant leading-relaxed">
+<ol class="list-decimal pl-5 space-y-2 text-sm text-on-surface leading-relaxed">
 <li>Niat yang ikhlas melaksanakan perintah Alloh Ta’ala dalam ayat tersebut di atas.</li>
 <li>Hifdhul lisan (menjaga tutur kata), gerak-gerik yang sopan.</li>
 <li>Jangan bertengkar kepada siapapun.</li>
@@ -305,21 +296,20 @@ Para anak-anak Hifdhul Ghulam wal Banat supaya membuat “Kesimpulan-kesimpulan�
 
 <!-- Section 10: TATA CARA ZIAROH -->
 <section class="bg-surface-container-low rounded-xl p-6 card-inner-glow border border-surface-variant/40 shadow-lg space-y-4">
-<div class="flex items-center gap-3 border-b border-surface-variant/30 pb-3">
-<span class="material-symbols-outlined text-secondary">mosque</span>
+<div class="border-b border-surface-variant/30 pb-3">
 <h3 class="font-title-lg text-title-lg text-secondary font-bold">10. TATA CARA ZIAROH KE MAKAM WALIYULLOH</h3>
 </div>
 
 <div class="bg-surface p-4 rounded-lg border-l-4 border-secondary space-y-2">
 <p class="arabic-text text-xl text-primary text-right leading-loose">اَلَآ اِنَّ اَوْلِيَاۤءَ اللّٰهِ لَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُوْنَ ۝ اَلَّذِيْنَ اٰمَنُوْا وَكَانُوْا يَتَّقُوْنَ ۝ لَهُمُ الْبُشْرٰى فِى الْحَيٰوةِ الدُّنْيَا وَفِى الْاٰخِرَةِ ۝</p>
-<p class="text-xs text-on-surface-variant italic">“Ingatlah! Sesungguhnya wali-wali Alloh itu tiadalah takut atas mereka dan tiadalah mereka itu bersedih hati (62) mereka adalah orang-orang yang beriman dan adalah mereka itu orang-orang yang Taqwalloh (63) bagi mereka adalah kegembiraan dalam waktu hidup di dunia dan hidup di akhirat (64)” (QS. Yunus 62-64)</p>
+<p class="text-xs text-on-surface italic">“Ingatlah! Sesungguhnya wali-wali Alloh itu tiadalah takut atas mereka dan tiadalah mereka itu bersedih hati (62) mereka adalah orang-orang yang beriman dan adalah mereka itu orang-orang yang Taqwalloh (63) bagi meeka adalah kegembiraan dalam waktu hidup di dunia dan hidup di akhirat (64)” (QS. Yunus 62-64)</p>
 </div>
 
-<ol class="list-decimal pl-5 space-y-3 text-sm text-on-surface-variant leading-relaxed">
+<ol class="list-decimal pl-5 space-y-3 text-sm text-on-surface leading-relaxed">
 <li>Wali-wali Alloh Ta’ala itu adalah orang-orang yang beriman yang sangat kuat, dan orang-orang yang bertaqwalloh itu adalah orang-orang yang di muliakan Alloh Ta’ala. Sebagaimana pernyataan Alloh dalam Al Qur-an:
 <div class="my-2 p-3 bg-surface rounded border border-surface-variant/30">
 <p class="arabic-text text-xl text-primary text-right">اِنَّ اَكْرَمَكُمْ عِنْدَ اللّٰهِ اَتْقٰىكُمْ</p>
-<p class="text-xs text-on-surface-variant italic">(QS. Al-Hujurot Ayat 13) “Sesungguhnya paling mulia-muliamu adalah taqwamu”.</p>
+<p class="text-xs text-on-surface italic">(QS. Al-Hujurot Ayat 13) “Sesungguhnya paling mulia-muliamu adalah taqwamu”.</p>
 </div>
 </li>
 <li>Kita sebagai orang-orang yang berziarah ke makamnya orang-orang yang di muliakan Alloh Ta’ala itu, kita harus melakukan tata cara yang mulia, tata cara yang sopan, tata cara yang terpuji. Terpuji dalam hati, sopan dalam ucapan, sopan dalam pakaian, sopan dalam tingkah laku.</li>
@@ -328,7 +318,7 @@ Para anak-anak Hifdhul Ghulam wal Banat supaya membuat “Kesimpulan-kesimpulan�
 <div class="space-y-4 pt-2">
 <div>
 <h4 class="text-xs font-bold text-secondary uppercase tracking-wider mb-2">SOPAN DALAM PAKAIAN</h4>
-<ol class="list-decimal pl-5 space-y-1 text-sm text-on-surface-variant">
+<ol class="list-decimal pl-5 space-y-1 text-sm text-on-surface">
 <li>Berpakaian yang bersih dan menutupi aurat.</li>
 <li>Memakai bau yang harum.</li>
 </ol>
@@ -336,7 +326,7 @@ Para anak-anak Hifdhul Ghulam wal Banat supaya membuat “Kesimpulan-kesimpulan�
 
 <div>
 <h4 class="text-xs font-bold text-secondary uppercase tracking-wider mb-2">SOPAN DALAM UCAPAN</h4>
-<ol class="list-decimal pl-5 space-y-1 text-sm text-on-surface-variant">
+<ol class="list-decimal pl-5 space-y-1 text-sm text-on-surface">
 <li>Kalau bicara, bicaralah yang baik, jangan membahas hal yang tidak baik.</li>
 <li>Atau banyak diam daripada banyak bicara.</li>
 <li>Banyak-banyak membaca Sholawat Nabi sepanjang perjalanan.</li>
@@ -346,7 +336,7 @@ Para anak-anak Hifdhul Ghulam wal Banat supaya membuat “Kesimpulan-kesimpulan�
 
 <div>
 <h4 class="text-xs font-bold text-secondary uppercase tracking-wider mb-2">SOPAN DALAM HATI</h4>
-<ol class="list-decimal pl-5 space-y-1 text-sm text-on-surface-variant">
+<ol class="list-decimal pl-5 space-y-1 text-sm text-on-surface">
 <li>Hendaklah niat yang ikhlas, semata-mata melaksanakan perintah Alloh dan Rosululloh. Karena Ziaroh kuburannya orang-orang Taqwalloh itu adalah perintah Rosululloh.</li>
 <li>Jangan minta-minta kepada kuburannya wali-wali. Karena demikian itu bisa dekat kepada Kemusyrikan.</li>
 <li>Jangan hati Ngersula bila bertemu kepada hal-hal yang tidak diingini oleh hatinya.</li>
@@ -355,7 +345,7 @@ Para anak-anak Hifdhul Ghulam wal Banat supaya membuat “Kesimpulan-kesimpulan�
 
 <div>
 <h4 class="text-xs font-bold text-secondary uppercase tracking-wider mb-2">SOPAN DALAM TINGKAH LAKU DI DALAM MAKAM</h4>
-<ol class="list-decimal pl-5 space-y-2 text-sm text-on-surface-variant">
+<ol class="list-decimal pl-5 space-y-2 text-sm text-on-surface">
 <li>Jika masuk makam hendaklah membaca:
 <p class="arabic-text text-xl text-primary text-right mt-1">اَلسَّلَامُ عَلَيْكُمْ يَاوَلِيَّ الله * اَلسَّلَامُ عَلَيْكُمْ يَااَهْلَ الْقُبُوْرِ</p>
 </li>
@@ -367,7 +357,7 @@ Para anak-anak Hifdhul Ghulam wal Banat supaya membuat “Kesimpulan-kesimpulan�
 
 <div>
 <h4 class="text-xs font-bold text-secondary uppercase tracking-wider mb-2">SOPAN DALAM PERJALANAN ATAU PENGINAPAN</h4>
-<ol class="list-decimal pl-5 space-y-1 text-sm text-on-surface-variant">
+<ol class="list-decimal pl-5 space-y-1 text-sm text-on-surface">
 <li>Makan, minum yang sopan.</li>
 <li>Buang air kecil maupun besar harus sopan.</li>
 <li>Haruslah jaga menjaga jika dalam penginapan.</li>
@@ -378,12 +368,11 @@ Para anak-anak Hifdhul Ghulam wal Banat supaya membuat “Kesimpulan-kesimpulan�
 
 <!-- Section 11: SHOLAT MUSAFIR -->
 <section class="bg-surface-container-low rounded-xl p-6 card-inner-glow border border-surface-variant/40 shadow-lg space-y-4">
-<div class="flex items-center gap-3 border-b border-surface-variant/30 pb-3">
-<span class="material-symbols-outlined text-secondary">prayer_times</span>
+<div class="border-b border-surface-variant/30 pb-3">
 <h3 class="font-title-lg text-title-lg text-secondary font-bold">11. KETENTUAN SHOLAT BAGI ORANG MUSAFIR</h3>
 </div>
 
-<div class="p-3 bg-surface rounded-lg border border-surface-variant/30 space-y-1 text-sm text-on-surface-variant">
+<div class="p-3 bg-surface rounded-lg border border-surface-variant/30 space-y-1 text-sm text-on-surface">
 <p class="font-bold text-primary">MAS'ALAH SHOLATNYA:</p>
 <p>Kita akan melaksanakan Sholat Jama’-Qoshor:</p>
 <ul class="list-disc pl-5 space-y-1 text-xs">
@@ -393,7 +382,7 @@ Para anak-anak Hifdhul Ghulam wal Banat supaya membuat “Kesimpulan-kesimpulan�
 </div>
 
 <p class="text-xs font-bold text-secondary uppercase tracking-wider pt-2">KETENTUAN WAJIBNYA SHOLAT BAGI ORANG MUSAFIR (DI PERJALANAN MAUPUN PENGINAPAN):</p>
-<ol class="list-decimal pl-5 space-y-3 text-sm text-on-surface-variant leading-relaxed">
+<ol class="list-decimal pl-5 space-y-3 text-sm text-on-surface leading-relaxed">
 <li>Orang yang sedang musafir tidak ada kewajiban Sholat Jum’at.</li>
 <li>Bagi orang yang musafir: sholatnya Dhuhur di wajibkan hanya 2 roka’at, bukan 4 roka’at. Sholatnya Ashar di wajibkan hanya 2 roka’at bukan 4 roka’at. Sholatnya Maghrib tetap 3 roka’at, sholatnya Shubuh tetap 2 roka’at, jadi bagi orang yang sedang musafir baik dalam perjalanan maupun dalam penginapan, sehari semalam hanya sebelas roka’at, bukan 17 roka’at.</li>
 <li>Bagi orang yang musafir Sholat Dhuhur 2 roka’at, Ashar 2 roka’at, Isya’ 2 roka’at bukan Sholat Qhosor (kependekan dari sholat 4 roka’at) tetapi namanya Sholat Tamaamum (Sholat sempurna).</li>
@@ -425,9 +414,8 @@ Para anak-anak Hifdhul Ghulam wal Banat supaya membuat “Kesimpulan-kesimpulan�
 </section>
 
 <!-- Final Section: ADAB & PETUGAS -->
-<section class="bg-surface-container-low rounded-xl p-6 card-inner-glow border border-surface-variant/40 shadow-lg space-y-3 text-sm text-on-surface-variant">
-<div class="flex items-center gap-3 border-b border-surface-variant/30 pb-2 mb-2">
-<span class="material-symbols-outlined text-secondary">handshake</span>
+<section class="bg-surface-container-low rounded-xl p-6 card-inner-glow border border-surface-variant/40 shadow-lg space-y-3 text-sm text-on-surface">
+<div class="border-b border-surface-variant/30 pb-2 mb-2">
 <h3 class="font-title-lg text-title-lg text-secondary font-bold">ADAB KEPADA PETUGAS & JURU KUNCI</h3>
 </div>
 <ul class="list-disc pl-5 space-y-2 leading-relaxed">

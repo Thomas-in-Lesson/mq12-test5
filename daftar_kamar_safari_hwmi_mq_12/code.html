@@ -3633,14 +3633,14 @@
       const activeHotel = q === '' ? hotelsData[activeHotelKey] : null;
       if (activeHotel && activeHotel.note) {
         roomGrid.innerHTML = `<div class="col-span-full text-center py-12 text-on-surface-variant space-y-3 bg-surface-container-low rounded-xl border border-secondary/30 p-8 shadow-md">
-          <span class="material-symbols-outlined text-[48px] text-secondary">engineering</span>
+          <svg class="w-12 h-12 text-secondary mx-auto fill-current" viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.6C.4 7 1 10 3 12c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.4-.4.4-1.1 0-1.4z"/></svg>
           <h3 class="font-title-lg font-bold text-secondary">Data Dalam Tahap Perbaikan</h3>
           <p class="font-medium text-on-surface max-w-md mx-auto">${activeHotel.note}</p>
         </div>`;
       } else {
         roomGrid.innerHTML = `<div class="col-span-full text-center py-12 text-on-surface-variant space-y-2">
-          <span class="material-symbols-outlined text-[48px] opacity-40">search_off</span>
-          <p class="font-medium">Tidak ada kamar atau nama peserta yang cocok dengan "${query}"</p>
+          <svg class="w-12 h-12 text-secondary/50 mx-auto fill-current" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          <p class="font-medium text-on-surface-variant">Tidak ada kamar atau nama peserta yang cocok dengan "${query}"</p>
         </div>`;
       }
     }
