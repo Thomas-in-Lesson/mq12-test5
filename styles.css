@@ -323,3 +323,21 @@ a.group:active {
     0 8px 24px -4px rgba(224, 184, 99, 0.45) !important;
   color: #140303 !important;
 }
+
+
+/* Ensure 100% Clickability & Non-blocking Touch Targets */
+button,
+a,
+[role="button"],
+.glass-card,
+a.group,
+.room-card,
+.site-menu-item,
+.site-bottom-nav-item,
+.site-sos-bullet {
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  touch-action: manipulation !important;
+  user-select: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}

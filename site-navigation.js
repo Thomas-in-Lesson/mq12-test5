@@ -70,6 +70,7 @@
       -webkit-backdrop-filter: blur(4px);
       opacity: 0;
       visibility: hidden;
+      pointer-events: none !important;
       transition: opacity .22s ease, visibility .22s ease;
     }
     .site-menu-panel {
@@ -85,7 +86,7 @@
       transform: translateX(-104%);
       transition: transform .25s ease;
     }
-    .site-menu-open .site-menu-backdrop { opacity: 1; visibility: visible; }
+    .site-menu-open .site-menu-backdrop { opacity: 1; visibility: visible; pointer-events: auto !important; }
     .site-menu-open .site-menu-panel { transform: translateX(0); }
     body.site-menu-open { overflow: hidden; }
 
@@ -156,11 +157,13 @@
       -webkit-backdrop-filter: blur(6px);
       opacity: 0;
       visibility: hidden;
+      pointer-events: none !important;
       transition: opacity 0.2s ease, visibility 0.2s ease;
     }
     .site-sos-modal-overlay.is-open {
       opacity: 1;
       visibility: visible;
+      pointer-events: auto !important;
     }
     .site-sos-card {
       position: relative;
@@ -282,7 +285,7 @@
       top: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
-      pointer-events: none;
+      pointer-events: none !important;
       width: max-content;
     }
     .site-header-center-title span {
@@ -340,6 +343,7 @@
       box-shadow: 0 10px 30px rgba(0,0,0,0.7);
       opacity: 0;
       visibility: hidden;
+      pointer-events: none !important;
       transition: opacity 0.2s ease, visibility 0.2s ease;
       white-space: nowrap;
       text-align: center;
