@@ -262,18 +262,18 @@
 
     /* Top Navigation Bar Base */
     .site-mobile-bar {
-      position: fixed;
-      z-index: 10010;
-      top: 0; right: 0; left: 0;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background: rgba(28,7,4,0.96);
-      border-bottom: 1px solid var(--c-outline-variant);
-      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-    }
+  position: fixed;
+  z-index: 10010;
+  top: 0; right: 0; left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(180deg, rgba(58, 14, 14, 0.78) 0%, rgba(13, 3, 3, 0.65) 100%) !important;
+  border-bottom: 1px solid rgba(224, 184, 99, 0.3) !important;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.4) !important;
+  backdrop-filter: blur(16px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+}
 
     /* True 50% Absolute Center Alignment for Sacred Text */
     .site-header-center-title {
@@ -286,13 +286,14 @@
       width: max-content;
     }
     .site-header-center-title span {
-      display: block;
-      color: var(--c-primary);
-      font-family: "Noto Serif", "Plus Jakarta Sans", serif;
-      font-weight: 700;
-      text-transform: uppercase;
-      white-space: nowrap;
-    }
+  display: block;
+  color: #F8E088 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", sans-serif !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  white-space: nowrap !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 12px rgba(248, 224, 136, 0.35) !important;
+}
 
     /* Sleek Glowing Lamp Symbol Badge Button */
     .site-offline-badge {
@@ -409,7 +410,7 @@
       }
 
       .site-header-center-title span {
-        font-size: 9px;
+        font-size: 12px !important;
         letter-spacing: 0.03em;
       }
 
