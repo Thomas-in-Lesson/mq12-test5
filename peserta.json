@@ -94,13 +94,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "34",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "58",
@@ -120,8 +113,7 @@
   "name": "A Syarifuddin",
   "aliases": [
    "A Syarifuddin",
-   "A. Syarifuddin",
-   "A. Syarifudin"
+   "A. Syarifuddin"
   ],
   "peran": "",
   "transport": {},
@@ -132,13 +124,6 @@
     "kamar": "1115",
     "tipe": "DELUXE CORRIDOR",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "12",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -185,13 +170,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "44",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "33",
@@ -219,7 +197,6 @@
   "aliases": [
    "Achmad Prammuja Hadi",
    "A Pramuja Hadi",
-   "Ahmad pramuja hadi",
    "Ahmad Pramuja Hadi",
    "A.PRAMUJA HADI"
   ],
@@ -242,13 +219,6 @@
     "kamar": "321",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "50",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -277,7 +247,6 @@
   "name": "Achmad Ridwan Agustin",
   "aliases": [
    "Achmad Ridwan Agustin",
-   "Ahmad Ridwan Agustin",
    "A Ridwan Agustin",
    "A. Ridwan Agustin"
   ],
@@ -292,13 +261,6 @@
     "kamar": "1012",
     "tipe": "Twin Bed",
     "urutan": 1
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "23",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -400,13 +362,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "53",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "7",
@@ -434,7 +389,6 @@
   "aliases": [
    "Adelia Margareta Farah",
    "Adelia Margareta Fara",
-   "Adelia Margareta f",
    "Adelia M Fara",
    "Adelia Margareta F",
    "Adelia Margareta"
@@ -458,13 +412,6 @@
     "kamar": "511",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "45",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -517,13 +464,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "33",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "21",
@@ -550,7 +490,6 @@
   "name": "Afiq Nur Rohman",
   "aliases": [
    "Afiq Nur Rohman",
-   "M Afiq Nur Rohman",
    "AFIQ NUR ROHMAN",
    "Afiq Nurohman"
   ],
@@ -573,13 +512,6 @@
     "kamar": "702",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "38",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -683,13 +615,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "42",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "10",
@@ -743,11 +668,11 @@
    }
   ]
  },
- "ahmad-nurdiansyah": {
-  "name": "Ahmad Nurdiansyah",
+ "ahmad-nurdiansah": {
+  "name": "Ahmad Nurdiansah",
   "aliases": [
-   "Ahmad Nurdiansyah",
    "Ahmad Nurdiansah",
+   "Ahmad Nurdiansyah",
    "Achmad Nurdiansah"
   ],
   "peran": "Kesehatan",
@@ -768,13 +693,6 @@
     "kamar": "109",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "54",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Jakarta",
@@ -812,13 +730,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "38",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "56",
@@ -846,7 +757,6 @@
   "aliases": [
    "Alif Fiana Ahmad Fatih",
    "Alifiyana A Fatih",
-   "Alifiana A.F",
    "Alifiana A Fatih",
    "Alifiyana Ahmad F",
    "Alfiyana Ahmad Fati"
@@ -872,13 +782,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "54",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "47",
@@ -898,23 +801,6 @@
     "kamar": "43",
     "tipe": "Deluxe",
     "urutan": 6
-   }
-  ]
- },
- "amin-muchtar": {
-  "name": "Amin muchtar",
-  "aliases": [
-   "Amin muchtar"
-  ],
-  "peran": "",
-  "transport": {},
-  "menginap": [
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "19",
-    "tipe": "Deluxe",
-    "urutan": 3
    }
   ]
  },
@@ -946,13 +832,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "6",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "15",
@@ -979,7 +858,6 @@
   "name": "Ananda Zahra Annisa",
   "aliases": [
    "Ananda Zahra Annisa",
-   "Ananda zahra Annisa'",
    "ANANDA ZAHRA A.",
    "Ananda Zahra"
   ],
@@ -1002,13 +880,6 @@
     "kamar": "212",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "1",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Cianjur",
@@ -1041,8 +912,7 @@
   "name": "Anang Fachurrozi",
   "aliases": [
    "Anang Fachurrozi",
-   "Anang Fachurozi",
-   "Anang fachurrozi"
+   "Anang Fachurozi"
   ],
   "peran": "Konsumsi",
   "transport": {
@@ -1064,13 +934,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "48",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "22",
@@ -1083,23 +946,6 @@
     "kamar": "37",
     "tipe": "Deluxe",
     "urutan": 6
-   }
-  ]
- },
- "ananstasya-yosa-k": {
-  "name": "Ananstasya Yosa K",
-  "aliases": [
-   "Ananstasya Yosa K"
-  ],
-  "peran": "",
-  "transport": {},
-  "menginap": [
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "4",
-    "tipe": "Deluxe",
-    "urutan": 3
    }
   ]
  },
@@ -1168,8 +1014,8 @@
   "aliases": [
    "Andes Rahayu Ningtyas",
    "Andes Rahayu N",
-   "Andes Rahayu",
-   "ANDES RAHAYU"
+   "ANDES RAHAYU",
+   "Andes Rahayu"
   ],
   "peran": "Konsumsi",
   "transport": {
@@ -1190,13 +1036,6 @@
     "kamar": "717",
     "tipe": "DELUXE CORRIDOR",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "48",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -1225,7 +1064,6 @@
   "name": "Anggita Putri Utami",
   "aliases": [
    "Anggita Putri Utami",
-   "Anggita Putri",
    "ANGGITA PUTRI U."
   ],
   "peran": "Penginapan",
@@ -1247,13 +1085,6 @@
     "kamar": "212",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "1",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -1283,7 +1114,6 @@
   "aliases": [
    "Anis Nur Laili",
    "Anis Nurlaili",
-   "Anis Nur",
    "Anis Nurlaly"
   ],
   "peran": "Shodaqoh",
@@ -1305,13 +1135,6 @@
     "kamar": "507",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "66",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -1340,7 +1163,6 @@
   "name": "Anisa Humaira Nggobe",
   "aliases": [
    "Anisa Humaira Nggobe",
-   "Annisa Humaira Nggobe",
    "Annisa Humaira Nggibe",
    "ANISA HUMAIRA",
    "Anisa Humaira N"
@@ -1364,13 +1186,6 @@
     "kamar": "320",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "59",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -1417,7 +1232,6 @@
   "aliases": [
    "Annas Sidik Permana",
    "Annas Sidiq Permana",
-   "Anas shidiq permana",
    "Annas Shiddiq Permana",
    "Annas Sidiq P",
    "ANNAS SHIDDIQ P.",
@@ -1442,13 +1256,6 @@
     "kamar": "218",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "22",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -1500,13 +1307,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "56",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "16",
@@ -1533,7 +1333,6 @@
   "name": "Bagus Adib Khoiruddun",
   "aliases": [
    "Bagus Adib Khoiruddun",
-   "Bagus adib choirudin",
    "Bagus Adib",
    "Bagus Adib Choirudin",
    "BAGUS ADIB K."
@@ -1557,13 +1356,6 @@
     "kamar": "310",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "7",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -1604,7 +1396,6 @@
    "Bpk A. Ghozali",
    "Bpk A Ghozali",
    "Bpk Ghozali",
-   "bpk ghozali",
    "Bpk. Moch. Ghozali"
   ],
   "peran": "",
@@ -1625,13 +1416,6 @@
     "kamar": "112",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "26",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -1656,33 +1440,18 @@
    }
   ]
  },
- "fuad": {
-  "name": "Bpk Fuad",
-  "aliases": [
-   "Bpk Fuad"
-  ],
-  "peran": "",
-  "transport": {},
-  "menginap": [
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "25",
-    "tipe": "Deluxe",
-    "urutan": 3
-   }
-  ]
- },
  "irfan-fanani": {
   "name": "Bpk Irfan Fanani",
   "aliases": [
    "Bpk Irfan Fanani",
    "Bpk Irfan fanani",
+   "Irfan Fanani",
    "Bpk. Irfan Fanani",
    "M. IRFAN FANANI"
   ],
-  "peran": "PJ.keamanan",
+  "peran": "Keamanan",
   "transport": {
+   "sesi1": "ELF 6",
    "sesi3": "Bus 5"
   },
   "menginap": [
@@ -1694,11 +1463,11 @@
     "urutan": 1
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "25",
-    "tipe": "Deluxe",
-    "urutan": 3
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "702",
+    "tipe": "Superior",
+    "urutan": 2
    },
    {
     "kota": "Solo",
@@ -1744,7 +1513,6 @@
   "name": "Bpk Ismadi",
   "aliases": [
    "Bpk Ismadi",
-   "Bpk ismadi",
    "Bpk. Ismadi"
   ],
   "peran": "",
@@ -1765,13 +1533,6 @@
     "kamar": "112",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "26",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -1822,13 +1583,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "25",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "2",
@@ -1876,13 +1630,6 @@
     "kamar": "110",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "24",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -1961,7 +1708,6 @@
   "name": "Bunga Arum Dani",
   "aliases": [
    "Bunga Arum Dani",
-   "bunga Arum D",
    "Bunga Arum Dhani",
    "Bunga Arum"
   ],
@@ -1984,13 +1730,6 @@
     "kamar": "1105",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "55",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -2018,8 +1757,7 @@
  "chodimul-ihsan": {
   "name": "Chodimul Ihsan",
   "aliases": [
-   "Chodimul Ihsan",
-   "Khodimul Ikhsan"
+   "Chodimul Ihsan"
   ],
   "peran": "Spiritual",
   "transport": {
@@ -2040,13 +1778,6 @@
     "kamar": "502",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "20",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -2098,13 +1829,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "6",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "7",
@@ -2132,7 +1856,6 @@
   "aliases": [
    "Devi Nuria Arsanti",
    "Devi Nuriya Arsanti",
-   "Devi Nur",
    "Devi N A",
    "Devi Nuria A"
   ],
@@ -2155,13 +1878,6 @@
     "kamar": "511",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "45",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -2213,13 +1929,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "53",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "47",
@@ -2247,7 +1956,6 @@
   "aliases": [
    "Dimas Fajar Jauhari",
    "Dimas Fajar Johari",
-   "Dimas Fajar jauhari",
    "DIMAS FAJAR J."
   ],
   "peran": "Kenyamanan",
@@ -2269,13 +1977,6 @@
     "kamar": "L-01",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "37",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -2322,13 +2023,6 @@
     "kamar": "1105",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "47",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -2412,13 +2106,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "40",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "43",
@@ -2446,7 +2133,6 @@
   "aliases": [
    "Dwi Ardiansyah Nur Rokhim",
    "Dwi Ardiansyah",
-   "Dwi ardiyansyah",
    "DWI ARDIANSYAH NR."
   ],
   "peran": "Konsumsi",
@@ -2468,13 +2154,6 @@
     "kamar": "719",
     "tipe": "DELUXE CORRIDOR",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "22",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -2543,29 +2222,11 @@
    }
   ]
  },
- "dwi-lestari-ningsih": {
-  "name": "Dwi Lestari Ningsih",
-  "aliases": [
-   "Dwi Lestari Ningsih"
-  ],
-  "peran": "",
-  "transport": {},
-  "menginap": [
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "59",
-    "tipe": "Deluxe",
-    "urutan": 3
-   }
-  ]
- },
  "fachrizal-achmad-ghozali": {
   "name": "Fachrizal Achmad Ghozali",
   "aliases": [
    "Fachrizal Achmad Ghozali",
    "Fahrizal A Ghozali",
-   "F. Achmad Ghozali",
    "Fahrizal A Ghazali",
    "Fachrizal Achmad G",
    "Fachrizal Ahmad Ghozali"
@@ -2589,13 +2250,6 @@
     "kamar": "319",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "33",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -2646,13 +2300,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "55",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "39",
@@ -2672,23 +2319,6 @@
     "kamar": "27",
     "tipe": "Deluxe",
     "urutan": 6
-   }
-  ]
- },
- "fani-durrotul": {
-  "name": "Fani Durrotul",
-  "aliases": [
-   "Fani Durrotul"
-  ],
-  "peran": "",
-  "transport": {},
-  "menginap": [
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "58",
-    "tipe": "Deluxe",
-    "urutan": 3
    }
   ]
  },
@@ -2729,13 +2359,6 @@
     "kamar": "807",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "58",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -2800,13 +2423,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "4",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "15",
@@ -2847,8 +2463,7 @@
   "aliases": [
    "Fathul Bahri Gilang AN",
    "Fathul Bahri Gilang",
-   "Fathul Bahri Gilang A.N",
-   "Fathul bahri Gilang"
+   "Fathul Bahri Gilang A.N"
   ],
   "peran": "Kenyamanan Pendamping",
   "transport": {
@@ -2869,13 +2484,6 @@
     "kamar": "106",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "36",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -2926,13 +2534,6 @@
     "kamar": "711",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "64",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -2987,13 +2588,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "5",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "17",
@@ -3021,7 +2615,6 @@
   "aliases": [
    "Fernandi Mendieta Syah",
    "Fernandi Mendietasya",
-   "Fernandi Menditasya",
    "Fernandi Mendieta",
    "Fernandi Mendy Tas"
   ],
@@ -3044,13 +2637,6 @@
     "kamar": "108",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "36",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -3096,13 +2682,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "10",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "46",
@@ -3139,23 +2718,6 @@
     "kamar": "36",
     "tipe": "Deluxe",
     "urutan": 6
-   }
-  ]
- },
- "fikri-ulinnuha": {
-  "name": "Fikri Ulinnuha",
-  "aliases": [
-   "Fikri Ulinnuha"
-  ],
-  "peran": "",
-  "transport": {},
-  "menginap": [
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "63",
-    "tipe": "Deluxe",
-    "urutan": 3
    }
   ]
  },
@@ -3234,13 +2796,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "53",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "8",
@@ -3292,13 +2847,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "34",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "10",
@@ -3326,7 +2874,6 @@
   "aliases": [
    "Habib Akhmad Mukaroman",
    "Habib A. Mukarroman",
-   "Habib Mukarroman",
    "Habib A Mukarroman",
    "Habib A Mukarromah"
   ],
@@ -3341,13 +2888,6 @@
     "kamar": "109",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "54",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -3395,8 +2935,7 @@
  "hafid-dyantoro": {
   "name": "Hafid Dyantoro",
   "aliases": [
-   "Hafid Dyantoro",
-   "Hafid Diyantoro"
+   "Hafid Dyantoro"
   ],
   "peran": "Konsumsi",
   "transport": {
@@ -3417,13 +2956,6 @@
     "kamar": "L-05",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "24",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -3465,13 +2997,6 @@
     "kamar": "626",
     "tipe": "Queen Bed",
     "urutan": 1
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "48",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Jakarta",
@@ -3542,13 +3067,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "56",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "39",
@@ -3598,13 +3116,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "62",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "29",
@@ -3631,7 +3142,6 @@
   "name": "Herman Efendi",
   "aliases": [
    "Herman Efendi",
-   "Herman efendi",
    "HERMAN EFENDI"
   ],
   "peran": "Transportasi",
@@ -3653,13 +3163,6 @@
     "kamar": "618",
     "tipe": "DELUXE CORRIDOR",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "21",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -3688,7 +3191,6 @@
   "name": "Ibnu Adi Setiawan",
   "aliases": [
    "Ibnu Adi Setiawan",
-   "Ibnu adi",
    "Ibnu Adi",
    "IBNU ADI S.",
    "Ibnu Adi S"
@@ -3712,13 +3214,6 @@
     "kamar": "219",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "19",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -3797,7 +3292,6 @@
   "name": "Ida Rohayati",
   "aliases": [
    "Ida Rohayati",
-   "Ida rohayati",
    "IDA ROHAYATI"
   ],
   "peran": "Dokumentasi Visual",
@@ -3819,13 +3313,6 @@
     "kamar": "308",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "9",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -3874,13 +3361,6 @@
     "kamar": "1111",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "49",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -3944,13 +3424,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "36",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "5",
@@ -3998,13 +3471,6 @@
     "kamar": "315",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "11",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -4057,13 +3523,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "46",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "45",
@@ -4086,69 +3545,11 @@
    }
   ]
  },
- "irfan-fanani-2": {
-  "name": "Irfan Fanani",
-  "aliases": [
-   "Irfan Fanani",
-   "M Irfan fanani",
-   "Muchamad Irfan Fanani",
-   "M Irfan Fanani"
-  ],
-  "peran": "Keamanan",
-  "transport": {
-   "sesi1": "ELF 6"
-  },
-  "menginap": [
-   {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "1116",
-    "tipe": "Queen Bed",
-    "urutan": 1
-   },
-   {
-    "kota": "Semarang",
-    "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "702",
-    "tipe": "Superior",
-    "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "13",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
-    "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
-    "kamar": "59",
-    "tipe": "Deluxe",
-    "urutan": 4
-   },
-   {
-    "kota": "Cianjur",
-    "hotel": "Hotel Gino Feruci Cianjur",
-    "kamar": "303",
-    "tipe": "Superior",
-    "urutan": 5
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "29",
-    "tipe": "Deluxe",
-    "urutan": 6
-   }
-  ]
- },
  "irkham-rayindra-putra": {
   "name": "Irkham Rayindra Putra",
   "aliases": [
    "Irkham Rayindra Putra",
    "Irkham Rayyindra",
-   "Irham R.P",
    "IRKHAM R.P",
    "Irkham Rayinda Putra"
   ],
@@ -4171,13 +3572,6 @@
     "kamar": "618",
     "tipe": "DELUXE CORRIDOR",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "21",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -4229,13 +3623,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "18",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "22",
@@ -4278,13 +3665,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "57",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "19",
@@ -4316,7 +3696,6 @@
   "aliases": [
    "Ja'far Shodiq Hidayat",
    "Ja'far Shodiq",
-   "Jafar shodiq hidayat",
    "JA'FAR S.H"
   ],
   "peran": "PJ. peelengkapan",
@@ -4337,13 +3716,6 @@
     "kamar": "219",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "23",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -4373,7 +3745,6 @@
   "aliases": [
    "Jonathan Leo Wijanarko",
    "Jonathan Leo W",
-   "Jonathan leo",
    "Jonathan Leo",
    "JONATHAN LEO W."
   ],
@@ -4389,13 +3760,6 @@
     "kamar": "806",
     "tipe": "Queen Bed",
     "urutan": 1
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "21",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -4441,7 +3805,6 @@
   "name": "Juwatono Firmansyah Abadi",
   "aliases": [
    "Juwatono Firmansyah Abadi",
-   "Juwatono Firmansyah",
    "Juwatono Firmansyah A",
    "J. Firmansyah Abadi"
   ],
@@ -4463,13 +3826,6 @@
     "kamar": "509",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "12",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -4521,13 +3877,6 @@
     "kamar": "819",
     "tipe": "DELUXE CORRIDOR",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "40",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -4603,42 +3952,24 @@
  "khafid-dwi-chandra": {
   "name": "Khafid Dwi Chandra",
   "aliases": [
-   "Khafid Dwi Chandra",
-   "Khafid dwi chandra"
+   "Khafid Dwi Chandra"
   ],
   "peran": "Perlengkapan",
   "transport": {
    "sesi1": "ELF 7"
   },
-  "menginap": [
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "22",
-    "tipe": "Deluxe",
-    "urutan": 3
-   }
-  ]
+  "menginap": []
  },
  "khikmahtul-khasanah": {
   "name": "Khikmahtul Khasanah",
   "aliases": [
-   "Khikmahtul Khasanah",
-   "Hikmahtul Khasanah"
+   "Khikmahtul Khasanah"
   ],
   "peran": "Peserta",
   "transport": {
    "sesi1": "ELF 5"
   },
-  "menginap": [
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "46",
-    "tipe": "Deluxe",
-    "urutan": 3
-   }
-  ]
+  "menginap": []
  },
  "khikmatul-khasanah": {
   "name": "Khikmatul Khasanah",
@@ -4710,13 +4041,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "5",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "17",
@@ -4739,29 +4063,11 @@
    }
   ]
  },
- "lukman-nur-cahyo": {
-  "name": "lukman Nur Cahyo",
-  "aliases": [
-   "lukman Nur Cahyo"
-  ],
-  "peran": "",
-  "transport": {},
-  "menginap": [
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "60",
-    "tipe": "Deluxe",
-    "urutan": 3
-   }
-  ]
- },
  "lulu-khoirun-nisa": {
   "name": "Lulu' Khoirun Nisa'",
   "aliases": [
    "Lulu' Khoirun Nisa'",
    "Lu'lu' Khoirunnisa",
-   "Lulu' Khoirunnisa'",
    "Lu'lu Khoirunisa",
    "Lulu' Khoirunnisa",
    "LULU' KHOIRUNNISA"
@@ -4785,13 +4091,6 @@
     "kamar": "818",
     "tipe": "DELUXE CORRIDOR",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "39",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -4833,13 +4132,6 @@
     "kamar": "506",
     "tipe": "Queen Bed",
     "urutan": 1
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "35",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -4886,7 +4178,6 @@
   "aliases": [
    "M Agus Prasetyo",
    "Mochammad Agus Prasetiyo",
-   "M Agus prasetyo",
    "M. Agus Prastyo"
   ],
   "peran": "Humas",
@@ -4908,13 +4199,6 @@
     "kamar": "205",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "38",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -4944,7 +4228,6 @@
   "aliases": [
    "M Alam Sahrul",
    "Muchamad Alam Sahrul",
-   "Alam sahrul",
    "M.ALAM SYAHRUL",
    "M. Alam Syahrul"
   ],
@@ -4967,13 +4250,6 @@
     "kamar": "321",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "50",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -5027,7 +4303,6 @@
   "aliases": [
    "M Amin Arifulloh",
    "Moch Amin Ariefulloh",
-   "Amin Arifulloh",
    "M. Amin Ariefulloh",
    "M. Amin A."
   ],
@@ -5052,13 +4327,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "64",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "30",
@@ -5081,69 +4349,11 @@
    }
   ]
  },
- "bahrun-muchit": {
-  "name": "M Bahrun Muchit",
-  "aliases": [
-   "M Bahrun Muchit",
-   "Mohammad Bahrun Muchith",
-   "M bahrun Muchit",
-   "M. Bahrun Muchith"
-  ],
-  "peran": "Dokumentasi Tulis",
-  "transport": {
-   "sesi3": "Bus 6"
-  },
-  "menginap": [
-   {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "702",
-    "tipe": "Triple Bed",
-    "urutan": 1
-   },
-   {
-    "kota": "Semarang",
-    "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "805",
-    "tipe": "Superior",
-    "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "41",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
-    "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
-    "kamar": "10",
-    "tipe": "Deluxe",
-    "urutan": 4
-   },
-   {
-    "kota": "Cianjur",
-    "hotel": "Hotel Gino Feruci Cianjur",
-    "kamar": "117",
-    "tipe": "Deluxe twin - Extrabed",
-    "urutan": 5
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "29",
-    "tipe": "Deluxe",
-    "urutan": 6
-   }
-  ]
- },
  "danis-alfian-soba": {
   "name": "M Danis Alfian Soba",
   "aliases": [
    "M Danis Alfian Soba",
    "Muhammad Danis alfian soba",
-   "M Danis Alfian s",
    "M.DANIS ALFIYAN.S",
    "M. Danis Alfian"
   ],
@@ -5166,13 +4376,6 @@
     "kamar": "L-03",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "35",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -5227,13 +4430,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "47",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "32",
@@ -5286,13 +4482,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "18",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "51",
@@ -5320,7 +4509,6 @@
   "aliases": [
    "M Fatihul Aziz",
    "Mohamad Fatihul Aziz",
-   "Fatihul Aziz",
    "M. Fatihul Aziz",
    "Fathul Aziz"
   ],
@@ -5343,13 +4531,6 @@
     "kamar": "105",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "27",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -5379,7 +4560,6 @@
   "aliases": [
    "M Husna Listyanando",
    "Muhammad Husna Listyanando",
-   "M HUsna Listiyananndo",
    "M Husna Listiyanando",
    "M. Husna Listyanando"
   ],
@@ -5401,13 +4581,6 @@
     "kamar": "103",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "61",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -5437,7 +4610,6 @@
   "aliases": [
    "M Ikhlasul Muttaqin",
    "Muchammad Ikhlasul Muttaqin",
-   "M. Ikhlasul mutaqin",
    "M.Ikhlasul Muttaqin"
   ],
   "peran": "",
@@ -5456,13 +4628,6 @@
     "kamar": "312",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "8",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -5492,7 +4657,6 @@
   "aliases": [
    "M Ikhwan Syahrom",
    "Muhammad Ikhwan Syahrom",
-   "M Ikhwan S",
    "M. Ikhwan Syahrom"
   ],
   "peran": "PJ. Keamanan",
@@ -5513,13 +4677,6 @@
     "kamar": "L-08",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "11",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -5549,7 +4706,6 @@
   "aliases": [
    "M Irfan",
    "Muhammad Irfan",
-   "M.Irfan",
    "M. IRFAN",
    "M. Irfan"
   ],
@@ -5572,13 +4728,6 @@
     "kamar": "310",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "8",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -5608,7 +4757,6 @@
   "aliases": [
    "M Kariim Al Mujtaba",
    "Muhammad Kariim Almujtaba",
-   "Karim Almujtaba",
    "M Karim Al-Mujtaba",
    "M Kariim Almujtaba",
    "M.KARIM AL M.",
@@ -5633,13 +4781,6 @@
     "kamar": "218",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "9",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -5693,13 +4834,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "49",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "11",
@@ -5727,7 +4861,6 @@
   "aliases": [
    "M Mu'thi Syahrul Sya'ban",
    "Muhammad Mu'thi Syahrul Sya'ban",
-   "M Mu'thi Syahrul",
    "M Mu'thi syahrul Sya'ban",
    "M. Mu'thi Syahrul Sya'ban",
    "M. Mu'ti Syahrul Sya'ban"
@@ -5751,13 +4884,6 @@
     "kamar": "620",
     "tipe": "DELUXE CORRIDOR",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "6",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -5812,13 +4938,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "34",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "6",
@@ -5846,7 +4965,6 @@
   "aliases": [
    "M Rizky",
    "Mochammad Rizky",
-   "M.rizky",
    "Moch. Rizky"
   ],
   "peran": "Dokumentasi Audio Visual",
@@ -5870,13 +4988,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "3",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "18",
@@ -5894,57 +5005,6 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "812",
-    "tipe": "Deluxe",
-    "urutan": 6
-   }
-  ]
- },
- "sholikhul-amin": {
-  "name": "M Sholikhul Amin",
-  "aliases": [
-   "M Sholikhul Amin",
-   "Muhammad Sholihul Amiin",
-   "M Sholihul Amin",
-   "M. Sholikhul Amin"
-  ],
-  "peran": "Kesehatan",
-  "transport": {
-   "sesi1": "ELF 8",
-   "sesi3": "Bus 6"
-  },
-  "menginap": [
-   {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "1008",
-    "tipe": "Twin Bed",
-    "urutan": 1
-   },
-   {
-    "kota": "Semarang",
-    "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "722",
-    "tipe": "DELUXE CORRIDOR",
-    "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "13",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
-    "kota": "Cianjur",
-    "hotel": "Hotel Gino Feruci Cianjur",
-    "kamar": "307",
-    "tipe": "Superior",
-    "urutan": 5
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "49",
     "tipe": "Deluxe",
     "urutan": 6
    }
@@ -5972,7 +5032,6 @@
   "aliases": [
    "M. Ali Ridlo Fatahillah",
    "M Ali Ridlo F",
-   "M Ali Ridlo",
    "Ali Ridlo",
    "M.ALI RIDLO F."
   ],
@@ -5988,13 +5047,6 @@
     "kamar": "802",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "41",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Cianjur",
@@ -6049,6 +5101,50 @@
   },
   "menginap": []
  },
+ "sholikhul-amin": {
+  "name": "M. Sholikhul Amin",
+  "aliases": [
+   "M. Sholikhul Amin",
+   "M Sholikhul Amin",
+   "Muhammad Sholihul Amiin",
+   "M Sholihul Amin"
+  ],
+  "peran": "Kesehatan",
+  "transport": {
+   "sesi1": "ELF 8",
+   "sesi3": "Bus 6"
+  },
+  "menginap": [
+   {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "1008",
+    "tipe": "Twin Bed",
+    "urutan": 1
+   },
+   {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "722",
+    "tipe": "DELUXE CORRIDOR",
+    "urutan": 2
+   },
+   {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "307",
+    "tipe": "Superior",
+    "urutan": 5
+   },
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "49",
+    "tipe": "Deluxe",
+    "urutan": 6
+   }
+  ]
+ },
  "marifatul-azal": {
   "name": "Ma'rifatul Azal",
   "aliases": [
@@ -6074,13 +5170,6 @@
     "kamar": "103",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "27",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -6109,7 +5198,6 @@
   "name": "Maul Fatihatur Rohmah",
   "aliases": [
    "Maul Fatihatur Rohmah",
-   "Maul fatihatur rohma",
    "Maul F Rohmah",
    "Ma'ul Fatihatur Rohmah",
    "MA'UL FATIHATUR.R",
@@ -6134,13 +5222,6 @@
     "kamar": "316",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "51",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -6170,10 +5251,10 @@
   "aliases": [
    "Melly Kayyisa Aidiana",
    "Melly Keyyisa",
-   "Melly Kayisa",
    "Melly Kayyisa",
    "Melly Keysa",
-   "Melly Kayisa A"
+   "Melly Kayisa A",
+   "Melly Kayisa"
   ],
   "peran": "Penata Acara",
   "transport": {
@@ -6194,13 +5275,6 @@
     "kamar": "320",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "51",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -6253,13 +5327,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "39",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "11",
@@ -6277,6 +5344,96 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "703",
+    "tipe": "Deluxe",
+    "urutan": 6
+   }
+  ]
+ },
+ "bahrun-muchith": {
+  "name": "Mohammad Bahrun Muchith",
+  "aliases": [
+   "Mohammad Bahrun Muchith",
+   "M Bahrun Muchit",
+   "M bahrun Muchit",
+   "M. Bahrun Muchith"
+  ],
+  "peran": "Dokumentasi Tulis",
+  "transport": {
+   "sesi3": "Bus 6"
+  },
+  "menginap": [
+   {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "702",
+    "tipe": "Triple Bed",
+    "urutan": 1
+   },
+   {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "805",
+    "tipe": "Superior",
+    "urutan": 2
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "10",
+    "tipe": "Deluxe",
+    "urutan": 4
+   },
+   {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "117",
+    "tipe": "Deluxe twin - Extrabed",
+    "urutan": 5
+   },
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "29",
+    "tipe": "Deluxe",
+    "urutan": 6
+   }
+  ]
+ },
+ "irfan-fanani-2": {
+  "name": "Muchamad Irfan Fanani",
+  "aliases": [
+   "Muchamad Irfan Fanani",
+   "M Irfan fanani",
+   "M Irfan Fanani"
+  ],
+  "peran": "",
+  "transport": {},
+  "menginap": [
+   {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "1116",
+    "tipe": "Queen Bed",
+    "urutan": 1
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "59",
+    "tipe": "Deluxe",
+    "urutan": 4
+   },
+   {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "303",
+    "tipe": "Superior",
+    "urutan": 5
+   },
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "29",
     "tipe": "Deluxe",
     "urutan": 6
    }
@@ -6348,7 +5505,6 @@
   "aliases": [
    "Muhamad Nashruddin Tsani",
    "M Nasruddin Tsani",
-   "Nasrudin tsani",
    "M Nasrudin Sani",
    "M Nasrudin Tsani",
    "NASRUDDIN TSANI",
@@ -6373,13 +5529,6 @@
     "kamar": "720",
     "tipe": "DELUXE CORRIDOR",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "19",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -6455,13 +5604,6 @@
     "kamar": "619",
     "tipe": "DELUXE CORRIDOR",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "20",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -6565,13 +5707,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "35",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "9",
@@ -6598,7 +5733,6 @@
   "name": "Munta' Zemmahal",
   "aliases": [
    "Munta' Zemmahal",
-   "Munta'zemmahal",
    "MUNTA ZEMMAHAL"
   ],
   "peran": "Penata Acara",
@@ -6620,13 +5754,6 @@
     "kamar": "316",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "51",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -6678,13 +5805,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "3",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "18",
@@ -6711,7 +5831,6 @@
   "name": "Mutiara Noor Rohmah",
   "aliases": [
    "Mutiara Noor Rohmah",
-   "Mutiara Noor",
    "MUTIARA NOOR R.",
    "Mutiara Nur R"
   ],
@@ -6734,13 +5853,6 @@
     "kamar": "L-07",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "10",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -6793,13 +5905,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "43",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "18",
@@ -6849,13 +5954,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "56",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "16",
@@ -6875,23 +5973,6 @@
     "kamar": "11",
     "tipe": "Family 2 Bedroom",
     "urutan": 6
-   }
-  ]
- },
- "nella": {
-  "name": "Nella",
-  "aliases": [
-   "Nella"
-  ],
-  "peran": "",
-  "transport": {},
-  "menginap": [
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "46",
-    "tipe": "Deluxe",
-    "urutan": 3
    }
   ]
  },
@@ -6986,8 +6067,7 @@
  "nimimmms-caini-latifah-h": {
   "name": "Nimimmms Caini Latifah H",
   "aliases": [
-   "Nimimmms Caini Latifah H",
-   "Nimimmms Caini Latifah"
+   "Nimimmms Caini Latifah H"
   ],
   "peran": "",
   "transport": {},
@@ -6998,13 +6078,6 @@
     "kamar": "L-06",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "7",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -7019,23 +6092,6 @@
     "kamar": "109",
     "tipe": "Deluxe twin - Extrabed",
     "urutan": 5
-   }
-  ]
- },
- "nova": {
-  "name": "Nova",
-  "aliases": [
-   "Nova"
-  ],
-  "peran": "",
-  "transport": {},
-  "menginap": [
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "58",
-    "tipe": "Deluxe",
-    "urutan": 3
    }
   ]
  },
@@ -7093,7 +6149,6 @@
   "aliases": [
    "Novel Putra Atma Wahyudi",
    "Novel Putra Atma W",
-   "Novel Putra",
    "Novel Putra Atma",
    "NOVEL PUTRA A.W"
   ],
@@ -7116,13 +6171,6 @@
     "kamar": "220",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "9",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -7169,7 +6217,6 @@
   "aliases": [
    "Nur Hilmiyatul Aziza",
    "Nur Hilmiyatul Azizah",
-   "Nur Hilmiyatul azizah",
    "Nur Hilmiyatul A"
   ],
   "peran": "Konsumsi",
@@ -7193,13 +6240,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "7",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "109",
@@ -7219,7 +6259,6 @@
   "name": "Nur Mika Sari",
   "aliases": [
    "Nur Mika Sari",
-   "Nur Mika sari",
    "Nurmika Sari"
   ],
   "peran": "Dokumen Tulis",
@@ -7241,13 +6280,6 @@
     "kamar": "817",
     "tipe": "DELUXE CORRIDOR",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "43",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -7298,13 +6330,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "13",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "21",
@@ -7332,7 +6357,6 @@
   "aliases": [
    "Nur Wahyu Mu'thi Legowo",
    "Nur Wahyu Mu'ti Legowo",
-   "Nur wahyu Mu'thi Legowo",
    "Nur Wahyu Mu'thi L"
   ],
   "peran": "Keamanan",
@@ -7353,13 +6377,6 @@
     "kamar": "622",
     "tipe": "DELUXE CORRIDOR",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "64",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -7439,13 +6456,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "40",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "38",
@@ -7461,11 +6471,11 @@
    }
   ]
  },
- "nurul-fauzah": {
-  "name": "Nurul Fauzah",
+ "nurul-fauza": {
+  "name": "Nurul Fauza",
   "aliases": [
-   "Nurul Fauzah",
    "Nurul Fauza",
+   "Nurul Fauzah",
    "NURUL FAUZA"
   ],
   "peran": "Peserta",
@@ -7487,13 +6497,6 @@
     "kamar": "712",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "44",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -7555,13 +6558,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "45",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "34",
@@ -7609,13 +6605,6 @@
     "kamar": "815",
     "tipe": "DELUXE CORRIDOR",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "41",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -7667,13 +6656,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "2",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "36",
@@ -7701,7 +6683,6 @@
   "aliases": [
    "Raka Biyan Pratama",
    "Raka Biyan P",
-   "Raka biyan pratama",
    "Raka Biyan P."
   ],
   "peran": "Transportasi",
@@ -7723,13 +6704,6 @@
     "kamar": "619",
     "tipe": "DELUXE CORRIDOR",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "20",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -7770,7 +6744,6 @@
   "aliases": [
    "Ratna Umi Tisiyanina",
    "Ratna Umi",
-   "Ratna Ummi",
    "Ratna Umi T"
   ],
   "peran": "Peserta",
@@ -7791,13 +6764,6 @@
     "kamar": "812",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "61",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -7848,13 +6814,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "63",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "13",
@@ -7903,13 +6862,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "63",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "13",
@@ -7953,8 +6905,7 @@
   "name": "Rifki Darmawan",
   "aliases": [
    "Rifki Darmawan",
-   "Rifky Darmawan",
-   "Rifki dermawan"
+   "Rifky Darmawan"
   ],
   "peran": "Spiritual",
   "transport": {
@@ -7975,13 +6926,6 @@
     "kamar": "1010",
     "tipe": "DELUXE CORRIDOR",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "32",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -8040,14 +6984,17 @@
    }
   ]
  },
- "rizka-farah-azizah": {
-  "name": "Rizka Farah Azizah",
+ "rizka-farah-zaidah": {
+  "name": "Rizka Farah Zaidah",
   "aliases": [
-   "Rizka Farah Azizah",
-   "Rizka Farah"
+   "Rizka Farah Zaidah",
+   "Rizka Farah",
+   "RIZKA FARAH Z"
   ],
-  "peran": "",
-  "transport": {},
+  "peran": "dokumen tulis",
+  "transport": {
+   "sesi3": "Bus 1"
+  },
   "menginap": [
    {
     "kota": "Semarang",
@@ -8057,26 +7004,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "42",
-    "tipe": "Deluxe",
-    "urutan": 3
-   }
-  ]
- },
- "rizka-farah-zaidah": {
-  "name": "Rizka Farah Zaidah",
-  "aliases": [
-   "Rizka Farah Zaidah",
-   "RIZKA FARAH Z"
-  ],
-  "peran": "dokumen tulis",
-  "transport": {
-   "sesi3": "Bus 1"
-  },
-  "menginap": [
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "41",
@@ -8085,15 +7012,64 @@
    }
   ]
  },
+ "rochmawati-fajrin": {
+  "name": "Rochmawati Fajrin",
+  "aliases": [
+   "Rochmawati Fajrin",
+   "Rohmawati Fajrin",
+   "Rohmawati fajrin"
+  ],
+  "peran": "Keamanan",
+  "transport": {
+   "sesi3": "Bus 4"
+  },
+  "menginap": [
+   {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "1406",
+    "tipe": "Queen Bed",
+    "urutan": 1
+   },
+   {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "1121",
+    "tipe": "DELUXE CORRIDOR",
+    "urutan": 2
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "28",
+    "tipe": "Deluxe",
+    "urutan": 4
+   },
+   {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "316",
+    "tipe": "Superior King",
+    "urutan": 5
+   },
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "6",
+    "tipe": "Family 2 Bedroom",
+    "urutan": 6
+   }
+  ]
+ },
  "rodliyatan-mardiiyah": {
   "name": "Rodliyatan Mardiiyah",
   "aliases": [
    "Rodliyatan Mardiiyah",
    "Rodliyatan mardliyah",
-   "Rodliyatan Mardiyyah",
    "Rodliyatan Mardliyyah",
    "Rodliyatan Mardliyah",
-   "RODLIYATAN M."
+   "RODLIYATAN M.",
+   "Rodliyatan Mardiyyah"
   ],
   "peran": "Keamanan",
   "transport": {
@@ -8114,13 +7090,6 @@
     "kamar": "206",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "2",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -8156,62 +7125,6 @@
   },
   "menginap": []
  },
- "rohmawati-fajrin": {
-  "name": "Rohmawati Fajrin",
-  "aliases": [
-   "Rohmawati Fajrin",
-   "Rochmawati Fajrin",
-   "Rohmawati fajrin"
-  ],
-  "peran": "Keamanan",
-  "transport": {
-   "sesi3": "Bus 4"
-  },
-  "menginap": [
-   {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "1406",
-    "tipe": "Queen Bed",
-    "urutan": 1
-   },
-   {
-    "kota": "Semarang",
-    "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "1121",
-    "tipe": "DELUXE CORRIDOR",
-    "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "65",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
-    "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
-    "kamar": "28",
-    "tipe": "Deluxe",
-    "urutan": 4
-   },
-   {
-    "kota": "Cianjur",
-    "hotel": "Hotel Gino Feruci Cianjur",
-    "kamar": "316",
-    "tipe": "Superior King",
-    "urutan": 5
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "6",
-    "tipe": "Family 2 Bedroom",
-    "urutan": 6
-   }
-  ]
- },
  "ruben-ahmad-habil-arasyi": {
   "name": "Ruben Ahmad Habil Arasyi",
   "aliases": [
@@ -8239,13 +7152,6 @@
     "kamar": "108",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "37",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -8295,13 +7201,6 @@
     "kamar": "207",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "4",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -8363,13 +7262,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "2",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "36",
@@ -8419,13 +7311,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "3",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "48",
@@ -8452,7 +7337,6 @@
   "name": "Santi Kartikasari",
   "aliases": [
    "Santi Kartikasari",
-   "Santi Kartika S",
    "Santi Kartika",
    "SANTI KARTIKA S.",
    "Santi kartika"
@@ -8476,13 +7360,6 @@
     "kamar": "715",
     "tipe": "DELUXE CORRIDOR",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "10",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -8512,7 +7389,6 @@
   "aliases": [
    "Sidiq Silo Handoko",
    "Shiddiq Silo Handoko",
-   "Shidiq silo Handoko",
    "Shidiq Silo Handoko",
    "Shidiq Shilo Handoko"
   ],
@@ -8535,13 +7411,6 @@
     "kamar": "1010",
     "tipe": "DELUXE CORRIDOR",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "32",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -8571,7 +7440,6 @@
   "aliases": [
    "Sinta Wati P",
    "Sintawati Prasetyani",
-   "Sintawati P",
    "SINTA WATI",
    "Sinta Wati"
   ],
@@ -8594,13 +7462,6 @@
     "kamar": "718",
     "tipe": "DELUXE CORRIDOR",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "67",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -8629,7 +7490,6 @@
   "name": "Sita Janatul Munawaroh",
   "aliases": [
    "Sita Janatul Munawaroh",
-   "Sitta Jannatul",
    "Sita Jannatul Munawaroh",
    "Sitta Jannatul M",
    "Sita Janatul M"
@@ -8653,13 +7513,6 @@
     "kamar": "1109",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "57",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -8704,13 +7557,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "52",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "14",
@@ -8736,8 +7582,7 @@
  "siti-julaikah": {
   "name": "Siti Julaikah",
   "aliases": [
-   "Siti Julaikah",
-   "Siti Zulaikah"
+   "Siti Julaikah"
   ],
   "peran": "",
   "transport": {},
@@ -8755,13 +7600,6 @@
     "kamar": "1122",
     "tipe": "DELUXE CORRIDOR",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "49",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -8812,8 +7650,8 @@
   "name": "Siti Nur Nisfiyah",
   "aliases": [
    "Siti Nur Nisfiyah",
-   "Siti Nur",
    "Siti Nur Nisfiyyah",
+   "Siti Nur",
    "SITI NUR"
   ],
   "peran": "Keamanan",
@@ -8835,13 +7673,6 @@
     "kamar": "711",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "65",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -8911,13 +7742,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "66",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "45",
@@ -8968,13 +7792,6 @@
     "kamar": "303",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "52",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -9036,13 +7853,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "60",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "50",
@@ -9092,13 +7902,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "26",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "11",
@@ -9126,7 +7929,6 @@
   "aliases": [
    "Syuhada Ridlo Billah",
    "Syuhada' Ridlo Billah",
-   "syuhada' Ridlo Billah",
    "Syuhada' Ridlo",
    "SYUHADA RIDLO"
   ],
@@ -9149,13 +7951,6 @@
     "kamar": "722",
     "tipe": "DELUXE CORRIDOR",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "12",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -9234,13 +8029,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "8",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "23",
@@ -9282,13 +8070,6 @@
     "kamar": "819",
     "tipe": "DELUXE CORRIDOR",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "39",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -9342,13 +8123,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "55",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "37",
@@ -9376,7 +8150,6 @@
   "aliases": [
    "Thousan Ahmad Alin Hisan Syamsuddin",
    "Thousand A.A. H. S.",
-   "Thousand A",
    "Thousan A. A. H. S.",
    "Thousan Alin A H S",
    "THOUSAN AHMAD A.H.S",
@@ -9401,13 +8174,6 @@
     "kamar": "107",
     "tipe": "DELUXE BALCONY",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "60",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -9437,7 +8203,6 @@
   "aliases": [
    "Tya Aprillia Lestari",
    "Tya Aprilia",
-   "Tya Apriliya",
    "Tya Aprilia Lestari"
   ],
   "peran": "Shodaqoh",
@@ -9459,13 +8224,6 @@
     "kamar": "507",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "66",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -9494,8 +8252,7 @@
   "name": "Umar Muchtar Alif",
   "aliases": [
    "Umar Muchtar Alif",
-   "Umar Muchtar A",
-   "Umar M Alif"
+   "Umar Muchtar A"
   ],
   "peran": "Kenyamanan",
   "transport": {
@@ -9516,13 +8273,6 @@
     "kamar": "L-01",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "37",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -9574,13 +8324,6 @@
     "kamar": "811",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "62",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -9649,13 +8392,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "61",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "25",
@@ -9698,13 +8434,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "43",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "19",
@@ -9725,7 +8454,6 @@
   "aliases": [
    "Upi Ramadhani Putri",
    "Upi Ramadani Putri",
-   "Upi ramadani",
    "Upi Ramadani",
    "Upi Ramadhani"
   ],
@@ -9748,13 +8476,6 @@
     "kamar": "809",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "57",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -9805,13 +8526,6 @@
     "kamar": "L-09",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "5",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -9867,13 +8581,6 @@
     "urutan": 2
    },
    {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "42",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
     "kota": "Solo",
     "hotel": "Hotel Sahid Solo",
     "kamar": "40",
@@ -9901,7 +8608,6 @@
   "aliases": [
    "Yuan Daviq Nuzul Qurnain",
    "Yuan Daviq N",
-   "Yuan daviq Nuzul",
    "YUAN DAVIQ N.Q",
    "Yuan Daviq Nuzul Q"
   ],
@@ -9924,13 +8630,6 @@
     "kamar": "505",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "47",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
@@ -9987,23 +8686,6 @@
    }
   ]
  },
- "yuaz-rizal-irfansyah": {
-  "name": "Yuaz Rizal Irfansyah",
-  "aliases": [
-   "Yuaz Rizal Irfansyah"
-  ],
-  "peran": "",
-  "transport": {},
-  "menginap": [
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "24",
-    "tipe": "Deluxe",
-    "urutan": 3
-   }
-  ]
- },
  "yuaz-rizal-irvansyah": {
   "name": "Yuaz Rizal Irvansyah",
   "aliases": [
@@ -10056,13 +8738,6 @@
     "kamar": "1109",
     "tipe": "Superior",
     "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "59",
-    "tipe": "Deluxe",
-    "urutan": 3
    },
    {
     "kota": "Solo",
