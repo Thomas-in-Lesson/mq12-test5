@@ -60,7 +60,7 @@
   const globalStyle = document.createElement('style');
   globalStyle.textContent = `
     .site-menu-bars { display: grid; gap: 4px; }
-    .site-menu-bars i { display: block; width: 18px; height: 2px; border-radius: 2px; background: currentColor; }
+    .site-menu-bars i { display: block; width: 18px; height: 2px; border-radius: 2px; background: #E0B863 !important; }
     
     .site-menu-backdrop {
       position: fixed;
@@ -414,10 +414,11 @@
         height: 40px;
         display: grid;
         place-items: center;
-        border: 1px solid var(--c-outline-variant);
+        border: 1.5px solid #E0B863 !important;
         border-radius: 8px;
-        background: var(--c-surface-container);
-        color: var(--c-primary);
+        background: rgba(56, 21, 16, 0.85) !important;
+        color: #E0B863 !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4) !important;
         cursor: pointer;
       }
 
@@ -481,10 +482,11 @@
         height: 40px;
         display: grid;
         place-items: center;
-        border: 1px solid var(--c-outline-variant);
+        border: 1.5px solid #E0B863 !important;
         border-radius: 8px;
-        background: var(--c-surface-container);
-        color: var(--c-primary);
+        background: rgba(56, 21, 16, 0.85) !important;
+        color: #E0B863 !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4) !important;
         cursor: pointer;
       }
 
