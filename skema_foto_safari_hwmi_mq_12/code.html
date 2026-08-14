@@ -14,6 +14,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Skema Foto Bersama - Safari HWMI MQ 12</title>
 <link rel="stylesheet" href="../styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<style>
+  .comic-wrapper {
+    touch-action: pan-x pan-y;
+  }
+  .pdf-canvas-card {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(224, 184, 99, 0.3);
+  }
+</style>
 </head>
 <body class="bg-background text-on-surface antialiased min-h-screen flex flex-col pb-24 md:pb-0">
 <header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-surface-variant/30 shadow-sm flex items-center justify-between px-margin-mobile h-16 md:hidden">
@@ -26,51 +36,143 @@
 <div class="w-10"></div>
 </header>
 
-<main class="flex-1 w-full max-w-container-max-width mx-auto pt-20 px-margin-mobile md:px-margin-desktop md:pt-32 space-y-6">
-<!-- Hero Header -->
-<section class="text-center space-y-3">
-<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg text-secondary">
-                SKEMA FOTO BERSAMA SAFARI HWMI MQ 12
-            </h1>
-<p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">
-                Dokumen Resmi Spesifikasi Skema & Formasi Foto Terbaru (15 Agustus 2026).
-            </p>
-<div class="w-16 h-1 bg-secondary mx-auto rounded-full opacity-50"></div>
+<main class="flex-1 w-full max-w-6xl mx-auto pt-20 px-2 md:px-margin-desktop md:pt-32 space-y-4">
+<!-- Minimalist Header & Control Bar -->
+<section class="flex items-center justify-between bg-surface-container-low p-3 md:p-4 rounded-2xl border border-gold/40 shadow-xl flex-wrap gap-3">
+  <div>
+    <h1 class="font-title-lg md:font-headline-md font-bold text-secondary flex items-center gap-2">
+      <span class="material-symbols-outlined text-gold text-[22px]">auto_stories</span>
+      <span>SKEMA FOTO BERSAMA SAFARI HWMI MQ 12</span>
+    </h1>
+    <p class="text-xs text-on-surface-variant mt-0.5">Dokumen Resmi Terbaru (15 Agustus 2026) — Mode Pembaca Komik</p>
+  </div>
 
-<!-- Action Control Buttons -->
-<div class="flex justify-center gap-3 pt-2">
-  <a href="../skema-foto-terbaru.pdf" target="_blank" download="Skema_Foto_Safari_MQ12_15_Agustus_2026.pdf" class="px-6 py-2.5 rounded-full text-xs font-bold bg-secondary text-surface-container-lowest border border-secondary shadow-md hover:bg-secondary/90 flex items-center gap-2 transition-all">
-    <span class="material-symbols-outlined text-[18px]">download</span> Unduh Dokumen PDF
-  </a>
-  <a href="../skema-foto-terbaru.pdf" target="_blank" class="px-6 py-2.5 rounded-full text-xs font-bold bg-surface-container text-gold border border-gold/40 hover:bg-surface-container-high flex items-center gap-2 transition-all">
-    <span class="material-symbols-outlined text-[18px]">open_in_new</span> Buka Tab Baru
-  </a>
-</div>
+  <!-- Minimalist Icon Action Toolbar -->
+  <div class="flex items-center gap-2">
+    <button type="button" onclick="zoomOut()" class="w-9 h-9 rounded-full bg-surface-container border border-gold/40 text-gold flex items-center justify-center hover:bg-gold/20 transition-all" title="Perkecil">
+      <span class="material-symbols-outlined text-[18px]">zoom_out</span>
+    </button>
+    <span id="zoom-level-badge" class="text-xs font-bold text-gold px-1.5 py-0.5 rounded bg-gold/10 border border-gold/30">100%</span>
+    <button type="button" onclick="zoomIn()" class="w-9 h-9 rounded-full bg-surface-container border border-gold/40 text-gold flex items-center justify-center hover:bg-gold/20 transition-all" title="Perbesar">
+      <span class="material-symbols-outlined text-[18px]">zoom_in</span>
+    </button>
+    <button type="button" onclick="resetZoom()" class="w-9 h-9 rounded-full bg-surface-container border border-gold/40 text-gold flex items-center justify-center hover:bg-gold/20 transition-all" title="Reset Zoom">
+      <span class="material-symbols-outlined text-[18px]">restart_alt</span>
+    </button>
+
+    <div class="w-px h-6 bg-surface-variant/40 mx-1"></div>
+
+    <a href="../skema-foto-terbaru.pdf" download="Skema_Foto_Safari_MQ12_15_Agustus_2026.pdf" class="w-9 h-9 rounded-full bg-secondary text-surface-container-lowest flex items-center justify-center hover:bg-secondary/90 transition-all" title="Unduh PDF">
+      <span class="material-symbols-outlined text-[18px]">download</span>
+    </a>
+    <a href="../skema-foto-terbaru.pdf" target="_blank" class="w-9 h-9 rounded-full bg-surface-container border border-gold/40 text-gold flex items-center justify-center hover:bg-gold/20 transition-all" title="Buka Tab Baru">
+      <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+    </a>
+  </div>
 </section>
 
-<!-- Scrollable PDF Preview Viewer Container -->
-<section class="w-full bg-surface-container-low rounded-2xl p-2 md:p-4 border border-gold/40 shadow-2xl space-y-4">
-  <div class="flex items-center justify-between px-3 py-2 border-b border-surface-variant/40 text-xs">
-    <div class="flex items-center gap-2 text-gold font-semibold">
-      <span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
-      <span>Pratinjau Dokumen PDF Resmi (Dapat Di-scroll / Di-zoom)</span>
-    </div>
-    <span class="text-[11px] px-2.5 py-0.5 rounded-full bg-gold/10 text-gold border border-gold/30">15 Agustus 2026</span>
+<!-- Full-Width Comic Reader Scrollable Container -->
+<section id="comic-reader-container" class="w-full space-y-4 comic-wrapper overflow-x-auto flex flex-col items-center">
+  <div id="pdf-status-msg" class="p-8 text-center text-xs text-on-surface-variant space-y-2">
+    <div class="w-8 h-8 border-2 border-gold border-t-transparent rounded-full animate-spin mx-auto mb-2"></div>
+    <span>Memuat dokumen Skema Foto (15 Halaman)...</span>
   </div>
+</section>
 
-  <div class="w-full h-[72vh] md:h-[82vh] rounded-xl overflow-hidden bg-black/40 border border-outline-variant/20 relative">
-    <object data="../skema-foto-terbaru.pdf#toolbar=1&navpanes=0" type="application/pdf" class="w-full h-full">
-      <iframe src="../skema-foto-terbaru.pdf#toolbar=1" class="w-full h-full border-0">
-        <div class="p-8 text-center space-y-4">
-          <p class="text-sm text-on-surface-variant">Browser Anda tidak mendukung pratinjau PDF langsung.</p>
-          <a href="../skema-foto-terbaru.pdf" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-secondary text-surface-container-lowest font-bold text-xs">
-            <span class="material-symbols-outlined">download</span> Klik di sini untuk membuka PDF
-          </a>
-        </div>
-      </iframe>
-    </object>
-  </div>
+<!-- Embedded Fallback Container (Displayed if JS or PDF.js is restricted) -->
+<section id="pdf-fallback-container" class="w-full hidden">
+  <object data="../skema-foto-terbaru.pdf#toolbar=1" type="application/pdf" class="w-full h-[80vh] rounded-2xl border border-gold/40 shadow-2xl">
+    <iframe src="../skema-foto-terbaru.pdf#toolbar=1" class="w-full h-[80vh] rounded-2xl border-0">
+      <div class="p-6 text-center text-xs text-on-surface-variant">
+        <p class="mb-3">Browser Anda tidak mendukung pratinjau PDF langsung.</p>
+        <a href="../skema-foto-terbaru.pdf" target="_blank" class="px-5 py-2 rounded-full bg-secondary text-surface-container-lowest font-bold">Unduh PDF</a>
+      </div>
+    </iframe>
+  </object>
 </section>
 </main>
 
+<script>
+  let pdfDoc = null;
+  let currentScale = 1.15;
+  const container = document.getElementById('comic-reader-container');
+  const zoomBadge = document.getElementById('zoom-level-badge');
+  const statusMsg = document.getElementById('pdf-status-msg');
+  const fallbackBox = document.getElementById('pdf-fallback-container');
+
+  if (window['pdfjs-dist/build/pdf']) {
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+  }
+
+  async function renderComicView() {
+    if (!pdfDoc) return;
+    zoomBadge.innerText = Math.round(currentScale * 100) + '%';
+    container.innerHTML = '';
+
+    for (let num = 1; num <= pdfDoc.numPages; num++) {
+      try {
+        const page = await pdfDoc.getPage(num);
+        const viewport = page.getViewport({ scale: currentScale });
+
+        const card = document.createElement('div');
+        card.className = 'w-full pdf-canvas-card rounded-xl overflow-hidden bg-white mb-4 relative transition-transform duration-150 flex flex-col items-center';
+
+        const pageBadge = document.createElement('div');
+        pageBadge.className = 'absolute top-2 right-2 z-10 px-2.5 py-1 rounded-full bg-black/70 text-gold text-[10px] font-bold border border-gold/30 pointer-events-none';
+        pageBadge.innerText = 'Halaman ' + num + ' / ' + pdfDoc.numPages;
+
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+        canvas.style.maxWidth = '100%';
+        canvas.style.height = 'auto';
+
+        card.appendChild(pageBadge);
+        card.appendChild(canvas);
+        container.appendChild(card);
+
+        await page.render({
+          canvasContext: ctx,
+          viewport: viewport
+        }).promise;
+      } catch (err) {
+        console.error('Error rendering PDF page', num, err);
+      }
+    }
+  }
+
+  function zoomIn() {
+    if (currentScale < 2.5) {
+      currentScale += 0.2;
+      renderComicView();
+    }
+  }
+
+  function zoomOut() {
+    if (currentScale > 0.6) {
+      currentScale -= 0.2;
+      renderComicView();
+    }
+  }
+
+  function resetZoom() {
+    currentScale = 1.15;
+    renderComicView();
+  }
+
+  if (window.pdfjsLib) {
+    pdfjsLib.getDocument('../skema-foto-terbaru.pdf').promise.then(pdf => {
+      pdfDoc = pdf;
+      renderComicView();
+    }).catch(err => {
+      console.warn('PDF.js failed, using embed fallback:', err);
+      container.classList.add('hidden');
+      fallbackBox.classList.remove('hidden');
+    });
+  } else {
+    container.classList.add('hidden');
+    fallbackBox.classList.remove('hidden');
+  }
+</script>
 <script src="../site-navigation.js"></script></body></html>
