@@ -419,37 +419,9 @@
         right: 10px;
       }
 
-      .site-bottom-nav {
-  position: fixed;
-  bottom: 0; left: 0; right: 0;
-  z-index: 9990;
-  height: calc(64px + env(safe-area-inset-bottom, 0px));
-  padding-bottom: env(safe-area-inset-bottom, 0px);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background: linear-gradient(180deg, #3A0C0C 0%, #200505 100%) !important;
-  border-top: 2px solid #E0B863 !important;
-  box-shadow: 0 -8px 28px rgba(0, 0, 0, 0.7) !important;
-  backdrop-filter: blur(20px) !important;
-  -webkit-backdrop-filter: blur(20px) !important;
-}
+      
 
-      .site-bottom-nav-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #FFFFFF !important;
-  text-decoration: none !important;
-  font: 600 11px -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", sans-serif !important;
-  gap: 2px;
-  padding: 6px 14px;
-  border-radius: 12px;
-  border: 1px solid transparent;
-  background: transparent;
-  transition: all 0.2s ease !important;
-}
+      
       
       
 
@@ -473,30 +445,9 @@
 
       /* Di desktop bilah yang sama dipindah ke atas, menempel di bawah header,
          supaya navigasi cepat tidak hilang begitu bilah bawah disembunyikan. */
-      .site-bottom-nav {
-        position: fixed;
-        top: 60px; left: 0; right: 0;
-        z-index: 9990;
-        height: 44px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 6px;
-        background: rgba(22,5,3,0.97);
-        border-bottom: 1px solid var(--c-outline-variant);
-        box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-        backdrop-filter: blur(16px);
-      }
+      
 
-      .site-bottom-nav-item {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 6px;
-        padding: 6px 14px;
-        border-radius: 8px;
-        color: #FFFFFF !important; text-decoration: none; font: 600 13px sans-serif;
-      }
+      
       
       
 
@@ -542,6 +493,114 @@
         height: 48px;
       }
       .site-sos-bullet .material-symbols-outlined { font-size: 24px; }
+    }
+
+    
+    /* Mobile Bottom Navigation */
+    @media (max-width: 768px) {
+      .site-bottom-nav {
+        position: fixed !important;
+        bottom: 0 !important;
+        top: auto !important;
+        left: 0 !important;
+        right: 0 !important;
+        z-index: 9990 !important;
+        height: calc(64px + env(safe-area-inset-bottom, 0px)) !important;
+        padding-bottom: env(safe-area-inset-bottom, 0px) !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-around !important;
+        background: linear-gradient(180deg, #3A0C0C 0%, #200505 100%) !important;
+        border-top: 2px solid #E0B863 !important;
+        border-bottom: 0 !important;
+        box-shadow: 0 -8px 28px rgba(0, 0, 0, 0.7) !important;
+        backdrop-filter: blur(20px) !important;
+        -webkit-backdrop-filter: blur(20px) !important;
+      }
+
+      .site-bottom-nav-item {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        color: #FFFFFF !important;
+        text-decoration: none !important;
+        font: 600 11px -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", sans-serif !important;
+        gap: 2px;
+        padding: 5px 12px !important;
+        border-radius: 12px !important;
+        border: 1px solid transparent !important;
+        background: transparent !important;
+        transition: all 0.2s ease !important;
+      }
+    }
+
+    /* Desktop Top Navigation Bar (Under Header) */
+    @media (min-width: 769px) {
+      body {
+        padding-top: 108px !important;
+        padding-bottom: 0 !important;
+      }
+
+      .site-bottom-nav {
+        position: fixed !important;
+        top: 60px !important;
+        bottom: auto !important;
+        left: 0 !important;
+        right: 0 !important;
+        z-index: 9990 !important;
+        height: 46px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 12px !important;
+        background: linear-gradient(180deg, #3A0C0C 0%, #200505 100%) !important;
+        border-top: 0 !important;
+        border-bottom: 2px solid #E0B863 !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
+        backdrop-filter: blur(16px) !important;
+        -webkit-backdrop-filter: blur(16px) !important;
+      }
+
+      .site-bottom-nav-item {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 8px !important;
+        padding: 6px 16px !important;
+        border-radius: 10px !important;
+        color: #FFFFFF !important;
+        text-decoration: none !important;
+        font: 600 13px -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", sans-serif !important;
+        border: 1px solid transparent !important;
+        background: transparent !important;
+        transition: all 0.2s ease !important;
+      }
+    }
+
+    /* Common Active & Icon Styles (Mobile & Desktop) */
+    .site-bottom-nav-item .material-symbols-outlined {
+      font-size: 22px !important;
+      color: #E0B863 !important;
+      transition: transform 0.2s ease, color 0.2s ease !important;
+    }
+
+    .site-bottom-nav-item.is-active {
+      color: #FFFFFF !important;
+      font-weight: 700 !important;
+      background: linear-gradient(135deg, #C21A03 0%, #900B0B 100%) !important;
+      border: 1.5px solid #FFFFFF !important;
+      box-shadow: 0 4px 16px rgba(194, 26, 3, 0.6), 0 0 12px rgba(255, 255, 255, 0.3) !important;
+    }
+
+    .site-bottom-nav-item.is-active .material-symbols-outlined {
+      color: #FFFFFF !important;
+      transform: scale(1.12) !important;
+    }
+
+    .site-bottom-nav-item:hover {
+      background: rgba(255, 255, 255, 0.15) !important;
+      color: #FFFFFF !important;
     }
 
     /* Panitia mencetak rundown, daftar kamar, dan denah bus. Tema gelap dicetak
@@ -1476,24 +1535,3 @@
     });
   }
 })();
-
-.site-bottom-nav-item.is-active {
-  color: #FFFFFF !important;
-  font-weight: 700 !important;
-  background: linear-gradient(135deg, #C21A03 0%, #900B0B 100%) !important;
-  border: 1.5px solid #FFFFFF !important;
-  box-shadow: 0 4px 16px rgba(194, 26, 3, 0.6), 0 0 12px rgba(255, 255, 255, 0.3) !important;
-}
-.site-bottom-nav-item .material-symbols-outlined {
-  font-size: 22px !important;
-  color: #E0B863 !important;
-  transition: transform 0.2s ease, color 0.2s ease !important;
-}
-.site-bottom-nav-item.is-active .material-symbols-outlined {
-  color: #FFFFFF !important;
-  transform: scale(1.15) !important;
-}
-.site-bottom-nav-item:hover {
-  background: rgba(255, 255, 255, 0.15) !important;
-  color: #FFFFFF !important;
-}
