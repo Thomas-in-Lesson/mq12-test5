@@ -199,10 +199,10 @@
   const searchResultsBox = document.getElementById('search-results-box');
 
   function getBadgeClass(name) {
-    const lower = name.toLowerCase();
-    if (lower.includes('ndalem') or lower.includes('syeikh') or lower.includes('maulana')) return 'badge-ndalem';
-    if (lower.includes('pendamping') or lower.includes('pj') or lower.includes('panitia')) return 'badge-pendamping';
-    if (lower.includes('nur') or lower.includes('anita') or lower.includes('dewi') or lower.includes('putri') or lower.includes('siti') or lower.includes('retma') or lower.includes('salma') or lower.includes('ratna') or lower.includes('lili') or lower.includes('fani') or lower.includes('fina')) return 'badge-putri';
+    const lower = (name || '').toLowerCase();
+    if (lower.includes('ndalem') || lower.includes('syeikh') || lower.includes('maulana')) return 'badge-ndalem';
+    if (lower.includes('pendamping') || lower.includes('pj') || lower.includes('panitia')) return 'badge-pendamping';
+    if (lower.includes('nur') || lower.includes('anita') || lower.includes('dewi') || lower.includes('putri') || lower.includes('siti') || lower.includes('retma') || lower.includes('salma') || lower.includes('ratna') || lower.includes('lili') || lower.includes('fani') || lower.includes('fina')) return 'badge-putri';
     return 'badge-putra';
   }
 
@@ -278,11 +278,11 @@
 
       return `
         <div class="p-5 rounded-xl bg-surface-container/70 border border-gold/30 space-y-4">
-          <div class="border-b border-surface-variant/40 pb-2 flex items-center justify-between">
+          <div class="border-b border-surface-variant/40 pb-2 flex items-center justify-between flex-wrap gap-2">
             <h4 class="text-sm font-bold text-gold flex items-center gap-2">
               <span class="material-symbols-outlined text-[18px]">group</span> ${titleLine}
             </h4>
-            <span class="text-[11px] font-semibold text-on-surface-variant">${items.length} Peserta Terdaftar</span>
+            <span class="text-[11px] font-semibold text-on-surface-variant px-2.5 py-0.5 rounded-full bg-gold/10 border border-gold/30">${items.length} Peserta Terdaftar</span>
           </div>
           <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2.5">
             ${itemGridHTML}
@@ -306,9 +306,11 @@
     const matches = [];
     window.SKEMA_PDF_DATA.forEach(page => {
       (page.items || []).forEach(item => {
-        if ((item.full_name && item.full_name.toLowerCase().includes(q)) || (item.short_name && item.short_name.toLowerCase().includes(q))) {
+        const fName = (item.full_name || '').toLowerCase();
+        const sName = (item.short_name || '').toLowerCase();
+        if (fName.includes(q) || sName.includes(q)) {
           const matchedLoc = LOCATION_MAP.find(l => l.pages.includes(page.page_num)) || LOCATION_MAP[0];
-          matches.append ? matches.append({ item, page, loc: matchedLoc }) : matches.push({ item, page, loc: matchedLoc });
+          matches.push({ item, page, loc: matchedLoc });
         }
       });
     });
