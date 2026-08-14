@@ -24,13 +24,6 @@
     "kamar": "8",
     "tipe": "Deluxe",
     "urutan": 4
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "706",
-    "tipe": "Deluxe",
-    "urutan": 6
    }
   ]
  },
@@ -65,13 +58,6 @@
     "kamar": "216",
     "tipe": "Superior King",
     "urutan": 5
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "816",
-    "tipe": "Deluxe",
-    "urutan": 6
    }
   ]
  },
@@ -154,6 +140,7 @@
   "aliases": [
    "A. Fikri Ulin Nuha",
    "A Fikri Ulinnuha",
+   "Ahmad Fikri Ulinnuha",
    "Fikri Ulinnuha",
    "A. Fikri Ulinnuha"
   ],
@@ -256,7 +243,7 @@
    }
   ]
  },
- "abidatul-faricha-ch": {
+ "abidatul-faricha-c-h": {
   "name": "Abidatul Faricha CH",
   "aliases": [
    "Abidatul Faricha CH",
@@ -314,16 +301,104 @@
    }
   ]
  },
+ "achmad-ridwan-agustin": {
+  "name": "Achmad Ridwan Agustin",
+  "aliases": [
+   "Achmad Ridwan Agustin",
+   "Ahmad Ridwan Agustin",
+   "A Ridwan Agustin",
+   "A. Ridwan Agustin"
+  ],
+  "peran": "Konsumsi",
+  "transport": {
+   "sesi1": "ELF 1"
+  },
+  "menginap": [
+   {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "23",
+    "tipe": "Deluxe",
+    "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "12",
+    "tipe": "Deluxe",
+    "urutan": 4
+   },
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "13",
+    "tipe": "Family 2 Bedroom",
+    "urutan": 6
+   }
+  ]
+ },
+ "achmad-shodiqin": {
+  "name": "Achmad Shodiqin",
+  "aliases": [
+   "Achmad Shodiqin",
+   "Ahmad Shodiqin"
+  ],
+  "peran": "Keamanan",
+  "transport": {
+   "sesi1": "ELF 6"
+  },
+  "menginap": [
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "35",
+    "tipe": "Deluxe",
+    "urutan": 6
+   }
+  ]
+ },
+ "achmad-syarifuddin": {
+  "name": "Achmad Syarifuddin",
+  "aliases": [
+   "Achmad Syarifuddin",
+   "AHMAD SYARIFUDIN",
+   "Ahmad Syariefudin"
+  ],
+  "peran": "Kenyamanan",
+  "transport": {
+   "sesi1": "ELF 8",
+   "sesi3": "Bus 6"
+  },
+  "menginap": [
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "35",
+    "tipe": "Deluxe",
+    "urutan": 6
+   }
+  ]
+ },
+ "a-d-e-iman-h": {
+  "name": "ADE IMAN H.",
+  "aliases": [
+   "ADE IMAN H."
+  ],
+  "peran": "PJ.pelayan",
+  "transport": {
+   "sesi3": "Bus 5"
+  },
+  "menginap": []
+ },
  "ade-iman-hidayat": {
   "name": "Ade Iman Hidayat",
   "aliases": [
    "Ade Iman Hidayat",
-   "ADE IMAN H."
+   "Ade Iman hidayat"
   ],
   "peran": "Kenyamanan Pendamping",
   "transport": {
-   "sesi1": "ELF 7",
-   "sesi3": "Bus 5"
+   "sesi1": "ELF 7"
   },
   "menginap": [
    {
@@ -375,6 +450,7 @@
   "aliases": [
    "Adelia Margareta Farah",
    "Adelia Margareta",
+   "Adelia Margareta Fara",
    "Adelia Margareta f",
    "Adelia M Fara",
    "Adelia Margareta F"
@@ -622,6 +698,13 @@
     "kamar": "126",
     "tipe": "Superior",
     "urutan": 5
+   },
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "706",
+    "tipe": "Deluxe",
+    "urutan": 6
    }
   ]
  },
@@ -629,6 +712,7 @@
   "name": "Ahmad Nurdiansyah",
   "aliases": [
    "Ahmad Nurdiansyah",
+   "Ahmad Nurdiansah",
    "Achmad Nurdiansah"
   ],
   "peran": "Kesehatan",
@@ -649,6 +733,13 @@
     "kamar": "54",
     "tipe": "Deluxe",
     "urutan": 3
+   },
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "816",
+    "tipe": "Deluxe",
+    "urutan": 6
    }
   ]
  },
@@ -657,6 +748,7 @@
   "aliases": [
    "Ahmad Pramuja Hadi",
    "A Pramuja Hadi",
+   "Achmad Prammuja Hadi",
    "Ahmad pramuja hadi",
    "A.PRAMUJA HADI"
   ],
@@ -698,82 +790,6 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "810",
-    "tipe": "Deluxe",
-    "urutan": 6
-   }
-  ]
- },
- "ahmad-ridwan-agustin": {
-  "name": "Ahmad Ridwan Agustin",
-  "aliases": [
-   "Ahmad Ridwan Agustin",
-   "A Ridwan Agustin",
-   "A. Ridwan Agustin"
-  ],
-  "peran": "Konsumsi",
-  "transport": {
-   "sesi1": "ELF 1"
-  },
-  "menginap": [
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "23",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
-    "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
-    "kamar": "12",
-    "tipe": "Deluxe",
-    "urutan": 4
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "13",
-    "tipe": "Family 2 Bedroom",
-    "urutan": 6
-   }
-  ]
- },
- "ahmad-shodiqin": {
-  "name": "Ahmad Shodiqin",
-  "aliases": [
-   "Ahmad Shodiqin"
-  ],
-  "peran": "Keamanan",
-  "transport": {
-   "sesi1": "ELF 6"
-  },
-  "menginap": [
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "35",
-    "tipe": "Deluxe",
-    "urutan": 6
-   }
-  ]
- },
- "ahmad-syariefudin": {
-  "name": "Ahmad Syariefudin",
-  "aliases": [
-   "Ahmad Syariefudin",
-   "Ahmad Syarifuddin",
-   "AHMAD SYARIFUDIN"
-  ],
-  "peran": "Kenyamanan",
-  "transport": {
-   "sesi1": "ELF 8",
-   "sesi3": "Bus 6"
-  },
-  "menginap": [
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "35",
     "tipe": "Deluxe",
     "urutan": 6
    }
@@ -835,16 +851,33 @@
    }
   ]
  },
- "alfiyana-ahmad-fati": {
-  "name": "Alfiyana Ahmad Fati",
+ "ali-ridlo": {
+  "name": "Ali Ridlo",
   "aliases": [
-   "Alfiyana Ahmad Fati",
+   "Ali Ridlo"
+  ],
+  "peran": "",
+  "transport": {},
+  "menginap": [
+   {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "802",
+    "tipe": "Superior",
+    "urutan": 2
+   }
+  ]
+ },
+ "alif-fiana-ahmad-fatih": {
+  "name": "Alif Fiana Ahmad Fatih",
+  "aliases": [
+   "Alif Fiana Ahmad Fatih",
    "Alifiyana A Fatih",
    "Alifiana Ahmad F",
-   "Alifiana A F",
    "Alifiana A.F",
    "Alifiana A Fatih",
-   "Alifiyana Ahmad F"
+   "Alifiyana Ahmad F",
+   "Alfiyana Ahmad Fati"
   ],
   "peran": "Keamanan",
   "transport": {
@@ -893,23 +926,6 @@
     "kamar": "43",
     "tipe": "Deluxe",
     "urutan": 6
-   }
-  ]
- },
- "ali-ridlo": {
-  "name": "Ali Ridlo",
-  "aliases": [
-   "Ali Ridlo"
-  ],
-  "peran": "",
-  "transport": {},
-  "menginap": [
-   {
-    "kota": "Semarang",
-    "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "802",
-    "tipe": "Superior",
-    "urutan": 2
    }
   ]
  },
@@ -1177,9 +1193,10 @@
   },
   "menginap": []
  },
- "andes-rahayu-n": {
-  "name": "Andes Rahayu N",
+ "andes-rahayu-ningtyas": {
+  "name": "Andes Rahayu Ningtyas",
   "aliases": [
+   "Andes Rahayu Ningtyas",
    "Andes Rahayu N",
    "Andes rahayu",
    "Andes Rahayu",
@@ -1350,6 +1367,65 @@
    }
   ]
  },
+ "anisa-humaira-nggobe": {
+  "name": "Anisa Humaira Nggobe",
+  "aliases": [
+   "Anisa Humaira Nggobe",
+   "Annisa Humaira Nggobe",
+   "Annisa Humaira Nggibe",
+   "ANISA HUMAIRA",
+   "Anisa Humaira N"
+  ],
+  "peran": "Peserta",
+  "transport": {
+   "sesi1": "ELF 5",
+   "sesi3": "Bus 4"
+  },
+  "menginap": [
+   {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "722",
+    "tipe": "Triple Bed",
+    "urutan": 1
+   },
+   {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "320",
+    "tipe": "DELUXE BALCONY",
+    "urutan": 2
+   },
+   {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "59",
+    "tipe": "Deluxe",
+    "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "38",
+    "tipe": "Deluxe",
+    "urutan": 4
+   },
+   {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "219",
+    "tipe": "Superior King",
+    "urutan": 5
+   },
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "47",
+    "tipe": "Deluxe",
+    "urutan": 6
+   }
+  ]
+ },
  "annada-zahra-annisa": {
   "name": "Annada Zahra Annisa",
   "aliases": [
@@ -1372,6 +1448,7 @@
   "aliases": [
    "Annas Shiddiq Permana",
    "Annas Sidiq Permana",
+   "Annas Sidik Permana",
    "Anas shidiq permana",
    "Annas Sidiq P",
    "ANNAS SHIDDIQ P.",
@@ -1423,65 +1500,6 @@
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "15",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
-   }
-  ]
- },
- "annisa-humaira-nggobe": {
-  "name": "Annisa Humaira Nggobe",
-  "aliases": [
-   "Annisa Humaira Nggobe",
-   "Anisa Humaira Nggobe",
-   "Annisa Humaira Nggibe",
-   "ANISA HUMAIRA",
-   "Anisa Humaira N"
-  ],
-  "peran": "Peserta",
-  "transport": {
-   "sesi1": "ELF 5",
-   "sesi3": "Bus 4"
-  },
-  "menginap": [
-   {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "722",
-    "tipe": "Triple Bed",
-    "urutan": 1
-   },
-   {
-    "kota": "Semarang",
-    "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "320",
-    "tipe": "DELUXE BALCONY",
-    "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "59",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
-    "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
-    "kamar": "38",
-    "tipe": "Deluxe",
-    "urutan": 4
-   },
-   {
-    "kota": "Cianjur",
-    "hotel": "Hotel Gino Feruci Cianjur",
-    "kamar": "219",
-    "tipe": "Superior King",
-    "urutan": 5
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "47",
-    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -1542,17 +1560,19 @@
    }
   ]
  },
- "bagus-adib-choiruddin": {
-  "name": "Bagus Adib Choiruddin",
+ "bagus-adib-khoiruddun": {
+  "name": "Bagus Adib Khoiruddun",
   "aliases": [
-   "Bagus Adib Choiruddin",
+   "Bagus Adib Khoiruddun",
    "Bagus Adib",
    "Bagus adib choirudin",
-   "Bagus Adib Choirudin"
+   "Bagus Adib Choirudin",
+   "BAGUS ADIB K."
   ],
   "peran": "Visual Audio",
   "transport": {
-   "sesi1": "ELF 1"
+   "sesi1": "ELF 1",
+   "sesi3": "Bus 1"
   },
   "menginap": [
    {
@@ -1591,17 +1611,6 @@
     "urutan": 6
    }
   ]
- },
- "bagus-adib-k": {
-  "name": "BAGUS ADIB K.",
-  "aliases": [
-   "BAGUS ADIB K."
-  ],
-  "peran": "audio & visual",
-  "transport": {
-   "sesi3": "Bus 1"
-  },
-  "menginap": []
  },
  "bagus-adib-prasetyo": {
   "name": "Bagus Adib Prasetyo",
@@ -1700,6 +1709,7 @@
   "aliases": [
    "Bpk Irfan Fanani",
    "Bpk Irfan fanani",
+   "Muchamad Irfan Fanani",
    "Bpk. Irfan Fanani",
    "M. IRFAN FANANI"
   ],
@@ -1735,6 +1745,13 @@
     "kamar": "104",
     "tipe": "Superior Twin",
     "urutan": 5
+   },
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "29",
+    "tipe": "Deluxe",
+    "urutan": 6
    }
   ]
  },
@@ -1877,13 +1894,10 @@
   "name": "Bpk Nur Hadi",
   "aliases": [
    "Bpk Nur Hadi",
-   "Bpk Nurhadi",
-   "BPK NURHADI"
+   "Bpk Nurhadi"
   ],
   "peran": "",
-  "transport": {
-   "sesi3": "Bus 1"
-  },
+  "transport": {},
   "menginap": [
    {
     "kota": "Gresik",
@@ -1929,17 +1943,25 @@
    }
   ]
  },
+ "b-p-k-nurhadi": {
+  "name": "BPK NURHADI",
+  "aliases": [
+   "BPK NURHADI"
+  ],
+  "peran": "",
+  "transport": {
+   "sesi3": "Bus 1"
+  },
+  "menginap": []
+ },
  "zakiyyul-fuad": {
   "name": "Bpk Zakiyyul Fuad",
   "aliases": [
    "Bpk Zakiyyul Fuad",
-   "Bpk zakiyyul Fuad",
-   "BPK. M. ZAKIYYUL FUAD"
+   "Bpk zakiyyul Fuad"
   ],
   "peran": "",
-  "transport": {
-   "sesi3": "Bus 2"
-  },
+  "transport": {},
   "menginap": [
    {
     "kota": "Gresik",
@@ -1977,6 +1999,17 @@
     "urutan": 6
    }
   ]
+ },
+ "b-p-k-m-zakiyyul-fuad": {
+  "name": "BPK. M. ZAKIYYUL FUAD",
+  "aliases": [
+   "BPK. M. ZAKIYYUL FUAD"
+  ],
+  "peran": "",
+  "transport": {
+   "sesi3": "Bus 2"
+  },
+  "menginap": []
  },
  "bunga-arum-dani": {
   "name": "Bunga Arum Dani",
@@ -2096,7 +2129,6 @@
   "name": "Churul Ilmi",
   "aliases": [
    "Churul Ilmi",
-   "M Churul Ilmi",
    "M. Churul Ilmi"
   ],
   "peran": "Transportasi",
@@ -2155,9 +2187,9 @@
    "Devi Nuria Arsanti",
    "Devi Nuriya Arsanti",
    "Devi Nuria",
-   "Devi Nuria A",
    "Devi Nur",
-   "Devi N A"
+   "Devi N A",
+   "Devi Nuria A"
   ],
   "peran": "Merchandise",
   "transport": {
@@ -2270,6 +2302,7 @@
   "aliases": [
    "Dimas Fajar Jauhari",
    "Dhimas Fajar J.",
+   "Dimas Fajar Johari",
    "Dimas Fajar jauhari",
    "DIMAS FAJAR J."
   ],
@@ -2323,22 +2356,12 @@
    }
   ]
  },
- "diyah-ayu-p": {
-  "name": "Diyah Ayu P",
+ "diyah-ayu-nur-surya-alfian-ningrum": {
+  "name": "Diyah Ayu Nur Surya Alfian Ningrum",
   "aliases": [
-   "Diyah Ayu P"
-  ],
-  "peran": "Peserta",
-  "transport": {
-   "sesi3": "Bus 4"
-  },
-  "menginap": []
- },
- "diyyah-ayu-ns": {
-  "name": "Diyyah Ayu NS",
-  "aliases": [
-   "Diyyah Ayu NS",
-   "Diyah Ayu"
+   "Diyah Ayu Nur Surya Alfian Ningrum",
+   "Diyah Ayu",
+   "Diyyah Ayu NS"
   ],
   "peran": "Peserta",
   "transport": {
@@ -2388,6 +2411,17 @@
     "urutan": 6
    }
   ]
+ },
+ "diyah-ayu-p": {
+  "name": "Diyah Ayu P",
+  "aliases": [
+   "Diyah Ayu P"
+  ],
+  "peran": "Peserta",
+  "transport": {
+   "sesi3": "Bus 4"
+  },
+  "menginap": []
  },
  "dwi-ajeng-samsita": {
   "name": "Dwi Ajeng Samsita",
@@ -2455,17 +2489,16 @@
    }
   ]
  },
- "dwi-ardiansyah-nr": {
-  "name": "DWI ARDIANSYAH NR.",
+ "dwi-ardiansyah-nur-rokhim": {
+  "name": "Dwi Ardiansyah Nur Rokhim",
   "aliases": [
-   "DWI ARDIANSYAH NR.",
+   "Dwi Ardiansyah Nur Rokhim",
    "Dwi Ardiansyah",
    "Dwi ardiyansyah"
   ],
   "peran": "Konsumsi",
   "transport": {
-   "sesi1": "ELF 8",
-   "sesi3": "Bus 6"
+   "sesi1": "ELF 8"
   },
   "menginap": [
    {
@@ -2512,17 +2545,26 @@
    }
   ]
  },
- "dwi-lestari-agustina": {
-  "name": "Dwi Lestari Agustina",
+ "d-w-i-lestari": {
+  "name": "DWI LESTARI",
   "aliases": [
-   "Dwi Lestari Agustina",
-   "Dwi Lestari",
    "DWI LESTARI"
   ],
   "peran": "Peserta",
   "transport": {
-   "sesi1": "ELF 3",
    "sesi3": "Bus 4"
+  },
+  "menginap": []
+ },
+ "dwi-lestari-agustina": {
+  "name": "Dwi Lestari Agustina",
+  "aliases": [
+   "Dwi Lestari Agustina",
+   "Dwi Lestari"
+  ],
+  "peran": "Peserta",
+  "transport": {
+   "sesi1": "ELF 3"
   },
   "menginap": [
    {
@@ -2572,15 +2614,16 @@
    }
   ]
  },
- "fachrizal-ahmad-ghozali": {
-  "name": "Fachrizal Ahmad Ghozali",
+ "fachrizal-achmad-ghozali": {
+  "name": "Fachrizal Achmad Ghozali",
   "aliases": [
-   "Fachrizal Ahmad Ghozali",
+   "Fachrizal Achmad Ghozali",
    "Fahrizal A Ghozali",
    "Fahrizal Ghozali",
    "F. Achmad Ghozali",
    "Fahrizal A Ghazali",
-   "Fachrizal Achmad G"
+   "Fachrizal Achmad G",
+   "Fachrizal Ahmad Ghozali"
   ],
   "peran": "Penata Acara",
   "transport": {
@@ -2638,6 +2681,7 @@
    "Fajriyatul Faricha",
    "Fajriyyatul Faricha",
    "Fajriyatul faricha",
+   "Fajriyatul Farichah",
    "Fajriatul Faricha"
   ],
   "peran": "",
@@ -2716,11 +2760,12 @@
   },
   "menginap": []
  },
- "fani-dzurotun-nafisha": {
-  "name": "Fani Dzurotun Nafisha",
+ "fani-dzurrotun-nafisah": {
+  "name": "Fani Dzurrotun Nafisah",
   "aliases": [
-   "Fani Dzurotun Nafisha",
-   "Fina Dzurrotun"
+   "Fani Dzurrotun Nafisah",
+   "Fina Dzurrotun",
+   "Fani Dzurotun Nafisha"
   ],
   "peran": "Peserta",
   "transport": {
@@ -2795,13 +2840,6 @@
     "kamar": "305",
     "tipe": "Deluxe twin - Extrabed",
     "urutan": 5
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "30",
-    "tipe": "Deluxe",
-    "urutan": 6
    }
   ]
  },
@@ -2809,9 +2847,9 @@
   "name": "Farid Nasrulloh",
   "aliases": [
    "Farid Nasrulloh",
+   "Fariid Nashrulloh",
    "Fariid Nasrulloh",
-   "FARIID NASRULLOH",
-   "Fariid Nashrulloh"
+   "FARIID NASRULLOH"
   ],
   "peran": "Penginapan",
   "transport": {
@@ -2876,12 +2914,13 @@
   },
   "menginap": []
  },
- "fathul-bahri-gilang-an": {
-  "name": "Fathul Bahri Gilang AN",
+ "fathul-bahri-gilang": {
+  "name": "Fathul Bahri Gilang",
   "aliases": [
-   "Fathul Bahri Gilang AN",
    "Fathul Bahri Gilang",
-   "Fathul bahri Gilang"
+   "Fathul Bahri Gilang A.N",
+   "Fathul bahri Gilang",
+   "Fathul Bahri Gilang AN"
   ],
   "peran": "Kenyamanan Pendamping",
   "transport": {
@@ -2991,9 +3030,10 @@
    }
   ]
  },
- "fatimah-ratna-dewi": {
-  "name": "Fatimah Ratna Dewi",
+ "fatimah-ratna-dewi-purwati-n": {
+  "name": "Fatimah Ratna Dewi Purwati N.",
   "aliases": [
+   "Fatimah Ratna Dewi Purwati N.",
    "Fatimah Ratna Dewi",
    "Fatimah Ratna D",
    "FATIMAH RATNA D.P"
@@ -3048,14 +3088,15 @@
    }
   ]
  },
- "fernandi-mendy-tas": {
-  "name": "Fernandi Mendy Tas",
+ "fernandi-mendieta-syah": {
+  "name": "Fernandi Mendieta Syah",
   "aliases": [
-   "Fernandi Mendy Tas",
+   "Fernandi Mendieta Syah",
    "Fernandi Mendietasya",
    "Fernandi Mendietasyah",
    "Fernandi Menditasya",
-   "Fernandi Mendieta"
+   "Fernandi Mendieta",
+   "Fernandi Mendy Tas"
   ],
   "peran": "Kenyamanan Pendamping",
   "transport": {
@@ -3113,7 +3154,6 @@
    "Fianisa Shofwatul",
    "Fianisa Sofwatul M",
    "Fianisa Sofwatul",
-   "Fiannisa Shofwatul",
    "FIANISA SHOFWATUL"
   ],
   "peran": "Konsumsi",
@@ -3156,7 +3196,17 @@
     "kamar": "221",
     "tipe": "Superior King",
     "urutan": 5
-   },
+   }
+  ]
+ },
+ "fianisa-showatul-maadin": {
+  "name": "Fianisa Showatul Ma'adin",
+  "aliases": [
+   "Fianisa Showatul Ma'adin"
+  ],
+  "peran": "",
+  "transport": {},
+  "menginap": [
    {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
@@ -3183,9 +3233,10 @@
    }
   ]
  },
- "fina-dzurrotun-nasikha": {
-  "name": "Fina dzurrotun Nasikha",
+ "fina-dzurrotun-nasikhah": {
+  "name": "Fina Dzurrotun Nasikhah",
   "aliases": [
+   "Fina Dzurrotun Nasikhah",
    "Fina dzurrotun Nasikha"
   ],
   "peran": "",
@@ -3197,6 +3248,13 @@
     "kamar": "807",
     "tipe": "Superior",
     "urutan": 2
+   },
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "30",
+    "tipe": "Deluxe",
+    "urutan": 6
    }
   ]
  },
@@ -3204,6 +3262,7 @@
   "name": "Fuad Husein",
   "aliases": [
    "Fuad Husein",
+   "Fuad Husain",
    "Fuad Husen"
   ],
   "peran": "Kenyamanan",
@@ -3256,9 +3315,10 @@
    }
   ]
  },
- "fuad-m-taufiq": {
-  "name": "Fuad M Taufiq",
+ "fuad-muhammad-taufik": {
+  "name": "Fuad Muhammad Taufik",
   "aliases": [
+   "Fuad Muhammad Taufik",
    "Fuad M Taufiq",
    "Fuad M. Taufiq",
    "FUAD M.TAUFIQ",
@@ -3314,23 +3374,6 @@
    }
   ]
  },
- "habib-a-mukarohman": {
-  "name": "Habib A Mukarohman",
-  "aliases": [
-   "Habib A Mukarohman"
-  ],
-  "peran": "",
-  "transport": {},
-  "menginap": [
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "816",
-    "tipe": "Deluxe",
-    "urutan": 6
-   }
-  ]
- },
  "habib-akhmad-mukaroman": {
   "name": "Habib Akhmad Mukaroman",
   "aliases": [
@@ -3338,13 +3381,11 @@
    "Habib A. Mukarroman",
    "Habib Mukarroman",
    "Habib A Mukarroman",
-   "Habib A Mukarromah",
-   "HABIB A.M"
+   "Habib A Mukarromah"
   ],
   "peran": "Kesehatan",
   "transport": {
-   "sesi1": "ELF 6",
-   "sesi3": "Bus 5"
+   "sesi1": "ELF 6"
   },
   "menginap": [
    {
@@ -3384,11 +3425,32 @@
    }
   ]
  },
+ "habib-akhmad-mukharroman": {
+  "name": "Habib Akhmad Mukharroman",
+  "aliases": [
+   "Habib Akhmad Mukharroman",
+   "HABIB A.M"
+  ],
+  "peran": "PJ.kesehatan",
+  "transport": {
+   "sesi3": "Bus 5"
+  },
+  "menginap": [
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "816",
+    "tipe": "Deluxe",
+    "urutan": 6
+   }
+  ]
+ },
  "hafid-dyantoro": {
   "name": "Hafid Dyantoro",
   "aliases": [
    "Hafid Dyantoro",
-   "Hafid Diyantoro"
+   "Hafid Diyantoro",
+   "KHAFID DWI C."
   ],
   "peran": "Konsumsi",
   "transport": {
@@ -3526,7 +3588,7 @@
   "name": "Hamdatul Mukarromah",
   "aliases": [
    "Hamdatul Mukarromah",
-   "Khamdatul Mukarromah",
+   "Khamdatul Mukaromah",
    "Khamdatul M",
    "Khamdatul M."
   ],
@@ -3750,7 +3812,7 @@
   "aliases": [
    "Ibnu Muhajir",
    "M Ibnu Muhajir",
-   "M ibnu Muhajjir",
+   "Mohammad Ibnu Muhajir",
    "M. Ibnu Muhajir"
   ],
   "peran": "Kenyamanan",
@@ -3800,7 +3862,8 @@
   "aliases": [
    "Ida Rohayati",
    "Ida rohayati",
-   "IDA ROHAYATI"
+   "IDA ROHAYATI",
+   "DWI ARDIANSYAH NR."
   ],
   "peran": "Dokumentasi Visual",
   "transport": {
@@ -3978,7 +4041,8 @@
  "ikhya-maulana": {
   "name": "Ikhya' Maulana",
   "aliases": [
-   "Ikhya' Maulana"
+   "Ikhya' Maulana",
+   "Ikhyak Maulana"
   ],
   "peran": "Keamanan",
   "transport": {
@@ -4133,13 +4197,6 @@
     "kamar": "303",
     "tipe": "Superior",
     "urutan": 5
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "29",
-    "tipe": "Deluxe",
-    "urutan": 6
    }
   ]
  },
@@ -4148,7 +4205,6 @@
   "aliases": [
    "Irkham Rayindra Putra",
    "Irkham Rayyindra",
-   "Irkham R P (Xtra Bed)",
    "Irham R.P",
    "IRKHAM R.P",
    "Irkham Rayinda Putra"
@@ -4312,18 +4368,26 @@
   },
   "menginap": []
  },
- "jafar-shodiq-hidayat": {
-  "name": "Ja'far Shodiq Hidayat",
+ "j-af-a-r-s-h": {
+  "name": "JA'FAR S.H",
   "aliases": [
-   "Ja'far Shodiq Hidayat",
-   "Ja'far Shodiq",
-   "Jafar shodiq hidayat",
    "JA'FAR S.H"
   ],
   "peran": "PJ. peelengkapan",
   "transport": {
    "sesi3": "Bus 5"
   },
+  "menginap": []
+ },
+ "jafar-shodiq-hidayat": {
+  "name": "Ja'far Shodiq Hidayat",
+  "aliases": [
+   "Ja'far Shodiq Hidayat",
+   "Ja'far Shodiq",
+   "Jafar shodiq hidayat"
+  ],
+  "peran": "",
+  "transport": {},
   "menginap": [
    {
     "kota": "Gresik",
@@ -4444,7 +4508,6 @@
   "aliases": [
    "Juwatono Firmansyah Abadi",
    "J Firmansyah Abadi",
-   "Juwatono  Firmansyah Abadi",
    "Juwatono Firmansyah",
    "Juwatono Firmansyah A",
    "J. Firmansyah Abadi"
@@ -4498,11 +4561,12 @@
    }
   ]
  },
- "karima-fauky": {
-  "name": "Karima Fauky",
+ "karimah-fauky": {
+  "name": "Karimah Fauky",
   "aliases": [
-   "Karima Fauky",
    "Karimah Fauky",
+   "Karima Fauky",
+   "Karima Fauky R.",
    "KARIMA FAUKY R."
   ],
   "peran": "Dokumentasi Tulis",
@@ -4583,6 +4647,13 @@
     "kamar": "129",
     "tipe": "Deluxe King - Extrabed",
     "urutan": 5
+   },
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "15",
+    "tipe": "Family 2 Bedroom",
+    "urutan": 6
    }
   ]
  },
@@ -4590,13 +4661,11 @@
   "name": "Khafid Dwi Chandra",
   "aliases": [
    "Khafid Dwi Chandra",
-   "Khafid dwi chandra",
-   "KHAFID DWI C."
+   "Khafid dwi chandra"
   ],
   "peran": "Perlengkapan",
   "transport": {
-   "sesi1": "ELF 7",
-   "sesi3": "Bus 5"
+   "sesi1": "ELF 7"
   },
   "menginap": [
    {
@@ -4612,13 +4681,6 @@
     "kamar": "22",
     "tipe": "Deluxe",
     "urutan": 3
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "15",
-    "tipe": "Family 2 Bedroom",
-    "urutan": 6
    }
   ]
  },
@@ -4683,17 +4745,27 @@
    }
   ]
  },
- "lili-nur-rahmawati": {
-  "name": "Lili Nur Rahmawati",
+ "lili-n-u-r-r": {
+  "name": "LILI NUR R.",
   "aliases": [
-   "Lili Nur Rahmawati",
-   "Lili Nur R",
    "LILI NUR R."
   ],
   "peran": "Bendahara",
   "transport": {
-   "sesi1": "ELF 2",
    "sesi3": "Bus 1"
+  },
+  "menginap": []
+ },
+ "lili-nur-rahma-wati": {
+  "name": "Lili Nur Rahma Wati",
+  "aliases": [
+   "Lili Nur Rahma Wati",
+   "Lili Nur Rahmawati",
+   "Lili Nur R"
+  ],
+  "peran": "Bendahara",
+  "transport": {
+   "sesi1": "ELF 2"
   },
   "menginap": [
    {
@@ -4763,7 +4835,6 @@
    "Lulu' Khoirun Nisa'",
    "Lu'lu' Khoirunnisa",
    "Lu'lu' Khoirunnisa'",
-   "Lu'lu Khoirunnisa",
    "Lulu' Khoirunnisa'",
    "Lu'lu Khoirunisa",
    "Lulu' Khoirunnisa",
@@ -4888,7 +4959,7 @@
   "name": "M Agus Prasetyo",
   "aliases": [
    "M Agus Prasetyo",
-   "Agus Prasetyo",
+   "Mochammad Agus Prasetiyo",
    "M Agus prasetyo",
    "M. Agus Prastyo"
   ],
@@ -4946,6 +5017,7 @@
   "name": "M Alam Sahrul",
   "aliases": [
    "M Alam Sahrul",
+   "Muchamad Alam Sahrul",
    "Alam sahrul",
    "M.ALAM SYAHRUL",
    "M. Alam Syahrul"
@@ -5006,13 +5078,11 @@
    "M Ali Ridlo Fatahillah",
    "M Ali Ridlo F",
    "M Ali Ridlo",
-   "M.ALI RIDLO F.",
    "M. Ali Ridlo Fatahillah"
   ],
   "peran": "Dokumen Tulis",
   "transport": {
-   "sesi1": "ELF 6",
-   "sesi3": "Bus 5"
+   "sesi1": "ELF 6"
   },
   "menginap": [
    {
@@ -5049,13 +5119,6 @@
     "kamar": "117",
     "tipe": "Deluxe twin - Extrabed",
     "urutan": 5
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "33",
-    "tipe": "Deluxe",
-    "urutan": 6
    }
   ]
  },
@@ -5063,7 +5126,7 @@
   "name": "M Amin Arifulloh",
   "aliases": [
    "M Amin Arifulloh",
-   "M Amin Ariefulloh",
+   "Moch Amin Ariefulloh",
    "Amin Arifulloh",
    "M. Amin Ariefulloh",
    "M. Amin A."
@@ -5122,6 +5185,7 @@
   "name": "M Bahrun Muchit",
   "aliases": [
    "M Bahrun Muchit",
+   "Mohammad Bahrun Muchith",
    "M bahrun Muchit",
    "M. Bahrun Muchith"
   ],
@@ -5178,6 +5242,7 @@
   "name": "M Danis Alfian Soba",
   "aliases": [
    "M Danis Alfian Soba",
+   "Muhammad Danis alfian soba",
    "M Danis Alfian s",
    "M.DANIS ALFIYAN.S",
    "M. Danis Alfian"
@@ -5237,6 +5302,7 @@
   "aliases": [
    "M Fadlur Rohman",
    "M fadlur Rohman",
+   "Muhammad Fadlur Rohman",
    "M.FADLUR ROHMAN",
    "M. Fadlur Rohman"
   ],
@@ -5296,7 +5362,7 @@
    "M Fathur Rohim",
    "M Fatchur Rohim",
    "M Fatchurrohim",
-   "M fathur Rohim",
+   "Muhamad Fathur Rohim",
    "M. Fathur Rohim",
    "Fathurohim"
   ],
@@ -5355,6 +5421,7 @@
   "aliases": [
    "M Fatihul Aziz",
    "M. Fatihul Aziz",
+   "Mohamad Fatihul Aziz",
    "Fatihul Aziz",
    "Fathul Aziz"
   ],
@@ -5412,6 +5479,7 @@
   "name": "M Husna Listyanando",
   "aliases": [
    "M Husna Listyanando",
+   "Muhammad Husna Listyanando",
    "M HUsna Listiyananndo",
    "M Husna Listiyanando",
    "M. Husna Listyanando"
@@ -5465,69 +5533,12 @@
    }
   ]
  },
- "ikhlasul-abror-p": {
-  "name": "M Ikhlasul Abror P",
-  "aliases": [
-   "M Ikhlasul Abror P",
-   "Ikhlasul abror",
-   "Ikhlasul Abror",
-   "M Ikhlasul Abror",
-   "M. Ikhlasul Abror"
-  ],
-  "peran": "Transportasi",
-  "transport": {
-   "sesi1": "ELF 6"
-  },
-  "menginap": [
-   {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "726",
-    "tipe": "Twin Bed",
-    "urutan": 1
-   },
-   {
-    "kota": "Semarang",
-    "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "619",
-    "tipe": "DELUXE CORRIDOR",
-    "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "20",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
-    "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
-    "kamar": "8",
-    "tipe": "Deluxe",
-    "urutan": 4
-   },
-   {
-    "kota": "Cianjur",
-    "hotel": "Hotel Gino Feruci Cianjur",
-    "kamar": "213",
-    "tipe": "Superior Twin",
-    "urutan": 5
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "14",
-    "tipe": "Family 2 Bedroom",
-    "urutan": 6
-   }
-  ]
- },
  "ikhlasul-muttaqin-2": {
   "name": "M Ikhlasul Muttaqin",
   "aliases": [
    "M Ikhlasul Muttaqin",
    "Muh. Ikhlasul Muttaqin",
+   "Muchammad Ikhlasul Muttaqin",
    "M. Ikhlasul mutaqin",
    "M.Ikhlasul Muttaqin"
   ],
@@ -5583,6 +5594,7 @@
   "aliases": [
    "M Ikhwan Syahrom",
    "M IKhwan syahrom",
+   "Muhammad Ikhwan Syahrom",
    "M Ikhwan S",
    "M. Ikhwan Syahrom"
   ],
@@ -5640,6 +5652,7 @@
   "aliases": [
    "M Irfan",
    "M. Irfan",
+   "Muhammad Irfan",
    "M.Irfan",
    "M. IRFAN"
   ],
@@ -5698,6 +5711,7 @@
   "aliases": [
    "M Kariim Al Mujtaba",
    "M. Karim Al-mujtaba",
+   "Muhammad Kariim Almujtaba",
    "Karim Almujtaba",
    "M Karim Al-Mujtaba",
    "M Kariim Almujtaba",
@@ -5758,6 +5772,7 @@
   "name": "M Kholidin",
   "aliases": [
    "M Kholidin",
+   "Muhammad Kholidin",
    "M kholidin",
    "M. Kholidin"
   ],
@@ -5811,50 +5826,6 @@
    }
   ]
  },
- "lukman-hakim-c": {
-  "name": "M Lukman Hakim C",
-  "aliases": [
-   "M Lukman Hakim C",
-   "M Lukman Hakim",
-   "M.LUKMAN HAKIM",
-   "Muh. Luqman Hakim C"
-  ],
-  "peran": "Survey",
-  "transport": {
-   "sesi1": "ELF 1",
-   "sesi3": "Bus 1"
-  },
-  "menginap": [
-   {
-    "kota": "Semarang",
-    "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "102",
-    "tipe": "DELUXE BALCONY",
-    "urutan": 2
-   },
-   {
-    "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
-    "kamar": "10",
-    "tipe": "Deluxe",
-    "urutan": 4
-   },
-   {
-    "kota": "Cianjur",
-    "hotel": "Hotel Gino Feruci Cianjur",
-    "kamar": "118",
-    "tipe": "Superior King",
-    "urutan": 5
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "701",
-    "tipe": "Deluxe",
-    "urutan": 6
-   }
-  ]
- },
  "luman-hakim-c": {
   "name": "M Luman Hakim C.",
   "aliases": [
@@ -5876,6 +5847,7 @@
   "name": "M Mu'thi Syahrul Sya'ban",
   "aliases": [
    "M Mu'thi Syahrul Sya'ban",
+   "Muhammad Mu'thi Syahrul Sya'ban",
    "M Mu'thi Syahrul",
    "M Mu'thi syahrul Sya'ban",
    "M. Mu'thi Syahrul Sya'ban",
@@ -5936,6 +5908,7 @@
   "aliases": [
    "M Muchtar Amin",
    "M. Muchtar Amin",
+   "Muhammad Muchtar Amin",
    "Muchtar Amin"
   ],
   "peran": "Shodaqoh",
@@ -5970,17 +5943,7 @@
     "kamar": "333",
     "tipe": "Superior Twin",
     "urutan": 5
-   }
-  ]
- },
- "mucthar-amin": {
-  "name": "M Mucthar Amin",
-  "aliases": [
-   "M Mucthar Amin"
-  ],
-  "peran": "",
-  "transport": {},
-  "menginap": [
+   },
    {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
@@ -5990,71 +5953,11 @@
    }
   ]
  },
- "nasruddin-tsani": {
-  "name": "M Nasruddin Tsani",
-  "aliases": [
-   "M Nasruddin Tsani",
-   "M Nasruddin tsani",
-   "Nasrudin tsani",
-   "M Nasrudin Sani",
-   "M Nasrudin Tsani",
-   "NASRUDDIN TSANI",
-   "M. Nashruddin Tsani"
-  ],
-  "peran": "Konsumsi",
-  "transport": {
-   "sesi1": "ELF 8",
-   "sesi3": "Bus 5"
-  },
-  "menginap": [
-   {
-    "kota": "Gresik",
-    "hotel": "Hotel Gresik",
-    "kamar": "706",
-    "tipe": "Queen Bed",
-    "urutan": 1
-   },
-   {
-    "kota": "Semarang",
-    "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "720",
-    "tipe": "DELUXE CORRIDOR",
-    "urutan": 2
-   },
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "19",
-    "tipe": "Deluxe",
-    "urutan": 3
-   },
-   {
-    "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
-    "kamar": "11",
-    "tipe": "Deluxe",
-    "urutan": 4
-   },
-   {
-    "kota": "Cianjur",
-    "hotel": "Hotel Gino Feruci Cianjur",
-    "kamar": "307",
-    "tipe": "Superior",
-    "urutan": 5
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "41",
-    "tipe": "Deluxe",
-    "urutan": 6
-   }
-  ]
- },
  "nurul-fuady": {
   "name": "M Nurul Fuady",
   "aliases": [
    "M Nurul Fuady",
+   "Muhammad Nurul Fuady",
    "M  Nurul Fuady",
    "M. Nurul Fuady",
    "Nurul Fuadi"
@@ -6114,6 +6017,7 @@
   "aliases": [
    "M Rizky",
    "M. Rizky",
+   "Mochammad Rizky",
    "M.rizky",
    "Moch. Rizky"
   ],
@@ -6171,6 +6075,7 @@
   "name": "M Sholikhul Amin",
   "aliases": [
    "M Sholikhul Amin",
+   "Muhammad Sholihul Amiin",
    "M Sholihul Amin",
    "M. Sholikhul Amin"
   ],
@@ -6278,16 +6183,87 @@
   },
   "menginap": []
  },
+ "nashruddin-tsani": {
+  "name": "M. Nashruddin Tsani",
+  "aliases": [
+   "M. Nashruddin Tsani",
+   "M Nasruddin Tsani",
+   "M Nasruddin tsani",
+   "Muhamad Nashruddin Tsani",
+   "Nasrudin tsani",
+   "M Nasrudin Sani",
+   "M Nasrudin Tsani",
+   "NASRUDDIN TSANI"
+  ],
+  "peran": "Konsumsi",
+  "transport": {
+   "sesi1": "ELF 8",
+   "sesi3": "Bus 5"
+  },
+  "menginap": [
+   {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "706",
+    "tipe": "Queen Bed",
+    "urutan": 1
+   },
+   {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "720",
+    "tipe": "DELUXE CORRIDOR",
+    "urutan": 2
+   },
+   {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "19",
+    "tipe": "Deluxe",
+    "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "11",
+    "tipe": "Deluxe",
+    "urutan": 4
+   },
+   {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "307",
+    "tipe": "Superior",
+    "urutan": 5
+   },
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "41",
+    "tipe": "Deluxe",
+    "urutan": 6
+   }
+  ]
+ },
+ "a-l-i-ridlo-f": {
+  "name": "M.ALI RIDLO F.",
+  "aliases": [
+   "M.ALI RIDLO F."
+  ],
+  "peran": "PJ.dokumen tulis",
+  "transport": {
+   "sesi3": "Bus 5"
+  },
+  "menginap": []
+ },
  "marifatul-azal": {
   "name": "Ma'rifatul Azal",
   "aliases": [
-   "Ma'rifatul Azal",
-   "MA’RIFATUL AZAL"
+   "Ma'rifatul Azal"
   ],
   "peran": "Ketua",
   "transport": {
-   "sesi1": "ELF 1",
-   "sesi3": "Bus 1"
+   "sesi1": "ELF 1"
   },
   "menginap": [
    {
@@ -6334,22 +6310,41 @@
    }
   ]
  },
- "maul-fatihatur-rohmah": {
-  "name": "Ma'ul Fatihatur Rohmah",
+ "arifatul-azal": {
+  "name": "MA’RIFATUL AZAL",
   "aliases": [
-   "Ma'ul Fatihatur Rohmah",
+   "MA’RIFATUL AZAL"
+  ],
+  "peran": "PJ Safari",
+  "transport": {
+   "sesi3": "Bus 1"
+  },
+  "menginap": []
+ },
+ "au-l-fatihatur-r": {
+  "name": "MA'UL FATIHATUR.R",
+  "aliases": [
+   "MA'UL FATIHATUR.R"
+  ],
+  "peran": "PJ.penata acara",
+  "transport": {
+   "sesi3": "Bus 2"
+  },
+  "menginap": []
+ },
+ "maul-fatihatur-rohmah": {
+  "name": "Maul Fatihatur Rohmah",
+  "aliases": [
    "Maul Fatihatur Rohmah",
    "Maul fatihatur Rohmah",
-   "Maul Fatihiatur rohmah",
    "Maul fatihatur rohma",
    "Maul F Rohmah",
-   "MA'UL FATIHATUR.R",
+   "Ma'ul Fatihatur Rohmah",
    "Ma'ul Fatihatur R"
   ],
   "peran": "Penata Acara",
   "transport": {
-   "sesi1": "ELF 2",
-   "sesi3": "Bus 2"
+   "sesi1": "ELF 2"
   },
   "menginap": [
    {
@@ -6396,13 +6391,14 @@
    }
   ]
  },
- "melly-kayyisa": {
-  "name": "Melly Kayyisa",
+ "melly-kayyisa-aidiana": {
+  "name": "Melly Kayyisa Aidiana",
   "aliases": [
-   "Melly Kayyisa",
+   "Melly Kayyisa Aidiana",
    "Melly Keyyisa",
    "Melly Keysa",
    "Melly Kayisa",
+   "Melly Kayyisa",
    "Melly Kayisa A"
   ],
   "peran": "Penata Acara",
@@ -6460,6 +6456,7 @@
   "aliases": [
    "Misbahul Muflihin",
    "M Misbahul Muflihin",
+   "Muhammad Mishbahul Muflihin",
    "M. Misbahul Muflihin"
   ],
   "peran": "Survey",
@@ -6522,6 +6519,126 @@
    "sesi3": "Bus 3"
   },
   "menginap": []
+ },
+ "ali-ridho-fatahillah": {
+  "name": "Muhammad Ali Ridho Fatahillah",
+  "aliases": [
+   "Muhammad Ali Ridho Fatahillah"
+  ],
+  "peran": "",
+  "transport": {},
+  "menginap": [
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "33",
+    "tipe": "Deluxe",
+    "urutan": 6
+   }
+  ]
+ },
+ "ikhlasul-abror-putra-djati": {
+  "name": "Muhammad Ikhlasul Abror Putra Djati",
+  "aliases": [
+   "Muhammad Ikhlasul Abror Putra Djati",
+   "Ikhlasul abror",
+   "Ikhlasul Abror",
+   "M Ikhlasul Abror",
+   "M. Ikhlasul Abror"
+  ],
+  "peran": "Transportasi",
+  "transport": {
+   "sesi1": "ELF 6"
+  },
+  "menginap": [
+   {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "726",
+    "tipe": "Twin Bed",
+    "urutan": 1
+   },
+   {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "619",
+    "tipe": "DELUXE CORRIDOR",
+    "urutan": 2
+   },
+   {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "20",
+    "tipe": "Deluxe",
+    "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "8",
+    "tipe": "Deluxe",
+    "urutan": 4
+   },
+   {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "213",
+    "tipe": "Superior Twin",
+    "urutan": 5
+   },
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "14",
+    "tipe": "Family 2 Bedroom",
+    "urutan": 6
+   }
+  ]
+ },
+ "luqman-hakim-cahyono": {
+  "name": "Muhammad Luqman Hakim Cahyono",
+  "aliases": [
+   "Muhammad Luqman Hakim Cahyono",
+   "M Lukman Hakim C",
+   "M Lukman Hakim",
+   "M.LUKMAN HAKIM",
+   "Muh. Luqman Hakim C"
+  ],
+  "peran": "Survey",
+  "transport": {
+   "sesi1": "ELF 1",
+   "sesi3": "Bus 1"
+  },
+  "menginap": [
+   {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "102",
+    "tipe": "DELUXE BALCONY",
+    "urutan": 2
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "10",
+    "tipe": "Deluxe",
+    "urutan": 4
+   },
+   {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "118",
+    "tipe": "Superior King",
+    "urutan": 5
+   },
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "701",
+    "tipe": "Deluxe",
+    "urutan": 6
+   }
+  ]
  },
  "mujahidul-abror": {
   "name": "Mujahidul Abror",
@@ -6754,6 +6871,7 @@
   "name": "Naimatul Malikha",
   "aliases": [
    "Naimatul Malikha",
+   "Naimatul Malikhah",
    "Na'imatul Malikha"
   ],
   "peran": "Peserta",
@@ -6879,12 +6997,28 @@
    }
   ]
  },
+ "nella-rodhiyah": {
+  "name": "Nella Rodhiyah",
+  "aliases": [
+   "Nella Rodhiyah"
+  ],
+  "peran": "",
+  "transport": {},
+  "menginap": [
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "46",
+    "tipe": "Deluxe",
+    "urutan": 6
+   }
+  ]
+ },
  "nella-rodliyah": {
   "name": "Nella Rodliyah",
   "aliases": [
    "Nella Rodliyah",
    "Nella Rodliyatan",
-   "Nella Rodliyyah",
    "Nela Rodliyah"
   ],
   "peran": "Konsumsi",
@@ -6920,22 +7054,14 @@
     "kamar": "224",
     "tipe": "Superior King",
     "urutan": 5
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "46",
-    "tipe": "Deluxe",
-    "urutan": 6
    }
   ]
  },
- "nimimmms-caini-latifah-h": {
-  "name": "Nimimmms Caini Latifah H",
+ "nimimmms-caini-lathiifah-hajarulloh": {
+  "name": "Nimimmms Caini Lathiifah Hajarulloh",
   "aliases": [
-   "Nimimmms Caini Latifah H",
+   "Nimimmms Caini Lathiifah Hajarulloh",
    "Nimimmms Caini L.H",
-   "Nimimmms Caini Latifah",
    "NIMIMMMS CAINI L.H",
    "Nimimmms Caini L"
   ],
@@ -6952,6 +7078,24 @@
     "tipe": "Twin Bed",
     "urutan": 1
    },
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "8",
+    "tipe": "Family 2 Bedroom",
+    "urutan": 6
+   }
+  ]
+ },
+ "nimimmms-caini-latifah-h": {
+  "name": "Nimimmms Caini Latifah H",
+  "aliases": [
+   "Nimimmms Caini Latifah H",
+   "Nimimmms Caini Latifah"
+  ],
+  "peran": "",
+  "transport": {},
+  "menginap": [
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
@@ -6979,23 +7123,6 @@
     "kamar": "109",
     "tipe": "Deluxe twin - Extrabed",
     "urutan": 5
-   }
-  ]
- },
- "nimimmms-chaini-l-h": {
-  "name": "Nimimmms Chaini L H",
-  "aliases": [
-   "Nimimmms Chaini L H"
-  ],
-  "peran": "",
-  "transport": {},
-  "menginap": [
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "8",
-    "tipe": "Family 2 Bedroom",
-    "urutan": 6
    }
   ]
  },
@@ -7065,13 +7192,14 @@
    }
   ]
  },
- "novel-putra-atma": {
-  "name": "Novel Putra Atma",
+ "novel-putra-atma-wahyudi": {
+  "name": "Novel Putra Atma Wahyudi",
   "aliases": [
-   "Novel Putra Atma",
+   "Novel Putra Atma Wahyudi",
    "Novel Putra Atma W",
    "Novel Putra Atma W.",
    "Novel Putra",
+   "Novel Putra Atma",
    "NOVEL PUTRA A.W"
   ],
   "peran": "Perlengkapan",
@@ -7309,8 +7437,8 @@
   "aliases": [
    "Nur Wahyu Mu'thi Legowo",
    "Nur Wahyu Mu'ti Legowo",
-   "Nur Wahyu Mu'thi L",
-   "Nur wahyu Mu'thi Legowo"
+   "Nur wahyu Mu'thi Legowo",
+   "Nur Wahyu Mu'thi L"
   ],
   "peran": "Keamanan",
   "transport": {
@@ -7372,11 +7500,27 @@
   },
   "menginap": []
  },
+ "nuril-fithriyyah": {
+  "name": "Nuril Fithriyyah",
+  "aliases": [
+   "Nuril Fithriyyah"
+  ],
+  "peran": "",
+  "transport": {},
+  "menginap": [
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "5",
+    "tipe": "Family 2 Bedroom",
+    "urutan": 6
+   }
+  ]
+ },
  "nuril-fitriyyah": {
   "name": "Nuril Fitriyyah",
   "aliases": [
    "Nuril Fitriyyah",
-   "Nuril Fitriyah",
    "Nurul Fitriani"
   ],
   "peran": "Peserta",
@@ -7419,13 +7563,6 @@
     "kamar": "314",
     "tipe": "Superior Twin",
     "urutan": 5
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "5",
-    "tipe": "Family 2 Bedroom",
-    "urutan": 6
    }
   ]
  },
@@ -7434,8 +7571,8 @@
   "aliases": [
    "Nurul Fauzah",
    "Nurul fauzah",
-   "NURUL FAUZA",
-   "Nurul Fauza"
+   "Nurul Fauza",
+   "NURUL FAUZA"
   ],
   "peran": "Peserta",
   "transport": {
@@ -7574,8 +7711,7 @@
   "name": "Putri Lestari Ningsih",
   "aliases": [
    "Putri Lestari Ningsih",
-   "Putri Lestari",
-   "Putri Lestari N"
+   "Putri Lestari"
   ],
   "peran": "Konsumsi",
   "transport": {
@@ -7744,13 +7880,25 @@
  "ratna-umi-nasihah": {
   "name": "Ratna Umi Nasihah",
   "aliases": [
-   "Ratna Umi Nasihah",
-   "Ratna Umi",
-   "Ratna Ummi"
+   "Ratna Umi Nasihah"
   ],
   "peran": "Peserta",
   "transport": {
    "sesi1": "ELF 3"
+  },
+  "menginap": []
+ },
+ "ratna-umi-tisiyanina": {
+  "name": "Ratna Umi Tisiyanina",
+  "aliases": [
+   "Ratna Umi Tisiyanina",
+   "Ratna Umi",
+   "Ratna Ummi",
+   "Ratna Umi T"
+  ],
+  "peran": "Peserta",
+  "transport": {
+   "sesi3": "Bus 2"
   },
   "menginap": [
    {
@@ -7796,17 +7944,6 @@
     "urutan": 6
    }
   ]
- },
- "ratna-umi-t": {
-  "name": "Ratna Umi T",
-  "aliases": [
-   "Ratna Umi T"
-  ],
-  "peran": "Peserta",
-  "transport": {
-   "sesi3": "Bus 2"
-  },
-  "menginap": []
  },
  "resta-lestari": {
   "name": "Resta Lestari",
@@ -7940,8 +8077,8 @@
   "name": "Rifky Darmawan",
   "aliases": [
    "Rifky Darmawan",
-   "Rifki dermawan",
-   "Rifki Darmawan"
+   "Rifki Darmawan",
+   "Rifki dermawan"
   ],
   "peran": "Spiritual",
   "transport": {
@@ -8018,6 +8155,13 @@
     "kamar": "312",
     "tipe": "Superior King",
     "urutan": 5
+   },
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "18",
+    "tipe": "Deluxe",
+    "urutan": 6
    }
   ]
  },
@@ -8043,13 +8187,6 @@
     "kamar": "42",
     "tipe": "Deluxe",
     "urutan": 3
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "18",
-    "tipe": "Deluxe",
-    "urutan": 6
    }
   ]
  },
@@ -8073,13 +8210,14 @@
    }
   ]
  },
- "rodliyatan-mardliyyah": {
-  "name": "Rodliyatan Mardliyyah",
+ "rodliyatan-mardiyyah": {
+  "name": "Rodliyatan Mardiyyah",
   "aliases": [
-   "Rodliyatan Mardliyyah",
+   "Rodliyatan Mardiyyah",
    "Rodliyatan mardliyah",
    "Rodliyatan Mardliyah",
-   "Rodliyatan Mardiyyah",
+   "Rodliyatan Mardiiyah",
+   "Rodliyatan Mardliyyah",
    "RODLIYATAN M."
   ],
   "peran": "Keamanan",
@@ -8147,7 +8285,8 @@
   "name": "Rohmawati Fajrin",
   "aliases": [
    "Rohmawati Fajrin",
-   "Rohmawati fajrin"
+   "Rohmawati fajrin",
+   "Rochmawati Fajrin"
   ],
   "peran": "Keamanan",
   "transport": {
@@ -8198,11 +8337,11 @@
    }
   ]
  },
- "ruben-ahmad-habil": {
-  "name": "Ruben Ahmad Habil",
+ "ruben-ahmad-habil-arasyi": {
+  "name": "Ruben Ahmad Habil Arasyi",
   "aliases": [
+   "Ruben Ahmad Habil Arasyi",
    "Ruben Ahmad Habil",
-   "Ruben A Habil",
    "Ruben Ahmad Habil A",
    "RUBEN A.HABIL A."
   ],
@@ -8439,8 +8578,8 @@
   "aliases": [
    "Santi Kartika sari",
    "Santi Kartikasari",
-   "Santi Kartika",
    "Santi Kartika S",
+   "Santi Kartika",
    "SANTI KARTIKA S.",
    "Santi kartika"
   ],
@@ -8558,6 +8697,7 @@
   "aliases": [
    "Sinta Wati P",
    "Sintawati prasetyani",
+   "Sintawati Prasetyani",
    "Sintawati P",
    "SINTA WATI",
    "Sinta Wati"
@@ -8615,7 +8755,8 @@
  "sita-jannatul-munawaroh": {
   "name": "Sita Jannatul Munawaroh",
   "aliases": [
-   "Sita Jannatul Munawaroh"
+   "Sita Jannatul Munawaroh",
+   "Sita Janatul Munawaroh"
   ],
   "peran": "",
   "transport": {},
@@ -8626,6 +8767,13 @@
     "kamar": "1109",
     "tipe": "Superior",
     "urutan": 2
+   },
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "7",
+    "tipe": "Family 2 Bedroom",
+    "urutan": 6
    }
   ]
  },
@@ -8760,18 +8908,27 @@
   },
   "menginap": []
  },
- "siti-nur-nisfiyyah": {
-  "name": "Siti Nur Nisfiyyah",
+ "siti-n-u-r": {
+  "name": "SITI NUR",
   "aliases": [
-   "Siti Nur Nisfiyyah",
-   "Siti Nur Nisfiyah",
-   "Siti Nur",
    "SITI NUR"
   ],
   "peran": "Keamanan",
   "transport": {
-   "sesi1": "ELF 4",
    "sesi3": "Bus 4"
+  },
+  "menginap": []
+ },
+ "siti-nur-nisfiyah": {
+  "name": "Siti Nur Nisfiyah",
+  "aliases": [
+   "Siti Nur Nisfiyah",
+   "Siti Nur Nisfiyyah",
+   "Siti Nur"
+  ],
+  "peran": "Keamanan",
+  "transport": {
+   "sesi1": "ELF 4"
   },
   "menginap": [
    {
@@ -8823,7 +8980,6 @@
   "aliases": [
    "Sitta Jannatul Mukarromah",
    "Sitta Jannatul M",
-   "Sitta Janatul M",
    "Sitta Jannatul",
    "Sita Janatul M"
   ],
@@ -8860,13 +9016,6 @@
     "kamar": "235",
     "tipe": "Superior Twin",
     "urutan": 5
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "7",
-    "tipe": "Family 2 Bedroom",
-    "urutan": 6
    }
   ]
  },
@@ -8875,6 +9024,7 @@
   "aliases": [
    "Sri Bella Yunita",
    "Sri Bella",
+   "Sri Bela Yunita",
    "Sri bella Yunita"
   ],
   "peran": "Konsumsi",
@@ -9113,10 +9263,10 @@
   "name": "Syuhada' Ridlo Billah",
   "aliases": [
    "Syuhada' Ridlo Billah",
+   "Syuhada Ridlo Billah",
    "syuhada' Ridlo Billah",
    "Syuhada' Ridlo",
-   "SYUHADA RIDLO",
-   "Syuhada Ridlo Billah"
+   "SYUHADA RIDLO"
   ],
   "peran": "Kesehatan",
   "transport": {
@@ -9179,11 +9329,27 @@
   },
   "menginap": []
  },
+ "tahdiyatul-maazah": {
+  "name": "Tahdiyatul Ma'azah",
+  "aliases": [
+   "Tahdiyatul Ma'azah"
+  ],
+  "peran": "",
+  "transport": {},
+  "menginap": [
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "811",
+    "tipe": "Deluxe",
+    "urutan": 6
+   }
+  ]
+ },
  "tahdliyatul-maazah": {
   "name": "Tahdliyatul Ma'azah",
   "aliases": [
    "Tahdliyatul Ma'azah",
-   "Tahdliyyatul Ma'azah",
    "Tahdliyatul Ma'azzah"
   ],
   "peran": "Dokumentasi",
@@ -9225,13 +9391,6 @@
     "kamar": "120",
     "tipe": "Superior Twin",
     "urutan": 5
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "811",
-    "tipe": "Deluxe",
-    "urutan": 6
    }
   ]
  },
@@ -9240,6 +9399,7 @@
   "aliases": [
    "Tahsinatus Salamah",
    "Tahshinatus salamah",
+   "Tahshinatus Salamah",
    "Tashinatus Salamah"
   ],
   "peran": "Dokumen Tulis",
@@ -9292,13 +9452,13 @@
    }
   ]
  },
- "tamia-rizky-hana-putri": {
-  "name": "Tamia Rizky Hana Putri",
+ "tamia-rizki-hana-puteri": {
+  "name": "Tamia Rizki Hana Puteri",
   "aliases": [
-   "Tamia Rizky Hana Putri",
+   "Tamia Rizki Hana Puteri",
    "Tamia Hana Putri",
-   "Tamia Rizky Hana",
-   "Tamia Rizki Hana Puteri"
+   "Tamia Rizky Hana Putri",
+   "Tamia Rizky Hana"
   ],
   "peran": "Kebersihan",
   "transport": {
@@ -9350,11 +9510,12 @@
    }
   ]
  },
- "thousan-ahmad-alin-hs": {
-  "name": "Thousan Ahmad Alin HS",
+ "thousan-ahmad-alin-hisan-syamsuddin": {
+  "name": "Thousan Ahmad Alin Hisan Syamsuddin",
   "aliases": [
-   "Thousan Ahmad Alin HS",
+   "Thousan Ahmad Alin Hisan Syamsuddin",
    "Thousand A.A. H. S.",
+   "Thousan Ahmad Alin HS",
    "Thousand A",
    "Thousan A. A. H. S.",
    "THOUSAN AHMAD A.H.S",
@@ -9393,6 +9554,13 @@
     "kamar": "116",
     "tipe": "Superior Twin",
     "urutan": 5
+   },
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "702",
+    "tipe": "Deluxe",
+    "urutan": 6
    }
   ]
  },
@@ -9410,22 +9578,16 @@
     "kamar": "9",
     "tipe": "Deluxe",
     "urutan": 4
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "702",
-    "tipe": "Deluxe",
-    "urutan": 6
    }
   ]
  },
- "tya-aprilia-lestari": {
-  "name": "Tya Aprilia Lestari",
+ "tya-aprillia-lestari": {
+  "name": "Tya Aprillia Lestari",
   "aliases": [
-   "Tya Aprilia Lestari",
+   "Tya Aprillia Lestari",
    "Tya Aprilia",
-   "Tya Apriliya"
+   "Tya Apriliya",
+   "Tya Aprilia Lestari"
   ],
   "peran": "Shodaqoh",
   "transport": {
@@ -9539,6 +9701,7 @@
   "name": "Umi Jariyyah",
   "aliases": [
    "Umi Jariyyah",
+   "Umi Jariyah",
    "UMMI JARIYAH",
    "Ummi Jariyyah"
   ],
@@ -9583,6 +9746,23 @@
     "tipe": "Deluxe twin - Extrabed",
     "urutan": 5
    },
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "32",
+    "tipe": "Deluxe",
+    "urutan": 6
+   }
+  ]
+ },
+ "umi-nasikah-saptaningsih": {
+  "name": "Umi Nasikah Saptaningsih",
+  "aliases": [
+   "Umi Nasikah Saptaningsih"
+  ],
+  "peran": "",
+  "transport": {},
+  "menginap": [
    {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
@@ -9639,20 +9819,14 @@
     "kamar": "308",
     "tipe": "Deluxe twin - Extrabed",
     "urutan": 5
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "32",
-    "tipe": "Deluxe",
-    "urutan": 6
    }
   ]
  },
  "ummu-cholifah": {
   "name": "Ummu Cholifah",
   "aliases": [
-   "Ummu Cholifah"
+   "Ummu Cholifah",
+   "Umu Cholifah"
   ],
   "peran": "Peserta",
   "transport": {
@@ -9761,7 +9935,6 @@
   "aliases": [
    "Viddi Puspita Sari",
    "Viddi Puspita",
-   "Viddi Puspita S",
    "Vidi Puspita Sari"
   ],
   "peran": "Kesehatan",
@@ -9820,7 +9993,7 @@
    "Yonsania Nur Fadillah",
    "Yonsania Nur Fadilah",
    "Yonsania Nur Fadhilah",
-   "Yonsania Nur Fadhilla",
+   "Yonsania Nurfadilla",
    "Yonsania N Fadhila",
    "Yonsania Nur F.",
    "Yonsania Nur Fadila"
@@ -9881,7 +10054,6 @@
    "Yuan Daviq Nuzul Qurnain",
    "Yuan Daviq N",
    "Yuan Daviq Nuzul Q",
-   "Yuan Daviq N Q",
    "Yuan daviq Nuzul",
    "YUAN DAVIQ N.Q"
   ],
@@ -10015,8 +10187,7 @@
  "zaskia-syamsuwirna": {
   "name": "Zaskia Syamsuwirna",
   "aliases": [
-   "Zaskia Syamsuwirna",
-   "Zaskiya Syamsuwirna"
+   "Zaskia Syamsuwirna"
   ],
   "peran": "Peserta",
   "transport": {

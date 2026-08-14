@@ -14,6 +14,7 @@ const prefiksMuhammad = (t) => t === 'm' || (/^m[uo]/.test(t) && 'mhmd'.startsWi
 
 function tokenize(name) {
   const raw = String(name)
+    .replace(/\b[A-Z]{2,3}\b/g, (m) => m.split('').join(' '))
     .toLowerCase()
     .replace(/['’`]/g, '')      // apostrof dibuang, bukan dijadikan pemisah: lu'lu -> lulu
     .replace(/[^a-z0-9]+/g, ' ') // titik ikut jadi pemisah: "m.ikhlasul" -> "m ikhlasul"
