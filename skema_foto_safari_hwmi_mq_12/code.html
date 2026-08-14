@@ -2,10 +2,10 @@
 <meta charset=utf-8>
 <meta name="robots" content="noindex, nofollow, noarchive">
 <meta name="theme-color" content="#0D0303">
-<meta name="description" content="Panduan resmi Safari Chubbul Wathon Minal Iman — Maqooshidul Qur-aan 12. Informasi kamar, bus, tata tertib, dan panduan musafir.">
+<meta name="description" content="Skema dan Formasi Foto Bersama Safari Chubbul Wathon Minal Iman — Maqooshidul Qur-aan 12 per Sesi dan Lokasi Tujuan.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Safari HWMI MQ 12">
-<meta property="og:description" content="Panduan resmi Safari Chubbul Wathon Minal Iman 12 — kamar, bus, rundown, dan tata tertib.">
+<meta property="og:title" content="Skema Foto Safari HWMI MQ 12">
+<meta property="og:description" content="Skema resmi formasi foto bersama per sesi dan lokasi — Demak, Wage, Sambernyowo, Bung Karno, Prambanan, HSHF, Monas & Istiqlal.">
 <meta property="og:image" content="https://thomas-in-lesson.github.io/mq12-test5/og-cover.jpg">
 <meta property="og:url" content="https://thomas-in-lesson.github.io/mq12-test5/">
 <link rel="apple-touch-icon" href="../icon-180.png">
@@ -14,57 +14,330 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Skema Foto Bersama - Safari HWMI MQ 12</title>
 <link rel="stylesheet" href="../styles.css">
+<style>
+  .badge-ndalem { background: rgba(194, 26, 3, 0.25); color: #FFB4AB; border: 1.5px solid #C21A03; }
+  .badge-pendamping { background: rgba(224, 134, 0, 0.25); color: #FFDCBE; border: 1.5px solid #E08A00; }
+  .badge-putra { background: rgba(224, 184, 99, 0.2); color: #E0B863; border: 1px solid rgba(224, 184, 99, 0.5); }
+  .badge-putri { background: rgba(56, 114, 224, 0.2); color: #9EC0FF; border: 1px solid rgba(56, 114, 224, 0.5); }
+</style>
 </head>
-<body class="bg-background text-on-surface antialiased min-h-screen flex flex-col pb-24 md:pb-0">
+<body class="bg-background text-on-surface antialiased min-h-screen flex flex-col pb-28 md:pb-12">
 <header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-surface-variant/30 shadow-sm flex items-center justify-between px-margin-mobile h-16 md:hidden">
-<button aria-label="Go back" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-surface-variant/50 text-primary">
+<button aria-label="Go back" onclick="window.history.back()" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-surface-variant/50 text-primary">
 <span class="material-symbols-outlined">arrow_back</span>
 </button>
 <div class="font-headline-md-mobile text-headline-md-mobile font-bold text-secondary flex-1 text-center">
-            Skema Foto
+            Skema Foto Bersama
         </div>
 <div class="w-10"></div>
 </header>
+
 <main class="flex-1 w-full max-w-container-max-width mx-auto pt-20 px-margin-mobile md:px-margin-desktop md:pt-32 space-y-8">
+<!-- Hero Title Section -->
 <section class="text-center space-y-4">
 <h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg text-secondary">
-                SKEMA FOTO BERSAMA SAFARI HWMI MQ 12
+                SKEMA & FORMASI FOTO BERSAMA
             </h1>
 <p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">
-                Pengaturan posisi berdiri, formasi barisan, dan urutan kloter dokumentasi resmi.
+                Panduan resmi posisi foto per Sesi (Sesi 1, Sesi 2, Sesi 3) dan gabungan lokasi tujuan Safari HWMI MQ 12 (PDF Terbaru 15 Agustus 2026).
             </p>
 <div class="w-16 h-1 bg-secondary mx-auto rounded-full opacity-50"></div>
 </section>
 
-<section class="space-y-6">
-<div class="bg-surface-container-low rounded-xl p-6 border-t border-l border-surface-variant/30 shadow-md space-y-4">
-<h3 class="font-title-lg text-title-lg font-bold text-secondary flex items-center gap-2">
-<span class="material-symbols-outlined">groups</span> Sesi 1: Foto Seluruh Jamaah (Akbar)
-</h3>
-<p class="text-sm text-on-surface-variant">Dilaksanakan di pelataran utama penginapan / lokasi landmark ziara.</p>
-<div class="p-4 rounded-lg bg-surface-container/60 space-y-2 text-sm text-on-surface-variant">
-<p><strong class="text-primary">Barisan Depan (Duduk Kursi):</strong> Masyayikh, Sesepuh, & Pembimbing Safari.</p>
-<p><strong class="text-primary">Barisan Tengah (Berdiri):</strong> Jamaah Ikhwat Kloter Bus 1 & Bus 2.</p>
-<p><strong class="text-primary">Barisan Belakang (Berdiri Panggung):</strong> Jamaah Ikhwat Kloter Bus 3 & Rombongan Elf.</p>
+<!-- Search Box -->
+<section class="max-w-xl mx-auto">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-3.5 text-on-surface-variant">search</span>
+<input id="skema-search-input" type="text" placeholder="Cari nama Anda di skema foto (misal: 'Rizky' atau 'Faqih')..." class="w-full pl-12 pr-4 py-3.5 rounded-xl bg-surface-container border border-gold/40 text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:border-gold shadow-lg text-sm">
 </div>
+<div id="search-results-box" class="mt-3 hidden space-y-2"></div>
+</section>
+
+<!-- Session Selector -->
+<section class="space-y-4">
+<div class="flex justify-center gap-2 flex-wrap">
+  <button id="btn-sesi-all" type="button" class="px-5 py-2 rounded-full text-xs font-bold border transition-all duration-200 bg-secondary text-surface-container-lowest border-secondary shadow-md">
+    Semua Sesi
+  </button>
+  <button id="btn-sesi-1" type="button" class="px-5 py-2 rounded-full text-xs font-bold border transition-all duration-200 bg-surface-container text-on-surface-variant border-outline-variant/30 hover:border-secondary/50">
+    Sesi 1 (Keberangkatan / ELF)
+  </button>
+  <button id="btn-sesi-2" type="button" class="px-5 py-2 rounded-full text-xs font-bold border transition-all duration-200 bg-surface-container text-on-surface-variant border-outline-variant/30 hover:border-secondary/50">
+    Sesi 2 (Ziarah Utama / 4 Bus)
+  </button>
+  <button id="btn-sesi-3" type="button" class="px-5 py-2 rounded-full text-xs font-bold border transition-all duration-200 bg-surface-container text-on-surface-variant border-outline-variant/30 hover:border-secondary/50">
+    Sesi 3 (Acara Puncak / 6 Bus)
+  </button>
 </div>
 
-<div class="bg-surface-container-low rounded-xl p-6 border-t border-l border-surface-variant/30 shadow-md space-y-4">
-<h3 class="font-title-lg text-title-lg font-bold text-secondary flex items-center gap-2">
-<span class="material-symbols-outlined">photo_camera</span> Sesi 2: Foto Per Bus & Rombongan
-</h3>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
-<div class="p-3 rounded-lg bg-surface-container/60">
-<strong class="text-secondary block mb-1">Bus 1 & Bus 2</strong>
-<span class="text-on-surface-variant">Sesi dokumentasi khusus peserta armada Bus 1 & 2 bersama pendamping bus.</span>
-</div>
-<div class="p-3 rounded-lg bg-surface-container/60">
-<strong class="text-secondary block mb-1">Bus 3 & Elf</strong>
-<span class="text-on-surface-variant">Sesi dokumentasi khusus peserta armada Bus 3 & Elf.</span>
-</div>
-</div>
+<!-- Location Cards Grid -->
+<div id="location-cards-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
 </div>
 </section>
+
+<!-- Active Location Viewer -->
+<section id="location-viewer-section" class="bg-surface-container-low rounded-2xl p-5 md:p-8 border border-gold/40 shadow-2xl space-y-6">
+<div class="flex items-center justify-between border-b border-surface-variant/40 pb-4 flex-wrap gap-3">
+  <div>
+    <span id="view-sesi-badge" class="text-xs uppercase font-bold text-primary px-3 py-1 rounded-full bg-primary/10 border border-primary/30 inline-block mb-1">SESI 1</span>
+    <h2 id="view-location-title" class="font-headline-md-mobile md:font-headline-md text-gold font-bold">Masjid Agung Demak</h2>
+    <p id="view-location-desc" class="text-xs text-on-surface-variant mt-1">Formasi Trap foto bersama di pelataran Halaman Masjid Agung Demak.</p>
+  </div>
+
+  <div class="flex items-center gap-2 text-xs">
+    <span class="px-2.5 py-1 rounded-md badge-ndalem font-semibold">Ndalem</span>
+    <span class="px-2.5 py-1 rounded-md badge-pendamping font-semibold">Pendamping</span>
+    <span class="px-2.5 py-1 rounded-md badge-putra font-semibold">Putra</span>
+    <span class="px-2.5 py-1 rounded-md badge-putri font-semibold">Putri</span>
+  </div>
+</div>
+
+<!-- Camera / Photographer Indicator Bar -->
+<div class="w-full py-2.5 rounded-xl bg-surface-container-high border border-gold/30 text-center text-gold font-bold text-xs flex items-center justify-center gap-2 tracking-widest uppercase">
+  <span class="material-symbols-outlined text-[18px]">photo_camera</span> POSISI FOTOGRAFER / KAMERA
+</div>
+
+<!-- Formation Layout Content -->
+<div id="formation-layout-container" class="space-y-6">
+</div>
+</section>
+
 </main>
 
+<script src="../skema-data.js"></script>
+<script>
+  // Location definitions per session
+  const LOCATION_MAP = [
+    {
+      id: 'demak',
+      sesi: 'sesi1',
+      sesiLabel: 'Sesi 1 (Keberangkatan)',
+      title: 'Masjid Agung Demak',
+      desc: 'Formasi Trap foto bersama di pelataran Halaman Masjid Agung Demak.',
+      icon: 'mosque',
+      pages: [7]
+    },
+    {
+      id: 'ndalem',
+      sesi: 'sesi1',
+      sesiLabel: 'Sesi 1 (Keberangkatan)',
+      title: 'Teras Ndalem & Mbah Sanusi',
+      desc: 'Formasi Trap foto bersama Sesi 1 di Teras Ndalem dan lokasi Mbah Sanusi.',
+      icon: 'home',
+      pages: [2]
+    },
+    {
+      id: 'wage',
+      sesi: 'sesi2',
+      sesiLabel: 'Sesi 2 (Ziarah Utama)',
+      title: 'Makom W.R. Soepratman (Wage)',
+      desc: 'Formasi Datar Laki-Laki & Perempuan (Termasuk Kloter Wage Khusus).',
+      icon: 'music_note',
+      pages: [3, 4, 5, 6]
+    },
+    {
+      id: 'sambernyowo',
+      sesi: 'sesi2',
+      sesiLabel: 'Sesi 2 (Ziarah Utama)',
+      title: 'Mangkunegaran (Sambernyowo)',
+      desc: 'Formasi Trap foto bersama Laki-Laki & Perempuan di Sambernyowo.',
+      icon: 'account_balance',
+      pages: [8, 9]
+    },
+    {
+      id: 'bungkarno',
+      sesi: 'sesi2',
+      sesiLabel: 'Sesi 2 (Ziarah Utama)',
+      title: 'Makam Bung Karno (Blitar)',
+      desc: 'Formasi Trap foto bersama Umum & Khusus Bung Karno.',
+      icon: 'military_tech',
+      pages: [10, 11]
+    },
+    {
+      id: 'prambanan',
+      sesi: 'sesi3',
+      sesiLabel: 'Sesi 3 (Acara Puncak)',
+      title: 'Prambanan & JM Mungkid',
+      desc: 'Formasi Trap foto bersama di Candi Prambanan & JM Mungkid.',
+      icon: 'temple_hindu',
+      pages: [2]
+    },
+    {
+      id: 'landmarks',
+      sesi: 'sesi3',
+      sesiLabel: 'Sesi 3 (Acara Puncak)',
+      title: 'Benteng, Borobudur, Monas & Istiqlal',
+      desc: 'Formasi Datar foto bersama di Benteng, Borobudur, Syeikh Musa, Bung Hatta, Monas & Istiqlal.',
+      icon: 'location_city',
+      pages: [1]
+    },
+    {
+      id: 'hshf',
+      sesi: 'sesi3',
+      sesiLabel: 'Sesi 3 (Acara Puncak)',
+      title: 'Monumen HSHF (Khusus HSHF)',
+      desc: 'Formasi Datar Khusus HSHF Laki-Laki 1-2 & Perempuan 1-2.',
+      icon: 'stars',
+      pages: [12, 13, 14, 15]
+    }
+  ];
+
+  let currentSesi = 'all';
+  let currentLocId = 'demak';
+
+  const btnAll = document.getElementById('btn-sesi-all');
+  const btnSesi1 = document.getElementById('btn-sesi-1');
+  const btnSesi2 = document.getElementById('btn-sesi-2');
+  const btnSesi3 = document.getElementById('btn-sesi-3');
+  const locationGrid = document.getElementById('location-cards-grid');
+  
+  const viewSesiBadge = document.getElementById('view-sesi-badge');
+  const viewLocationTitle = document.getElementById('view-location-title');
+  const viewLocationDesc = document.getElementById('view-location-desc');
+  const formationContainer = document.getElementById('formation-layout-container');
+  const searchInput = document.getElementById('skema-search-input');
+  const searchResultsBox = document.getElementById('search-results-box');
+
+  function getBadgeClass(name) {
+    const lower = name.toLowerCase();
+    if (lower.includes('ndalem') or lower.includes('syeikh') or lower.includes('maulana')) return 'badge-ndalem';
+    if (lower.includes('pendamping') or lower.includes('pj') or lower.includes('panitia')) return 'badge-pendamping';
+    if (lower.includes('nur') or lower.includes('anita') or lower.includes('dewi') or lower.includes('putri') or lower.includes('siti') or lower.includes('retma') or lower.includes('salma') or lower.includes('ratna') or lower.includes('lili') or lower.includes('fani') or lower.includes('fina')) return 'badge-putri';
+    return 'badge-putra';
+  }
+
+  function renderLocationCards() {
+    const activeClass = 'px-5 py-2 rounded-full text-xs font-bold border transition-all duration-200 bg-secondary text-surface-container-lowest border-secondary shadow-md';
+    const inactiveClass = 'px-5 py-2 rounded-full text-xs font-bold border transition-all duration-200 bg-surface-container text-on-surface-variant border-outline-variant/30 hover:border-secondary/50';
+
+    btnAll.className = currentSesi === 'all' ? activeClass : inactiveClass;
+    btnSesi1.className = currentSesi === 'sesi1' ? activeClass : inactiveClass;
+    btnSesi2.className = currentSesi === 'sesi2' ? activeClass : inactiveClass;
+    btnSesi3.className = currentSesi === 'sesi3' ? activeClass : inactiveClass;
+
+    const filtered = currentSesi === 'all' ? LOCATION_MAP : LOCATION_MAP.filter(l => l.sesi === currentSesi);
+    
+    locationGrid.innerHTML = filtered.map(loc => {
+      const isSelected = loc.id === currentLocId;
+      return `
+        <button type="button" onclick="selectLocation('${loc.id}')" class="p-4 rounded-xl text-left border transition-all duration-200 ${isSelected ? 'bg-secondary/20 border-gold shadow-lg shadow-gold/10' : 'bg-surface-container hover:bg-surface-container-high border-outline-variant/20'} flex items-start gap-3">
+          <div class="w-10 h-10 rounded-lg ${isSelected ? 'bg-gold text-background' : 'bg-surface-container-lowest text-gold'} flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined">${loc.icon}</span>
+          </div>
+          <div>
+            <span class="text-[10px] uppercase font-bold text-primary block mb-0.5">${loc.sesiLabel}</span>
+            <h4 class="font-title-md text-on-surface font-bold leading-snug">${loc.title}</h4>
+            <p class="text-xs text-on-surface-variant line-clamp-2 mt-1">${loc.desc}</p>
+          </div>
+        </button>
+      `;
+    }).join('');
+  }
+
+  function selectLocation(id) {
+    currentLocId = id;
+    renderLocationCards();
+    renderFormationView();
+  }
+
+  function renderFormationView() {
+    const loc = LOCATION_MAP.find(l => l.id === currentLocId) || LOCATION_MAP[0];
+    viewSesiBadge.innerText = loc.sesiLabel.toUpperCase();
+    viewLocationTitle.innerText = loc.title;
+    viewLocationDesc.innerText = loc.desc;
+
+    if (!window.SKEMA_PDF_DATA) {
+      formationContainer.innerHTML = '<p class="text-center text-sm text-on-surface-variant py-8">Memuat data skema PDF...</p>';
+      return;
+    }
+
+    const pagesData = window.SKEMA_PDF_DATA.filter(p => loc.pages.includes(p.page_num));
+    
+    formationContainer.innerHTML = pagesData.map(page => {
+      const titleLine = page.lines.find(l => l.includes('SKEMA')) || `Halaman PDF ${page.page_num}`;
+      const items = page.items || [];
+
+      if (items.length === 0) {
+        return `
+          <div class="p-5 rounded-xl bg-surface-container/60 border border-outline-variant/20 space-y-2">
+            <h4 class="text-sm font-bold text-gold">${titleLine}</h4>
+            <p class="text-xs text-on-surface-variant">Formasi kloter khusus / pendamping.</p>
+          </div>
+        `;
+      }
+
+      const itemGridHTML = items.map(item => {
+        const badgeStyle = getBadgeClass(item.full_name || item.short_name);
+        return `
+          <div class="p-2.5 rounded-lg border text-center text-xs ${badgeStyle} transition-transform hover:scale-105">
+            <span class="font-bold block text-[10px] opacity-80">#${item.num}</span>
+            <span class="font-semibold block truncate mt-0.5">${item.full_name || item.short_name}</span>
+          </div>
+        `;
+      }).join('');
+
+      return `
+        <div class="p-5 rounded-xl bg-surface-container/70 border border-gold/30 space-y-4">
+          <div class="border-b border-surface-variant/40 pb-2 flex items-center justify-between">
+            <h4 class="text-sm font-bold text-gold flex items-center gap-2">
+              <span class="material-symbols-outlined text-[18px]">group</span> ${titleLine}
+            </h4>
+            <span class="text-[11px] font-semibold text-on-surface-variant">${items.length} Peserta Terdaftar</span>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2.5">
+            ${itemGridHTML}
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  // Interactive Name Search across all PDF pages
+  searchInput.addEventListener('input', (e) => {
+    const q = e.target.value.trim().toLowerCase();
+    if (q.length < 2) {
+      searchResultsBox.classList.add('hidden');
+      searchResultsBox.innerHTML = '';
+      return;
+    }
+
+    if (!window.SKEMA_PDF_DATA) return;
+
+    const matches = [];
+    window.SKEMA_PDF_DATA.forEach(page => {
+      (page.items || []).forEach(item => {
+        if ((item.full_name && item.full_name.toLowerCase().includes(q)) || (item.short_name && item.short_name.toLowerCase().includes(q))) {
+          const matchedLoc = LOCATION_MAP.find(l => l.pages.includes(page.page_num)) || LOCATION_MAP[0];
+          matches.append ? matches.append({ item, page, loc: matchedLoc }) : matches.push({ item, page, loc: matchedLoc });
+        }
+      });
+    });
+
+    if (matches.length === 0) {
+      searchResultsBox.classList.remove('hidden');
+      searchResultsBox.innerHTML = '<div class="p-3.5 rounded-xl bg-surface-container border border-outline-variant/30 text-xs text-on-surface-variant text-center">Nama tidak ditemukan dalam skema foto.</div>';
+      return;
+    }
+
+    searchResultsBox.classList.remove('hidden');
+    searchResultsBox.innerHTML = matches.slice(0, 8).map(m => `
+      <button type="button" onclick="selectLocation('${m.loc.id}')" class="w-full p-3 rounded-xl bg-surface-container hover:bg-surface-container-high border border-gold/30 text-left flex items-center justify-between text-xs transition-all">
+        <div>
+          <strong class="text-gold block font-bold text-sm">${m.item.full_name || m.item.short_name}</strong>
+          <span class="text-on-surface-variant">${m.loc.title} (${m.loc.sesiLabel}) — Posisi #${m.item.num}</span>
+        </div>
+        <span class="material-symbols-outlined text-gold">chevron_right</span>
+      </button>
+    `).join('');
+  });
+
+  btnAll.addEventListener('click', () => { currentSesi = 'all'; renderLocationCards(); });
+  btnSesi1.addEventListener('click', () => { currentSesi = 'sesi1'; renderLocationCards(); });
+  btnSesi2.addEventListener('click', () => { currentSesi = 'sesi2'; renderLocationCards(); });
+  btnSesi3.addEventListener('click', () => { currentSesi = 'sesi3'; renderLocationCards(); });
+
+  // Initial load
+  renderLocationCards();
+  setTimeout(() => { renderFormationView(); }, 300);
+</script>
 <script src="../site-navigation.js"></script></body></html>
