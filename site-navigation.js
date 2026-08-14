@@ -6,6 +6,7 @@
     prayer: 'panduan_sholat_musafir_safari_hwmi_mq_12/code.html',
     seats: 'denah_bus_safari_hwmi_mq_12/code.html',
     seatsSesi1: 'denah_tempat_duduk_elf_safari_hwmi_mq_12/code.html',
+    seatsSesi2: 'denah_bus_sesi_2_safari_hwmi_mq_12/code.html',
     seatsSesi3: 'denah_bus_sesi_3_safari_hwmi_mq_12/code.html',
     departure: 'tata_tertib_berangkat_verbatim_safari_hwmi_mq_12/code.html',
     speaking: 'etika_dalam_berbicara_safari_hwmi_mq_12/code.html',

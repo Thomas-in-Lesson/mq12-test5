@@ -1,4 +1,4 @@
-const CACHE_NAME = 'safari-hwmi-mq12-v23';
+const CACHE_NAME = 'safari-hwmi-mq12-v24';
 const ASSETS = [
   './',
   './index.html',
@@ -23,6 +23,7 @@ const ASSETS = [
   './tata_tertib_dark_safari_hwmi_mq_12/code.html',
   './panduan_sholat_musafir_safari_hwmi_mq_12/code.html',
   './denah_bus_safari_hwmi_mq_12/code.html',
+  './denah_bus_sesi_2_safari_hwmi_mq_12/code.html',
   './denah_bus_sesi_3_safari_hwmi_mq_12/code.html',
   './denah_tempat_duduk_elf_safari_hwmi_mq_12/code.html',
   './tata_tertib_berangkat_verbatim_safari_hwmi_mq_12/code.html',
