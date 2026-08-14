@@ -53,9 +53,9 @@
   
   <!-- Header Title -->
   <section class="text-center space-y-2">
-    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/15 border border-gold/30 text-gold text-xs font-bold">
-      <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-      <span>NAVIGASI PETAK ZIARAH & TRANSIT</span>
+    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold/15 border border-gold/30 text-gold text-xs font-bold whitespace-nowrap">
+      <svg class="w-4 h-4 text-gold shrink-0" fill="#E0B863" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+      <span class="whitespace-nowrap">PETA RUTE SAFARI</span>
     </div>
     <h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg text-secondary font-bold">
       PETA RUTE PERJALANAN
@@ -68,15 +68,15 @@
   <!-- Tab Sesi Switcher (Professional Minimalist Pill Buttons) -->
   <section class="flex justify-center">
     <div class="inline-flex p-1.5 rounded-2xl bg-surface-container border border-gold/40 shadow-lg gap-2 flex-wrap justify-center">
-      <button id="btn-sesi-1" onclick="switchSesi('sesi1')" type="button" class="px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition-all bg-secondary text-surface-container-lowest shadow-md">
+      <button id="btn-sesi-1" onclick="switchSesi('sesi1')" type="button" class="px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition-all bg-secondary text-surface-container-lowest shadow-md whitespace-nowrap">
         <span>SESI 1</span>
         <span class="w-2 h-2 rounded-full bg-green-400"></span>
       </button>
-      <button id="btn-sesi-2" onclick="switchSesi('sesi2')" type="button" class="px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition-all text-gold hover:bg-gold/10">
+      <button id="btn-sesi-2" onclick="switchSesi('sesi2')" type="button" class="px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition-all text-gold hover:bg-gold/10 whitespace-nowrap">
         <span>SESI 2</span>
         <span class="px-1.5 py-0.5 rounded bg-gold/20 text-[9px] font-bold">Segera</span>
       </button>
-      <button id="btn-sesi-3" onclick="switchSesi('sesi3')" type="button" class="px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition-all text-gold hover:bg-gold/10">
+      <button id="btn-sesi-3" onclick="switchSesi('sesi3')" type="button" class="px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition-all text-gold hover:bg-gold/10 whitespace-nowrap">
         <span>SESI 3</span>
         <span class="px-1.5 py-0.5 rounded bg-gold/20 text-[9px] font-bold">Segera</span>
       </button>
@@ -87,16 +87,16 @@
   <section class="bg-surface-container-low rounded-2xl p-4 md:p-6 card-inner-glow border border-gold/30 shadow-2xl space-y-4">
     
     <!-- Top Action Toolbar -->
-    <div class="flex items-center justify-between gap-3 flex-wrap border-b border-surface-variant/40 pb-3">
-      <div class="flex items-center gap-2">
-        <svg class="w-5 h-5 fill-current text-gold" viewBox="0 0 24 24"><path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"/></svg>
-        <h2 id="sesi-map-title" class="text-sm md:text-base font-bold text-white">Rute Safari Sesi 1</h2>
+    <div class="flex items-center justify-between gap-2 border-b border-surface-variant/40 pb-3">
+      <div class="flex items-center gap-2 min-w-0">
+        <svg class="w-5 h-5 text-gold shrink-0" fill="#E0B863" viewBox="0 0 24 24"><path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"/></svg>
+        <h2 id="sesi-map-title" class="text-xs md:text-base font-bold text-white whitespace-nowrap truncate">Rute Safari Sesi 1</h2>
       </div>
       
-      <div id="sesi-action-buttons" class="flex items-center gap-2">
-        <a id="btn-open-maps" href="https://www.google.com/maps/d/edit?mid=1Ph0Sufcfky7gAJNmb0r8O_82phz4W3M&usp=sharing" target="_blank" rel="noopener" class="px-3.5 py-2 rounded-xl bg-gold/20 text-gold border border-gold/40 text-xs font-bold hover:bg-gold hover:text-surface-container-lowest transition-all flex items-center gap-1.5">
-          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
-          <span>Buka Google Maps App</span>
+      <div id="sesi-action-buttons" class="shrink-0">
+        <a id="btn-open-maps" href="https://www.google.com/maps/d/edit?mid=1Ph0Sufcfky7gAJNmb0r8O_82phz4W3M&usp=sharing" target="_blank" rel="noopener" class="px-3 py-1.5 rounded-xl bg-gold/20 text-gold border border-gold/40 text-xs font-bold hover:bg-gold hover:text-surface-container-lowest transition-all flex items-center gap-1.5 whitespace-nowrap">
+          <svg class="w-4 h-4 text-gold shrink-0" fill="#E0B863" viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+          <span class="whitespace-nowrap">Buka Maps App</span>
         </a>
       </div>
     </div>
