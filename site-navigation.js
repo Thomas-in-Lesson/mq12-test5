@@ -374,18 +374,47 @@
       visibility: visible;
     }
 
-    /* Strict Autocomplete dropdown (HIGH CONTRAST PURE WHITE TEXT) */
+    /* Focus Mode Backdrop & Blur Dimming for Name Typing */
+    .personal-typing-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 9990;
+      background: rgba(13, 3, 3, 0.85);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.25s ease, visibility 0.25s ease;
+    }
+    body.is-typing-name .personal-typing-backdrop {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    body.is-typing-name #personal-card-box {
+      position: relative !important;
+      z-index: 10000 !important;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.95), 0 0 30px rgba(224, 184, 99, 0.4) !important;
+    }
+    body.is-typing-name main > section:not(#personal-card-box) {
+      filter: blur(4px) opacity(0.35);
+      transition: filter 0.25s ease, opacity 0.25s ease;
+      pointer-events: none;
+    }
+
+    /* Strict Autocomplete dropdown (ELEVATED Z-INDEX & HIGH CONTRAST) */
     .personal-autocomplete-box {
       position: absolute !important;
       left: 0 !important; right: 0 !important; top: 100% !important;
-      margin-top: 6px !important;
-      z-index: 99999 !important;
-      background: #200505 !important;
+      margin-top: 8px !important;
+      z-index: 10005 !important;
+      background: #1F0505 !important;
       border: 1.5px solid #E0B863 !important;
-      border-radius: 14px !important;
-      max-height: 240px !important;
+      border-radius: 16px !important;
+      max-height: 260px !important;
       overflow-y: auto !important;
-      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.95) !important;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.95) !important;
       display: none;
     }
     .personal-autocomplete-box.is-open { display: block !important; }
@@ -401,7 +430,7 @@
     }
     .personal-autocomplete-item:last-child { border-bottom: none !important; }
     .personal-autocomplete-item:hover, .personal-autocomplete-item:active {
-      background: rgba(224, 184, 99, 0.25) !important;
+      background: rgba(224, 184, 99, 0.3) !important;
       color: #E0B863 !important;
     }
 
@@ -1357,7 +1386,34 @@
       nameInput.parentNode.appendChild(autoBox);
     }
 
+    // Typing Backdrop for Focus Blur Mode
+    let typingBackdrop = document.querySelector('.personal-typing-backdrop');
+    if (!typingBackdrop) {
+      typingBackdrop = document.createElement('div');
+      typingBackdrop.className = 'personal-typing-backdrop';
+      document.body.appendChild(typingBackdrop);
+    }
+
+    const openFocusMode = () => {
+      document.body.classList.add('is-typing-name');
+    };
+
+    const closeFocusMode = () => {
+      document.body.classList.remove('is-typing-name');
+      if (autoBox) autoBox.classList.remove('is-open');
+    };
+
+    nameInput.addEventListener('focus', openFocusMode);
+    typingBackdrop.addEventListener('click', closeFocusMode);
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('#personal-card-box') && !e.target.closest('.personal-autocomplete-box')) {
+        closeFocusMode();
+      }
+    });
+
     const renderCanonicalProfile = (entry) => {
+      closeFocusMode();
       displayName.textContent = entry.name;
 
       // Satu baris per sesi (B-7, D-3). Sesi 2 belum punya denah, jadi ditulis
