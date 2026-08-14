@@ -374,18 +374,16 @@
       visibility: visible;
     }
 
-    /* Focus Mode Backdrop & Blur Dimming for Name Typing */
+    /* Focus Mode Overlay for Name Typing */
     .personal-typing-backdrop {
       position: fixed;
       inset: 0;
       z-index: 9990;
-      background: rgba(13, 3, 3, 0.85);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
+      background: rgba(13, 3, 3, 0.75);
       opacity: 0;
       visibility: hidden;
       pointer-events: none;
-      transition: opacity 0.25s ease, visibility 0.25s ease;
+      transition: opacity 0.2s ease, visibility 0.2s ease;
     }
     body.is-typing-name .personal-typing-backdrop {
       opacity: 1;
@@ -396,11 +394,6 @@
       position: relative !important;
       z-index: 10000 !important;
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.95), 0 0 30px rgba(224, 184, 99, 0.4) !important;
-    }
-    body.is-typing-name main > section:not(#personal-card-box) {
-      filter: blur(4px) opacity(0.35);
-      transition: filter 0.25s ease, opacity 0.25s ease;
-      pointer-events: none;
     }
 
     /* Strict Autocomplete dropdown (ELEVATED Z-INDEX & HIGH CONTRAST) */
@@ -1395,7 +1388,8 @@
     }
 
     const openFocusMode = () => {
-      document.body.classList.add('is-typing-name');
+      const box = document.getElementById('personal-card-box');
+      if (box) document.body.classList.add('is-typing-name');
     };
 
     const closeFocusMode = () => {
@@ -1403,7 +1397,7 @@
       if (autoBox) autoBox.classList.remove('is-open');
     };
 
-    nameInput.addEventListener('focus', openFocusMode);
+    closeFocusMode();
     typingBackdrop.addEventListener('click', closeFocusMode);
 
     document.addEventListener('click', (e) => {
@@ -1532,7 +1526,7 @@
       const val = nameInput.value.trim();
       const normV = normalizeInputName(val);
       if (normV.length < 2) {
-        autoBox.classList.remove('is-open');
+        closeFocusMode();
         return;
       }
       const data = await loadPesertaData();
@@ -1551,8 +1545,9 @@
       if (matches.length > 0) {
         autoBox.innerHTML = matches.map(m => `<div class="personal-autocomplete-item" data-name="${m.name}">${m.name}</div>`).join('');
         autoBox.classList.add('is-open');
+        openFocusMode();
       } else {
-        autoBox.classList.remove('is-open');
+        closeFocusMode();
       }
     });
 
