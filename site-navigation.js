@@ -81,9 +81,9 @@
       width: min(340px, calc(100vw - 32px));
       padding: 20px 16px 32px;
       overflow-y: auto;
-      background: var(--c-surface-lowest);
-      border-right: 1px solid var(--c-outline-variant);
-      box-shadow: 12px 0 36px rgba(0,0,0,0.5);
+      background: linear-gradient(180deg, #2D0808 0%, #150303 100%) !important;
+      border-right: 1px solid rgba(224, 184, 99, 0.3) !important;
+      box-shadow: 12px 0 36px rgba(0,0,0,0.85) !important;
       transform: translateX(-104%);
       transition: transform .25s ease;
     }
@@ -97,35 +97,44 @@
       justify-content: space-between;
       margin-bottom: 18px;
       padding-bottom: 14px;
-      border-bottom: 1px solid var(--c-outline-variant);
+      border-bottom: 1px solid rgba(224, 184, 99, 0.25) !important;
     }
-    .site-menu-title { margin: 0; color: var(--c-on-surface); font: 700 20px serif; }
+    .site-menu-title { margin: 0; color: #FFFFFF !important; font: 700 20px "Noto Serif", serif !important; }
     .site-menu-close {
       width: 34px; height: 34px;
       display: grid; place-items: center;
-      border: 1px solid var(--c-outline-variant); border-radius: 6px;
-      background: var(--c-surface-container); color: var(--c-primary);
+      border: 1px solid rgba(224, 184, 99, 0.4) !important; border-radius: 6px;
+      background: rgba(56, 21, 16, 0.8) !important; color: #E0B863 !important;
       font-size: 20px; cursor: pointer;
     }
 
-    .site-menu-list { display: grid; gap: 6px; }
+    .site-menu-list { display: grid; gap: 8px; }
     .site-menu-item {
       display: grid;
       grid-template-columns: 32px 1fr;
       gap: 10px;
       align-items: center;
-      padding: 10px 12px;
-      border: 1px solid transparent;
-      border-radius: 8px;
-      color: var(--c-on-surface);
+      padding: 11px 13px;
+      border: 1px solid rgba(224, 184, 99, 0.2) !important;
+      border-radius: 10px;
+      background: rgba(56, 21, 16, 0.6) !important;
+      color: #FFFFFF !important;
       text-decoration: none;
       cursor: pointer;
+      transition: background 0.15s ease, border-color 0.15s ease;
     }
-    .site-menu-item:hover, .site-menu-item.is-active { border-color: var(--c-outline-variant); background: var(--c-surface-container); }
-    .site-menu-item.is-active { background: var(--c-primary-container); border-color: var(--c-primary); color: var(--c-primary); }
-    .site-menu-item .material-symbols-outlined { color: var(--c-primary); font-size: 22px; }
-    .site-menu-item strong { display: block; font: 600 13px sans-serif; }
-    .site-menu-item small { display: block; margin-top: 2px; color: var(--c-on-surface-variant); font: 400 11px sans-serif; }
+    .site-menu-item:hover { border-color: #E0B863 !important; background: rgba(85, 0, 0, 0.6) !important; }
+    .site-menu-item.is-active {
+      background: linear-gradient(135deg, #C21A03 0%, #900B0B 100%) !important;
+      border-color: #FFFFFF !important;
+      color: #FFFFFF !important;
+      box-shadow: 0 4px 14px rgba(194, 26, 3, 0.5) !important;
+    }
+    .site-menu-item .material-symbols-outlined { color: #E0B863 !important; font-size: 22px !important; }
+    .site-menu-item.is-active .material-symbols-outlined { color: #FFFFFF !important; }
+    .site-menu-item strong { display: block; color: #FFFFFF !important; font: 700 13px "Plus Jakarta Sans", sans-serif !important; }
+    .site-menu-item small { display: block; margin-top: 2px; color: #DEC0BB !important; font: 500 11px "Plus Jakarta Sans", sans-serif !important; }
+    .site-menu-item.is-active small { color: #FFDAD4 !important; }
 
     /* Compact Bullet SOS FAB Button */
     .site-sos-bullet {
