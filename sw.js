@@ -1,4 +1,4 @@
-const CACHE_NAME = 'safari-hwmi-mq12-v13';
+const CACHE_NAME = 'safari-hwmi-mq12-v14';
 const ASSETS = [
   './',
   './index.html',
