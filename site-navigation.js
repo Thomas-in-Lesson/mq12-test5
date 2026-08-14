@@ -420,32 +420,35 @@
       }
 
       .site-bottom-nav {
-        position: fixed;
-        bottom: 0; left: 0; right: 0;
-        z-index: 9990;
-        height: calc(60px + env(safe-area-inset-bottom, 0px));
-        padding-bottom: env(safe-area-inset-bottom, 0px);
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        background: rgba(22,5,3,0.97);
-        border-top: 1px solid var(--c-outline-variant);
-        box-shadow: 0 -4px 20px rgba(0,0,0,0.5);
-        backdrop-filter: blur(16px);
-      }
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 9990;
+  height: calc(64px + env(safe-area-inset-bottom, 0px));
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(0deg, rgba(18, 4, 4, 0.96) 0%, rgba(48, 10, 10, 0.9) 100%) !important;
+  border-top: 1.5px solid rgba(224, 184, 99, 0.35) !important;
+  box-shadow: 0 -6px 24px rgba(0,0,0,0.6) !important;
+  backdrop-filter: blur(18px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(180%) !important;
+}
 
       .site-bottom-nav-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        color: var(--c-on-surface-variant);
-        text-decoration: none;
-        font: 500 10px sans-serif;
-        gap: 2px;
-        padding: 4px 8px;
-        border: 0; background: transparent;
-      }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.88) !important;
+  text-decoration: none !important;
+  font: 600 11px -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", sans-serif !important;
+  gap: 3px;
+  padding: 5px 12px;
+  border-radius: 12px;
+  border: 0; background: transparent;
+  transition: all 0.2s ease !important;
+}
       .site-bottom-nav-item.is-active, .site-bottom-nav-item:hover { color: var(--c-primary); font-weight: 700; }
       .site-bottom-nav-item .material-symbols-outlined { font-size: 22px; }
 
