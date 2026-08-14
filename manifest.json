@@ -4,8 +4,8 @@
   "description": "Panduan Resmi Safari Chubbul Wathon Minal Iman 12",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#3B0D1B",
-  "theme_color": "#3B0D1B",
+  "background_color": "#1C0505",
+  "theme_color": "#1C0505",
   "orientation": "portrait",
   "scope": "./",
   "icons": [

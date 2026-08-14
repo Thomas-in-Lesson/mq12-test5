@@ -1,25 +1,56 @@
 
 :root {
-  --c-surface:              59 13 27;
-  --c-surface-lowest:       42 8 18;
-  --c-surface-low:          70 15 32;
-  --c-surface-container:    82 19 38;
-  --c-surface-high:         97 23 45;
-  --c-surface-variant:     115 32 58;
-  --c-outline:             192 144 152;
-  --c-outline-variant:     122 46 69;
-  --c-on-surface:          253 246 247;
-  --c-on-surface-variant:  235 211 216;
-  --c-primary:             227 183 95;
-  --c-on-primary:           42 8 18;
-  --c-primary-container:   110 18 48;
-  --c-on-primary-container:255 217 224;
-  --c-secondary:           242 200 208;
+  --c-surface-lowest:      20  3  3;
+  --c-surface:             28  5  5;
+  --c-surface-low:         38  7  7;
+  --c-surface-container:   51  9  9;
+  --c-surface-high:        69 11 11;
+  --c-surface-variant:     92 12 12;
+  --c-burgundy:           121 13 13;
+  --c-crimson:            194 26  3;
+  --c-gold:               224 184 99;
+  --c-gold-deep:          185 140 52;
+  --c-on-surface:         255 255 255;
+  --c-on-surface-variant: 232 213 211;
+  --c-outline:            176 138 136;
+  --c-outline-variant:    107  42  42;
+  --c-on-gold:             28  5   5;
+  --c-on-crimson:         255 255 255;
+  --c-primary:            224 184 99;
+  --c-primary-container:  194 26  3;
+  --c-secondary:          232 213 211;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 button, a, .room-card {
   -webkit-tap-highlight-color: transparent;
 }
+
+.t-large-title { font-size:34px; line-height:41px; font-weight:700; letter-spacing:-0.4px; }
+.t-title-1     { font-size:28px; line-height:34px; font-weight:700; letter-spacing:-0.3px; }
+.t-title-2     { font-size:22px; line-height:28px; font-weight:600; letter-spacing:-0.2px; }
+.t-title-3     { font-size:20px; line-height:25px; font-weight:600; letter-spacing:-0.1px; }
+.t-headline    { font-size:17px; line-height:22px; font-weight:600; letter-spacing:-0.1px; }
+.t-body        { font-size:17px; line-height:22px; font-weight:400; letter-spacing:0; }
+.t-callout     { font-size:16px; line-height:21px; font-weight:400; letter-spacing:0; }
+.t-subhead     { font-size:15px; line-height:20px; font-weight:400; letter-spacing:0; }
+.t-footnote    { font-size:13px; line-height:18px; font-weight:400; letter-spacing:0.1px; }
+.t-caption     { font-size:12px; line-height:16px; font-weight:400; letter-spacing:0.2px; }
+.t-caption-2   { font-size:11px; line-height:13px; font-weight:500; letter-spacing:0.3px; }
+
+.prose-block { max-width: 68ch; }
+.tabular { font-variant-numeric: tabular-nums; font-feature-settings: 'tnum'; }
+.bg-burgundy { background-color: rgb(var(--c-burgundy)); }
+.bg-crimson { background-color: rgb(var(--c-crimson)); }
+.text-crimson { color: rgb(var(--c-crimson)); }
+.text-gold { color: rgb(var(--c-gold)); }
+.border-gold { border-color: rgb(var(--c-gold)); }
 
 /* Font di-host sendiri: subset latin + latin-ext saja. */
 @font-face {
