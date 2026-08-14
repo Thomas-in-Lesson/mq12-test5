@@ -183,22 +183,22 @@
       max-height: 85vh;
       display: flex;
       flex-direction: column;
-      background: var(--c-surface-container);
-      border: 1px solid var(--c-outline-variant);
+      background: #250707 !important;
+      border: 1.5px solid #E0B863 !important;
       border-radius: 20px;
       padding: 20px;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.6);
-      color: var(--c-on-surface);
-      font-family: sans-serif;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.95);
+      color: #FFFFFF !important;
+      font-family: -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", sans-serif;
     }
     .site-sos-close {
       position: absolute;
       top: 14px; right: 14px;
-      width: 30px; height: 30px;
+      width: 32px; height: 32px;
       display: grid; place-items: center;
-      border: 1px solid var(--c-outline-variant); border-radius: 50%;
-      background: var(--c-surface-high); color: var(--c-primary);
-      font-size: 18px; cursor: pointer;
+      border: 1px solid rgba(224, 184, 99, 0.5) !important; border-radius: 50%;
+      background: rgba(60, 15, 15, 0.9) !important; color: #E0B863 !important;
+      font-size: 20px; cursor: pointer;
     }
     .site-sos-header {
       display: flex;
@@ -206,11 +206,11 @@
       gap: 12px;
       padding-bottom: 14px;
       margin-bottom: 12px;
-      border-bottom: 1px solid var(--c-outline-variant);
+      border-bottom: 1px solid rgba(224, 184, 99, 0.3) !important;
       shrink: 0;
     }
-    .site-sos-header h3 { margin: 0; font: 700 16px sans-serif; color: var(--c-on-surface); }
-    .site-sos-header p { margin: 2px 0 0; font: 400 11px sans-serif; color: var(--c-on-surface-variant); }
+    .site-sos-header h3 { margin: 0; font: 700 16px sans-serif; color: #FFFFFF !important; }
+    .site-sos-header p { margin: 2px 0 0; font: 400 11px sans-serif; color: #E0B863 !important; }
 
     .site-sos-tabs {
       display: flex;
@@ -220,19 +220,19 @@
     }
     .site-sos-tab-btn {
       flex: 1;
-      padding: 6px 12px;
-      border-radius: 8px;
-      border: 1px solid var(--c-outline-variant);
-      background: var(--c-surface-container);
-      color: var(--c-on-surface-variant);
-      font: 600 11px sans-serif;
+      padding: 8px 12px;
+      border-radius: 10px;
+      border: 1px solid rgba(224, 184, 99, 0.4) !important;
+      background: rgba(42, 10, 10, 0.8) !important;
+      color: #E0B863 !important;
+      font: 700 12px sans-serif;
       cursor: pointer;
       text-align: center;
     }
     .site-sos-tab-btn.is-active {
-      background: var(--c-primary-container);
-      border-color: var(--c-primary);
-      color: var(--c-primary);
+      background: #E0B863 !important;
+      border-color: #E0B863 !important;
+      color: #1A0505 !important;
     }
 
     .site-sos-list {
@@ -243,37 +243,37 @@
       flex: 1;
     }
     .site-sos-section-title {
-      font: 700 11px sans-serif;
-      color: var(--c-primary);
+      font: 700 12px sans-serif;
+      color: #E0B863 !important;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      margin-top: 6px;
-      margin-bottom: 2px;
+      margin-top: 8px;
+      margin-bottom: 4px;
     }
     .site-sos-item {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 8px 10px;
-      background: var(--c-surface-container);
-      border: 1px solid var(--c-outline-variant);
-      border-radius: 10px;
+      padding: 10px 12px;
+      background: rgba(42, 10, 10, 0.8) !important;
+      border: 1px solid rgba(224, 184, 99, 0.3) !important;
+      border-radius: 12px;
     }
     .site-sos-item-info { display: flex; align-items: center; gap: 8px; }
-    .site-sos-item-info strong { display: block; font: 600 12px sans-serif; color: var(--c-on-surface); }
-    .site-sos-item-info span { display: block; font: 400 10px sans-serif; color: var(--c-on-surface-variant); }
+    .site-sos-item-info strong { display: block; font: 700 13px -apple-system, BlinkMacSystemFont, sans-serif !important; color: #FFFFFF !important; }
+    .site-sos-item-info span { display: block; font: 500 11px -apple-system, BlinkMacSystemFont, sans-serif !important; color: #E0B863 !important; }
     .site-sos-actions { display: flex; gap: 6px; shrink: 0; }
     .site-sos-act-btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 5px 9px;
+      padding: 6px 11px;
       border-radius: 999px;
-      font: 700 10px sans-serif;
+      font: 700 11px sans-serif;
       text-decoration: none;
     }
-    .site-sos-act-wa { background: #1b4d2e; border: 1px solid #2e7d48; color: #7be495; }
-    .site-sos-act-call { background: #4d3800; border: 1px solid #7a5900; color: var(--c-primary); }
+    .site-sos-act-wa { background: #1b4d2e; border: 1px solid #2e7d48; color: #7be495 !important; }
+    .site-sos-act-call { background: #4d3800; border: 1px solid #7a5900; color: #E0B863 !important; }
 
     /* Top Navigation Bar Base */
     .site-mobile-bar {
@@ -283,9 +283,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(180deg, rgba(58, 14, 14, 0.78) 0%, rgba(13, 3, 3, 0.65) 100%) !important;
+  background: linear-gradient(180deg, rgba(58, 14, 14, 0.95) 0%, rgba(13, 3, 3, 0.85) 100%) !important;
   border-bottom: 1px solid rgba(224, 184, 99, 0.3) !important;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.4) !important;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.6) !important;
   backdrop-filter: blur(16px) saturate(180%) !important;
   -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
 }
@@ -298,7 +298,8 @@
       transform: translate(-50%, -50%);
       text-align: center;
       pointer-events: none !important;
-      width: max-content;
+      max-width: calc(100vw - 110px);
+      overflow: hidden;
     }
     .site-header-center-title span {
   display: block;
@@ -307,8 +308,16 @@
   font-weight: 700 !important;
   text-transform: uppercase !important;
   white-space: nowrap !important;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 12px rgba(248, 224, 136, 0.35) !important;
+  font-size: 11px !important;
+  letter-spacing: 0.02em !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9), 0 0 10px rgba(248, 224, 136, 0.35) !important;
 }
+    @media (max-width: 380px) {
+      .site-header-center-title span {
+        font-size: 9.5px !important;
+        letter-spacing: 0.01em !important;
+      }
+    }
 
     /* Sleek Glowing Lamp Symbol Badge Button */
     .site-offline-badge {
@@ -365,31 +374,36 @@
       visibility: visible;
     }
 
-    /* Strict P0-1 Autocomplete dropdown (NAME ONLY - No Room Leakage) */
+    /* Strict Autocomplete dropdown (HIGH CONTRAST PURE WHITE TEXT) */
     .personal-autocomplete-box {
-      position: absolute;
-      left: 0; right: 0; top: 100%;
-      margin-top: 4px;
-      z-index: 99;
-      background: var(--c-surface-container);
-      border: 1px solid var(--c-outline-variant);
-      border-radius: 12px;
-      max-height: 200px;
-      overflow-y: auto;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+      position: absolute !important;
+      left: 0 !important; right: 0 !important; top: 100% !important;
+      margin-top: 6px !important;
+      z-index: 99999 !important;
+      background: #200505 !important;
+      border: 1.5px solid #E0B863 !important;
+      border-radius: 14px !important;
+      max-height: 240px !important;
+      overflow-y: auto !important;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.95) !important;
       display: none;
     }
-    .personal-autocomplete-box.is-open { display: block; }
+    .personal-autocomplete-box.is-open { display: block !important; }
     .personal-autocomplete-item {
-      padding: 10px 14px;
-      border-bottom: 1px solid var(--c-outline-variant);
-      cursor: pointer;
-      color: var(--c-on-surface);
-      font-size: 13px;
-      font-weight: 600;
+      padding: 12px 16px !important;
+      border-bottom: 1px solid rgba(224, 184, 99, 0.2) !important;
+      cursor: pointer !important;
+      color: #FFFFFF !important;
+      font-size: 14px !important;
+      font-weight: 700 !important;
+      background: transparent !important;
+      transition: background 0.15s ease, color 0.15s ease !important;
     }
-    .personal-autocomplete-item:last-child { border-bottom: 0; }
-    .personal-autocomplete-item:hover { background: var(--c-surface-high); color: var(--c-primary); }
+    .personal-autocomplete-item:last-child { border-bottom: none !important; }
+    .personal-autocomplete-item:hover, .personal-autocomplete-item:active {
+      background: rgba(224, 184, 99, 0.25) !important;
+      color: #E0B863 !important;
+    }
 
     /* ========================================================= */
     /* MOBILE DEVICE STYLES (screen width <= 768px)              */
