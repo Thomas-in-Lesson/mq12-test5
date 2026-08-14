@@ -11,24 +11,25 @@
 <link rel="apple-touch-icon" href="../icon-180.png">
 <link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="manifest" href="../manifest.json">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
 <title>Skema Foto Bersama - Safari HWMI MQ 12</title>
 <link rel="stylesheet" href="../styles.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 <style>
   .comic-wrapper {
-    touch-action: pan-x pan-y;
+    touch-action: pan-x pan-y pinch-zoom;
   }
   .pdf-canvas-card {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
     border: 1px solid rgba(224, 184, 99, 0.3);
+    touch-action: pan-x pan-y pinch-zoom;
   }
 </style>
 </head>
 <body class="bg-background text-on-surface antialiased min-h-screen flex flex-col pb-24 md:pb-0">
 <header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-surface-variant/30 shadow-sm flex items-center justify-between px-margin-mobile h-16 md:hidden">
 <button aria-label="Go back" onclick="window.history.back()" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-surface-variant/50 text-primary">
-<span class="material-symbols-outlined">arrow_back</span>
+<svg class="w-6 h-6 fill-current text-primary" viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
 </button>
 <div class="font-headline-md-mobile text-headline-md-mobile font-bold text-secondary flex-1 text-center">
             Skema Foto Bersama
@@ -37,36 +38,36 @@
 </header>
 
 <main class="flex-1 w-full max-w-6xl mx-auto pt-20 px-2 md:px-margin-desktop md:pt-32 space-y-4">
-<!-- Minimalist Header & Control Bar -->
+<!-- Minimalist Header & Control Bar with Pure SVG Icons -->
 <section class="flex items-center justify-between bg-surface-container-low p-3 md:p-4 rounded-2xl border border-gold/40 shadow-xl flex-wrap gap-3">
-  <div>
-    <h1 class="font-title-lg md:font-headline-md font-bold text-secondary flex items-center gap-2">
-      <span class="material-symbols-outlined text-gold text-[22px]">auto_stories</span>
-      <span>SKEMA FOTO BERSAMA SAFARI HWMI MQ 12</span>
-    </h1>
-    <p class="text-xs text-on-surface-variant mt-0.5">Dokumen Resmi Terbaru (15 Agustus 2026) — Mode Pembaca Komik</p>
+  <div class="flex items-center gap-2.5">
+    <svg class="w-6 h-6 fill-current text-gold shrink-0" viewBox="0 0 24 24"><path d="M19 2H5c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 18H5V4h14v16z"/></svg>
+    <div>
+      <h1 class="font-title-lg md:font-headline-md font-bold text-secondary">SKEMA FOTO BERSAMA SAFARI HWMI MQ 12</h1>
+      <p class="text-xs text-on-surface-variant mt-0.5">Dokumen Resmi Terbaru (15 Agustus 2026) — Mode Pembaca Komik (Dapat Zoom 2 Jari)</p>
+    </div>
   </div>
 
-  <!-- Minimalist Icon Action Toolbar -->
+  <!-- Minimalist SVG Icon Toolbar (Zero Text Fallbacks) -->
   <div class="flex items-center gap-2">
-    <button type="button" onclick="zoomOut()" class="w-9 h-9 rounded-full bg-surface-container border border-gold/40 text-gold flex items-center justify-center hover:bg-gold/20 transition-all" title="Perkecil">
-      <span class="material-symbols-outlined text-[18px]">zoom_out</span>
+    <button type="button" onclick="zoomOut()" class="w-10 h-10 rounded-full bg-surface-container border border-gold/40 text-gold flex items-center justify-center hover:bg-gold/20 transition-all" title="Perkecil">
+      <svg class="w-5 h-5 fill-current text-gold" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zM7 9h5v1H7z"/></svg>
     </button>
-    <span id="zoom-level-badge" class="text-xs font-bold text-gold px-1.5 py-0.5 rounded bg-gold/10 border border-gold/30">100%</span>
-    <button type="button" onclick="zoomIn()" class="w-9 h-9 rounded-full bg-surface-container border border-gold/40 text-gold flex items-center justify-center hover:bg-gold/20 transition-all" title="Perbesar">
-      <span class="material-symbols-outlined text-[18px]">zoom_in</span>
+    <span id="zoom-level-badge" class="text-xs font-bold text-gold px-2 py-1 rounded bg-gold/10 border border-gold/30">100%</span>
+    <button type="button" onclick="zoomIn()" class="w-10 h-10 rounded-full bg-surface-container border border-gold/40 text-gold flex items-center justify-center hover:bg-gold/20 transition-all" title="Perbesar">
+      <svg class="w-5 h-5 fill-current text-gold" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zm-2.5-4h2v-2h1v2h2v1h-2v2h-1v-2h-2v-1z"/></svg>
     </button>
-    <button type="button" onclick="resetZoom()" class="w-9 h-9 rounded-full bg-surface-container border border-gold/40 text-gold flex items-center justify-center hover:bg-gold/20 transition-all" title="Reset Zoom">
-      <span class="material-symbols-outlined text-[18px]">restart_alt</span>
+    <button type="button" onclick="resetZoom()" class="w-10 h-10 rounded-full bg-surface-container border border-gold/40 text-gold flex items-center justify-center hover:bg-gold/20 transition-all" title="Reset Zoom">
+      <svg class="w-5 h-5 fill-current text-gold" viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
     </button>
 
     <div class="w-px h-6 bg-surface-variant/40 mx-1"></div>
 
-    <a href="../skema-foto-terbaru.pdf" download="Skema_Foto_Safari_MQ12_15_Agustus_2026.pdf" class="w-9 h-9 rounded-full bg-secondary text-surface-container-lowest flex items-center justify-center hover:bg-secondary/90 transition-all" title="Unduh PDF">
-      <span class="material-symbols-outlined text-[18px]">download</span>
+    <a href="../skema-foto-terbaru.pdf" download="Skema_Foto_Safari_MQ12_15_Agustus_2026.pdf" class="w-10 h-10 rounded-full bg-secondary text-surface-container-lowest flex items-center justify-center hover:bg-secondary/90 shadow-md transition-all" title="Unduh PDF">
+      <svg class="w-5 h-5 fill-current text-background" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
     </a>
-    <a href="../skema-foto-terbaru.pdf" target="_blank" class="w-9 h-9 rounded-full bg-surface-container border border-gold/40 text-gold flex items-center justify-center hover:bg-gold/20 transition-all" title="Buka Tab Baru">
-      <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+    <a href="../skema-foto-terbaru.pdf" target="_blank" class="w-10 h-10 rounded-full bg-surface-container border border-gold/40 text-gold flex items-center justify-center hover:bg-gold/20 transition-all" title="Buka Tab Baru">
+      <svg class="w-5 h-5 fill-current text-gold" viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
     </a>
   </div>
 </section>
@@ -79,7 +80,7 @@
   </div>
 </section>
 
-<!-- Embedded Fallback Container (Displayed if JS or PDF.js is restricted) -->
+<!-- Embedded Fallback Container -->
 <section id="pdf-fallback-container" class="w-full hidden">
   <object data="../skema-foto-terbaru.pdf#toolbar=1" type="application/pdf" class="w-full h-[80vh] rounded-2xl border border-gold/40 shadow-2xl">
     <iframe src="../skema-foto-terbaru.pdf#toolbar=1" class="w-full h-[80vh] rounded-2xl border-0">
@@ -115,7 +116,7 @@
         const viewport = page.getViewport({ scale: currentScale });
 
         const card = document.createElement('div');
-        card.className = 'w-full pdf-canvas-card rounded-xl overflow-hidden bg-white mb-4 relative transition-transform duration-150 flex flex-col items-center';
+        card.className = 'w-full pdf-canvas-card rounded-xl overflow-hidden bg-white mb-4 relative transition-all duration-150 flex flex-col items-center';
 
         const pageBadge = document.createElement('div');
         pageBadge.className = 'absolute top-2 right-2 z-10 px-2.5 py-1 rounded-full bg-black/70 text-gold text-[10px] font-bold border border-gold/30 pointer-events-none';
@@ -143,15 +144,15 @@
   }
 
   function zoomIn() {
-    if (currentScale < 2.5) {
-      currentScale += 0.2;
+    if (currentScale < 3.0) {
+      currentScale += 0.25;
       renderComicView();
     }
   }
 
   function zoomOut() {
-    if (currentScale > 0.6) {
-      currentScale -= 0.2;
+    if (currentScale > 0.5) {
+      currentScale -= 0.25;
       renderComicView();
     }
   }
@@ -160,6 +161,42 @@
     currentScale = 1.15;
     renderComicView();
   }
+
+  // 2-Finger Mobile Pinch-To-Zoom Touch Event Handler
+  let initialPinchDist = 0;
+  let initialScale = currentScale;
+
+  container.addEventListener('touchstart', (e) => {
+    if (e.touches.length === 2) {
+      initialPinchDist = Math.hypot(
+        e.touches[0].pageX - e.touches[1].pageX,
+        e.touches[0].pageY - e.touches[1].pageY
+      );
+      initialScale = currentScale;
+    }
+  }, { passive: true });
+
+  container.addEventListener('touchmove', (e) => {
+    if (e.touches.length === 2 && initialPinchDist > 0) {
+      const currentDist = Math.hypot(
+        e.touches[0].pageX - e.touches[1].pageX,
+        e.touches[0].pageY - e.touches[1].pageY
+      );
+      const factor = currentDist / initialPinchDist;
+      const newScale = Math.min(Math.max(initialScale * factor, 0.5), 3.0);
+      if (Math.abs(newScale - currentScale) > 0.08) {
+        currentScale = newScale;
+        zoomBadge.innerText = Math.round(currentScale * 100) + '%';
+      }
+    }
+  }, { passive: true });
+
+  container.addEventListener('touchend', (e) => {
+    if (e.touches.length < 2 && initialPinchDist > 0) {
+      initialPinchDist = 0;
+      renderComicView();
+    }
+  }, { passive: true });
 
   if (window.pdfjsLib) {
     pdfjsLib.getDocument('../skema-foto-terbaru.pdf').promise.then(pdf => {
