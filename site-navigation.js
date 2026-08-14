@@ -65,7 +65,7 @@
       position: fixed;
       inset: 0;
       z-index: 10029;
-      background: rgba(15,3,2,0.75);
+      background: rgba(13,3,3,0.85);
       backdrop-filter: blur(4px);
       -webkit-backdrop-filter: blur(4px);
       opacity: 0;
@@ -151,7 +151,7 @@
       align-items: center;
       justify-content: center;
       padding: 16px;
-      background: rgba(10,2,1,0.82);
+      background: rgba(13,3,3,0.88);
       backdrop-filter: blur(6px);
       -webkit-backdrop-filter: blur(6px);
       opacity: 0;
