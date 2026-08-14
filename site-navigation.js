@@ -128,6 +128,8 @@
 
     /* Compact Bullet SOS FAB Button */
     .site-sos-bullet {
+      will-change: transform;
+      transform: translateZ(0);
       position: fixed;
       z-index: 9985;
       border-radius: 50%;
@@ -518,9 +520,9 @@
         border-top: 2px solid #E0B863 !important;
         border-bottom: 0 !important;
         box-shadow: 0 -8px 28px rgba(0, 0, 0, 0.7) !important;
-        backdrop-filter: blur(20px) !important;
-        -webkit-backdrop-filter: blur(20px) !important;
-      }
+        will-change: transform;
+        transform: translateZ(0);
+        -webkit-}
 
       .site-bottom-nav-item {
         display: flex !important;
@@ -535,7 +537,7 @@
         border-radius: 12px !important;
         border: 1px solid transparent !important;
         background: transparent !important;
-        transition: all 0.2s ease !important;
+        transition: transform 0.15s ease, opacity 0.15s ease !important;
       }
     }
 
@@ -562,9 +564,9 @@
         border-top: 0 !important;
         border-bottom: 2px solid #E0B863 !important;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
-        backdrop-filter: blur(16px) !important;
-        -webkit-backdrop-filter: blur(16px) !important;
-      }
+        will-change: transform;
+        transform: translateZ(0);
+        -webkit-}
 
       .site-bottom-nav-item {
         display: flex !important;
@@ -578,7 +580,7 @@
         font: 600 13px -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", sans-serif !important;
         border: 1px solid transparent !important;
         background: transparent !important;
-        transition: all 0.2s ease !important;
+        transition: transform 0.15s ease, opacity 0.15s ease !important;
       }
     }
 
