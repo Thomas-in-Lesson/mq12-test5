@@ -279,18 +279,16 @@
 
     /* Top Navigation Bar Base */
     .site-mobile-bar {
-  position: fixed;
-  z-index: 10010;
-  top: 0; right: 0; left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: linear-gradient(180deg, rgba(58, 14, 14, 0.95) 0%, rgba(13, 3, 3, 0.85) 100%) !important;
-  border-bottom: 1px solid rgba(224, 184, 99, 0.3) !important;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.6) !important;
-  backdrop-filter: blur(16px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
-}
+      position: fixed;
+      z-index: 10010;
+      top: 0; right: 0; left: 0;
+      height: calc(var(--bar-top, 56px) + env(safe-area-inset-top, 0px)) !important;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #2A0A0A !important;
+      border-bottom: 1px solid rgba(224, 184, 99, 0.3) !important;
+    }
 
     /* True 50% Absolute Center Alignment for Sacred Text */
     .site-header-center-title {
@@ -1585,6 +1583,13 @@
     document.addEventListener('DOMContentLoaded', initPersonalCardWidget);
   } else {
     initPersonalCardWidget();
+  }
+
+  // Font Ready Listener to prevent icon text FOUT
+  if (document.fonts) {
+    document.fonts.ready.then(() => document.documentElement.classList.add('fonts-ready'));
+  } else {
+    document.documentElement.classList.add('fonts-ready');
   }
 
   // PWA Service Worker Registration
