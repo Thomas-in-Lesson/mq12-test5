@@ -37,6 +37,7 @@ const ASSETS = [
   './starterpack_dan_packing_safari_hwmi_mq_12/code.html',
   './denah-data.js',
   './denah-viewer.js',
+  './profil-data.js',
   './denah/sesi1/syuhada.webp',
   './denah/sesi1/syuhada-kecil.webp',
   './denah/sesi1/sanusi.webp',

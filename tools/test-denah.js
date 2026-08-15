@@ -21,8 +21,29 @@ global.document = {
 };
 
 eval(baca('denah-data.js'));
+eval(baca('profil-data.js'));
 eval(baca('denah-viewer.js'));
 const V = global.window.DenahViewer;
+
+// Profil singkat: tiap lokasi Sesi 1 harus punya tokoh, dan slug-nya wajib sama
+// dengan slug denah supaya keduanya menempel ke lokasi yang benar.
+{
+  const profil = global.window.PROFIL;
+  const slugDenah = new Set(global.window.DENAH.sesi1.map((d) => d.slug));
+  assert.ok(profil && profil.sesi1, 'profil-data.js tidak memuat sesi1');
+  assert.strictEqual(profil.sesi1.length, 8, `lokasi berprofil: ${profil.sesi1.length}, seharusnya 8`);
+  for (const lok of profil.sesi1) {
+    assert.ok(slugDenah.has(lok.slug), `slug profil tidak dikenal di denah: ${lok.slug}`);
+    assert.ok(lok.tokoh.length, `lokasi tanpa tokoh: ${lok.slug}`);
+    for (const t of lok.tokoh) {
+      assert.ok(t.nama && t.paragraf.length, `profil kosong: ${lok.slug}`);
+      for (const p of t.paragraf) {
+        assert.ok(p.length > 20, `paragraf terpotong di ${lok.slug}: ${p}`);
+        assert.ok(!/\s$/.test(p), `paragraf berakhir menggantung di ${lok.slug}`);
+      }
+    }
+  }
+}
 
 const denah = global.window.DENAH;
 assert.strictEqual(denah.sesi1.length, 8, 'Sesi 1 harus punya 8 denah');
@@ -121,16 +142,19 @@ assert.ok(/\n\s*tampilkanDenah\('sesi1'\);/.test(baca('peta_safari_hwmi_mq_12/co
   ctx.window = ctx;
   vm.createContext(ctx);
   vm.runInContext(baca('denah-data.js'), ctx);
+  vm.runInContext(baca('profil-data.js'), ctx);
   vm.runInContext(baca('denah-viewer.js'), ctx);
   vm.runInContext(html.match(/<script>([\s\S]*?)<\/script>/)[1], ctx);
 
   const render = ambil('rundown-list').innerHTML;
-  const jumlah = (render.match(/denah-tautan/g) || []).length;
-  assert.strictEqual(jumlah, 8, `tombol denah yang terender di Rundown: ${jumlah}, seharusnya 8`);
+  const tombolDenah = (render.match(/Lihat denah lokasi/g) || []).length;
+  const tombolProfil = (render.match(/Profil singkat/g) || []).length;
+  assert.strictEqual(tombolDenah, 8, `tombol denah terender: ${tombolDenah}, seharusnya 8`);
+  assert.strictEqual(tombolProfil, 8, `tombol profil terender: ${tombolProfil}, seharusnya 8`);
 })();
 
 console.log(`OK — 8 denah Sesi 1, semua berkas ada, ${terpakai.size} agenda ziarah tertaut ke denah yang benar.`);
-console.log('   Rundown dirender ulang: 8 tombol "Lihat denah lokasi" muncul.');
+console.log('   Rundown dirender ulang: 8 tombol denah + 8 tombol profil muncul.');
 for (const [i, list] of [...terpakai].sort((a, b) => a[0] - b[0])) {
   console.log(`   ${denah.sesi1[i].no}. ${denah.sesi1[i].judul}  <-  ${list.join(' ; ')}`);
 }
