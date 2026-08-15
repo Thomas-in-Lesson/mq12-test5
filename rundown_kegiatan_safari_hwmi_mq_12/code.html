@@ -1,11 +1,13 @@
-<!DOCTYPE html><html class="dark" lang="id"><head>
-<meta charset=utf-8>
+<!DOCTYPE html>
+<html class="dark" lang="id">
+<head>
+<meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow, noarchive">
 <meta name="theme-color" content="#0D0303">
-<meta name="description" content="Panduan resmi Safari Chubbul Wathon Minal Iman — Maqooshidul Qur-aan 12. Informasi kamar, bus, tata tertib, dan panduan musafir.">
+<meta name="description" content="Rundown resmi acara Safari Chubbul Wathon Minal Iman — Maqooshidul Qur-aan 12, Sesi 1 sampai Sesi 3.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Safari HWMI MQ 12">
-<meta property="og:description" content="Panduan resmi Safari Chubbul Wathon Minal Iman 12 — kamar, bus, rundown, dan tata tertib.">
+<meta property="og:title" content="Rundown Kegiatan - Safari HWMI MQ 12">
+<meta property="og:description" content="Susunan acara lengkap per sesi dan per hari, beserta jam, durasi, lokasi, dan seragam.">
 <meta property="og:image" content="https://thomas-in-lesson.github.io/mq12-test5/og-cover.jpg">
 <meta property="og:url" content="https://thomas-in-lesson.github.io/mq12-test5/">
 <link rel="apple-touch-icon" href="../icon-180.png">
@@ -14,99 +16,2093 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rundown Kegiatan - Safari HWMI MQ 12</title>
 <link rel="stylesheet" href="../styles.css">
+<style>
+  /* styles.css adalah hasil build Tailwind yang sudah di-purge dan repo ini tidak
+     punya build pipeline, jadi gaya halaman ini ditulis eksplisit di sini.
+     Cek dengan: node tools/check-classes.js <file.html> */
+  .pg-bar-title {
+    flex: 1; min-width: 0;
+    font-family: 'Noto Serif', serif;
+    font-size: 16px; font-weight: 700; text-align: center;
+    color: rgb(var(--c-secondary));
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .pg-head { text-align: center; }
+  .pg-title {
+    margin: 0;
+    font-family: 'Noto Serif', serif;
+    font-size: 20px; line-height: 1.25; font-weight: 700;
+    color: rgb(var(--c-gold));
+  }
+  .pg-sub {
+    max-width: 40ch; margin: 6px auto 0;
+    font-size: 12px; line-height: 1.55;
+    color: rgb(var(--c-on-surface-variant));
+  }
+
+  .sesi-tabs {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px;
+    padding: 6px; border: 1px solid rgba(224, 184, 99, .4);
+    border-radius: 14px; background: rgb(var(--c-surface-container));
+  }
+  .sesi-tab {
+    display: flex; align-items: center; justify-content: center; gap: 5px;
+    padding: 9px 4px; border: 0; border-radius: 10px; background: transparent;
+    color: rgb(var(--c-gold));
+    font: 700 12px/1 -apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', sans-serif;
+    white-space: nowrap; cursor: pointer;
+    transition: background .18s ease, color .18s ease;
+  }
+  .sesi-tab.is-active { background: rgb(var(--c-gold)); color: rgb(var(--c-on-gold)); }
+
+  .sesi-meta {
+    display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;
+    margin-top: 10px; font-size: 11px;
+  }
+  .meta-chip {
+    padding: 4px 10px; border-radius: 999px;
+    border: 1px solid rgba(224, 184, 99, .35);
+    background: rgba(224, 184, 99, .12);
+    color: rgb(var(--c-gold)); font-weight: 700; white-space: nowrap;
+  }
+
+  .hari-card {
+    border: 1px solid rgba(224, 184, 99, .3);
+    border-radius: 16px;
+    background: rgb(var(--c-surface-low));
+    overflow: hidden;
+  }
+  .hari-head {
+    display: flex; align-items: center; gap: 10px;
+    width: 100%; padding: 14px;
+    border: 0; border-bottom: 1px solid rgba(224, 184, 99, .18);
+    background: rgba(121, 13, 13, .35);
+    color: #FFFFFF; text-align: left; cursor: pointer;
+    font: 700 13px/1.35 -apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', sans-serif;
+  }
+  .hari-head .tgl {
+    display: block; margin-top: 3px;
+    font-size: 11px; font-weight: 500;
+    color: rgb(var(--c-on-surface-variant));
+  }
+  .hari-head .karet { margin-left: auto; flex: none; transition: transform .2s ease; }
+  .hari-card.tertutup .karet { transform: rotate(-90deg); }
+  .hari-card.tertutup .hari-body { display: none; }
+  .hari-body { padding: 6px 0; }
+
+  .agenda-row {
+    display: grid; grid-template-columns: 88px 1fr; gap: 10px;
+    padding: 11px 14px;
+    border-bottom: 1px solid rgba(224, 184, 99, .1);
+  }
+  .agenda-row:last-child { border-bottom: 0; }
+  .agenda-jam {
+    font-weight: 700; font-size: 12px; color: rgb(var(--c-gold));
+    font-variant-numeric: tabular-nums;
+  }
+  .agenda-jam .durasi {
+    display: block; margin-top: 2px;
+    font-size: 10px; font-weight: 500;
+    color: rgb(var(--c-on-surface-variant));
+  }
+  .agenda-nama { font-size: 13px; font-weight: 700; color: #FFFFFF; }
+  .agenda-ket { margin-top: 3px; font-size: 11px; line-height: 1.5; color: rgb(var(--c-on-surface-variant)); }
+  .agenda-tag {
+    display: inline-block; margin-top: 5px; margin-right: 5px;
+    padding: 2px 8px; border-radius: 999px;
+    font-size: 10px; font-weight: 700; white-space: nowrap;
+  }
+  .tag-daerah { border: 1px solid rgba(224, 184, 99, .4); background: rgba(224, 184, 99, .14); color: rgb(var(--c-gold)); }
+  .tag-seragam { border: 1px solid rgba(255, 255, 255, .25); background: rgba(255, 255, 255, .08); color: #FFFFFF; }
+
+  @media (min-width: 768px) {
+    .pg-title { font-size: 28px; }
+    .pg-sub { font-size: 14px; }
+    .sesi-tab { font-size: 13px; padding: 11px 6px; }
+    .agenda-row { grid-template-columns: 110px 1fr; padding: 13px 18px; }
+    .agenda-jam { font-size: 13px; }
+    .agenda-nama { font-size: 14px; }
+    .hari-head { font-size: 15px; padding: 16px 18px; }
+  }
+</style>
 </head>
 <body class="bg-background text-on-surface antialiased min-h-screen flex flex-col pb-24 md:pb-0">
+
 <header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-surface-variant/30 shadow-sm flex items-center justify-between px-margin-mobile h-16 md:hidden">
-<button aria-label="Go back" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-surface-variant/50 text-primary">
-<span class="material-symbols-outlined">arrow_back</span>
-</button>
-<div class="font-headline-md-mobile text-headline-md-mobile font-bold text-secondary flex-1 text-center">
-            Rundown Kegiatan
-        </div>
-<div class="w-10"></div>
+  <button aria-label="Kembali" class="flex items-center justify-center w-10 h-10 rounded-full text-primary shrink-0" onclick="window.history.back()">
+    <span class="material-symbols-outlined">arrow_back</span>
+  </button>
+  <div class="pg-bar-title">Rundown Kegiatan</div>
+  <div class="w-10 shrink-0"></div>
 </header>
-<main class="flex-1 w-full max-w-container-max-width mx-auto pt-20 px-margin-mobile md:px-margin-desktop md:pt-32 space-y-8">
-<section class="text-center space-y-4">
-<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg text-secondary">
-                RUNDOWN KEGIATAN SAFARI HWMI MQ 12
-            </h1>
-<p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">
-                Jadwal lengkap susunan acara dan agenda perjalanan Safari Hubbul Wathon Minal Iman 12.
-            </p>
-<div class="w-16 h-1 bg-secondary mx-auto rounded-full opacity-50"></div>
-</section>
 
-<!-- Timeline Cards -->
-<section class="space-y-6">
-<!-- Day 1 -->
-<div class="bg-surface-container-low rounded-xl p-6 border-t border-l border-surface-variant/30 shadow-md">
-<div class="flex items-center gap-3 text-secondary border-b border-surface-variant/40 pb-3 mb-4">
-<span class="material-symbols-outlined text-[28px]">event</span>
-<h2 class="font-headline-md-mobile text-headline-md-mobile">Hari Ke-1: Pemberangkatan & Ziarah</h2>
-</div>
-<div class="space-y-4">
-<div class="flex items-start gap-4 p-3 rounded-lg bg-surface-container/60">
-<span class="font-bold text-primary min-w-[70px]">06.00</span>
-<div>
-<h4 class="font-semibold text-on-surface">Kumpul & Registrasi Peserta</h4>
-<p class="text-sm text-on-surface-variant">Absensi, pengkondisian bus & pembagian konsumsi keberangkatan.</p>
-</div>
-</div>
-<div class="flex items-start gap-4 p-3 rounded-lg bg-surface-container/60">
-<span class="font-bold text-primary min-w-[70px]">07.30</span>
-<div>
-<h4 class="font-semibold text-on-surface">Pemberangkatan Armada Bus</h4>
-<p class="text-sm text-on-surface-variant">Doa bersama perjalanan dipimpin oleh pembimbing safari.</p>
-</div>
-</div>
-<div class="flex items-start gap-4 p-3 rounded-lg bg-surface-container/60">
-<span class="font-bold text-primary min-w-[70px]">12.00</span>
-<div>
-<h4 class="font-semibold text-on-surface">ISHOMA & Sholat Jamak Taqdim</h4>
-<p class="text-sm text-on-surface-variant">Istirahat makan siang dan sholat di rest area / lokasi transit.</p>
-</div>
-</div>
-<div class="flex items-start gap-4 p-3 rounded-lg bg-surface-container/60">
-<span class="font-bold text-primary min-w-[70px]">15.30</span>
-<div>
-<h4 class="font-semibold text-on-surface">Ziarah Sesi Pertama</h4>
-<p class="text-sm text-on-surface-variant">Pelaksanaan ziarah maqam dan pembacaan aurad bersama.</p>
-</div>
-</div>
-</div>
-</div>
+<main class="flex-1 w-full max-w-container-max-width mx-auto pt-20 px-3 md:px-margin-desktop md:pt-32 space-y-4">
 
-<!-- Day 2 -->
-<div class="bg-surface-container-low rounded-xl p-6 border-t border-l border-surface-variant/30 shadow-md">
-<div class="flex items-center gap-3 text-secondary border-b border-surface-variant/40 pb-3 mb-4">
-<span class="material-symbols-outlined text-[28px]">event_repeat</span>
-<h2 class="font-headline-md-mobile text-headline-md-mobile">Hari Ke-2: Penginapan & Acara Inti</h2>
-</div>
-<div class="space-y-4">
-<div class="flex items-start gap-4 p-3 rounded-lg bg-surface-container/60">
-<span class="font-bold text-primary min-w-[70px]">06.30</span>
-<div>
-<h4 class="font-semibold text-on-surface">Check-in Penginapan & Sarapan</h4>
-<p class="text-sm text-on-surface-variant">Pembagian kamar peserta dan pembersihan diri.</p>
-</div>
-</div>
-<div class="flex items-start gap-4 p-3 rounded-lg bg-surface-container/60">
-<span class="font-bold text-primary min-w-[70px]">09.00</span>
-<div>
-<h4 class="font-semibold text-on-surface">Pengajian & Mujahadah Umum</h4>
-<p class="text-sm text-on-surface-variant">Acara puncak majelis dan pengarahan sesepuh MQ 12.</p>
-</div>
-</div>
-<div class="flex items-start gap-4 p-3 rounded-lg bg-surface-container/60">
-<span class="font-bold text-primary min-w-[70px]">19.30</span>
-<div>
-<h4 class="font-semibold text-on-surface">Sesi Foto Bersama Per Kloter</h4>
-<p class="text-sm text-on-surface-variant">Dokumentasi resmi sesuai skema rombongan.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
+  <section class="pg-head">
+    <h1 class="pg-title">Rundown Kegiatan</h1>
+    <p class="pg-sub">Susunan acara resmi Safari Chubbul Wathon Minal Iman — Maqooshidul Qur-aan 12.</p>
+  </section>
+
+  <section>
+    <div class="sesi-tabs">
+      <button id="btn-sesi1" type="button" onclick="pilihSesi('sesi1')" class="sesi-tab is-active">SESI 1</button>
+      <button id="btn-sesi2" type="button" onclick="pilihSesi('sesi2')" class="sesi-tab">SESI 2</button>
+      <button id="btn-sesi3" type="button" onclick="pilihSesi('sesi3')" class="sesi-tab">SESI 3</button>
+    </div>
+    <div id="sesi-meta" class="sesi-meta"></div>
+  </section>
+
+  <section id="rundown-list" class="space-y-3"></section>
+
+  <p class="pg-sub" style="max-width:44ch">Jadwal dapat berubah sewaktu-waktu mengikuti situasi dan kondisi di lapangan.</p>
 </main>
 
-<script src="../site-navigation.js"></script></body></html>
+<script>
+  const rundownData = {
+    "sesi1": {
+      "armada": "Elf",
+      "tanggal": "Ahad Kliwon, 02 Robi’ul Awwal 1448 H/ 16 Agustus 2026 M",
+      "hari": [
+        {
+          "label": "",
+          "tanggal": "Ahad Kliwon, 02 Robi’ul Awwal 1448 H/ 16 Agustus 2026 M",
+          "agenda": [
+            {
+              "jam": "03.30 – 04.20",
+              "agenda": "Berkumpul di Masjid Fatchan Mubiina",
+              "daerah": "Pesantren",
+              "durasi": "50 Menit",
+              "kegiatan": "Persiapan",
+              "seragam": "Almamater MQ, Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "04.20 – 04.40",
+              "agenda": "Jama’ah Sholat Shubuh",
+              "daerah": "Masjid Raya Fatchan Mubiina",
+              "durasi": "20 Menit",
+              "kegiatan": "Sholat Berjama’ah",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "04.40 – 05.40",
+              "agenda": "Sarapan",
+              "daerah": "",
+              "durasi": "1 Jam",
+              "kegiatan": "Sarapan di lokal TK",
+              "seragam": "",
+              "catatan": ""
+            },
+            {
+              "jam": "05.40 – 05.55",
+              "agenda": "Persiapan dan Perjalanan ke Makam Mbah Syuhada’",
+              "daerah": "Pesantren",
+              "durasi": "15 Menit",
+              "kegiatan": "Jalan kaki menuju makan Mbah Syuhada’",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "05.55 – 06.25",
+              "agenda": "Ziarah Maqom Mbah Syuhada",
+              "daerah": "Pesantren",
+              "durasi": "30 Menit",
+              "kegiatan": "Do’a Khusus, Tabur Bunga",
+              "seragam": "Almamater MQ Kemeja putih",
+              "catatan": ""
+            },
+            {
+              "jam": "06.25 – 08.00",
+              "agenda": "Doa Bersama dan Berpamitan",
+              "daerah": "Ndalem",
+              "durasi": "1 Jam 35 Menit",
+              "kegiatan": "Berpamitan , Doa Bersama , Foto Bersama",
+              "seragam": "Almamater MQ Kemeja putih",
+              "catatan": ""
+            },
+            {
+              "jam": "08.00 – 08.15",
+              "agenda": "Menuju Bus",
+              "daerah": "Lap. Garuda",
+              "durasi": "15 Menit",
+              "kegiatan": "Loading barang",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "08.15 – 08.45",
+              "agenda": "Perjalanan ke Maqom Mbah Sanusi",
+              "daerah": "",
+              "durasi": "30 Menit",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "08.45 – 09.00",
+              "agenda": "Persiapan Ziaroh",
+              "daerah": "Kabuh",
+              "durasi": "15 Menit",
+              "kegiatan": "Jalan Kaki menuju Makam",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "09.00 – 09.30",
+              "agenda": "Ziarah Maqom Mbah Sanusi",
+              "daerah": "Kabuh",
+              "durasi": "30 Menit",
+              "kegiatan": "Do’a Khusus, Tabur Bunga, Foto Bersama, Penyerahan Cinderamata",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "09.30 – 09.40",
+              "agenda": "Menuju Bus",
+              "daerah": "",
+              "durasi": "10 Menit",
+              "kegiatan": "Jalan Kaki menuju Bus",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "09.40 – 10.15",
+              "agenda": "Perjalanan menuju Maqom Kyai A. Zamrozi",
+              "daerah": "",
+              "durasi": "35 Menit",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "10.15 – 10.25",
+              "agenda": "Persiapan Ziaroh",
+              "daerah": "",
+              "durasi": "10 Menit",
+              "kegiatan": "Jalan kaki menuju Makam",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "10.25 – 10.55",
+              "agenda": "Ziaroh Makom Kyai A. Zamrozi",
+              "daerah": "Ploso",
+              "durasi": "30 Menit",
+              "kegiatan": "Do’a Khusus, Tabur Bunga, Penyerahan Cinderamata",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "10.55 – 11.05",
+              "agenda": "Menuju Bus",
+              "daerah": "",
+              "durasi": "10 Menit",
+              "kegiatan": "Jalan Kaki menuju Bus",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "11.05 – 11.35",
+              "agenda": "Perjalanan menuju Maqom Mbah Falal",
+              "daerah": "",
+              "durasi": "30 Menit",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "11.35 – 11.45",
+              "agenda": "Persiapan Ziaroh",
+              "daerah": "Megaluh",
+              "durasi": "10 Menit",
+              "kegiatan": "Jalan Kaki menuju Makam",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "11.45 – 12.15",
+              "agenda": "Ziaroh Maqom Mbah Falal",
+              "daerah": "Megaluh",
+              "durasi": "30 Menit",
+              "kegiatan": "Do’a Khusus, Tabur Bunga, Penyerahan Cinderamata",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "12.15 – 13.45",
+              "agenda": "ISHOMA",
+              "daerah": "Megaluh",
+              "durasi": "1 Jam 30 Menit",
+              "kegiatan": "Istirahat, Sholat, Makan Siang",
+              "seragam": "Kemeja Putih, Almamater MQ",
+              "catatan": ""
+            },
+            {
+              "jam": "13.45 – 13.55",
+              "agenda": "Menuju Bus",
+              "daerah": "",
+              "durasi": "10 Menit",
+              "kegiatan": "Jalan Kaki menuju Bus",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "13.55 – 15.10",
+              "agenda": "Perjalanan menuju Makam Kholifah Dukhan Iskandar",
+              "daerah": "",
+              "durasi": "1 Jam 15 Menit",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "15.10 – 15.25",
+              "agenda": "Persiapan Ziaroh",
+              "daerah": "Jati Kasampurnan, Kuncung",
+              "durasi": "15 Menit",
+              "kegiatan": "Jalan Kaki menuju Makam",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "15.25 – 15.55",
+              "agenda": "Ziaroh Maqom Kholifah Bpk. Dukhan Iskandar",
+              "daerah": "Jati Kasampurnan, Kuncung",
+              "durasi": "30 Menit",
+              "kegiatan": "Do’a Khusus, Tabur Bunga, Penyerahan Cinderamata",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "15.55 – 16.10",
+              "agenda": "Persiapan Ziaroh",
+              "daerah": "Ziarah Maqom Makam Kholifah Bpk. Sumadji Bpk. Salamun, Bpk. Khozin",
+              "durasi": "",
+              "kegiatan": "Jalan kaki menuju makam Kholifah Sumadji",
+              "seragam": "Almamater MQ Kemejja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "16.10 – 16.40",
+              "agenda": "Ziarah Maqom Makam Kholifah Bpk. Sumadji Bpk. Salamun",
+              "daerah": "Kuncung Dan",
+              "durasi": "30 Menit",
+              "kegiatan": "Do’a Khusus, Tabur Bunga, Penyerahan Cinderamata",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "16.40 – 16.50",
+              "agenda": "Perjalanan Menuju Makam Syekh Imam Dzipuro",
+              "daerah": "Makam Syekh Imam Dzipuro",
+              "durasi": "10 Menit",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "16.50 – 17.05",
+              "agenda": "Persiapan Ziaroh",
+              "daerah": "Makam Syekh Imam Dzipuro",
+              "durasi": "15 Menit",
+              "kegiatan": "Jalan Kaki menuju Makam",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "17.05 – 17.35",
+              "agenda": "Ziaroh Maqom Syekh Imam Dzipuro",
+              "daerah": "Kuncung",
+              "durasi": "30 Menit",
+              "kegiatan": "Do’a Khusus, Tabur Bunga, Penyerahan Cinderamata",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "17.35 – 17.45",
+              "agenda": "Menuju Bus",
+              "daerah": "",
+              "durasi": "10 Menit",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "17.45 – 18.45",
+              "agenda": "Perjalanan Menuju Makam Syekh Jumadil Qubro",
+              "daerah": "Mojokerto",
+              "durasi": "1 Jam",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "18.45 – 19.00",
+              "agenda": "Persiapan Ziaroh",
+              "daerah": "Mojokerto",
+              "durasi": "15 Menit",
+              "kegiatan": "Jalan kaki men u",
+              "seragam": "ju makam Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "19.00 – 19.30",
+              "agenda": "Ziaroh Makam Syekh Jumadil Qubro",
+              "daerah": "Mojokerto",
+              "durasi": "30 Menit",
+              "kegiatan": "Do’a Khusus, Tabur Bunga, Penyerahan Cinderamata",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "19.30 – 20.30",
+              "agenda": "ISHOMA",
+              "daerah": "Mojokerto",
+              "durasi": "1 Jam",
+              "kegiatan": "Istirahat, Sholat Isya (Jama ’ Takhir) Makan Malam",
+              "seragam": "Maghrib - Almamater MQ, Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "20.30 – 21.30",
+              "agenda": "Persiapan dan Perjalanan menuju LOSPLOS JOMJA IROJA",
+              "daerah": "Mojokerto",
+              "durasi": "1 Jam",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "21.30",
+              "agenda": "Tiba di LOSPLOS",
+              "daerah": "Pesantren",
+              "durasi": "",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            }
+          ]
+        }
+      ]
+    },
+    "sesi2": {
+      "armada": "Big Bus",
+      "tanggal": "",
+      "hari": [
+        {
+          "label": "Hari Ke-1",
+          "tanggal": "Juma’at Pahing, 14 Robi’ul Awwal 1448 H/28 Agustus 2026 M",
+          "agenda": [
+            {
+              "jam": "03.30 – 04.00",
+              "agenda": "Berkumpul di Lap. Garuda",
+              "daerah": "Pesantren",
+              "durasi": "30 Menit",
+              "kegiatan": "Loading barang, Persiapan",
+              "seragam": "Almamater MQ, Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "04.00 – 05.00",
+              "agenda": "Sholat Shubuh, Sarapan",
+              "daerah": "Masjid Raya Fatchan Mubiina",
+              "durasi": "1 Jam",
+              "kegiatan": "Sholat Shubuh berjama’ah, Sarapan di lokal TK",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "05.00 – 05.10",
+              "agenda": "Menuju Bus",
+              "daerah": "Lap. Garuda",
+              "durasi": "10 Menit",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "05.10 – 07.40",
+              "agenda": "Perjalanan Menuju Makam Bung Karno",
+              "daerah": "Blitar",
+              "durasi": "2 Jam 30 Menit",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "07.40 – 07.55",
+              "agenda": "Persiapan Ziarah",
+              "daerah": "",
+              "durasi": "15 Menit",
+              "kegiatan": "Jalan kaki menuju makam",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "07.55 – 08.55",
+              "agenda": "Ziarah Makam Bung Karno",
+              "daerah": "Blitar",
+              "durasi": "60 Menit",
+              "kegiatan": "Do’a Khusus, Tabur Bunga,penyerahan cinderamata, Foto Bersama",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "08.55 – 09.10",
+              "agenda": "Menuju Bus",
+              "daerah": "",
+              "durasi": "15 Menit",
+              "kegiatan": "",
+              "seragam": "Jasket, Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "09.10 – 12.55",
+              "agenda": "Perjalanan menuju museum mpu tantular",
+              "daerah": "Sidoarjo",
+              "durasi": "3 Jam 45 Menit",
+              "kegiatan": "",
+              "seragam": "Jasket , Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "12.55 – 13.05",
+              "agenda": "Persiapan Observasi",
+              "daerah": "Sidoarjo",
+              "durasi": "10 Menit",
+              "kegiatan": "",
+              "seragam": "Jasket , Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "13.05 – 14.40",
+              "agenda": "ISHOMA",
+              "daerah": "Sidoarjo",
+              "durasi": "1 Jam 30 Menit",
+              "kegiatan": "Sholat Dhuhur Makan diwaktu siang",
+              "seragam": "Ashar, Jasket , Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "14.40 – 15.40",
+              "agenda": "OBSERVASI Museum Mpu Tantular",
+              "daerah": "Museum Mpu Tantular",
+              "durasi": "1 Jam",
+              "kegiatan": "Observasi, penyerahan Cinderamata",
+              "seragam": "Jasket , Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "15.40 – 17.10",
+              "agenda": "Perjalanan Menuju Makam Wage Supratman",
+              "daerah": "Surabaya",
+              "durasi": "1 Jam 30 Menit",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "17.10 – 18.10",
+              "agenda": "Ziarah Makam Wage Supratman",
+              "daerah": "Surabaya",
+              "durasi": "1 Jam",
+              "kegiatan": "Do’a Khusus, Tabur Bunga,penyerahan cinderamata, Foto Bersama dan menyanyikan lagu Indonesia Raya 3 Stanza",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "18.10 – 18.25",
+              "agenda": "Perjalanan Menuju Makam Sunan Ampel",
+              "daerah": "Surabaya",
+              "durasi": "15 Menit",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "18.25 – 18.40",
+              "agenda": "Jalan kaki menuju makam",
+              "daerah": "",
+              "durasi": "15 Menit",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "18.40 – 19.10",
+              "agenda": "Sholat Maghrib Isya’ Berjama’ah",
+              "daerah": "Masjid Agung Sunan Ampel",
+              "durasi": "30 Menit",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "19.10 – 19.40",
+              "agenda": "Ziarah Makam Sunan Ampel",
+              "daerah": "Surabaya",
+              "durasi": "30 Menit",
+              "kegiatan": "Do’a Khusus, Tabur Bunga,penyerahan cinderamata",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "19.40 – 20.40",
+              "agenda": "Persiapan dan Perjalanan Menuju Penginapan",
+              "daerah": "Hotel Khas Gresik",
+              "durasi": "1 Jam",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "20.40 – 04.00",
+              "agenda": "Tiba di penginapan",
+              "daerah": "Hotel Khas Gresik",
+              "durasi": "7 Jam 25 Menit",
+              "kegiatan": "Istirahat, Makan Malam",
+              "seragam": "Baju Bebas Sopan",
+              "catatan": ""
+            }
+          ]
+        },
+        {
+          "label": "Hari Ke-2",
+          "tanggal": "Sabtu Pon, 15 Robi’ul Awwal 1448 H / 29 Agustus 2026 M",
+          "agenda": [
+            {
+              "jam": "04.00 – 05.00",
+              "agenda": "Persiapan dan Sholat",
+              "daerah": "Hotel Khas Gresik",
+              "durasi": "1 Jam",
+              "kegiatan": "Loading barang, Sholat Shubuh berjamaah",
+              "seragam": "Almamater MQ, Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "05.00 – 05.15",
+              "agenda": "Perjalanan menuju Makam Sunan Gresik",
+              "daerah": "",
+              "durasi": "15 Menit",
+              "kegiatan": "Jalan kaki",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "05.15 – 05.30",
+              "agenda": "Persiapan ziarah",
+              "daerah": "Gresik",
+              "durasi": "15 Menit",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "05.30 – 06.00",
+              "agenda": "Ziarah Makam Sunan Gresik",
+              "daerah": "Gresik",
+              "durasi": "30 Menit",
+              "kegiatan": "Do’a Khusus, Tabur Bunga,penyerahan cinderamata",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "06.00 – 06.20",
+              "agenda": "Jalan kaki menuju makam Sayyid Ali Murtadlo (Raden Santri)",
+              "daerah": "Gresik",
+              "durasi": "20 Menit",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "06.20 – 06.50",
+              "agenda": "Ziarah Makam raden Santri",
+              "daerah": "Gresik",
+              "durasi": "30 Menit",
+              "kegiatan": "Do’a Khusus, Tabur Bunga,penyerahan cinderamata",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "06.50 – 07.10",
+              "agenda": "Kembali ke hotel",
+              "daerah": "Parkiran Hotel Khas Gresik",
+              "durasi": "20 Menit",
+              "kegiatan": "Jalan Kaki",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "07.10 – 08.10",
+              "agenda": "Sarapan",
+              "daerah": "Hotel Khas Gresik",
+              "durasi": "1 Jam",
+              "kegiatan": "Sarapan bersama di Hotel",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "08.10 – 09.10",
+              "agenda": "Persiapan dan perjalanan Menuju Sunan Deket",
+              "daerah": "Lamongan",
+              "durasi": "1 Jam",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "09.10 – 09.25",
+              "agenda": "Persiapan Ziarah",
+              "daerah": "Lamongan",
+              "durasi": "15 Menit",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "09.25 – 09.55",
+              "agenda": "Ziarah Makam Sunan Deket",
+              "daerah": "Lamongan",
+              "durasi": "30 Menit",
+              "kegiatan": "Do’a Khusus, Tabur Bunga,penyerahan cinderamata",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "09.55 – 10.55",
+              "agenda": "Perjalanan Menuju Sunan Drajat",
+              "daerah": "Lamongan",
+              "durasi": "1 Jam",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "10.55 – 11.10",
+              "agenda": "Persiapan Ziarah",
+              "daerah": "Lamongan",
+              "durasi": "15 Menit",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "11.10 – 11.40",
+              "agenda": "Ziarah Makam Sunan Drajat",
+              "daerah": "Lamongan",
+              "durasi": "30 Menit",
+              "kegiatan": "Do’a Khusus, Tabur Bunga,penyerahan cinderamata",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "11.40 – 11.55",
+              "agenda": "Jalan Kaki menuju Bis",
+              "daerah": "Lamongan",
+              "durasi": "15 Menit",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "11.55 – 12.55",
+              "agenda": "Perjalanan Menuju makam Ibrahim Asmorokondi",
+              "daerah": "Tuban",
+              "durasi": "1 Jam",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "12.55 – 13.15",
+              "agenda": "Persiapan Ziarah",
+              "daerah": "Tuban",
+              "durasi": "20 Menit",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "13.15 – 13.45",
+              "agenda": "Ziarah Makam Ibrahim Asmorokondi",
+              "daerah": "Tuban",
+              "durasi": "30 Menit",
+              "kegiatan": "Do’a Khusus, Tabur Bunga,penyerahan cinderamata",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "13.45 – 15.00",
+              "agenda": "ISHOMA",
+              "daerah": "Masjid Asmorokondi",
+              "durasi": "1 Jam 15 Menit",
+              "kegiatan": "Istirahat, Sholat Dhuhur dan Ashar, Makan",
+              "seragam": "",
+              "catatan": ""
+            },
+            {
+              "jam": "15.00 – 15.20",
+              "agenda": "Kembali ke Bus",
+              "daerah": "",
+              "durasi": "20 Menit",
+              "kegiatan": "Jalan kaki",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "15.20 – 15.45",
+              "agenda": "Perjalanan menuju makam Sunan Bonang",
+              "daerah": "Tuban",
+              "durasi": "25 Menit",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "15.45 – 16.00",
+              "agenda": "Naik becak menuju makam sunan bonang",
+              "daerah": "",
+              "durasi": "15 Menit",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "16.00 – 16.15",
+              "agenda": "Persiapan Ziarah",
+              "daerah": "",
+              "durasi": "15 Menit",
+              "kegiatan": "Jalan kaki",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "16.15 – 16.45",
+              "agenda": "Ziarah Makam Sunan Bonang",
+              "daerah": "Tuba n",
+              "durasi": "30 Menit",
+              "kegiatan": "Do’a Khusus, Tabur Bunga,penyerahan cinderamata",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "16.45 – 17.00",
+              "agenda": "Naik becak menuju bus",
+              "daerah": "",
+              "durasi": "15 Menit",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "17.00 – 18.45",
+              "agenda": "Perjalanan Kembali ke Pesantren",
+              "daerah": "",
+              "durasi": "1 Jam 45 Menit",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            },
+            {
+              "jam": "18.45",
+              "agenda": "Tiba di Pesantren",
+              "daerah": "Losplos",
+              "durasi": "",
+              "kegiatan": "",
+              "seragam": "Almamater MQ Kemeja Putih",
+              "catatan": ""
+            }
+          ]
+        }
+      ]
+    },
+    "sesi3": {
+      "armada": "",
+      "tanggal": "",
+      "hari": [
+        {
+          "label": "Hari Ke-1",
+          "tanggal": "Rabu Pahing, 19 Robi’ul Awwal 1448 H / 02 September 2026 M",
+          "agenda": [
+            {
+              "jam": "03.30 – 04.20",
+              "agenda": "Berkumpul di Lap. Garuda",
+              "daerah": "Pesantren",
+              "durasi": "50 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Loading barang, Persiapan Almamater MQ, Kemeja Putih"
+            },
+            {
+              "jam": "04.20 – 04.40",
+              "agenda": "Sholat Shubuh",
+              "daerah": "Masjid Raya Fatchan Mubiina",
+              "durasi": "20 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Sholat Shubuh berjama’ah Almamater MQ , Kemeja Putih"
+            },
+            {
+              "jam": "04.40 – 06.30",
+              "agenda": "Sarapan & Persiapan",
+              "daerah": "Lokal TK",
+              "durasi": "1 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Sarapan dan persiapan Almamater MQ , Kemeja Putih"
+            },
+            {
+              "jam": "06.30 – 08.00",
+              "agenda": "Do’a bersama dan berpamitan",
+              "daerah": "Ndalem",
+              "durasi": "1 Jam 30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": ""
+            },
+            {
+              "jam": "08.00 – 09.30",
+              "agenda": "Perjalanan Menuju Benteng Pendem",
+              "daerah": "Ngawi",
+              "durasi": "1 Jam 30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Almamater MQ , Kemeja Putih"
+            },
+            {
+              "jam": "09.30 – 09.40",
+              "agenda": "Persiapan Ziaroh dan Observasi",
+              "daerah": "Benteng Pendem",
+              "durasi": "10 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Almamater MQ , Kemeja Putih"
+            },
+            {
+              "jam": "09.40 – 10.40",
+              "agenda": "Ziarah Makam K.H Nur Salim dan Observasi Benteng Pendem",
+              "daerah": "Ngawi",
+              "durasi": "1 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Do’a Khusus, Tabur Bunga, Almamater MQ , Penyerahan Cinderamata, Kemeja Putih Foto Bersama"
+            },
+            {
+              "jam": "10.40 – 10.50",
+              "agenda": "Menuju Bus",
+              "daerah": "",
+              "durasi": "10 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Almamater MQ , Kemeja Putih"
+            },
+            {
+              "jam": "10.50 – 12.20",
+              "agenda": "Perjalanan Menuju Masjid Agung Karanganyar",
+              "daerah": "",
+              "durasi": "1 Jam 30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Almamater MQ , Kemeja Putih"
+            },
+            {
+              "jam": "12.20 – 13.20",
+              "agenda": "ISHOMA",
+              "daerah": "Masjid Agung Karanganyar",
+              "durasi": "1 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Makan siang dan Sholat Almamater MQ , Dhuhur Ashar Kemeja Putih"
+            },
+            {
+              "jam": "13.20 – 14.20",
+              "agenda": "Perjalanan Menuju Astana Mangadeg (P. Samber Nyowo)",
+              "daerah": "Karanganyar",
+              "durasi": "1 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Almamater MQ , Kemeja Putih"
+            },
+            {
+              "jam": "14.20 – 15.00",
+              "agenda": "Persiapan Ziaroh",
+              "daerah": "",
+              "durasi": "40 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Jalan kaki dari parkiran Almamater MQ , menuju makam Kemeja Putih"
+            },
+            {
+              "jam": "15.00 – 16.00",
+              "agenda": "Ziarah Makam P. Sambernyawa",
+              "daerah": "Astana Mangadeg",
+              "durasi": "1 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Do’a Khusus, Tabur Bunga, Almamater MQ , Penyerahan Cinderamata, Kemeja Putih Foto Bersama"
+            },
+            {
+              "jam": "16.00 – 16.40",
+              "agenda": "Persiapan Menuju Penginapan",
+              "daerah": "",
+              "durasi": "40 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Shuttle dari astana Almamater MQ , mangadeg menuju parkiran Kemeja Putih"
+            },
+            {
+              "jam": "16.40 – 18.10",
+              "agenda": "Perjalanan menuju Penginapan",
+              "daerah": "Hotel Sahid Jaya Solo",
+              "durasi": "1 Jam 30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Almamater MQ , Kemeja Putih"
+            },
+            {
+              "jam": "18.10 – 04.00",
+              "agenda": "Istirahat di Penginapan",
+              "daerah": "Hotel Sahid Jaya Solo",
+              "durasi": "9 Jam 50 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Sholat Maghrib Isya dan Baju Bebas makan malam dihotel Sopan"
+            }
+          ]
+        },
+        {
+          "label": "Hari Ke-2",
+          "tanggal": "Kamis Pon, 20 Robi’ul Awwal 1448 H / 03 September 2026 M",
+          "agenda": [
+            {
+              "jam": "04.00 – 05.00",
+              "agenda": "Persiapan dan Sholat",
+              "daerah": "",
+              "durasi": "1 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Sholat masing - masing, Jasket,Kemeja Loading Barang Putih"
+            },
+            {
+              "jam": "05.00 – 07.00",
+              "agenda": "Sarapan",
+              "daerah": "",
+              "durasi": "1 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Sarapan pagi Jasket,Kemeja Putih"
+            },
+            {
+              "jam": "07.00 – 08.20",
+              "agenda": "Perjalanan Menuju Prambanan",
+              "daerah": "Candi Klaten",
+              "durasi": "1 Jam 20 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Jasket,Kemeja Putih"
+            },
+            {
+              "jam": "08.20 – 08.35",
+              "agenda": "Persiapan Observasi",
+              "daerah": "Klaten",
+              "durasi": "15 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Jasket,Kemeja Putih"
+            },
+            {
+              "jam": "08.35 – 09.15",
+              "agenda": "Observasi Candi Prambanan",
+              "daerah": "Klaten",
+              "durasi": "40 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Observasi, Penyerahan Jasket, Kemeja Cinderamata, Foto Putih Bersama"
+            },
+            {
+              "jam": "09.15 – 09.30",
+              "agenda": "Menuju Bus",
+              "daerah": "",
+              "durasi": "15 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": ""
+            },
+            {
+              "jam": "09.30 – 10.15",
+              "agenda": "Perjalanan Menuj Jendral Sudirman",
+              "daerah": "u Makam DIY",
+              "durasi": "45 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Almamater MQ, Kemeja Putih"
+            },
+            {
+              "jam": "10.15 – 11.00",
+              "agenda": "Ziarah Jendral Sudirman",
+              "daerah": "DIY",
+              "durasi": "45 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Ziarah, Tabur bunga, Almamater MQ , Penghormatan, Kemeja Putih Mengheningkan cipta"
+            },
+            {
+              "jam": "11.00 – 11.30",
+              "agenda": "Perjalanan Menuju makam HOS Cokroaminoto",
+              "daerah": "DIY",
+              "durasi": "30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Almamater MQ , Kemeja Putih"
+            },
+            {
+              "jam": "11.30 – 11.45",
+              "agenda": "Persiapan Ziarah",
+              "daerah": "",
+              "durasi": "15 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": ""
+            },
+            {
+              "jam": "11.45 – 12.30",
+              "agenda": "Ziarah Makam HOS Cokroaminoto & Kyai Surosentono",
+              "daerah": "DIY",
+              "durasi": "45 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Do’a Khusus, Tabur Bunga Almamater MQ , (tambahan dimakam Mas Kemeja Putih Kyai Surasentana) , Penyerahan Cinderamata"
+            },
+            {
+              "jam": "12.30 – 12.45",
+              "agenda": "Menuju Bus",
+              "daerah": "",
+              "durasi": "15 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": ""
+            },
+            {
+              "jam": "12.45 – 13.15",
+              "agenda": "Perjalanan Menuju Masjid Syuhada’",
+              "daerah": "DIY",
+              "durasi": "30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Almamater MQ , Kemeja Putih"
+            },
+            {
+              "jam": "13.15 – 14.45",
+              "agenda": "ISHOMA di Masjid Syuhada’",
+              "daerah": "DIY",
+              "durasi": "1 Jam 30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": ""
+            },
+            {
+              "jam": "14.45 – 16.15",
+              "agenda": "Perjalanan menuju Mungkid",
+              "daerah": "",
+              "durasi": "1 Jam 30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Almamater MQ , Kemeja Putih"
+            },
+            {
+              "jam": "16.15 – 04.00",
+              "agenda": "Istirahat di Mungkid MUNGKID)",
+              "daerah": "(JMYRS Magelang",
+              "durasi": "11 Jam 45 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Kegiatan kondisional, Almamater MQ , Makan malam, Sholat Kemeja Putih berjama’ah"
+            }
+          ]
+        },
+        {
+          "label": "Hari Ke-3",
+          "tanggal": "Jum’at Wage, 21 Robi’ul Awwal 1448 H / 04 September 2026 M",
+          "agenda": [
+            {
+              "jam": "04.00 – 06.10",
+              "agenda": "Persiapan dan Sholat",
+              "daerah": "",
+              "durasi": "2 Jam 10 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Sholat Shubuh Berjamaah, Kemeja Putih, Loading barang Jasket"
+            },
+            {
+              "jam": "06.10 – 07.10",
+              "agenda": "Sarapan",
+              "daerah": "JMYR Mungkid",
+              "durasi": "1 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Kemeja Putih, Jasket"
+            },
+            {
+              "jam": "07.10 – 07.30",
+              "agenda": "Foto bersama",
+              "daerah": "JMYR Mungkid",
+              "durasi": "20 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Kemeja Putih, Jasket"
+            },
+            {
+              "jam": "07.30 – 09.30",
+              "agenda": "Mini Ceremony",
+              "daerah": "JMYR Mungkid",
+              "durasi": "2 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Sarasehan, Penyerahan Kemeja Putih, Dirigen :"
+            },
+            {
+              "jam": "07.30 – 07.40",
+              "agenda": "Pembukaan",
+              "daerah": "",
+              "durasi": "10 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Cinderamata, Jasket Munta’"
+            },
+            {
+              "jam": "07.40 – 07.55",
+              "agenda": "Menyanyikan lagu Indonesia Raya 3 stanza, ikrar delapan kesanggupan, dan sumpah jati diri bangsa",
+              "daerah": "",
+              "durasi": "15 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Zemmahal Ikrar dan sumpah jati diri : Alam Syahrul Syair : Aditiya Saputra"
+            },
+            {
+              "jam": "07.55 – 08.05",
+              "agenda": "Pembacaan syair pohon shiddiqiyyah dan syair sumber kemerdekaan bangsa Indonesia dan berdirinya NKRI",
+              "daerah": "",
+              "durasi": "10 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": ""
+            },
+            {
+              "jam": "08.05 – 08.15",
+              "agenda": "Penyerahan santunan",
+              "daerah": "",
+              "durasi": "10 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "5 (Anak/Orang)"
+            },
+            {
+              "jam": "08.15 – 08.25",
+              "agenda": "Sambutan",
+              "daerah": "",
+              "durasi": "10 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": ""
+            },
+            {
+              "jam": "08.25 – 08.30",
+              "agenda": "Penyerahan cinderamata",
+              "daerah": "",
+              "durasi": "5 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": ""
+            },
+            {
+              "jam": "08.30 – 09.30",
+              "agenda": "Mauidhotul khasanah dan doa",
+              "daerah": "",
+              "durasi": "1 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": ""
+            },
+            {
+              "jam": "09.30 – 09.50",
+              "agenda": "Perjalanan Menuju Stupa Borobudur",
+              "daerah": "",
+              "durasi": "20 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Kemeja Putih, Jasket"
+            },
+            {
+              "jam": "09.50 – 12.20",
+              "agenda": "Observasi Stupa Borobudur",
+              "daerah": "Magelang",
+              "durasi": "2 Jam 30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Persiapan, Observasi, Foto Kemeja Putih, Bersama, Penyerahan Jasket Cinderamata, Ishoma, Hingga kembali ke Bus. Makan siang di Resto Manohara"
+            },
+            {
+              "jam": "12.20 – 15.50",
+              "agenda": "Perjalanan menuju Makam R. Sosrokartono",
+              "daerah": "Kudus",
+              "durasi": "3 Jam 30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Kemeja Putih, Almam a ter MQ"
+            },
+            {
+              "jam": "15.50 – 16.00",
+              "agenda": "Persiapan Ziaroh",
+              "daerah": "",
+              "durasi": "10 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": ""
+            },
+            {
+              "jam": "16.00 – 16.30",
+              "agenda": "Ziarah Makam R. Sosrokartono",
+              "daerah": "Kudus",
+              "durasi": "30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Do’a Khusus, Tabur Bunga, Kemeja Putih, Penyerahan Cinderamata Almamater MQ"
+            },
+            {
+              "jam": "16.30 – 16.40",
+              "agenda": "Menuju bus",
+              "daerah": "",
+              "durasi": "10 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": ""
+            },
+            {
+              "jam": "16.40 – 18.40",
+              "agenda": "Perjalanan Menuju Penginapan",
+              "daerah": "Hotel Oak Tree Emerald",
+              "durasi": "2 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Kemeja Putih"
+            },
+            {
+              "jam": "18.40 – 04.00",
+              "agenda": "Istirahat di Penginapan",
+              "daerah": "Hotel Oak Tree Emerald",
+              "durasi": "9 Jam 20 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Baju Bebas Sopan"
+            }
+          ]
+        },
+        {
+          "label": "Hari Ke-4",
+          "tanggal": "Sabtu Kliwon, 22 Robi’ul Awwal 1448 H / 05 September 2026 M",
+          "agenda": [
+            {
+              "jam": "04.00 – 05.00",
+              "agenda": "Sholat Shubuh dan persiapan",
+              "daerah": "",
+              "durasi": "1 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Sholat Shubuh mandiri, Kemeja Putih mandi, loading barang"
+            },
+            {
+              "jam": "05.00 – 07.00",
+              "agenda": "Sarapan & Persiapan",
+              "daerah": "",
+              "durasi": "2 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Sarapan dan persiapan Almamater MQ , (loading barang) Kemeja Putih"
+            },
+            {
+              "jam": "07.00 – 10.30",
+              "agenda": "Check Out Hotel, Perjalanan menuju 3 Makam (Syekh Dzatul Kahfi, R. Fatahillah, Makam Sunan Gunung Jati)",
+              "daerah": "Cirebon",
+              "durasi": "3 Jam 30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Almamater MQ , Kemeja Putih"
+            },
+            {
+              "jam": "10.30 – 10.40",
+              "agenda": "Persiapan Ziarah Makam Syekh Dzatul Kahfi",
+              "daerah": "Cirebon",
+              "durasi": "10 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Jalan kaki menuju makam Almamater MQ , tersebut, Wudlu dll Kemeja Putih"
+            },
+            {
+              "jam": "10.40 – 11.10",
+              "agenda": "Ziarah Makam Syekh Dzatul Kahfi",
+              "daerah": "Cirebon",
+              "durasi": "30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Do’a Khusus, Tabur Bunga, Almamater MQ , Penyerahan Cinderamata Kemeja Putih"
+            },
+            {
+              "jam": "11.10 – 11.20",
+              "agenda": "Persiapan menuju makam R. Fatahillah dan Syarif Hidayatullah (sunan Gunung Jati)",
+              "daerah": "Cirebon",
+              "durasi": "10 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Jalan kaki menuju makam Almamater MQ , tersebut Kemeja Putih"
+            },
+            {
+              "jam": "11.20 – 11.50",
+              "agenda": "Ziarah makam R. Fatahillah dan Syarif Hidayatullah (sunan Gunung Jati)",
+              "daerah": "Cirebon",
+              "durasi": "30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Do’a Khusus, Tabur Bunga, Almamater MQ , Penyerahan Cinderamata Kemeja Putih"
+            },
+            {
+              "jam": "11.50 – 12.05",
+              "agenda": "Perjalanan menuju masjid Syarif Hidayatullah Astana Gunung Jati",
+              "daerah": "",
+              "durasi": "15 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Jalan kaki menuju Masjid Kemeja Putih, Syarif Hidayatullah Astana Almamater MQ Gunung Jati"
+            },
+            {
+              "jam": "12.05 – 13.35",
+              "agenda": "ISHOMA",
+              "daerah": "Masjid Syarif Hidayatullah Astana Gunung Jati",
+              "durasi": "1 Jam 30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Sholat Dhuhur Ashar, Almamater MQ , Makan Siang Kemeja Putih"
+            },
+            {
+              "jam": "13.35 – 17.35",
+              "agenda": "Perjalanan Menuju Cianjur",
+              "daerah": "",
+              "durasi": "4 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Kemeja Putih"
+            },
+            {
+              "jam": "17.35 – 04.00",
+              "agenda": "Tiba di Penginapan, Makan Malam, Sholat, Istirahat",
+              "daerah": "Hotel Gino Feruci, Cianjur",
+              "durasi": "10 Jam 25 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Makan malam bersama, Baju Bebas sholat mandiri Sopan"
+            }
+          ]
+        },
+        {
+          "label": "Hari Ke-5",
+          "tanggal": "Ahad Legi, 23 Robi’ul Awwal 1448 H / 06 September 2026 M",
+          "agenda": [
+            {
+              "jam": "04.00 – 05.30",
+              "agenda": "Persiapan dan Sholat",
+              "daerah": "Resto Hotel",
+              "durasi": "1 Jam 30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Sholat Mandiri, Loading Almamater MQ, barang Kemeja Putih"
+            },
+            {
+              "jam": "05.30 – 07.00",
+              "agenda": "Sarapan",
+              "daerah": "",
+              "durasi": "1 Jam 30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Sarapan pagi Almamater MQ"
+            },
+            {
+              "jam": "07.00 – 09.30",
+              "agenda": "Perjalanan menuju makam Syekh Musa",
+              "daerah": "Sukanegara",
+              "durasi": "2 Jam 30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Almamater MQ , Kemeja Putih"
+            },
+            {
+              "jam": "09.30 – 10.00",
+              "agenda": "Persiapan Ziarah Makam Syekh Musa",
+              "daerah": "Sukanegara",
+              "durasi": "30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Shuttle dari Alun - alun Almamater MQ , Tarumanegara Kemeja Putih"
+            },
+            {
+              "jam": "10.00 – 12.00",
+              "agenda": "Ziarah makam Syekh Musa, ISHOMA",
+              "daerah": "Sukanegara",
+              "durasi": "2 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Do’a Khusus, Tabur Bunga, Almamater MQ , Penyerahan Cinderamata, Kemeja Putih ISHOMA (Sholat Dhuhur Ashar), Foto Bersama"
+            },
+            {
+              "jam": "12.00 – 12.30",
+              "agenda": "Persiapan Menuju Pesantren HSHF",
+              "daerah": "Pelabuhanratu",
+              "durasi": "30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Shuttle menuju Alun - alun Almamater MQ , Tarumanegara Kemeja Putih"
+            },
+            {
+              "jam": "12.30 – 18.00",
+              "agenda": "Menuju Pesantren HSHF",
+              "daerah": "Pelabuhanratu",
+              "durasi": "5 Jam 30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Kemeja Putih"
+            },
+            {
+              "jam": "18.00 – 04.00",
+              "agenda": "Tiba dipesantren HSHF",
+              "daerah": "Pelabuhanratu",
+              "durasi": "10 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Kegiatan di Pesantren Baju Bebas Kautsaran (Kondisional), Sopan Istirahat"
+            }
+          ]
+        },
+        {
+          "label": "Hari Ke-6",
+          "tanggal": "Isnen Pahing, 24 Robi’ul Awwal 1448 H / 07 September 2026 M",
+          "agenda": [
+            {
+              "jam": "04.00 – 05.30",
+              "agenda": "Persiapan dan Sholat",
+              "daerah": "Pesantren HSHF",
+              "durasi": "1 Jam 30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Sholat Shubuh Mandiri, Kemeja Putih Loading barang"
+            },
+            {
+              "jam": "05.30 – 06.30",
+              "agenda": "Sarapan",
+              "daerah": "Pesantren HSHF",
+              "durasi": "1 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Sarapan Kemeja Putih"
+            },
+            {
+              "jam": "06.30 – 09.00",
+              "agenda": "Mini Ceremony",
+              "daerah": "Pesantren",
+              "durasi": "2 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Sarasehan, Penyerahan Kemeja Putih,"
+            },
+            {
+              "jam": "06.30 – 06.40",
+              "agenda": "Pembukaan",
+              "daerah": "HSHF",
+              "durasi": "10 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Cinderamata, foto bersama Jasket"
+            },
+            {
+              "jam": "06.40 – 06.55",
+              "agenda": "Menyanyikan lagu Indonesia Raya 3 stanza, ikrar delapan kesanggupan, dan sumpah jati diri bangsa",
+              "daerah": "",
+              "durasi": "15 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Dirigen : Munta’ Zemmahal Ikrar dan sumpah jati diri : Alam Syahrul"
+            },
+            {
+              "jam": "06.55 – 07.05",
+              "agenda": "Pembacaan syair pohon shiddiqiyyah dan syair sumber kemerdekaan bangsa Indonesia dan berdirinya NKRI",
+              "daerah": "",
+              "durasi": "10 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Aditiya Saputra"
+            },
+            {
+              "jam": "07.05 – 07.15",
+              "agenda": "Penyerahan santunan",
+              "daerah": "",
+              "durasi": "10 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "(5 Anak/Orang),di"
+            },
+            {
+              "jam": "07.15 – 07.25",
+              "agenda": "Sambutan",
+              "daerah": "",
+              "durasi": "10 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "dampingi bpk"
+            },
+            {
+              "jam": "07.25 – 07.30",
+              "agenda": "Penyerahan cinderamata",
+              "daerah": "",
+              "durasi": "5 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Pendamping"
+            },
+            {
+              "jam": "07.30 – 08.30",
+              "agenda": "Mauidhotul khasanah dan doa",
+              "daerah": "",
+              "durasi": "1 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": ""
+            },
+            {
+              "jam": "09.00 – 12.30",
+              "agenda": "Perjalanan Menuju Makam Bung Hatta",
+              "daerah": "",
+              "durasi": "3 Jam 30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Kemeja Putih, Almamater MQ"
+            },
+            {
+              "jam": "12.30 – 14.30",
+              "agenda": "Ziarah Makam Bung Hatta, ISHOMA",
+              "daerah": "TPU Tanah Kusir, Jakarta Selatan",
+              "durasi": "2 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Do’a Khusus, Tabur Bunga, Kemeja Putih, Penyerahan Cinderamata , Almamater MQ Foto Bersama, ISHOMA (Sholat Dhuhur Ashar, Makan siang)"
+            },
+            {
+              "jam": "14.30 – 15.15",
+              "agenda": "Perjalanan menuju TPU Jeruk Purut (Makam Husein Mutahar)",
+              "daerah": "",
+              "durasi": "45 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Kemeja Putih, Almamater MQ"
+            },
+            {
+              "jam": "15.15 – 15.30",
+              "agenda": "Persiapan Ziarah Makam Husein Mutahar",
+              "daerah": "TPU Jeruk Purut, Jakarta Selatan",
+              "durasi": "15 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Jalan kaki dari parkiran Kemeja Putih, menuju makam Almamater MQ"
+            },
+            {
+              "jam": "15.30 – 16.00",
+              "agenda": "Ziarah Makam Husein Mutahar",
+              "daerah": "TPU Jeruk Purut, Jakarta Selatan",
+              "durasi": "30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Do’a Khusus, Tabur Bunga, Kemeja Putih, Penyerahan Cinderamata Almamater MQ"
+            },
+            {
+              "jam": "16.00 – 16.15",
+              "agenda": "Menuju Bus",
+              "daerah": "",
+              "durasi": "15 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Jalan kaki menuju parkiran Kemeja Putih, Almamater MQ"
+            },
+            {
+              "jam": "16.15 – 17.15",
+              "agenda": "Perjalanan menuju Makam Abu Hanifah dan K.H Abdul Mu’thi",
+              "daerah": "Karet Bivak, Jakarta Pusat",
+              "durasi": "1 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Kemeja Putih, Almamater MQ"
+            },
+            {
+              "jam": "17.15 – 17.30",
+              "agenda": "Persiapan Ziarah Makam Abu Hanifah dan K.H Abdul Mu’thi",
+              "daerah": "Karet Bivak, Jakarta Pusat",
+              "durasi": "15 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Jalan kaki menuju makam, Kemeja Putih, bergantian Putra - Putri Almamater MQ (efisiensi waktu)"
+            },
+            {
+              "jam": "17.30 – 18.30",
+              "agenda": "Ziarah Makam Abu Hanifah dan K.H Abdul Mu’thi",
+              "daerah": "Karet Bivak, Jakarta Pusat",
+              "durasi": "1 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "bergantian Putra - Putri Kemeja Putih, (efisiensi waktu), Do’a Almamater MQ Khusus, Tabur Bunga"
+            },
+            {
+              "jam": "18.30 – 18.40",
+              "agenda": "Menuju Penginapan",
+              "daerah": "Jakarta Pusat",
+              "durasi": "10 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Grand Sahid Jakarta Kemeja Putih"
+            },
+            {
+              "jam": "18.40 – 04.00",
+              "agenda": "Istirahat di penginapan",
+              "daerah": "Hotel Swiss Belresidences",
+              "durasi": "9 Jam 20 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Istirahat di penginapan Baju Bebas Sopan"
+            }
+          ]
+        },
+        {
+          "label": "Hari Ke-7",
+          "tanggal": "Selasa Pon, 25 Robi’ul Awwal 1448 H / 08 September 2026 M",
+          "agenda": [
+            {
+              "jam": "04.00 – 05.30",
+              "agenda": "Persiapan dan Sholat",
+              "daerah": "",
+              "durasi": "1 Jam 30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Sholat Shubuh Mandiri, Salur Loading barang"
+            },
+            {
+              "jam": "05.30 – 07.00",
+              "agenda": "Sarapan",
+              "daerah": "Hotel Swiss Belresidences",
+              "durasi": "1 Jam 30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Sarapan Salur"
+            },
+            {
+              "jam": "07.00 – 07.25",
+              "agenda": "Perjalanan Menuju Museum Sumpah Pemuda",
+              "daerah": "",
+              "durasi": "25 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Salu r"
+            },
+            {
+              "jam": "07.25 – 07.30",
+              "agenda": "Persiapan Observasi Museum Sumpah Pemuda",
+              "daerah": "Jakarta Pusat",
+              "durasi": "5 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Sal ur"
+            },
+            {
+              "jam": "07.30 – 09.30",
+              "agenda": "Observasi di Museum Sumpah Pemuda",
+              "daerah": "Jakarta Pusat",
+              "durasi": "2 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Menyanyikan lagu Salur Indonesia Raya, Sumpah Pemuda, Penyerahan Cinderamata, Foto Bersama"
+            },
+            {
+              "jam": "09.30 – 09.40",
+              "agenda": "Persiapan Menuju Monas",
+              "daerah": "Jakarta Pusat",
+              "durasi": "10 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Menuju bus Salur"
+            },
+            {
+              "jam": "09.40 – 10.25",
+              "agenda": "Perjalanan menuju Monas",
+              "daerah": "Jakarta Pusat",
+              "durasi": "45 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Salur"
+            },
+            {
+              "jam": "10.25 – 10.45",
+              "agenda": "Dropping dan Foto Bersama",
+              "daerah": "Monas, Jakarta Pusat",
+              "durasi": "20 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Foto Bersama, Penyerahan Salu r Cinderamata"
+            },
+            {
+              "jam": "10.20 – 12.20",
+              "agenda": "Observasi di Monas",
+              "daerah": "Monas, Jakarta Pusat",
+              "durasi": "2 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Observasi Salu r"
+            },
+            {
+              "jam": "12.20 – 12.30",
+              "agenda": "Persiapan menuju Masjid Istiqlal",
+              "daerah": "",
+              "durasi": "10 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": ""
+            },
+            {
+              "jam": "12.30 – 12.40",
+              "agenda": "Perjalanan menuju Masjid Istiqlal",
+              "daerah": "Jakarta Pusat",
+              "durasi": "10 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Salur"
+            },
+            {
+              "jam": "12.40 – 14.40",
+              "agenda": "Observasi di Istiqlal dan ISHOMA",
+              "daerah": "",
+              "durasi": "2 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Penyerahan Cinderamata , Salur Foto Bersama, Makan siang, Sholat Dhuhur Ashar"
+            },
+            {
+              "jam": "14.40 – 19.40",
+              "agenda": "Menuju Penginapan di Pemalang",
+              "daerah": "",
+              "durasi": "5 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Salur"
+            },
+            {
+              "jam": "19.40 – 04.00",
+              "agenda": "Istirahat di Penginapan",
+              "daerah": "Hotel R - Gina Pemalang",
+              "durasi": "8 Jam 20 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "R Gina hotel pemalang, Baju Bebas Isirahat, Sholat mandiri, Sopan makan malam"
+            }
+          ]
+        },
+        {
+          "label": "Hari Ke-8",
+          "tanggal": "Rabu Wage, 26 Robi’ul Awwal 1448 H / 09 September 2026 M",
+          "agenda": [
+            {
+              "jam": "04.00 – 05.00",
+              "agenda": "Persiapan dan Sholat",
+              "daerah": "",
+              "durasi": "1 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Sholat Shubuh Mandiri, Kemeja Putih Loading barang"
+            },
+            {
+              "jam": "05.00 – 06.00",
+              "agenda": "Sarapan",
+              "daerah": "Regina hotel",
+              "durasi": "1 Jam",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Sarapan Kemeja Putih, Almamater MQ"
+            },
+            {
+              "jam": "06.00 – 08.30",
+              "agenda": "Perjalanan Menuju Sunan Kalijogo",
+              "daerah": "Demak",
+              "durasi": "2 Jam 30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Kemeja Putih, Almamater MQ"
+            },
+            {
+              "jam": "08.30 – 08.45",
+              "agenda": "Persiapan Ziarah di Makam Sunan Kalijogo",
+              "daerah": "Demak",
+              "durasi": "15 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Jalan kaki menuju makam Kemeja Putih, Almamater MQ"
+            },
+            {
+              "jam": "08.45 – 09.15",
+              "agenda": "Ziarah di Makam Sunan Kalijogo",
+              "daerah": "Demak",
+              "durasi": "30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Do’a Khusus, Tabur Bunga, Kemeja Putih, Penyerahan Cinderamata Almamater MQ"
+            },
+            {
+              "jam": "09.15 – 09.30",
+              "agenda": "Jalan kaki kembali Ke Bus",
+              "daerah": "Demak",
+              "durasi": "15 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Jalan kaki menuju bus Kemeja Putih, Almamater MQ"
+            },
+            {
+              "jam": "09.30 – 10.00",
+              "agenda": "Perjalanan Menuju Makam Raden Abdul Fattah Al Panotogomo",
+              "daerah": "Demak - Akbar",
+              "durasi": "30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Kemeja Putih, Almamater MQ"
+            },
+            {
+              "jam": "10.00 – 10.15",
+              "agenda": "Persiapan ziarah",
+              "daerah": "Demak",
+              "durasi": "15 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Kemeja Putih, Almamater MQ"
+            },
+            {
+              "jam": "10.15 – 10.45",
+              "agenda": "Ziarah di Makam Raden Abdul Fattah Al - Panotogomo",
+              "daerah": "Demak Akbar",
+              "durasi": "30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Do’a Khusus, Tabur Bunga, Kemeja Putih, Penyerahan Cinderamata Almamater MQ"
+            },
+            {
+              "jam": "10.45 – 12.15",
+              "agenda": "I SHOMA di Masjid Agung Demak",
+              "daerah": "Demak",
+              "durasi": "1 Jam 30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Istirahat, Sholat, Makan Kemeja Putih, siang .Foto Bersama Almamater MQ"
+            },
+            {
+              "jam": "12.15 – 12.25",
+              "agenda": "Kembali ke Bus",
+              "daerah": "Demak",
+              "durasi": "10 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Jalan kaki menuju Bus Kemeja Putih, Almamater MQ"
+            },
+            {
+              "jam": "12.25 – 16.55",
+              "agenda": "Perjalanan Menuju Losplos Jomja Iroja",
+              "daerah": "",
+              "durasi": "4 Jam 30 Menit",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Kemeja Putih, Almamater MQ"
+            },
+            {
+              "jam": "16.55",
+              "agenda": "Tiba di Losplos Jomja Iroja Penyambutan",
+              "daerah": "Ndalem",
+              "durasi": "",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Kemeja Putih, Almamater MQ Kondisional"
+            }
+          ]
+        }
+      ]
+    }
+  };
+
+  let sesiAktif = 'sesi1';
+
+  const esc = (s) => String(s == null ? '' : s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+  function barisAgenda(a) {
+    const tag = (kelas, isi) => isi ? `<span class="agenda-tag ${kelas}">${esc(isi)}</span>` : '';
+    return `
+      <div class="agenda-row">
+        <div class="agenda-jam">${esc(a.jam)}${a.durasi ? `<span class="durasi">${esc(a.durasi)}</span>` : ''}</div>
+        <div>
+          <div class="agenda-nama">${esc(a.agenda)}</div>
+          ${a.kegiatan ? `<div class="agenda-ket">${esc(a.kegiatan)}</div>` : ''}
+          ${tag('tag-daerah', a.daerah)}${tag('tag-seragam', a.seragam)}
+        </div>
+      </div>`;
+  }
+
+  function kartuHari(hari, index) {
+    const judul = hari.label || 'Susunan Acara';
+    return `
+      <div class="hari-card${index === 0 ? '' : ' tertutup'}">
+        <button class="hari-head" type="button" onclick="this.parentNode.classList.toggle('tertutup')">
+          <span>
+            ${esc(judul)}
+            ${hari.tanggal ? `<span class="tgl">${esc(hari.tanggal)}</span>` : ''}
+          </span>
+          <svg class="karet" width="18" height="18" viewBox="0 0 24 24" fill="#E0B863" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div class="hari-body">${hari.agenda.map(barisAgenda).join('')}</div>
+      </div>`;
+  }
+
+  function pilihSesi(kunci) {
+    sesiAktif = kunci;
+    ['sesi1', 'sesi2', 'sesi3'].forEach((k) => {
+      const btn = document.getElementById('btn-' + k);
+      if (btn) btn.classList.toggle('is-active', k === kunci);
+    });
+
+    const sesi = rundownData[kunci];
+    const meta = document.getElementById('sesi-meta');
+    const daftar = document.getElementById('rundown-list');
+
+    if (!sesi || !sesi.hari.length) {
+      meta.innerHTML = '';
+      daftar.innerHTML = `
+        <div class="hari-card" style="padding:28px;text-align:center">
+          <h3 style="margin:0 0 6px;font-size:15px;font-weight:700;color:rgb(var(--c-gold))">Rundown Sesi Ini Segera Hadir</h3>
+          <p style="margin:0;font-size:12px;color:rgb(var(--c-on-surface-variant))">Susunan acara belum tersedia dari tim panitia.</p>
+        </div>`;
+      return;
+    }
+
+    const jumlah = sesi.hari.reduce((n, h) => n + h.agenda.length, 0);
+    meta.innerHTML = [
+      sesi.armada ? `Armada: ${sesi.armada}` : '',
+      `${sesi.hari.length} hari`,
+      `${jumlah} agenda`,
+    ].filter(Boolean).map((t) => `<span class="meta-chip">${esc(t)}</span>`).join('');
+
+    daftar.innerHTML = sesi.hari.map(kartuHari).join('');
+  }
+
+  pilihSesi('sesi1');
+</script>
+
+<script src="../site-navigation.js"></script>
+</body>
+</html>

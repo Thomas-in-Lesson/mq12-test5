@@ -39,7 +39,9 @@ for (const file of process.argv.slice(2)) {
 
   const names = new Set();
   for (const m of html.matchAll(/class="([^"]*)"/g)) {
-    for (const n of m[1].split(/\s+/)) if (n && !IGNORE.test(n) && !isPlaceholder(n)) names.add(n);
+    // Buang ekspresi ${...} milik template literal; isinya kode, bukan nama class.
+    const nilai = m[1].replace(/\$\{[^}]*\}/g, ' ');
+    for (const n of nilai.split(/\s+/)) if (n && !IGNORE.test(n) && !isPlaceholder(n)) names.add(n);
   }
 
   const dead = [...names].filter((n) => !defined(css, n)).sort();
