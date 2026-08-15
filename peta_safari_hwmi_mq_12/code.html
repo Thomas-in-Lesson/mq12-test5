@@ -223,6 +223,16 @@
 
   </section>
 
+  <!-- Denah tiap lokasi ziarah -->
+  <section id="sec-denah" class="map-card" style="display:none">
+    <div class="map-bar">
+      <h2 id="denah-judul">Denah Lokasi Ziarah</h2>
+      <span id="denah-jumlah" class="map-open" style="cursor:default"></span>
+    </div>
+    <div id="denah-isi"></div>
+    <p class="map-note">Ketuk salah satu lokasi untuk melihat denah tempat duduk, jalur peserta, dan titik parkir.</p>
+  </section>
+
 </main>
 
 <script>
@@ -249,6 +259,18 @@
     }
   };
 
+  // Denah lokasi hanya muncul untuk sesi yang berkasnya sudah tersedia.
+  function tampilkanDenah(sesiKey) {
+    const sec = document.getElementById('sec-denah');
+    if (!window.DenahViewer || !DenahViewer.ada(sesiKey)) {
+      sec.style.display = 'none';
+      return;
+    }
+    sec.style.display = '';
+    document.getElementById('denah-jumlah').textContent = DenahViewer.ada(sesiKey) + ' lokasi';
+    document.getElementById('denah-isi').innerHTML = DenahViewer.daftarHTML(sesiKey);
+  }
+
   function switchSesi(sesiKey) {
     const data = sesiMapData[sesiKey];
     if (!data) return;
@@ -259,6 +281,7 @@
     });
 
     document.getElementById('sesi-map-title').textContent = data.title;
+    tampilkanDenah(sesiKey);
     const btnOpenMaps = document.getElementById('btn-open-maps');
     const container = document.getElementById('map-container');
 
@@ -278,6 +301,8 @@
   }
 </script>
 
+<script src="../denah-data.js"></script>
+<script src="../denah-viewer.js"></script>
 <script src="../site-navigation.js"></script>
 </body>
 </html>

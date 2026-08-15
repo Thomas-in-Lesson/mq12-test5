@@ -1,4 +1,4 @@
-const CACHE_NAME = 'safari-hwmi-mq12-v55';
+const CACHE_NAME = 'safari-hwmi-mq12-v56';
 const ASSETS = [
   './',
   './index.html',
@@ -22,10 +22,6 @@ const ASSETS = [
   './i_tibar_musafir_final_safari_hwmi_mq_12/code.html',
   './tata_tertib_dark_safari_hwmi_mq_12/code.html',
   './panduan_sholat_musafir_safari_hwmi_mq_12/code.html',
-  './denah_bus_safari_hwmi_mq_12/code.html',
-  './denah_bus_sesi_2_safari_hwmi_mq_12/code.html',
-  './denah_bus_sesi_3_safari_hwmi_mq_12/code.html',
-  './denah_tempat_duduk_elf_safari_hwmi_mq_12/code.html',
   './tata_tertib_berangkat_verbatim_safari_hwmi_mq_12/code.html',
   './etika_dalam_berbicara_safari_hwmi_mq_12/code.html',
   './etika_dalam_berpakaian_safari_hwmi_mq_12/code.html',
@@ -38,7 +34,25 @@ const ASSETS = [
   './jadwal_seragam_safari_hwmi_mq_12/code.html',
   './skema_foto_safari_hwmi_mq_12/code.html',
   './peta_safari_hwmi_mq_12/code.html',
-  './starterpack_dan_packing_safari_hwmi_mq_12/code.html'
+  './starterpack_dan_packing_safari_hwmi_mq_12/code.html',
+  './denah-data.js',
+  './denah-viewer.js',
+  './denah/sesi1/syuhada.webp',
+  './denah/sesi1/syuhada-kecil.webp',
+  './denah/sesi1/sanusi.webp',
+  './denah/sesi1/sanusi-kecil.webp',
+  './denah/sesi1/zamrozi.webp',
+  './denah/sesi1/zamrozi-kecil.webp',
+  './denah/sesi1/falal.webp',
+  './denah/sesi1/falal-kecil.webp',
+  './denah/sesi1/dukhan-iskandar.webp',
+  './denah/sesi1/dukhan-iskandar-kecil.webp',
+  './denah/sesi1/salamun-sumadji.webp',
+  './denah/sesi1/salamun-sumadji-kecil.webp',
+  './denah/sesi1/imam-puro.webp',
+  './denah/sesi1/imam-puro-kecil.webp',
+  './denah/sesi1/jumadil-kubro.webp',
+  './denah/sesi1/jumadil-kubro-kecil.webp',
 ];
 
 self.addEventListener('install', (event) => {
