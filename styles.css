@@ -407,8 +407,11 @@ a.group,
 @media (min-width: 768px) {
   .md\:p-4 { padding: 1rem; }
   .md\:text-sm { font-size: .875rem; line-height: 1.25rem; }
+  .md\:whitespace-nowrap { white-space: nowrap; }
 }
 
 @keyframes spin { to { transform: rotate(360deg); } }
 .animate-spin { animation: spin 1s linear infinite; }
 .pt-24 { padding-top: 6rem; }
+.max-w-3xl { max-width: 48rem; }
+
