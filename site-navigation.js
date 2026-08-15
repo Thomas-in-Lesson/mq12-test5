@@ -300,8 +300,8 @@
       transform: translate(-50%, -50%);
       text-align: center;
       pointer-events: none !important;
-      max-width: calc(100vw - 80px);
-      overflow: hidden;
+      max-width: calc(100vw - 56px);
+      width: max-content;
     }
     .site-header-center-title span {
       display: block;
@@ -310,14 +310,14 @@
       font-weight: 700 !important;
       text-transform: uppercase !important;
       white-space: nowrap !important;
-      font-size: clamp(9px, 2.6vw, 12px) !important;
-      letter-spacing: 0.02em !important;
+      font-size: clamp(7.5px, 2.3vw, 11.5px) !important;
+      letter-spacing: 0em !important;
       text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9), 0 0 10px rgba(248, 224, 136, 0.35) !important;
     }
     @media (max-width: 380px) {
       .site-header-center-title span {
-        font-size: clamp(8.5px, 2.5vw, 10px) !important;
-        letter-spacing: 0.01em !important;
+        font-size: clamp(7px, 2.2vw, 9.5px) !important;
+        letter-spacing: -0.01em !important;
       }
     }
 
