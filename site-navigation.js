@@ -300,23 +300,23 @@
       transform: translate(-50%, -50%);
       text-align: center;
       pointer-events: none !important;
-      max-width: calc(100vw - 110px);
+      max-width: calc(100vw - 80px);
       overflow: hidden;
     }
     .site-header-center-title span {
-  display: block;
-  color: #F8E088 !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", sans-serif !important;
-  font-weight: 700 !important;
-  text-transform: uppercase !important;
-  white-space: nowrap !important;
-  font-size: 11px !important;
-  letter-spacing: 0.02em !important;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9), 0 0 10px rgba(248, 224, 136, 0.35) !important;
-}
+      display: block;
+      color: #F8E088 !important;
+      font-family: -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", sans-serif !important;
+      font-weight: 700 !important;
+      text-transform: uppercase !important;
+      white-space: nowrap !important;
+      font-size: clamp(9px, 2.6vw, 12px) !important;
+      letter-spacing: 0.02em !important;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9), 0 0 10px rgba(248, 224, 136, 0.35) !important;
+    }
     @media (max-width: 380px) {
       .site-header-center-title span {
-        font-size: 9.5px !important;
+        font-size: clamp(8.5px, 2.5vw, 10px) !important;
         letter-spacing: 0.01em !important;
       }
     }
@@ -726,11 +726,6 @@
   `;
   document.body.append(backdrop, panel);
 
-  // Glowing Lamp Symbol Badge Setup with Toast Notification
-  const badge = document.createElement('button');
-  badge.type = 'button';
-  badge.className = 'site-offline-badge';
-  
   const toast = document.createElement('div');
   toast.className = 'site-toast';
   document.body.append(toast);
@@ -741,27 +736,6 @@
     setTimeout(() => toast.classList.remove('is-show'), 3500);
   }
 
-  function updateOfflineStatus() {
-    if (navigator.onLine) {
-      badge.className = 'site-offline-badge';
-      badge.setAttribute('aria-label', 'Indikator Lampu Hijau: Mode Offline Ready');
-      badge.innerHTML = '<span class="material-symbols-outlined" aria-hidden="true">lightbulb</span>';
-    } else {
-      badge.className = 'site-offline-badge offline';
-      badge.setAttribute('aria-label', 'Indikator Lampu Kuning: Anda Sedang Offline');
-      badge.innerHTML = '<span class="material-symbols-outlined" aria-hidden="true">lightbulb</span>';
-    }
-  }
-
-  badge.addEventListener('click', () => {
-    const isOff = !navigator.onLine;
-    showToast(isOff ? '💡 Lampu Kuning (Offline): Aplikasi tetap berfungsi penuh tanpa jaringan' : '💡 Lampu Hijau (Offline Ready): Seluruh data tersimpan aman di HP/Perangkat Anda');
-  });
-
-  window.addEventListener('online', updateOfflineStatus);
-  window.addEventListener('offline', updateOfflineStatus);
-  updateOfflineStatus();
-
   // Render Top Header Bar Consistently Across ALL Pages
   document.querySelectorAll('header.fixed.top-0').forEach(el => el.remove());
 
@@ -771,8 +745,9 @@
     <div class="site-header-center-title">
       <span>ATAS BERKAT ROCHMAT ALLOH YANG MAHA KUASA</span>
     </div>
+    <div style="width:42px;height:42px;flex:none;" aria-hidden="true"></div>
   `;
-  mobileBar.append(trigger, badge);
+  mobileBar.prepend(trigger);
   document.body.prepend(mobileBar);
 
   const closeMenu = () => {

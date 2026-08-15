@@ -111,6 +111,8 @@
     display: inline-block; margin-top: 5px; margin-right: 5px;
     padding: 2px 8px; border-radius: 999px;
     font-size: 10px; font-weight: 700; white-space: nowrap;
+    max-width: 100%; overflow: hidden; text-overflow: ellipsis;
+    vertical-align: middle;
   }
   .tag-daerah { border: 1px solid rgba(224, 184, 99, .4); background: rgba(224, 184, 99, .14); color: rgb(var(--c-gold)); }
   .tag-seragam { border: 1px solid rgba(255, 255, 255, .25); background: rgba(255, 255, 255, .08); color: #FFFFFF; }
@@ -136,7 +138,7 @@
   <div class="w-10 shrink-0"></div>
 </header>
 
-<main class="flex-1 w-full max-w-container-max-width mx-auto pt-20 px-3 md:px-margin-desktop md:pt-32 space-y-4">
+<main class="flex-1 w-full max-w-container-max-width mx-auto pt-24 px-3 md:px-margin-desktop md:pt-32 space-y-4">
 
   <section class="pg-head">
     <h1 class="pg-title">Rundown Kegiatan</h1>
@@ -379,16 +381,16 @@
             {
               "jam": "15.55 – 16.10",
               "agenda": "Persiapan Ziaroh",
-              "daerah": "Ziarah Maqom Makam Kholifah Bpk. Sumadji Bpk. Salamun, Bpk. Khozin",
-              "durasi": "",
+              "daerah": "Kuncung",
+              "durasi": "15 Menit",
               "kegiatan": "Jalan kaki menuju makam Kholifah Sumadji",
-              "seragam": "Almamater MQ Kemejja Putih",
+              "seragam": "Almamater MQ Kemeja Putih",
               "catatan": ""
             },
             {
               "jam": "16.10 – 16.40",
               "agenda": "Ziarah Maqom Makam Kholifah Bpk. Sumadji Bpk. Salamun",
-              "daerah": "Kuncung Dan",
+              "daerah": "Kuncung",
               "durasi": "30 Menit",
               "kegiatan": "Do’a Khusus, Tabur Bunga, Penyerahan Cinderamata",
               "seragam": "Almamater MQ Kemeja Putih",
@@ -397,7 +399,7 @@
             {
               "jam": "16.40 – 16.50",
               "agenda": "Perjalanan Menuju Makam Syekh Imam Dzipuro",
-              "daerah": "Makam Syekh Imam Dzipuro",
+              "daerah": "Kuncung",
               "durasi": "10 Menit",
               "kegiatan": "",
               "seragam": "Almamater MQ Kemeja Putih",
@@ -406,7 +408,7 @@
             {
               "jam": "16.50 – 17.05",
               "agenda": "Persiapan Ziaroh",
-              "daerah": "Makam Syekh Imam Dzipuro",
+              "daerah": "Kuncung",
               "durasi": "15 Menit",
               "kegiatan": "Jalan Kaki menuju Makam",
               "seragam": "Almamater MQ Kemeja Putih",
@@ -444,8 +446,8 @@
               "agenda": "Persiapan Ziaroh",
               "daerah": "Mojokerto",
               "durasi": "15 Menit",
-              "kegiatan": "Jalan kaki men u",
-              "seragam": "ju makam Almamater MQ Kemeja Putih",
+              "kegiatan": "Jalan kaki menuju makam",
+              "seragam": "Almamater MQ Kemeja Putih",
               "catatan": ""
             },
             {
@@ -463,12 +465,12 @@
               "daerah": "Mojokerto",
               "durasi": "1 Jam",
               "kegiatan": "Istirahat, Sholat Isya (Jama ’ Takhir) Makan Malam",
-              "seragam": "Maghrib - Almamater MQ, Kemeja Putih",
+              "seragam": "Almamater MQ Kemeja Putih",
               "catatan": ""
             },
             {
               "jam": "20.30 – 21.30",
-              "agenda": "Persiapan dan Perjalanan menuju LOSPLOS JOMJA IROJA",
+              "agenda": "Persiapan dan Perjalanan menuju Losplos Jogja Iroja",
               "daerah": "Mojokerto",
               "durasi": "1 Jam",
               "kegiatan": "",
@@ -477,7 +479,7 @@
             },
             {
               "jam": "21.30",
-              "agenda": "Tiba di LOSPLOS",
+              "agenda": "Tiba di Losplos Jogja Iroja",
               "daerah": "Pesantren",
               "durasi": "",
               "kegiatan": "",
@@ -1134,8 +1136,8 @@
             },
             {
               "jam": "09.30 – 10.15",
-              "agenda": "Perjalanan Menuj Jendral Sudirman",
-              "daerah": "u Makam DIY",
+              "agenda": "Perjalanan Menuju Jendral Sudirman",
+              "daerah": "DIY",
               "durasi": "45 Menit",
               "kegiatan": "",
               "seragam": "",
@@ -1215,12 +1217,12 @@
             },
             {
               "jam": "16.15 – 04.00",
-              "agenda": "Istirahat di Mungkid MUNGKID)",
-              "daerah": "(JMYRS Magelang",
+              "agenda": "Istirahat di Mungkid",
+              "daerah": "Magelang",
               "durasi": "11 Jam 45 Menit",
               "kegiatan": "",
-              "seragam": "",
-              "catatan": "Kegiatan kondisional, Almamater MQ , Makan malam, Sholat Kemeja Putih berjama’ah"
+              "seragam": "Almamater MQ, Kemeja Putih",
+              "catatan": "Kegiatan kondisional, makan malam, sholat berjama’ah"
             }
           ]
         },
@@ -1998,34 +2000,34 @@
             },
             {
               "jam": "10.45 – 12.15",
-              "agenda": "I SHOMA di Masjid Agung Demak",
+              "agenda": "ISHOMA di Masjid Agung Demak",
               "daerah": "Demak",
               "durasi": "1 Jam 30 Menit",
               "kegiatan": "",
-              "seragam": "",
-              "catatan": "Istirahat, Sholat, Makan Kemeja Putih, siang .Foto Bersama Almamater MQ"
+              "seragam": "Kemeja Putih, Almamater MQ",
+              "catatan": "Istirahat, Sholat, Makan siang, Foto Bersama"
             },
             {
               "jam": "12.15 – 12.25",
               "agenda": "Kembali ke Bus",
               "daerah": "Demak",
               "durasi": "10 Menit",
-              "kegiatan": "",
-              "seragam": "",
-              "catatan": "Jalan kaki menuju Bus Kemeja Putih, Almamater MQ"
+              "kegiatan": "Jalan kaki menuju Bus",
+              "seragam": "Kemeja Putih, Almamater MQ",
+              "catatan": ""
             },
             {
               "jam": "12.25 – 16.55",
-              "agenda": "Perjalanan Menuju Losplos Jomja Iroja",
+              "agenda": "Perjalanan Menuju Losplos Jogja Iroja",
               "daerah": "",
               "durasi": "4 Jam 30 Menit",
               "kegiatan": "",
-              "seragam": "",
-              "catatan": "Kemeja Putih, Almamater MQ"
+              "seragam": "Kemeja Putih, Almamater MQ",
+              "catatan": ""
             },
             {
               "jam": "16.55",
-              "agenda": "Tiba di Losplos Jomja Iroja",
+              "agenda": "Tiba di Losplos Jogja Iroja",
               "daerah": "",
               "durasi": "",
               "kegiatan": "",

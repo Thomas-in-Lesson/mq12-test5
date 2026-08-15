@@ -411,3 +411,4 @@ a.group,
 
 @keyframes spin { to { transform: rotate(360deg); } }
 .animate-spin { animation: spin 1s linear infinite; }
+.pt-24 { padding-top: 6rem; }
