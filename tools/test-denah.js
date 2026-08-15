@@ -76,7 +76,61 @@ for (const bukan of ['Sarapan', 'Menuju Bus', 'ISHOMA', 'Perjalanan menuju Maqom
   assert.strictEqual(V.tautanUntuk('sesi1', bukan), '', `tidak boleh bertautan: ${bukan}`);
 }
 
+// Halaman memanggil DenahViewer saat render pertama, jadi denah-viewer.js wajib
+// dimuat SEBELUM skrip halaman. Kalau terbalik, tautannya diam-diam tidak muncul.
+for (const f of ['rundown_kegiatan_safari_hwmi_mq_12/code.html',
+                 'peta_safari_hwmi_mq_12/code.html']) {
+  const html = baca(f);
+  const viewer = html.indexOf('denah-viewer.js');
+  const inline = html.indexOf('<script>');
+  assert.ok(viewer >= 0, `${f}: denah-viewer.js belum dipasang`);
+  assert.ok(viewer < inline, `${f}: denah-viewer.js dimuat setelah skrip halaman`);
+  assert.ok(html.indexOf('denah-data.js') < viewer, `${f}: denah-data.js harus sebelum viewer`);
+}
+
+// Daftar denah di halaman peta harus dirender sekali saat halaman dibuka,
+// bukan hanya ketika tab sesi ditekan.
+assert.ok(/\n\s*tampilkanDenah\('sesi1'\);/.test(baca('peta_safari_hwmi_mq_12/code.html')),
+  'peta: tampilkanDenah tidak dipanggil saat halaman dibuka');
+
+// Uji sungguhan: jalankan skrip halaman Rundown persis seperti urutan di HTML,
+// lalu hitung tombol denah yang benar-benar terender. Pemeriksaan inilah yang
+// menangkap bug urutan skrip, karena semua uji di atas tetap lolos waktu itu.
+(function ujiRender() {
+  const vm = require('vm');
+  const html = baca('rundown_kegiatan_safari_hwmi_mq_12/code.html');
+  const kotak = {};
+  const ambil = (id) => kotak[id] || (kotak[id] = {
+    innerHTML: '', textContent: '', style: {},
+    classList: { toggle() {}, add() {}, remove() {} },
+  });
+  const ctx = {
+    console: { log() {} }, setTimeout, Date, Math, JSON,
+    document: {
+      currentScript: { src: 'https://x/mq12-test5/denah-viewer.js' },
+      getElementById: ambil,
+      head: { appendChild() {} },
+      body: { appendChild() {}, classList: { add() {}, remove() {} } },
+      createElement: () => ({
+        style: {}, classList: { add() {}, remove() {} },
+        set innerHTML(v) {}, querySelector: () => null, addEventListener() {},
+      }),
+      addEventListener() {},
+    },
+  };
+  ctx.window = ctx;
+  vm.createContext(ctx);
+  vm.runInContext(baca('denah-data.js'), ctx);
+  vm.runInContext(baca('denah-viewer.js'), ctx);
+  vm.runInContext(html.match(/<script>([\s\S]*?)<\/script>/)[1], ctx);
+
+  const render = ambil('rundown-list').innerHTML;
+  const jumlah = (render.match(/denah-tautan/g) || []).length;
+  assert.strictEqual(jumlah, 8, `tombol denah yang terender di Rundown: ${jumlah}, seharusnya 8`);
+})();
+
 console.log(`OK — 8 denah Sesi 1, semua berkas ada, ${terpakai.size} agenda ziarah tertaut ke denah yang benar.`);
+console.log('   Rundown dirender ulang: 8 tombol "Lihat denah lokasi" muncul.');
 for (const [i, list] of [...terpakai].sort((a, b) => a[0] - b[0])) {
   console.log(`   ${denah.sesi1[i].no}. ${denah.sesi1[i].judul}  <-  ${list.join(' ; ')}`);
 }

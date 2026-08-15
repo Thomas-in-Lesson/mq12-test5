@@ -235,6 +235,8 @@
 
 </main>
 
+<script src="../denah-data.js"></script>
+<script src="../denah-viewer.js"></script>
 <script>
   const sesiMapData = {
     sesi1: {
@@ -299,10 +301,12 @@
         '</div>';
     }
   }
+
+  // Sesi 1 aktif sejak halaman dibuka, jadi daftar denahnya perlu dirender
+  // sekali di awal — switchSesi baru jalan kalau tab ditekan.
+  tampilkanDenah('sesi1');
 </script>
 
-<script src="../denah-data.js"></script>
-<script src="../denah-viewer.js"></script>
 <script src="../site-navigation.js"></script>
 </body>
 </html>
