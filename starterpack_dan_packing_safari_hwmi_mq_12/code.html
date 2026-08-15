@@ -5,7 +5,7 @@
 <meta name="description" content="Checklist Starterpack & Teknis Packing Safari Chubbul Wathon Minal Iman — Maqooshidul Qur-aan 12.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Starterpack & Packing - Safari HWMI MQ 12">
-<meta property="og:description" content="Panduan lengkap perlengkapan wajib dan teknis packing tas bus vs koper untuk Putra & Putri per Sesi.">
+<meta property="og:description" content="Panduan perlengkapan wajib dan teknis packing tas selempang vs tas ransel untuk Putra & Putri per Sesi.">
 <meta property="og:image" content="https://thomas-in-lesson.github.io/mq12-test5/og-cover.jpg">
 <meta property="og:url" content="https://thomas-in-lesson.github.io/mq12-test5/">
 <link rel="apple-touch-icon" href="../icon-180.png">
@@ -23,6 +23,59 @@
     text-decoration: line-through;
     opacity: 0.6;
   }
+  /* styles.css adalah hasil build Tailwind yang sudah di-purge dan repo ini tidak
+     punya build pipeline, jadi kelas di bawah ini tidak ikut ter-compile dan harus
+     ditulis eksplisit. Tanpa ini seluruh aksen emas halaman ini tidak muncul.
+     Cek ulang dengan: node tools/check-classes.js <file.html> */
+  .text-white   { color: #FFFFFF; }
+  .text-gold\/80 { color: rgba(224, 184, 99, .8); }
+  .text-blue-300 { color: #93C5FD; }
+  .bg-gold\/10  { background-color: rgba(224, 184, 99, .10); }
+  .bg-gold\/15  { background-color: rgba(224, 184, 99, .15); }
+  .bg-gold\/20  { background-color: rgba(224, 184, 99, .20); }
+  .bg-blue-500\/20 { background-color: rgba(59, 130, 246, .20); }
+  .border-gold\/30 { border-color: rgba(224, 184, 99, .30); }
+  .border-gold\/40 { border-color: rgba(224, 184, 99, .40); }
+  .border-blue-400\/40 { border-color: rgba(96, 165, 250, .40); }
+  .hover\:bg-gold\/10:hover { background-color: rgba(224, 184, 99, .10); }
+  .hover\:border-gold\/60:hover { border-color: rgba(224, 184, 99, .60); }
+  .hover\:text-gold:hover { color: #E0B863; }
+  .fill-current { fill: currentColor; }
+  .accent-gold  { accent-color: #E0B863; }
+  .truncate     { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .min-w-0      { min-width: 0; }
+  .select-none  { user-select: none; -webkit-user-select: none; }
+  .shadow       { box-shadow: 0 1px 3px rgba(0,0,0,.4); }
+  .w-4          { width: 1rem; }
+  .h-4          { height: 1rem; }
+  .p-1\.5       { padding: .375rem; }
+  .p-3\.5       { padding: .875rem; }
+  .p-8          { padding: 2rem; }
+  .px-3\.5      { padding-left: .875rem; padding-right: .875rem; }
+  .py-0\.5      { padding-top: .125rem; padding-bottom: .125rem; }
+  .py-1\.5      { padding-top: .375rem; padding-bottom: .375rem; }
+  .py-2\.5      { padding-top: .625rem; padding-bottom: .625rem; }
+  .mt-0\.5      { margin-top: .125rem; }
+  .text-\[10px\] { font-size: 10px; }
+  .text-\[11px\] { font-size: 11px; }
+  @media (min-width: 768px) {
+    .md\:col-span-2 { grid-column: span 2 / span 2; }
+    .md\:text-sm    { font-size: .875rem; line-height: 1.25rem; }
+    .md\:text-base  { font-size: 1rem; line-height: 1.5rem; }
+  }
+
+  .qty-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border: 1px solid rgba(224, 184, 99, .45);
+    border-radius: 999px;
+    background: rgba(224, 184, 99, .16);
+    color: #E0B863;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.4;
+    white-space: nowrap;
+  }
 </style>
 </head>
 <body class="bg-background text-on-surface antialiased min-h-screen flex flex-col pb-24 md:pb-0">
@@ -36,7 +89,7 @@
 <div class="w-10"></div>
 </header>
 
-<main class="flex-1 w-full max-w-5xl mx-auto pt-20 px-3 md:px-margin-desktop md:pt-32 space-y-6">
+<main class="flex-1 w-full max-w-container-max-width mx-auto pt-20 px-3 md:px-margin-desktop md:pt-32 space-y-6">
 <!-- Hero Header -->
 <section class="text-center space-y-2">
   <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold/15 border border-gold/30 text-gold text-xs font-bold whitespace-nowrap">
@@ -47,7 +100,7 @@
     STARTERPACK & TEKNIS PACKING
   </h1>
   <p class="text-xs md:text-sm text-on-surface-variant max-w-xl mx-auto">
-    Checklist perlengkapan wajib dan alokasi tas ransel bus vs koper penginapan per Sesi.
+    Checklist perlengkapan wajib beserta jumlahnya, dan pembagian isi tas selempang vs tas ransel per Sesi.
   </p>
 </section>
 
@@ -83,12 +136,13 @@
 
 <!-- CONTENT SECTION 1: CHECKLIST PERLENGKAPAN WAJIB -->
 <section id="sec-checklist" class="space-y-4">
-  <div class="flex items-center justify-between px-2">
+  <div class="flex items-center justify-between px-2 gap-3">
     <div class="text-xs text-on-surface-variant">
       Kemajuan Packing: <span id="progress-text" class="font-bold text-gold">0 / 0 Selesai</span>
     </div>
-    <button onclick="resetChecklist()" class="text-xs text-gold/80 hover:text-gold underline">Reset Checklist</button>
+    <button onclick="resetChecklist()" class="text-xs text-gold/80 hover:text-gold underline shrink-0">Reset Checklist</button>
   </div>
+  <p id="ringkas-text" class="px-2 text-[11px] text-on-surface-variant"></p>
 
   <div id="checklist-container" class="grid grid-cols-1 md:grid-cols-2 gap-3">
     <!-- Populated dynamically via JS -->
@@ -100,9 +154,9 @@
   <div class="p-4 rounded-2xl bg-gold/10 border border-gold/30 flex items-start gap-3">
     <svg class="w-6 h-6 fill-current text-gold shrink-0 mt-0.5" viewBox="0 0 24 24"><path d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"/></svg>
     <div class="text-xs space-y-1">
-      <strong class="text-gold font-bold block text-sm">Prinsip Alokasi Tas & Koper</strong>
+      <strong class="text-gold font-bold block text-sm">Prinsip Alokasi Tas</strong>
       <p class="text-on-surface-variant">
-        <strong>Tas Ransel Bus</strong> dibawa masuk ke dalam kabin bus untuk menyimpan seragam yang akan segera dipakai, sajadah/mukena, sandal ziarah, & perlengkapan darurat selama berkegiatan. <strong>Koper Utama</strong> disimpan aman di bagasi bus/hotel.
+        <strong>Tas Selempang</strong> dibawa turun dari bus saat ziarah atau mengunjungi lokasi tujuan. <strong>Tas Ransel</strong> ditaruh di dalam bus dan penginapan. Koper utama tetap disimpan di bagasi.
       </p>
     </div>
   </div>
@@ -118,116 +172,107 @@
   let activeGender = 'putra';
   let activeView = 'checklist';
 
+  // jml = jumlah yang disebut dokumen resmi. Dikosongkan kalau dokumennya
+  // memang tidak menyebut jumlah — jangan diisi tebakan.
   const dataPutra = [
-    { title: "Setelan Lengkap Menerima Pelajaran MQ", detail: "Alat tulis, sarung, kopyah, sandal, daleman", panitia: true },
-    { title: "Alat Tulis Catatan Pribadi", detail: "Selain peralatan MQ", panitia: false },
-    { title: "Kopyah Hitam Polos 1", detail: "Selain Seragam MQ", panitia: false },
-    { title: "Almamater MQ", detail: "Wajib dibawa", panitia: false },
-    { title: "Jasket Safari", detail: "Wajib dibawa", panitia: false },
-    { title: "Baju Salur Safari", detail: "Wajib dibawa", panitia: false },
-    { title: "Kemeja Putih Polos", detail: "7 buah", panitia: false },
-    { title: "Celana Hitam Formal", detail: "7 buah", panitia: false },
-    { title: "Kaos Kaki Hitam", detail: "8 buah", panitia: false },
-    { title: "Sepatu Pantofel Hitam", detail: "Tanpa tali", panitia: false },
-    { title: "Kaos Dalam Putih", detail: "7 buah", panitia: false },
-    { title: "Sarung & Sajadah Pribadi", detail: "Perlengkapan ibadah", panitia: false },
-    { title: "Kemeja Rapi", detail: "Untuk di penginapan", panitia: false },
-    { title: "Pakaian Istirahat", detail: "Kondisional masing-masing", panitia: false },
-    { title: "Sandal Bebas Sopan", detail: "Untuk mobilitas santai", panitia: false },
-    { title: "Perlengkapan Mandi", detail: "Sabun, sikat gigi, sampo, handuk", panitia: false },
-    { title: "Koper Utama", detail: "Disimpan di bagasi bus/hotel", panitia: false },
-    { title: "Tas Ransel Kabin Bus", detail: "Untuk seragam harian, sajadah, & perlengkapan bus", panitia: false },
-    { title: "Gantungan Baju (Hanger)", detail: "1 - 2 buah", panitia: false },
-    { title: "Kantong Baju Kotor", detail: "Pemisah pakaian kotor", panitia: false },
-    { title: "Goodie Bag Alas Ziarah", detail: "Kantong sepatu & alas ziarah", panitia: false },
-    { title: "Lampiran Do’a, Air & Madu Asma’, Payung, Tas Selempang", detail: "Persiapan Safari", panitia: true },
-    { title: "Obat Pribadi", detail: "Sesuai kebutuhan kesehatan", panitia: false },
-    { title: "Alat Cukur Kumis", detail: "Perlengkapan kerapian", panitia: false },
-    { title: "Plastik Ziplock", detail: "Penyimpanan dokumen/pakaian", panitia: false },
-    { title: "Perlengkapan Pribadi Lainnya", detail: "Kebutuhan pendukung", panitia: false }
+    { title: "Setelan Lengkap Menerima Pelajaran MQ", jml: "1 setel", detail: "Alat tulis, sarung, kopyah, sandal, daleman", panitia: true },
+    { title: "Alat Tulis Catatan Pribadi", jml: "", detail: "Selain peralatan MQ", panitia: false },
+    { title: "Kopyah Hitam Polos", jml: "1 buah", detail: "Selain seragam MQ", panitia: false },
+    { title: "Almamater MQ", jml: "", detail: "Wajib dibawa", panitia: false },
+    { title: "Jasket Safari", jml: "", detail: "Wajib dibawa", panitia: false },
+    { title: "Baju Salur Safari", jml: "", detail: "Wajib dibawa", panitia: false },
+    { title: "Kemeja Putih Polos", jml: "7 buah", detail: "", panitia: false },
+    { title: "Celana Hitam Formal", jml: "7 buah", detail: "", panitia: false },
+    { title: "Kaos Kaki Hitam", jml: "8 buah", detail: "", panitia: false },
+    { title: "Sepatu Pantofel Hitam", jml: "1 pasang", detail: "Tanpa tali", panitia: false },
+    { title: "Kaos Dalam Putih", jml: "7 buah", detail: "", panitia: false },
+    { title: "Sarung & Sajadah Pribadi", jml: "", detail: "Perlengkapan ibadah", panitia: false },
+    { title: "Kemeja Rapi", jml: "", detail: "Untuk di penginapan", panitia: false },
+    { title: "Pakaian Istirahat", jml: "", detail: "Kondisional masing-masing", panitia: false },
+    { title: "Sandal Bebas Sopan", jml: "", detail: "Untuk mobilitas santai", panitia: false },
+    { title: "Perlengkapan Mandi", jml: "", detail: "Sabun, sikat gigi, sampo, handuk", panitia: false },
+    { title: "Koper Utama", jml: "1 buah", detail: "Disimpan di bagasi bus / penginapan", panitia: false },
+    { title: "Tas Ransel", jml: "1 buah", detail: "Menyimpan seragam yang akan dipakai, sandal, sajadah, & perlengkapan selama berkegiatan", panitia: false },
+    { title: "Gantungan Baju (Hanger)", jml: "1 – 2 buah", detail: "", panitia: false },
+    { title: "Kantong Baju Kotor", jml: "", detail: "Pemisah pakaian kotor", panitia: false },
+    { title: "Kantong Sepatu & Alas Ziarah", jml: "", detail: "Goodie bag", panitia: false },
+    { title: "Lampiran Do’a, Air & Madu Media Asma’, Payung, Tas Selempang", jml: "", detail: "Persiapan Safari", panitia: true },
+    { title: "Obat Pribadi", jml: "", detail: "Sesuai kebutuhan kesehatan", panitia: false },
+    { title: "Alat Cukur Kumis", jml: "", detail: "Perlengkapan kerapian", panitia: false },
+    { title: "Plastik Ziplock", jml: "", detail: "Penyimpanan dokumen / pakaian", panitia: false },
+    { title: "Perlengkapan Pribadi Lainnya", jml: "", detail: "Kebutuhan pendukung", panitia: false }
   ];
 
   const dataPutri = [
-    { title: "Setelan Lengkap Menerima Pelajaran MQ", detail: "Alat tulis, sewek, kerudung, sandal, daleman", panitia: true },
-    { title: "Alat Tulis Catatan Pribadi", detail: "Selain peralatan MQ", panitia: false },
-    { title: "Kerudung Putih Polos Segi Empat", detail: "Minimal 7 (selain seragam MQ)", panitia: false },
-    { title: "Almamater MQ", detail: "Wajib dibawa", panitia: false },
-    { title: "Jasket Safari", detail: "Wajib dibawa", panitia: false },
-    { title: "Baju Salur Safari", detail: "Wajib dibawa", panitia: false },
-    { title: "Kemeja Putih Polos", detail: "7 buah", panitia: false },
-    { title: "Rok Hitam Klok A", detail: "Minimal 7 buah", panitia: false },
-    { title: "Legging Warna Gelap", detail: "8 buah", panitia: false },
-    { title: "Kaos Kaki Hitam", detail: "8 buah", panitia: false },
-    { title: "Sepatu Pantofel Hitam", detail: "Tanpa tali", panitia: false },
-    { title: "Kaos Dalam Putih", detail: "8 buah", panitia: false },
-    { title: "Mukena & Sajadah Pribadi", detail: "Perlengkapan ibadah", panitia: false },
-    { title: "Kemeja Rapi", detail: "Untuk di penginapan", panitia: false },
-    { title: "Pakaian Istirahat", detail: "Kondisional masing-masing", panitia: false },
-    { title: "Sandal Bebas Sopan", detail: "Untuk mobilitas santai", panitia: false },
-    { title: "Perlengkapan Mandi", detail: "Sabun, sikat gigi, sampo, handuk", panitia: false },
-    { title: "Koper Utama (Max 24 Inch)", detail: "Disimpan di bagasi bus/hotel", panitia: false },
-    { title: "Tas Ransel Kabin Bus", detail: "Untuk seragam harian, mukena, & perlengkapan bus", panitia: false },
-    { title: "Gantungan Baju (Hanger)", detail: "2 - 3 buah", panitia: false },
-    { title: "Kantong Baju Kotor", detail: "Pemisah pakaian kotor", panitia: false },
-    { title: "Goodie Bag Alas Ziarah", detail: "Kantong sepatu & alas ziarah", panitia: false },
-    { title: "Lampiran Do’a, Air & Madu Asma’, Payung, Tas Selempang", detail: "Persiapan Safari", panitia: true },
-    { title: "Obat Pribadi", detail: "Sesuai kebutuhan kesehatan", panitia: false },
-    { title: "Plastik Ziplock", detail: "Penyimpanan dokumen/pakaian", panitia: false },
-    { title: "Perlengkapan Pribadi Lainnya", detail: "Kebutuhan pendukung", panitia: false }
+    { title: "Setelan Lengkap Menerima Pelajaran MQ", jml: "1 setel", detail: "Alat tulis, sewek, kerudung, sandal, daleman", panitia: true },
+    { title: "Alat Tulis Catatan Pribadi", jml: "", detail: "Selain peralatan MQ", panitia: false },
+    { title: "Kerudung Putih Polos Segi Empat", jml: "Minimal 7", detail: "Selain seragam MQ", panitia: false },
+    { title: "Almamater MQ", jml: "", detail: "Wajib dibawa", panitia: false },
+    { title: "Jasket Safari", jml: "", detail: "Wajib dibawa", panitia: false },
+    { title: "Baju Salur Safari", jml: "", detail: "Wajib dibawa", panitia: false },
+    { title: "Kemeja Putih Polos", jml: "7 buah", detail: "", panitia: false },
+    { title: "Rok Hitam Klok A", jml: "Minimal 7", detail: "", panitia: false },
+    { title: "Legging Warna Gelap", jml: "8 buah", detail: "", panitia: false },
+    { title: "Kaos Kaki Hitam", jml: "8 buah", detail: "", panitia: false },
+    { title: "Sepatu Pantofel Hitam", jml: "1 pasang", detail: "Tanpa tali", panitia: false },
+    { title: "Kaos Dalam Putih", jml: "8 buah", detail: "", panitia: false },
+    { title: "Mukena & Sajadah Pribadi", jml: "", detail: "Perlengkapan ibadah", panitia: false },
+    { title: "Kemeja Rapi", jml: "", detail: "Untuk di penginapan", panitia: false },
+    { title: "Pakaian Istirahat", jml: "", detail: "Kondisional masing-masing", panitia: false },
+    { title: "Sandal Bebas Sopan", jml: "", detail: "Untuk mobilitas santai", panitia: false },
+    { title: "Perlengkapan Mandi", jml: "", detail: "Sabun, sikat gigi, sampo, handuk", panitia: false },
+    { title: "Koper Utama", jml: "Maks. 24 inci", detail: "Disimpan di bagasi bus / penginapan", panitia: false },
+    { title: "Tas Ransel", jml: "1 buah", detail: "Menyimpan seragam yang akan dipakai, sandal, & perlengkapan selama berkegiatan", panitia: false },
+    { title: "Gantungan Baju (Hanger)", jml: "2 – 3 buah", detail: "", panitia: false },
+    { title: "Kantong Baju Kotor", jml: "", detail: "Pemisah pakaian kotor", panitia: false },
+    { title: "Kantong Sepatu & Alas Ziarah", jml: "", detail: "Goodie bag", panitia: false },
+    { title: "Lampiran Do’a, Air & Madu Media Asma’, Payung, Tas Selempang", jml: "", detail: "Persiapan Safari", panitia: true },
+    { title: "Obat Pribadi", jml: "", detail: "Sesuai kebutuhan kesehatan", panitia: false },
+    { title: "Plastik Ziplock", jml: "", detail: "Penyimpanan dokumen / pakaian", panitia: false },
+    { title: "Perlengkapan Pribadi Lainnya", jml: "", detail: "Kebutuhan pendukung", panitia: false }
   ];
 
-  const packingSesiInfo = {
+  // Sumber: "Teknis Packing Putra Sesi 1.docx" & "Teknis Packing Putra Sesi 2.docx".
+  // Isi selempang Sesi 2 disebut "Tetap" di dokumen, jadi mengikuti Sesi 1.
+  const selempangSesi1 = [
+    "Lampiran do’a",
+    "Media asma’ air dan madu",
+    "Alat tulis",
+    "Sajadah pribadi",
+    "Kantong sepatu (goodie bag)",
+    "Alas ziarah",
+    "Payung (dibawa ke lokasi hanya saat ada instruksi)",
+    "Perlengkapan pribadi"
+  ];
+
+  const ranselSesi2 = (putra) => [
+    "Menyiapkan pakaian seragam Safari",
+    `Menyiapkan dalaman, kemeja putih, ${putra ? 'celana formal hitam' : 'rok hitam formal'}, kaos kaki cadangan/tambahan jika diperlukan`,
+    `Menyiapkan pakaian untuk di penginapan (kemeja rapi, ${putra ? 'celana panjang rapi' : 'rok panjang rapi'})`,
+    `${putra ? 'Sarung' : 'Sewek'} dan ${putra ? 'sajadah' : 'mukena & sajadah'} pribadi (bukan ${putra ? 'sarung' : 'sewek'} MQ)`,
+    "Menyiapkan pakaian istirahat",
+    "Perlengkapan mandi",
+    "Sandal bebas sopan (untuk di penginapan)",
+    "Kantong baju kotor",
+    "Payung (dibawa ke lokasi hanya saat ada instruksi)",
+    "Perlengkapan pribadi"
+  ];
+
+  const packingPerSesi = (putra) => ({
     sesi1: {
-      title: "TEKNIS PACKING SESI 1",
-      bus: [
-        "Setelan Seragam Ziarah Sesi 1 (Baju Salur / Kemeja Putih Polos)",
-        "Sarung/Sewek & Kopyah/Kerudung Putih",
-        "Sajadah / Mukena Pribadi",
-        "Sandal Ziarah dalam Goodie Bag",
-        "Air & Madu Media Asma', Payung, & Obat Pribadi",
-        "Alat Tulis Catatan Pribadi"
-      ],
-      koper: [
-        "Pakaian Ganti Penginapan (Kemeja Rapi)",
-        "Pakaian Istirahat",
-        "Perlengkapan Mandi & Hanger",
-        "Cadangan Kemeja & Celana/Rok Formal (5-6 set)",
-        "Kantong Baju Kotor & Ziplock Ekstra"
-      ]
+      selempang: selempangSesi1,
+      selempangNote: "Dibawa saat ziarah / mengunjungi lokasi tujuan.",
+      ransel: null,
+      ranselNote: ""
     },
     sesi2: {
-      title: "TEKNIS PACKING SESI 2",
-      bus: [
-        "Jasket Safari & Almamater MQ",
-        "Setelan Kemeja Putih Polos & Celana/Rok Hitam Formal",
-        "Sajadah / Mukena Pribadi",
-        "Goodie Bag Alas Ziarah & Sandal",
-        "Payung, Media Asma', & Obat Pribadi",
-        "Kaos Kaki Hitam Cadangan"
-      ],
-      koper: [
-        "Pakaian Santai Penginapan Hotel",
-        "Setelan Seragam Sesi 3",
-        "Perlengkapan Mandi Lengkap",
-        "Pakaian Kotor Sesi 1 (Di kantong terpisah)"
-      ]
+      selempang: selempangSesi1,
+      selempangNote: "Isi tas selempang tetap sama seperti Sesi 1.",
+      ransel: ranselSesi2(putra),
+      ranselNote: "Tas ransel ditaruh di dalam bus dan penginapan."
     },
-    sesi3: {
-      title: "TEKNIS PACKING SESI 3",
-      bus: [
-        "Setelan Lengkap Menerima Pelajaran MQ (Seragam Khusus MQ)",
-        "Alat Tulis Lengkap Kit Pelajaran MQ",
-        "Sajadah / Mukena Pribadi",
-        "Payung & Tas Selempang",
-        "Obat Pribadi & Ziplock Dokumen"
-      ],
-      koper: [
-        "Seluruh Pakaian Kotor Sesi 1 & 2 (Sudah terikat rapi)",
-        "Perlengkapan Mandi yang sudah dikeringkan",
-        "Koper disiap kembalikan untuk kepulangan"
-      ]
-    }
-  };
+    sesi3: null // dokumen teknis packing Sesi 3 belum diterima
+  });
 
   function getStorageKey() {
     return 'starterpack_check_' + activeGender;
@@ -299,17 +344,26 @@
         <div class="p-3.5 rounded-xl packing-card flex items-start gap-3 transition-all hover:border-gold/60">
           <input type="checkbox" id="chk-${idx}" class="item-checkbox mt-1 w-4 h-4 accent-gold cursor-pointer" ${isChecked ? 'checked' : ''} onchange="toggleCheck(${idx})">
           <label for="chk-${idx}" class="flex-1 cursor-pointer select-none">
-            <div class="flex items-center justify-between gap-2">
+            <div class="flex items-start justify-between gap-2">
               <strong class="text-sm text-on-surface font-bold block">${item.title}</strong>
-              ${item.panitia ? `<span class="px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-400/40 text-[10px] font-bold whitespace-nowrap">Disediakan Panitia</span>` : ''}
+              ${item.panitia ? `<span class="px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-400/40 text-[10px] font-bold whitespace-nowrap shrink-0">Disediakan Panitia</span>` : ''}
             </div>
-            <p class="text-xs text-on-surface-variant mt-0.5">${item.detail}</p>
+            <div class="flex items-center gap-2 mt-1 flex-wrap">
+              ${item.jml ? `<span class="qty-badge">${item.jml}</span>` : ''}
+              ${item.detail ? `<span class="text-xs text-on-surface-variant">${item.detail}</span>` : ''}
+            </div>
           </label>
         </div>
       `;
     }).join('');
 
+    const berjumlah = data.filter((i) => i.jml).length;
+    const olehPanitia = data.filter((i) => i.panitia).length;
     document.getElementById('progress-text').innerText = `${doneCount} / ${data.length} Selesai`;
+    const ket = document.getElementById('ringkas-text');
+    if (ket) {
+      ket.innerText = `${data.length} item wajib · ${berjumlah} item ada ketentuan jumlah · ${olehPanitia} disediakan panitia`;
+    }
   }
 
   function toggleCheck(idx) {
@@ -326,54 +380,64 @@
     }
   }
 
+  const kartuPacking = (opts) => `
+      <div class="p-5 rounded-2xl packing-card border ${opts.border} shadow-xl space-y-3">
+        <div class="flex items-center gap-3 pb-3 border-b border-surface-variant/40">
+          <div class="w-10 h-10 rounded-xl ${opts.ikonWarna} flex items-center justify-center shrink-0">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="${opts.ikon}"/></svg>
+          </div>
+          <div class="min-w-0">
+            <span class="text-[10px] ${opts.labelWarna} uppercase font-bold tracking-wider">${opts.label}</span>
+            <h3 class="text-sm md:text-base font-bold text-white">${opts.judul}</h3>
+          </div>
+        </div>
+        <ul class="space-y-2 text-xs text-on-surface">
+          ${opts.isi.map((item) => `
+            <li class="flex items-start gap-2">
+              <span class="${opts.labelWarna} font-bold shrink-0">✓</span>
+              <span>${item}</span>
+            </li>
+          `).join('')}
+        </ul>
+        ${opts.catatan ? `<p class="text-[11px] text-on-surface-variant pt-2 border-t border-surface-variant/30">${opts.catatan}</p>` : ''}
+      </div>`;
+
+  const IKON_SELEMPANG = 'M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm3 11c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z';
+  const IKON_RANSEL = 'M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z';
+
   function renderPackingPerSesi() {
     const container = document.getElementById('packing-cards-container');
-    const info = packingSesiInfo[activeView];
-    if (!info) return;
+    const info = packingPerSesi(activeGender === 'putra')[activeView];
 
-    container.innerHTML = `
-      <!-- Card Tas Ransel Kabin Bus -->
-      <div class="p-5 rounded-2xl packing-card border border-gold/40 shadow-xl space-y-3">
-        <div class="flex items-center gap-3 pb-3 border-b border-surface-variant/40">
-          <div class="w-10 h-10 rounded-xl bg-gold/20 text-gold flex items-center justify-center">
-            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
-          </div>
-          <div>
-            <span class="text-[10px] text-gold uppercase font-bold tracking-wider">DI DALAM BUS / KABIN</span>
-            <h3 class="text-sm md:text-base font-bold text-white">Tas Ransel Siap Pakai</h3>
-          </div>
-        </div>
-        <ul class="space-y-2 text-xs text-on-surface">
-          ${info.bus.map(item => `
-            <li class="flex items-start gap-2">
-              <span class="text-gold font-bold">✓</span>
-              <span>${item}</span>
-            </li>
-          `).join('')}
-        </ul>
-      </div>
+    if (!info) {
+      container.innerHTML = `
+        <div class="p-8 rounded-2xl packing-card border border-gold/30 text-center space-y-3 md:col-span-2">
+          <svg class="w-10 h-10 mx-auto fill-current text-gold" viewBox="0 0 24 24" opacity=".7"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+          <h3 class="text-base font-bold text-gold">Teknis Packing Sesi 3 Segera Hadir</h3>
+          <p class="text-xs text-on-surface-variant max-w-md mx-auto">Dokumen teknis packing untuk Sesi 3 belum diterima dari tim panitia. Untuk sementara silakan berpedoman pada daftar Perlengkapan Wajib.</p>
+        </div>`;
+      return;
+    }
 
-      <!-- Card Koper Utama Bagasi / Hotel -->
-      <div class="p-5 rounded-2xl packing-card border border-gold/30 shadow-xl space-y-3">
-        <div class="flex items-center gap-3 pb-3 border-b border-surface-variant/40">
-          <div class="w-10 h-10 rounded-xl bg-secondary/20 text-secondary flex items-center justify-center">
-            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M19 6h-4V3c0-.55-.45-1-1-1h-4c-.55 0-1 .45-1 1v3H5c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-3h2v3h-2V3zM7 19V8h10v11H7z"/></svg>
-          </div>
-          <div>
-            <span class="text-[10px] text-secondary uppercase font-bold tracking-wider">BAGASI BUS / HOTEL</span>
-            <h3 class="text-sm md:text-base font-bold text-white">Koper Utama</h3>
-          </div>
-        </div>
-        <ul class="space-y-2 text-xs text-on-surface">
-          ${info.koper.map(item => `
-            <li class="flex items-start gap-2">
-              <span class="text-secondary font-bold">✓</span>
-              <span>${item}</span>
-            </li>
-          `).join('')}
-        </ul>
-      </div>
-    `;
+    container.innerHTML = kartuPacking({
+      label: 'Dibawa turun dari bus',
+      judul: 'Tas Selempang',
+      ikon: IKON_SELEMPANG,
+      ikonWarna: 'bg-gold/20 text-gold',
+      labelWarna: 'text-gold',
+      border: 'border-gold/40',
+      isi: info.selempang,
+      catatan: info.selempangNote,
+    }) + (info.ransel ? kartuPacking({
+      label: 'Ditaruh di bus & penginapan',
+      judul: 'Tas Ransel',
+      ikon: IKON_RANSEL,
+      ikonWarna: 'bg-secondary/20 text-secondary',
+      labelWarna: 'text-secondary',
+      border: 'border-gold/30',
+      isi: info.ransel,
+      catatan: info.ranselNote,
+    }) : '');
   }
 
   function renderCurrentView() {

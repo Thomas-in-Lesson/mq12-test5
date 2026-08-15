@@ -15,10 +15,19 @@ const sheet = fs.readFileSync(path.join(root, 'styles.css'), 'utf8');
 // Class yang efeknya datang dari JS/atribut, bukan dari CSS.
 const IGNORE = /^(dark|group|material-symbols-outlined|is-active)$/;
 
+// Nilai yang disisipkan saat runtime lewat template literal tidak bisa dicek statis.
+const isPlaceholder = (n) => n.includes('${') || n.includes('`');
+
+// Tailwind meng-escape ". : / [ ] %" dengan backslash di CSS hasil build, jadi
+// tiap karakter itu dicocokkan dengan backslash opsional di depannya.
 const defined = (css, name) => {
-  // Tailwind meng-escape "/", ".", ":" dengan backslash di output-nya.
-  const esc = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\\([/.:])/g, '\\\\$1');
-  return new RegExp('\\.' + esc.replace(/([/.:])/g, '\\\\\\$1') + '(?![\\w-])').test(css);
+  let pola = '';
+  for (const ch of name) {
+    if ('.:/[]%'.includes(ch)) pola += '\\\\?\\' + ch;
+    else if ('*+?^${}()|\\'.includes(ch)) pola += '\\' + ch;
+    else pola += ch;
+  }
+  return new RegExp('\\.' + pola + '(?![\\w-])').test(css);
 };
 
 let failed = 0;
@@ -30,7 +39,7 @@ for (const file of process.argv.slice(2)) {
 
   const names = new Set();
   for (const m of html.matchAll(/class="([^"]*)"/g)) {
-    for (const n of m[1].split(/\s+/)) if (n && !IGNORE.test(n)) names.add(n);
+    for (const n of m[1].split(/\s+/)) if (n && !IGNORE.test(n) && !isPlaceholder(n)) names.add(n);
   }
 
   const dead = [...names].filter((n) => !defined(css, n)).sort();
