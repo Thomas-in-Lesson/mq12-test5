@@ -1,4 +1,4 @@
-const CACHE_NAME = 'safari-hwmi-mq12-v57';
+const CACHE_NAME = 'safari-hwmi-mq12-v58';
 const ASSETS = [
   './',
   './index.html',
@@ -53,12 +53,22 @@ const ASSETS = [
   './denah/sesi1/imam-puro-kecil.webp',
   './denah/sesi1/jumadil-kubro.webp',
   './denah/sesi1/jumadil-kubro-kecil.webp',
+  './denah_bus_safari_hwmi_mq_12/code.html',
+  './denah_bus_sesi_2_safari_hwmi_mq_12/code.html',
+  './denah_bus_sesi_3_safari_hwmi_mq_12/code.html',
+  './denah_tempat_duduk_elf_safari_hwmi_mq_12/code.html',
+  './skema-foto-terbaru.pdf',
+  './vendor/pdf.min.js',
+  './vendor/pdf.worker.min.js',
 ];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(ASSETS).catch(() => Promise.resolve());
+      // addAll() bersifat semua-atau-tidak: satu berkas gagal diambil membuat
+      // seluruh precache batal tanpa jejak. Disimpan satu per satu supaya
+      // kegagalan satu berkas tidak menghapus sisanya.
+      return Promise.all(ASSETS.map((aset) => cache.add(aset).catch(() => {})));
     })
   );
   self.skipWaiting();

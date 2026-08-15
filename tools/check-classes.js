@@ -23,7 +23,7 @@ const isPlaceholder = (n) => n.includes('${') || n.includes('`');
 const defined = (css, name) => {
   let pola = '';
   for (const ch of name) {
-    if ('.:/[]%'.includes(ch)) pola += '\\\\?\\' + ch;
+    if ('.:/[]%,()'.includes(ch)) pola += '\\\\?\\' + ch;
     else if ('*+?^${}()|\\'.includes(ch)) pola += '\\' + ch;
     else pola += ch;
   }
@@ -41,6 +41,9 @@ for (const file of process.argv.slice(2)) {
   for (const m of html.matchAll(/class="([^"]*)"/g)) {
     // Buang ekspresi ${...} milik template literal; isinya kode, bukan nama class.
     const nilai = m[1].replace(/\$\{[^}]*\}/g, ' ');
+    // Atribut yang dirakit lewat penyambungan string JS ("... ' + x + ' ...")
+    // tidak bisa dinilai statis; kutip tunggal atau backtick adalah tandanya.
+    if (/['`]/.test(nilai)) continue;
     for (const n of nilai.split(/\s+/)) if (n && !IGNORE.test(n) && !isPlaceholder(n)) names.add(n);
   }
 
