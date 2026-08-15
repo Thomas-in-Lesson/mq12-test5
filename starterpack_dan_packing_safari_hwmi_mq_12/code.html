@@ -232,47 +232,134 @@
     { title: "Perlengkapan Pribadi Lainnya", jml: "", detail: "Kebutuhan pendukung", panitia: false }
   ];
 
-  // Sumber: "Teknis Packing Putra Sesi 1.docx" & "Teknis Packing Putra Sesi 2.docx".
-  // Isi selempang Sesi 2 disebut "Tetap" di dokumen, jadi mengikuti Sesi 1.
-  const selempangSesi1 = [
-    "Lampiran do’a",
-    "Media asma’ air dan madu",
-    "Alat tulis",
-    "Sajadah pribadi",
-    "Kantong sepatu (goodie bag)",
-    "Alas ziarah",
-    "Payung (dibawa ke lokasi hanya saat ada instruksi)",
-    "Perlengkapan pribadi"
-  ];
+  // Disalin apa adanya dari dokumen teknis packing panitia:
+  // "Teknis Packing Putra Sesi 1/2/3.docx" dan "TEKNIS PACKING PUTRI SESI 1,2,3.docx".
+  // Dokumen menulis isi tas selempang Sesi 2 & 3 sebagai "Tetap", jadi mengikuti Sesi 1.
+  const TETAP = "Isi tas selempang tetap sama seperti Sesi 1.";
+  const DIBAWA = "Dibawa saat ziaroh / mengunjungi lokasi tujuan.";
+  const GANTUNG = "Seragam Almamater MQ & jasket digantung di dalam bus.";
+  const CAT_RANSEL3 = "Tas ransel, jasket, gantungan baju, dan sepatu cadangan ditaruh di bus (jika menyediakan sepatu cadangan).";
+  const CAT_KOPER = "Koper keluar bagasi bus hanya saat di penginapan.";
 
-  const ranselSesi2 = (putra) => [
-    "Menyiapkan pakaian seragam Safari",
-    `Menyiapkan dalaman, kemeja putih, ${putra ? 'celana formal hitam' : 'rok hitam formal'}, kaos kaki cadangan/tambahan jika diperlukan`,
-    `Menyiapkan pakaian untuk di penginapan (kemeja rapi, ${putra ? 'celana panjang rapi' : 'rok panjang rapi'})`,
-    `${putra ? 'Sarung' : 'Sewek'} dan ${putra ? 'sajadah' : 'mukena & sajadah'} pribadi (bukan ${putra ? 'sarung' : 'sewek'} MQ)`,
-    "Menyiapkan pakaian istirahat",
-    "Perlengkapan mandi",
-    "Sandal bebas sopan (untuk di penginapan)",
-    "Kantong baju kotor",
-    "Payung (dibawa ke lokasi hanya saat ada instruksi)",
-    "Perlengkapan pribadi"
-  ];
+  const packingData = {
+    putra: {
+      sesi1: {
+        selempang: [
+          "Lampiran do’a",
+          "Media asma’ air dan madu",
+          "Alat tulis",
+          "Sajadah pribadi",
+          "Kantong sepatu (goodie bag)",
+          "Alas ziarah",
+          "Payung (dibawa ke lokasi hanya saat ada instruksi)",
+          "Perlengkapan pribadi"
+        ],
+        selempangNote: DIBAWA
+      },
+      sesi2: {
+        selempangNote: TETAP,
+        ransel: [
+          "Menyiapkan pakaian seragam Safari",
+          "Menyiapkan dalaman, kemeja putih, celana formal hitam, kaos kaki cadangan / tambahan jika diperlukan",
+          "Menyiapkan pakaian untuk di penginapan (kemeja rapi, celana panjang rapi)",
+          "Sarung dan sajadah pribadi (bukan sarung MQ)",
+          "Menyiapkan pakaian istirahat",
+          "Perlengkapan mandi",
+          "Sandal bebas sopan (untuk di penginapan)",
+          "Kantong baju kotor",
+          "Payung (dibawa ke lokasi hanya saat ada instruksi)",
+          "Perlengkapan pribadi"
+        ],
+        ranselNote: "Tas ransel ditaruh di dalam bus dan penginapan."
+      },
+      sesi3: {
+        atas: GANTUNG,
+        selempangNote: TETAP,
+        ransel: [
+          "Menyiapkan pakaian seragam cadangan jika diperlukan",
+          "Sarung dan sajadah pribadi (bukan sarung MQ)",
+          "Perlengkapan mandi",
+          "Sandal bebas sopan (untuk di penginapan)",
+          "Kantong baju kotor",
+          "Payung (dibawa ke lokasi hanya saat ada instruksi)",
+          "Perlengkapan pribadi (pencukur kumis dan lainnya)"
+        ],
+        ranselNote: CAT_RANSEL3,
+        koper: [
+          "Menyiapkan pakaian seragam Safari sesuai jumlah minimal yang harus dibawa selama 8 hari (dalaman, kemeja putih, celana formal hitam, kaos kaki)",
+          "Menyiapkan pakaian di penginapan (kemeja rapi, celana panjang, pakaian istirahat)",
+          "Menyiapkan peralatan lengkap ketika menerima pelajaran MQ (Buku Salinan MQ dan alat tulis, kopyah, kemeja putih, sarung, dan sandal)",
+          "Masker duckbill putih",
+          "Perlengkapan pribadi dan lebihan pakaian & barang (jika ada)"
+        ],
+        koperNote: CAT_KOPER
+      }
+    },
+    putri: {
+      sesi1: {
+        selempang: [
+          "Lampiran do’a",
+          "Tasbih",
+          "Media asma’ air, madu dan alat tulis",
+          "Mukenah dan sajadah pribadi",
+          "Kantong sepatu (totebag kecil)",
+          "Alas untuk ziaroh",
+          "Payung (kondisional)",
+          "Perlengkapan pribadi"
+        ],
+        selempangNote: DIBAWA
+      },
+      sesi2: {
+        selempangNote: TETAP,
+        ransel: [
+          "Menyiapkan pakaian seragam safari",
+          "Menyiapkan dalaman, kemeja putih, rok hitam klok A, kaos kaki cadangan / tambahan jika diperlukan",
+          "Menyiapkan pakaian untuk di penginapan (kerudung, kemeja rapi, rok rapi)",
+          "Mukenah dan sajadah pribadi",
+          "Menyiapkan pakaian istirahat",
+          "Perlengkapan mandi",
+          "Sandal (untuk di penginapan)",
+          "Kantong baju kotor",
+          "Payung",
+          "Obat pribadi",
+          "Perlengkapan pribadi"
+        ],
+        ranselNote: "Tas ransel ditaruh di dalam bus dan penginapan, sepatu cadangan ditaruh di bus (jika menyediakan)."
+      },
+      sesi3: {
+        atas: GANTUNG,
+        selempangNote: TETAP,
+        ransel: [
+          "Menyiapkan pakaian seragam cadangan jika diperlukan",
+          "Sarung dan sajadah pribadi",
+          "Perlengkapan mandi",
+          "Sandal (hanya untuk di penginapan)",
+          "Kantong baju kotor",
+          "Payung",
+          "Perlengkapan pribadi"
+        ],
+        ranselNote: CAT_RANSEL3,
+        koper: [
+          "Menyiapkan pakaian seragam safari untuk hari ketiga sampai hari ketujuh (dalaman, kemeja putih, rok hitam klok A, kaos kaki)",
+          "Menyiapkan pakaian di penginapan (kemeja rapi, rok bebas sopan, baju tidur sopan)",
+          "Menyiapkan peralatan lengkap ketika menerima pelajaran MQ (Buku Salinan MQ dan alat tulis, kerudung, kemeja putih, sarung, dan sandal)",
+          "Masker duckbill putih",
+          "Perlengkapan pribadi dan lebihan pakaian & barang (jika ada)"
+        ],
+        koperNote: CAT_KOPER
+      }
+    }
+  };
 
-  const packingPerSesi = (putra) => ({
-    sesi1: {
-      selempang: selempangSesi1,
-      selempangNote: "Dibawa saat ziarah / mengunjungi lokasi tujuan.",
-      ransel: null,
-      ranselNote: ""
-    },
-    sesi2: {
-      selempang: selempangSesi1,
-      selempangNote: "Isi tas selempang tetap sama seperti Sesi 1.",
-      ransel: ranselSesi2(putra),
-      ranselNote: "Tas ransel ditaruh di dalam bus dan penginapan."
-    },
-    sesi3: null // dokumen teknis packing Sesi 3 belum diterima
-  });
+  // Sesi 2 & 3 memakai isi selempang Sesi 1 milik gender yang sama.
+  const packingPerSesi = (gender) => {
+    const g = packingData[gender];
+    return {
+      sesi1: { ...g.sesi1 },
+      sesi2: { ...g.sesi2, selempang: g.sesi1.selempang },
+      sesi3: { ...g.sesi3, selempang: g.sesi1.selempang }
+    };
+  };
 
   function getStorageKey() {
     return 'starterpack_check_' + activeGender;
@@ -404,22 +491,19 @@
 
   const IKON_SELEMPANG = 'M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm3 11c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z';
   const IKON_RANSEL = 'M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z';
+  const IKON_KOPER = 'M19 6h-4V3c0-.55-.45-1-1-1h-4c-.55 0-1 .45-1 1v3H5c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-3h2v3h-2V3zM7 19V8h10v11H7z';
 
   function renderPackingPerSesi() {
     const container = document.getElementById('packing-cards-container');
-    const info = packingPerSesi(activeGender === 'putra')[activeView];
+    const info = packingPerSesi(activeGender)[activeView];
+    if (!info) return;
 
-    if (!info) {
-      container.innerHTML = `
-        <div class="p-8 rounded-2xl packing-card border border-gold/30 text-center space-y-3 md:col-span-2">
-          <svg class="w-10 h-10 mx-auto fill-current text-gold" viewBox="0 0 24 24" opacity=".7"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
-          <h3 class="text-base font-bold text-gold">Teknis Packing Sesi 3 Segera Hadir</h3>
-          <p class="text-xs text-on-surface-variant max-w-md mx-auto">Dokumen teknis packing untuk Sesi 3 belum diterima dari tim panitia. Untuk sementara silakan berpedoman pada daftar Perlengkapan Wajib.</p>
-        </div>`;
-      return;
-    }
+    const atas = info.atas ? `
+      <div class="p-3 rounded-xl bg-gold/15 border border-gold/40 text-xs font-bold text-gold text-center md:col-span-2">
+        ${info.atas}
+      </div>` : '';
 
-    container.innerHTML = kartuPacking({
+    container.innerHTML = atas + kartuPacking({
       label: 'Dibawa turun dari bus',
       judul: 'Tas Selempang',
       ikon: IKON_SELEMPANG,
@@ -437,6 +521,15 @@
       border: 'border-gold/30',
       isi: info.ransel,
       catatan: info.ranselNote,
+    }) : '') + (info.koper ? kartuPacking({
+      label: 'Bagasi bus',
+      judul: 'Koper Utama',
+      ikon: IKON_KOPER,
+      ikonWarna: 'bg-blue-500/20 text-blue-300',
+      labelWarna: 'text-blue-300',
+      border: 'border-blue-400/40',
+      isi: info.koper,
+      catatan: info.koperNote,
     }) : '');
   }
 
