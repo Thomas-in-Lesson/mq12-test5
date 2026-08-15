@@ -125,8 +125,32 @@ for (const hal of halaman) {
   if (!asetSW.includes(hal)) lapor(hal, 'tanpa-offline', 'halaman ini tidak ada di daftar precache sw.js');
 }
 
+// --- ikon Material Symbols yang tidak ada di font fallback ---
+// Saat online ikon disediakan font Google, tetapi saat offline yang dipakai
+// subset lokal. Nama ikon di luar subset itu tampil sebagai TEKS MENTAH tanpa
+// error apa pun — persis yang dulu terjadi pada HANDSHAKE dan MOSQUE.
+const daftarIkon = path.join(REPO, 'fonts', 'ikon-tersedia.txt');
+if (fs.existsSync(daftarIkon)) {
+  const tersedia = new Set(
+    fs.readFileSync(daftarIkon, 'utf8').split('\n')
+      .map((b) => b.trim()).filter((b) => b && !b.startsWith('#')));
+  const sumber = [...halaman, 'site-navigation.js', 'denah-viewer.js']
+    .filter((f) => fs.existsSync(path.join(REPO, f)));
+  for (const f of sumber) {
+    const isi = fs.readFileSync(path.join(REPO, f), 'utf8');
+    const dipakai = new Set();
+    for (const m of isi.matchAll(/material-symbols-outlined[^>]*>\s*([a-z0-9_]{2,})\s*</g)) dipakai.add(m[1]);
+    for (const m of isi.matchAll(/data-icon=["']([a-z0-9_]{2,})["']/g)) dipakai.add(m[1]);
+    for (const nama of dipakai) {
+      if (!tersedia.has(nama)) {
+        lapor(f, 'ikon-offline', `ikon "${nama}" tidak ada di font fallback — akan tampil sebagai teks saat offline`);
+      }
+    }
+  }
+}
+
 // --- laporan ---
-const urut = ['aset-hilang', 'skrip-hilang', 'urutan-skrip', 'handler-mati', 'id-hilang',
+const urut = ['aset-hilang', 'ikon-offline', 'skrip-hilang', 'urutan-skrip', 'handler-mati', 'id-hilang',
   'tautan-putus', 'ketergantungan-luar', 'tanpa-offline'];
 temuan.sort((a, b) => urut.indexOf(a.jenis) - urut.indexOf(b.jenis) || a.berkas.localeCompare(b.berkas));
 
