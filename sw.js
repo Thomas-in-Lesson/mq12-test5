@@ -1,4 +1,4 @@
-const CACHE_NAME = 'safari-hwmi-mq12-v61';
+const CACHE_NAME = 'safari-hwmi-mq12-v62';
 const ASSETS = [
   './',
   './index.html',
@@ -12,6 +12,7 @@ const ASSETS = [
   './icon-512.png',
   './icon-maskable-512.png',
   './icon-180.png',
+  './logo.png',
   './fonts/material-symbols-outlined-fallback-100_700.woff2',
   './fonts/noto-serif-latin-400.woff2',
   './fonts/noto-serif-latin-ext-400.woff2',
