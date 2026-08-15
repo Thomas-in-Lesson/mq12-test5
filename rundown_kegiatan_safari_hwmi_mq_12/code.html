@@ -919,7 +919,7 @@
       ]
     },
     "sesi3": {
-      "armada": "",
+      "armada": "Big Bus",
       "tanggal": "",
       "hari": [
         {
@@ -2023,12 +2023,21 @@
             },
             {
               "jam": "16.55",
-              "agenda": "Tiba di Losplos Jomja Iroja Penyambutan",
+              "agenda": "Tiba di Losplos Jomja Iroja",
+              "daerah": "",
+              "durasi": "",
+              "kegiatan": "",
+              "seragam": "",
+              "catatan": "Kemeja Putih, Almamater MQ"
+            },
+            {
+              "jam": "",
+              "agenda": "Penyambutan",
               "daerah": "Ndalem",
               "durasi": "",
               "kegiatan": "",
               "seragam": "",
-              "catatan": "Kemeja Putih, Almamater MQ Kondisional"
+              "catatan": "Kondisional"
             }
           ]
         }
@@ -2049,6 +2058,7 @@
         <div>
           <div class="agenda-nama">${esc(a.agenda)}</div>
           ${a.kegiatan ? `<div class="agenda-ket">${esc(a.kegiatan)}</div>` : ''}
+          ${a.catatan ? `<div class="agenda-ket">${esc(a.catatan)}</div>` : ''}
           ${tag('tag-daerah', a.daerah)}${tag('tag-seragam', a.seragam)}
         </div>
       </div>`;

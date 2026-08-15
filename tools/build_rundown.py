@@ -128,7 +128,9 @@ def parse(pdf_path):
         nonlocal baris_aktif
         if baris_aktif and hari is not None:
             bersih = rapikan(baris_aktif)
-            if bersih['jam']:
+            # Agenda penutup ada yang tidak diberi jam sama sekali di dokumen
+            # ("Penyambutan Ndalem — Kondisional"); tetap ditampilkan apa adanya.
+            if bersih['jam'] or (bersih['agenda'] and baris_aktif.get('no', '').strip()):
                 hari['agenda'].append(bersih)
         baris_aktif = None
 
@@ -174,9 +176,17 @@ def parse(pdf_path):
             kol = pisah_kolom(baris, anchor)
 
             # Kolom NO dan WAKTU bisa jatuh di baris visual yang berbeda dalam
-            # satu baris tabel, jadi nomor urut bukan penanda yang andal. Jam
-            # selalu muncul tepat sekali per baris, itu yang dipakai.
-            if punya_jam(kol):
+            # satu baris tabel, jadi nomor urut saja bukan penanda yang andal.
+            # Jam selalu muncul tepat sekali per baris, itu penanda utamanya.
+            # Nomor urut hanya dipakai kalau baris berjalan sudah punya nomor
+            # DAN jam — cukup untuk memisah agenda penutup yang tak berjam,
+            # tanpa memecah baris yang nomornya menumpuk di baris visual lain.
+            nomor = re.match(r'^\d+\s*\.?$', kol.get('no', '').strip())
+            lanjut_bernomor = bool(
+                nomor and baris_aktif is not None
+                and baris_aktif.get('no', '').strip() and punya_jam(baris_aktif))
+
+            if punya_jam(kol) or lanjut_bernomor:
                 simpan()
                 if hari is None:  # sesi satu hari tidak punya baris "HARI KE"
                     hari = {'label': '', 'tanggal': sesi[kunci]['tanggal'], 'agenda': []}
@@ -192,9 +202,17 @@ def parse(pdf_path):
     return sesi
 
 
+# PDF tidak menulis armada untuk Sesi 3; diisi atas konfirmasi panitia.
+ARMADA_TAMBAHAN = {'sesi3': 'Big Bus'}
+
+
 def main():
     pdf = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_PDF
     data = parse(pdf)
+
+    for kunci, armada in ARMADA_TAMBAHAN.items():
+        if kunci in data and not data[kunci]['armada']:
+            data[kunci]['armada'] = armada
 
     for k, s in data.items():
         total = sum(len(h['agenda']) for h in s['hari'])
