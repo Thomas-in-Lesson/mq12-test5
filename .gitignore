@@ -7,3 +7,6 @@ Informasi Peserta.xlsx
 __pycache__/
 *.pyc
 tools/test_script_*.js
+
+# cadangan hasil patch dokumen
+*.bak
