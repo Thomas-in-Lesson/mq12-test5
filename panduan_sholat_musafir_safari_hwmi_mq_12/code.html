@@ -16,9 +16,12 @@
 <style>
         .arabic-text {
             font-family: "Amiri", "Traditional Arabic", serif;
-            font-size: 28px;
-            line-height: 2;
+            /* 28px tetap dipakai di layar lebar, tetapi ikut mengecil di HP
+               supaya kalimat niat yang panjang tidak terpotong. */
+            font-size: clamp(19px, 5.6vw, 28px);
+            line-height: 2.1;
             direction: rtl;
+            text-align: right;
         }
     </style>
 <link rel="stylesheet" href="../styles.css">
@@ -37,169 +40,105 @@
 </div>
 </header>
 <!-- Main Content Canvas -->
-<main class="flex-1 w-full max-w-container-max-width mx-auto pt-20 px-margin-mobile md:px-margin-desktop md:pt-32 space-y-12">
-<!-- Title Section -->
-<section class="text-center space-y-4">
+<main class="flex-1 w-full max-w-container-max-width mx-auto pt-20 px-margin-mobile md:px-margin-desktop md:pt-32 space-y-8">
+<section class="text-center space-y-3">
+<p class="text-xs md:text-sm text-primary font-bold tracking-widest">PANDUAN SHOLAT UNTUK MUSAFIR</p>
 <h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-secondary">
-                PANDUAN SHOLAT TAQDIM DAN TAKHIR
-            </h1>
+PANDUAN SHOLAT TAQDIM DAN TAKHIR
+</h1>
 <div class="w-16 h-1 bg-secondary mx-auto rounded-full opacity-50"></div>
 </section>
-<!-- I. Pengertian Sholat Jamak -->
 <section class="bg-surface-container-low rounded-xl p-6 md:p-8 border-t border-l border-surface-variant/30 shadow-sm space-y-4">
 <h2 class="font-headline-md-mobile text-headline-md-mobile text-secondary flex items-center gap-3">
 <span class="material-symbols-outlined text-secondary opacity-70">menu_book</span>
-                I. Pengertian Sholat Jamak
-            </h2>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                Sholat Jamak adalah mengumpulkan / menggabungkan 2 waktu sholat menjadi 1 waktu dalam melaksanakannya. Shalat yang dapat dijamak, yakni dhuhur &amp; ashar, kemudian maghrib &amp; isya'. Sedangkan waktu shalat shubuh tidak bisa dijamak.
-            </p>
+I. Pengertian Sholat Jamak
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Sholat Jamak adalah mengumpulkan dua sholat fardhu yang dikerjakan dalam satu waktu sholat. Sholat jamak terbagi menjadi dua, yaitu:</p><ul class="font-body-md text-body-md text-on-surface-variant space-y-2 list-decimal list-outside ml-6">
+<li>Sholat Jamak Taqdim</li>
+<li>Sholat Jamak Takhir</li>
+</ul><p class="font-body-md text-body-md text-on-surface-variant">Sholat-sholat yang bisa dijamak antara lain:</p><ul class="font-body-md text-body-md text-on-surface-variant space-y-2 list-decimal list-outside ml-6">
+<li>Sholat Dhuhur dengan Sholat Ashar</li>
+<li>Sholat Maghrib dengan Sholat Isya</li>
+</ul><p class="font-body-md text-body-md text-on-surface-variant"><em>(Sholat subuh tidak bisa dijamak dengan sholat apapun)</em></p>
 </section>
-<!-- II. Pengertian Sholat Jamak Taqdim -->
 <section class="bg-surface-container-low rounded-xl p-6 md:p-8 border-t border-l border-surface-variant/30 shadow-sm space-y-4">
 <h2 class="font-headline-md-mobile text-headline-md-mobile text-secondary flex items-center gap-3">
-<span class="material-symbols-outlined text-secondary opacity-70">forward</span>
-                II. Pengertian Sholat Jamak Taqdim
-            </h2>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                Sholat Jamak taqdim adalah menjalankan / mengerjakan di waktu Awal.
-                Misal :
-                A. Menjamak sholat dzhuhur dan asar yang pengerjaannya di laksanakan pada waktu Dzuhur.
-                B. Menjamak sholat magrib dan isya yang di laksanakan pada waktu Maghrib.
-            </p>
+<span class="material-symbols-outlined text-secondary opacity-70">schedule</span>
+II. Pengertian Sholat Jamak Taqdim
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Sholat jamak taqdim adalah menggabungkan dua sholat wajib di waktu awal dari sholat tersebut. Misalnya, sholat dzuhur dan ashar yang dilakukan pada saat waktu dzuhur. Selain itu, sholat maghrib dan isya dilakukan di waktu maghrib.</p>
 </section>
-<!-- III. Pengertian Sholat Jamak Takhir -->
 <section class="bg-surface-container-low rounded-xl p-6 md:p-8 border-t border-l border-surface-variant/30 shadow-sm space-y-4">
 <h2 class="font-headline-md-mobile text-headline-md-mobile text-secondary flex items-center gap-3">
-<span class="material-symbols-outlined text-secondary opacity-70">fast_rewind</span>
-                III. Pengertian Sholat Jamak Takhir
-            </h2>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                Sholat Jamak Takhir adalah menjalankan / mengerjakan di waktu Akhir.
-                Misal :
-                A. Menjamak sholat dzhuhur dan ashar yang pengerjaannya di laksanakan pada waktu Ashar.
-                B. Menjamak sholat magrib dan isya yang di laksanakan pada waktu Isya'.
-            </p>
+<span class="material-symbols-outlined text-secondary opacity-70">update</span>
+III. Pengertian Sholat Jamak Takhir
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Sholat jamak takhir adalah suatu ketentuan sholat wajib yang dilakukan dalam waktu yang bersamaan di waktu sholat wajib yang terakhir. Ketika melakukan sholat jamak takhir (dzuhur dan ashar), maka dilakukan di waktu sholat ashar. Sedangkan jamak takhir maghrib dan isya dilakukan di waktu isya.</p>
 </section>
-<!-- IV. Pengertian Sholat TAMAM -->
 <section class="bg-surface-container-low rounded-xl p-6 md:p-8 border-t border-l border-surface-variant/30 shadow-sm space-y-4">
 <h2 class="font-headline-md-mobile text-headline-md-mobile text-secondary flex items-center gap-3">
 <span class="material-symbols-outlined text-secondary opacity-70">done_all</span>
-                IV. Pengertian Sholat TAMAM
-            </h2>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                Mengerjakan Sholat jamak Secara SEMPURNA Jumlah rakaatnya tidak di kurang / dipotong.
-            </p>
+IV. Pengertian Sholat Tamam
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Sholat Tamam adalah melakukan sholat wajib dengan menyempurnakan jumlah rakaat shalat yang bersangkutan. Terdapat 3 shalat fardhu yang boleh diqoshor yakni Dzuhur, Ashar dan Isya yang mana aslinya berjumlah 2 rakaat. Jika melakukan sholat Tamam, maka jumlah rakaat yang dikerjakan cukup 2 rakaat. Selain itu, untuk melakukan sholat Tamam hanya diperbolehkan bagi yang sedang dalam perjalanan atau bepergian jauh.</p>
 </section>
-<!-- V. Syarat Sholat Tamam Taqdim / Takhir -->
 <section class="bg-surface-container-low rounded-xl p-6 md:p-8 border-t border-l border-surface-variant/30 shadow-sm space-y-4">
 <h2 class="font-headline-md-mobile text-headline-md-mobile text-secondary flex items-center gap-3">
-<span class="material-symbols-outlined text-secondary opacity-70">check_circle</span>
-                V. Syarat Sholat Tamam Taqdim / Takhir
-            </h2>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                Sholat Jama' Tamam Taqdim ataupun Takhir ini di peruntukan bagi jamaah umroh/haji dengan kondisi sudah Berada di Pemondokan / Penginapan (Hotel) Baik di Madinah maupun Makkah.
-            </p>
+<span class="material-symbols-outlined text-secondary opacity-70">straighten</span>
+V. Syarat Sholat Tamam Taqdim / Takhir
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Untuk melakukan sholat Tamam hanya diperbolehkan bagi yang sedang dalam perjalanan atau bepergian jauh. Adapun jarak perjalanan jauh yang dibolehkan untuk melakukan sholat Tamam terdapat di dalam hadits Ibnu Syaiban yang menyebutkan bahwa shalat Tamam adalah perjalanan sehari semalam, menunggangi unta atau berjalan kaki normal.</p><p class="font-body-md text-body-md text-on-surface-variant">Setelah diperhitungkan, mendapatkan jarak sekitar 4 burd atau 16 farsakh atau 88,657 km. Dalam penjelasan Ibnu Abbas mengenai jarak dibolehkannya shalat qashar, yakni 4 burd atau 16 farsakh. 1 farsakh = 5.541 meter hingga 16 farsakh = 88,656 km. Hasil yang sama dan mayoritas ulama seperti Imam Syafi’i, Imam Malik dan Imam Ahmad meyakini hal tersebut.</p>
 </section>
-<!-- VI. Tata Cara Shalat Jamak dengan Tamam Taqdim / Takhir -->
 <section class="bg-surface-container-low rounded-xl p-6 md:p-8 border-t border-l border-surface-variant/30 shadow-sm space-y-4">
 <h2 class="font-headline-md-mobile text-headline-md-mobile text-secondary flex items-center gap-3">
 <span class="material-symbols-outlined text-secondary opacity-70">format_list_numbered</span>
-                VI. Tata Cara Shalat Jamak dengan Tamam Taqdim / Takhir
-            </h2>
-<ul class="font-body-md text-body-md text-on-surface-variant space-y-3 list-decimal list-outside ml-6">
-<li class="">Berwudhu untuk menghilangkan hadas kecil</li>
-<li class="">Menutup aurat</li>
-<li class="">Menghadap kiblat</li>
-<li class="">Berdiri bila mampu.</li>
-<li class="">Membaca niat sholat jama' sesuai yang di laksanakan (Taqdim atau Takhir)</li>
-<li class="">Melakukan gerakan shalat pada umumnya yang diawali dengan takbir dan diakhiri dengan salam.</li>
-<li class="">Saat Sholat jamak Taqdim Dzhuhur &amp; Ashar, Sholat Dzhuhur (4 rakaat) terlebih dahulu setelah salam langsung berdiri kembali melaksanakan sholat ashar (4 rakaat).</li>
-<li class="">Sedangkan Sholat jamak Takhir dzhuhur dan Ashar , yang di laksanakan di waktu Ashar, maka sholat yg di kerjakan sholat Ashar (4 Rakaat) dahulu baru sholat dzhuhur (4 rakaat).</li>
+VI. Tata Cara Shalat Jamak dengan Tamam Taqdim / Takhir
+</h2>
+<ul class="font-body-md text-body-md text-on-surface-variant space-y-2 list-decimal list-outside ml-6">
+<li>Niat, bacaan niat sesuai dengan pengerjaannya.</li>
+<li>Muwalah atau bersegera.</li>
+<li>Di antara kedua shalat yang digabung atau jamak, harus langsung dilanjut.</li>
+<li>Tidak ada pemisah untuk melakukan shalat sunnah.</li>
+<li>Masih berstatus sebagai musafir atau masih dalam perjalanan.</li>
+<li>Perjalanan jauh, belum sampai tujuan.</li>
+<li>Tertib.</li>
+<li>Lakukan urutan shalat sesuai aturannya, seperti yang telah dijelaskan sebelumnya.</li>
 </ul>
 </section>
-<!-- VII. Niat Sholat Jama’ Tamam Taqdim -->
-<section class="bg-surface-container-low rounded-xl p-6 md:p-8 border-t border-l border-surface-variant/30 shadow-sm space-y-8">
-<h2 class="font-headline-md-mobile text-headline-md-mobile text-secondary border-b border-surface-variant pb-2">
-                VII. Niat Sholat Jama’ Tamam Taqdim
-            </h2>
-<div class="space-y-4">
-<h3 class="font-title-lg text-title-lg text-primary">Niat Shalat Dzuhur :</h3>
-<p class="arabic-text text-secondary text-right">
-                    أُصَلِّيْ فَرْضَ الظُّهْرِ أَرْبَعَ رَكَعَاتٍ مَجْمُوْعًا مَعَ العَصْرِ جَمْعَ تَقْدِيْمٍ للهِ تَعَالَى
-                </p>
-<p class="font-body-md text-body-md text-on-surface-variant italic">
-                    (Ushollii fardhodl dhuhri arba'a roka'aatin majmuu'an ma'al ashri jam'a taqdiimin lillaahi ta'aalaa.)
-                </p>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                    Artinya: "Aku sengaja sholat fardhu dhuhur 4 rakaat yang dijama' dengan Ashar, dengan jama' taqdim, fardu karena Allah Ta'aala."
-                </p>
+<section class="bg-surface-container-low rounded-xl p-6 md:p-8 border-t border-l border-surface-variant/30 shadow-sm space-y-6">
+<h2 class="font-headline-md-mobile text-headline-md-mobile text-secondary flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary opacity-70">volunteer_activism</span>
+VII. Niat Sholat Jama’ Tamam Taqdim
+</h2>
+<div class="space-y-3 pt-4 border-t border-surface-variant/50 first:pt-0 first:border-t-0">
+<h3 class="font-title-lg text-title-lg text-primary">1. Niat Shalat Dzuhur</h3>
+<p class="arabic-text text-secondary" dir="rtl" lang="ar">اُصَلِّى فَرْضَ الظُّهْرِ رَكَعَتَيْنِ مَجْمُوْعًـا مَّعَ الْعَصْرِ جَمْعَ تَقْدِيْمِ تَمَا مًا اَدَاءً / مَأْمُوْمًا / أِمَامً لِلّهِ تَعَالَى</p>
 </div>
-<div class="space-y-4 pt-4 border-t border-surface-variant/50">
-<h3 class="font-title-lg text-title-lg text-primary">Niat Shalat Ashar :</h3>
-<p class="arabic-text text-secondary text-right">
-                    أُصَلِّيْ فَرْضَ العَصْرِ أَرْبَعَ رَكَعَاتٍ مَجْمُوْعًا مَعَ الظُّهْرِ جَمْعَ تَقْدِيْمٍ للهِ تَعَالَى
-                </p>
-<p class="font-body-md text-body-md text-on-surface-variant italic">
-                    (Ushollii fardhol ashri arba'a roka'aatin majmuu'an ma'ad dhuhri jam'a taqdiimin lillaahi ta'aalaa.)
-                </p>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                    Artinya: "Aku sengaja sholat fardu Ashar 4 rakaat yang dijama' dengan dhuhur, dengan jama' taqdim, fardu karena Allah Ta'aala."
-                </p>
+<div class="space-y-3 pt-4 border-t border-surface-variant/50 first:pt-0 first:border-t-0">
+<h3 class="font-title-lg text-title-lg text-primary">2. Niat Shalat Ashar</h3>
+<p class="arabic-text text-secondary" dir="rtl" lang="ar">اُصَلِّى فَرْضَ العَصْرِ رَكَعَتَيْنِ مَجْمُوْعًـا مَّعَ الْظُّهْرِ جَمْعَ تَقْدِيْمِ تَمَا مًا اَدَاءً / مَأْمُوْمًا / أِمَامً لِلّهِ تَعَالَى</p>
 </div>
 </section>
-<!-- VIII. Niat Sholat Jama’ Tamam Takhir -->
-<section class="bg-surface-container-low rounded-xl p-6 md:p-8 border-t border-l border-surface-variant/30 shadow-sm space-y-8">
-<h2 class="font-headline-md-mobile text-headline-md-mobile text-secondary border-b border-surface-variant pb-2">
-                VIII. Niat Sholat Jama’ Tamam Takhir
-            </h2>
-<div class="space-y-4">
-<h3 class="font-title-lg text-title-lg text-primary">Niat Shalat Dzuhur (Dilakukan di waktu Ashar) :</h3>
-<p class="arabic-text text-secondary text-right">
-                    أُصَلِّيْ فَرْضَ الظُّهْرِ أَرْبَعَ رَكَعَاتٍ مَجْمُوْعًا مَعَ العَصْرِ جَمْعَ تَأْخِيْرٍ للهِ تَعَالَى
-                </p>
-<p class="font-body-md text-body-md text-on-surface-variant italic">
-                    (Ushollii fardhodl dhuhri arba'a roka'aatin majmuu'an ma'al ashri jam'a takhiirin lillaahi ta'aalaa.)
-                </p>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                    Artinya: "Aku sengaja sholat fardhu dhuhur 4 rakaat yang dijama' dengan Ashar, dengan jama' takhir, fardu karena Allah Ta'aala."
-                </p>
+<section class="bg-surface-container-low rounded-xl p-6 md:p-8 border-t border-l border-surface-variant/30 shadow-sm space-y-6">
+<h2 class="font-headline-md-mobile text-headline-md-mobile text-secondary flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary opacity-70">volunteer_activism</span>
+VIII. Niat Sholat Jama’ Tamam Takhir
+</h2>
+<div class="space-y-3 pt-4 border-t border-surface-variant/50 first:pt-0 first:border-t-0">
+<h3 class="font-title-lg text-title-lg text-primary">1. Niat Shalat Dzuhur</h3>
+<p class="arabic-text text-secondary" dir="rtl" lang="ar">اُصَلِّى فَرْضَ الظُّهْرِ رَكَعَتَيْنِ مَجْمُوْعًـا مَّعَ الْعَصْرِ جَمْعَ تَأْخِيْرِ تَمَا مًا اَدَاءً / مَأْمُوْمًا / أِمَامً لِلّهِ تَعَالَى</p>
 </div>
-<div class="space-y-4 pt-4 border-t border-surface-variant/50">
-<h3 class="font-title-lg text-title-lg text-primary">Niat Shalat Ashar (Dilakukan setelah Dzuhur di waktu Ashar) :</h3>
-<p class="arabic-text text-secondary text-right">
-                    أُصَلِّيْ فَرْضَ العَصْرِ أَرْبَعَ رَكَعَاتٍ مَجْمُوْعًا مَعَ الظُّهْرِ جَمْعَ تَأْخِيْرٍ للهِ تَعَالَى
-                </p>
-<p class="font-body-md text-body-md text-on-surface-variant italic">
-                    (Ushollii fardhol ashri arba'a roka'aatin majmuu'an ma'ad dhuhri jam'a takhiirin lillaahi ta'aalaa.)
-                </p>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                    Artinya: "Aku sengaja sholat fardu Ashar 4 rakaat yang dijama' dengan dhuhur, dengan jama' takhir, fardu karena Allah Ta'aala."
-                </p>
+<div class="space-y-3 pt-4 border-t border-surface-variant/50 first:pt-0 first:border-t-0">
+<h3 class="font-title-lg text-title-lg text-primary">2. Niat Shalat Ashar</h3>
+<p class="arabic-text text-secondary" dir="rtl" lang="ar">اُصَلِّى فَرْضَ العَصْرِ رَكَعَتَيْنِ مَجْمُوْعًـا مَّعَ الْظُّهْرِ جَمْعَ تَأْخِيْرِ تَمَا مًا اَدَاءً / مَأْمُوْمًا / أِمَامً لِلّهِ تَعَالَى</p>
 </div>
-<div class="space-y-4 pt-4 border-t border-surface-variant/50">
-<h3 class="font-title-lg text-title-lg text-primary">Niat Shalat Maghrib (Dilakukan di waktu Isya) :</h3>
-<p class="arabic-text text-secondary text-right">
-                    أُصَلِّيْ فَرْضَ المَغْرِبِ ثَلَاثَ رَكَعَاتٍ مَجْمُوْعًا مَعَ العِشَاءِ جَمْعَ تَأْخِيْرٍ للهِ تَعَالَى
-                </p>
-<p class="font-body-md text-body-md text-on-surface-variant italic">
-                    (Ushollii fardhol maghribi thalatha roka'aatin majmuu'an ma'al 'isya'i jam'a takhiirin lillaahi ta'aalaa.)
-                </p>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                    Artinya: "Aku sengaja sholat fardu Maghrib 3 rakaat yang dijama' dengan Isya, dengan jama' takhir, fardu karena Allah Ta'aala."
-                </p>
+<div class="space-y-3 pt-4 border-t border-surface-variant/50 first:pt-0 first:border-t-0">
+<h3 class="font-title-lg text-title-lg text-primary">3. Niat Shalat Maghrib</h3>
+<p class="arabic-text text-secondary" dir="rtl" lang="ar">اُصَلِّى فَرْضَ المَغْرِبِ ثَلَاثَ رَكَعَاتٍ مَجْمُوْعًـا مَّعَ الْعِشَاءِ جَمْعَ تَأْخِيْرٍ تَمَا مًا اَدَاءً / مَأْمُوْمًا / أِمَامً لِلّهِ تَعَالَى</p>
 </div>
-<div class="space-y-4 pt-4 border-t border-surface-variant/50">
-<h3 class="font-title-lg text-title-lg text-primary">Niat Shalat Isya (Dilakukan di waktu Isya) :</h3>
-<p class="arabic-text text-secondary text-right">
-                    أُصَلِّيْ فَرْضَ العِشَاءِ أَرْبَعَ رَكَعَاتٍ مَجْمُوْعًا مَعَ المَغْرِبِ جَمْعَ تَأْخِيْرٍ للهِ تَعَالَى
-                </p>
-<p class="font-body-md text-body-md text-on-surface-variant italic">
-                    (Ushollii fardhol 'isya'i arba'a roka'aatin majmuu'an ma'al maghribi jam'a takhiirin lillaahi ta'aalaa.)
-                </p>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                    Artinya: "Aku sengaja sholat fardu Isya 4 rakaat yang dijama' dengan Maghrib, dengan jama' takhir, fardu karena Allah Ta'aala."
-                </p>
+<div class="space-y-3 pt-4 border-t border-surface-variant/50 first:pt-0 first:border-t-0">
+<h3 class="font-title-lg text-title-lg text-primary">4. Niat Shalat Isya’</h3>
+<p class="arabic-text text-secondary" dir="rtl" lang="ar">اُصَلِّى فَرْضَ العِشَاءِ رَكَعَتَيْنِ مَجْمُوْعًـا مَّعَ الْمَغْرِبِ جَمْعَ تَأْخِيْرِ تَمَا مًا اَدَاءً / مَأْمُوْمًا / أِمَامً لِلّهِ تَعَالَى</p>
 </div>
 </section>
 </main>

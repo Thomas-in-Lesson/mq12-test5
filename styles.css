@@ -443,3 +443,7 @@ a.group,
 }
 
 
+
+/* Dipakai daftar niat di Panduan Sholat: butir pertama tanpa garis pemisah. */
+.first\:pt-0:first-child { padding-top: 0; }
+.first\:border-t-0:first-child { border-top-width: 0; }
