@@ -2,7 +2,7 @@
 <meta charset=utf-8>
 <meta name="robots" content="noindex, nofollow, noarchive">
 <meta name="theme-color" content="#0D0303">
-<meta name="description" content="Checklist Starterpack & Teknis Packing Safari Chubbul Wathon Minal Iman — Maqooshidul Qur-aan 12.">
+<meta name="description" content="Daftar Starterpack & Teknis Packing Safari Chubbul Wathon Minal Iman — Maqooshidul Qur-aan 12.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Starterpack & Packing - Safari HWMI MQ 12">
 <meta property="og:description" content="Panduan perlengkapan wajib dan teknis packing tas selempang vs tas ransel untuk Putra & Putri per Sesi.">
@@ -18,10 +18,6 @@
   .packing-card {
     background: rgba(38, 10, 10, 0.85);
     border: 1px solid rgba(224, 184, 99, 0.3);
-  }
-  .item-checkbox:checked + label {
-    text-decoration: line-through;
-    opacity: 0.6;
   }
   /* styles.css adalah hasil build Tailwind yang sudah di-purge dan repo ini tidak
      punya build pipeline, jadi kelas di bawah ini tidak ikut ter-compile dan harus
@@ -41,10 +37,8 @@
   .hover\:border-gold\/60:hover { border-color: rgba(224, 184, 99, .60); }
   .hover\:text-gold:hover { color: #E0B863; }
   .fill-current { fill: currentColor; }
-  .accent-gold  { accent-color: #E0B863; }
   .truncate     { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .min-w-0      { min-width: 0; }
-  .select-none  { user-select: none; -webkit-user-select: none; }
   .shadow       { box-shadow: 0 1px 3px rgba(0,0,0,.4); }
   .w-4          { width: 1rem; }
   .h-4          { height: 1rem; }
@@ -100,7 +94,7 @@
     STARTERPACK & TEKNIS PACKING
   </h1>
   <p class="text-xs md:text-sm text-on-surface-variant max-w-xl mx-auto">
-    Checklist perlengkapan wajib beserta jumlahnya, dan pembagian isi tas selempang vs tas ransel per Sesi.
+    Daftar perlengkapan wajib beserta jumlahnya, dan pembagian isi tas selempang vs tas ransel per Sesi.
   </p>
 </section>
 
@@ -118,10 +112,10 @@
   </div>
 </section>
 
-<!-- View Category Tabs (Checklist Wajib vs Teknis Packing Sesi 1, 2, 3) -->
+<!-- View Category Tabs (Perlengkapan Wajib vs Teknis Packing Sesi 1, 2, 3) -->
 <section class="flex items-center justify-center gap-2 flex-wrap text-xs font-semibold">
   <button id="tab-checklist" onclick="setViewMode('checklist')" class="px-4 py-2 rounded-xl border border-gold/40 bg-gold/20 text-gold font-bold transition-all shadow">
-    📋 Checklist Perlengkapan Wajib
+    📋 Perlengkapan Wajib
   </button>
   <button id="tab-sesi1" onclick="setViewMode('sesi1')" class="px-4 py-2 rounded-xl border border-gold/30 bg-surface-container text-on-surface-variant hover:text-gold transition-all">
     🚌 Packing Sesi 1
@@ -134,14 +128,8 @@
   </button>
 </section>
 
-<!-- CONTENT SECTION 1: CHECKLIST PERLENGKAPAN WAJIB -->
+<!-- CONTENT SECTION 1: DAFTAR PERLENGKAPAN WAJIB -->
 <section id="sec-checklist" class="space-y-4">
-  <div class="flex items-center justify-between px-2 gap-3">
-    <div class="text-xs text-on-surface-variant">
-      Kemajuan Packing: <span id="progress-text" class="font-bold text-gold">0 / 0 Selesai</span>
-    </div>
-    <button onclick="resetChecklist()" class="text-xs text-gold/80 hover:text-gold underline shrink-0">Reset Checklist</button>
-  </div>
   <p id="ringkas-text" class="px-2 text-[11px] text-on-surface-variant"></p>
 
   <div id="checklist-container" class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -366,22 +354,6 @@
     };
   };
 
-  function getStorageKey() {
-    return 'starterpack_check_' + activeGender;
-  }
-
-  function loadCheckedItems() {
-    try {
-      return JSON.parse(localStorage.getItem(getStorageKey())) || {};
-    } catch(e) {
-      return {};
-    }
-  }
-
-  function saveCheckedItems(state) {
-    localStorage.setItem(getStorageKey(), JSON.stringify(state));
-  }
-
   function setGender(g) {
     activeGender = g;
     const btnPutra = document.getElementById('btn-gender-putra');
@@ -422,53 +394,30 @@
     renderCurrentView();
   }
 
+  // Daftar ini sifatnya pengingat, bukan tugas yang harus diselesaikan, jadi
+  // tidak ada kotak centang maupun penghitung progres.
   function renderChecklist() {
     const container = document.getElementById('checklist-container');
     const data = activeGender === 'putra' ? dataPutra : dataPutri;
-    const checkedState = loadCheckedItems();
 
-    let doneCount = 0;
-    container.innerHTML = data.map((item, idx) => {
-      const isChecked = !!checkedState[idx];
-      if (isChecked) doneCount++;
-
-      return `
-        <div class="p-3.5 rounded-xl packing-card flex items-start gap-3 transition-all hover:border-gold/60">
-          <input type="checkbox" id="chk-${idx}" class="item-checkbox mt-1 w-4 h-4 accent-gold cursor-pointer" ${isChecked ? 'checked' : ''} onchange="toggleCheck(${idx})">
-          <label for="chk-${idx}" class="flex-1 cursor-pointer select-none">
-            <div class="flex items-start justify-between gap-2">
-              <strong class="text-sm text-on-surface font-bold block">${item.title}</strong>
-              ${item.panitia ? `<span class="px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-400/40 text-[10px] font-bold whitespace-nowrap shrink-0">Disediakan Panitia</span>` : ''}
-            </div>
-            <div class="flex items-center gap-2 mt-1 flex-wrap">
-              ${item.jml ? `<span class="qty-badge">${item.jml}</span>` : ''}
-              ${item.detail ? `<span class="text-xs text-on-surface-variant">${item.detail}</span>` : ''}
-            </div>
-          </label>
+    container.innerHTML = data.map((item) => `
+        <div class="p-3.5 rounded-xl packing-card">
+          <div class="flex items-start justify-between gap-2">
+            <strong class="text-sm text-on-surface font-bold block">${item.title}</strong>
+            ${item.panitia ? `<span class="px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-400/40 text-[10px] font-bold whitespace-nowrap shrink-0">Disediakan Panitia</span>` : ''}
+          </div>
+          <div class="flex items-center gap-2 mt-1 flex-wrap">
+            ${item.jml ? `<span class="qty-badge">${item.jml}</span>` : ''}
+            ${item.detail ? `<span class="text-xs text-on-surface-variant">${item.detail}</span>` : ''}
+          </div>
         </div>
-      `;
-    }).join('');
+      `).join('');
 
-    const berjumlah = data.filter((i) => i.jml).length;
-    const olehPanitia = data.filter((i) => i.panitia).length;
-    document.getElementById('progress-text').innerText = `${doneCount} / ${data.length} Selesai`;
     const ket = document.getElementById('ringkas-text');
     if (ket) {
+      const berjumlah = data.filter((i) => i.jml).length;
+      const olehPanitia = data.filter((i) => i.panitia).length;
       ket.innerText = `${data.length} item wajib · ${berjumlah} item ada ketentuan jumlah · ${olehPanitia} disediakan panitia`;
-    }
-  }
-
-  function toggleCheck(idx) {
-    const checkedState = loadCheckedItems();
-    checkedState[idx] = !checkedState[idx];
-    saveCheckedItems(checkedState);
-    renderChecklist();
-  }
-
-  function resetChecklist() {
-    if (confirm('Apakah Anda yakin ingin mereset seluruh checklist perlengkapan ini?')) {
-      saveCheckedItems({});
-      renderChecklist();
     }
   }
 
