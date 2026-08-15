@@ -1,6 +1,11 @@
 {
   "_catatan": "Ejaan di denah bus/ELF yang merujuk orang yang sama dengan ejaan di daftar kamar. Kunci = ejaan varian, nilai = ejaan rujukan yang dipakai di data hotel. Penggabungan tetap ditolak kalau keduanya tercatat menginap di kota yang sama.",
 
+  "_sumber_tag_koper": "Tiga baris di bawah dipastikan lewat DATA NAME TAG KOPER.xlsx: nomor busnya sama persis dengan denah Sesi 3, jadi ejaan pendek di denah memang merujuk orang yang sama.",
+  "M. Ikhlasul Muttaqin": "Muchammad Ikhlasul Muttaqin",
+  "M. Ikhlasul M.": "Ikhlasul Muttaqin",
+  "M. IRFAN FANANI": "Muchamad Irfan Fanani",
+
   "A. RIDWAN.A": "Achmad Ridwan Agustin",
   "A NURDIANSYAH": "Ahmad Nurdiansah",
   "A. Kurniawan": "Ahmad Kurniawan",

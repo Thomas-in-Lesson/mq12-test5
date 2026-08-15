@@ -1610,7 +1610,6 @@
    "Bpk Irfan fanani",
    "Bpk Irfan Fanani",
    "M. Irfan Fanani",
-   "M. IRFAN FANANI",
    "Irfan Fanani"
   ],
   "peran": "Keamanan",
@@ -3122,14 +3121,13 @@
   "aliases": [
    "Ikhlasul Muttaqin",
    "M. Ikhlasul M",
-   "M. Ikhlasul Muttaqin",
    "M. Ikhlasul M."
   ],
   "peran": "Audio Visual",
   "transport": {
    "sesi1": "ELF 8",
    "sesi2": "Bus 2",
-   "sesi3": "Bus 4"
+   "sesi3": "Bus 6"
   },
   "menginap": [
    {
@@ -4516,10 +4514,13 @@
  "irfan-fanani-2": {
   "name": "Muchamad Irfan Fanani",
   "aliases": [
-   "Muchamad Irfan Fanani"
+   "Muchamad Irfan Fanani",
+   "M. IRFAN FANANI"
   ],
-  "peran": "",
-  "transport": {},
+  "peran": "PJ.keamanan",
+  "transport": {
+   "sesi3": "Bus 5"
+  },
   "menginap": [
    {
     "kota": "Gresik",
@@ -4561,10 +4562,13 @@
  "ikhlasul-muttaqin-2": {
   "name": "Muchammad Ikhlasul Muttaqin",
   "aliases": [
-   "Muchammad Ikhlasul Muttaqin"
+   "Muchammad Ikhlasul Muttaqin",
+   "M. Ikhlasul Muttaqin"
   ],
-  "peran": "",
-  "transport": {},
+  "peran": "Pelayan",
+  "transport": {
+   "sesi3": "Bus 4"
+  },
   "menginap": [
    {
     "kota": "Gresik",

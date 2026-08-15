@@ -10,3 +10,6 @@ tools/test_script_*.js
 
 # cadangan hasil patch dokumen
 *.bak
+
+# memuat nomor HP peserta; hasil cetak lokal saja
+tag-koper.html
