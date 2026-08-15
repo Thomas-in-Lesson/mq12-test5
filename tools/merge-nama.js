@@ -7,6 +7,14 @@ const { compareNames, pickCanonical, tokenize } = require('./name-utils');
 
 const REPO = path.join(__dirname, '..');
 
+// Pasangan ejaan yang disamakan manual oleh panitia. Kunci "_" diabaikan.
+const ALIAS_PATH = path.join(__dirname, 'alias-nama.json');
+const ALIAS = fs.existsSync(ALIAS_PATH) ? JSON.parse(fs.readFileSync(ALIAS_PATH, 'utf8')) : {};
+
+// Alias manual dipakai justru untuk pasangan yang compareNames tidak bisa
+// cocokkan, jadi uji efek rantai (langkah 6) harus melewatkannya.
+const sekutuAlias = (s, anggota) => Boolean(ALIAS[s]) && anggota.includes(ALIAS[s]);
+
 // Baris yang bukan nama orang: label peran, header spreadsheet, nama hotel.
 const JUNK = /^(crew\s*(bus|bis)?|driver|patwal|perawat|zona\s*\d*|nama|guest\s*name|kosong|no|room|-+)$/i;
 const JUNK_MENGANDUNG = /hotel|feruci|oak\s*tree|guest\s*name/i;
@@ -31,9 +39,29 @@ function ambilLiteral(file, deklarasi) {
   throw new Error(`literal ${deklarasi} tidak tertutup di ${file}`);
 }
 
+// Denah bus: kursi berbentuk [nomor, nama, peran] di sisi kiri, kanan, dan
+// barisan belakang (khusus Sesi 2). Dipakai bersama oleh Sesi 2 dan Sesi 3
+// supaya satu sesi tidak diam-diam tertinggal saat peserta.json dibangun ulang.
+function bacaDenahBus(file) {
+  const seat = [];
+  ambilLiteral(file, 'const buses').forEach((bus, idx) => {
+    for (const sisi of [bus.left, bus.right, bus.back]) {
+      for (const baris of sisi || []) {
+        // left/right berisi pasangan kursi, back berisi kursi tunggal.
+        const kursiList = Array.isArray(baris[0]) ? baris : [baris];
+        for (const kursi of kursiList) {
+          const nama = String((kursi || [])[1] || '').trim();
+          if (isJunk(nama)) continue;
+          seat.push({ nama, unit: `Bus ${idx + 1}`, peran: String(kursi[2] || '').trim() });
+        }
+      }
+    }
+  });
+  return seat;
+}
+
 function readSources() {
   const hotels = ambilLiteral('daftar_kamar_safari_hwmi_mq_12/code.html', 'const hotelsData');
-  const buses = ambilLiteral('denah_bus_sesi_3_safari_hwmi_mq_12/code.html', 'const buses');
   const elves = ambilLiteral('denah_tempat_duduk_elf_safari_hwmi_mq_12/code.html', 'const elves');
 
   // Penempatan kamar: satu baris per orang per kota.
@@ -48,19 +76,8 @@ function readSources() {
     }
   }
 
-  // Denah Sesi 3: kursi berbentuk [nomor, nama, peran] di sisi kiri & kanan.
-  const busSeat = [];
-  buses.forEach((bus, idx) => {
-    for (const sisi of [bus.left, bus.right]) {
-      for (const baris of sisi || []) {
-        for (const kursi of baris || []) {
-          const nama = String(kursi[1] || '').trim();
-          if (isJunk(nama)) continue;
-          busSeat.push({ nama, unit: `Bus ${idx + 1}`, peran: String(kursi[2] || '').trim() });
-        }
-      }
-    }
-  });
+  const bus2Seat = bacaDenahBus('denah_bus_sesi_2_safari_hwmi_mq_12/code.html');
+  const busSeat = bacaDenahBus('denah_bus_sesi_3_safari_hwmi_mq_12/code.html');
 
   // Denah Sesi 1: tiap ELF berisi daftar "Nama|Peran".
   const elfSeat = [];
@@ -73,7 +90,7 @@ function readSources() {
     }
   });
 
-  return { kamar, busSeat, elfSeat };
+  return { kamar, bus2Seat, busSeat, elfSeat };
 }
 
 // Langkah 5 + 6: klasterkan ejaan, tolak yang sekota, lalu buang efek rantai.
@@ -102,6 +119,18 @@ function buildClusters(ejaan, kotaDari) {
 
   const ragu = [];
   const tolakKota = [];
+
+  // Ejaan yang disamakan manual (tools/alias-nama.json), untuk pasangan yang
+  // terlalu jauh bagi compareNames — "M. Ikhwan Syarom" vs "Muhammad Ikhwan
+  // Syahrom". Tetap lewat union() supaya penjaga "dua ejaan sekota" berlaku.
+  const indeks = new Map(list.map((s, i) => [s, i]));
+  for (const [varian, rujukan] of Object.entries(ALIAS)) {
+    if (varian.startsWith('_')) continue;
+    const a = indeks.get(varian);
+    const b = indeks.get(rujukan);
+    if (a === undefined || b === undefined) continue;
+    if (!union(a, b)) tolakKota.push([varian, rujukan, 'alias manual, menginap di kota yang sama']);
+  }
 
   // ponytail: O(n^2) atas ~900 ejaan (<1 detik). Kalau daftar tumbuh ribuan,
   // saring dulu per huruf pertama kata pertama sebelum membandingkan.
@@ -159,7 +188,7 @@ function buildClusters(ejaan, kotaDari) {
     const keluar = [];
     for (const s of anggota) {
       if (s === canonical) continue;
-      if (compareNames(canonical, s, { longgar: true }).match) lolos.push(s);
+      if (compareNames(canonical, s, { longgar: true }).match || sekutuAlias(s, anggota)) lolos.push(s);
       else { rantai.push([s, canonical]); keluar.push(s); }
     }
     clusters.push({ canonical, variants: lolos });
@@ -213,8 +242,8 @@ function tulisLaporan({ clusters, ragu, tolakKota, rantai }, bentrok = []) {
 }
 
 function main() {
-  const { kamar, busSeat, elfSeat } = readSources();
-  const semua = [...kamar, ...busSeat, ...elfSeat].map((r) => r.nama);
+  const { kamar, bus2Seat, busSeat, elfSeat } = readSources();
+  const semua = [...kamar, ...bus2Seat, ...busSeat, ...elfSeat].map((r) => r.nama);
   console.log(`ejaan unik     : ${new Set(semua).size}`);
   tulisLaporan(buildClusters(semua, petaKota(kamar)));
 }

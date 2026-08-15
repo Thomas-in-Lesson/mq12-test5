@@ -2,3 +2,8 @@
 Informasi Peserta.xlsx
 *.xlsx
 .DS_Store
+
+# Sisa proses build
+__pycache__/
+*.pyc
+tools/test_script_*.js

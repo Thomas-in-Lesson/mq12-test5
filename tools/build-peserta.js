@@ -15,8 +15,8 @@ const slug = (nama) => tokenize(nama).join('-');
 const nomorKamar = (roomNo) => String(roomNo).replace(/^kamar\s*/i, '').trim();
 
 function build() {
-  const { kamar, busSeat, elfSeat } = readSources();
-  const semua = [...kamar, ...busSeat, ...elfSeat].map((r) => r.nama);
+  const { kamar, bus2Seat, busSeat, elfSeat } = readSources();
+  const semua = [...kamar, ...bus2Seat, ...busSeat, ...elfSeat].map((r) => r.nama);
   const hasil = buildClusters(semua, petaKota(kamar));
 
   // ejaan -> indeks klaster
@@ -57,7 +57,7 @@ function build() {
     });
   }
 
-  for (const [sesi, seats] of [['sesi1', elfSeat], ['sesi3', busSeat]]) {
+  for (const [sesi, seats] of [['sesi1', elfSeat], ['sesi2', bus2Seat], ['sesi3', busSeat]]) {
     for (const s of seats) {
       const o = orang[idxDari.get(s.nama)];
       if (!o) continue;
@@ -91,6 +91,7 @@ function build() {
   console.log(`peserta        : ${total.length}`);
   console.log(`penempatan     : ${total.reduce((s, o) => s + o.menginap.length, 0)} (dari ${kamar.length} baris kamar)`);
   console.log(`punya ELF s1   : ${total.filter((o) => o.transport.sesi1).length}`);
+  console.log(`punya Bus s2   : ${total.filter((o) => o.transport.sesi2).length}`);
   console.log(`punya Bus s3   : ${total.filter((o) => o.transport.sesi3).length}`);
   console.log(`tanpa kamar    : ${total.filter((o) => !o.menginap.length).length}`);
   console.log(`-> peserta.json  (klaster ${stat.gabung + stat.tunggal})`);
