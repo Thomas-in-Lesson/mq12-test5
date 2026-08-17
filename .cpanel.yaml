@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/mq1t6247/public_html/
+    - /bin/cp -R * $DEPLOYPATH
