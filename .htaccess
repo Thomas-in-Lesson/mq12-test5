@@ -1,0 +1,56 @@
+# Alamat pendek untuk mq12.org (cPanel/Apache).
+#
+# Isi berkas TIDAK dipindah: alamat pendek disajikan langsung dari folder
+# aslinya lewat rewrite internal, jadi
+#   mq12.org/beranda/                     <- yang dibagikan ke peserta
+#   mq12.org/beranda_mobile_dark_.../code.html   <- tetap hidup, tautan lama aman
+# dua-duanya menampilkan halaman yang sama tanpa mengalihkan alamat di bilah.
+#
+# Kenapa harus ada garis miring di ujung: halaman-halaman itu memanggil aset
+# dengan ../styles.css dan ../site-navigation.js. Di /beranda/ itu menunjuk
+# /styles.css (benar), sedangkan di /beranda (tanpa miring) menunjuk ke luar
+# akar situs. Karena itu yang tanpa miring dialihkan dulu.
+#
+# GitHub Pages tidak membaca berkas ini, jadi alamat panjang tetap satu-satunya
+# di thomas-in-lesson.github.io — dan itu tidak masalah, yang dibagikan ke
+# peserta adalah mq12.org.
+#
+# Daftar ini dibuat dari peta halaman di site-navigation.js; kalau ada halaman
+# baru, tambahkan barisnya di sini juga.
+
+# Jangan biarkan Apache menebak-nebak /beranda menjadi beranda.html
+Options -MultiViews
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Akar situs -> beranda
+  RewriteRule ^$ /beranda/ [R=302,L]
+
+  # Tambahkan garis miring supaya ../aset tetap benar
+  RewriteRule ^(beranda|bus-sesi-1|bus-sesi-2|bus-sesi-3|darurat|denah-bus|etika-bicara|etika-pakaian|itibar|kamar|peserta|peta|rundown|seragam|sholat|skema-foto|starterpack|tata-tertib|tertib-berangkat|tertib-bus|tertib-makam|tertib-penginapan|tertib-umum)$ /$1/ [R=301,L]
+
+  RewriteRule ^beranda/?$ beranda_mobile_dark_safari_hwmi_mq_12/code.html [L]
+  RewriteRule ^bus-sesi-1/?$ denah_tempat_duduk_elf_safari_hwmi_mq_12/code.html [L]
+  RewriteRule ^bus-sesi-2/?$ denah_bus_sesi_2_safari_hwmi_mq_12/code.html [L]
+  RewriteRule ^bus-sesi-3/?$ denah_bus_sesi_3_safari_hwmi_mq_12/code.html [L]
+  RewriteRule ^darurat/?$ darurat.html [L]
+  RewriteRule ^denah-bus/?$ denah_bus_safari_hwmi_mq_12/code.html [L]
+  RewriteRule ^etika-bicara/?$ etika_dalam_berbicara_safari_hwmi_mq_12/code.html [L]
+  RewriteRule ^etika-pakaian/?$ etika_dalam_berpakaian_safari_hwmi_mq_12/code.html [L]
+  RewriteRule ^itibar/?$ i_tibar_musafir_final_safari_hwmi_mq_12/code.html [L]
+  RewriteRule ^kamar/?$ daftar_kamar_safari_hwmi_mq_12/code.html [L]
+  RewriteRule ^peserta/?$ informasi_peserta_safari_hwmi_mq_12/code.html [L]
+  RewriteRule ^peta/?$ peta_safari_hwmi_mq_12/code.html [L]
+  RewriteRule ^rundown/?$ rundown_kegiatan_safari_hwmi_mq_12/code.html [L]
+  RewriteRule ^seragam/?$ jadwal_seragam_safari_hwmi_mq_12/code.html [L]
+  RewriteRule ^sholat/?$ panduan_sholat_musafir_safari_hwmi_mq_12/code.html [L]
+  RewriteRule ^skema-foto/?$ skema_foto_safari_hwmi_mq_12/code.html [L]
+  RewriteRule ^starterpack/?$ starterpack_dan_packing_safari_hwmi_mq_12/code.html [L]
+  RewriteRule ^tata-tertib/?$ tata_tertib_dark_safari_hwmi_mq_12/code.html [L]
+  RewriteRule ^tertib-berangkat/?$ tata_tertib_berangkat_verbatim_safari_hwmi_mq_12/code.html [L]
+  RewriteRule ^tertib-bus/?$ tata_tertib_di_dalam_bus_safari_hwmi_mq_12/code.html [L]
+  RewriteRule ^tertib-makam/?$ tata_tertib_di_area_makam_safari_hwmi_mq_12/code.html [L]
+  RewriteRule ^tertib-penginapan/?$ tata_tertib_di_penginapan_safari_hwmi_mq_12/code.html [L]
+  RewriteRule ^tertib-umum/?$ tata_tertib_selain_makam_safari_hwmi_mq_12/code.html [L]
+</IfModule>

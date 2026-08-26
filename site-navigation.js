@@ -26,11 +26,23 @@
   };
 
   const path = window.location.pathname;
-  const isSubfolder = path.split('/').filter(Boolean).pop() === 'code.html';
-  const root = isSubfolder ? new URL('../', window.location.href) : new URL('./', window.location.href);
+
+  // Akar situs diambil dari lokasi berkas ini sendiri, bukan dari nama berkas
+  // halamannya. Cara lama (menebak dari "code.html" di ujung URL) langsung
+  // salah begitu URL-nya dipendekkan — mis. mq12.org/beranda/ lewat .htaccess,
+  // atau halaman bernama index.html — dan semua tautan navigasi jadi menunjuk
+  // ke dalam folder yang salah.
+  const skripIni = document.currentScript
+    || [...document.querySelectorAll('script[src]')].reverse().find((el) => /site-navigation\.js(\?|$)/.test(el.src));
+  const root = skripIni
+    ? new URL('./', skripIni.src)
+    : new URL(path.split('/').filter(Boolean).pop() === 'code.html' ? '../' : './', window.location.href);
   const href = (page) => new URL(pages[page], root).href;
   const go = (page) => { window.location.href = href(page); };
-  const isHome = !isSubfolder || path.includes('beranda_mobile_dark');
+  // Beranda: URL panjangnya, alias pendeknya, atau akar situs itu sendiri.
+  const isHome = path.includes('beranda_mobile_dark')
+    || /\/beranda\/?$/.test(path)
+    || new URL('./', window.location.href).href === root.href;
 
   // Back button binding
   document.querySelectorAll('button[aria-label="Go back"]').forEach((button) => 

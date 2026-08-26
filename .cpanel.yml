@@ -3,3 +3,7 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/mq1t6247/public_html/
     - /bin/cp -R * $DEPLOYPATH
+    # Glob "*" di shell tidak ikut menyalin berkas ber-titik, jadi .htaccess
+    # (yang membuat alamat pendek mq12.org/beranda/ bekerja) harus disebut
+    # sendiri. Tanpa baris ini, alamat pendeknya diam-diam tidak pernah aktif.
+    - /bin/cp -f .htaccess $DEPLOYPATH
