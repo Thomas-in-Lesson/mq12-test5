@@ -52,9 +52,9 @@
 
 <!-- Tab Navigation Sesi -->
 <div class="flex items-center justify-center gap-2 pt-2 flex-wrap" id="sesi-tabs">
-  <button id="tab-btn-sesi1" onclick="switchSesiTab('sesi1')" class="px-4 py-2 rounded-full border border-secondary bg-secondary/20 text-secondary font-bold text-xs shadow-md transition-all">SESI 1</button>
-  <button id="tab-btn-sesi2" onclick="switchSesiTab('sesi2')" class="px-4 py-2 rounded-full border border-surface-variant bg-surface-container text-on-surface-variant font-medium text-xs transition-all">SESI 2</button>
-  <button id="tab-btn-sesi3" onclick="switchSesiTab('sesi3')" class="px-4 py-2 rounded-full border border-surface-variant bg-surface-container text-on-surface-variant font-medium text-xs transition-all">SESI 3</button>
+  <button id="tab-btn-sesi1" onclick="switchSesiTab('sesi1')" class="px-4 py-2 min-h-[44px] inline-flex items-center rounded-full border border-secondary bg-secondary/20 text-secondary font-bold text-xs shadow-md transition-all">SESI 1</button>
+  <button id="tab-btn-sesi2" onclick="switchSesiTab('sesi2')" class="px-4 py-2 min-h-[44px] inline-flex items-center rounded-full border border-surface-variant bg-surface-container text-on-surface-variant font-medium text-xs transition-all">SESI 2</button>
+  <button id="tab-btn-sesi3" onclick="switchSesiTab('sesi3')" class="px-4 py-2 min-h-[44px] inline-flex items-center rounded-full border border-surface-variant bg-surface-container text-on-surface-variant font-medium text-xs transition-all">SESI 3</button>
 </div>
 </section>
 
@@ -369,10 +369,10 @@ function switchSesiTab(sesiId) {
     const btn = document.getElementById('tab-btn-' + t);
     const content = document.getElementById('content-' + t);
     if (t === sesiId) {
-      btn.className = 'px-4 py-2 rounded-full border border-secondary bg-secondary/20 text-secondary font-bold text-xs shadow-md transition-all';
+      btn.className = 'px-4 py-2 min-h-[44px] inline-flex items-center rounded-full border border-secondary bg-secondary/20 text-secondary font-bold text-xs shadow-md transition-all';
       content.classList.remove('hidden');
     } else {
-      btn.className = 'px-4 py-2 rounded-full border border-surface-variant bg-surface-container text-on-surface-variant font-medium text-xs transition-all';
+      btn.className = 'px-4 py-2 min-h-[44px] inline-flex items-center rounded-full border border-surface-variant bg-surface-container text-on-surface-variant font-medium text-xs transition-all';
       content.classList.add('hidden');
     }
   });

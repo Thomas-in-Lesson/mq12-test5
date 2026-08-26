@@ -14,6 +14,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Daftar Kamar Peserta - Safari HWMI MQ 12</title>
 <link rel="stylesheet" href="../styles.css">
+<style>
+  /* Halaman ini bisa 21.000px tinggi untuk satu kota, jadi bar tab kota
+     menempel di bawah bilah atas. Di layar HP tab-nya jadi satu baris yang
+     digeser ke samping — kalau membungkus dua baris, area menempelnya makan
+     115px layar. */
+  @media (max-width: 640px) {
+    #hotel-tabs {
+      position: sticky;
+      top: var(--bar-top, 56px);
+      z-index: 30;
+      margin: 0 -20px;
+      padding: 9px 20px;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      background: rgba(13, 3, 3, .94);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(224, 184, 99, .18);
+    }
+    #hotel-tabs::-webkit-scrollbar { display: none; }
+  }
+</style>
 </head>
 <body class="bg-background text-on-surface antialiased min-h-screen flex flex-col pb-24 md:pb-0">
 <header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-surface-variant/30 shadow-sm flex items-center justify-between px-margin-mobile h-16 md:hidden">
@@ -41,10 +66,12 @@
 <input id="room-search" type="text" placeholder="Cari nama peserta, nomor kamar, atau nama hotel..." class="w-full bg-surface-container border border-outline-variant/40 rounded-full py-3 pl-12 pr-4 text-sm text-on-surface placeholder:text-on-surface-variant/60 focus:border-secondary focus:outline-none transition-colors shadow-inner">
 </div>
 
-<!-- Hotel Selector Tabs -->
+</section>
+
+<!-- Hotel Selector Tabs — sengaja di luar <section> supaya position:sticky
+     berlaku sepanjang halaman, bukan cuma di dalam blok kepala. -->
 <div id="hotel-tabs" class="flex flex-wrap items-center justify-center gap-2 pt-4">
 </div>
-</section>
 
 <!-- Active Hotel Subheader -->
 <div class="flex items-center justify-between border-b border-surface-variant/40 pb-2 px-1">
@@ -3887,7 +3914,7 @@
       const btn = document.createElement('button');
       btn.type = 'button';
       const isActive = key === activeHotelKey;
-      btn.className = `px-4 py-2 rounded-full text-xs font-bold transition-all duration-200 border ${
+      btn.className = `px-4 py-2 min-h-[44px] inline-flex items-center rounded-full text-xs font-bold transition-all duration-200 border ${
         isActive 
           ? 'bg-secondary text-surface-container-lowest border-secondary shadow-md scale-105' 
           : 'bg-surface-container text-on-surface-variant border-outline-variant/30 hover:border-secondary/50'
@@ -3900,6 +3927,13 @@
         renderRooms();
       });
       hotelTabsContainer.appendChild(btn);
+      if (isActive) {
+        // geser bar tab-nya sendiri, jangan pakai scrollIntoView supaya
+        // halaman tidak ikut melompat secara vertikal
+        requestAnimationFrame(() => {
+          hotelTabsContainer.scrollLeft = btn.offsetLeft - (hotelTabsContainer.clientWidth - btn.offsetWidth) / 2;
+        });
+      }
     });
   }
 

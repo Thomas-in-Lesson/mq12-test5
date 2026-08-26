@@ -56,9 +56,12 @@
     '.denah-judul{display:block;font-size:12.5px;font-weight:700;color:#fff;line-height:1.3}',
     '.denah-meta{display:block;margin-top:3px;font-size:11px;color:rgb(var(--c-on-surface-variant))}',
 
-    '.denah-tautan{display:inline-flex;align-items:center;gap:5px;margin:6px 6px 0 0;padding:4px 10px;',
+    '.denah-tautan{position:relative;display:inline-flex;align-items:center;gap:5px;margin:6px 6px 0 0;padding:4px 10px;',
     '  border:1px solid rgba(224,184,99,.45);border-radius:999px;background:rgba(224,184,99,.14);',
     '  color:#E0B863;font-size:11px;font-weight:700;cursor:pointer;font-family:inherit}',
+    // Rupanya tetap ramping supaya baris agenda tidak melar; area sentuhnya
+    // dilebarkan lewat lapisan tak terlihat sampai 45px (pedoman Apple HIG).
+    '.denah-tautan::after{content:"";position:absolute;inset:-9px -6px}',
 
     '.denah-layar{position:fixed;inset:0;z-index:11000;display:none;flex-direction:column;background:#0D0303}',
     '.denah-layar.buka{display:flex}',

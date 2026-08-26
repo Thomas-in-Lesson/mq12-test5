@@ -118,11 +118,11 @@ function renderParticipants(filterText = '') {
 
         ${hasPhone ? `
         <div class="flex items-center gap-2 pt-2 border-t border-surface-variant/30">
-          <a href="tel:${p.phone}" class="flex-1 bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 text-on-surface font-semibold py-2 px-3 rounded-lg text-xs flex items-center justify-center gap-1.5 transition-colors">
+          <a href="tel:${p.phone}" class="flex-1 bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 text-on-surface font-semibold py-3 px-3 min-h-[44px] rounded-lg text-xs flex items-center justify-center gap-1.5 transition-colors">
             <span class="text-[14px]">📞</span>
             <span>Telepon</span>
           </a>
-          <a href="https://wa.me/${p.wa}" target="_blank" class="flex-1 bg-secondary text-surface-container-lowest font-bold py-2 px-3 rounded-lg text-xs flex items-center justify-center gap-1.5 hover:bg-secondary/90 transition-colors shadow-sm">
+          <a href="https://wa.me/${p.wa}" target="_blank" class="flex-1 bg-secondary text-surface-container-lowest font-bold py-3 px-3 min-h-[44px] rounded-lg text-xs flex items-center justify-center gap-1.5 hover:bg-secondary/90 transition-colors shadow-sm">
             <span class="text-[14px]">💬</span>
             <span>WhatsApp</span>
           </a>

@@ -137,6 +137,15 @@
     .site-menu-item.is-active small { color: #FFDAD4 !important; }
 
     /* Compact Bullet SOS FAB Button (High Contrast White Text) */
+    /* Tombol kecil di panel SOS tetap ramping, tapi area sentuhnya dilebarkan
+       lewat lapisan tak terlihat supaya mencapai 44px (pedoman Apple HIG). */
+    .site-sos-act-btn { position: relative; }
+    .site-sos-act-btn::after {
+      content: '';
+      position: absolute;
+      inset: -6px -4px;
+    }
+
     .site-sos-bullet {
       will-change: transform;
       transform: translateZ(0);
@@ -443,11 +452,11 @@
 
       .site-menu-trigger {
         position: absolute;
-        top: 8px;
+        top: 6px;
         left: 10px;
         z-index: 10020;
-        width: 40px;
-        height: 40px;
+        width: 44px;
+        height: 44px;
         display: grid;
         place-items: center;
         border: 1.5px solid #E0B863 !important;
@@ -494,8 +503,8 @@
       .site-sos-bullet {
         bottom: calc(74px + env(safe-area-inset-bottom, 0px));
         right: 14px;
-        width: 42px;
-        height: 42px;
+        width: 44px;
+        height: 44px;
       }
       .site-sos-bullet .material-symbols-outlined { font-size: 20px; }
     }

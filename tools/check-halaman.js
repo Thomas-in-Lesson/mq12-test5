@@ -16,6 +16,7 @@ const lapor = (berkas, jenis, pesan) => temuan.push({ berkas, jenis, pesan });
 
 const halaman = [];
 for (const nama of fs.readdirSync(REPO)) {
+  if (nama.startsWith('_')) continue; // berkas bantu audit (di .gitignore), bukan halaman situs
   const p = path.join(REPO, nama);
   if (nama.endsWith('.html')) halaman.push(nama);
   else if (fs.statSync(p).isDirectory() && fs.existsSync(path.join(p, 'code.html'))) {
