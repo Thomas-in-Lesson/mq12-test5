@@ -39,7 +39,8 @@ BARIS = ('<tr class="hover:bg-surface-container/50">'
 
 
 def rapi(teks):
-    return re.sub(r'\s+', ' ', (teks or '')).strip()
+    t = re.sub(r'\s+', ' ', (teks or '')).strip()
+    return re.sub(r'\(\s+', '(', re.sub(r'\s+\)', ')', t))  # "( Dhuhur & Ashar )" -> "(Dhuhur & Ashar)"
 
 
 def rapi_pendamping(teks):
@@ -99,6 +100,34 @@ def cocok(agenda, baris_lama):
     return terbaik
 
 
+def gabung_baris(baris_csv, baris_lama, kunci, dipulihkan):
+    """Baris CSV + baris halaman yang tidak ada di CSV (agenda betulan, jangan hilang).
+
+    Seragamnya mengikuti baris sebelumnya (kalau tidak ada, baris sesudahnya),
+    sama seperti cara rundown memperlakukan langkah tanpa keterangan seragam.
+    """
+    padanan_lama = [cocok(b['agenda'], baris_csv) for b in baris_lama]
+    hasil = list(baris_csv)
+    for i, b in enumerate(baris_lama):
+        if padanan_lama[i] is not None:
+            continue
+        pos = 0
+        for j in range(i - 1, -1, -1):
+            if padanan_lama[j] is not None:
+                pos = hasil.index(padanan_lama[j]) + 1
+                break
+        acuan = hasil[pos - 1] if pos else (hasil[0] if hasil else b)
+        hasil.insert(pos, {
+            'agenda': b['agenda'],
+            'peserta': acuan['peserta'],
+            'pendamping': acuan['pendamping'],
+            'wilayah': b['wilayah'],
+        })
+        dipulihkan.append(f'S{kunci[0]}h{kunci[1]} "{b["agenda"][:40]}" tidak ada di CSV — dikembalikan, '
+                          f'seragam ikut baris tetangga ({acuan["peserta"]} / {acuan["pendamping"]})')
+    return hasil
+
+
 def main():
     arg = [a for a in sys.argv[1:] if not a.startswith('--')]
     tulis = '--tulis' in sys.argv
@@ -107,7 +136,7 @@ def main():
     html = open(HALAMAN, encoding='utf-8').read()
     halaman = baca_halaman(html)
 
-    beda_seragam, beda_wilayah, tak_ada = [], [], []
+    beda_seragam, beda_wilayah, tak_ada, dipulihkan = [], [], [], []
     tambalan = []  # (awal, akhir, isi_baru)
 
     for kunci in sorted(csv):
@@ -115,8 +144,9 @@ def main():
             tak_ada.append(f'SESI {kunci[0]} HARI KE-{kunci[1]} ada di CSV tapi tidak ada tabelnya di halaman')
             continue
         awal, akhir, lama = halaman[kunci]
+        baris = gabung_baris(csv[kunci], lama, kunci, dipulihkan)
         baris_html = []
-        for i, r in enumerate(csv[kunci], 1):
+        for i, r in enumerate(baris, 1):
             padanan = cocok(r['agenda'], lama)
             wilayah = r['wilayah']
             if padanan:
@@ -138,12 +168,16 @@ def main():
                 pendamping=html_mod.escape(r['pendamping']),
                 wilayah=html_mod.escape(wilayah),
             ))
-        print(f'SESI {kunci[0]} hari ke-{kunci[1]}: {len(csv[kunci])} baris (sebelumnya {len(lama)})')
+        print(f'SESI {kunci[0]} hari ke-{kunci[1]}: {len(baris)} baris (CSV {len(csv[kunci])}, sebelumnya {len(lama)})')
         tambalan.append((awal, akhir, '\n        ' + '\n        '.join(baris_html) + '\n      '))
 
     print(f'\n{len(beda_seragam)} kolom seragam berubah:')
     for x in beda_seragam:
         print(f'   {x}')
+    if dipulihkan:
+        print(f'\n{len(dipulihkan)} baris halaman yang tidak ada di CSV (dikembalikan):')
+        for x in dipulihkan:
+            print(f'   {x}')
     if beda_wilayah:
         print(f'\n{len(beda_wilayah)} wilayah beda antara halaman dan CSV (halaman dipertahankan):')
         for x in beda_wilayah:

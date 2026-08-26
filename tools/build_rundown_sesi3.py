@@ -27,6 +27,11 @@ HARI = re.compile(r'^HARI\s*KE\s*-?\s*(\d+)', re.I)
 JAM = re.compile(r'^(\d{1,2})\s*[.:]\s*(\d{2})$')
 
 
+# Catatan CSV yang dikonfirmasi panitia untuk diabaikan (nama hotelnya keliru:
+# baris penginapannya sendiri menyebut Hotel Swiss Belresidences).
+ABAIKAN_CATATAN = {'grand sahid jakarta'}
+
+
 def rapi_jam(teks):
     """"13.00 -  13.30 " -> "13.00 – 13.30"; "07. 40" -> "07.40"."""
     t = re.sub(r'\s+', ' ', (teks or '')).strip()
@@ -71,7 +76,7 @@ def baca_csv(path):
             'agenda': agenda,
             'daerah': KOREKSI_DAERAH.get(daerah, daerah),
             'durasi': re.sub(r'\s+', ' ', kol[4]).strip(),
-            'kegiatan': re.sub(r'\s+', ' ', kol[5]).strip(),
+            'kegiatan': '' if kol[5].strip().lower() in ABAIKAN_CATATAN else re.sub(r'\s+', ' ', kol[5]).strip(),
             'seragam': seragam,
             'catatan': re.sub(r'\s+', ' ', kol[7]).strip(),
         })
