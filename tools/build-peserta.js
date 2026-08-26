@@ -9,7 +9,7 @@ const REPO = path.join(__dirname, '..');
 
 // ponytail: urutan rute tidak ada sumbernya di repo; angka ini mengikuti
 // peserta.json sebelumnya. Kalau panitia mengoreksi rute, ubah di sini saja.
-const RUTE = ['Gresik', 'Semarang', 'Pemalang', 'Solo', 'Cianjur', 'Jakarta'];
+const RUTE = ['Gresik', 'Semarang', 'Pemalang', 'Solo', 'Cianjur', 'HSHF', 'Jakarta'];
 
 const slug = (nama) => tokenize(nama).join('-');
 const nomorKamar = (roomNo) => String(roomNo).replace(/^kamar\s*/i, '').trim();

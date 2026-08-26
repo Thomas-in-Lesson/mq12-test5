@@ -101,7 +101,37 @@ function semarang(rows) {
   return out;
 }
 
-const PARSER = { Cianjur: cianjur, Gresik: gresik, Jakarta: jakarta, Pemalang: pemalang, Semarang: semarang };
+// No.;Bangunan;Kamar;Nama — satu baris satu orang, dikelompokkan per bangunan
+// dan kamar. Nama bangunan dibiarkan apa adanya ("Kelas BTQ", bukan "Kelas Btq").
+function hshf(rows) {
+  const out = [];
+  const indeks = new Map();
+  for (const [, bangunan, kamar, nama] of rows) {
+    if (!nama || /^nama$/i.test(nama) || !bangunan) continue;
+    const kunci = `${bangunan}|${kamar}`;
+    if (!indeks.has(kunci)) {
+      const nomor = kamar ? (/^kamar/i.test(kamar) ? kamar : `Kamar ${kamar}`) : bangunan;
+      indeks.set(kunci, out.push({ roomNo: nomor, type: kamar ? bangunan : 'Ruang bersama', occupants: [] }) - 1);
+    }
+    out[indeks.get(kunci)].occupants.push(nama);
+  }
+  return out;
+}
+
+// Kunci kota -> nama penginapan, berkas CSV, dan parsernya. Urutan di sini juga
+// jadi urutan tab di halaman. Kota tanpa parser/CSV memakai data lama di halaman
+// (Solo masih "segera hadir"). HSHF dikirim terpisah, jadi berkasnya di ~/Downloads.
+const KOTA = {
+  Cianjur: { name: 'Hotel Gino Feruci Cianjur', csv: 'Cianjur.csv', parse: cianjur },
+  Gresik: { name: 'Hotel Gresik', csv: 'Gresik.csv', parse: gresik },
+  HSHF: { name: 'Pesantren HSHF, Pelabuhan Ratu', csv: 'hshf.csv', parse: hshf, dir: path.join(os.homedir(), 'Downloads') },
+  Jakarta: { name: 'Swiss-Belhotel Epicentrum Jakarta', csv: 'Jakarta.csv', parse: jakarta },
+  Pemalang: { name: 'Hotel R-Gina Pemalang', csv: 'Pemalang.csv', parse: pemalang },
+  Semarang: { name: 'Hotel Oak Tree Semarang', csv: 'Semarang.csv', parse: semarang },
+  Solo: { name: 'Hotel Sahid Solo', csv: null, parse: null },
+};
+
+const BELUM_ADA = 'Data pembagian kamar belum tersedia dari tim panitia (segera hadir).';
 
 // ------------------------------------------------------- ejaan nama ikut front
 const PESERTA = JSON.parse(fs.readFileSync(path.join(REPO, 'peserta.json'), 'utf8'));
@@ -152,21 +182,24 @@ function main() {
   const lama = ambilLiteral('daftar_kamar_safari_hwmi_mq_12/code.html', 'const hotelsData');
   const data = {};
 
-  for (const [kota, h] of Object.entries(lama)) {
-    const file = path.join(src, `${kota}.csv`);
-    if (!PARSER[kota] || !fs.existsSync(file)) {
+  for (const [kota, cfg] of Object.entries(KOTA)) {
+    const h = lama[kota] || { name: cfg.name, note: BELUM_ADA, rooms: [] };
+    // dir sumber utama dulu, baru lokasi kiriman terpisah (HSHF di ~/Downloads)
+    const file = cfg.csv && [path.join(src, cfg.csv), cfg.dir && path.join(cfg.dir, cfg.csv)]
+      .filter(Boolean).find(fs.existsSync);
+    if (!cfg.parse || !file) {
       data[kota] = h; // Solo: belum ada kiriman, catatan "segera hadir" dibiarkan
       console.log(`${kota.padEnd(9)} -> CSV tidak ada, data lama dipakai`);
       continue;
     }
-    const rooms = PARSER[kota](baca(file)).filter((r) => r.occupants.length);
+    const rooms = cfg.parse(baca(file)).filter((r) => r.occupants.length);
     for (const r of rooms) r.occupants = r.occupants.map(kanonik);
-    data[kota] = { name: h.name, rooms };
+    data[kota] = { name: h.name || cfg.name, rooms };
 
     const orang = rooms.reduce((n, r) => n + r.occupants.length, 0);
     const dulu = (h.rooms || []).reduce((n, r) => n + r.occupants.length, 0);
     console.log(`${kota.padEnd(9)} -> ${String(rooms.length).padStart(3)} kamar, ${String(orang).padStart(3)} penghuni `
-      + `(sebelumnya ${h.rooms.length} kamar, ${dulu} penghuni)`);
+      + `(sebelumnya ${(h.rooms || []).length} kamar, ${dulu} penghuni)`);
   }
 
   tulisHalaman(data);

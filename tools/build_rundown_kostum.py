@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Isi kolom seragam (kostum) di halaman Rundown dari CSV kostum panitia.
+"""Isi kolom seragam (kostum) dan rapikan kolom daerah di halaman Rundown.
 
 Jalankan: python3 tools/build_rundown_kostum.py [Rundown.csv] [--tulis] [--paksa]
 Default sumber: ~/Downloads/Rundown.csv
@@ -44,6 +44,24 @@ PADANAN = {
 }
 
 
+# Koreksi kolom daerah: kunci = nilai yang sekarang ada di halaman, nilai =
+# ejaan yang benar. Dipakai untuk salah ketik dan nama tempat yang tidak seragam.
+# Lokasi di CSV panitia beberapa keliru (Prambanan tertulis Kudus, Makam Jendral
+# Sudirman dan HOS Cokroaminoto tertulis Demak padahal di Yogyakarta), jadi acuan
+# lokasi tetap data halaman yang sudah tingkat lokasi, bukan kota.
+KOREKSI_DAERAH = {
+    'Tuba n': 'Tuban',
+    'Pelabuhanratu': 'Pelabuhan Ratu',
+    'Regina hotel': 'Hotel R-Gina Pemalang',
+    'Hotel R - Gina Pemalang': 'Hotel R-Gina Pemalang',
+    'Candi Klaten': 'Candi Prambanan, Klaten',
+    'Resto Hotel': 'Hotel Gino Feruci, Cianjur',
+    # Makam Raden Abdul Fattah ada di kompleks Masjid Agung Demak.
+    'Demak - Akbar': 'Masjid Agung Demak',
+    'Demak Akbar': 'Masjid Agung Demak',
+}
+
+
 def token(teks):
     kata = re.findall(r"[a-z0-9']+", (teks or '').lower())
     return {k.strip("'") for k in kata if k.strip("'") and k.strip("'") not in UMUM}
@@ -54,7 +72,14 @@ def rapi_kostum(teks):
     t = re.sub(r'\s+', ' ', (teks or '')).strip().rstrip(',')
     t = ', '.join(b.strip().title() for b in t.split(',') if b.strip())
     # Halaman menyebutnya "Almamater MQ"; CSV kadang cuma "Almamater".
-    return re.sub(r'\bAlmamater\b(?!\s+Mq)', 'Almamater MQ', t).replace('Almamater Mq', 'Almamater MQ')
+    t = re.sub(r'\bAlmamater\b(?!\s+Mq)', 'Almamater MQ', t).replace('Almamater Mq', 'Almamater MQ')
+    # Kemeja putih wajib di balik almamater/jasket (dikonfirmasi panitia), padahal
+    # CSV kadang cuma menulis lapisan luarnya. "Salur" dan "Bebas Sopan" dibiarkan:
+    # itu memang menggantikan kemeja putih, bukan dipakai di atasnya.
+    t = re.sub(r'^Baju\s+(?=Bebas)', '', t)  # "Baju Bebas Sopan" -> "Bebas Sopan"
+    if re.search(r'almamater|jasket', t, re.I) and 'kemeja putih' not in t.lower():
+        t += ', Kemeja Putih'
+    return t
 
 
 def baca_csv(path):
@@ -141,6 +166,19 @@ def main():
                     beda_kostum.append(f'{sesi} h{hari_ke} "{item["agenda"][:34]}": halaman="{lama}" vs CSV="{kostum}"')
                 if ms['lokasi'] and item['daerah'] and token(ms['lokasi']).isdisjoint(token(item['daerah'])):
                     lokasi_beda.append(f'{sesi} h{hari_ke} "{item["agenda"][:34]}": halaman="{item["daerah"]}" vs CSV="{ms["lokasi"]}"')
+
+    daerah_dikoreksi = []
+    for sesi, isi in data.items():
+        for hi, hari in enumerate(isi['hari'], 1):
+            for item in hari['agenda']:
+                benar = KOREKSI_DAERAH.get(item['daerah'].strip())
+                if benar:
+                    daerah_dikoreksi.append(f'{sesi} h{hi} "{item["agenda"][:30]}": "{item["daerah"]}" -> "{benar}"')
+                    item['daerah'] = benar
+    if daerah_dikoreksi:
+        print(f'\n{len(daerah_dikoreksi)} kolom daerah dikoreksi:')
+        for x in daerah_dikoreksi:
+            print(f'   {x}')
 
     print(f'\n{ubah} kolom seragam diisi{" (CSV menang, --paksa)" if paksa else " dari yang kosong"}')
     if beda_kostum:

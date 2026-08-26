@@ -41,11 +41,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "4",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "74",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -92,11 +99,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "10",
     "tipe": "Deluxe · Lantai 8",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -143,11 +157,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "78",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -194,11 +215,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "35",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -245,11 +273,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "35",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -296,11 +331,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "Pelayanan",
+    "tipe": "Kantor BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "4",
     "tipe": "Deluxe · Lantai 7",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -347,11 +389,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "4",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "74",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -398,11 +447,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "68",
     "tipe": "Family 2 Bedroom · Lantai 8",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -449,11 +505,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "44",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -500,11 +563,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "24",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -550,11 +620,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "33",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -600,11 +677,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "Pelayanan",
+    "tipe": "Kantor BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "6",
     "tipe": "Deluxe · Lantai 7",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -651,11 +735,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "16",
     "tipe": "Deluxe · Lantai 8",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -701,11 +792,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "44",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -752,11 +850,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "43",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -802,11 +907,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "4",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "73",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -853,11 +965,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "4",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "69",
     "tipe": "Family 2 Bedroom · Lantai 8",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -904,11 +1023,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "37",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -955,11 +1081,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "3",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "15",
     "tipe": "Deluxe · Lantai 8",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -1006,11 +1139,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "46",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -1056,11 +1196,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "4",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "69",
     "tipe": "Family 2 Bedroom · Lantai 8",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -1107,11 +1254,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "3",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "75",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -1158,11 +1312,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "47",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -1209,11 +1370,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "80",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -1259,11 +1427,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "4",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "76",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -1310,11 +1485,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "13",
     "tipe": "Deluxe · Lantai 8",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -1359,11 +1541,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kamar Pendamping",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "66",
     "tipe": "Family 2 Bedroom · Lantai 7",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -1408,11 +1597,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kamar Pendamping",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "66",
     "tipe": "Family 2 Bedroom · Lantai 7",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -1457,11 +1653,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kamar Pendamping",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "66",
     "tipe": "Family 2 Bedroom · Lantai 7",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -1506,11 +1709,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kamar Pendamping",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "65",
     "tipe": "Grand Deluxe · Lantai 7",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -1555,11 +1765,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kamar Pendamping",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "65",
     "tipe": "Grand Deluxe · Lantai 7",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -1604,11 +1821,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kamar Pendamping",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "66",
     "tipe": "Family 2 Bedroom · Lantai 7",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -1655,11 +1879,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "26",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -1704,11 +1935,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "23",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -1754,11 +1992,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "74",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -1804,11 +2049,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "43",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -1855,11 +2107,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "Pelayanan",
+    "tipe": "Kantor BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "5",
     "tipe": "Deluxe · Lantai 7",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -1906,11 +2165,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "4",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "26",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -1956,11 +2222,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "3",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "17",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -2007,11 +2280,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "38",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -2051,11 +2331,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "3",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "76",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -2102,11 +2389,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "68",
     "tipe": "Family 2 Bedroom · Lantai 8",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -2153,11 +2447,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "4",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "27",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -2214,11 +2515,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "4",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "30",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -2275,11 +2583,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "68",
     "tipe": "Family 2 Bedroom · Lantai 8",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -2326,11 +2641,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "Pelayanan",
+    "tipe": "Kantor BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "7",
     "tipe": "Deluxe · Lantai 7",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -2376,11 +2698,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "27",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -2427,11 +2756,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "75",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -2478,11 +2814,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "Pelayanan",
+    "tipe": "Kantor BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "8",
     "tipe": "Deluxe · Lantai 7",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -2529,11 +2872,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "36",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -2576,11 +2926,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "30",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -2627,11 +2984,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "Pelayanan",
+    "tipe": "Kantor BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "4",
     "tipe": "Deluxe · Lantai 7",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -2678,11 +3042,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "1",
     "tipe": "Deluxe · Lantai 7",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -2729,11 +3100,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "16",
     "tipe": "Deluxe · Lantai 8",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -2778,11 +3156,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "78",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -2827,11 +3212,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "4",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "45",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -2877,11 +3269,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "28",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -2927,11 +3326,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "79",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -2978,11 +3384,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "79",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -3028,11 +3441,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "4",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "11",
     "tipe": "Deluxe · Lantai 8",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -3077,11 +3497,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "28",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -3127,11 +3554,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "Pelayanan",
+    "tipe": "Kantor BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "9",
     "tipe": "Deluxe · Lantai 8",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -3177,11 +3611,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "24",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -3228,11 +3669,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "48",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -3279,11 +3727,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "80",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -3329,11 +3784,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "37",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -3378,11 +3840,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "31",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -3427,11 +3896,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "79",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -3477,11 +3953,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "38",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -3528,11 +4011,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "49",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -3579,11 +4069,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "18",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -3630,11 +4127,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "80",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -3681,11 +4185,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "71",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -3724,11 +4235,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "3",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "20",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -3775,11 +4293,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "75",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -3826,11 +4351,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "3",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "19",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -3875,11 +4407,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "67",
     "tipe": "Family 2 Bedroom · Lantai 7",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -3925,11 +4464,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "51",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -3976,11 +4522,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "80",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -4026,11 +4579,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "67",
     "tipe": "Family 2 Bedroom · Lantai 7",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -4077,11 +4637,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "70",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -4128,11 +4695,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "70",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -4179,11 +4753,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "42",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -4229,11 +4810,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "40",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -4279,11 +4867,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "12",
     "tipe": "Deluxe · Lantai 8",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -4330,11 +4925,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "Pelayanan",
+    "tipe": "Kantor BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "67",
     "tipe": "Family 2 Bedroom · Lantai 7",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -4381,11 +4983,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "29",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -4432,11 +5041,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "39",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -4483,11 +5099,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "10",
     "tipe": "Deluxe · Lantai 8",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -4534,11 +5157,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "29",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -4583,11 +5213,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "14",
     "tipe": "Deluxe · Lantai 8",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -4634,11 +5271,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "39",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -4685,11 +5329,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "41",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -4736,11 +5387,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "33",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -4787,11 +5445,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "3",
     "tipe": "Deluxe · Lantai 7",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -4838,11 +5503,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "21",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -4889,11 +5561,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "2",
     "tipe": "Deluxe · Lantai 7",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -4940,11 +5619,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "79",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -4991,11 +5677,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "40",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -5042,11 +5735,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "13",
     "tipe": "Deluxe · Lantai 8",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -5092,11 +5792,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "41",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -5143,11 +5850,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "1",
     "tipe": "Deluxe · Lantai 7",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -5193,11 +5907,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "3",
     "tipe": "Deluxe · Lantai 7",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -5244,11 +5965,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "78",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -5295,11 +6023,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "22",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -5346,11 +6081,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "Pelayanan",
+    "tipe": "Kantor BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "6",
     "tipe": "Deluxe · Lantai 7",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -5396,11 +6138,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "49",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -5446,11 +6195,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "Pelayanan",
+    "tipe": "Kantor BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "7",
     "tipe": "Deluxe · Lantai 7",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -5496,11 +6252,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "4",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "70",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -5546,11 +6309,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "12",
     "tipe": "Deluxe · Lantai 8",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -5597,11 +6367,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "3",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "36",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -5647,11 +6424,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "77",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -5697,11 +6481,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "76",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -5748,11 +6539,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "46",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -5799,11 +6597,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "3",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "73",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -5849,11 +6654,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "3",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "25",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -5900,11 +6712,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "80",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -5951,11 +6770,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "73",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -6001,11 +6827,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "17",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -6050,11 +6883,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "14",
     "tipe": "Deluxe · Lantai 8",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -6101,11 +6941,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "42",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -6152,11 +6999,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "3",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "70",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -6202,11 +7056,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "3",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "76",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -6252,11 +7113,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "4",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "74",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -6302,11 +7170,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "48",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -6352,11 +7227,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "4",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "69",
     "tipe": "Family 2 Bedroom · Lantai 8",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -6402,11 +7284,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "51",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -6462,11 +7351,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "72",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -6511,11 +7407,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "72",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -6560,11 +7463,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "72",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -6609,11 +7519,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "23",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -6660,11 +7577,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "18",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -6711,11 +7635,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "3",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "71",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -6762,11 +7693,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "34",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -6813,11 +7751,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "Pelayanan",
+    "tipe": "Kantor BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "8",
     "tipe": "Deluxe · Lantai 7",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -6863,11 +7808,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "68",
     "tipe": "Family 2 Bedroom · Lantai 8",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -6914,11 +7866,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "4",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "69",
     "tipe": "Family 2 Bedroom · Lantai 8",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -6964,11 +7923,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "34",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -7015,11 +7981,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "3",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "45",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -7066,11 +8039,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "22",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -7117,11 +8097,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "3",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "47",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -7168,11 +8155,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "4",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "72",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -7218,11 +8212,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "71",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -7267,11 +8268,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "3",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "77",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -7328,11 +8336,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "3",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "77",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -7378,11 +8393,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "73",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -7428,11 +8450,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "4",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "71",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -7479,11 +8508,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "50",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -7529,11 +8565,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "Pelayanan",
+    "tipe": "Kantor BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "67",
     "tipe": "Family 2 Bedroom · Lantai 7",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -7579,11 +8622,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "9",
     "tipe": "Deluxe · Lantai 8",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -7630,11 +8680,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "4",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "11",
     "tipe": "Deluxe · Lantai 8",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -7681,11 +8738,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "19",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -7731,11 +8795,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "4",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "25",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -7782,11 +8853,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "2",
     "tipe": "Deluxe · Lantai 7",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -7833,11 +8911,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "75",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -7882,11 +8967,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "Pelayanan",
+    "tipe": "Kantor BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "5",
     "tipe": "Deluxe · Lantai 7",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -7933,11 +9025,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "3",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "32",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -7983,11 +9082,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "32",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -8033,11 +9139,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "31",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -8083,11 +9196,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "3",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "77",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -8134,11 +9254,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "15",
     "tipe": "Deluxe · Lantai 8",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -8185,11 +9312,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "1",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "20",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -8236,11 +9370,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "21",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -8286,11 +9427,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "2",
+    "tipe": "Kelas BTQ",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "78",
     "tipe": "Family 2 Bedroom",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  },
@@ -8335,11 +9483,18 @@
     "urutan": 5
    },
    {
+    "kota": "HSHF",
+    "hotel": "Pesantren HSHF, Pelabuhan Ratu",
+    "kamar": "3",
+    "tipe": "Ruangan Bapak Kholifah",
+    "urutan": 6
+   },
+   {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "50",
     "tipe": "Deluxe",
-    "urutan": 6
+    "urutan": 7
    }
   ]
  }
