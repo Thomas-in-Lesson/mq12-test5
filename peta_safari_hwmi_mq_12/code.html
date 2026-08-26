@@ -196,7 +196,7 @@
         <span>SESI 1</span><span class="dot"></span>
       </button>
       <button id="btn-sesi-2" type="button" onclick="switchSesi('sesi2')" class="sesi-tab">
-        <span>SESI 2</span><span class="soon">Segera</span>
+        <span>SESI 2</span><span class="dot"></span>
       </button>
       <button id="btn-sesi-3" type="button" onclick="switchSesi('sesi3')" class="sesi-tab">
         <span>SESI 3</span><span class="soon">Segera</span>
@@ -247,11 +247,14 @@
       active: true
     },
     sesi2: {
-      title: "Rute Safari Sesi 2",
-      embedUrl: "",
-      mapsUrl: "",
-      active: false,
-      note: "Peta rute Sesi 2 sedang diselaraskan oleh Tim Panitia dan akan segera dirilis."
+      // Peta kiriman panitia berjudul "RUTE SAFARI SESI 2 DAY 2" dan isinya
+      // memang hanya Hari ke-2 (Hotel Khas Gresik - Sunan Gresik - Raden
+      // Santri - Sunan Deket - Drajat - Asmoroqondi - Bonang - Pesantren).
+      // Kalau peta Hari ke-1 sudah ada, tambahkan di sini.
+      title: "Rute Safari Sesi 2 (Hari ke-2)",
+      embedUrl: "https://www.google.com/maps/d/embed?mid=1zIONnluRZyV8vlodsFi1In8MgTgylmk",
+      mapsUrl: "https://www.google.com/maps/d/viewer?mid=1zIONnluRZyV8vlodsFi1In8MgTgylmk&usp=sharing",
+      active: true
     },
     sesi3: {
       title: "Rute Safari Sesi 3",
