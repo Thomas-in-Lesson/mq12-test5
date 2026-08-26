@@ -467,26 +467,23 @@
         cursor: pointer;
       }
 
+      /* Kalimat ini WAJIB satu baris dan utuh. Ruang amannya = lebar layar
+         dikurangi 108px (tombol menu 44px + jarak 10px di kiri, lencana status
+         36px + 10px di kanan), dan kalimatnya butuh sekitar 26,6px lebar untuk
+         setiap 1px ukuran huruf. Karena itu ukurannya ikut lebar layar:
+         (100vw - 108px) / 26,6 ~= 3,6vw - 4px (disisakan margin aman), dijaga clamp supaya tidak
+         mengecil tanpa batas di layar sempit dan tidak melewati 12px di layar
+         lebar. Jangan diganti nilai tetap: di 390px kalimat 12px butuh 319px
+         sementara ruangnya cuma 282px, jadi pasti terpotong. */
       .site-header-center-title {
-        max-width: calc(100vw - 110px);
+        max-width: calc(100vw - 108px);
       }
 
       .site-header-center-title span {
-        font-size: 12px !important;
-        letter-spacing: 0.03em;
-      }
-
-      /* Di layar sempit kalimatnya butuh 319px sementara ruang aman cuma 280px,
-         jadi satu baris selalu terpotong. Dua baris 11px masih lega di bilah
-         56px dan kalimatnya utuh — lebih baik daripada mengecilkan huruf. */
-      @media (max-width: 430px) {
-        .site-header-center-title span {
-          font-size: 11px !important;
-          letter-spacing: 0 !important;
-          white-space: normal !important;
-          line-height: 1.2 !important;
-          text-wrap: balance;
-        }
+        font-size: clamp(7.2px, calc(3.6vw - 4px), 12px) !important;
+        letter-spacing: -0.005em !important;
+        white-space: nowrap !important;
+        line-height: 1.25 !important;
       }
 
       .site-offline-badge {
