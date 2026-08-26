@@ -100,9 +100,34 @@
     font-weight: 700; font-size: 12px; color: rgb(var(--c-gold));
     font-variant-numeric: tabular-nums;
   }
-  .agenda-jam .durasi {
-    display: block; margin-top: 2px;
-    font-size: 11px; font-weight: 500;
+  .agenda-jam .mulai { display: block; font-size: 15px; font-weight: 800; letter-spacing: -.01em; }
+  .agenda-jam .selesai {
+    display: block; margin-top: 1px;
+    font-size: 11px; font-weight: 600;
+    color: rgba(224, 184, 99, .75);
+  }
+  .agenda-nama .durasi {
+    margin-left: 6px; font-size: 11px; font-weight: 500;
+    color: rgb(var(--c-on-surface-variant));
+    white-space: nowrap;
+  }
+
+  /* Seragam sehari penuh ditulis sekali di sini; di baris agenda hanya muncul
+     kalau berbeda dari yang tertulis di strip ini. */
+  .hari-seragam {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
+    padding: 10px 14px;
+    border-bottom: 1px solid rgba(224, 184, 99, .18);
+    background: rgba(224, 184, 99, .05);
+  }
+  .hari-seragam .label {
+    font-size: 11px; font-weight: 700; letter-spacing: .02em;
+    color: rgb(var(--c-on-surface-variant));
+    text-transform: uppercase;
+  }
+  .hari-tanggal-penuh {
+    padding: 8px 14px 0;
+    font-size: 11px; line-height: 1.5;
     color: rgb(var(--c-on-surface-variant));
   }
   .agenda-nama { font-size: 13px; font-weight: 700; color: #FFFFFF; }
@@ -2206,16 +2231,68 @@
   const esc = (s) => String(s == null ? '' : s)
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
-  function barisAgenda(a) {
-    const tag = (kelas, isi) => isi ? `<span class="agenda-tag ${kelas}">${esc(isi)}</span>` : '';
+  const tag = (kelas, isi) => isi ? `<span class="agenda-tag ${kelas}">${esc(isi)}</span>` : '';
+
+  // Data lapangan menulis seragam yang sama dengan beberapa gaya: "Almamater MQ
+  // Kemeja Putih", "Almamater MQ, Kemeja putih", "Kemeja Putih, Almamater MQ".
+  // Semuanya harus dianggap sama, kalau tidak, bedanya ikut tercetak sebagai
+  // "pengecualian" padahal cuma soal koma.
+  // Dibandingkan sebagai kumpulan kata: koma, urutan, dan besar-kecil huruf
+  // tidak dihitung. "Almamater MQ Kemeja Putih" = "Kemeja Putih, Almamater MQ".
+  const kunciSeragam = (v) => String(v || '').toLowerCase()
+    .split(/[^a-z]+/)
+    .filter(Boolean)
+    .sort()
+    .join('|');
+
+  // Seragam yang paling sering dipakai dalam sehari; dicetak sekali di kepala
+  // kartu, jadi baris agenda cuma perlu menyebut yang berbeda.
+  function terbanyak(daftar) {
+    const kelompok = new Map();
+    for (const v of daftar) {
+      if (!v) continue;
+      const k = kunciSeragam(v);
+      const e = kelompok.get(k) || { n: 0, teks: v };
+      e.n += 1;
+      if (!e.teks.includes(',') && v.includes(',')) e.teks = v; // tampilan paling rapi
+      kelompok.set(k, e);
+    }
+    let juara = null;
+    for (const e of kelompok.values()) if (!juara || e.n > juara.n) juara = e;
+    return juara && juara.n > 1 ? juara.teks : '';
+  }
+
+  const BULAN = { januari: 'Jan', februari: 'Feb', maret: 'Mar', april: 'Apr', mei: 'Mei', juni: 'Jun',
+    juli: 'Jul', agustus: 'Agu', september: 'Sep', oktober: 'Okt', november: 'Nov', desember: 'Des' };
+
+  // "Rabu Pahing, 19 Robi'ul Awwal 1448 H / 02 September 2026 M" -> "Rabu Pahing · 2 Sep 2026"
+  function tanggalRingkas(teks) {
+    const t = String(teks || '');
+    const hari = (t.split(',')[0] || '').trim();
+    const m = t.match(/(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})/g);
+    const akhir = m && m[m.length - 1].match(/(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})/);
+    if (!hari || !akhir) return t;
+    const bulan = BULAN[akhir[2].toLowerCase()];
+    if (!bulan) return t;
+    return `${hari} · ${Number(akhir[1])} ${bulan} ${akhir[3]}`;
+  }
+
+  function barisAgenda(a, bakuSeragam, bakuPendamping) {
+    const [mulai, selesai] = String(a.jam || '').split('–').map((x) => x.trim());
+    const beda = (v, baku) => v && kunciSeragam(v) !== kunciSeragam(baku);
+    const seragam = beda(a.seragam, bakuSeragam) ? a.seragam : '';
+    const pendamping = beda(a.pendamping, bakuPendamping) ? `Pendamping: ${a.pendamping}` : '';
     return `
       <div class="agenda-row">
-        <div class="agenda-jam">${esc(a.jam)}${a.durasi ? `<span class="durasi">${esc(a.durasi)}</span>` : ''}</div>
+        <div class="agenda-jam">
+          <b class="mulai">${esc(mulai || a.jam)}</b>
+          ${selesai ? `<span class="selesai">– ${esc(selesai)}</span>` : ''}
+        </div>
         <div>
-          <div class="agenda-nama">${esc(a.agenda)}</div>
+          <div class="agenda-nama">${esc(a.agenda)}${a.durasi ? `<span class="durasi">· ${esc(a.durasi)}</span>` : ''}</div>
           ${a.kegiatan ? `<div class="agenda-ket">${esc(a.kegiatan)}</div>` : ''}
           ${a.catatan ? `<div class="agenda-ket">${esc(a.catatan)}</div>` : ''}
-          ${tag('tag-daerah', a.daerah)}${tag('tag-seragam', a.seragam)}${tag('tag-pendamping', a.pendamping ? `Pendamping: ${a.pendamping}` : '')}
+          ${tag('tag-daerah', a.daerah)}${tag('tag-seragam', seragam)}${tag('tag-pendamping', pendamping)}
           ${window.DenahViewer ? DenahViewer.tautanUntuk(sesiAktif, a.agenda) : ''}
         </div>
       </div>`;
@@ -2223,16 +2300,29 @@
 
   function kartuHari(hari, index) {
     const judul = hari.label || 'Susunan Acara';
+    const ringkas = tanggalRingkas(hari.tanggal);
+    const bakuSeragam = terbanyak(hari.agenda.map((a) => a.seragam));
+    const bakuPendamping = terbanyak(hari.agenda.map((a) => a.pendamping));
+    const strip = bakuSeragam || bakuPendamping ? `
+        <div class="hari-seragam">
+          <span class="label">Seragam hari ini</span>
+          ${tag('tag-seragam', bakuSeragam)}${tag('tag-pendamping', bakuPendamping ? `Pendamping: ${bakuPendamping}` : '')}
+        </div>` : '';
+    // Tanggal panjang tetap ada, tapi turun ke dalam kartu supaya kepala kartu
+    // tidak membungkus tiga baris di layar HP.
+    const penuh = hari.tanggal && ringkas !== hari.tanggal
+      ? `<div class="hari-tanggal-penuh">${esc(hari.tanggal)}</div>` : '';
     return `
       <div class="hari-card${index === 0 ? '' : ' tertutup'}">
         <button class="hari-head" type="button" onclick="this.parentNode.classList.toggle('tertutup')">
           <span>
             ${esc(judul)}
-            ${hari.tanggal ? `<span class="tgl">${esc(hari.tanggal)}</span>` : ''}
+            ${hari.tanggal ? `<span class="tgl">${esc(ringkas)}</span>` : ''}
           </span>
           <svg class="karet" width="18" height="18" viewBox="0 0 24 24" fill="#E0B863" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
         </button>
-        <div class="hari-body">${hari.agenda.map(barisAgenda).join('')}</div>
+        ${strip}
+        <div class="hari-body">${penuh}${hari.agenda.map((a) => barisAgenda(a, bakuSeragam, bakuPendamping)).join('')}</div>
       </div>`;
   }
 
