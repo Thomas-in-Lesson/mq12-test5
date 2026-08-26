@@ -27,6 +27,16 @@ function tokenize(name) {
   return raw.slice(i);
 }
 
+// Awalan yang dipangkas tokenize(): gelar ("Bpk"), prefiks Muhammad, atau tidak
+// ada. Dipakai untuk memilih di antara nama yang tokennya jadi identik, mis.
+// "Bpk. Irfan Fanani" vs "Muchamad Irfan Fanani".
+function polaAwalan(name) {
+  const raw = String(name).toLowerCase().replace(/['’`]/g, '').replace(/[^a-z0-9]+/g, ' ').split(' ').filter(Boolean);
+  if (raw.length < 2) return 'polos';
+  if (GELAR.has(raw[0])) return 'gelar';
+  return prefiksMuhammad(raw[0]) ? 'muhammad' : 'polos';
+}
+
 // Langkah 2 - Normalisasi fonetik
 function phoneticWord(w) {
   return w
@@ -152,4 +162,4 @@ function pickCanonical(spellings, freq) {
   )[0];
 }
 
-module.exports = { GELAR, tokenize, phoneticWord, wordsMatch, compareNames, namesMatch, pickCanonical, skorRapi };
+module.exports = { GELAR, tokenize, polaAwalan, phoneticWord, wordsMatch, compareNames, namesMatch, pickCanonical, skorRapi };

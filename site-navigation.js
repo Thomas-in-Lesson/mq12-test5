@@ -1307,6 +1307,14 @@
 
   // Kunci pemaaf: ejaan berbeda yang sebunyi menghasilkan kunci yang sama (C-4)
   const phoneticKey = (name) => normalizeInputName(name).split(' ').map(phoneticWord).join(' ');
+  // Awalan yang dipangkas normalizeInputName(): gelar, prefiks Muhammad, atau
+  // tidak ada. Dipakai memilih di antara nama yang bentuk normalnya identik.
+  function polaAwalan(name) {
+    const raw = String(name).toLowerCase().replace(/['’`]/g, '').replace(/[^a-z0-9]+/g, ' ').split(' ').filter(Boolean);
+    if (raw.length < 2) return 'polos';
+    if (GELAR.has(raw[0])) return 'gelar';
+    return prefiksMuhammad(raw[0]) ? 'muhammad' : 'polos';
+  }
   /* --- NAME-PHONETIC-END --- */
 
   // Semua ejaan satu profil, dalam bentuk normal dan bentuk bunyi. Dihitung
@@ -1480,7 +1488,13 @@
         else if ([...k.norm].some(n => n.includes(normQ))) partial.push(item);
       });
 
-      const matches = exact.length ? exact : (sebunyi.length ? sebunyi : partial);
+      let matches = exact.length ? exact : (sebunyi.length ? sebunyi : partial);
+      // "Muchamad Irfan Fanani" dan "Bpk. Irfan Fanani" jadi token yang sama,
+      // jadi kalau masih ambigu, dahulukan yang pola awalannya sama diketik.
+      if (matches.length > 1) {
+        const sesuai = matches.filter((m) => polaAwalan(m.name) === polaAwalan(queryName));
+        if (sesuai.length) matches = sesuai;
+      }
       if (!matches.length) {
         showToast('⚠️ Nama belum terdaftar di sistem. Silakan hubungi PIC Bantuan.');
         return;

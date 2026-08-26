@@ -3,7 +3,7 @@
 const assert = require('assert');
 const fs = require('fs');
 const path = require('path');
-const { namesMatch, phoneticWord, tokenize, pickCanonical } = require('./name-utils');
+const { namesMatch, phoneticWord, tokenize, pickCanonical, polaAwalan } = require('./name-utils');
 
 const HARUS_PISAH = [
   ['Dwi Lestari', 'Putri Lestari'],
@@ -56,7 +56,7 @@ assert.strictEqual(pickCanonical(['j firmansyah abadi', 'Juwatono Firmansyah Aba
 const nav = fs.readFileSync(path.join(__dirname, '..', 'site-navigation.js'), 'utf8');
 const blok = nav.match(/NAME-PHONETIC-START[\s\S]*?\*\/([\s\S]*?)\/\*\s*---\s*NAME-PHONETIC-END/);
 assert.ok(blok, 'blok NAME-PHONETIC tidak ditemukan di site-navigation.js');
-const web = new Function(`${blok[1]}; return { normalizeInputName, phoneticWord, phoneticKey };`)();
+const web = new Function(`${blok[1]}; return { normalizeInputName, phoneticWord, phoneticKey, polaAwalan };`)();
 for (const w of ['fadhilah', 'khoirunnisa', 'muttaqin', 'juwatono', 'syarifuddin', 'nurdiansyah', 'lulu', 'tahsinatus']) {
   assert.strictEqual(web.phoneticWord(w), phoneticWord(w), `salinan phoneticWord melenceng pada "${w}"`);
 }
@@ -95,6 +95,27 @@ for (const varian of [
   const kunci = varian.map(cari);
   assert.ok(kunci[0], `"${varian[0]}" tidak ditemukan di peserta.json`);
   assert.strictEqual(new Set(kunci).size, 1, `ejaan berbeda mendarat di profil berbeda: ${JSON.stringify(varian.map((v, i) => `${v} -> ${kunci[i]}`))}`);
+}
+
+// C-4b: nama yang bentuk normalnya kembar hanya bisa dipisah lewat pola awalan.
+// Salinan di site-navigation.js wajib sepakat dengan name-utils.js.
+for (const n of ['Bpk. Irfan Fanani', 'Muchamad Irfan Fanani', 'Ikhlasul Muttaqin',
+  'Muchammad Ikhlasul Muttaqin', 'Mustofa Kamil', 'Bpk M Ghozali']) {
+  assert.strictEqual(web.polaAwalan(n), polaAwalan(n), `salinan polaAwalan melenceng pada "${n}"`);
+}
+for (const [ketik, harus] of [
+  ['Muchamad Irfan Fanani', 'Muchamad Irfan Fanani'],
+  ['Bpk. Irfan Fanani', 'Bpk. Irfan Fanani'],
+  ['Muchammad Ikhlasul Muttaqin', 'Muchammad Ikhlasul Muttaqin'],
+  ['Ikhlasul Muttaqin', 'Ikhlasul Muttaqin'],
+]) {
+  const norm = web.normalizeInputName(ketik);
+  const kandidat = Object.values(peserta)
+    .filter((v) => [v.name, ...(v.aliases || [])].some((e) => web.normalizeInputName(e) === norm));
+  const sesuai = kandidat.filter((v) => web.polaAwalan(v.name) === web.polaAwalan(ketik));
+  const pilih = (sesuai.length ? sesuai : kandidat)[0];
+  assert.ok(pilih, `"${ketik}" tidak ada di peserta.json`);
+  assert.strictEqual(pilih.name, harus, `"${ketik}" mendarat di profil "${pilih.name}"`);
 }
 
 // Nama yang memang beda orang tidak boleh tertukar.

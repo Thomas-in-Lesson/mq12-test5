@@ -3701,7 +3701,7 @@
         <div class="flex items-center justify-between gap-2 flex-wrap sm:flex-nowrap">
           <span class="text-[11px] uppercase font-bold tracking-wider text-secondary/80">${hotelName}</span>
           <span class="text-[11px] sm:text-[11px] px-2.5 py-0.5 rounded-full bg-secondary/15 text-secondary font-semibold border border-secondary/30 whitespace-nowrap shrink-0">
-            ${room.type} (${room.occupants.length} Pax)
+            ${room.type ? room.type + ' ' : ''}(${room.occupants.length} Pax)
           </span>
         </div>
         <h4 class="font-title-lg text-title-lg font-bold text-secondary flex items-center gap-1.5">
