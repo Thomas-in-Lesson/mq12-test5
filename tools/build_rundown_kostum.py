@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
 """Isi kolom seragam (kostum) di halaman Rundown dari CSV kostum panitia.
 
-Jalankan: python3 tools/build_rundown_kostum.py [Rundown.csv] [--tulis]
+Jalankan: python3 tools/build_rundown_kostum.py [Rundown.csv] [--tulis] [--paksa]
 Default sumber: ~/Downloads/Rundown.csv
+
+--paksa: CSV menang atas kostum yang sudah ada di halaman (dipakai sejak
+panitia menyatakan CSV ini yang terbaru). Tanpa --paksa hanya kolom kosong
+yang diisi.
 
 CSV-nya berisi satu baris per agenda utama (bukan tiap langkah), formatnya
 "no;agenda;kostum;lokasi". Jadi kostum satu baris dipakai untuk semua langkah
@@ -94,8 +98,9 @@ def cocokkan(milestone, agenda_list, mulai_dari):
 
 
 def main():
-    arg = [a for a in sys.argv[1:] if a != '--tulis']
+    arg = [a for a in sys.argv[1:] if not a.startswith('--')]
     tulis = '--tulis' in sys.argv
+    paksa = '--paksa' in sys.argv
     csv = baca_csv(arg[0] if arg else DEFAULT_CSV)
 
     html = open(HALAMAN, encoding='utf-8').read()
@@ -123,17 +128,24 @@ def main():
             kostum = rapi_kostum(ms['kostum'])
             print(f'   {ms["agenda"][:40]:40s} -> langkah {awal_blok + 1}-{batas}: {kostum}')
             for item in agenda[awal_blok:batas]:
-                if not item['seragam'].strip():
+                lama = item['seragam'].strip()
+                if not lama:
                     ubah += 1
                     item['seragam'] = kostum
-                elif token(item['seragam']).isdisjoint(token(kostum)):
-                    beda_kostum.append(f'{sesi} h{hari_ke} "{item["agenda"][:34]}": halaman="{item["seragam"]}" vs CSV="{kostum}"')
+                elif lama != kostum and paksa:
+                    if token(lama).isdisjoint(token(kostum)):
+                        beda_kostum.append(f'{sesi} h{hari_ke} "{item["agenda"][:34]}": "{lama}" -> "{kostum}"')
+                    ubah += 1
+                    item['seragam'] = kostum
+                elif token(lama).isdisjoint(token(kostum)):
+                    beda_kostum.append(f'{sesi} h{hari_ke} "{item["agenda"][:34]}": halaman="{lama}" vs CSV="{kostum}"')
                 if ms['lokasi'] and item['daerah'] and token(ms['lokasi']).isdisjoint(token(item['daerah'])):
                     lokasi_beda.append(f'{sesi} h{hari_ke} "{item["agenda"][:34]}": halaman="{item["daerah"]}" vs CSV="{ms["lokasi"]}"')
 
-    print(f'\n{ubah} kolom seragam yang tadinya kosong terisi')
+    print(f'\n{ubah} kolom seragam diisi{" (CSV menang, --paksa)" if paksa else " dari yang kosong"}')
     if beda_kostum:
-        print(f'{len(beda_kostum)} kostum berbeda dengan yang sudah ada di halaman (TIDAK diubah, cek panitia):')
+        print(f'{len(beda_kostum)} kostum yang beda jenis dengan isi halaman '
+              f'({"ditimpa CSV" if paksa else "TIDAK diubah, cek panitia"}):')
         for b in beda_kostum:
             print(f'   {b}')
     if tak_cocok:
