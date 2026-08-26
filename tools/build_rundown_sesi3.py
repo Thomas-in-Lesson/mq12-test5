@@ -21,7 +21,9 @@ from build_rundown_kostum import KOREKSI_DAERAH, ambil_data, rapi_kostum
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HALAMAN = os.path.join(REPO, 'rundown_kegiatan_safari_hwmi_mq_12', 'code.html')
-DEFAULT_CSV = os.path.expanduser('~/Downloads/Rundown Sesi 3.csv')
+# Kiriman terbaru memakai nama berkas lain dan menambah kolom seragam pendamping.
+KANDIDAT_CSV = [os.path.expanduser('~/Downloads/Rundown Khusus only Sesi 3.csv'),
+                os.path.expanduser('~/Downloads/Rundown Sesi 3.csv')]
 
 HARI = re.compile(r'^HARI\s*KE\s*-?\s*(\d+)', re.I)
 JAM = re.compile(r'^(\d{1,2})\s*[.:]\s*(\d{2})$')
@@ -45,17 +47,26 @@ def menit(jam):
     return int(m.group(1)) * 60 + int(m.group(2)) if m else None
 
 
+def baca_teks(path):
+    """Panitia kadang menyimpan CSV-nya ber-encoding Windows, kadang UTF-8."""
+    mentah = open(path, 'rb').read()
+    try:
+        return mentah.decode('utf-8-sig')
+    except UnicodeDecodeError:
+        return mentah.decode('cp1252')
+
+
 def baca_csv(path):
     """[{'label':.., 'tanggal':.., 'agenda':[...]}] untuk Sesi 3."""
     hari, aneh = [], []
-    seragam_terakhir = ''
-    for baris in open(path, encoding='utf-8-sig'):
-        kol = [c.strip() for c in baris.rstrip('\n').split(';')]
-        kol += [''] * (8 - len(kol))
+    seragam_terakhir = pendamping_terakhir = ''
+    for baris in baca_teks(path).splitlines():
+        kol = [c.strip() for c in baris.split(';')]
+        kol += [''] * (9 - len(kol))
         judul = HARI.match(kol[0])
         if judul:
             hari.append({'label': f'Hari Ke-{judul.group(1)}', 'tanggal': kol[2], 'agenda': []})
-            seragam_terakhir = ''
+            seragam_terakhir = pendamping_terakhir = ''
             continue
         if not hari or not kol[1] or kol[1].upper() == 'AGENDA':
             continue
@@ -67,7 +78,14 @@ def baca_csv(path):
             seragam = seragam_terakhir  # baris tanpa seragam mengikuti baris sebelumnya
         else:
             seragam_terakhir = seragam
-        daerah = kol[2].strip()
+        # Kolom seragam pendamping baru ada di kiriman terbaru; "Jasket Merah"
+        # dan kawan-kawan tidak ikut aturan kemeja putih, cuma dirapikan.
+        pendamping = re.sub(r'\s+', ' ', kol[7]).strip().title().replace('Mq', 'MQ')
+        if not pendamping:
+            pendamping = pendamping_terakhir
+        else:
+            pendamping_terakhir = pendamping
+        daerah = re.sub(r',(?=\S)', ', ', kol[2].strip())  # "Pesantren,Losplos" -> "Pesantren, Losplos"
         hari[-1]['agenda'].append({
             # _sub: sub-acara mini ceremony (nomornya kosong di CSV). Jamnya
             # berada di dalam rentang acara induk, jadi tidak ikut diperiksa urut.
@@ -78,7 +96,8 @@ def baca_csv(path):
             'durasi': re.sub(r'\s+', ' ', kol[4]).strip(),
             'kegiatan': '' if kol[5].strip().lower() in ABAIKAN_CATATAN else re.sub(r'\s+', ' ', kol[5]).strip(),
             'seragam': seragam,
-            'catatan': re.sub(r'\s+', ' ', kol[7]).strip(),
+            'pendamping': pendamping,
+            'catatan': re.sub(r'\s+', ' ', kol[8]).strip(),
         })
 
     # --- kejanggalan yang perlu mata manusia
@@ -112,7 +131,11 @@ def baca_csv(path):
 def main():
     arg = [a for a in sys.argv[1:] if not a.startswith('--')]
     tulis = '--tulis' in sys.argv
-    hari, aneh = baca_csv(arg[0] if arg else DEFAULT_CSV)
+    sumber = arg[0] if arg else next((k for k in KANDIDAT_CSV if os.path.exists(k)), None)
+    if not sumber:
+        raise SystemExit('CSV rundown Sesi 3 tidak ditemukan di ~/Downloads')
+    print(f'sumber: {os.path.basename(sumber)}\n')
+    hari, aneh = baca_csv(sumber)
 
     html = open(HALAMAN, encoding='utf-8').read()
     data, awal, akhir = ambil_data(html)
