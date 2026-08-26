@@ -13,3 +13,7 @@ tools/test_script_*.js
 
 # memuat nomor HP peserta; hasil cetak lokal saja
 tag-koper.html
+
+# berkas bantu audit tampilan (sementara, tidak ikut repo)
+_audit*.html
+_shot*.html
