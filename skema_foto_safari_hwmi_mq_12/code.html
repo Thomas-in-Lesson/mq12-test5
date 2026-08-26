@@ -42,7 +42,7 @@
 <section class="flex items-center justify-between bg-surface-container-low p-3 md:p-4 rounded-2xl border border-gold/40 shadow-xl flex-wrap gap-3">
   <div>
     <h1 class="font-title-lg md:font-headline-md font-bold text-secondary">SKEMA FOTO BERSAMA SAFARI HWMI MQ 12</h1>
-    <p class="text-xs text-on-surface-variant mt-0.5">Dokumen Resmi Spesifikasi Skema Foto Safari HWMI MQ 12 (15 Agustus 2026)</p>
+    <p class="text-xs text-on-surface-variant mt-0.5">Dokumen resmi skema foto Safari HWMI MQ 12: skema umum (15 Agustus 2026) dan skema khusus Sesi 2</p>
   </div>
 
   <!-- Minimalist Pure White SVG Icon Toolbar: Download & Open in New Tab -->
@@ -60,7 +60,7 @@
 <section id="comic-reader-container" class="w-full space-y-4 comic-wrapper overflow-x-auto flex flex-col items-center">
   <div id="pdf-status-msg" class="p-8 text-center text-xs text-on-surface-variant space-y-2">
     <div class="w-8 h-8 border-2 border-gold border-t-transparent rounded-full animate-spin mx-auto mb-2"></div>
-    <span>Memuat dokumen Skema Foto (15 Halaman)...</span>
+    <span>Memuat dokumen Skema Foto...</span>
   </div>
 </section>
 
@@ -85,14 +85,36 @@
   const fallbackBox = document.getElementById('pdf-fallback-container');
   const SKALA = 1.15;
 
+  // Dua dokumen: skema umum semua sesi, dan skema khusus Sesi 2 dari panitia.
+  const DOKUMEN = [
+    { judul: 'Skema Umum (Semua Sesi)', berkas: '../skema-foto-terbaru.pdf', unduh: 'Skema_Foto_Safari_MQ12_15_Agustus_2026.pdf' },
+    { judul: 'Skema Khusus Sesi 2', berkas: '../skema-foto-sesi2.pdf', unduh: 'Skema_Foto_Safari_MQ12_Sesi_2.pdf' }
+  ];
+
+  const IKON_UNDUH = '<svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>';
+  const IKON_TAB = '<svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>';
+  const TOMBOL = 'w-9 h-9 rounded-full bg-surface-container border border-white/40 text-white flex items-center justify-center hover:bg-white/20 transition-all shadow-md';
+
   function gagal(sebab) {
     console.warn('Skema Foto gagal dirender:', sebab);
     container.classList.add('hidden');
     fallbackBox.classList.remove('hidden');
   }
 
-  async function renderComicView(pdfDoc) {
-    container.innerHTML = '';
+  function kepalaDokumen(dok, jumlah) {
+    const el = document.createElement('div');
+    el.className = 'w-full flex items-center justify-between gap-3 flex-wrap px-3 py-2.5 rounded-xl bg-surface-container-low border border-gold/40 shadow-md';
+    el.innerHTML = '<div><h2 class="text-sm font-bold text-secondary">' + dok.judul + '</h2>'
+      + '<p class="text-[11px] text-on-surface-variant">' + jumlah + ' halaman</p></div>'
+      + '<div class="flex items-center gap-2">'
+      + '<a href="' + dok.berkas + '" download="' + dok.unduh + '" title="Unduh PDF" class="' + TOMBOL + '">' + IKON_UNDUH + '</a>'
+      + '<a href="' + dok.berkas + '" target="_blank" rel="noopener" title="Buka Tab Baru" class="' + TOMBOL + '">' + IKON_TAB + '</a>'
+      + '</div>';
+    return el;
+  }
+
+  async function renderComicView(pdfDoc, dok) {
+    container.appendChild(kepalaDokumen(dok, pdfDoc.numPages));
     for (let num = 1; num <= pdfDoc.numPages; num++) {
       const page = await pdfDoc.getPage(num);
       const viewport = page.getViewport({ scale: SKALA });
@@ -118,11 +140,24 @@
     }
   }
 
+  // Satu dokumen gagal tidak boleh menghapus dokumen lain yang sudah tergambar.
+  async function renderSemua() {
+    container.innerHTML = '';
+    let sukses = 0;
+    for (const dok of DOKUMEN) {
+      try {
+        await renderComicView(await pdfjsLib.getDocument(dok.berkas).promise, dok);
+        sukses++;
+      } catch (e) {
+        console.warn('Skema Foto: dokumen gagal dibuka', dok.berkas, e);
+      }
+    }
+    if (!sukses) gagal('tidak ada dokumen yang bisa dibuka');
+  }
+
   if (window.pdfjsLib) {
     pdfjsLib.GlobalWorkerOptions.workerSrc = '../vendor/pdf.worker.min.js';
-    pdfjsLib.getDocument('../skema-foto-terbaru.pdf').promise
-      .then(renderComicView)
-      .catch(gagal);
+    renderSemua();
   } else {
     gagal('pustaka pdf.js tidak termuat');
   }

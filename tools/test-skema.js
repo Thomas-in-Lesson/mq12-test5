@@ -1,5 +1,6 @@
 // Uji halaman Skema Foto: jalankan skrip halamannya apa adanya dengan dokumen
-// PDF tiruan 15 halaman, lalu pastikan 15 kanvas benar-benar terbentuk.
+// PDF tiruan 15 halaman per dokumen, lalu pastikan semua kanvas benar-benar
+// terbentuk. Halaman merender dua dokumen: skema umum dan skema khusus Sesi 2.
 // Jalankan: node tools/test-skema.js
 //
 // Dibuat setelah halaman ini blank berhari-hari: acuan ke #zoom-level-badge
@@ -48,8 +49,9 @@ const kotakGagal = {
 // pdf.js tiruan: cukup meniru bentuk API yang dipakai halaman.
 const pdfjsLibPalsu = {
   GlobalWorkerOptions: {},
+  diminta: [],
   getDocument: (src) => {
-    pdfjsLibPalsu.diminta = src;
+    pdfjsLibPalsu.diminta.push(src);
     return {
       promise: Promise.resolve({
         numPages: JUMLAH_HALAMAN,
@@ -83,28 +85,34 @@ vm.runInContext(skrip, ctx);
 setTimeout(() => {
   assert.strictEqual(kotakGagal.tampil, false,
     'halaman jatuh ke pesan gagal padahal dokumen berhasil dibuka');
-  assert.strictEqual(dipasang.length, JUMLAH_HALAMAN,
-    `kartu halaman yang terpasang: ${dipasang.length}, seharusnya ${JUMLAH_HALAMAN}`);
+  const dok = pdfjsLibPalsu.diminta;
+  assert.ok(dok.length >= 2,
+    `dokumen yang dibuka: ${dok.length}, minimal 2 (skema umum + khusus Sesi 2)`);
+
+  // Tiap dokumen menambah satu kartu kepala di atas halaman-halamannya.
+  const harusTerpasang = dok.length * (JUMLAH_HALAMAN + 1);
+  assert.strictEqual(dipasang.length, harusTerpasang,
+    `kartu yang terpasang: ${dipasang.length}, seharusnya ${harusTerpasang}`);
 
   const kanvas = dibuat.filter((e) => e.tag === 'canvas');
-  assert.strictEqual(kanvas.length, JUMLAH_HALAMAN,
-    `kanvas yang dibuat: ${kanvas.length}, seharusnya ${JUMLAH_HALAMAN}`);
+  assert.strictEqual(kanvas.length, dok.length * JUMLAH_HALAMAN,
+    `kanvas yang dibuat: ${kanvas.length}, seharusnya ${dok.length * JUMLAH_HALAMAN}`);
   assert.ok(kanvas.every((c) => c.width > 0 && c.height > 0),
     'ada kanvas berukuran nol');
 
   const badge = dibuat.filter((e) => /^Halaman \d+ \/ 15$/.test(e.innerText));
-  assert.strictEqual(badge.length, JUMLAH_HALAMAN, 'penanda nomor halaman tidak lengkap');
+  assert.strictEqual(badge.length, dok.length * JUMLAH_HALAMAN, 'penanda nomor halaman tidak lengkap');
 
   // Berkas yang dirujuk harus benar-benar ada di repo.
-  for (const rel of [pdfjsLibPalsu.diminta, ctx.pdfjsLib.GlobalWorkerOptions.workerSrc]) {
+  for (const rel of [...dok, ctx.pdfjsLib.GlobalWorkerOptions.workerSrc]) {
     assert.ok(rel, 'sumber PDF atau workerSrc tidak diset');
     assert.ok(!/^https?:/.test(rel), `masih mengambil dari internet: ${rel}`);
     const p = path.resolve(path.dirname(BERKAS), rel);
     assert.ok(fs.existsSync(p), `berkas tidak ada: ${path.relative(REPO, p)}`);
   }
 
-  console.log(`OK — skrip Skema Foto merender ${dipasang.length} halaman, ` +
+  console.log(`OK — skrip Skema Foto merender ${dok.length} dokumen, ` +
     `${kanvas.length} kanvas, semua penanda halaman benar.`);
-  console.log(`   sumber PDF : ${pdfjsLibPalsu.diminta}`);
+  console.log(`   sumber PDF : ${dok.join(', ')}`);
   console.log(`   worker     : ${ctx.pdfjsLib.GlobalWorkerOptions.workerSrc}`);
 }, 60);
