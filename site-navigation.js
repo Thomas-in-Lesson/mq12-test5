@@ -467,6 +467,19 @@
         letter-spacing: 0.03em;
       }
 
+      /* Di layar sempit kalimatnya butuh 319px sementara ruang aman cuma 280px,
+         jadi satu baris selalu terpotong. Dua baris 11px masih lega di bilah
+         56px dan kalimatnya utuh — lebih baik daripada mengecilkan huruf. */
+      @media (max-width: 430px) {
+        .site-header-center-title span {
+          font-size: 11px !important;
+          letter-spacing: 0 !important;
+          white-space: normal !important;
+          line-height: 1.2 !important;
+          text-wrap: balance;
+        }
+      }
+
       .site-offline-badge {
         top: 10px;
         right: 10px;

@@ -52,13 +52,13 @@
     '.denah-teks{min-width:0;flex:1}',
     '.denah-no{display:inline-block;min-width:20px;padding:1px 6px;margin-bottom:3px;border-radius:999px;',
     '  background:rgba(224,184,99,.18);border:1px solid rgba(224,184,99,.45);',
-    '  color:#E0B863;font-size:10px;font-weight:800;text-align:center}',
+    '  color:#E0B863;font-size:11px;font-weight:800;text-align:center}',
     '.denah-judul{display:block;font-size:12.5px;font-weight:700;color:#fff;line-height:1.3}',
-    '.denah-meta{display:block;margin-top:3px;font-size:10.5px;color:rgb(var(--c-on-surface-variant))}',
+    '.denah-meta{display:block;margin-top:3px;font-size:11px;color:rgb(var(--c-on-surface-variant))}',
 
     '.denah-tautan{display:inline-flex;align-items:center;gap:5px;margin:6px 6px 0 0;padding:4px 10px;',
     '  border:1px solid rgba(224,184,99,.45);border-radius:999px;background:rgba(224,184,99,.14);',
-    '  color:#E0B863;font-size:10.5px;font-weight:700;cursor:pointer;font-family:inherit}',
+    '  color:#E0B863;font-size:11px;font-weight:700;cursor:pointer;font-family:inherit}',
 
     '.denah-layar{position:fixed;inset:0;z-index:11000;display:none;flex-direction:column;background:#0D0303}',
     '.denah-layar.buka{display:flex}',
@@ -66,7 +66,7 @@
     '.denah-atas{display:flex;align-items:center;gap:10px;padding:10px 12px;',
     '  border-bottom:1px solid rgba(224,184,99,.25);background:rgba(58,12,12,.95)}',
     '.denah-atas .jdl{flex:1;min-width:0;font-size:12.5px;font-weight:700;color:#fff;line-height:1.3}',
-    '.denah-atas .jdl small{display:block;margin-top:2px;font-size:10.5px;font-weight:500;',
+    '.denah-atas .jdl small{display:block;margin-top:2px;font-size:11px;font-weight:500;',
     '  color:rgb(var(--c-on-surface-variant))}',
     '.denah-tbl{flex:none;width:34px;height:34px;display:grid;place-items:center;cursor:pointer;',
     '  border:1px solid rgba(224,184,99,.45);border-radius:10px;background:rgba(224,184,99,.14)}',
@@ -77,7 +77,7 @@
     '.denah-panggung img{object-fit:contain;transform-origin:0 0;will-change:transform}',
     '.denah-petunjuk{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);',
     '  padding:5px 12px;border-radius:999px;background:rgba(13,3,3,.82);color:#E0B863;',
-    '  font-size:10.5px;font-weight:600;white-space:nowrap;pointer-events:none;transition:opacity .4s ease}',
+    '  font-size:11px;font-weight:600;white-space:nowrap;pointer-events:none;transition:opacity .4s ease}',
 
     '.denah-bawah{flex:none;max-height:42vh;overflow:auto;background:rgb(var(--c-surface-low));',
     '  border-top:1px solid rgba(224,184,99,.25)}',
@@ -86,7 +86,7 @@
     '.denah-baris{display:flex;align-items:center;gap:9px;font-size:11.5px;color:#fff}',
     '.denah-kotak{flex:none;width:17px;height:17px;border-radius:4px;border:1px solid rgba(255,255,255,.45)}',
     '.denah-kode{flex:none;min-width:24px;padding:1px 5px;border:1px solid rgba(255,255,255,.5);',
-    '  border-radius:4px;font-size:10px;font-weight:700;text-align:center;color:#fff}',
+    '  border-radius:4px;font-size:11px;font-weight:700;text-align:center;color:#fff}',
     // Pemilih Denah / Profil di dalam layar penuh
     '.denah-tab{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:8px 12px;',
     '  background:rgba(58,12,12,.95);border-bottom:1px solid rgba(224,184,99,.25)}',
