@@ -1,0 +1,181 @@
+#!/usr/bin/env node
+// Bangun ulang blok hotelsData di halaman Daftar Kamar dari CSV room list panitia.
+// Jalankan: node tools/build-hotels.js ["dir sumber"]
+// Default dir sumber: ~/Downloads/Room list Hotel
+//
+// Tiap hotel mengirim tata letak kolom yang berbeda, jadi satu parser per hotel.
+// Nama hotel dan kota tetap memakai yang sudah tertera di front; kota yang
+// berkasnya belum ada (Solo) dibiarkan seperti sebelumnya.
+// Ejaan nama penghuni disamakan dengan nama peserta yang sudah tampil di front
+// (peserta.json), supaya kartu "Kamar Hotel" di beranda tetap ketemu orangnya.
+const fs = require('fs');
+const os = require('os');
+const path = require('path');
+const { namesMatch, GELAR } = require('./name-utils');
+const { isJunk, ambilLiteral } = require('./merge-nama');
+
+const REPO = path.join(__dirname, '..');
+const HALAMAN = path.join(REPO, 'daftar_kamar_safari_hwmi_mq_12', 'code.html');
+// Berkas kiriman panitia kadang punya spasi di ujung nama folder.
+const DEFAULT_SRC = ['Room list Hotel', 'Room list Hotel ']
+  .map((d) => path.join(os.homedir(), 'Downloads', d))
+  .find(fs.existsSync);
+
+const baca = (file) => fs.readFileSync(file, 'utf8')
+  .replace(/^\uFEFF/, '')
+  .split(/\r?\n/)
+  .map((l) => l.split(';').map((s) => s.trim()));
+
+// Samakan gaya tipe kamar: "DELUXE twin - Extrabed" -> "Deluxe Twin - Extrabed".
+const rapi = (s) => String(s || '').replace(/\s+/g, ' ').trim()
+  .replace(/\S+/g, (w) => w[0].toUpperCase() + w.slice(1).toLowerCase());
+const gabung = (...bagian) => bagian.filter(Boolean).join(' · ');
+const room = (no, type) => ({ roomNo: `Kamar ${no}`, type, occupants: [] });
+
+// ------------------------------------------------------------ parser tiap hotel
+// Pola umum: baris pertama kamar membawa nomor + tipe, baris berikutnya hanya nama.
+
+// ROOM;GUEST NAME(urutan);NAMA;ROOM TYPE;REMARKS
+function cianjur(rows) {
+  const out = [];
+  for (const [no, , nama, tipe] of rows) {
+    if (/^room/i.test(no)) continue;
+    if (no) {
+      // ponytail: CSV tidak memuat lantai; ratusan nomor kamar = lantai
+      // (101-129 lantai 1, 2xx lantai 2, 3xx lantai 3) — cocok dengan data
+      // lantai kiriman panitia sebelumnya. Nomor lain (mis. 888) dibiarkan.
+      const lantai = /^[1-3]\d\d$/.test(no) ? `Lantai ${no[0]}` : '';
+      out.push(room(no, gabung(rapi(tipe), lantai)));
+    }
+    if (nama && out.length) out.at(-1).occupants.push(nama);
+  }
+  return out;
+}
+
+// NO;GUEST NAME;ROOM NUMBER;BED TYPE
+function gresik(rows) {
+  const out = [];
+  for (const [no, nama, kamar, bed] of rows) {
+    if (/^no$/i.test(no)) continue;
+    if (no) out.push(room(kamar, bed ? `${rapi(bed)} Bed` : ''));
+    if (nama && out.length) out.at(-1).occupants.push(nama);
+  }
+  return out;
+}
+
+// Room No;Type of Room;Floor;(urutan);NAMA — lantai hanya terisi sebagian.
+function jakarta(rows) {
+  const out = [];
+  for (const [kamar, tipe, lantai, , nama] of rows) {
+    if (/^room/i.test(kamar)) continue;
+    if (kamar) out.push(room(kamar, gabung(rapi(tipe), lantai && `Lantai ${lantai}`)));
+    if (nama && out.length) out.at(-1).occupants.push(nama);
+  }
+  return out;
+}
+
+// NO;TYPE ROOM;ROOM NUMBER;TYPE BED;GUEST 1;GUEST 2;GUEST 3;KETERANGAN
+// Satu baris = satu kamar. Dua kamar terakhir belum punya nomor dari hotel.
+function pemalang(rows) {
+  const out = [];
+  for (const [no, tipe, kamar, bed, ...sisa] of rows) {
+    if (!/^\d+$/.test(no)) continue;
+    const r = room(kamar || 'belum ditentukan', gabung(rapi(tipe), rapi(sisa[3] || bed)));
+    r.occupants.push(...sisa.slice(0, 3).filter(Boolean));
+    out.push(r);
+  }
+  return out;
+}
+
+// No;Room No;Type of Room;D/T;(urutan);NAMA;LANTAI — berseksi per tipe kamar,
+// kolom LANTAI hanya terisi saat lantainya berganti.
+function semarang(rows) {
+  const out = [];
+  let lantai = '';
+  for (const [no, kamar, tipe, , , nama, lt] of rows) {
+    if (/^no$/i.test(no)) continue; // header tiap seksi
+    if (lt) lantai = rapi(lt);
+    if (/^\d+$/.test(no)) out.push(room(kamar, gabung(rapi(tipe), lantai)));
+    if (nama && out.length) out.at(-1).occupants.push(nama);
+  }
+  return out;
+}
+
+const PARSER = { Cianjur: cianjur, Gresik: gresik, Jakarta: jakarta, Pemalang: pemalang, Semarang: semarang };
+
+// ------------------------------------------------------- ejaan nama ikut front
+const PESERTA = JSON.parse(fs.readFileSync(path.join(REPO, 'peserta.json'), 'utf8'));
+const ALIAS = JSON.parse(fs.readFileSync(path.join(__dirname, 'alias-nama.json'), 'utf8'));
+const ORANG = Object.values(PESERTA).map((o) => ({ nama: o.name, ejaan: [o.name, ...(o.aliases || [])] }));
+
+const kunci = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+const persis = new Map();
+for (const o of ORANG) for (const e of o.ejaan) persis.set(kunci(e), o.nama);
+
+// Hotel selalu menulis "Bpk" untuk yang sepuh, jadi ejaan tanpa gelar bukan
+// orang yang sama — tanpa saringan ini "Irfan Fanani" nyangkut ke Bpk. Irfan
+// Fanani, padahal yang dimaksud Muchamad Irfan Fanani.
+const bergelar = (s) => GELAR.has(kunci(s).split(' ')[0]);
+
+const ragu = [];
+function kanonik(nama) {
+  if (isJunk(nama)) return nama; // Crew Bus, Driver, Patwal, Zona n
+  const ejaan = ALIAS[nama] || nama;
+  const segelar = (kandidat) => bergelar(kandidat) === bergelar(ejaan);
+  const persisan = persis.get(kunci(ejaan));
+  if (persisan && segelar(persisan)) return persisan;
+  const kandidat = [...new Set(ORANG.filter((o) => o.ejaan.some((e) => namesMatch(e, ejaan))).map((o) => o.nama))]
+    .filter(segelar);
+  if (kandidat.length === 1) return kandidat[0];
+  ragu.push({ nama, kandidat });
+  return nama;
+}
+
+// ------------------------------------------------------------------- tulis blok
+function tulisHalaman(data) {
+  const blok = JSON.stringify(data, null, 2)
+    .split('\n').map((l, i) => (i ? `  ${l}` : l)).join('\n');
+  const html = fs.readFileSync(HALAMAN, 'utf8');
+  const mulai = html.indexOf('{', html.indexOf('const hotelsData'));
+  let depth = 0;
+  let k = mulai;
+  for (; k < html.length; k++) {
+    if (html[k] === '{') depth++;
+    else if (html[k] === '}' && --depth === 0) break;
+  }
+  fs.writeFileSync(HALAMAN, html.slice(0, mulai) + blok + html.slice(k + 1));
+}
+
+function main() {
+  const src = process.argv[2] || DEFAULT_SRC;
+  if (!src) throw new Error('dir sumber CSV tidak ditemukan — beri path-nya sebagai argumen');
+  const lama = ambilLiteral('daftar_kamar_safari_hwmi_mq_12/code.html', 'const hotelsData');
+  const data = {};
+
+  for (const [kota, h] of Object.entries(lama)) {
+    const file = path.join(src, `${kota}.csv`);
+    if (!PARSER[kota] || !fs.existsSync(file)) {
+      data[kota] = h; // Solo: belum ada kiriman, catatan "segera hadir" dibiarkan
+      console.log(`${kota.padEnd(9)} -> CSV tidak ada, data lama dipakai`);
+      continue;
+    }
+    const rooms = PARSER[kota](baca(file)).filter((r) => r.occupants.length);
+    for (const r of rooms) r.occupants = r.occupants.map(kanonik);
+    data[kota] = { name: h.name, rooms };
+
+    const orang = rooms.reduce((n, r) => n + r.occupants.length, 0);
+    const dulu = (h.rooms || []).reduce((n, r) => n + r.occupants.length, 0);
+    console.log(`${kota.padEnd(9)} -> ${String(rooms.length).padStart(3)} kamar, ${String(orang).padStart(3)} penghuni `
+      + `(sebelumnya ${h.rooms.length} kamar, ${dulu} penghuni)`);
+  }
+
+  tulisHalaman(data);
+  console.log(`-> ${path.relative(REPO, HALAMAN)}`);
+
+  if (ragu.length) {
+    console.log(`\n${ragu.length} ejaan tidak bisa dipastikan ke nama di front (dibiarkan apa adanya):`);
+    for (const r of ragu) console.log(`  "${r.nama}"${r.kandidat.length ? ` -> ragu antara: ${r.kandidat.join(' | ')}` : ' -> tidak ada yang cocok'}`);
+  }
+}
+
+if (require.main === module) main();

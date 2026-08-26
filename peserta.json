@@ -15,22 +15,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "916",
+    "kamar": "912",
     "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "515",
-    "tipe": "Superior · Lantai 5",
+    "kamar": "712",
+    "tipe": "Superior · Lantai 7",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "56",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "234",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -44,7 +44,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "74",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -67,22 +67,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "619",
-    "tipe": "Queen Bed",
+    "kamar": "522",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "321",
+    "kamar": "318",
     "tipe": "Deluxe Balcony · Lantai 3",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "29",
-    "tipe": "Eksekutif · Lantai 2",
+    "kamar": "226",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -118,8 +118,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1012",
-    "tipe": "Twin Bed",
+    "kamar": "708",
+    "tipe": "",
     "urutan": 1
    },
    {
@@ -132,8 +132,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "22",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "122",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -147,7 +147,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "78",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -170,22 +170,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1112",
+    "kamar": "615",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "1115",
-    "tipe": "Deluxe Corridor · Lantai 11",
+    "kamar": "515",
+    "tipe": "Superior · Lantai 5",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "31",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "143",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -199,7 +199,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "35",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -222,22 +222,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1112",
+    "kamar": "615",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "1115",
-    "tipe": "Deluxe Corridor · Lantai 11",
+    "kamar": "515",
+    "tipe": "Superior · Lantai 5",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "73",
-    "tipe": "Superior · Lantai 3",
+    "kamar": "belum ditentukan",
+    "tipe": "Superior",
     "urutan": 3
    },
    {
@@ -251,7 +251,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "35",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -260,7 +260,6 @@
   "name": "Ade Iman Hidayat",
   "aliases": [
    "Ade Iman Hidayat",
-   "Ade Iman hidayat",
    "Ade Iman H",
    "ADE IMAN H."
   ],
@@ -274,8 +273,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "518",
-    "tipe": "Twin Bed",
+    "kamar": "1206",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
@@ -288,8 +287,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "45",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "160",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
@@ -325,22 +324,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "918",
+    "kamar": "912",
     "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "511",
-    "tipe": "Superior · Lantai 5",
+    "kamar": "711",
+    "tipe": "Superior · Lantai 7",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "57",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "236",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -354,7 +353,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "74",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -376,22 +375,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "616",
-    "tipe": "Queen Bed",
+    "kamar": "521",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "319",
+    "kamar": "316",
     "tipe": "Deluxe Balcony · Lantai 3",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "28",
-    "tipe": "Eksekutif · Lantai 2",
+    "kamar": "224",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -434,15 +433,15 @@
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "702",
-    "tipe": "Superior · Lantai 7",
+    "kamar": "715",
+    "tipe": "Deluxe Corridor · Lantai 7",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "37",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "126",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -456,7 +455,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "44",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -478,22 +477,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1210",
+    "kamar": "619",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "622",
-    "tipe": "Deluxe Corridor · Lantai 6",
+    "kamar": "719",
+    "tipe": "Deluxe Corridor · Lantai 7",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "64",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "242",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -507,7 +506,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "24",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -529,7 +528,7 @@
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
     "kamar": "702",
-    "tipe": "Triple Bed",
+    "tipe": "Triple Twin Bed",
     "urutan": 1
    },
    {
@@ -542,8 +541,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "41",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "105",
+    "tipe": "Executive · Triple",
     "urutan": 3
    },
    {
@@ -557,7 +556,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "33",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -578,8 +577,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "519",
-    "tipe": "Twin Bed",
+    "kamar": "1209",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
@@ -588,6 +587,13 @@
     "kamar": "L-02",
     "tipe": "Superior · Lantai Lobby",
     "urutan": 2
+   },
+   {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "242",
+    "tipe": "Deluxe · Twin",
+    "urutan": 3
    },
    {
     "kota": "Cianjur",
@@ -623,7 +629,7 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1008",
+    "kamar": "822",
     "tipe": "Twin Bed",
     "urutan": 1
    },
@@ -637,8 +643,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "47",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "166",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
@@ -673,7 +679,7 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "802",
+    "kamar": "910",
     "tipe": "Queen Bed",
     "urutan": 1
    },
@@ -687,8 +693,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "37",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "126",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -702,7 +708,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "44",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -724,22 +730,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "710",
+    "kamar": "812",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "1121",
+    "kamar": "1122",
     "tipe": "Deluxe Corridor · Lantai 11",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "46",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "364",
+    "tipe": "Superior · Twin",
     "urutan": 3
    },
    {
@@ -753,7 +759,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "43",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -788,8 +794,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "9",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "133",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -803,7 +809,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "73",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -826,7 +832,7 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "306",
+    "kamar": "518",
     "tipe": "Twin Bed",
     "urutan": 1
    },
@@ -840,8 +846,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "1",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "103",
+    "tipe": "Executive · Triple",
     "urutan": 3
    },
    {
@@ -877,29 +883,36 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "706",
+    "kamar": "510",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "721",
-    "tipe": "Deluxe Corridor · Lantai 7",
+    "kamar": "1116",
+    "tipe": "Deluxe Corridor · Lantai 11",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "62",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "355",
+    "tipe": "Superior · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "323",
+    "tipe": "Superior King · Lantai 3",
+    "urutan": 5
    },
    {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "37",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -922,7 +935,7 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "511",
+    "kamar": "818",
     "tipe": "Queen Bed",
     "urutan": 1
    },
@@ -936,8 +949,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "6",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "131",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -974,22 +987,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "621",
-    "tipe": "Queen Bed",
+    "kamar": "1002",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "717",
-    "tipe": "Deluxe Corridor · Lantai 7",
+    "kamar": "818",
+    "tipe": "Deluxe Corridor · Lantai 8",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "61",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "354",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
@@ -1003,7 +1016,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "46",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -1025,7 +1038,7 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "306",
+    "kamar": "518",
     "tipe": "Twin Bed",
     "urutan": 1
    },
@@ -1039,8 +1052,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "1",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "103",
+    "tipe": "Executive · Triple",
     "urutan": 3
    },
    {
@@ -1063,7 +1076,6 @@
   "name": "Anis Nur Laili",
   "aliases": [
    "Anis Nur Laili",
-   "Anis Nurlaili",
    "Anis Nurlaly"
   ],
   "peran": "Shodaqoh",
@@ -1076,22 +1088,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "708",
-    "tipe": "Triple Bed",
+    "kamar": "916",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "507",
-    "tipe": "Superior · Lantai 5",
+    "kamar": "705",
+    "tipe": "Superior · Lantai 7",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "69",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "239",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -1105,7 +1117,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "75",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -1128,22 +1140,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "722",
-    "tipe": "Triple Bed",
+    "kamar": "726",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "320",
+    "kamar": "317",
     "tipe": "Deluxe Balcony · Lantai 3",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "53",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "231",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -1157,7 +1169,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "47",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -1180,8 +1192,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "602",
-    "tipe": "Queen Bed",
+    "kamar": "502",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
@@ -1194,8 +1206,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "20",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "128",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -1209,7 +1221,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "80",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -1231,21 +1243,21 @@
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
     "kamar": "712",
-    "tipe": "Triple Bed",
+    "tipe": "Triple Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "709",
-    "tipe": "Superior · Lantai 7",
+    "kamar": "720",
+    "tipe": "Deluxe Corridor · Lantai 7",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "50",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "227",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -1259,7 +1271,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "76",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -1282,22 +1294,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "601",
+    "kamar": "509",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "310",
-    "tipe": "Superior · Lantai 3",
+    "kamar": "507",
+    "tipe": "Superior · Lantai 5",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "10",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "135",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -1316,30 +1328,10 @@
    }
   ]
  },
- "fuad": {
-  "name": "Bpk Fuad",
-  "aliases": [
-   "Bpk Fuad"
-  ],
-  "peran": "",
-  "transport": {},
-  "menginap": [
-   {
-    "kota": "Pemalang",
-    "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "23",
-    "tipe": "Deluxe · Lantai 1",
-    "urutan": 3
-   }
-  ]
- },
  "ghozali": {
   "name": "Bpk Ghozali",
   "aliases": [
    "Bpk Ghozali",
-   "Bpk A Ghozali",
-   "Bpk A. Ghozali",
-   "bpk ghozali",
    "Bpk. Moch Ghozali",
    "Bpk. Moch. Ghozali"
   ],
@@ -1352,8 +1344,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "512",
-    "tipe": "Twin Bed",
+    "kamar": "1106",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
@@ -1366,8 +1358,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "25",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "134",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -1386,35 +1378,10 @@
    }
   ]
  },
- "irfan-fannai": {
-  "name": "Bpk Irfan Fannai",
-  "aliases": [
-   "Bpk Irfan Fannai"
-  ],
-  "peran": "",
-  "transport": {},
-  "menginap": [
-   {
-    "kota": "Semarang",
-    "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "111",
-    "tipe": "Deluxe Balcony · Lantai 1",
-    "urutan": 2
-   },
-   {
-    "kota": "Jakarta",
-    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
-    "kamar": "66",
-    "tipe": "Family 2 Bedroom · Lantai 7",
-    "urutan": 6
-   }
-  ]
- },
  "ismadi": {
   "name": "Bpk Ismadi",
   "aliases": [
    "Bpk Ismadi",
-   "Bpk ismadi",
    "Bpk. Ismadi"
   ],
   "peran": "",
@@ -1426,8 +1393,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "512",
-    "tipe": "Twin Bed",
+    "kamar": "1110",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
@@ -1440,8 +1407,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "25",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "134",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -1475,8 +1442,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "508",
-    "tipe": "Twin Bed",
+    "kamar": "1110",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
@@ -1489,8 +1456,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "24",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "130",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -1513,7 +1480,6 @@
   "name": "Bpk Nur Hadi",
   "aliases": [
    "Bpk Nur Hadi",
-   "Bpk Nurhadi",
    "BPK NURHADI"
   ],
   "peran": "",
@@ -1525,8 +1491,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "502",
-    "tipe": "Twin Bed",
+    "kamar": "1108",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
@@ -1539,8 +1505,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "23",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "136",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -1563,7 +1529,6 @@
   "name": "Bpk Zakiyyul Fuad",
   "aliases": [
    "Bpk Zakiyyul Fuad",
-   "Bpk zakiyyul Fuad",
    "BPK. M. ZAKIYUL FUAD",
    "BPK. M. ZAKIYYUL FUAD"
   ],
@@ -1576,8 +1541,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "502",
-    "tipe": "Twin Bed",
+    "kamar": "1108",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
@@ -1586,6 +1551,13 @@
     "kamar": "110",
     "tipe": "Deluxe Balcony · Lantai 1",
     "urutan": 2
+   },
+   {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "136",
+    "tipe": "Deluxe · Twin",
+    "urutan": 3
    },
    {
     "kota": "Cianjur",
@@ -1606,15 +1578,10 @@
  "irfan-fanani": {
   "name": "Bpk. Irfan Fanani",
   "aliases": [
-   "Bpk. Irfan Fanani",
-   "Bpk Irfan fanani",
-   "Bpk Irfan Fanani",
-   "M. Irfan Fanani",
-   "Irfan Fanani"
+   "Bpk. Irfan Fanani"
   ],
-  "peran": "Keamanan",
+  "peran": "",
   "transport": {
-   "sesi1": "ELF 6",
    "sesi2": "Bus 3",
    "sesi3": "Bus 5"
   },
@@ -1622,15 +1589,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "508",
-    "tipe": "Twin Bed",
+    "kamar": "1106",
+    "tipe": "Queen Bed",
     "urutan": 1
+   },
+   {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "111",
+    "tipe": "Deluxe Balcony · Lantai 1",
+    "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "24",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "130",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -1639,6 +1613,13 @@
     "kamar": "104",
     "tipe": "Superior Twin · Lantai 1",
     "urutan": 5
+   },
+   {
+    "kota": "Jakarta",
+    "hotel": "Swiss-Belhotel Epicentrum Jakarta",
+    "kamar": "66",
+    "tipe": "Family 2 Bedroom · Lantai 7",
+    "urutan": 6
    }
   ]
  },
@@ -1660,8 +1641,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "708",
-    "tipe": "Triple Bed",
+    "kamar": "722",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
@@ -1674,8 +1655,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "48",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "351",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
@@ -1689,7 +1670,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "26",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -1709,22 +1690,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "318",
-    "tipe": "Triple Bed",
+    "kamar": "920",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "502",
-    "tipe": "Superior · Lantai 5",
+    "kamar": "310",
+    "tipe": "Superior · Lantai 3",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "16",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "162",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
@@ -1738,7 +1719,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "23",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -1759,22 +1740,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "916",
+    "kamar": "908",
     "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "511",
-    "tipe": "Superior · Lantai 5",
+    "kamar": "711",
+    "tipe": "Superior · Lantai 7",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "56",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "234",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -1788,7 +1769,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "74",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -1809,22 +1790,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1406",
+    "kamar": "906",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "1122",
-    "tipe": "Deluxe Corridor · Lantai 11",
+    "kamar": "312",
+    "tipe": "Superior · Lantai 3",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "46",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "364",
+    "tipe": "Superior · Twin",
     "urutan": 3
    },
    {
@@ -1838,7 +1819,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "43",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -1861,8 +1842,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "518",
-    "tipe": "Twin Bed",
+    "kamar": "1206",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
@@ -1875,8 +1856,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "36",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "125",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -1912,8 +1893,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "722",
-    "tipe": "Triple Bed",
+    "kamar": "726",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
@@ -1926,8 +1907,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "59",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "353",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
@@ -1941,7 +1922,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "26",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -1962,22 +1943,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1108",
+    "kamar": "808",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "815",
-    "tipe": "Deluxe Corridor · Lantai 8",
+    "kamar": "607",
+    "tipe": "Superior · Lantai 6",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "40",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "103",
+    "tipe": "Executive · Triple",
     "urutan": 3
    },
    {
@@ -1991,7 +1972,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "17",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -2014,22 +1995,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "318",
-    "tipe": "Triple Bed",
+    "kamar": "608",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "719",
-    "tipe": "Deluxe Corridor · Lantai 7",
+    "kamar": "1010",
+    "tipe": "Deluxe Corridor · Lantai 10",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "19",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "124",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -2043,7 +2024,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "38",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -2064,10 +2045,17 @@
   },
   "menginap": [
    {
+    "kota": "Gresik",
+    "hotel": "Hotel Gresik",
+    "kamar": "716",
+    "tipe": "Triple Twin Bed",
+    "urutan": 1
+   },
+   {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "52",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "229",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -2081,7 +2069,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "76",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -2104,22 +2092,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "616",
-    "tipe": "Queen Bed",
+    "kamar": "521",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "319",
+    "kamar": "316",
     "tipe": "Deluxe Balcony · Lantai 3",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "28",
-    "tipe": "Eksekutif · Lantai 2",
+    "kamar": "224",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -2157,7 +2145,7 @@
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
     "kamar": "716",
-    "tipe": "Triple Bed",
+    "tipe": "Triple Twin Bed",
     "urutan": 1
    },
    {
@@ -2170,8 +2158,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "49",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "352",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
@@ -2185,7 +2173,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "27",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -2218,7 +2206,7 @@
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
     "kamar": "718",
-    "tipe": "Triple Bed",
+    "tipe": "Triple Twin Bed",
     "urutan": 1
    },
    {
@@ -2231,8 +2219,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "52",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "229",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -2246,7 +2234,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "30",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -2278,7 +2266,7 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "309",
+    "kamar": "516",
     "tipe": "Twin Bed",
     "urutan": 1
    },
@@ -2292,8 +2280,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "5",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "144",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -2316,7 +2304,6 @@
   "name": "Fathul Bahri Gilang AN",
   "aliases": [
    "Fathul Bahri Gilang AN",
-   "Fathul Bahri Gilang A.N",
    "Fathul Bahri Gilang"
   ],
   "peran": "Kenyamanan Pendamping",
@@ -2329,7 +2316,7 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "516",
+    "kamar": "1012",
     "tipe": "Twin Bed",
     "urutan": 1
    },
@@ -2343,8 +2330,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "34",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "121",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -2379,22 +2366,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1206",
+    "kamar": "618",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "711",
-    "tipe": "Superior · Lantai 7",
+    "kamar": "721",
+    "tipe": "Deluxe Corridor · Lantai 7",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "67",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "235",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -2408,7 +2395,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "27",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -2431,36 +2418,36 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "301",
-    "tipe": "Twin Bed",
+    "kamar": "602",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "208",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "306",
+    "tipe": "Superior · Lantai 3",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "7",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "132",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
-    "kamar": "118",
-    "tipe": "Lantai 1",
+    "kamar": "888",
+    "tipe": "",
     "urutan": 5
    },
    {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "75",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -2482,8 +2469,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "521",
-    "tipe": "Twin Bed",
+    "kamar": "1010",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
@@ -2496,8 +2483,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "35",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "123",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -2533,22 +2520,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "621",
-    "tipe": "Queen Bed",
+    "kamar": "1002",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "718",
-    "tipe": "Deluxe Corridor · Lantai 7",
+    "kamar": "819",
+    "tipe": "Deluxe Corridor · Lantai 8",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "13",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "141",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -2562,7 +2549,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "36",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -2579,7 +2566,7 @@
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
     "kamar": "718",
-    "tipe": "Triple Bed",
+    "tipe": "Triple Twin Bed",
     "urutan": 1
    },
    {
@@ -2592,8 +2579,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "52",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "229",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -2607,7 +2594,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "30",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -2629,8 +2616,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "519",
-    "tipe": "Twin Bed",
+    "kamar": "1209",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
@@ -2643,8 +2630,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "45",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "160",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
@@ -2680,8 +2667,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "506",
-    "tipe": "Queen Bed",
+    "kamar": "526",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
@@ -2694,8 +2681,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "32",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "145",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -2732,8 +2719,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "515",
-    "tipe": "Queen Bed",
+    "kamar": "1008",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
@@ -2746,8 +2733,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "47",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "166",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
@@ -2795,8 +2782,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "22",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "122",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -2810,7 +2797,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "78",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -2830,22 +2817,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "626",
+    "kamar": "621",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "715",
-    "tipe": "Deluxe Corridor · Lantai 7",
+    "kamar": "815",
+    "tipe": "Deluxe Corridor · Lantai 8",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "61",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "354",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
@@ -2859,7 +2846,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "45",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -2881,7 +2868,7 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1002",
+    "kamar": "820",
     "tipe": "Twin Bed",
     "urutan": 1
    },
@@ -2895,8 +2882,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "64",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "235",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -2910,7 +2897,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "28",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -2931,22 +2918,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "816",
-    "tipe": "Queen Bed",
+    "kamar": "1006",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "618",
-    "tipe": "Deluxe Corridor · Lantai 6",
+    "kamar": "716",
+    "tipe": "Deluxe Corridor · Lantai 7",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "18",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "251",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
@@ -2960,7 +2947,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "79",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -2982,8 +2969,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "608",
-    "tipe": "Queen Bed",
+    "kamar": "508",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
@@ -2996,8 +2983,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "15",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "223",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -3011,7 +2998,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "79",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -3032,22 +3019,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "606",
-    "tipe": "Queen Bed",
+    "kamar": "519",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "308",
-    "tipe": "Superior · Lantai 3",
+    "kamar": "505",
+    "tipe": "Superior · Lantai 5",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "11",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "137",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -3082,7 +3069,7 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1106",
+    "kamar": "612",
     "tipe": "Queen Bed",
     "urutan": 1
    },
@@ -3096,8 +3083,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "63",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "365",
+    "tipe": "Superior · Twin",
     "urutan": 3
    },
    {
@@ -3111,7 +3098,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "28",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -3133,7 +3120,7 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "522",
+    "kamar": "1016",
     "tipe": "Twin Bed",
     "urutan": 1
    },
@@ -3147,8 +3134,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "34",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "121",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -3190,15 +3177,15 @@
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "315",
+    "kamar": "311",
     "tipe": "Deluxe Balcony · Lantai 3",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "71",
-    "tipe": "Superior · Lantai 3",
+    "kamar": "225",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -3212,7 +3199,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "24",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -3234,22 +3221,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "620",
+    "kamar": "626",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "717",
-    "tipe": "Deluxe Corridor · Lantai 7",
+    "kamar": "818",
+    "tipe": "Deluxe Corridor · Lantai 8",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "58",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "238",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -3263,7 +3250,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "48",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -3286,22 +3273,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "816",
-    "tipe": "Queen Bed",
+    "kamar": "316",
+    "tipe": "Triple Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "618",
-    "tipe": "Deluxe Corridor · Lantai 6",
+    "kamar": "716",
+    "tipe": "Deluxe Corridor · Lantai 7",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "18",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "251",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
@@ -3315,7 +3302,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "80",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -3336,29 +3323,36 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "806",
+    "kamar": "511",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "721",
-    "tipe": "Deluxe Corridor · Lantai 7",
+    "kamar": "1116",
+    "tipe": "Deluxe Corridor · Lantai 11",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "14",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "228",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "323",
+    "tipe": "Superior King · Lantai 3",
+    "urutan": 5
    },
    {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "37",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -3379,7 +3373,7 @@
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
     "kamar": "720",
-    "tipe": "Triple Bed",
+    "tipe": "Triple Twin Bed",
     "urutan": 1
    },
    {
@@ -3392,15 +3386,22 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "51",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "241",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "314",
+    "tipe": "Superior Twin · Lantai 3",
+    "urutan": 5
    },
    {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "31",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -3420,8 +3421,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "608",
-    "tipe": "Queen Bed",
+    "kamar": "508",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
@@ -3434,8 +3435,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "21",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "223",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -3449,7 +3450,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "79",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -3471,22 +3472,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "806",
+    "kamar": "511",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "720",
-    "tipe": "Deluxe Corridor · Lantai 7",
+    "kamar": "1115",
+    "tipe": "Deluxe Corridor · Lantai 11",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "19",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "124",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -3500,7 +3501,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "38",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -3523,22 +3524,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "318",
-    "tipe": "Triple Bed",
+    "kamar": "608",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "509",
-    "tipe": "Superior · Lantai 5",
+    "kamar": "707",
+    "tipe": "Superior · Lantai 7",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "72",
-    "tipe": "Superior · Lantai 3",
+    "kamar": "belum ditentukan",
+    "tipe": "Deluxe",
     "urutan": 3
    },
    {
@@ -3552,7 +3553,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "49",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -3574,22 +3575,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1102",
+    "kamar": "806",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "819",
-    "tipe": "Deluxe Corridor · Lantai 8",
+    "kamar": "612",
+    "tipe": "Superior · Lantai 6",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "39",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "101",
+    "tipe": "Executive · Triple",
     "urutan": 3
    },
    {
@@ -3603,7 +3604,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "18",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -3626,8 +3627,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "602",
-    "tipe": "Queen Bed",
+    "kamar": "502",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
@@ -3640,8 +3641,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "20",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "128",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -3655,7 +3656,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "80",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -3691,8 +3692,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "49",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "352",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
@@ -3706,7 +3707,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "71",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -3727,15 +3728,15 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1110",
+    "kamar": "810",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "59",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "230",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -3749,7 +3750,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "20",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -3772,36 +3773,36 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "301",
-    "tipe": "Twin Bed",
+    "kamar": "602",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "208",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "306",
+    "tipe": "Superior · Lantai 3",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "7",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "132",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
-    "kamar": "118",
-    "tipe": "Lantai 1",
+    "kamar": "888",
+    "tipe": "",
     "urutan": 5
    },
    {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "75",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -3810,7 +3811,6 @@
   "name": "Lulu' Khoirun Nisa'",
   "aliases": [
    "Lulu' Khoirun Nisa'",
-   "Lu'lu' Khoirunnisa",
    "Lu'lu Khoirunnisa",
    "LULU' KHOIRUNNISA"
   ],
@@ -3824,22 +3824,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1010",
+    "kamar": "802",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "818",
-    "tipe": "Deluxe Corridor · Lantai 8",
+    "kamar": "611",
+    "tipe": "Superior · Lantai 6",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "39",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "101",
+    "tipe": "Executive · Triple",
     "urutan": 3
    },
    {
@@ -3853,7 +3853,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "19",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -3873,8 +3873,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "506",
-    "tipe": "Queen Bed",
+    "kamar": "526",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
@@ -3887,8 +3887,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "32",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "232",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -3923,22 +3923,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "902",
-    "tipe": "Twin Bed",
+    "kamar": "316",
+    "tipe": "Triple Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "620",
-    "tipe": "Deluxe Corridor · Lantai 6",
+    "kamar": "718",
+    "tipe": "Deluxe Corridor · Lantai 7",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "8",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "252",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
@@ -3952,7 +3952,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "51",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -3961,7 +3961,6 @@
   "name": "M. Karim Al Mujtaba",
   "aliases": [
    "M. Karim Al Mujtaba",
-   "Muhammad Kariim Almujtaba",
    "M. Karim Al M",
    "M.KARIM AL M."
   ],
@@ -3975,8 +3974,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "612",
-    "tipe": "Queen Bed",
+    "kamar": "512",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
@@ -3989,8 +3988,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "12",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "139",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -4004,7 +4003,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "80",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -4025,8 +4024,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "526",
-    "tipe": "Twin Bed",
+    "kamar": "1112",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
@@ -4039,8 +4038,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "26",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "142",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -4076,22 +4075,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "615",
+    "kamar": "610",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "316",
+    "kamar": "315",
     "tipe": "Deluxe Balcony · Lantai 3",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "30",
-    "tipe": "Eksekutif · Lantai 2",
+    "kamar": "209",
+    "tipe": "Executive · Triple",
     "urutan": 3
    },
    {
@@ -4105,7 +4104,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "70",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -4128,22 +4127,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "615",
+    "kamar": "610",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "320",
+    "kamar": "317",
     "tipe": "Deluxe Balcony · Lantai 3",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "30",
-    "tipe": "Eksekutif · Lantai 2",
+    "kamar": "209",
+    "tipe": "Executive · Triple",
     "urutan": 3
    },
    {
@@ -4157,7 +4156,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "70",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -4179,22 +4178,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1116",
+    "kamar": "501",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "315",
+    "kamar": "311",
     "tipe": "Deluxe Balcony · Lantai 3",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "66",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "222",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -4208,7 +4207,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "42",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -4230,22 +4229,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1016",
-    "tipe": "Twin Bed",
+    "kamar": "708",
+    "tipe": "",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
     "kamar": "205",
-    "tipe": "Deluxe Balcony · Lantai 1",
+    "tipe": "Deluxe Balcony · Lantai 2",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "38",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "158",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
@@ -4259,7 +4258,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "40",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -4280,22 +4279,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "609",
-    "tipe": "Queen Bed",
+    "kamar": "520",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "306",
-    "tipe": "Superior · Lantai 3",
+    "kamar": "502",
+    "tipe": "Superior · Lantai 5",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "4",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "129",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -4331,7 +4330,7 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "501",
+    "kamar": "1102",
     "tipe": "Queen Bed",
     "urutan": 1
    },
@@ -4345,8 +4344,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "26",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "142",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -4383,7 +4382,7 @@
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
     "kamar": "702",
-    "tipe": "Triple Bed",
+    "tipe": "Triple Twin Bed",
     "urutan": 1
    },
    {
@@ -4396,8 +4395,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "41",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "105",
+    "tipe": "Executive · Triple",
     "urutan": 3
    },
    {
@@ -4411,7 +4410,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "29",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -4433,16 +4432,23 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1012",
-    "tipe": "Twin Bed",
+    "kamar": "1210",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "719",
-    "tipe": "Deluxe Corridor · Lantai 7",
+    "kamar": "1010",
+    "tipe": "Deluxe Corridor · Lantai 10",
     "urutan": 2
+   },
+   {
+    "kota": "Pemalang",
+    "hotel": "Hotel R-Gina Pemalang",
+    "kamar": "361",
+    "tipe": "Superior · Twin",
+    "urutan": 3
    },
    {
     "kota": "Cianjur",
@@ -4455,7 +4461,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "39",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -4477,22 +4483,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "619",
-    "tipe": "Queen Bed",
+    "kamar": "522",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "321",
+    "kamar": "318",
     "tipe": "Deluxe Balcony · Lantai 3",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "29",
-    "tipe": "Eksekutif · Lantai 2",
+    "kamar": "226",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -4515,32 +4521,36 @@
   "name": "Muchamad Irfan Fanani",
   "aliases": [
    "Muchamad Irfan Fanani",
-   "M. IRFAN FANANI"
+   "M. Irfan Fanani",
+   "M. IRFAN FANANI",
+   "Irfan Fanani"
   ],
-  "peran": "PJ.keamanan",
+  "peran": "Keamanan",
   "transport": {
+   "sesi1": "ELF 6",
+   "sesi2": "Bus 4",
    "sesi3": "Bus 5"
   },
   "menginap": [
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1116",
+    "kamar": "501",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "702",
-    "tipe": "Superior · Lantai 7",
+    "kamar": "715",
+    "tipe": "Deluxe Corridor · Lantai 7",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "74",
-    "tipe": "Superior · Lantai 3",
+    "kamar": "belum ditentukan",
+    "tipe": "Superior",
     "urutan": 3
    },
    {
@@ -4554,7 +4564,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "29",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -4573,22 +4583,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1006",
+    "kamar": "1012",
     "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "312",
-    "tipe": "Superior · Lantai 3",
+    "kamar": "509",
+    "tipe": "Superior · Lantai 5",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "10",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "135",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -4624,22 +4634,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "812",
+    "kamar": "816",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "502",
-    "tipe": "Superior · Lantai 5",
+    "kamar": "310",
+    "tipe": "Superior · Lantai 3",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "14",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "228",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -4653,7 +4663,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "39",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -4676,22 +4686,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "706",
+    "kamar": "510",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "720",
-    "tipe": "Deluxe Corridor · Lantai 7",
+    "kamar": "1115",
+    "tipe": "Deluxe Corridor · Lantai 11",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "15",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "361",
+    "tipe": "Superior · Twin",
     "urutan": 3
    },
    {
@@ -4705,7 +4715,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "41",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -4729,7 +4739,7 @@
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
     "kamar": "702",
-    "tipe": "Triple Bed",
+    "tipe": "Triple Twin Bed",
     "urutan": 1
    },
    {
@@ -4742,8 +4752,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "41",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "105",
+    "tipe": "Executive · Triple",
     "urutan": 3
    },
    {
@@ -4757,7 +4767,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "33",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -4780,8 +4790,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1016",
-    "tipe": "Twin Bed",
+    "kamar": "1210",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
@@ -4794,8 +4804,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "33",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "146",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -4831,22 +4841,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "912",
+    "kamar": "902",
     "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "505",
-    "tipe": "Superior · Lantai 5",
+    "kamar": "702",
+    "tipe": "Superior · Lantai 7",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "60",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "240",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -4860,7 +4870,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "21",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -4882,7 +4892,7 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "509",
+    "kamar": "506",
     "tipe": "Queen Bed",
     "urutan": 1
    },
@@ -4896,8 +4906,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "54",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "232",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -4934,22 +4944,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "726",
-    "tipe": "Twin Bed",
+    "kamar": "318",
+    "tipe": "Triple Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "619",
-    "tipe": "Deluxe Corridor · Lantai 6",
+    "kamar": "717",
+    "tipe": "Deluxe Corridor · Lantai 7",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "17",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "265",
+    "tipe": "Superior · Twin",
     "urutan": 3
    },
    {
@@ -4963,7 +4973,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "79",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -4985,7 +4995,7 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "802",
+    "kamar": "910",
     "tipe": "Queen Bed",
     "urutan": 1
    },
@@ -4999,8 +5009,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "71",
-    "tipe": "Superior · Lantai 3",
+    "kamar": "225",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -5014,7 +5024,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "40",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -5036,22 +5046,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "601",
+    "kamar": "509",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "310",
-    "tipe": "Superior · Lantai 3",
+    "kamar": "507",
+    "tipe": "Superior · Lantai 5",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "10",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "135",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -5086,7 +5096,7 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "812",
+    "kamar": "816",
     "tipe": "Queen Bed",
     "urutan": 1
    },
@@ -5100,8 +5110,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "62",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "355",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
@@ -5115,7 +5125,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "41",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -5138,7 +5148,7 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "509",
+    "kamar": "506",
     "tipe": "Queen Bed",
     "urutan": 1
    },
@@ -5152,8 +5162,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "54",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "145",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -5188,22 +5198,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "501",
-    "tipe": "Queen Bed",
+    "kamar": "1006",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
     "kamar": "205",
-    "tipe": "Deluxe Balcony · Lantai 1",
+    "tipe": "Deluxe Balcony · Lantai 2",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "38",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "158",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
@@ -5240,22 +5250,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "902",
-    "tipe": "Twin Bed",
+    "kamar": "318",
+    "tipe": "Triple Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "620",
-    "tipe": "Deluxe Corridor · Lantai 6",
+    "kamar": "718",
+    "tipe": "Deluxe Corridor · Lantai 7",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "8",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "252",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
@@ -5269,7 +5279,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "78",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -5292,22 +5302,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "316",
-    "tipe": "Triple Bed",
+    "kamar": "920",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "509",
-    "tipe": "Superior · Lantai 5",
+    "kamar": "707",
+    "tipe": "Superior · Lantai 7",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "16",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "162",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
@@ -5321,7 +5331,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "22",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -5343,8 +5353,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "521",
-    "tipe": "Twin Bed",
+    "kamar": "1010",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
@@ -5357,8 +5367,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "31",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "143",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -5394,22 +5404,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1008",
+    "kamar": "822",
     "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "722",
-    "tipe": "Deluxe Corridor · Lantai 7",
+    "kamar": "1119",
+    "tipe": "Deluxe Corridor · Lantai 11",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "73",
-    "tipe": "Superior · Lantai 3",
+    "kamar": "228",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -5423,7 +5433,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "49",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -5444,8 +5454,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "520",
-    "tipe": "Twin Bed",
+    "kamar": "1116",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
@@ -5458,8 +5468,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "33",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "146",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -5501,15 +5511,15 @@
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "316",
+    "kamar": "315",
     "tipe": "Deluxe Balcony · Lantai 3",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "30",
-    "tipe": "Eksekutif · Lantai 2",
+    "kamar": "209",
+    "tipe": "Executive · Triple",
     "urutan": 3
    },
    {
@@ -5523,7 +5533,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "70",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -5544,22 +5554,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "609",
-    "tipe": "Queen Bed",
+    "kamar": "520",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "306",
-    "tipe": "Superior · Lantai 3",
+    "kamar": "502",
+    "tipe": "Superior · Lantai 5",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "4",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "129",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -5596,7 +5606,7 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "618",
+    "kamar": "622",
     "tipe": "Queen Bed",
     "urutan": 1
    },
@@ -5610,8 +5620,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "13",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "141",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -5625,7 +5635,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "36",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -5647,21 +5657,21 @@
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
     "kamar": "720",
-    "tipe": "Triple Bed",
+    "tipe": "Triple Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "1119",
+    "kamar": "1121",
     "tipe": "Deluxe Corridor · Lantai 11",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "43",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "221",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -5675,7 +5685,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "77",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -5697,21 +5707,21 @@
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
     "kamar": "712",
-    "tipe": "Triple Bed",
+    "tipe": "Triple Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "709",
-    "tipe": "Superior · Lantai 7",
+    "kamar": "720",
+    "tipe": "Deluxe Corridor · Lantai 7",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "50",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "227",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -5725,7 +5735,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "76",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -5755,15 +5765,15 @@
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "716",
-    "tipe": "Deluxe Corridor · Lantai 7",
+    "kamar": "817",
+    "tipe": "Deluxe Corridor · Lantai 8",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "58",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "238",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -5777,7 +5787,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "46",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -5814,8 +5824,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "9",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "133",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -5829,7 +5839,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "73",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -5838,7 +5848,6 @@
   "name": "Nova Nur Aini",
   "aliases": [
    "Nova Nur Aini",
-   "Nova Nurayni",
    "Nova Nuraini"
   ],
   "peran": "Peserta",
@@ -5851,8 +5860,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "320",
-    "tipe": "Triple Bed",
+    "kamar": "706",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
@@ -5865,8 +5874,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "51",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "241",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -5880,7 +5889,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "25",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -5902,8 +5911,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "612",
-    "tipe": "Queen Bed",
+    "kamar": "512",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
@@ -5916,8 +5925,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "12",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "139",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -5931,7 +5940,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "80",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -5967,8 +5976,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "9",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "133",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -5982,7 +5991,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "73",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -6003,28 +6012,28 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1010",
+    "kamar": "802",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "817",
-    "tipe": "Deluxe Corridor · Lantai 8",
+    "kamar": "609",
+    "tipe": "Superior · Lantai 6",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "42",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "221",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
-    "kamar": "313",
+    "kamar": "310",
     "tipe": "Superior Twin · Lantai 3",
     "urutan": 5
    },
@@ -6032,7 +6041,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "17",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -6052,22 +6061,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1006",
-    "tipe": "Twin Bed",
+    "kamar": "318",
+    "tipe": "Triple Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "312",
-    "tipe": "Superior · Lantai 3",
+    "kamar": "509",
+    "tipe": "Superior · Lantai 5",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "74",
-    "tipe": "Superior · Lantai 3",
+    "kamar": "222",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -6103,22 +6112,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1210",
+    "kamar": "619",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "622",
-    "tipe": "Deluxe Corridor · Lantai 6",
+    "kamar": "719",
+    "tipe": "Deluxe Corridor · Lantai 7",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "66",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "222",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -6132,7 +6141,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "42",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -6161,15 +6170,15 @@
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "712",
-    "tipe": "Superior · Lantai 7",
+    "kamar": "722",
+    "tipe": "Deluxe Corridor · Lantai 7",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "40",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "138",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -6183,7 +6192,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "70",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -6205,46 +6214,36 @@
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
     "kamar": "716",
-    "tipe": "Triple Bed",
+    "tipe": "Triple Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "712",
-    "tipe": "Superior · Lantai 7",
+    "kamar": "722",
+    "tipe": "Deluxe Corridor · Lantai 7",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "43",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "353",
+    "tipe": "Superior · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "231",
+    "tipe": "Superior Twin · Lantai 2",
+    "urutan": 5
    },
    {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "76",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
-   }
-  ]
- },
- "pertawat": {
-  "name": "Pertawat",
-  "aliases": [
-   "Pertawat"
-  ],
-  "peran": "",
-  "transport": {},
-  "menginap": [
-   {
-    "kota": "Semarang",
-    "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "707",
-    "tipe": "Superior · Lantai 7",
-    "urutan": 2
    }
   ]
  },
@@ -6264,22 +6263,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "918",
+    "kamar": "908",
     "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "515",
-    "tipe": "Superior · Lantai 5",
+    "kamar": "712",
+    "tipe": "Superior · Lantai 7",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "57",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "236",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -6293,7 +6292,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "74",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -6314,36 +6313,36 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "716",
-    "tipe": "Triple Bed",
+    "kamar": "620",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "815",
-    "tipe": "Deluxe Corridor · Lantai 8",
+    "kamar": "607",
+    "tipe": "Superior · Lantai 6",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "40",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "138",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
-    "kamar": "310",
-    "tipe": "Superior Twin · Lantai 3",
+    "kamar": "231",
+    "tipe": "Superior Twin · Lantai 2",
     "urutan": 5
    },
    {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "48",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -6364,7 +6363,7 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "510",
+    "kamar": "601",
     "tipe": "Queen Bed",
     "urutan": 1
    },
@@ -6378,8 +6377,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "2",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "140",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -6415,22 +6414,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "726",
-    "tipe": "Twin Bed",
+    "kamar": "316",
+    "tipe": "Triple Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "619",
-    "tipe": "Deluxe Corridor · Lantai 6",
+    "kamar": "717",
+    "tipe": "Deluxe Corridor · Lantai 7",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "17",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "265",
+    "tipe": "Superior · Twin",
     "urutan": 3
    },
    {
@@ -6444,7 +6443,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "51",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -6475,8 +6474,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "319",
-    "tipe": "Triple Bed",
+    "kamar": "609",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
@@ -6489,8 +6488,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "55",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "233",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -6504,7 +6503,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "72",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -6524,22 +6523,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "908",
-    "tipe": "Twin Bed",
+    "kamar": "616",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "1116",
-    "tipe": "Deluxe Corridor · Lantai 11",
+    "kamar": "320",
+    "tipe": "Deluxe Balcony · Lantai 3",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "65",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "164",
+    "tipe": "Superior · Twin",
     "urutan": 3
    },
    {
@@ -6553,7 +6552,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "72",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -6573,22 +6572,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "908",
-    "tipe": "Twin Bed",
+    "kamar": "616",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "1116",
-    "tipe": "Deluxe Corridor · Lantai 11",
+    "kamar": "320",
+    "tipe": "Deluxe Balcony · Lantai 3",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "65",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "164",
+    "tipe": "Superior · Twin",
     "urutan": 3
    },
    {
@@ -6602,7 +6601,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "72",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -6622,22 +6621,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "316",
-    "tipe": "Triple Bed",
+    "kamar": "918",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "1010",
-    "tipe": "Deluxe Corridor · Lantai 10",
+    "kamar": "511",
+    "tipe": "Superior · Lantai 5",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "27",
-    "tipe": "Eksekutif · Lantai 2",
+    "kamar": "357",
+    "tipe": "Superior · Twin",
     "urutan": 3
    },
    {
@@ -6651,7 +6650,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "23",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -6674,22 +6673,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1102",
+    "kamar": "806",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "818",
-    "tipe": "Deluxe Corridor · Lantai 8",
+    "kamar": "611",
+    "tipe": "Superior · Lantai 6",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "42",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "221",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -6703,7 +6702,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "18",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -6725,22 +6724,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1406",
+    "kamar": "906",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "1121",
+    "kamar": "1122",
     "tipe": "Deluxe Corridor · Lantai 11",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "68",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "237",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -6754,7 +6753,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "71",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -6777,22 +6776,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1002",
+    "kamar": "820",
     "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "206",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "303",
+    "tipe": "Superior · Lantai 3",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "3",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "127",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -6806,7 +6805,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "34",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -6829,8 +6828,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "520",
-    "tipe": "Twin Bed",
+    "kamar": "1116",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
@@ -6843,8 +6842,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "35",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "123",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -6879,7 +6878,7 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "309",
+    "kamar": "516",
     "tipe": "Twin Bed",
     "urutan": 1
    },
@@ -6893,8 +6892,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "5",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "144",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -6930,7 +6929,7 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "510",
+    "kamar": "601",
     "tipe": "Queen Bed",
     "urutan": 1
    },
@@ -6944,8 +6943,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "2",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "140",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -6980,22 +6979,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1106",
+    "kamar": "612",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "206",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "303",
+    "tipe": "Superior · Lantai 3",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "3",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "127",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -7009,7 +7008,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "34",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -7032,22 +7031,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "618",
+    "kamar": "622",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "715",
-    "tipe": "Deluxe Corridor · Lantai 7",
+    "kamar": "815",
+    "tipe": "Deluxe Corridor · Lantai 8",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "13",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "141",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -7061,7 +7060,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "45",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -7084,22 +7083,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "316",
-    "tipe": "Triple Bed",
+    "kamar": "918",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "1010",
-    "tipe": "Deluxe Corridor · Lantai 10",
+    "kamar": "511",
+    "tipe": "Superior · Lantai 5",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "27",
-    "tipe": "Eksekutif · Lantai 2",
+    "kamar": "357",
+    "tipe": "Superior · Twin",
     "urutan": 3
    },
    {
@@ -7113,7 +7112,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "22",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -7136,22 +7135,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "622",
+    "kamar": "621",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "718",
-    "tipe": "Deluxe Corridor · Lantai 7",
+    "kamar": "819",
+    "tipe": "Deluxe Corridor · Lantai 8",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "70",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "245",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -7165,7 +7164,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "47",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -7188,7 +7187,7 @@
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
     "kamar": "712",
-    "tipe": "Triple Bed",
+    "tipe": "Triple Twin Bed",
     "urutan": 1
    },
    {
@@ -7201,8 +7200,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "50",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "227",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -7216,7 +7215,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "72",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -7237,22 +7236,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "610",
+    "kamar": "606",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "303",
+    "kamar": "308",
     "tipe": "Superior · Lantai 3",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "44",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "359",
+    "tipe": "Superior · Twin",
     "urutan": 3
    },
    {
@@ -7266,7 +7265,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "71",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -7287,22 +7286,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "710",
+    "kamar": "812",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "1122",
-    "tipe": "Deluxe Corridor · Lantai 11",
+    "kamar": "312",
+    "tipe": "Superior · Lantai 3",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "63",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "365",
+    "tipe": "Superior · Twin",
     "urutan": 3
    },
    {
@@ -7316,7 +7315,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "77",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -7348,22 +7347,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1206",
+    "kamar": "618",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "711",
-    "tipe": "Superior · Lantai 7",
+    "kamar": "721",
+    "tipe": "Deluxe Corridor · Lantai 7",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "68",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "237",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -7377,7 +7376,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "77",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -7406,15 +7405,15 @@
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "716",
-    "tipe": "Deluxe Corridor · Lantai 7",
+    "kamar": "817",
+    "tipe": "Deluxe Corridor · Lantai 8",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "70",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "245",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -7428,7 +7427,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "73",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -7449,22 +7448,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "610",
+    "kamar": "606",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "303",
+    "kamar": "308",
     "tipe": "Superior · Lantai 3",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "44",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "359",
+    "tipe": "Superior · Twin",
     "urutan": 3
    },
    {
@@ -7478,7 +7477,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "71",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -7501,22 +7500,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "320",
-    "tipe": "Triple Bed",
+    "kamar": "710",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "1119",
+    "kamar": "1121",
     "tipe": "Deluxe Corridor · Lantai 11",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "53",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "231",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -7530,7 +7529,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "50",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -7552,8 +7551,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "516",
-    "tipe": "Twin Bed",
+    "kamar": "1102",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
@@ -7566,8 +7565,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "26",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "142",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -7603,22 +7602,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "515",
-    "tipe": "Queen Bed",
+    "kamar": "1008",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "722",
-    "tipe": "Deluxe Corridor · Lantai 7",
+    "kamar": "1119",
+    "tipe": "Deluxe Corridor · Lantai 11",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "72",
-    "tipe": "Superior · Lantai 3",
+    "kamar": "belum ditentukan",
+    "tipe": "Deluxe",
     "urutan": 3
    },
    {
@@ -7654,22 +7653,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "606",
-    "tipe": "Queen Bed",
+    "kamar": "519",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "308",
-    "tipe": "Superior · Lantai 3",
+    "kamar": "505",
+    "tipe": "Superior · Lantai 5",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "11",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "137",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -7706,22 +7705,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1108",
+    "kamar": "808",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "819",
-    "tipe": "Deluxe Corridor · Lantai 8",
+    "kamar": "612",
+    "tipe": "Superior · Lantai 6",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "39",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "101",
+    "tipe": "Executive · Triple",
     "urutan": 3
    },
    {
@@ -7735,7 +7734,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "19",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -7757,8 +7756,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "320",
-    "tipe": "Triple Bed",
+    "kamar": "710",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
@@ -7771,8 +7770,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "48",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "351",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
@@ -7786,7 +7785,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "25",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -7809,8 +7808,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "526",
-    "tipe": "Twin Bed",
+    "kamar": "1112",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
@@ -7823,8 +7822,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "54",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "232",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -7861,22 +7860,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "708",
-    "tipe": "Triple Bed",
+    "kamar": "916",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "507",
-    "tipe": "Superior · Lantai 5",
+    "kamar": "705",
+    "tipe": "Superior · Lantai 7",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "69",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "239",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -7890,7 +7889,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "75",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -7910,7 +7909,7 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "522",
+    "kamar": "1016",
     "tipe": "Twin Bed",
     "urutan": 1
    },
@@ -7924,8 +7923,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "36",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "125",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -7961,8 +7960,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "319",
-    "tipe": "Triple Bed",
+    "kamar": "706",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
@@ -7975,8 +7974,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "55",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "233",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -7990,7 +7989,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "32",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -8012,8 +8011,8 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "319",
-    "tipe": "Triple Bed",
+    "kamar": "609",
+    "tipe": "Queen Bed",
     "urutan": 1
    },
    {
@@ -8026,8 +8025,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "55",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "233",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -8041,7 +8040,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "32",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -8063,7 +8062,7 @@
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
     "kamar": "718",
-    "tipe": "Triple Bed",
+    "tipe": "Triple Twin Bed",
     "urutan": 1
    },
    {
@@ -8076,15 +8075,22 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "43",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "230",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Cianjur",
+    "hotel": "Hotel Gino Feruci Cianjur",
+    "kamar": "313",
+    "tipe": "Superior Twin · Lantai 3",
+    "urutan": 5
    },
    {
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "31",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -8106,7 +8112,7 @@
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
     "kamar": "720",
-    "tipe": "Triple Bed",
+    "tipe": "Triple Twin Bed",
     "urutan": 1
    },
    {
@@ -8119,8 +8125,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "51",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "241",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -8134,7 +8140,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "77",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -8157,7 +8163,7 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "511",
+    "kamar": "818",
     "tipe": "Queen Bed",
     "urutan": 1
    },
@@ -8171,8 +8177,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "6",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "131",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
@@ -8195,7 +8201,6 @@
   "name": "Yonsania Nur Fadila",
   "aliases": [
    "Yonsania Nur Fadila",
-   "Yonsania Nurfadilla",
    "Yonsania Nur F",
    "Yonsania Nur F."
   ],
@@ -8209,22 +8214,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "1110",
+    "kamar": "810",
     "tipe": "Queen Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "817",
-    "tipe": "Deluxe Corridor · Lantai 8",
+    "kamar": "609",
+    "tipe": "Superior · Lantai 6",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "42",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "230",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -8238,7 +8243,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "20",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -8261,22 +8266,22 @@
    {
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
-    "kamar": "912",
+    "kamar": "902",
     "tipe": "Twin Bed",
     "urutan": 1
    },
    {
     "kota": "Semarang",
     "hotel": "Hotel Oak Tree Semarang",
-    "kamar": "505",
-    "tipe": "Superior · Lantai 5",
+    "kamar": "702",
+    "tipe": "Superior · Lantai 7",
     "urutan": 2
    },
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "60",
-    "tipe": "Superior · Lantai 2",
+    "kamar": "240",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
@@ -8290,7 +8295,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "21",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
@@ -8326,8 +8331,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "22",
-    "tipe": "Deluxe · Lantai 1",
+    "kamar": "122",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -8341,7 +8346,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "78",
-    "tipe": "Family 2 Bedroom · Lantai 8",
+    "tipe": "Family 2 Bedroom",
     "urutan": 6
    }
   ]
@@ -8362,7 +8367,7 @@
     "kota": "Gresik",
     "hotel": "Hotel Gresik",
     "kamar": "722",
-    "tipe": "Triple Bed",
+    "tipe": "Twin Bed",
     "urutan": 1
    },
    {
@@ -8375,8 +8380,8 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "53",
-    "tipe": "Deluxe · Lantai 2",
+    "kamar": "231",
+    "tipe": "Deluxe · Triple",
     "urutan": 3
    },
    {
@@ -8390,7 +8395,7 @@
     "kota": "Jakarta",
     "hotel": "Swiss-Belhotel Epicentrum Jakarta",
     "kamar": "50",
-    "tipe": "Deluxe · Lantai 8",
+    "tipe": "Deluxe",
     "urutan": 6
    }
   ]
