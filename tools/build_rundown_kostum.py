@@ -8,6 +8,9 @@ Default sumber: ~/Downloads/Rundown.csv
 panitia menyatakan CSV ini yang terbaru). Tanpa --paksa hanya kolom kosong
 yang diisi.
 
+Sesi 3 dilewati: sejak ada "Rundown Sesi 3.csv" yang lengkap, blok sesi3
+dibangun penuh oleh build_rundown_sesi3.py.
+
 CSV-nya berisi satu baris per agenda utama (bukan tiap langkah), formatnya
 "no;agenda;kostum;lokasi". Jadi kostum satu baris dipakai untuk semua langkah
 di halaman mulai dari agenda itu sampai sebelum agenda utama berikutnya.
@@ -79,6 +82,13 @@ def rapi_kostum(teks):
     t = re.sub(r'^Baju\s+(?=Bebas)', '', t)  # "Baju Bebas Sopan" -> "Bebas Sopan"
     if re.search(r'almamater|jasket', t, re.I) and 'kemeja putih' not in t.lower():
         t += ', Kemeja Putih'
+    # CSV menulis urutannya bolak-balik ("Kemeja Putih, Jasket"). Lapisan luar
+    # ditaruh di depan supaya satu halaman tidak punya dua gaya penulisan.
+    bagian = [b.strip() for b in t.split(',') if b.strip()]
+    if len(bagian) > 1:
+        putih = [b for b in bagian if b.lower() == 'kemeja putih']
+        luar = [b for b in bagian if b not in putih]
+        t = ', '.join(luar + putih)
     return t
 
 
@@ -133,6 +143,8 @@ def main():
 
     ubah, lokasi_beda, tak_cocok, beda_kostum = 0, [], [], []
     for (sesi, hari_ke), milestones in sorted(csv.items()):
+        if sesi == 'sesi3':
+            continue  # sesi 3 dibangun penuh oleh build_rundown_sesi3.py dari CSV-nya sendiri
         hari = data[sesi]['hari'][hari_ke - 1]
         agenda = hari['agenda']
 
