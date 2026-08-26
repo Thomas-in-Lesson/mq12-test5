@@ -85,7 +85,9 @@ function cari(q) {
 }
 
 for (const varian of [
-  ['Thousan Ahmad Alin Hisan Syamsuddin', 'Thousan Ahmad Alin', 'Thousand A.H.S', 'THOUSAN AHMAD A.H.S'],
+  // 'Thousand A.H.S' dicoret: ejaan itu cuma ada di denah Bus Sesi 2 yang
+  // 26 Agu 2026 diganti nama lengkap, jadi tidak lagi jadi alias siapa pun.
+  ['Thousan Ahmad Alin Hisan Syamsuddin', 'Thousan Ahmad Alin', 'THOUSAN AHMAD A.H.S'],
   ['Yonsania Nur Fadhilah', 'Yonsania Nur Fadilah', 'Yonsania Nur Fadillah'],
   ["Lu'lu' Khoirunnisa'", "Lulu' Khoirunnisa", 'lulu khoirunisa'],
   ['M Ikhlasul Muttaqin', 'M.Ikhlasul Muttaqin', 'Muh. Ikhlasul Muttaqin'],
