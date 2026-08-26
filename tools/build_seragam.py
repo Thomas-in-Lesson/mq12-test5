@@ -30,12 +30,14 @@ DEFAULT_CSV = os.path.expanduser('~/Downloads/Jadwal Seragam.csv')
 JUDUL_CSV = re.compile(r'^SESI\s*(\d)\s*HARI\s*KE-?\s*(\d+)', re.I)
 JUDUL_HAL = re.compile(r'SESI (\d) — HARI KE-(\d+)')
 
+# data-label dipakai gaya kartu di layar HP (<=640px): label kolomnya diambil
+# dari atribut ini, karena <thead> disembunyikan. Jangan dihapus.
 BARIS = ('<tr class="hover:bg-surface-container/50">'
-         '<td class="p-3 text-center font-bold">{no}</td>'
-         '<td class="p-3">{agenda}</td>'
-         '<td class="p-3 font-semibold text-secondary">{peserta}</td>'
-         '<td class="p-3 text-primary">{pendamping}</td>'
-         '<td class="p-3">{wilayah}</td></tr>')
+         '<td data-label="No" class="p-3 text-center font-bold">{no}</td>'
+         '<td data-label="Agenda / Lokasi" class="p-3">{agenda}</td>'
+         '<td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">{peserta}</td>'
+         '<td data-label="Seragam Pendamping" class="p-3 text-primary">{pendamping}</td>'
+         '<td data-label="Wilayah" class="p-3">{wilayah}</td></tr>')
 
 
 def rapi(teks):

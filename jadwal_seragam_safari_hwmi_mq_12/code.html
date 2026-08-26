@@ -23,6 +23,52 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+
+  /* Di layar HP tabel 5 kolom butuh 408px sementara layarnya 390px: kolom
+     Wilayah terpotong dan nama agenda pecah jadi 6 baris. Jadi di <=640px
+     tiap baris tampil sebagai kartu; tabelnya tetap dipakai di layar lebar. */
+  @media (max-width: 640px) {
+    .seragam-tabel thead { display: none; }
+    .seragam-tabel,
+    .seragam-tabel tbody,
+    .seragam-tabel tr,
+    .seragam-tabel td { display: block; width: 100%; }
+    .seragam-tabel tr {
+      margin-bottom: 10px;
+      padding: 12px 14px;
+      border: 1px solid rgba(224, 184, 99, .26);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, .03);
+    }
+    .seragam-tabel td { padding: 0; border: 0; text-align: left; }
+    .seragam-tabel td[data-label="No"] {
+      font-size: 11px; font-weight: 800; letter-spacing: .04em;
+      color: rgb(var(--c-gold));
+    }
+    .seragam-tabel td[data-label="No"]::before { content: 'AGENDA '; }
+    .seragam-tabel td[data-label="Agenda / Lokasi"] {
+      margin: 3px 0 9px;
+      font-size: 13.5px; font-weight: 700; line-height: 1.35;
+      color: #FFFFFF;
+    }
+    .seragam-tabel td[data-label="Seragam Peserta"],
+    .seragam-tabel td[data-label="Seragam Pendamping"],
+    .seragam-tabel td[data-label="Wilayah"] {
+      display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
+      padding: 6px 0;
+      font-size: 11.5px; line-height: 1.4;
+      border-top: 1px solid rgba(255, 255, 255, .07);
+    }
+    .seragam-tabel td[data-label="Seragam Peserta"]::before,
+    .seragam-tabel td[data-label="Seragam Pendamping"]::before,
+    .seragam-tabel td[data-label="Wilayah"]::before {
+      content: attr(data-label);
+      flex: none;
+      color: rgb(var(--c-on-surface-variant));
+      font-weight: 600;
+    }
+    .table-responsive { overflow-x: visible; }
+  }
 </style>
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -70,7 +116,7 @@
   </div>
 
   <div class="table-responsive">
-    <table class="w-full text-left text-xs text-on-surface">
+    <table class="seragam-tabel w-full text-left text-xs text-on-surface">
       <thead class="bg-surface-container-high text-secondary uppercase font-bold border-b border-surface-variant/40">
         <tr>
           <th class="p-3 w-10 text-center">No</th>
@@ -81,16 +127,16 @@
         </tr>
       </thead>
       <tbody class="divide-y divide-surface-variant/20">
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">1</td><td class="p-3">Sholat Shubuh berjama’ah</td><td class="p-3 font-semibold text-secondary">Almamater</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">LosPlos</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">2</td><td class="p-3">Makam Kyai Achmad Syuhada’</td><td class="p-3 font-semibold text-secondary">Almamater</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">LosPlos</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">3</td><td class="p-3">Do’a Bersama dan Berpamitan</td><td class="p-3 font-semibold text-secondary">Almamater</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Losplos</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">4</td><td class="p-3">Makam Kyai Achmad Sanusi Tamriz Abdul Ghofar</td><td class="p-3 font-semibold text-secondary">Almamater</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Kabuh</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">5</td><td class="p-3">Makam Kyai Achmad Zamrozi</td><td class="p-3 font-semibold text-secondary">Almamater</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Ploso</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">6</td><td class="p-3">Makam Kyai Achmad Falal</td><td class="p-3 font-semibold text-secondary">Almamater</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Megaluh</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">7</td><td class="p-3">Makam Kholifah Sumadji & Salamun</td><td class="p-3 font-semibold text-secondary">Almamater</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Ngoro</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">8</td><td class="p-3">Makam Kholifah Dukhan Iskandar</td><td class="p-3 font-semibold text-secondary">Almamater</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Ngoro</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">9</td><td class="p-3">Makam Syekh Imam Dzipuro</td><td class="p-3 font-semibold text-secondary">Almamater</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Ngoro</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">10</td><td class="p-3">Makam Syekh Jumadil Kubro (Troloyo)</td><td class="p-3 font-semibold text-secondary">Almamater</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Mojokerto</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">1</td><td data-label="Agenda / Lokasi" class="p-3">Sholat Shubuh berjama’ah</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Biru</td><td data-label="Wilayah" class="p-3">LosPlos</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">2</td><td data-label="Agenda / Lokasi" class="p-3">Makam Kyai Achmad Syuhada’</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Biru</td><td data-label="Wilayah" class="p-3">LosPlos</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">3</td><td data-label="Agenda / Lokasi" class="p-3">Do’a Bersama dan Berpamitan</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Biru</td><td data-label="Wilayah" class="p-3">Losplos</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">4</td><td data-label="Agenda / Lokasi" class="p-3">Makam Kyai Achmad Sanusi Tamriz Abdul Ghofar</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Biru</td><td data-label="Wilayah" class="p-3">Kabuh</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">5</td><td data-label="Agenda / Lokasi" class="p-3">Makam Kyai Achmad Zamrozi</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Biru</td><td data-label="Wilayah" class="p-3">Ploso</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">6</td><td data-label="Agenda / Lokasi" class="p-3">Makam Kyai Achmad Falal</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Biru</td><td data-label="Wilayah" class="p-3">Megaluh</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">7</td><td data-label="Agenda / Lokasi" class="p-3">Makam Kholifah Sumadji & Salamun</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Biru</td><td data-label="Wilayah" class="p-3">Ngoro</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">8</td><td data-label="Agenda / Lokasi" class="p-3">Makam Kholifah Dukhan Iskandar</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Biru</td><td data-label="Wilayah" class="p-3">Ngoro</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">9</td><td data-label="Agenda / Lokasi" class="p-3">Makam Syekh Imam Dzipuro</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Biru</td><td data-label="Wilayah" class="p-3">Ngoro</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">10</td><td data-label="Agenda / Lokasi" class="p-3">Makam Syekh Jumadil Kubro (Troloyo)</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Biru</td><td data-label="Wilayah" class="p-3">Mojokerto</td></tr>
       </tbody>
     </table>
   </div>
@@ -109,7 +155,7 @@
   </div>
 
   <div class="table-responsive">
-    <table class="w-full text-left text-xs text-on-surface">
+    <table class="seragam-tabel w-full text-left text-xs text-on-surface">
       <thead class="bg-surface-container-high text-secondary uppercase font-bold border-b border-surface-variant/40">
         <tr>
           <th class="p-3 w-10 text-center">No</th>
@@ -120,15 +166,15 @@
         </tr>
       </thead>
       <tbody class="divide-y divide-surface-variant/20">
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">1</td><td class="p-3">Sholat Shubuh berjam’ah</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">LosPlos</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">2</td><td class="p-3">Berpamitan dan Do’a</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">LosPlos</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">3</td><td class="p-3">Makam Bung Karno</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Blitar</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">4</td><td class="p-3">Sholat Tamam Taqdim (Dhuhur &amp; Ashar) berjama&#x27;ah &amp; Makan</td><td class="p-3 font-semibold text-secondary">Jasket, Kemeja Putih</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Sidoarjo</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">5</td><td class="p-3">Museum Mpu Tantular</td><td class="p-3 font-semibold text-secondary">Jasket, Kemeja Putih</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Sidoarjo</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">6</td><td class="p-3">Makam Wage Supratman</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Surabaya</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">7</td><td class="p-3">Sholat Jama’ Taqdim (Maghrib Isya’) berjama’ah, Makam Malam</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Masjid Ampel</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">8</td><td class="p-3">Makam Sunan Ampel</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Surabaya</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">9</td><td class="p-3">Istirahat di penginapan</td><td class="p-3 font-semibold text-secondary">Bebas Sopan</td><td class="p-3 text-primary">Bebas</td><td class="p-3">Hotel Khas</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">1</td><td data-label="Agenda / Lokasi" class="p-3">Sholat Shubuh berjam’ah</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">LosPlos</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">2</td><td data-label="Agenda / Lokasi" class="p-3">Berpamitan dan Do’a</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">LosPlos</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">3</td><td data-label="Agenda / Lokasi" class="p-3">Makam Bung Karno</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Blitar</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">4</td><td data-label="Agenda / Lokasi" class="p-3">Sholat Tamam Taqdim (Dhuhur &amp; Ashar) berjama&#x27;ah &amp; Makan</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Jasket, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Biru</td><td data-label="Wilayah" class="p-3">Sidoarjo</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">5</td><td data-label="Agenda / Lokasi" class="p-3">Museum Mpu Tantular</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Jasket, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Biru</td><td data-label="Wilayah" class="p-3">Sidoarjo</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">6</td><td data-label="Agenda / Lokasi" class="p-3">Makam Wage Supratman</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Surabaya</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">7</td><td data-label="Agenda / Lokasi" class="p-3">Sholat Jama’ Taqdim (Maghrib Isya’) berjama’ah, Makam Malam</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Masjid Ampel</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">8</td><td data-label="Agenda / Lokasi" class="p-3">Makam Sunan Ampel</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Surabaya</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">9</td><td data-label="Agenda / Lokasi" class="p-3">Istirahat di penginapan</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Bebas Sopan</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Bebas</td><td data-label="Wilayah" class="p-3">Hotel Khas</td></tr>
       </tbody>
     </table>
   </div>
@@ -144,7 +190,7 @@
   </div>
 
   <div class="table-responsive">
-    <table class="w-full text-left text-xs text-on-surface">
+    <table class="seragam-tabel w-full text-left text-xs text-on-surface">
       <thead class="bg-surface-container-high text-secondary uppercase font-bold border-b border-surface-variant/40">
         <tr>
           <th class="p-3 w-10 text-center">No</th>
@@ -155,15 +201,15 @@
         </tr>
       </thead>
       <tbody class="divide-y divide-surface-variant/20">
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">1</td><td class="p-3">Sholat Subuh Berjama’ah</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Gresik</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">2</td><td class="p-3">Makam Sunan Gresik</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Gresik</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">3</td><td class="p-3">Makam Sayyid Ali Murtadlo (Raden Santri)</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Gresik</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">4</td><td class="p-3">Makam Sunan Deket</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Lamongan</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">5</td><td class="p-3">ISHOMA di Sunan Deket</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Lamongan</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">6</td><td class="p-3">Makam Sunan Drajat</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Lamongan</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">7</td><td class="p-3">Makam Maulana Ibrohim Asmoroqondi</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Tuban</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">8</td><td class="p-3">Makam Sunan Bonang</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Tuban</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">9</td><td class="p-3">Sholat berjamaah dan makan Masjid Agung Tuban</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Tuban</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">1</td><td data-label="Agenda / Lokasi" class="p-3">Sholat Subuh Berjama’ah</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Gresik</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">2</td><td data-label="Agenda / Lokasi" class="p-3">Makam Sunan Gresik</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Gresik</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">3</td><td data-label="Agenda / Lokasi" class="p-3">Makam Sayyid Ali Murtadlo (Raden Santri)</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Gresik</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">4</td><td data-label="Agenda / Lokasi" class="p-3">Makam Sunan Deket</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Lamongan</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">5</td><td data-label="Agenda / Lokasi" class="p-3">ISHOMA di Sunan Deket</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Lamongan</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">6</td><td data-label="Agenda / Lokasi" class="p-3">Makam Sunan Drajat</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Lamongan</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">7</td><td data-label="Agenda / Lokasi" class="p-3">Makam Maulana Ibrohim Asmoroqondi</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Tuban</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">8</td><td data-label="Agenda / Lokasi" class="p-3">Makam Sunan Bonang</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Tuban</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">9</td><td data-label="Agenda / Lokasi" class="p-3">Sholat berjamaah dan makan Masjid Agung Tuban</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Tuban</td></tr>
       </tbody>
     </table>
   </div>
@@ -181,17 +227,17 @@
     </div>
   </div>
   <div class="table-responsive">
-    <table class="w-full text-left text-xs text-on-surface">
+    <table class="seragam-tabel w-full text-left text-xs text-on-surface">
       <thead class="bg-surface-container-high text-secondary uppercase font-bold border-b border-surface-variant/40">
         <tr><th class="p-3 w-10 text-center">No</th><th class="p-3">Agenda / Lokasi</th><th class="p-3">Seragam Peserta</th><th class="p-3">Seragam Pendamping</th><th class="p-3">Wilayah</th></tr>
       </thead>
       <tbody class="divide-y divide-surface-variant/20">
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">1</td><td class="p-3">Sholat Shubuh berjama’ah</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Losplos</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">2</td><td class="p-3">Do’a Bersama dan Berpamitan</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Losplos</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">3</td><td class="p-3">Makam Kyai Nur Salim (Benteng Pendem)</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Ngawi</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">4</td><td class="p-3">Masjid Agung Karanganyar (ISHOMA)</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Karanganyar</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">5</td><td class="p-3">Astana Mangadeg (Sambernyowo)</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Karanganyar</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">6</td><td class="p-3">Istirahat di Penginapan</td><td class="p-3 font-semibold text-secondary">Bebas Sopan</td><td class="p-3 text-primary">Bebas</td><td class="p-3">Solo</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">1</td><td data-label="Agenda / Lokasi" class="p-3">Sholat Shubuh berjama’ah</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Losplos</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">2</td><td data-label="Agenda / Lokasi" class="p-3">Do’a Bersama dan Berpamitan</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Losplos</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">3</td><td data-label="Agenda / Lokasi" class="p-3">Makam Kyai Nur Salim (Benteng Pendem)</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Ngawi</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">4</td><td data-label="Agenda / Lokasi" class="p-3">Masjid Agung Karanganyar (ISHOMA)</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Karanganyar</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">5</td><td data-label="Agenda / Lokasi" class="p-3">Astana Mangadeg (Sambernyowo)</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Karanganyar</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">6</td><td data-label="Agenda / Lokasi" class="p-3">Istirahat di Penginapan</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Bebas Sopan</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Bebas</td><td data-label="Wilayah" class="p-3">Solo</td></tr>
       </tbody>
     </table>
   </div>
@@ -206,16 +252,16 @@
     </div>
   </div>
   <div class="table-responsive">
-    <table class="w-full text-left text-xs text-on-surface">
+    <table class="seragam-tabel w-full text-left text-xs text-on-surface">
       <thead class="bg-surface-container-high text-secondary uppercase font-bold border-b border-surface-variant/40">
         <tr><th class="p-3 w-10 text-center">No</th><th class="p-3">Agenda / Lokasi</th><th class="p-3">Seragam Peserta</th><th class="p-3">Seragam Pendamping</th><th class="p-3">Wilayah</th></tr>
       </thead>
       <tbody class="divide-y divide-surface-variant/20">
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">1</td><td class="p-3">Observasi Prambanan</td><td class="p-3 font-semibold text-secondary">Jasket, Kemeja Putih</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Klaten</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">2</td><td class="p-3">Makam Jendral Sudirman</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">DIY</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">3</td><td class="p-3">Makam HOS Cokroaminoto dan Kyai Suro sentono</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">DIY</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">4</td><td class="p-3">Masjid Syuhada’ (ISHOMA)</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">DIY</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">5</td><td class="p-3">Istirahat di Mungkid</td><td class="p-3 font-semibold text-secondary">Bebas Sopan</td><td class="p-3 text-primary">Bebas Sopan</td><td class="p-3">Magelang</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">1</td><td data-label="Agenda / Lokasi" class="p-3">Observasi Prambanan</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Jasket, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Biru</td><td data-label="Wilayah" class="p-3">Klaten</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">2</td><td data-label="Agenda / Lokasi" class="p-3">Makam Jendral Sudirman</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">DIY</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">3</td><td data-label="Agenda / Lokasi" class="p-3">Makam HOS Cokroaminoto dan Kyai Suro sentono</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">DIY</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">4</td><td data-label="Agenda / Lokasi" class="p-3">Masjid Syuhada’ (ISHOMA)</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">DIY</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">5</td><td data-label="Agenda / Lokasi" class="p-3">Istirahat di Mungkid</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Bebas Sopan</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Bebas Sopan</td><td data-label="Wilayah" class="p-3">Magelang</td></tr>
       </tbody>
     </table>
   </div>
@@ -230,15 +276,15 @@
     </div>
   </div>
   <div class="table-responsive">
-    <table class="w-full text-left text-xs text-on-surface">
+    <table class="seragam-tabel w-full text-left text-xs text-on-surface">
       <thead class="bg-surface-container-high text-secondary uppercase font-bold border-b border-surface-variant/40">
         <tr><th class="p-3 w-10 text-center">No</th><th class="p-3">Agenda / Lokasi</th><th class="p-3">Seragam Peserta</th><th class="p-3">Seragam Pendamping</th><th class="p-3">Wilayah</th></tr>
       </thead>
       <tbody class="divide-y divide-surface-variant/20">
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">1</td><td class="p-3">Mungkid (mini ceremony)</td><td class="p-3 font-semibold text-secondary">Jasket, Kemeja Putih</td><td class="p-3 text-primary">Salur</td><td class="p-3">Magelang</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">2</td><td class="p-3">Observasi Borobudur</td><td class="p-3 font-semibold text-secondary">Jasket, Kemeja Putih</td><td class="p-3 text-primary">Salur</td><td class="p-3">Magelang</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">3</td><td class="p-3">Makam Sosrokartono</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Salur</td><td class="p-3">Kudus</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">4</td><td class="p-3">Istirahat di Penginapan</td><td class="p-3 font-semibold text-secondary">Bebas Sopan</td><td class="p-3 text-primary">Bebas</td><td class="p-3">Hotel Oaktree</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">1</td><td data-label="Agenda / Lokasi" class="p-3">Mungkid (mini ceremony)</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Jasket, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Salur</td><td data-label="Wilayah" class="p-3">Magelang</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">2</td><td data-label="Agenda / Lokasi" class="p-3">Observasi Borobudur</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Jasket, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Salur</td><td data-label="Wilayah" class="p-3">Magelang</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">3</td><td data-label="Agenda / Lokasi" class="p-3">Makam Sosrokartono</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Salur</td><td data-label="Wilayah" class="p-3">Kudus</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">4</td><td data-label="Agenda / Lokasi" class="p-3">Istirahat di Penginapan</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Bebas Sopan</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Bebas</td><td data-label="Wilayah" class="p-3">Hotel Oaktree</td></tr>
       </tbody>
     </table>
   </div>
@@ -253,14 +299,14 @@
     </div>
   </div>
   <div class="table-responsive">
-    <table class="w-full text-left text-xs text-on-surface">
+    <table class="seragam-tabel w-full text-left text-xs text-on-surface">
       <thead class="bg-surface-container-high text-secondary uppercase font-bold border-b border-surface-variant/40">
         <tr><th class="p-3 w-10 text-center">No</th><th class="p-3">Agenda / Lokasi</th><th class="p-3">Seragam Peserta</th><th class="p-3">Seragam Pendamping</th><th class="p-3">Wilayah</th></tr>
       </thead>
       <tbody class="divide-y divide-surface-variant/20">
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">1</td><td class="p-3">Makam Syech Dzatul Kahfi, R. Fatahillah, Sunan Gunung Jati</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Cirebon</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">2</td><td class="p-3">ISHOMA</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Cirebon</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">3</td><td class="p-3">Istirahat di Penginapan</td><td class="p-3 font-semibold text-secondary">Bebas Sopan</td><td class="p-3 text-primary">Bebas</td><td class="p-3">Hotel Gino Feruci</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">1</td><td data-label="Agenda / Lokasi" class="p-3">Makam Syech Dzatul Kahfi, R. Fatahillah, Sunan Gunung Jati</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Cirebon</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">2</td><td data-label="Agenda / Lokasi" class="p-3">ISHOMA</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Cirebon</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">3</td><td data-label="Agenda / Lokasi" class="p-3">Istirahat di Penginapan</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Bebas Sopan</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Bebas</td><td data-label="Wilayah" class="p-3">Hotel Gino Feruci</td></tr>
       </tbody>
     </table>
   </div>
@@ -275,14 +321,14 @@
     </div>
   </div>
   <div class="table-responsive">
-    <table class="w-full text-left text-xs text-on-surface">
+    <table class="seragam-tabel w-full text-left text-xs text-on-surface">
       <thead class="bg-surface-container-high text-secondary uppercase font-bold border-b border-surface-variant/40">
         <tr><th class="p-3 w-10 text-center">No</th><th class="p-3">Agenda / Lokasi</th><th class="p-3">Seragam Peserta</th><th class="p-3">Seragam Pendamping</th><th class="p-3">Wilayah</th></tr>
       </thead>
       <tbody class="divide-y divide-surface-variant/20">
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">1</td><td class="p-3">Sholat Shubuh berjama’ah</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Hotel Gino Feruci</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">2</td><td class="p-3">Makam Syech Musa</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Sukanegara</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">3</td><td class="p-3">Tiba di HSHF</td><td class="p-3 font-semibold text-secondary">Bebas Sopan</td><td class="p-3 text-primary">Bebas</td><td class="p-3">Pelabuhan Ratu</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">1</td><td data-label="Agenda / Lokasi" class="p-3">Sholat Shubuh berjama’ah</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Hotel Gino Feruci</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">2</td><td data-label="Agenda / Lokasi" class="p-3">Makam Syech Musa</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Sukanegara</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">3</td><td data-label="Agenda / Lokasi" class="p-3">Tiba di HSHF</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Bebas Sopan</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Bebas</td><td data-label="Wilayah" class="p-3">Pelabuhan Ratu</td></tr>
       </tbody>
     </table>
   </div>
@@ -297,16 +343,16 @@
     </div>
   </div>
   <div class="table-responsive">
-    <table class="w-full text-left text-xs text-on-surface">
+    <table class="seragam-tabel w-full text-left text-xs text-on-surface">
       <thead class="bg-surface-container-high text-secondary uppercase font-bold border-b border-surface-variant/40">
         <tr><th class="p-3 w-10 text-center">No</th><th class="p-3">Agenda / Lokasi</th><th class="p-3">Seragam Peserta</th><th class="p-3">Seragam Pendamping</th><th class="p-3">Wilayah</th></tr>
       </thead>
       <tbody class="divide-y divide-surface-variant/20">
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">1</td><td class="p-3">Kegiatan di HSHF</td><td class="p-3 font-semibold text-secondary">Jasket, Kemeja Putih</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Pelabuhan Ratu</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">2</td><td class="p-3">Makam Bung Hatta dan ISHOMA</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Jakarta Selatan</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">3</td><td class="p-3">Makam Husain Mutahar</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Jakarta Selatan</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">4</td><td class="p-3">Makam Abu Hanifah dan KH. Abdul Mu’thi</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Jakarta Selatan</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">5</td><td class="p-3">Istirahat di penginapan</td><td class="p-3 font-semibold text-secondary">Bebas Sopan</td><td class="p-3 text-primary">Bebas</td><td class="p-3">Hotel Swissbell Rasuna Epicentrum</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">1</td><td data-label="Agenda / Lokasi" class="p-3">Kegiatan di HSHF</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Jasket, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Biru</td><td data-label="Wilayah" class="p-3">Pelabuhan Ratu</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">2</td><td data-label="Agenda / Lokasi" class="p-3">Makam Bung Hatta dan ISHOMA</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Jakarta Selatan</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">3</td><td data-label="Agenda / Lokasi" class="p-3">Makam Husain Mutahar</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Jakarta Selatan</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">4</td><td data-label="Agenda / Lokasi" class="p-3">Makam Abu Hanifah dan KH. Abdul Mu’thi</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Jakarta Selatan</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">5</td><td data-label="Agenda / Lokasi" class="p-3">Istirahat di penginapan</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Bebas Sopan</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Bebas</td><td data-label="Wilayah" class="p-3">Hotel Swissbell Rasuna Epicentrum</td></tr>
       </tbody>
     </table>
   </div>
@@ -321,15 +367,15 @@
     </div>
   </div>
   <div class="table-responsive">
-    <table class="w-full text-left text-xs text-on-surface">
+    <table class="seragam-tabel w-full text-left text-xs text-on-surface">
       <thead class="bg-surface-container-high text-secondary uppercase font-bold border-b border-surface-variant/40">
         <tr><th class="p-3 w-10 text-center">No</th><th class="p-3">Agenda / Lokasi</th><th class="p-3">Seragam Peserta</th><th class="p-3">Seragam Pendamping</th><th class="p-3">Wilayah</th></tr>
       </thead>
       <tbody class="divide-y divide-surface-variant/20">
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">1</td><td class="p-3">Museum Sumpah Pemuda</td><td class="p-3 font-semibold text-secondary">Salur</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Jakarta Pusat</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">2</td><td class="p-3">MONAS</td><td class="p-3 font-semibold text-secondary">Salur</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Jakarta Pusat</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">3</td><td class="p-3">Masjid Istiqlal</td><td class="p-3 font-semibold text-secondary">Salur</td><td class="p-3 text-primary">Jasket Biru</td><td class="p-3">Jakarta Pusat</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">4</td><td class="p-3">Istirahat di Penginapan</td><td class="p-3 font-semibold text-secondary">Bebas Sopan</td><td class="p-3 text-primary">Bebas</td><td class="p-3">Hotel R.Gina</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">1</td><td data-label="Agenda / Lokasi" class="p-3">Museum Sumpah Pemuda</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Salur</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Biru</td><td data-label="Wilayah" class="p-3">Jakarta Pusat</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">2</td><td data-label="Agenda / Lokasi" class="p-3">MONAS</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Salur</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Biru</td><td data-label="Wilayah" class="p-3">Jakarta Pusat</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">3</td><td data-label="Agenda / Lokasi" class="p-3">Masjid Istiqlal</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Salur</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Biru</td><td data-label="Wilayah" class="p-3">Jakarta Pusat</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">4</td><td data-label="Agenda / Lokasi" class="p-3">Istirahat di Penginapan</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Bebas Sopan</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Bebas</td><td data-label="Wilayah" class="p-3">Hotel R.Gina</td></tr>
       </tbody>
     </table>
   </div>
@@ -344,16 +390,16 @@
     </div>
   </div>
   <div class="table-responsive">
-    <table class="w-full text-left text-xs text-on-surface">
+    <table class="seragam-tabel w-full text-left text-xs text-on-surface">
       <thead class="bg-surface-container-high text-secondary uppercase font-bold border-b border-surface-variant/40">
         <tr><th class="p-3 w-10 text-center">No</th><th class="p-3">Agenda / Lokasi</th><th class="p-3">Seragam Peserta</th><th class="p-3">Seragam Pendamping</th><th class="p-3">Wilayah</th></tr>
       </thead>
       <tbody class="divide-y divide-surface-variant/20">
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">1</td><td class="p-3">Makam Sunan Kalijaga</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Demak</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">2</td><td class="p-3">Makam Raden Abdul Fattah</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Demak</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">3</td><td class="p-3">ISHOMA Masjid Agung Demak</td><td class="p-3 font-semibold text-secondary">Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Demak</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">4</td><td class="p-3">Kembali ke LOSPLOS</td><td class="p-3 font-semibold text-secondary">Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Losplos</td></tr>
-        <tr class="hover:bg-surface-container/50"><td class="p-3 text-center font-bold">5</td><td class="p-3">Acara di Ndalem</td><td class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td class="p-3 text-primary">Jasket Merah</td><td class="p-3">Losplos</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">1</td><td data-label="Agenda / Lokasi" class="p-3">Makam Sunan Kalijaga</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Demak</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">2</td><td data-label="Agenda / Lokasi" class="p-3">Makam Raden Abdul Fattah</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Demak</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">3</td><td data-label="Agenda / Lokasi" class="p-3">ISHOMA Masjid Agung Demak</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Demak</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">4</td><td data-label="Agenda / Lokasi" class="p-3">Kembali ke LOSPLOS</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Losplos</td></tr>
+        <tr class="hover:bg-surface-container/50"><td data-label="No" class="p-3 text-center font-bold">5</td><td data-label="Agenda / Lokasi" class="p-3">Acara di Ndalem</td><td data-label="Seragam Peserta" class="p-3 font-semibold text-secondary">Almamater MQ, Kemeja Putih</td><td data-label="Seragam Pendamping" class="p-3 text-primary">Jasket Merah</td><td data-label="Wilayah" class="p-3">Losplos</td></tr>
       </tbody>
     </table>
   </div>
