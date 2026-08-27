@@ -16,10 +16,28 @@ const { isJunk, ambilLiteral } = require('./merge-nama');
 
 const REPO = path.join(__dirname, '..');
 const HALAMAN = path.join(REPO, 'daftar_kamar_safari_hwmi_mq_12', 'code.html');
-// Berkas kiriman panitia kadang punya spasi di ujung nama folder.
-const DEFAULT_SRC = ['Room list Hotel', 'Room list Hotel ']
-  .map((d) => path.join(os.homedir(), 'Downloads', d))
-  .find(fs.existsSync);
+// Panitia menaruh kiriman di mana saja dan menamainya sesukanya ("Gresik opsi
+// 2.csv"), jadi tiap kota dicari di semua folder ini dengan awalan nama kota,
+// lalu yang paling baru yang menang.
+const DIR_SUMBER = [
+  path.join(os.homedir(), 'Documents', '#Experiment', 'Baru_data_hotel'),
+  path.join(os.homedir(), 'Downloads', 'Room list Hotel'),
+  path.join(os.homedir(), 'Downloads', 'Room list Hotel '),  // spasi di ujung, pernah terjadi
+  path.join(os.homedir(), 'Downloads'),
+].filter(fs.existsSync);
+
+// Berkas CSV terbaru yang namanya diawali nama berkas kota, mis. "Gresik.csv",
+// "Gresik opsi 2.csv". Mengembalikan undefined kalau tidak ada.
+function csvTerbaru(dirs, namaCsv) {
+  const awalan = path.basename(namaCsv, '.csv').toLowerCase();
+  return dirs
+    .flatMap((d) => fs.readdirSync(d).map((f) => path.join(d, f)))
+    .filter((f) => {
+      const nama = path.basename(f).toLowerCase();
+      return nama.startsWith(awalan) && nama.endsWith('.csv');
+    })
+    .sort((a, b) => fs.statSync(b).mtimeMs - fs.statSync(a).mtimeMs)[0];
+}
 
 const baca = (file) => fs.readFileSync(file, 'utf8')
   .replace(/^\uFEFF/, '')
@@ -185,18 +203,14 @@ function tulisHalaman(data) {
 }
 
 function main() {
-  const src = process.argv[2] || DEFAULT_SRC;
-  if (!src) throw new Error('dir sumber CSV tidak ditemukan — beri path-nya sebagai argumen');
+  const dirs = process.argv[2] ? [process.argv[2]] : DIR_SUMBER;
+  if (!dirs.length) throw new Error('dir sumber CSV tidak ditemukan — beri path-nya sebagai argumen');
   const lama = ambilLiteral('daftar_kamar_safari_hwmi_mq_12/code.html', 'const hotelsData');
   const data = {};
 
   for (const [kota, cfg] of Object.entries(KOTA)) {
     const h = lama[kota] || { name: cfg.name, note: BELUM_ADA, rooms: [] };
-    // Panitia kadang mengirim berkas penggantinya langsung ke ~/Downloads, jadi
-    // yang dipakai adalah berkas dengan nama sama yang paling baru.
-    const file = cfg.csv && [path.join(src, cfg.csv), path.join(os.homedir(), 'Downloads', cfg.csv)]
-      .filter(fs.existsSync)
-      .sort((a, b) => fs.statSync(b).mtimeMs - fs.statSync(a).mtimeMs)[0];
+    const file = cfg.csv && csvTerbaru(dirs, cfg.csv);
     if (!cfg.parse || !file) {
       data[kota] = h; // Solo: belum ada kiriman, catatan "segera hadir" dibiarkan
       console.log(`${kota.padEnd(9)} -> CSV tidak ada, data lama dipakai`);
