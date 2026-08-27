@@ -47,6 +47,7 @@ const V = global.window.DenahViewer;
 
 const denah = global.window.DENAH;
 assert.strictEqual(denah.sesi1.length, 8, 'Sesi 1 harus punya 8 denah');
+assert.strictEqual(denah.sesi2.length, 11, 'Sesi 2 harus punya 11 denah');
 
 // Berkas gambarnya benar-benar ada
 for (const sesi of ['sesi1', 'sesi2', 'sesi3']) {
@@ -60,41 +61,50 @@ for (const sesi of ['sesi1', 'sesi2', 'sesi3']) {
 
 // Daftar kartu
 assert.strictEqual((V.daftarHTML('sesi1').match(/denah-kartu/g) || []).length, 8);
-assert.strictEqual(V.daftarHTML('sesi2'), '', 'Sesi 2 belum ada datanya, harus kosong');
+assert.strictEqual((V.daftarHTML('sesi2').match(/denah-kartu/g) || []).length, 11);
 assert.strictEqual(V.ada('sesi1'), 8);
+assert.strictEqual(V.ada('sesi2'), 11);
 assert.strictEqual(V.ada('sesi3'), 0);
 
 // Penautan dari rundown: tiap agenda ziarah harus dapat tautan, dan tepat satu
 // denah, tanpa ada denah yang dipakai dua kali.
 const rundown = ambilLiteral('rundown_kegiatan_safari_hwmi_mq_12/code.html', 'const rundownData');
-const agendaSesi1 = rundown.sesi1.hari.flatMap((h) => h.agenda);
 
-const indeksDari = (html) => {
-  const m = /buka\('sesi1',(\d+)\)/.exec(html);
-  return m ? Number(m[1]) : null;
-};
-
-const terpakai = new Map();
-let tanpaTautan = [];
-for (const a of agendaSesi1) {
-  const html = V.tautanUntuk('sesi1', a.agenda);
-  const ziarah = /^(ziaro|ziarah)/i.test(a.agenda.trim());
-  if (html) {
-    const i = indeksDari(html);
-    assert.ok(i !== null, 'tautan tanpa indeks: ' + a.agenda);
-    if (!terpakai.has(i)) terpakai.set(i, []);
-    terpakai.get(i).push(a.agenda);
-  } else if (ziarah) {
-    tanpaTautan.push(a.agenda);
+// Sesi 2 menambah dua baris bertautan yang bukan "Ziarah ...": observasi museum
+// dan denah jalur jalan kaki di Gresik. Keduanya lewat lewat kolom "aksi".
+function tautanSesi(sesi) {
+  const terpakai = new Map();
+  const tanpaTautan = [];
+  for (const a of rundown[sesi].hari.flatMap((h) => h.agenda)) {
+    const html = V.tautanUntuk(sesi, a.agenda);
+    if (html) {
+      const m = new RegExp("buka\\('" + sesi + "',(\\d+)\\)").exec(html);
+      assert.ok(m, `${sesi}: tautan tanpa indeks: ${a.agenda}`);
+      const i = Number(m[1]);
+      if (!terpakai.has(i)) terpakai.set(i, []);
+      terpakai.get(i).push(a.agenda);
+    } else if (/^(ziaro|ziarah)/i.test(a.agenda.trim())) {
+      tanpaTautan.push(a.agenda);
+    }
   }
+  assert.deepStrictEqual(tanpaTautan, [], `${sesi}: agenda ziarah tanpa denah: ${tanpaTautan.join(' | ')}`);
+  assert.strictEqual(terpakai.size, denah[sesi].length,
+    `${sesi}: denah tertaut ${terpakai.size}, seharusnya ${denah[sesi].length}`);
+  return terpakai;
 }
 
-assert.deepStrictEqual(tanpaTautan, [], 'ada agenda ziarah tanpa denah: ' + tanpaTautan.join(' | '));
-assert.strictEqual(terpakai.size, 8, `denah tertaut: ${terpakai.size}, seharusnya 8`);
+const tertaut = { sesi1: tautanSesi('sesi1'), sesi2: tautanSesi('sesi2') };
+const terpakai = tertaut.sesi1;
 
-// Baris yang jelas bukan ziarah tidak boleh dapat tautan.
-for (const bukan of ['Sarapan', 'Menuju Bus', 'ISHOMA', 'Perjalanan menuju Maqom Mbah Falal']) {
-  assert.strictEqual(V.tautanUntuk('sesi1', bukan), '', `tidak boleh bertautan: ${bukan}`);
+// Baris yang jelas bukan tujuan ziarah tidak boleh dapat tautan. Tiga yang
+// terakhir khusus Sesi 2: mengandung kata kunci "aksi" tapi bukan tujuannya.
+for (const [sesi, bukan] of [
+  ['sesi1', 'Sarapan'], ['sesi1', 'Menuju Bus'], ['sesi1', 'ISHOMA'],
+  ['sesi1', 'Perjalanan menuju Maqom Mbah Falal'],
+  ['sesi2', 'Persiapan Ziarah'], ['sesi2', 'Jalan Kaki menuju Bis'],
+  ['sesi2', 'Perjalanan Menuju Makam Bung Karno'],
+]) {
+  assert.strictEqual(V.tautanUntuk(sesi, bukan), '', `${sesi}: tidak boleh bertautan: ${bukan}`);
 }
 
 // Halaman memanggil DenahViewer saat render pertama, jadi denah-viewer.js wajib
@@ -146,15 +156,23 @@ assert.ok(/\n\s*tampilkanDenah\('sesi1'\);/.test(baca('peta_safari_hwmi_mq_12/co
   vm.runInContext(baca('denah-viewer.js'), ctx);
   vm.runInContext(html.match(/<script>([\s\S]*?)<\/script>/)[1], ctx);
 
-  const render = ambil('rundown-list').innerHTML;
-  const tombolDenah = (render.match(/Lihat denah lokasi/g) || []).length;
-  const tombolProfil = (render.match(/Profil singkat/g) || []).length;
-  assert.strictEqual(tombolDenah, 8, `tombol denah terender: ${tombolDenah}, seharusnya 8`);
-  assert.strictEqual(tombolProfil, 8, `tombol profil terender: ${tombolProfil}, seharusnya 8`);
+  const hitung = (pola) => (ambil('rundown-list').innerHTML.match(pola) || []).length;
+  assert.strictEqual(hitung(/Lihat denah lokasi/g), 8, 'tombol denah Sesi 1 tidak 8');
+  assert.strictEqual(hitung(/Profil singkat/g), 8, 'tombol profil Sesi 1 tidak 8');
+
+  // Sesi 2 baru terender setelah tabnya ditekan; jumlahnya = baris agenda yang
+  // bertautan, bukan jumlah denah, karena denah jalur dipakai oleh dua baris.
+  ctx.pilihSesi('sesi2');
+  const barisSesi2 = [...tertaut.sesi2.values()].reduce((n, l) => n + l.length, 0);
+  assert.strictEqual(hitung(/Lihat denah lokasi/g), barisSesi2,
+    `tombol denah Sesi 2 tidak ${barisSesi2}`);
+  assert.strictEqual(hitung(/Profil singkat/g), 0, 'Sesi 2 belum punya profil tokoh');
 })();
 
-console.log(`OK — 8 denah Sesi 1, semua berkas ada, ${terpakai.size} agenda ziarah tertaut ke denah yang benar.`);
-console.log('   Rundown dirender ulang: 8 tombol denah + 8 tombol profil muncul.');
-for (const [i, list] of [...terpakai].sort((a, b) => a[0] - b[0])) {
-  console.log(`   ${denah.sesi1[i].no}. ${denah.sesi1[i].judul}  <-  ${list.join(' ; ')}`);
+console.log(`OK — ${denah.sesi1.length} denah Sesi 1 + ${denah.sesi2.length} denah Sesi 2, semua berkas ada dan tertaut.`);
+for (const sesi of ['sesi1', 'sesi2']) {
+  console.log(`   [${sesi}]`);
+  for (const [i, list] of [...tertaut[sesi]].sort((a, b) => a[0] - b[0])) {
+    console.log(`   ${denah[sesi][i].no}. ${denah[sesi][i].judul}  <-  ${list.join(' ; ')}`);
+  }
 }

@@ -144,6 +144,120 @@ window.DENAH = {
       ]
     }
   ],
-  "sesi2": [],
+  "sesi2": [
+    {
+      "no": 1,
+      "judul": "Makam Bung Karno",
+      "jam": "07.55 – 08.55",
+      "daerah": "Hari ke-1 · Blitar",
+      "slug": "bung-karno",
+      "cocok": [
+        "bung karno"
+      ]
+    },
+    {
+      "no": 2,
+      "judul": "Museum Mpu Tantular",
+      "jam": "14.40 – 15.40",
+      "daerah": "Hari ke-1 · Sidoarjo",
+      "slug": "mpu-tantular",
+      "cocok": [
+        "mpu tantular"
+      ]
+    },
+    {
+      "no": 3,
+      "judul": "Makam Wage Supratman",
+      "jam": "17.10 – 18.10",
+      "daerah": "Hari ke-1 · Surabaya",
+      "slug": "wage-supratman",
+      "cocok": [
+        "supratman"
+      ]
+    },
+    {
+      "no": 4,
+      "judul": "Makam Sunan Ampel",
+      "jam": "19.10 – 19.40",
+      "daerah": "Hari ke-1 · Surabaya",
+      "slug": "sunan-ampel",
+      "cocok": [
+        "sunan ampel"
+      ]
+    },
+    {
+      "no": 5,
+      "judul": "Jalur Jalan Kaki: Hotel Khas Gresik – Sunan Gresik – Raden Santri",
+      "jam": "05.00 – 05.15",
+      "daerah": "Hari ke-2 · Gresik",
+      "slug": "jalan-kaki-gresik",
+      "cocok": [
+        "sunan gresik",
+        "raden santri"
+      ],
+      "aksi": "perjalanan menuju|jalan kaki"
+    },
+    {
+      "no": 6,
+      "judul": "Makam Sunan Gresik (Maulana Malik Ibrahim)",
+      "jam": "05.30 – 06.00",
+      "daerah": "Hari ke-2 · Gresik",
+      "slug": "sunan-gresik",
+      "cocok": [
+        "sunan gresik"
+      ]
+    },
+    {
+      "no": 7,
+      "judul": "Makam Raden Santri (Sayyid Ali Murtadlo)",
+      "jam": "06.20 – 06.50",
+      "daerah": "Hari ke-2 · Gresik",
+      "slug": "raden-santri",
+      "cocok": [
+        "raden santri"
+      ]
+    },
+    {
+      "no": 8,
+      "judul": "Makam Sunan Deket",
+      "jam": "09.25 – 09.55",
+      "daerah": "Hari ke-2 · Lamongan",
+      "slug": "sunan-deket",
+      "cocok": [
+        "sunan deket"
+      ]
+    },
+    {
+      "no": 9,
+      "judul": "Makam Sunan Drajat",
+      "jam": "11.10 – 11.40",
+      "daerah": "Hari ke-2 · Lamongan",
+      "slug": "sunan-drajat",
+      "cocok": [
+        "sunan drajat"
+      ]
+    },
+    {
+      "no": 10,
+      "judul": "Makam Maulana Ibrahim Asmoroqondi",
+      "jam": "13.15 – 13.45",
+      "daerah": "Hari ke-2 · Tuban",
+      "slug": "asmoroqondi",
+      "cocok": [
+        "asmorokondi",
+        "asmoroqondi"
+      ]
+    },
+    {
+      "no": 11,
+      "judul": "Makam Sunan Bonang",
+      "jam": "16.15 – 16.45",
+      "daerah": "Hari ke-2 · Tuban",
+      "slug": "sunan-bonang",
+      "cocok": [
+        "sunan bonang"
+      ]
+    }
+  ],
   "sesi3": []
 };

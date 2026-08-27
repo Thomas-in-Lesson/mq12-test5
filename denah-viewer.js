@@ -332,8 +332,10 @@
   function tautanUntuk(sesi, teksAgenda) {
     var daftar = D[sesi] || [];
     var t = String(teksAgenda || '').toLowerCase();
-    if (!/ziaro|ziarah/.test(t)) return '';
     for (var i = 0; i < daftar.length; i++) {
+      // Baris perjalanan tidak diberi tautan, kecuali denahnya memang denah
+      // jalur — denah seperti itu menyebut sendiri kata kuncinya lewat "aksi".
+      if (!new RegExp(daftar[i].aksi || 'ziaro|ziarah|observasi').test(t)) continue;
       var cocok = daftar[i].cocok || [];
       for (var j = 0; j < cocok.length; j++) {
         if (t.indexOf(cocok[j]) >= 0) {

@@ -2,7 +2,8 @@
 """Siapkan denah lokasi ziarah untuk web: kompres gambar + tulis denah-data.js.
 
 Jalankan: python3 tools/build_denah.py
-Sumber  : ~/Documents/#Experiment/Denah-sesi1/ , Denah-sesi2/ , Denah-sesi3/
+Sumber  : ~/Documents/#Experiment/Denah-sesi<N>/ — ejaan folder bebas
+          ("Denah Sesi 2", "denah_sesi2", dst. semuanya dikenali)
 Hasil   : denah/sesi<N>/<slug>.webp|.jpg (+ -kecil untuk daftar), denah-data.js
 
 Berkas aslinya ~1,8 MB per denah (3754x2390). Untuk dipakai di HP itu terlalu
@@ -55,7 +56,29 @@ SESI1 = {
     'Denah Imam Dzipuro.jpg': (7, 'Makam Syekh Imam Puro', '17.05 – 17.35', 'Kuncung', 'imam-puro', ['dzipuro', 'imam puro']),
     'Denah Jumadil Kubro.jpg': (8, 'Makam Syekh Jumadil Kubro', '19.00 – 19.30', 'Mojokerto', 'jumadil-kubro', ['jumadil']),
 }
-META = {'sesi1': SESI1, 'sesi2': {}, 'sesi3': {}}
+# Sesi 2: urutan mengikuti rundown, bukan nomor yang tertulis di berkas panitia
+# (di sana Sunan Ampel bernomor 11 tapi diziarahi sesudah Wage Supratman).
+# Jam dan daerah disalin apa adanya dari agenda rundown Sesi 2.
+# Unsur ke-7 "aksi" hanya untuk denah jalur: baris agendanya bukan "Ziarah ...",
+# jadi kata kuncinya disebut sendiri di sini.
+SESI2 = {
+    'Bung Karno.jpg': (1, 'Makam Bung Karno', '07.55 – 08.55', 'Hari ke-1 · Blitar', 'bung-karno', ['bung karno']),
+    'Museum Mpu Tantular.jpg': (2, 'Museum Mpu Tantular', '14.40 – 15.40', 'Hari ke-1 · Sidoarjo', 'mpu-tantular', ['mpu tantular']),
+    'Wage Supratman.jpg': (3, 'Makam Wage Supratman', '17.10 – 18.10', 'Hari ke-1 · Surabaya', 'wage-supratman', ['supratman']),
+    'Sunan Ampel.jpg': (4, 'Makam Sunan Ampel', '19.10 – 19.40', 'Hari ke-1 · Surabaya', 'sunan-ampel', ['sunan ampel']),
+    'Yang ini masukno di perjalanan menuju sunan gresik.jpg': (
+        5, 'Jalur Jalan Kaki: Hotel Khas Gresik – Sunan Gresik – Raden Santri',
+        '05.00 – 05.15', 'Hari ke-2 · Gresik', 'jalan-kaki-gresik',
+        ['sunan gresik', 'raden santri'], 'perjalanan menuju|jalan kaki'),
+    'Maulana Malik Ibrahim.jpg': (6, 'Makam Sunan Gresik (Maulana Malik Ibrahim)', '05.30 – 06.00', 'Hari ke-2 · Gresik', 'sunan-gresik', ['sunan gresik']),
+    'Raden Satri.jpg': (7, 'Makam Raden Santri (Sayyid Ali Murtadlo)', '06.20 – 06.50', 'Hari ke-2 · Gresik', 'raden-santri', ['raden santri']),
+    'Sunan Deket.jpg': (8, 'Makam Sunan Deket', '09.25 – 09.55', 'Hari ke-2 · Lamongan', 'sunan-deket', ['sunan deket']),
+    'Sunan Drajat.jpg': (9, 'Makam Sunan Drajat', '11.10 – 11.40', 'Hari ke-2 · Lamongan', 'sunan-drajat', ['sunan drajat']),
+    'Ibrohim Asmoroqondi.jpg': (10, 'Makam Maulana Ibrahim Asmoroqondi', '13.15 – 13.45', 'Hari ke-2 · Tuban', 'asmoroqondi', ['asmorokondi', 'asmoroqondi']),
+    'Sunan Bonang.jpg': (11, 'Makam Sunan Bonang', '16.15 – 16.45', 'Hari ke-2 · Tuban', 'sunan-bonang', ['sunan bonang']),
+}
+
+META = {'sesi1': SESI1, 'sesi2': SESI2, 'sesi3': {}}
 
 
 def slug_dari(nama):
@@ -72,11 +95,21 @@ def simpan(im, path_dasar, lebar, mutu, lebar_jpg=None):
     return os.path.getsize(path_dasar + '.webp'), os.path.getsize(path_dasar + '.jpg')
 
 
+def folder_sesi(sesi):
+    """Cari folder sumber tanpa mempermasalahkan spasi, garis, atau huruf besar."""
+    pola = re.compile(r'denah[\s_-]*sesi[\s_-]*' + sesi[-1] + r'$', re.I)
+    for nama in sorted(os.listdir(SUMBER)):
+        if pola.match(nama.strip()) and os.path.isdir(os.path.join(SUMBER, nama)):
+            return os.path.join(SUMBER, nama)
+    return None
+
+
 def olah(sesi):
-    folder = os.path.join(SUMBER, f'Denah-{sesi}')
-    if not os.path.isdir(folder):
+    folder = folder_sesi(sesi)
+    if not folder:
         print(f'{sesi}: folder belum ada, dilewati')
         return []
+    print(f'{sesi}: sumber {os.path.relpath(folder, SUMBER)}')
 
     keluar = os.path.join(TUJUAN, sesi)
     os.makedirs(keluar, exist_ok=True)
@@ -87,10 +120,16 @@ def olah(sesi):
         if not nama.lower().endswith(('.jpg', '.jpeg', '.png')):
             continue
         info = meta.get(nama)
+        aksi = ''
         if info:
-            no, judul, jam, daerah, slug, cocok = info
+            no, judul, jam, daerah, slug, cocok, *sisa = info
+            aksi = sisa[0] if sisa else ''
+        elif meta:
+            # Sesi ini sudah punya tabel, jadi berkas asing berarti namanya
+            # berubah — lebih baik berhenti daripada memasang label asal.
+            raise SystemExit(f'{sesi}: berkas di luar tabel: {nama!r}')
         else:
-            # Sesi 2 & 3 belum punya tabel; pakai nama berkas apa adanya.
+            # Sesi tanpa tabel; pakai nama berkas apa adanya.
             no, judul, jam, daerah = len(hasil) + 1, os.path.splitext(nama)[0], '', ''
             slug, cocok = slug_dari(nama), []
 
@@ -99,8 +138,11 @@ def olah(sesi):
         w2, j2 = simpan(im, os.path.join(keluar, slug + '-kecil'), LEBAR_KECIL, MUTU_KECIL)
         total += w1 + w2
 
-        hasil.append({'no': no, 'judul': judul, 'jam': jam, 'daerah': daerah,
-                      'slug': slug, 'cocok': cocok})
+        butir = {'no': no, 'judul': judul, 'jam': jam, 'daerah': daerah,
+                 'slug': slug, 'cocok': cocok}
+        if aksi:
+            butir['aksi'] = aksi
+        hasil.append(butir)
         print(f'  {no}. {judul[:46]:46s} {w1/1024:5.0f} KB  (cadangan jpg {j1/1024:.0f} KB)')
 
     hasil.sort(key=lambda x: x['no'])
