@@ -25,21 +25,26 @@ eval(baca('profil-data.js'));
 eval(baca('denah-viewer.js'));
 const V = global.window.DenahViewer;
 
-// Profil singkat: tiap lokasi Sesi 1 harus punya tokoh, dan slug-nya wajib sama
-// dengan slug denah supaya keduanya menempel ke lokasi yang benar.
+// Profil singkat: tiap lokasi berprofil slug-nya wajib sama dengan slug denah
+// supaya keduanya menempel ke lokasi yang benar. Sesi 2 punya 10 profil untuk
+// 11 denah — denah jalur jalan kaki Gresik memang bukan tokoh.
+const PROFIL_HARAP = { sesi1: 8, sesi2: 10 };
 {
   const profil = global.window.PROFIL;
-  const slugDenah = new Set(global.window.DENAH.sesi1.map((d) => d.slug));
-  assert.ok(profil && profil.sesi1, 'profil-data.js tidak memuat sesi1');
-  assert.strictEqual(profil.sesi1.length, 8, `lokasi berprofil: ${profil.sesi1.length}, seharusnya 8`);
-  for (const lok of profil.sesi1) {
-    assert.ok(slugDenah.has(lok.slug), `slug profil tidak dikenal di denah: ${lok.slug}`);
-    assert.ok(lok.tokoh.length, `lokasi tanpa tokoh: ${lok.slug}`);
-    for (const t of lok.tokoh) {
-      assert.ok(t.nama && t.paragraf.length, `profil kosong: ${lok.slug}`);
-      for (const p of t.paragraf) {
-        assert.ok(p.length > 20, `paragraf terpotong di ${lok.slug}: ${p}`);
-        assert.ok(!/\s$/.test(p), `paragraf berakhir menggantung di ${lok.slug}`);
+  for (const [sesi, jumlah] of Object.entries(PROFIL_HARAP)) {
+    const slugDenah = new Set(global.window.DENAH[sesi].map((d) => d.slug));
+    assert.ok(profil && profil[sesi], `profil-data.js tidak memuat ${sesi}`);
+    assert.strictEqual(profil[sesi].length, jumlah,
+      `${sesi}: lokasi berprofil ${profil[sesi].length}, seharusnya ${jumlah}`);
+    for (const lok of profil[sesi]) {
+      assert.ok(slugDenah.has(lok.slug), `${sesi}: slug profil tidak dikenal di denah: ${lok.slug}`);
+      assert.ok(lok.tokoh.length, `${sesi}: lokasi tanpa tokoh: ${lok.slug}`);
+      for (const t of lok.tokoh) {
+        assert.ok(t.nama && t.paragraf.length, `${sesi}: profil kosong: ${lok.slug}`);
+        for (const p of t.paragraf) {
+          assert.ok(p.length > 20, `${sesi}: paragraf terpotong di ${lok.slug}: ${p}`);
+          assert.ok(!/\s$/.test(p), `${sesi}: paragraf berakhir menggantung di ${lok.slug}`);
+        }
       }
     }
   }
@@ -163,13 +168,20 @@ assert.ok(/\n\s*tampilkanDenah\('sesi1'\);/.test(baca('peta_safari_hwmi_mq_12/co
   // Sesi 2 baru terender setelah tabnya ditekan; jumlahnya = baris agenda yang
   // bertautan, bukan jumlah denah, karena denah jalur dipakai oleh dua baris.
   ctx.pilihSesi('sesi2');
-  const barisSesi2 = [...tertaut.sesi2.values()].reduce((n, l) => n + l.length, 0);
+  const berprofil = new Set(global.window.PROFIL.sesi2.map((l) => l.slug));
+  let barisSesi2 = 0, barisProfil = 0;
+  for (const [i, list] of tertaut.sesi2) {
+    barisSesi2 += list.length;
+    if (berprofil.has(denah.sesi2[i].slug)) barisProfil += list.length;
+  }
   assert.strictEqual(hitung(/Lihat denah lokasi/g), barisSesi2,
     `tombol denah Sesi 2 tidak ${barisSesi2}`);
-  assert.strictEqual(hitung(/Profil singkat/g), 0, 'Sesi 2 belum punya profil tokoh');
+  assert.strictEqual(hitung(/Profil singkat/g), barisProfil,
+    `tombol profil Sesi 2 tidak ${barisProfil}`);
 })();
 
 console.log(`OK — ${denah.sesi1.length} denah Sesi 1 + ${denah.sesi2.length} denah Sesi 2, semua berkas ada dan tertaut.`);
+console.log(`   Profil singkat: ${PROFIL_HARAP.sesi1} lokasi Sesi 1, ${PROFIL_HARAP.sesi2} lokasi Sesi 2.`);
 for (const sesi of ['sesi1', 'sesi2']) {
   console.log(`   [${sesi}]`);
   for (const [i, list] of [...tertaut[sesi]].sort((a, b) => a[0] - b[0])) {

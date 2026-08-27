@@ -1,25 +1,34 @@
 #!/usr/bin/env python3
-"""Ambil profil singkat tokoh tiap lokasi ziarah dari PDF panitia.
+"""Ambil profil singkat tokoh tiap lokasi ziarah dari berkas panitia.
 
-Jalankan: python3 tools/build_profil.py [file.pdf] [sesi]
-Default : ~/Documents/#Experiment/Profil Singkat Sesi 1.pdf , sesi1
+Jalankan: python3 tools/build_profil.py [berkas] [sesi]
+Default : berkas bawaan sesi yang diminta (lihat SUMBER), sesi1
 Hasil   : profil-data.js
 
-PDF-nya tidak memakai baris kosong antarparagraf, jadi batas paragraf dikenali
-dari jarak vertikal antarbaris (24pt di dalam paragraf, ~39pt antarparagraf) dan
-judul dikenali dari ukuran fontnya (25.9pt vs 16pt isi).
+Sesi 1 datang sebagai PDF: tidak memakai baris kosong antarparagraf, jadi batas
+paragraf dikenali dari jarak vertikal antarbaris (24pt di dalam paragraf, ~39pt
+antarparagraf) dan judul dari ukuran fontnya (25.9pt vs 16pt isi).
+
+Sesi 2 datang sebagai .docx: paragrafnya sudah eksplisit, tapi gaya judulnya
+campur (List Paragraph, Normal (Web), polos), jadi judul dikenali dari isinya
+lewat tabel PETA di bawah — bukan dari gayanya.
 """
 
 import json
 import os
 import re
 import sys
+import zipfile
+from xml.etree import ElementTree as ET
 
 import pypdf
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_JS = os.path.join(REPO, 'profil-data.js')
-DEFAULT_PDF = os.path.expanduser('~/Documents/#Experiment/Profil Singkat Sesi 1.pdf')
+SUMBER = {
+    'sesi1': os.path.expanduser('~/Documents/#Experiment/Profil Singkat Sesi 1.pdf'),
+    'sesi2': os.path.expanduser('~/Documents/#Experiment/Profil Singkat Sesi 2.docx'),
+}
 
 UKURAN_JUDUL = 20      # apa pun di atas ini dianggap judul
 JARAK_PARAGRAF = 30    # lompatan vertikal yang menandai paragraf baru
@@ -27,7 +36,7 @@ JARAK_PARAGRAF = 30    # lompatan vertikal yang menandai paragraf baru
 # Judul di PDF -> lokasi ziarah. Slug-nya sengaja disamakan dengan yang dipakai
 # tools/build_denah.py supaya profil dan denah menempel ke lokasi yang sama.
 # Satu lokasi boleh punya lebih dari satu tokoh (Bp. Sumadji & Bp. Salamun).
-PETA_JUDUL = {
+PETA_S1 = {
     'KYAI ACHMAD SYUHADA': ('syuhada', 'Kyai Ahmad Syuhada’'),
     'KYAI ACHMAD SANUSI': ('sanusi', 'Kyai Ahmad Sanusi Tamriz Abdul Ghofar'),
     'KYAI ACHMAD ZAMROZI': ('zamrozi', 'Kyai Ahmad Zamrozi'),
@@ -38,6 +47,22 @@ PETA_JUDUL = {
     'SYEIKH IMAM DZIPURO': ('imam-puro', 'Syekh Imam Dzipuro'),
     'SYEIKH JUMADIL KUBRO': ('jumadil-kubro', 'Syekh Jumadil Kubro'),
 }
+# Slug disamakan dengan tools/build_denah.py; denah jalur jalan kaki Gresik
+# memang tidak punya tokoh, jadi tidak ada di sini.
+PETA_S2 = {
+    'MUSEUM NEGERI MPU TANTULAR': ('mpu-tantular', 'Museum Negeri Mpu Tantular'),
+    'SUNAN AMPEL': ('sunan-ampel', 'Sunan Ampel'),
+    'RADEN SANTRI': ('raden-santri', 'Raden Santri'),
+    'SUNAN DRAJAT': ('sunan-drajat', 'Sunan Drajat'),
+    'SUNAN BONANG': ('sunan-bonang', 'Sunan Bonang'),
+    'SUNAN GRESIK': ('sunan-gresik', 'Sunan Gresik'),
+    'WAGE SUPRATMAN': ('wage-supratman', 'Wage Supratman'),
+    'SUNAN DEKET': ('sunan-deket', 'Sunan Deket'),
+    'BUNG KARNO': ('bung-karno', 'Bung Karno'),
+    'IBRAHIM ASMORO QONDI': ('asmoroqondi', 'Syekh Maulana Ibrahim Asmoroqondi'),
+}
+
+PETA = {'sesi1': PETA_S1, 'sesi2': PETA_S2, 'sesi3': {}}
 ABAIKAN = {'PROFIL SINGKAT SESI 1', 'PROFIL SINGKAT SESI 2', 'PROFIL SINGKAT SESI 3'}
 
 
@@ -63,7 +88,7 @@ def potongan(pdf_path):
     return hasil
 
 
-def parse(pdf_path):
+def parse(pdf_path, peta):
     tokoh, sekarang, paragraf = [], None, []
 
     def tutup():
@@ -81,7 +106,7 @@ def parse(pdf_path):
             if kunci in ABAIKAN:
                 sekarang = None
                 continue
-            info = PETA_JUDUL.get(kunci)
+            info = peta.get(kunci)
             if not info:
                 print(f'  ! judul tidak dikenal, dilewati: {teks!r}')
                 sekarang = None
@@ -108,9 +133,42 @@ def parse(pdf_path):
     return tokoh
 
 
+W = '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}'
+
+
+def parse_docx(path, peta):
+    with zipfile.ZipFile(path) as z:
+        akar = ET.fromstring(z.read('word/document.xml'))
+
+    tokoh, sekarang = [], None
+    for p in akar.iter(W + 'p'):
+        teks = re.sub(r'\s+', ' ', ''.join(t.text or '' for t in p.iter(W + 't'))).strip()
+        if not teks or teks.upper() in ABAIKAN:
+            continue
+
+        info = peta.get(teks.upper())
+        if info:
+            sekarang = {'slug': info[0], 'nama': info[1], 'paragraf': []}
+            tokoh.append(sekarang)
+            continue
+
+        # Baris pendek tanpa titik penutup biasanya judul. Kalau tidak ada di
+        # tabel ia tetap dipakai sebagai isi — lebih baik salah tempat dan
+        # kelihatan daripada hilang diam-diam — tapi diberitahukan.
+        if len(teks) < 45 and not teks.endswith('.'):
+            print(f'  ! judul tidak dikenal, dipakai sebagai isi: {teks!r}')
+        if sekarang is None:
+            print(f'  ! teks sebelum judul pertama, dilewati: {teks[:60]!r}')
+            continue
+        sekarang['paragraf'].append(teks)
+    return tokoh
+
+
 def main():
-    pdf = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_PDF
     sesi = sys.argv[2] if len(sys.argv) > 2 else 'sesi1'
+    berkas = sys.argv[1] if len(sys.argv) > 1 else SUMBER.get(sesi, '')
+    if not os.path.exists(berkas):
+        raise SystemExit(f'{sesi}: berkas sumber tidak ada: {berkas}')
 
     data = {}
     if os.path.exists(DATA_JS):
@@ -122,7 +180,8 @@ def main():
 
     # Kelompokkan per lokasi, urut sesuai kemunculan di dokumen.
     per_lokasi, urutan = {}, []
-    for t in parse(pdf):
+    baca = parse_docx if berkas.lower().endswith('.docx') else parse
+    for t in baca(berkas, PETA[sesi]):
         if t['slug'] not in per_lokasi:
             per_lokasi[t['slug']] = []
             urutan.append(t['slug'])
