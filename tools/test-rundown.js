@@ -100,7 +100,33 @@ for (const [sesi, isi] of Object.entries(rundownData)) {
 assert.ok(pengecualian * 3 < tagLama,
   `pengecualian terlalu banyak (${pengecualian} dari ${tagLama} tag) — pemindahan ke kepala kartu jadi tidak ada gunanya`);
 
+// Kolom CSV panitia berpindah-pindah, dan build_rundown_csv.py memetakannya
+// lewat baris header. Kalau pemetaan itu meleset satu kolom, isinya bergeser
+// tanpa satu pun error: nama imam berisi seragam, atau sebaliknya. Dua
+// pemeriksaan di bawah inilah yang jadi rem-nya.
+let jumlahImam = 0;
+for (const [sesi, isi] of Object.entries(rundownData)) {
+  for (const h of isi.hari) {
+    for (const a of h.agenda) {
+      if (!a.imam) continue;
+      jumlahImam += 1;
+      assert.ok(/^(Bapak|Bpk|Ibu)\b/.test(a.imam),
+        `${sesi} ${h.label} "${a.agenda}": jadwal imam bukan nama orang: ${a.imam}`);
+    }
+  }
+}
+assert.ok(jumlahImam > 20, `jadwal imam cuma ${jumlahImam} baris — kolomnya kemungkinan tidak terbaca`);
+
+// Peran mini ceremony datang dari kolom tanpa judul di ujung baris; kalau kolom
+// itu ikut hilang, catatannya lenyap diam-diam.
+const peran = rundownData.sesi3.hari.flatMap((h) => h.agenda).filter((a) => a.catatan);
+assert.strictEqual(peran.length, 8, `catatan peran mini ceremony: ${peran.length}, seharusnya 8`);
+assert.ok(peran.some((a) => /Dirigen/.test(a.catatan)), 'catatan Dirigen hilang');
+
+assert.ok(html.includes('`Imam: ${a.imam}`'), 'halaman tidak lagi menampilkan jadwal imam');
+
 console.log(`OK — perbandingan seragam (${SAMA.length} sama, ${BEDA.length} beda), seragam baku, `
   + 'dan peringkasan tanggal semua lolos.');
+console.log(`   Jadwal imam: ${jumlahImam} baris, semuanya nama orang. Peran mini ceremony: ${peran.length}.`);
 console.log(`   ${hari} kartu hari: tag seragam turun dari ${tagLama} menjadi ${pengecualian} pengecualian `
   + `+ ${hari * 2} chip di kepala kartu.`);
