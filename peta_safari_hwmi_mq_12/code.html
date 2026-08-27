@@ -205,6 +205,8 @@
         <span>SESI 3</span><span class="soon">Segera</span>
       </button>
     </div>
+    <!-- Baris tab hari, hanya muncul untuk sesi yang petanya terpisah per hari -->
+    <div id="hari-tabs" class="sesi-tabs" style="display:none;margin-top:6px"></div>
   </section>
 
   <!-- Kanvas Peta -->
@@ -212,7 +214,7 @@
 
     <div class="map-bar">
       <h2 id="sesi-map-title">Rute Safari Sesi 1</h2>
-      <a id="btn-open-maps" class="map-open" href="https://www.google.com/maps/d/edit?mid=1Ph0Sufcfky7gAJNmb0r8O_82phz4W3M&usp=sharing" target="_blank" rel="noopener">
+      <a id="btn-open-maps" class="map-open" href="https://www.google.com/maps/d/viewer?mid=1Ph0Sufcfky7gAJNmb0r8O_82phz4W3M&usp=sharing" target="_blank" rel="noopener">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="#E0B863" aria-hidden="true"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
         <span>Maps App</span>
       </a>
@@ -246,18 +248,32 @@
     sesi1: {
       title: "Rute Safari Sesi 1",
       embedUrl: "https://www.google.com/maps/d/embed?mid=1Ph0Sufcfky7gAJNmb0r8O_82phz4W3M",
-      mapsUrl: "https://www.google.com/maps/d/edit?mid=1Ph0Sufcfky7gAJNmb0r8O_82phz4W3M&usp=sharing",
+      mapsUrl: "https://www.google.com/maps/d/viewer?mid=1Ph0Sufcfky7gAJNmb0r8O_82phz4W3M&usp=sharing",
       active: true
     },
     sesi2: {
-      // Peta kiriman panitia berjudul "RUTE SAFARI SESI 2 DAY 2" dan isinya
-      // memang hanya Hari ke-2 (Hotel Khas Gresik - Sunan Gresik - Raden
-      // Santri - Sunan Deket - Drajat - Asmoroqondi - Bonang - Pesantren).
-      // Kalau peta Hari ke-1 sudah ada, tambahkan di sini.
-      title: "Rute Safari Sesi 2 (Hari ke-2)",
-      embedUrl: "https://www.google.com/maps/d/embed?mid=1zIONnluRZyV8vlodsFi1In8MgTgylmk",
-      mapsUrl: "https://www.google.com/maps/d/viewer?mid=1zIONnluRZyV8vlodsFi1In8MgTgylmk&usp=sharing",
-      active: true
+      // Panitia mengirim dua peta terpisah, satu per hari, jadi sesi ini
+      // memakai "days" dan halaman menampilkan baris tab hari.
+      title: "Rute Safari Sesi 2",
+      active: true,
+      days: [
+        {
+          // "RUTE SAFARI SESI 2 DAY 1": Lapangan Garuda - Makam Bung Karno -
+          // Museum Mpu Tantular - Makam WR Supratman - Sunan Ampel - Khas Hotel Gresik.
+          label: "HARI KE-1",
+          title: "Rute Safari Sesi 2 (Hari ke-1)",
+          embedUrl: "https://www.google.com/maps/d/embed?mid=1rETsyfIuwqunh7b0BPAx_p-7pgVGztE",
+          mapsUrl: "https://www.google.com/maps/d/viewer?mid=1rETsyfIuwqunh7b0BPAx_p-7pgVGztE&usp=sharing"
+        },
+        {
+          // "RUTE SAFARI SESI 2 DAY 2": Hotel Khas Gresik - Sunan Gresik -
+          // Raden Santri - Sunan Deket - Drajat - Asmoroqondi - Bonang - Pesantren.
+          label: "HARI KE-2",
+          title: "Rute Safari Sesi 2 (Hari ke-2)",
+          embedUrl: "https://www.google.com/maps/d/embed?mid=1zIONnluRZyV8vlodsFi1In8MgTgylmk",
+          mapsUrl: "https://www.google.com/maps/d/viewer?mid=1zIONnluRZyV8vlodsFi1In8MgTgylmk&usp=sharing"
+        }
+      ]
     },
     sesi3: {
       title: "Rute Safari Sesi 3",
@@ -280,7 +296,7 @@
     document.getElementById('denah-isi').innerHTML = DenahViewer.daftarHTML(sesiKey);
   }
 
-  function switchSesi(sesiKey) {
+  function switchSesi(sesiKey, hariIdx) {
     const data = sesiMapData[sesiKey];
     if (!data) return;
 
@@ -289,15 +305,29 @@
       if (btn) btn.classList.toggle('is-active', k === sesiKey);
     });
 
-    document.getElementById('sesi-map-title').textContent = data.title;
     tampilkanDenah(sesiKey);
     const btnOpenMaps = document.getElementById('btn-open-maps');
     const container = document.getElementById('map-container');
+    const barisHari = document.getElementById('hari-tabs');
+
+    // Sesi tanpa "days" diperlakukan sebagai satu hari, jadi barisnya disembunyikan.
+    const hari = data.days || [data];
+    const idx = hari[hariIdx] ? hariIdx : 0;
+    const aktif = hari[idx];
+
+    barisHari.style.display = hari.length > 1 ? '' : 'none';
+    barisHari.style.gridTemplateColumns = 'repeat(' + hari.length + ', 1fr)';
+    barisHari.innerHTML = hari.length > 1 ? hari.map(function (h, i) {
+      return '<button type="button" class="sesi-tab' + (i === idx ? ' is-active' : '') +
+        '" onclick="switchSesi(\'' + sesiKey + '\', ' + i + ')"><span>' + h.label + '</span></button>';
+    }).join('') : '';
+
+    document.getElementById('sesi-map-title').textContent = aktif.title;
 
     if (data.active) {
       btnOpenMaps.style.display = 'inline-flex';
-      btnOpenMaps.href = data.mapsUrl;
-      container.innerHTML = '<iframe id="map-iframe" src="' + data.embedUrl + '" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="' + data.title + '"></iframe>';
+      btnOpenMaps.href = aktif.mapsUrl;
+      container.innerHTML = '<iframe id="map-iframe" src="' + aktif.embedUrl + '" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="' + aktif.title + '"></iframe>';
     } else {
       btnOpenMaps.style.display = 'none';
       container.innerHTML =
