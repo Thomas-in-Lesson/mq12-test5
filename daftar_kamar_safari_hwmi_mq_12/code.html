@@ -38,6 +38,10 @@
     }
     #hotel-tabs::-webkit-scrollbar { display: none; }
   }
+  /* Tab "Semua Kota" merender 523 kartu sekaligus. content-visibility membuat
+     peramban melewati tata letak kartu yang belum kelihatan; contain-intrinsic-size
+     menahan tinggi perkiraannya supaya bilah gulir tidak melompat-lompat. */
+  .room-card { content-visibility: auto; contain-intrinsic-size: auto 220px; }
 </style>
 </head>
 <body class="bg-background text-on-surface antialiased min-h-screen flex flex-col pb-24 md:pb-0">
@@ -4584,7 +4588,29 @@
       ]
     }
   };
-  let activeHotelKey = 'Semarang';
+  // '' berarti belum memilih kota: semua kota ditampilkan dan pencarian
+  // menjangkau semuanya. Begitu satu kota dipilih, pencarian ikut menyempit ke
+  // kota itu — peserta yang sedang melihat Solo tidak mau hasil dari Jakarta.
+  const SEMUA = '';
+  let activeHotelKey = SEMUA;
+
+  // Dipisah dari perendernya supaya bisa diuji tanpa DOM (tools/test-kamar.js).
+  function kamarTerpilih(data, kotaAktif, query) {
+    const q = String(query || '').toLowerCase().trim();
+    const kota = kotaAktif ? [kotaAktif] : Object.keys(data);
+    const hasil = [];
+    for (const kKey of kota) {
+      const hotel = data[kKey];
+      if (!hotel) continue;
+      for (const room of hotel.rooms || []) {
+        if (q && !(String(room.roomNo).toLowerCase().includes(q)
+          || String(room.type).toLowerCase().includes(q)
+          || (room.occupants || []).some((n) => String(n).toLowerCase().includes(q)))) continue;
+        hasil.push({ kota: kKey, hotel: hotel.name, room });
+      }
+    }
+    return hasil;
+  }
 
   const hotelTabsContainer = document.getElementById('hotel-tabs');
   const activeHotelName = document.getElementById('active-hotel-name');
@@ -4594,7 +4620,7 @@
 
   function renderTabs() {
     hotelTabsContainer.innerHTML = '';
-    Object.keys(hotelsData).forEach(key => {
+    [SEMUA, ...Object.keys(hotelsData)].forEach(key => {
       const btn = document.createElement('button');
       btn.type = 'button';
       const isActive = key === activeHotelKey;
@@ -4603,7 +4629,9 @@
           ? 'bg-secondary text-surface-container-lowest border-secondary shadow-md scale-105' 
           : 'bg-surface-container text-on-surface-variant border-outline-variant/30 hover:border-secondary/50'
       }`;
-      btn.innerHTML = `<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">location_city</span>${key}</span>`;
+      btn.innerHTML = key === SEMUA
+        ? `<span class="flex items-center gap-1.5"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M4 4h6v6H4V4zm10 0h6v6h-6V4zM4 14h6v6H4v-6zm10 0h6v6h-6v-6z"/></svg>Semua Kota</span>`
+        : `<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">location_city</span>${key}</span>`;
       btn.addEventListener('click', () => {
         activeHotelKey = key;
         searchInput.value = '';
@@ -4624,36 +4652,21 @@
   function renderRooms(query = '') {
     roomGrid.innerHTML = '';
     const q = query.toLowerCase().trim();
-    let totalDisplayed = 0;
+    const hasil = kamarTerpilih(hotelsData, activeHotelKey, q);
+    const totalDisplayed = hasil.length;
+    const namaKota = activeHotelKey ? hotelsData[activeHotelKey].name : 'Semua Kota';
 
     if (q !== '') {
-      // Search across ALL hotels if query exists
-      activeHotelName.innerHTML = `<span class="material-symbols-outlined">search</span> Hasil Pencarian: "${query}"`;
-      Object.keys(hotelsData).forEach(hKey => {
-        const hotel = hotelsData[hKey];
-        hotel.rooms.forEach(room => {
-          const matchRoom = room.roomNo.toLowerCase().includes(q) || room.type.toLowerCase().includes(q);
-          const matchOccupants = room.occupants.some(name => name.toLowerCase().includes(q));
-          if (matchRoom || matchOccupants) {
-            totalDisplayed++;
-            roomGrid.appendChild(createRoomCard(room, hotel.name));
-          }
-        });
-      });
+      activeHotelName.innerHTML = `<span class="material-symbols-outlined">search</span> Hasil di ${namaKota}: "${query}"`;
       activeRoomCount.textContent = `${totalDisplayed} Kamar Ditemukan`;
     } else {
-      // Display active hotel rooms
-      const hotel = hotelsData[activeHotelKey];
-      activeHotelName.innerHTML = `<span class="material-symbols-outlined">hotel</span> ${hotel.name}`;
-      hotel.rooms.forEach(room => {
-        totalDisplayed++;
-        roomGrid.appendChild(createRoomCard(room, hotel.name));
-      });
+      activeHotelName.innerHTML = `<span class="material-symbols-outlined">hotel</span> ${namaKota}`;
       activeRoomCount.textContent = `${totalDisplayed} Kamar`;
     }
+    for (const h of hasil) roomGrid.appendChild(createRoomCard(h.room, h.hotel));
 
     if (totalDisplayed === 0) {
-      const activeHotel = q === '' ? hotelsData[activeHotelKey] : null;
+      const activeHotel = q === '' && activeHotelKey ? hotelsData[activeHotelKey] : null;
       if (activeHotel && activeHotel.note) {
         roomGrid.innerHTML = `<div class="col-span-full text-center py-12 text-on-surface-variant space-y-3 bg-surface-container-low rounded-xl border border-secondary/30 p-8 shadow-md">
           <svg class="w-12 h-12 text-secondary mx-auto fill-current" viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.6C.4 7 1 10 3 12c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.4-.4.4-1.1 0-1.4z"/></svg>
@@ -4663,7 +4676,8 @@
       } else {
         roomGrid.innerHTML = `<div class="col-span-full text-center py-12 text-on-surface-variant space-y-2">
           <svg class="w-12 h-12 text-secondary/50 mx-auto fill-current" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-          <p class="font-medium text-on-surface-variant">Tidak ada kamar atau nama peserta yang cocok dengan "${query}"</p>
+          <p class="font-medium text-on-surface-variant">Tidak ada kamar atau nama peserta yang cocok dengan "${query}"${activeHotelKey ? ` di ${activeHotelKey}` : ''}</p>
+          ${activeHotelKey ? `<button type="button" id="cari-semua-kota" style="margin-top:12px" class="px-4 py-2 min-h-[44px] rounded-full text-xs font-bold bg-secondary text-surface-container-lowest">Cari di semua kota</button>` : ''}
         </div>`;
       }
     }
@@ -4701,6 +4715,14 @@
 
   searchInput.addEventListener('input', (e) => {
     renderRooms(e.target.value);
+  });
+
+  // Tombolnya lahir ulang tiap render, jadi didengarkan lewat wadahnya.
+  roomGrid.addEventListener('click', (e) => {
+    if (!e.target.closest('#cari-semua-kota')) return;
+    activeHotelKey = SEMUA;
+    renderTabs();
+    renderRooms(searchInput.value);
   });
 
   function checkHashActiveHotel() {
