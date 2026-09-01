@@ -204,9 +204,8 @@ window.PROFIL = {
       "slug": "sunan-deket",
       "tokoh": [
         {
-          "nama": "Sunan Deket",
+          "nama": "Sunan Deket — Ulama’ Tashawuf yang Zuhud & Tawadhu",
           "paragraf": [
-            "Ulama’ Tashawuf yang Zuhud & Tawadhu",
             "Nama asli beliau adalah Raden Hisyamuddin. Lahir di Ampel Denta, Surabaya. Beliau merupakan putra dari Sunan Ampel dengan istri ketiganya yang berasal dari Lamongan. Langkah beliau menapak ke tanah Lamongan, menyebarkan risalah Islam dengan penuh kelembutan dan hikmah yang mendalam. Makam beliau berada di Desa Deket Wetan, Lamongan. Masa hidup beliau bersamaan dengan zaman penyebaran Islam oleh para Walisongo di sepanjang pesisir utara Pulau Jawa sekitar abad ke-15 hingga ke-16 Masehi."
           ]
         }
@@ -240,5 +239,255 @@ window.PROFIL = {
       ]
     }
   ],
-  "sesi3": []
+  "sesi3": [
+    {
+      "slug": "benteng-pendem",
+      "tokoh": [
+        {
+          "nama": "K.H Muhammad Nursalim",
+          "paragraf": [
+            "K.H. Muhammad Nursalim adalah tokoh pejuang Bangsa Indonesia, putra dari Kyai Maktub seorang Tumenggung Rojo Niti. K.H. Muhammad Nursalim termasuk salah satu pengikut Pangeran Diponegoro, meskipun Pangeran Diponegoro telah ditangkap oleh Belanda sekitar tahun 1830 – 1839 Masehi K.H. Muhammad Nursalim bersama pasukannya tetap dengan gigih melawan para penjajah di Ngawi, Jawa Timur, karena pada waktu itu Belanda menilai Ngawi sebagai tempat strategis untuk menguasai jalur perdagangan di wilayah Jawa Timur. Karena kuatnya K.H. Muhammad Nursalim beserta pasukannya sehingga membuat Belanda khawatir dan mulai menyusun strategi untuk menangkap K.H. Muhammad Nursalim. Setelah berhasil menangkap K.H. Muhammad Nursalim Belanda berusaha melenyapkannya dengan segala cara, di berondong peluru namun tidak ada satupun yang bersarang ditubuhnya, di siksa dengan senjata tajam dan pentungan namun tubuhnya tetap baik-baik saja. Akhirnya Belanda mempunyai strategi lain, yaitu tubuh K.H. Muhammd Nursalim diikat dengan tali kemudian di kubur hidup-hidup di dekat sel penjaranya (dekat bangunan kantor utama Benteng Van Den Bocsh),",
+            "dengan cara tersebutlah K.H. Muhammad Nursalim wafat. Sekarang ini Benteng tersebut menjadi destinasi wisata di Ngawi sekaligus menjadi saksi sejarah kegigihan sosok pejuang Bangsa K.H Muhammad Nursalim, dan saksi kekejaman Belanda."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "astana-mangadeg",
+      "tokoh": [
+        {
+          "nama": "RM Said (Pangeran Sambernyawa)",
+          "paragraf": [
+            "Kanjeng Gusti Pangeran Adipati Arya Mangkunegara I adalah pendiri Kadipaten Mangkunegaran, sebuah kadipaten di Surakarta, Jawa Tengah, dan Pahlawan Nasional Indonesia. Ayahnya bernama Pangeran Arya Mangkunagara dan ibunya bernama R.A. Wulan.",
+            "Beliau lahir pada Minggu Legi, 4 Sya’ban 1650 H/8 April 1725 M di Kartasura. Masa kecilnya sebagai pangeran yang tersisih dan penuh ketidak adilan karena kotornya politik keraton tidak mengkerdilkan karakter Pangeran Sambernyawa, justru dari kotornya kondisi politik yang dialami sejak kecil mencetak mentalitasnya sebagai pemimpin yang tangguh, hingga penjajah Belanda memberikan gelar Sambernyawa atas keganasannya menghabisi pasukan penjajah.",
+            "Beliau wafat pada 23 Desember 1795 M dan dimakamkan di Astana Mangadeg, Karanganyar.",
+            "Pangeran Sambernyawa dikenal sebagai ahli strategi perang yang memimpin pasukan melawan kekuatan Belanda VOC dan Kerajaan Mataram sampai tanggal 17 Maret 1757 M. Kemudian, beliau diberi gelar Adipati Arya Mangkunegara I."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "candi-prambanan",
+      "tokoh": [
+        {
+          "nama": "Candi Prambanan",
+          "paragraf": [
+            "Candi Prambanan merupakan candi Hindu yang terbesar di Indonesia. Sampai saat ini, belum dapat dipastikan kapan candi ini dibangun dan atas perintah siapa. Namun, kuat dugaan bahwa Candi Prambanan dibangun sekitar pertengahan abad ke-9 oleh raja dari Wangsa Sanjaya, yaitu Raja Balitung Maha Sambu.",
+            "Dugaan tersebut didasarkan pada isi Prasasti Syiwagrha yang ditemukan di sekitar Prambanan dan saat ini tersimpan di Museum Nasional di Jakarta. Prasasti berangka tahun 778 Saka (856 M) ini ditulis pada masa pemerintahan Rakai Pikatan.",
+            "Candi Prambanan mudah diakses karena terletak di Km 16 Jalan Raya Solo–Yogya, di sebelah utara jalan.",
+            "Candi Prambanan menunjukkan sebuah bukti adanya peradaban besar yang dimiliki oleh bangsa Indonesia pada waktu itu"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "jendral-sudirman",
+      "tokoh": [
+        {
+          "nama": "Jendral Sudirman",
+          "paragraf": [
+            "Akrab disapa Pak Dirman. Lahir pada tanggal 24 Januari 1916 di Purbalingga. Ia di adopsi oleh pamannya seorang priayi. Di didik dengan penuh kedisiplinan beribadah, belajar. Ia menjabat sebagai komandan Batalion PETA (Pembela Tanah Air). Dan terpilih menjadi Panglima Besar (Jendral Sudirman) dari TKR (Tentara Keamanan Rakyat) pada usia 29 tahun. Disebut sebagai pahlawan yang ikut terjun langsung dalam peperangan mempertahankan hak-hak Bangsa Indonesia dari penjajahan Belanda pada perang dunia II. Pada tahun 1950, ia wafat karena penyakit yang telah di deritanya sejak 1948. Kurang lebih 1 bulan beliau wafat setelah Belanda mengakui kemerdekaan Indonesia. Beliau ditetapkan sebagai Pahlawan Nasional karena perjuangannya dalam mengusir sekutu dan Belanda yang mencoba menguasai Indonesia pasca merdeka."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "hos-cokroaminoto",
+      "tokoh": [
+        {
+          "nama": "H.O.S Cokroaminoto",
+          "paragraf": [
+            "Cokroaminoto lahir dengan nama lengkap Raden Hadji Oemar Said Tjokroaminoto yang kemudian disingkat dengan HOS Cokroaminoto. Beliau lahir pada tanggal 16 Agustus 1882 di Ponorogo, Jawa Timur. Dan wafat pada tanggal 17 Desember 1934 dimakamkan di Taman Makam Pahlawan Pekuncen, Yogyakarta. HOS Cokroaminoto merupakan penerus Sarikat Islam yang didirikan oleh H.Samanhudi yang sebelumnya bernama sarekat dagang islam. Mbah Mu'thi adalah Pimpinan Sarekat islam Jombang. Jika HOS Corkroaminoto berkunjung ke jombang selalu bertemu dengan Mbah Mu'thi. Selama hidupnya, HOS Cokroaminoto sangat besar pengaruhnya bagi awal pergerakan kemerdekaan Indonesia dan juga bagi kaum pribumi kala itu hingga dijuluki raja jawa tanpa mahkota. Dan ditetapkan menjadi guru bangsa sebagai pahlawan nasional.",
+            "HOS Cokroaminoto wafat pada tanggal 17 Desember 1934 dan dimakamkan di Taman Makam Pahlawan Pekuncen, Yogyakarta. Hal menarik yang patut kita contoh dari HOS Cokroaminoto adalah pendidikan dan kritisnya memakai ideologi untuk melawan penjajahan kala itu dengan dasar pandangan semangat islam utamanya (Tasawuf) bagi pendidikan kita."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "masjid-syuhada",
+      "tokoh": [
+        {
+          "nama": "Masjid Syuhada’",
+          "paragraf": [
+            "Masjid Syuhada terletak di daerah Kota Baru, Daerah Istimewa Yogyakarta.Masjid yang dibangun pada tanggal 20 September 1952 ini adalah masjid pemberian Presiden Soekarno kepada para pejuang kemerdekaan yang bertempur di Yogyakarta.Sesuai dengan namanya, Syuhada, berarti pahlawan. Masjid ini didirikan sebagai monumen peringatan para pahlawan. Simbol nasionalisme tercermin dari 17 anak tangga, gapura masjid dengan segi delapan, kubah pertama berjumlah empat, dan kubah atas berjumlah lima. Dapat disimpulkan bahwa masjid ini adalah simbol kemerdekaan Bangsa Indonesia yakni 17 Agustus 1945. Selain itu masjid ini juga memiliki simbol religius yang khas. Terdapat 20 ventilasi di ruang bawah yang menandakan 20 sifat Allah SWT, enam jendela di tempat sholat pria sebagai simbol rukun iman, lima ventilasi di tempat khusus iman sebagai simbol hukum Islam, dan dua tiang penyangga di mushola putri sebagai simbol syahadat ain."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "jmyr-mungkid",
+      "tokoh": [
+        {
+          "nama": "Jami’atul Mudzakkirin Yarjuu Rocmatalloh II Shiddiqiyyah",
+          "paragraf": [
+            "Gedung Jami’atul Mudzakkirin Yarjuu Rocmatalloh Shiddiqiyyah yang kedua berada di Mungkid, Magelang, Jawa Tengah. Nama tempat ini diambil dari kitab karya Imam Ghozali, Al-Munqidzu Minad Dlolaal, yang berarti “bebas dari kesesatan”.",
+            "Bentuk bangunannya dibuat menyerupai Gedung Jami’atul Mudzakkirin Yarjuu Rocmatalloh Shiddiqiyyah yang pertama di Pusat, Losari, Ploso, Jombang, Jawa Timur.",
+            "Di sekitar gedung terdapat beberapa bangunan, yaitu Gapuro Nashrumminalloh, Monumen Chubbul Wathon Minal Iman, Air Mancur Maa’an Ghodaqo, Mushollah Taajul Mudzakkirin, Vila Al Munkidu Minaddlolaal, Pesantren Jati Diri Bangsa Merajut Perdamaian Nusantara, dan Gedung Ula. Seluruh bangunan tersebut berdiri di atas lahan seluas 5.302 meter persegi.",
+            "Untuk Jami’atul Mudzakkirin Yarjuu Rocmatalloh Shiddiqiyyah hanya ada dua titik tempat, yaitu di Losari, Ploso, Jombang, Jawa Timur, dan di Mungkid, Magelang, Jawa Tengah."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "stupa-borobudur",
+      "tokoh": [
+        {
+          "nama": "Stupa Borobudur",
+          "paragraf": [
+            "Stupa Borobudur adalah salah satu monumen agama Budha terbesar di dunia. Terletak di Magelang Jawa Tengah. Stupa adalah lambang Budha yang bentuknya menyerupai mangkuk terbalik. Bentuknya persegi empat atau persegi delapan biasa disebut harmika. Diatasnya terdapat tongkat pendek yang serupa. Stupa Borobudur berbentuk lonceng atau sering juga disebut genta.",
+            "Stupa Borobudur memiliki 72 buah pada tiga lantai teratas dengan stupa besar yang menjadi pusatnya. Semua stupa berlubang mempunyai rongga di dalamnya dan berisikan archa Budha. Stupa Borobudur merupakan sebuah gambaran dari alam semesta raya.",
+            "Menurut ajaran agama Budha, alam semesta ini digambarkan menjadi 3 bagian besar, yaitu Kamadhatu yang berada di bagian kaki Borobudur melambangkan tingkatan hidup yang baling bawah dimana seseorang masih dikuasai oleh nafsu (keinginan), yang meliputi manusia biasa.",
+            "Tingkat kedua disebut Rupadhatu, hal ini melambangkan bahwa seseorang yang sudah ditingkat ini bisa mengendalikan nafsu, tetapi masih terikat oleh rupa dan bentuk. Rupadhatu digambarkan sebagai dunia orang suci.",
+            "Tingkat terakhir, disebut Arupadhatu alam paling atas atau disebut nirwana. Di sinilah tempat para Budha bersemayam. Maksudnya adalah ketika seseorang sudah sampai di puncak ini maka ia disebut sudah merdeka secara mutlak. Ia sudah terbebas dari ikatan nafsu dan terbebas dari ikatan bentuk dan rupa. Maka dari itu bagian Arupadhatu digambarkan polos dan tidak memiliki relief."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "sosrokartono",
+      "tokoh": [
+        {
+          "nama": "R.M.P Sosrokartono — Si Jenius dari Timur",
+          "paragraf": [
+            "Raden Mas Panji Sosrokartono lahir 10 April 1877 di Palengkerep, Mayong, Jepara. Anak keempat dari R.M. Ario Sosrodiningrat, sekaligus kakak kandung R.A. Kartini. Beliau adalah Ulama Tashawuf, penasihat negara, dan tokoh nasional. Dijuluki \"Si Jenius dari Timur\" dan \"Wartawan Agung\", beliau menguasai 36 bahasa (26 bahasa asing + 10 bahasa daerah). Mendalami ilmu metafisika serta pengobatan praktis, dan meraih gelar \"Sang Alif\" dari ilmu makrifat Catur Murti. Menyatukan pikiran, perasaan, perkataan, dan perbuatan dalam satu kebenaran lurus, tak bengkok, tak menoleh ke samping. Beliau Dimakamkan di Kompleks Makam Sedo Mukti (Sido Mukti), Desa Kaliputu, Kecamatan Kota, Kabupaten Kudus, Jawa Tengah pada tanggal 08 Februari 1952 M."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "dzatul-kahfi-gunung-jati",
+      "tokoh": [
+        {
+          "nama": "Syekh Dzatul Kahfi",
+          "paragraf": [
+            "Syeikh Maulana Dzatul Kahfi (Syeikh Datuk Kahfi/Syeikh Nur Jati) adalah seorang waliyullah asal Malaka, Aceh, yang bertindak sebagai perintis dakwah Islam di Cirebon dan guru bagi tokoh besar seperti Sunan Kalijogo serta Sunan Drajat. Setelah menuntut ilmu di Mekkah, mengajar di Baghdad, dan menikah dengan Syarifah Halimah hingga dikaruniai empat orang anak, beliau memusatkan aktivitas dakwahnya di Gunung Amparan Jati (wilayah Kerajaan Pajajaran). Melalui pendekatan dakwahnya yang bijaksana, ajarannya diterima luas hingga berhasil mengislamkan Prabu Siliwangi beserta kedua putranya, Pangeran Walangsungsang dan Nyai Lara Santang."
+          ]
+        },
+        {
+          "nama": "Raden Fatahillah dan Sunan Gunung Jati",
+          "paragraf": [
+            "Raden Fatahillah dan Sunan Gunung Jati (Syarif Hidayatullah) merupakan tokoh penting dalam penyebaran Islam dan perjuangan di Jawa Barat. Sunan Gunung Jati berperan sebagai ulama dan pemimpin dakwah di Cirebon dan Banten, sedangkan Raden Fatahillah dikenal sebagai ulama dan panglima yang berjuang melawan Portugis. Pada 1527 M, mereka berhasil merebut Sunda Kelapa dari Portugis dan mengubah namanya menjadi Jayakarta. Keduanya dimakamkan di kompleks makam Gunung Sembung, Cirebon, dan dikenang atas perjuangan serta dakwahnya."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "syekh-musa",
+      "tokoh": [
+        {
+          "nama": "Syekh Musa",
+          "paragraf": [
+            "Syeikh Ibrahim Musa (1884–1963), atau yang dikenal sebagai Inyiak Parabek adalah ulama besar Minangkabau, murid Syeikh Ahmad Khatib Al-Minangkabawi. Beliau merupakan pelopor pendidikan Islam modern pendiri Sumatra Thawalib Parabek serta pernah menjabat sebagai anggota Konstituante Republik Indonesia"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "pesantren-hshf",
+      "tokoh": [
+        {
+          "nama": "Pesantren Hayya ‘Alassholah Hayya ‘Alal Falach",
+          "paragraf": [
+            "Pesantren Hayya ‘Alash Sholah Hayya ‘Alal Falah – Iqomatush Sholah berlokasi di Pelabuhan Ratu, Sukabumi, Jawa Barat. Pesantren ini mulai dibangun pada Rojab 1441 H/Maret 2020 M di atas lahan seluas kurang lebih 6 hektare. Pembiayaan awal berasal dari Mursyid Thoriqoh Shiddiqiyyah, Bapak Kyai Muhammad Mukhtar Mu’thi, sebesar Rp150 juta, kemudian dilanjutkan dari hasil penjualan Minyak Ratu, tasbih, dan shodaqoh warga Thoriqoh Shiddiqiyyah. Pesantren ini mengajarkan Ilmu Menegakkan Sholat (Ilmu Iqomatush Sholah) serta menjadi tempat pelestarian ajaran Thoriqoh Shiddiqiyyah dan penanaman cinta tanah air."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "bung-hatta",
+      "tokoh": [
+        {
+          "nama": "Bung Hatta",
+          "paragraf": [
+            "Sosok Mohammad Hatta atau yang lebih akrab dengan panggilan Bung Hatta ini lahir pada 12 Agustus 1902 di Bukit Tinggi, Sumatera Barat. Orang-orang Bukit Tinggi biasa memanggilnya dengan nama Athar. Bung Hatta merupakah salah satu tokoh yang berperan aktif dalam memperjuangkan kemerdekaan bangsa Indonesia. Bersama Bung Karno , Bung Hatta diberi gelar sebagai Pahlawan Proklamasi.",
+            "Bung Hatta meninggal dunia di Jakarta pada tanggal 14 Maret 1980 dan dimakamkan di pemakaman umum Tanah Kusir, Jakarta Selatan."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "husein-mutahar",
+      "tokoh": [
+        {
+          "nama": "Husein Mutahar",
+          "paragraf": [
+            "Husein Mutahar adalah tokoh pejuang kemerdekaan, pencipta lagu nasional seperti “Hari Merdeka”, dan juga dikenal sebagai Bapak Paskibra Indonesia. Beliau lahir di Semarang, 5 Agustus 1916. Ia berasal dari keluarga Arab-Indonesia keturunan Sayyid. Dalam perjalanan karirnya ia pernah menjabat sebagai sekretaris panglima angkatan laut dan pegawai tinggi negara pada awal kemerdekaan. Saat agresi militer 1 terjadi tahun 1947 ia diperintah langsung oleh Soekarno untuk menyelamatkan Bendera Pusaka.",
+            "Husein Mutahar tutup usia pada tanggal 9 Juni 2004 pada usia 87 tahun karena sakit. Beliau di makamkan di Taman Pemakaman Umum (TPU) Jeruk Purut, Jakarta Selatan."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "abu-hanifah-abdul-muthi",
+      "tokoh": [
+        {
+          "nama": "Abu Hanifah dan K.H Abdul Mu’thi",
+          "paragraf": [
+            "Prof. Dr. Abu Hanifah merupakan tokoh pendidikan, penulis, dan pejuang kemerdekaan yang pernah menjabat sebagai Menteri Pendidikan dan Kebudayaan RI. Beliau lahir di Padang Panjang pada 6 Januari 1906 dan wafat pada 4 Januari 1980.",
+            "KH. Abdul Mu’thi merupakan tokoh pendidikan dan perjuangan yang lahir di Jombang pada 1889 M. Beliau pernah berkiprah dalam Muhammadiyah dan pendidikan politik. Beliau wafat pada 20 September 1976. Keduanya dimakamkan di TPU Karet Bivak, Jakarta, dan dikenang atas pengabdian bagi pendidikan, agama, dan bangsa."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "museum-sumpah-pemuda",
+      "tokoh": [
+        {
+          "nama": "Museum Sumpah Pemuda",
+          "paragraf": [
+            "Terletak di jalan Keramat Raya, gang Kenari, No.106, kec. Senen, kota Jakarta Pusat, daerah Khusus Ibu Kota Jakarta. Museum Sumpah Pemuda ini merupakan museum sejarah pergerakan nasional yang menjadi saksi puncak Kongres Pemuda ll pada 28 Oktober 1928, momen bersejarah lahirnya ikrar Sumpah Pemuda, serta dimainkannya lagu Indonesia Raya pertama kali oleh Wage Supratman. Sekarang, museum tersebut menyimpan berbagai benda bersejarah seperti biola asli Wage Supratman, diorama kongres, dokumen pergerakan, dsb."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "monas",
+      "tokoh": [
+        {
+          "nama": "Monumen Nasional",
+          "paragraf": [
+            "Monumen Nasional (Monas) merupakan tugu peringatan setinggi 132 meter di Lapangan Medan Merdeka, Jakarta. Monas dibangun atas gagasan Presiden Soekarno untuk mengenang perjuangan dan kemerdekaan Indonesia. Pembangunannya dimulai pada 17 Agustus 1961 dan dibuka untuk umum pada 12 Juli 1975. Bentuknya melambangkan tanggal 17 Agustus 1945, sedangkan lidah api berlapis emas melambangkan semangat perjuangan dan kemerdekaan Indonesia."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "masjid-istiqlal",
+      "tokoh": [
+        {
+          "nama": "Masjid Istiqlal",
+          "paragraf": [
+            "Masjid Istiqlal adalah Masjid Nasional Negara Kesatuan Republik Indonesia yang berdiri megah di Jalan Taman Wijaya Kusuma, Pasar Baru, Kecamatan Sawah Besar, Jakarta Pusat. Nama Istiqlal berasal dari bahasa Arab yang berarti kemerdekaan. Karena itu, keberadaan masjid ini sejak awal berkaitan erat dengan rasa syukur bangsa Indonesia atas kemerdekaan.",
+            "Pembangunan masjid ini terhitung sejak tahun 1961 saat pemerintahan Presiden Soekarno dan selesai di tahun 1978 di era kepemimpinan Presiden Soeharto.",
+            "Masjid Istiqlal tidak hanya digunakan sebagai tempat Sholat saja. Pada tiap hari besar Islam Presiden Republik Indonesia selalu mengadakan kegiatan keagamaan seperti ‘Iedul Fithri, ‘Iedul Adlcha, Tahun Baru Hijriyyah, Maulid Nabi, serta Isro' Mi'roj. Setiap bulannya juga selalu diadakan pengajian rutin, tabliq akbar, kegiatan sosial ekonomi, shodaqoh dan lain-lain. Berbagai kegiatan tersebut secara tidak langsung menjadi tempat bertemunya umat Islam dari berbagai kalangan. Sehingga, masjid Istiqlal lebih dari sekedar simbol kemerdekaan Bangsa Indonesia, tetapi juga menjadi tempat bersatunya Bangsa Indonesia."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "sunan-kalijogo",
+      "tokoh": [
+        {
+          "nama": "Sunan Kalijaga",
+          "paragraf": [
+            "Ulama’ Tashawuf & Wali Budayawan (Wali yang berdakwah melalui seni & budaya)",
+            "Nama asli beliau adalah Raden Syahid, lahir sekitar tahun 1450 M di Tuban, Jawa Timur, putra terhormat dari Adipati Tuban, Tumenggung Wilatikta. Sunan Kalijaga dikenal luas sebagai Wali Budayawan, beliau adalah salah satu anggota Walisongo yang menyebarkan cahaya Islam dengan cara paling unik, penuh kelembutan, dan kearifan yang mendalam. Beliau berpulang ke Rahmatullah pada tahun 1513 M, dan makamnya berada di Desa Kadilangu, Kecamatan Demak, Kabupaten Demak, Jawa Tengah."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "raden-abdul-fattah",
+      "tokoh": [
+        {
+          "nama": "Raden Abdul Fatah Al Akbar Panotogomo",
+          "paragraf": [
+            "Raden Abdul Fatah Al akbar lahir di Palembang 1455, beliau merupakan pendiri sekaligus raja pertama Kesultanan Demak, kerajaan Islam pertama di tanah Jawa, dan merupakan pemimpin pertama yang menjalin kerjasama yang baik antara ulama dan umaro di Nusantara yaitu bekerjasama dengan Wali Songo dalam memerintah. Ia merupakan putra Raja Majapahit Brawijaya V. Ia memperdalam ilmu agama di bawah bimbingan Sunan Ampel. Setelah dirasa cukup ia berpindah ke Demak Jawa Tengah untuk mendirikan pondok pesantren. Daerah tersebutlah yang akhirnya menjadi pusat keramaian dan perdagangan.",
+            "Dalam pemerintahannya, Raden Fatah dinilai sangat berhasil membangun pemerintah dan menjadi panutan, beliau terkenal seorang satria yang tampan cerdas dan santun budi pekertinya.",
+            "Karena kecerdasannya dalam menguasai berbagai disiplin ilmu yang diajarkan para wali. Akhirnya Majlis Wali Songo memutuskan untuk mengangkat Raden Fatah serta mengizinkan menduduki tahta kerajaan Islam di Pulau Jawa, yang berkedudukan di Bintoro Demak pada tahun 1478 M dengan gelar atau sebutan Sultan Raden Abdul Fatah Al Akbar Sayyidin Pranotogomo. Pada masa pemerintahannya , kerajaan Islam berjalan dengan lancar dan Demak menjadi pusat penyebaran Islam di Pulau Jawa."
+          ]
+        }
+      ]
+    }
+  ]
 };

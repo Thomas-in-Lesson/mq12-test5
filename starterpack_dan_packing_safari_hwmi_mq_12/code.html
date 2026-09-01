@@ -222,12 +222,13 @@
 
   // Disalin apa adanya dari dokumen teknis packing panitia:
   // "Teknis Packing Putra Sesi 1/2/3.docx" dan "TEKNIS PACKING PUTRI SESI 1,2,3.docx".
+  // Sesi 3 diperbarui 1 September 2026 dari "REVISI Teknis Packing Putra/PUTRI Sesi 3.docx".
   // Dokumen menulis isi tas selempang Sesi 2 & 3 sebagai "Tetap", jadi mengikuti Sesi 1.
   const TETAP = "Isi tas selempang tetap sama seperti Sesi 1.";
   const DIBAWA = "Dibawa saat ziaroh / mengunjungi lokasi tujuan.";
   const GANTUNG = "Seragam Almamater MQ & jasket digantung di dalam bus.";
   const CAT_RANSEL3 = "Tas ransel, jasket, gantungan baju, dan sepatu cadangan ditaruh di bus (jika menyediakan sepatu cadangan).";
-  const CAT_KOPER = "Koper keluar bagasi bus hanya saat di penginapan.";
+  const CAT_KOPER = "Koper keluar bagasi bus hanya saat di penginapan dan menyesuaikan jadwal.";
 
   const packingData = {
     putra: {
@@ -264,20 +265,19 @@
         atas: GANTUNG,
         selempangNote: TETAP,
         ransel: [
-          "Menyiapkan pakaian seragam cadangan jika diperlukan",
+          // Dokumen menulis "asket"; salah ketik jasket, sama dengan dokumen putri.
+          "Menyiapkan pakaian seragam Safari (Almamater, jasket, baju salur)",
           "Sarung dan sajadah pribadi (bukan sarung MQ)",
           "Perlengkapan mandi",
           "Sandal bebas sopan (untuk di penginapan)",
           "Kantong baju kotor",
-          "Payung (dibawa ke lokasi hanya saat ada instruksi)",
-          "Perlengkapan pribadi (pencukur kumis dan lainnya)"
+          "Perlengkapan pribadi (pencukur kumis, masker putih dan lainnya)"
         ],
         ranselNote: CAT_RANSEL3,
         koper: [
           "Menyiapkan pakaian seragam Safari sesuai jumlah minimal yang harus dibawa selama 8 hari (dalaman, kemeja putih, celana formal hitam, kaos kaki)",
           "Menyiapkan pakaian di penginapan (kemeja rapi, celana panjang, pakaian istirahat)",
           "Menyiapkan peralatan lengkap ketika menerima pelajaran MQ (Buku Salinan MQ dan alat tulis, kopyah, kemeja putih, sarung, dan sandal)",
-          "Masker duckbill putih",
           "Perlengkapan pribadi dan lebihan pakaian & barang (jika ada)"
         ],
         koperNote: CAT_KOPER
@@ -318,25 +318,24 @@
         atas: GANTUNG,
         selempangNote: TETAP,
         ransel: [
-          "Menyiapkan pakaian seragam cadangan jika diperlukan",
+          "Menyiapkan pakaian seragam Safari (Almamater, jasket, baju salur)",
           // Dokumen putri Sesi 3 menulis "Sarung"; dikoreksi jadi "Mukenah" atas
           // arahan panitia. Konteksnya alat sholat (berpasangan dengan sajadah),
           // sama seperti dokumen putri Sesi 2. Bandingkan dengan bagian KOPER di
           // bawah yang tetap "sewek" karena itu setelan pelajaran MQ.
           "Mukenah dan sajadah pribadi",
           "Perlengkapan mandi",
-          "Sandal (hanya untuk di penginapan)",
+          "Sandal bebas sopan (hanya untuk di penginapan)",
           "Kantong baju kotor",
-          "Payung",
-          "Perlengkapan pribadi"
+          "Perlengkapan pribadi (masker putih dan lainnya)"
         ],
         ranselNote: CAT_RANSEL3,
         koper: [
-          "Menyiapkan pakaian seragam safari untuk hari ketiga sampai hari ketujuh (dalaman, kemeja putih, rok hitam klok A, kaos kaki)",
+          "Menyiapkan pakaian seragam Safari sesuai jumlah minimal yang harus dibawa selama 8 hari (dalaman, kemeja putih, rok hitam klok A, kaos kaki)",
           "Menyiapkan pakaian di penginapan (kemeja rapi, rok bebas sopan, baju tidur sopan)",
           // idem: dokumen menulis "sarung", dikoreksi jadi "sewek" untuk putri
           "Menyiapkan peralatan lengkap ketika menerima pelajaran MQ (Buku Salinan MQ dan alat tulis, kerudung, kemeja putih, sewek, dan sandal)",
-          "Masker duckbill putih",
+          "Menyiapkan kerudung sekolah segi empat terbaru untuk hari ke-6 di HSHF",
           "Perlengkapan pribadi dan lebihan pakaian & barang (jika ada)"
         ],
         koperNote: CAT_KOPER

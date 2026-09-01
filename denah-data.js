@@ -259,5 +259,247 @@ window.DENAH = {
       ]
     }
   ],
-  "sesi3": []
+  "sesi3": [
+    {
+      "no": 1,
+      "judul": "Makam K.H Nur Salim & Benteng Pendem",
+      "jam": "09.40 – 10.40",
+      "daerah": "Hari ke-1 · Ngawi",
+      "slug": "benteng-pendem",
+      "cocok": [
+        "nur salim",
+        "benteng pendem"
+      ]
+    },
+    {
+      "no": 2,
+      "judul": "Masjid Agung Karanganyar",
+      "jam": "12.20 – 13.20",
+      "daerah": "Hari ke-1 · Karanganyar",
+      "slug": "masjid-agung-karanganyar",
+      "cocok": [
+        "masjid agung, karanganyar"
+      ],
+      "aksi": "ishoma"
+    },
+    {
+      "no": 3,
+      "judul": "Makam P. Sambernyawa — Astana Mangadeg",
+      "jam": "15.00 – 16.00",
+      "daerah": "Hari ke-1 · Karanganyar",
+      "slug": "astana-mangadeg",
+      "cocok": [
+        "sambernyawa",
+        "astana mangadeg"
+      ]
+    },
+    {
+      "no": 4,
+      "judul": "Candi Prambanan",
+      "jam": "08.35 – 09.15",
+      "daerah": "Hari ke-2 · Klaten",
+      "slug": "candi-prambanan",
+      "cocok": [
+        "prambanan"
+      ]
+    },
+    {
+      "no": 5,
+      "judul": "Makam Jendral Sudirman",
+      "jam": "10.30 – 11.15",
+      "daerah": "Hari ke-2 · Yogyakarta",
+      "slug": "jendral-sudirman",
+      "cocok": [
+        "sudirman",
+        "soedirman"
+      ]
+    },
+    {
+      "no": 6,
+      "judul": "Makam HOS Cokroaminoto & Kyai Surosentono",
+      "jam": "12.00 – 12.45",
+      "daerah": "Hari ke-2 · Yogyakarta",
+      "slug": "hos-cokroaminoto",
+      "cocok": [
+        "cokroaminoto"
+      ]
+    },
+    {
+      "no": 7,
+      "judul": "Masjid Syuhada'",
+      "jam": "13.30 – 15.00",
+      "daerah": "Hari ke-2 · Yogyakarta",
+      "slug": "masjid-syuhada",
+      "cocok": [
+        "syuhada"
+      ],
+      "aksi": "ishoma"
+    },
+    {
+      "no": 8,
+      "judul": "JMYR Mungkid — Mini Ceremony",
+      "jam": "07.30 – 09.30",
+      "daerah": "Hari ke-3 · Magelang",
+      "slug": "jmyr-mungkid",
+      "cocok": [
+        "jmyr mungkid"
+      ],
+      "aksi": "mini ceremony"
+    },
+    {
+      "no": 9,
+      "judul": "Stupa Borobudur",
+      "jam": "09.50 – 10.50",
+      "daerah": "Hari ke-3 · Magelang",
+      "slug": "stupa-borobudur",
+      "cocok": [
+        "borobudur"
+      ]
+    },
+    {
+      "no": 10,
+      "judul": "Makam R. Sosrokartono",
+      "jam": "17.10 – 17.40",
+      "daerah": "Hari ke-3 · Kudus",
+      "slug": "sosrokartono",
+      "cocok": [
+        "sosrokartono"
+      ]
+    },
+    {
+      "no": 11,
+      "judul": "Makam Syekh Dzatul Kahfi, R. Fatahillah & Syarif Hidayatullah",
+      "jam": "10.40 – 11.50",
+      "daerah": "Hari ke-4 · Cirebon",
+      "slug": "dzatul-kahfi-gunung-jati",
+      "cocok": [
+        "dzatul kahfi",
+        "fatahillah"
+      ]
+    },
+    {
+      "no": 12,
+      "judul": "Masjid Syarif Abdurrachman — Astana Gunung Jati",
+      "jam": "12.05 – 13.35",
+      "daerah": "Hari ke-4 · Cirebon",
+      "slug": "masjid-syarif-abdurrachman",
+      "cocok": [
+        "astana gunung jati"
+      ],
+      "aksi": "ishoma"
+    },
+    {
+      "no": 13,
+      "judul": "Peta Jalur Menuju Makam Syekh Musa",
+      "jam": "07.00 – 10.00",
+      "daerah": "Hari ke-5 · Sukanegara",
+      "slug": "peta-syekh-musa",
+      "cocok": [
+        "syekh musa"
+      ],
+      "aksi": "perjalanan menuju"
+    },
+    {
+      "no": 14,
+      "judul": "Makam Syekh Musa",
+      "jam": "10.30 – 12.30",
+      "daerah": "Hari ke-5 · Sukanegara",
+      "slug": "syekh-musa",
+      "cocok": [
+        "syekh musa"
+      ]
+    },
+    {
+      "no": 15,
+      "judul": "Pesantren HSHF — Mini Ceremony",
+      "jam": "06.30 – 09.00",
+      "daerah": "Hari ke-6 · Pelabuhan Ratu",
+      "slug": "pesantren-hshf",
+      "cocok": [
+        "pesantren hshf"
+      ],
+      "aksi": "mini ceremony"
+    },
+    {
+      "no": 16,
+      "judul": "Makam Bung Hatta — TPU Tanah Kusir",
+      "jam": "12.30 – 14.30",
+      "daerah": "Hari ke-6 · Jakarta Selatan",
+      "slug": "bung-hatta",
+      "cocok": [
+        "bung hatta"
+      ]
+    },
+    {
+      "no": 17,
+      "judul": "Makam Husein Mutahar — TPU Jeruk Purut",
+      "jam": "15.30 – 16.00",
+      "daerah": "Hari ke-6 · Jakarta Selatan",
+      "slug": "husein-mutahar",
+      "cocok": [
+        "husein mutahar"
+      ]
+    },
+    {
+      "no": 18,
+      "judul": "Makam Abu Hanifah & K.H Abdul Mu'thi — Karet Bivak",
+      "jam": "17.30 – 18.30",
+      "daerah": "Hari ke-6 · Jakarta Pusat",
+      "slug": "abu-hanifah-abdul-muthi",
+      "cocok": [
+        "abu hanifah"
+      ]
+    },
+    {
+      "no": 19,
+      "judul": "Museum Sumpah Pemuda",
+      "jam": "07.30 – 09.00",
+      "daerah": "Hari ke-7 · Jakarta Pusat",
+      "slug": "museum-sumpah-pemuda",
+      "cocok": [
+        "sumpah pemuda"
+      ]
+    },
+    {
+      "no": 20,
+      "judul": "Monumen Nasional (Monas)",
+      "jam": "10.05 – 11.45",
+      "daerah": "Hari ke-7 · Jakarta Pusat",
+      "slug": "monas",
+      "cocok": [
+        "monas"
+      ]
+    },
+    {
+      "no": 21,
+      "judul": "Masjid Istiqlal",
+      "jam": "12.05 – 14.05",
+      "daerah": "Hari ke-7 · Jakarta Pusat",
+      "slug": "masjid-istiqlal",
+      "cocok": [
+        "istiqlal"
+      ]
+    },
+    {
+      "no": 22,
+      "judul": "Makam Sunan Kalijogo",
+      "jam": "09.05 – 09.35",
+      "daerah": "Hari ke-8 · Demak",
+      "slug": "sunan-kalijogo",
+      "cocok": [
+        "sunan kalijogo"
+      ]
+    },
+    {
+      "no": 23,
+      "judul": "Makam Raden Abdul Fattah Al-Akbar Panotogomo",
+      "jam": "10.35 – 11.05",
+      "daerah": "Hari ke-8 · Demak",
+      "slug": "raden-abdul-fattah",
+      "cocok": [
+        "abdul fattah",
+        "panotogomo"
+      ]
+    }
+  ]
 };

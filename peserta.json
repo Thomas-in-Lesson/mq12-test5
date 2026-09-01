@@ -34,6 +34,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "506",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "326",
@@ -90,6 +97,13 @@
     "kamar": "226",
     "tipe": "Deluxe · Twin",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "912",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -150,6 +164,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "202",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "107",
@@ -206,6 +227,13 @@
     "kamar": "143",
     "tipe": "Deluxe · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "915",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -266,6 +294,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "915",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "319",
@@ -322,6 +357,13 @@
     "kamar": "160",
     "tipe": "Superior · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "310",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -382,6 +424,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "402",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "327",
@@ -438,6 +487,13 @@
     "kamar": "224",
     "tipe": "Deluxe · Twin",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "715",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -498,6 +554,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "1101",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "318",
@@ -554,6 +617,13 @@
     "kamar": "242",
     "tipe": "Deluxe · Twin",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "703",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -613,6 +683,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "617",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "117",
@@ -668,6 +745,13 @@
     "kamar": "242",
     "tipe": "Deluxe · Twin",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "307",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -728,6 +812,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "1008",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "216",
@@ -783,6 +874,13 @@
     "kamar": "126",
     "tipe": "Deluxe · Twin",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "1101",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -843,6 +941,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "610",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "317",
@@ -898,6 +1003,13 @@
     "kamar": "133",
     "tipe": "Deluxe · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "201",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -958,6 +1070,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "1104",
+    "tipe": "Exc. Suite · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "112",
@@ -1014,6 +1133,13 @@
     "kamar": "355",
     "tipe": "Superior · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "1107",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -1074,6 +1200,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "408",
+    "tipe": "Exc. Suite · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "113",
@@ -1132,6 +1265,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "502",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "225",
@@ -1187,6 +1327,13 @@
     "kamar": "103",
     "tipe": "Executive · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "1104",
+    "tipe": "Exc. Suite · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -1247,6 +1394,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "509",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "331",
@@ -1303,6 +1457,13 @@
     "kamar": "231",
     "tipe": "Deluxe · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "601",
+    "tipe": "Superior · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -1363,6 +1524,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "305",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "127",
@@ -1418,6 +1586,13 @@
     "kamar": "227",
     "tipe": "Deluxe · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "607",
+    "tipe": "Exc. Suite · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -1478,6 +1653,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "205",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "121",
@@ -1532,6 +1714,13 @@
     "kamar": "134",
     "tipe": "Deluxe · Twin",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "306",
+    "tipe": "Deluxe",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -1590,6 +1779,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "306",
+    "tipe": "Deluxe",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "106",
@@ -1644,6 +1840,13 @@
     "kamar": "130",
     "tipe": "Deluxe · Twin",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "314",
+    "tipe": "Deluxe",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -1702,6 +1905,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "315",
+    "tipe": "Exc. Suite",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "102",
@@ -1758,6 +1968,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "315",
+    "tipe": "Exc. Suite",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "102",
@@ -1812,6 +2029,13 @@
     "kamar": "130",
     "tipe": "Deluxe · Twin",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "314",
+    "tipe": "Deluxe",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -1872,6 +2096,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "517",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "325",
@@ -1926,6 +2157,13 @@
     "kamar": "162",
     "tipe": "Superior · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "616",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -1985,6 +2223,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "506",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "326",
@@ -2040,6 +2285,13 @@
     "kamar": "364",
     "tipe": "Superior · Twin",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "610",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -2100,6 +2352,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "310",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "115",
@@ -2158,6 +2417,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "517",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "222",
@@ -2213,6 +2479,13 @@
     "kamar": "103",
     "tipe": "Executive · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "606",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -2273,6 +2546,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "204",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "321",
@@ -2317,11 +2597,25 @@
     "urutan": 1
    },
    {
+    "kota": "Semarang",
+    "hotel": "Hotel Oak Tree Semarang",
+    "kamar": "818",
+    "tipe": "Deluxe Corridor · Lantai 8",
+    "urutan": 2
+   },
+   {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
     "kamar": "229",
     "tipe": "Deluxe · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "608",
+    "tipe": "Exc. Suite · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -2382,6 +2676,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "715",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "123",
@@ -2438,6 +2739,13 @@
     "kamar": "352",
     "tipe": "Superior · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "602",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -2508,6 +2816,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "608",
+    "tipe": "Exc. Suite · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "305",
@@ -2576,6 +2891,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "1106",
+    "tipe": "Exc. Suite · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "110",
@@ -2634,6 +2956,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "317",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "101",
@@ -2689,6 +3018,13 @@
     "kamar": "235",
     "tipe": "Deluxe · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "505",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -2749,6 +3085,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "415",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "888",
@@ -2805,6 +3148,13 @@
     "kamar": "123",
     "tipe": "Deluxe · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "312",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -2865,6 +3215,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "609",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "221",
@@ -2917,6 +3274,13 @@
     "kamar": "229",
     "tipe": "Deluxe · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "608",
+    "tipe": "Exc. Suite · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -2977,6 +3341,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "307",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "103",
@@ -3033,6 +3404,13 @@
     "kamar": "145",
     "tipe": "Deluxe · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "308",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -3093,6 +3471,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "1008",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "216",
@@ -3149,6 +3534,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "202",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "107",
@@ -3203,6 +3595,13 @@
     "kamar": "354",
     "tipe": "Superior · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "502",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -3262,6 +3661,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "505",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "315",
@@ -3317,6 +3723,13 @@
     "kamar": "251",
     "tipe": "Superior · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "807",
+    "tipe": "Exc. Suite · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -3377,6 +3790,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "304",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "129",
@@ -3434,6 +3854,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "416",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "120",
@@ -3488,6 +3915,13 @@
     "kamar": "365",
     "tipe": "Superior · Twin",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "503",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -3547,6 +3981,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "318",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "101",
@@ -3602,6 +4043,13 @@
     "kamar": "225",
     "tipe": "Deluxe · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "914",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -3662,6 +4110,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "410",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "224",
@@ -3718,6 +4173,13 @@
     "kamar": "251",
     "tipe": "Superior · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "817",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -3777,6 +4239,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "302",
+    "tipe": "Deluxe",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "323",
@@ -3831,6 +4300,13 @@
     "kamar": "241",
     "tipe": "Deluxe · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "412",
+    "tipe": "Superior · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -3889,6 +4365,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "304",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "127",
@@ -3944,6 +4427,13 @@
     "kamar": "124",
     "tipe": "Deluxe · Twin",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "302",
+    "tipe": "Deluxe",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -4004,6 +4494,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "1110",
+    "tipe": "Exc. Suite · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "322",
@@ -4060,6 +4557,13 @@
     "kamar": "101",
     "tipe": "Executive · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "605",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -4120,6 +4624,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "305",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "129",
@@ -4178,6 +4689,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "602",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "324",
@@ -4226,6 +4744,13 @@
     "kamar": "230",
     "tipe": "Deluxe · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "603",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -4286,6 +4811,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "415",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "888",
@@ -4344,6 +4876,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "605",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "311",
@@ -4398,6 +4937,13 @@
     "kamar": "232",
     "tipe": "Deluxe · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "309",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -4455,6 +5001,13 @@
     "kamar": "252",
     "tipe": "Superior · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "807",
+    "tipe": "Exc. Suite · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -4515,6 +5068,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "305",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "127",
@@ -4570,6 +5130,13 @@
     "kamar": "142",
     "tipe": "Deluxe · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "316",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -4630,6 +5197,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "414",
+    "tipe": "Superior · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "111",
@@ -4686,6 +5260,13 @@
     "kamar": "209",
     "tipe": "Executive · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "414",
+    "tipe": "Superior · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -4746,6 +5327,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "1112",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "320",
@@ -4803,6 +5391,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "204",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "119",
@@ -4858,6 +5453,13 @@
     "kamar": "129",
     "tipe": "Deluxe · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "702",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -4918,6 +5520,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "317",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "108",
@@ -4974,6 +5583,13 @@
     "kamar": "105",
     "tipe": "Executive · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "617",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -5034,6 +5650,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "616",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "321",
@@ -5090,6 +5713,13 @@
     "kamar": "226",
     "tipe": "Deluxe · Twin",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "205",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -5150,6 +5780,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "703",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "303",
@@ -5204,6 +5841,13 @@
     "kamar": "135",
     "tipe": "Deluxe · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "706",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -5264,6 +5908,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "1102",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "125",
@@ -5320,6 +5971,13 @@
     "kamar": "361",
     "tipe": "Superior · Twin",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "1102",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -5380,6 +6038,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "617",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "117",
@@ -5436,6 +6101,13 @@
     "kamar": "146",
     "tipe": "Deluxe · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "204",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -5496,6 +6168,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "1108",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "329",
@@ -5552,6 +6231,13 @@
     "kamar": "232",
     "tipe": "Deluxe · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "309",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -5612,6 +6298,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "817",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "213",
@@ -5668,6 +6361,13 @@
     "kamar": "225",
     "tipe": "Deluxe · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "914",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -5728,6 +6428,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "205",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "121",
@@ -5783,6 +6490,13 @@
     "kamar": "355",
     "tipe": "Superior · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "1107",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -5843,6 +6557,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "308",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "118",
@@ -5898,6 +6619,13 @@
     "kamar": "158",
     "tipe": "Superior · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "1107",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -5958,6 +6686,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "807",
+    "tipe": "Exc. Suite · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "214",
@@ -6014,6 +6749,13 @@
     "kamar": "162",
     "tipe": "Superior · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "303",
+    "tipe": "Deluxe",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -6074,6 +6816,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "312",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "115",
@@ -6129,6 +6878,13 @@
     "kamar": "228",
     "tipe": "Deluxe · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "1110",
+    "tipe": "Exc. Suite · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -6188,6 +6944,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "311",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "119",
@@ -6245,6 +7008,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "414",
+    "tipe": "Superior · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "111",
@@ -6300,6 +7070,13 @@
     "kamar": "129",
     "tipe": "Deluxe · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "702",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -6360,6 +7137,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "614",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "220",
@@ -6417,6 +7201,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "607",
+    "tipe": "Exc. Suite · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "219",
@@ -6472,6 +7263,13 @@
     "kamar": "227",
     "tipe": "Deluxe · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "1104",
+    "tipe": "Exc. Suite · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -6532,6 +7330,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "609",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "224",
@@ -6590,6 +7395,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "201",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "109",
@@ -6645,6 +7457,13 @@
     "kamar": "241",
     "tipe": "Deluxe · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "411",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -6705,6 +7524,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "304",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "129",
@@ -6761,6 +7587,13 @@
     "kamar": "133",
     "tipe": "Deluxe · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "201",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -6820,6 +7653,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "604",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "310",
@@ -6874,6 +7714,13 @@
     "kamar": "222",
     "tipe": "Deluxe · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "1110",
+    "tipe": "Exc. Suite · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -6934,6 +7781,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "1112",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "320",
@@ -6990,6 +7844,13 @@
     "kamar": "138",
     "tipe": "Deluxe · Twin",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "601",
+    "tipe": "Superior · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -7049,6 +7910,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "411",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "231",
@@ -7104,6 +7972,13 @@
     "kamar": "236",
     "tipe": "Deluxe · Twin",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "402",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -7163,6 +8038,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "409",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "231",
@@ -7220,6 +8102,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "515",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "223",
@@ -7275,6 +8164,13 @@
     "kamar": "265",
     "tipe": "Superior · Twin",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "817",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -7344,6 +8240,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "615",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "308",
@@ -7398,6 +8301,13 @@
     "kamar": "164",
     "tipe": "Superior · Twin",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "507",
+    "tipe": "Exc. Suite · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -7456,6 +8366,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "507",
+    "tipe": "Exc. Suite · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "233",
@@ -7510,6 +8427,13 @@
     "kamar": "357",
     "tipe": "Superior · Twin",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "303",
+    "tipe": "Deluxe",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -7570,6 +8494,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "604",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "312",
@@ -7626,6 +8557,13 @@
     "kamar": "237",
     "tipe": "Deluxe · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "504",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -7686,6 +8624,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "612",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "328",
@@ -7744,6 +8689,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "311",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "105",
@@ -7799,6 +8751,13 @@
     "kamar": "144",
     "tipe": "Deluxe · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "1106",
+    "tipe": "Exc. Suite · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -7859,6 +8818,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "515",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "223",
@@ -7914,6 +8880,13 @@
     "kamar": "127",
     "tipe": "Deluxe · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "612",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -7974,6 +8947,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "614",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "222",
@@ -8030,6 +9010,13 @@
     "kamar": "357",
     "tipe": "Superior · Twin",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "706",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -8090,6 +9077,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "409",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "221",
@@ -8146,6 +9140,13 @@
     "kamar": "227",
     "tipe": "Deluxe · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "607",
+    "tipe": "Exc. Suite · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -8205,6 +9206,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "408",
+    "tipe": "Exc. Suite · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "113",
@@ -8259,6 +9267,13 @@
     "kamar": "365",
     "tipe": "Superior · Twin",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "503",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -8329,6 +9344,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "504",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "316",
@@ -8386,6 +9408,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "410",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "220",
@@ -8441,6 +9470,13 @@
     "kamar": "359",
     "tipe": "Superior · Twin",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "507",
+    "tipe": "Exc. Suite · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -8501,6 +9537,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "615",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "229",
@@ -8558,6 +9601,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "316",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "108",
@@ -8613,6 +9663,13 @@
     "kamar": "belum ditentukan",
     "tipe": "Deluxe",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "912",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -8673,6 +9730,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "416",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "120",
@@ -8731,6 +9795,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "606",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "312",
@@ -8786,6 +9857,13 @@
     "kamar": "351",
     "tipe": "Superior · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "517",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -8846,6 +9924,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "1106",
+    "tipe": "Exc. Suite · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "116",
@@ -8904,6 +9989,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "509",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "331",
@@ -8958,6 +10050,13 @@
     "kamar": "125",
     "tipe": "Deluxe · Double",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "318",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -9018,6 +10117,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "501",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "308",
@@ -9073,6 +10179,13 @@
     "kamar": "233",
     "tipe": "Deluxe · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "501",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -9132,6 +10245,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "412",
+    "tipe": "Superior · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "313",
@@ -9187,6 +10307,13 @@
     "kamar": "241",
     "tipe": "Deluxe · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "412",
+    "tipe": "Superior · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -9247,6 +10374,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "408",
+    "tipe": "Exc. Suite · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "113",
@@ -9303,6 +10437,13 @@
     "kamar": "230",
     "tipe": "Deluxe · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "603",
+    "tipe": "Superior",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",
@@ -9363,6 +10504,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "1108",
+    "tipe": "Superior",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "329",
@@ -9420,6 +10568,13 @@
     "urutan": 3
    },
    {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "202",
+    "tipe": "Deluxe · Extra bed",
+    "urutan": 4
+   },
+   {
     "kota": "Cianjur",
     "hotel": "Hotel Gino Feruci Cianjur",
     "kamar": "107",
@@ -9474,6 +10629,13 @@
     "kamar": "231",
     "tipe": "Deluxe · Triple",
     "urutan": 3
+   },
+   {
+    "kota": "Solo",
+    "hotel": "Hotel Sahid Solo",
+    "kamar": "601",
+    "tipe": "Superior · Extra bed",
+    "urutan": 4
    },
    {
     "kota": "Cianjur",

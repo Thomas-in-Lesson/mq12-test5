@@ -78,7 +78,38 @@ SESI2 = {
     'Sunan Bonang.jpg': (11, 'Makam Sunan Bonang', '16.15 – 16.45', 'Hari ke-2 · Tuban', 'sunan-bonang', ['sunan bonang']),
 }
 
-META = {'sesi1': SESI1, 'sesi2': SESI2, 'sesi3': {}}
+# Sesi 3: urutan mengikuti waktu kunjungan di rundown, bukan urutan nama berkas.
+# Beberapa denah bukan makam melainkan lokasi ISHOMA atau mini ceremony; baris
+# agendanya tidak memuat kata "ziarah", jadi kata kuncinya disebut lewat "aksi".
+# Yang dicocokkan adalah "agenda · daerah", karena beberapa agenda cuma tertulis
+# "ISHOMA" atau "Mini Ceremony" dan hanya daerahnya yang membedakan.
+SESI3 = {
+    'BENTENG PENDEM.jpg': (1, 'Makam K.H Nur Salim & Benteng Pendem', '09.40 – 10.40', 'Hari ke-1 · Ngawi', 'benteng-pendem', ['nur salim', 'benteng pendem']),
+    'MASJID A. KARANGANYAR.jpg': (2, 'Masjid Agung Karanganyar', '12.20 – 13.20', 'Hari ke-1 · Karanganyar', 'masjid-agung-karanganyar', ['masjid agung, karanganyar'], 'ishoma'),
+    'ASTANA MANGADEG.jpg': (3, 'Makam P. Sambernyawa — Astana Mangadeg', '15.00 – 16.00', 'Hari ke-1 · Karanganyar', 'astana-mangadeg', ['sambernyawa', 'astana mangadeg']),
+    'CANDI PRAMBANAN.jpg': (4, 'Candi Prambanan', '08.35 – 09.15', 'Hari ke-2 · Klaten', 'candi-prambanan', ['prambanan']),
+    'JENDRAL SOEDIRMAN.jpg': (5, 'Makam Jendral Sudirman', '10.30 – 11.15', 'Hari ke-2 · Yogyakarta', 'jendral-sudirman', ['sudirman', 'soedirman']),
+    'H.O.S. COKROAMIOTO.jpg': (6, 'Makam HOS Cokroaminoto & Kyai Surosentono', '12.00 – 12.45', 'Hari ke-2 · Yogyakarta', 'hos-cokroaminoto', ['cokroaminoto']),
+    "MASJID SYUHADA'.jpg": (7, "Masjid Syuhada'", '13.30 – 15.00', 'Hari ke-2 · Yogyakarta', 'masjid-syuhada', ['syuhada'], 'ishoma'),
+    'JMYR MUNGKID.jpg': (8, 'JMYR Mungkid — Mini Ceremony', '07.30 – 09.30', 'Hari ke-3 · Magelang', 'jmyr-mungkid', ['jmyr mungkid'], 'mini ceremony'),
+    'STUPA BOROBUDUR.jpg': (9, 'Stupa Borobudur', '09.50 – 10.50', 'Hari ke-3 · Magelang', 'stupa-borobudur', ['borobudur']),
+    'SOSROKARTONO.jpg': (10, 'Makam R. Sosrokartono', '17.10 – 17.40', 'Hari ke-3 · Kudus', 'sosrokartono', ['sosrokartono']),
+    'DZATUL KAHFI & S. GUNUNG JATI.jpg': (11, 'Makam Syekh Dzatul Kahfi, R. Fatahillah & Syarif Hidayatullah', '10.40 – 11.50', 'Hari ke-4 · Cirebon', 'dzatul-kahfi-gunung-jati', ['dzatul kahfi', 'fatahillah']),
+    'MASJID SYARIF ABDURRACHMAN.jpg': (12, 'Masjid Syarif Abdurrachman — Astana Gunung Jati', '12.05 – 13.35', 'Hari ke-4 · Cirebon', 'masjid-syarif-abdurrachman', ['astana gunung jati'], 'ishoma'),
+    'PETA SYECH MUSA.jpg': (13, 'Peta Jalur Menuju Makam Syekh Musa', '07.00 – 10.00', 'Hari ke-5 · Sukanegara', 'peta-syekh-musa', ['syekh musa'], 'perjalanan menuju'),
+    'SYECH MUSA.jpg': (14, 'Makam Syekh Musa', '10.30 – 12.30', 'Hari ke-5 · Sukanegara', 'syekh-musa', ['syekh musa']),
+    'PESANTREN HSHF SUKABUMI.jpg': (15, 'Pesantren HSHF — Mini Ceremony', '06.30 – 09.00', 'Hari ke-6 · Pelabuhan Ratu', 'pesantren-hshf', ['pesantren hshf'], 'mini ceremony'),
+    'BUNG HATTA.jpg': (16, 'Makam Bung Hatta — TPU Tanah Kusir', '12.30 – 14.30', 'Hari ke-6 · Jakarta Selatan', 'bung-hatta', ['bung hatta']),
+    'HUSEIN MUTAHAR (TPU JERUK PURUT).jpg': (17, 'Makam Husein Mutahar — TPU Jeruk Purut', '15.30 – 16.00', 'Hari ke-6 · Jakarta Selatan', 'husein-mutahar', ['husein mutahar']),
+    "ABU HANIFAH & KH. ABDUL MU'THI.jpg": (18, "Makam Abu Hanifah & K.H Abdul Mu'thi — Karet Bivak", '17.30 – 18.30', 'Hari ke-6 · Jakarta Pusat', 'abu-hanifah-abdul-muthi', ['abu hanifah']),
+    'MUSEUM SUMPAH PEMUDA.jpg': (19, 'Museum Sumpah Pemuda', '07.30 – 09.00', 'Hari ke-7 · Jakarta Pusat', 'museum-sumpah-pemuda', ['sumpah pemuda']),
+    'MONUMEN NASIONAL (MONAS).jpg': (20, 'Monumen Nasional (Monas)', '10.05 – 11.45', 'Hari ke-7 · Jakarta Pusat', 'monas', ['monas']),
+    'MASJID ISTIQLAL.jpg': (21, 'Masjid Istiqlal', '12.05 – 14.05', 'Hari ke-7 · Jakarta Pusat', 'masjid-istiqlal', ['istiqlal']),
+    'SUNAN KALI JOGO.jpg': (22, 'Makam Sunan Kalijogo', '09.05 – 09.35', 'Hari ke-8 · Demak', 'sunan-kalijogo', ['sunan kalijogo']),
+    'SUNAN DEMAK.jpg': (23, 'Makam Raden Abdul Fattah Al-Akbar Panotogomo', '10.35 – 11.05', 'Hari ke-8 · Demak', 'raden-abdul-fattah', ['abdul fattah', 'panotogomo']),
+}
+
+META = {'sesi1': SESI1, 'sesi2': SESI2, 'sesi3': SESI3}
 
 
 def slug_dari(nama):

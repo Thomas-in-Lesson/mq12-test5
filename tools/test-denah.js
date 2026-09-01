@@ -28,7 +28,7 @@ const V = global.window.DenahViewer;
 // Profil singkat: tiap lokasi berprofil slug-nya wajib sama dengan slug denah
 // supaya keduanya menempel ke lokasi yang benar. Sesi 2 punya 10 profil untuk
 // 11 denah — denah jalur jalan kaki Gresik memang bukan tokoh.
-const PROFIL_HARAP = { sesi1: 8, sesi2: 10 };
+const PROFIL_HARAP = { sesi1: 8, sesi2: 10, sesi3: 20 };
 {
   const profil = global.window.PROFIL;
   for (const [sesi, jumlah] of Object.entries(PROFIL_HARAP)) {
@@ -53,6 +53,7 @@ const PROFIL_HARAP = { sesi1: 8, sesi2: 10 };
 const denah = global.window.DENAH;
 assert.strictEqual(denah.sesi1.length, 8, 'Sesi 1 harus punya 8 denah');
 assert.strictEqual(denah.sesi2.length, 11, 'Sesi 2 harus punya 11 denah');
+assert.strictEqual(denah.sesi3.length, 23, 'Sesi 3 harus punya 23 denah');
 
 // Berkas gambarnya benar-benar ada
 for (const sesi of ['sesi1', 'sesi2', 'sesi3']) {
@@ -69,7 +70,8 @@ assert.strictEqual((V.daftarHTML('sesi1').match(/denah-kartu/g) || []).length, 8
 assert.strictEqual((V.daftarHTML('sesi2').match(/denah-kartu/g) || []).length, 11);
 assert.strictEqual(V.ada('sesi1'), 8);
 assert.strictEqual(V.ada('sesi2'), 11);
-assert.strictEqual(V.ada('sesi3'), 0);
+assert.strictEqual((V.daftarHTML('sesi3').match(/denah-kartu/g) || []).length, 23);
+assert.strictEqual(V.ada('sesi3'), 23);
 
 // Penautan dari rundown: tiap agenda ziarah harus dapat tautan, dan tepat satu
 // denah, tanpa ada denah yang dipakai dua kali.
@@ -81,7 +83,7 @@ function tautanSesi(sesi) {
   const terpakai = new Map();
   const tanpaTautan = [];
   for (const a of rundown[sesi].hari.flatMap((h) => h.agenda)) {
-    const html = V.tautanUntuk(sesi, a.agenda);
+    const html = V.tautanUntuk(sesi, a.agenda + ' · ' + a.daerah);
     if (html) {
       const m = new RegExp("buka\\('" + sesi + "',(\\d+)\\)").exec(html);
       assert.ok(m, `${sesi}: tautan tanpa indeks: ${a.agenda}`);
@@ -98,7 +100,7 @@ function tautanSesi(sesi) {
   return terpakai;
 }
 
-const tertaut = { sesi1: tautanSesi('sesi1'), sesi2: tautanSesi('sesi2') };
+const tertaut = { sesi1: tautanSesi('sesi1'), sesi2: tautanSesi('sesi2'), sesi3: tautanSesi('sesi3') };
 const terpakai = tertaut.sesi1;
 
 // Baris yang jelas bukan tujuan ziarah tidak boleh dapat tautan. Tiga yang
@@ -108,6 +110,9 @@ for (const [sesi, bukan] of [
   ['sesi1', 'Perjalanan menuju Maqom Mbah Falal'],
   ['sesi2', 'Persiapan Ziarah'], ['sesi2', 'Jalan Kaki menuju Bis'],
   ['sesi2', 'Perjalanan Menuju Makam Bung Karno'],
+  // Sesi 3: "ISHOMA" dan "Mini Ceremony" hanya bisa dibedakan lewat daerahnya,
+  // jadi tanpa daerah keduanya tidak boleh menempel ke denah mana pun.
+  ['sesi3', 'ISHOMA'], ['sesi3', 'Mini Ceremony'], ['sesi3', 'Sarapan · JMYR Mungkid, Magelang'],
 ]) {
   assert.strictEqual(V.tautanUntuk(sesi, bukan), '', `${sesi}: tidak boleh bertautan: ${bukan}`);
 }
@@ -180,9 +185,9 @@ assert.ok(/\n\s*tampilkanDenah\('sesi1'\);/.test(baca('peta_safari_hwmi_mq_12/co
     `tombol profil Sesi 2 tidak ${barisProfil}`);
 })();
 
-console.log(`OK — ${denah.sesi1.length} denah Sesi 1 + ${denah.sesi2.length} denah Sesi 2, semua berkas ada dan tertaut.`);
-console.log(`   Profil singkat: ${PROFIL_HARAP.sesi1} lokasi Sesi 1, ${PROFIL_HARAP.sesi2} lokasi Sesi 2.`);
-for (const sesi of ['sesi1', 'sesi2']) {
+console.log(`OK — ${denah.sesi1.length} denah Sesi 1 + ${denah.sesi2.length} Sesi 2 + ${denah.sesi3.length} Sesi 3, semua berkas ada dan tertaut.`);
+console.log(`   Profil singkat: ${PROFIL_HARAP.sesi1} lokasi Sesi 1, ${PROFIL_HARAP.sesi2} Sesi 2, ${PROFIL_HARAP.sesi3} Sesi 3.`);
+for (const sesi of ['sesi1', 'sesi2', 'sesi3']) {
   console.log(`   [${sesi}]`);
   for (const [i, list] of [...tertaut[sesi]].sort((a, b) => a[0] - b[0])) {
     console.log(`   ${denah[sesi][i].no}. ${denah[sesi][i].judul}  <-  ${list.join(' ; ')}`);

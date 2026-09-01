@@ -2692,7 +2692,7 @@
           ${a.kegiatan ? `<div class="agenda-ket">${esc(a.kegiatan)}</div>` : ''}
           ${a.catatan ? `<div class="agenda-ket">${esc(a.catatan)}</div>` : ''}
           ${tag('tag-daerah', a.daerah)}${tag('tag-seragam', seragam)}${tag('tag-pendamping', pendamping)}${tag('tag-pendamping', a.imam ? `Imam: ${a.imam}` : '')}${tagKoper(a.koper)}
-          ${window.DenahViewer ? DenahViewer.tautanUntuk(sesiAktif, a.agenda) : ''}
+          ${window.DenahViewer ? DenahViewer.tautanUntuk(sesiAktif, a.agenda + ' · ' + a.daerah) : ''}
         </div>
       </div>`;
   }

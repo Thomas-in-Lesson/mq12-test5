@@ -28,6 +28,7 @@ DATA_JS = os.path.join(REPO, 'profil-data.js')
 SUMBER = {
     'sesi1': os.path.expanduser('~/Documents/#Experiment/Profil Singkat Sesi 1.pdf'),
     'sesi2': os.path.expanduser('~/Documents/#Experiment/Profil Singkat Sesi 2.docx'),
+    'sesi3': os.path.expanduser('~/Documents/#Experiment/Update baru/PROFILE SINGKAT TUJUAN SESI 3.docx'),
 }
 
 UKURAN_JUDUL = 20      # apa pun di atas ini dianggap judul
@@ -62,7 +63,34 @@ PETA_S2 = {
     'IBRAHIM ASMORO QONDI': ('asmoroqondi', 'Syekh Maulana Ibrahim Asmoroqondi'),
 }
 
-PETA = {'sesi1': PETA_S1, 'sesi2': PETA_S2, 'sesi3': {}}
+# Slug disamakan dengan tools/build_denah.py. Tiga denah Sesi 3 sengaja tidak
+# ada di sini karena bukan tujuan ziarah: Masjid Agung Karanganyar, Masjid
+# Syarif Abdurrachman, dan peta jalur menuju Syekh Musa.
+PETA_S3 = {
+    'K.H MUHAMMAD NURSALIM ( BENTENG PENDEM)': ('benteng-pendem', 'K.H Muhammad Nursalim'),
+    'RM SAID (PANGERAN SAMBERNYAWA) / KGPAA MANGKUNEGARA I': ('astana-mangadeg', 'RM Said (Pangeran Sambernyawa)'),
+    'CANDI PRAMBANAN': ('candi-prambanan', 'Candi Prambanan'),
+    'JENDRAL SUDIRMAN': ('jendral-sudirman', 'Jendral Sudirman'),
+    'H.O.S COKROAMINOTO': ('hos-cokroaminoto', 'H.O.S Cokroaminoto'),
+    'MASJID SYUHADA’': ('masjid-syuhada', 'Masjid Syuhada’'),
+    'JAMI’ATUL MUDZAKKIRIN YARJUU ROCMATALLOH II SHIDDIQIYYAH': ('jmyr-mungkid', 'Jami’atul Mudzakkirin Yarjuu Rocmatalloh II Shiddiqiyyah'),
+    'STUPA BOROBUDUR': ('stupa-borobudur', 'Stupa Borobudur'),
+    'R.M.P SOSROKARTONO': ('sosrokartono', 'R.M.P Sosrokartono'),
+    'SYEKH DZATUL KAHFI': ('dzatul-kahfi-gunung-jati', 'Syekh Dzatul Kahfi'),
+    'RADEN FATAHILLAH DAN SUNAN GUNUNG JATI': ('dzatul-kahfi-gunung-jati', 'Raden Fatahillah dan Sunan Gunung Jati'),
+    'SYEKH MUSA': ('syekh-musa', 'Syekh Musa'),
+    'PESANTREN HAYYA ‘ALASSHOLAH HAYYA ‘ALAL FALACH': ('pesantren-hshf', 'Pesantren Hayya ‘Alassholah Hayya ‘Alal Falach'),
+    'BUNG HATTA': ('bung-hatta', 'Bung Hatta'),
+    'HUSEIN MUTAHAR': ('husein-mutahar', 'Husein Mutahar'),
+    'ABU HANIFAH DAN K.H ABDUL MU’THI': ('abu-hanifah-abdul-muthi', 'Abu Hanifah dan K.H Abdul Mu’thi'),
+    'MUSEUM SUMPAH PEMUDA': ('museum-sumpah-pemuda', 'Museum Sumpah Pemuda'),
+    'MONUMEN NASIONAL': ('monas', 'Monumen Nasional'),
+    'MASJID ISTIQLAL': ('masjid-istiqlal', 'Masjid Istiqlal'),
+    'SUNAN KALIJAGA': ('sunan-kalijogo', 'Sunan Kalijaga'),
+    'RADEN ABDUL FATAH AL AKBAR PANOTOGOMO (R. PATAH/ SULTAN DEMAK)': ('raden-abdul-fattah', 'Raden Abdul Fatah Al Akbar Panotogomo'),
+}
+
+PETA = {'sesi1': PETA_S1, 'sesi2': PETA_S2, 'sesi3': PETA_S3}
 ABAIKAN = {'PROFIL SINGKAT SESI 1', 'PROFIL SINGKAT SESI 2', 'PROFIL SINGKAT SESI 3'}
 
 
@@ -150,6 +178,15 @@ def parse_docx(path, peta):
         if info:
             sekarang = {'slug': info[0], 'nama': info[1], 'paragraf': []}
             tokoh.append(sekarang)
+            continue
+
+        # Baris pendek tanpa titik penutup persis di bawah judul adalah julukan
+        # tokoh ("Si Jenius dari Timur"), bukan paragraf. Digabung ke namanya,
+        # karena sebagai paragraf tersendiri ia terbaca seperti kalimat terpotong.
+        if sekarang is not None and not sekarang['paragraf'] \
+                and len(teks) < 45 and not teks.endswith('.'):
+            sekarang['nama'] += f' — {teks}'
+            print(f'  · julukan digabung ke nama: {teks!r}')
             continue
 
         # Baris pendek tanpa titik penutup biasanya judul. Kalau tidak ada di

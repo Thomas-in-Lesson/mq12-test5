@@ -21,6 +21,7 @@ const HALAMAN = path.join(REPO, 'daftar_kamar_safari_hwmi_mq_12', 'code.html');
 // lalu yang paling baru yang menang.
 const DIR_SUMBER = [
   path.join(os.homedir(), 'Documents', '#Experiment', 'Baru_data_hotel'),
+  path.join(os.homedir(), 'Documents', '#Experiment', 'Data hotel baru'),
   path.join(os.homedir(), 'Downloads', 'Room list Hotel'),
   path.join(os.homedir(), 'Downloads', 'Room list Hotel '),  // spasi di ujung, pernah terjadi
   path.join(os.homedir(), 'Downloads'),
@@ -127,6 +128,24 @@ function semarang(rows) {
   return out;
 }
 
+// NO;NAMA;TYPE KAMAR;NO KAMAR;KETERANGAN — satu baris satu orang, nomor dan
+// tipe kamar hanya ada di baris pertama tiap kamar. "EXTRA BED" di kolom
+// keterangan ditempelkan ke kamarnya, bukan ke orangnya: data penghuni cuma
+// daftar nama, tidak punya tempat untuk catatan per orang.
+function solo(rows) {
+  const out = [];
+  for (const [no, nama, tipe, kamar, ket] of rows) {
+    if (/^no$/i.test(no)) continue;
+    if (/^\d+$/.test(no) && kamar) out.push(room(kamar, rapi(tipe)));
+    if (!out.length) continue;
+    // Berkasnya ditutup rekap jumlah ("59 SUPERIOR ROOM"), yang tanpa saringan
+    // ini masuk sebagai penghuni kamar terakhir. Tidak ada nama diawali angka.
+    if (nama && !/^\d/.test(nama)) out.at(-1).occupants.push(nama);
+    if (/extra\s*bed/i.test(ket)) out.at(-1).type = gabung(out.at(-1).type, 'Extra bed');
+  }
+  return out;
+}
+
 // No.;Bangunan;Kamar;Nama — satu baris satu orang, dikelompokkan per bangunan
 // dan kamar. Nama bangunan dibiarkan apa adanya ("Kelas BTQ", bukan "Kelas Btq").
 function hshf(rows) {
@@ -146,7 +165,7 @@ function hshf(rows) {
 
 // Kunci kota -> nama penginapan, berkas CSV, dan parsernya. Urutan di sini juga
 // jadi urutan tab di halaman. Kota tanpa parser/CSV memakai data lama di halaman
-// (Solo masih "segera hadir"). HSHF dikirim terpisah, jadi berkasnya di ~/Downloads.
+// HSHF dikirim terpisah, jadi berkasnya di ~/Downloads.
 const KOTA = {
   Cianjur: { name: 'Hotel Gino Feruci Cianjur', csv: 'Cianjur.csv', parse: cianjur },
   Gresik: { name: 'Hotel Gresik', csv: 'Gresik.csv', parse: gresik },
@@ -154,7 +173,7 @@ const KOTA = {
   Jakarta: { name: 'Swiss-Belhotel Epicentrum Jakarta', csv: 'Jakarta.csv', parse: jakarta },
   Pemalang: { name: 'Hotel R-Gina Pemalang', csv: 'Pemalang.csv', parse: pemalang },
   Semarang: { name: 'Hotel Oak Tree Semarang', csv: 'Semarang.csv', parse: semarang },
-  Solo: { name: 'Hotel Sahid Solo', csv: null, parse: null },
+  Solo: { name: 'Hotel Sahid Jaya Solo', csv: 'Solo.csv', parse: solo },
 };
 
 const BELUM_ADA = 'Data pembagian kamar belum tersedia dari tim panitia (segera hadir).';
