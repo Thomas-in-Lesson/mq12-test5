@@ -33,6 +33,22 @@ SLOT_KIRI = [(1, 2), (4, 5)]
 SLOT_KANAN = [(8, 9), (11, 12)]
 JUDUL_BUS = re.compile(r'^BUS\s*(\d+)$', re.I)
 
+# Kejanggalan di berkas kursi yang sudah dikonfirmasi panitia 1 September 2026.
+# Ditulis di sini, bukan disunting langsung ke halaman, supaya tidak hilang
+# begitu generatornya dijalankan lagi atas berkas yang sama.
+
+# Bus 2 menomori dua kursi dengan 27 dan melewati 26. Panitia: yang di baris
+# atas seharusnya 26. Dikunci lewat nama, bukan nomor, karena nomornya kembar.
+KOREKSI_NOMOR = {(2, 'Ika Nurul Aini'): '26'}
+
+# Bus 3 di berkas berhenti di kursi 26, padahal panitia memastikan keduanya
+# masih ikut. Nomor, nama, dan perannya mengikuti denah sebelum kiriman ini.
+TAMBAHAN = {3: {'right': [[['27', 'Alifiyana Ahmad F', 'Keamanan'],
+                           ['28', 'Bunga Arum Dhani', 'Kebersihan']]]}}
+
+# Kursi yang memang sengaja dibiarkan kosong, jadi tidak perlu dilaporkan lagi.
+KOSONG_SENGAJA = {(6, '28')}
+
 
 def kolom(ref):
     """"AB12" -> 27 (indeks kolom mulai 0)."""
@@ -97,6 +113,15 @@ def baca(path):
             # supaya tidak jadi baris hampa di halaman.
             if any(pasangan):
                 sekarang[sisi].append([k or ['', '', ''] for k in pasangan])
+
+    for b in bus:
+        for sisi in ('left', 'right'):
+            for kursi_ in [k for p in b[sisi] for k in p]:
+                baru = KOREKSI_NOMOR.get((b['no'], kursi_[1]))
+                if baru:
+                    kursi_[0] = baru
+        for sisi, baris_tambahan in TAMBAHAN.get(b['no'], {}).items():
+            b[sisi] += [[list(k) for k in p] for p in baris_tambahan]
     return bus
 
 
@@ -126,7 +151,7 @@ def periksa(bus):
             aneh.append(f"Bus {b['no']}: nomor kursi terlewat {hilang}")
         # Kursi 2 memang kosong di semua bus: itu tempat di sebelah supir.
         kosong = [k[0] for sisi in ('left', 'right') for p in b[sisi] for k in p
-                  if k[0] and not k[1] and k[0] != '2']
+                  if k[0] and not k[1] and k[0] != '2' and (b['no'], k[0]) not in KOSONG_SENGAJA]
         if kosong:
             aneh.append(f"Bus {b['no']}: kursi tanpa nama {kosong}")
     return aneh

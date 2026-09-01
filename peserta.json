@@ -909,12 +909,14 @@
   "name": "Alif Fiana Ahmad Fatih",
   "aliases": [
    "Alif Fiana Ahmad Fatih",
+   "Alifiyana Ahmad F",
    "Alfiyana Ahmad Fati"
   ],
   "peran": "Keamanan",
   "transport": {
    "sesi1": "ELF 3",
-   "sesi2": "Bus 3"
+   "sesi2": "Bus 3",
+   "sesi3": "Bus 3"
   },
   "menginap": [
    {
@@ -2062,12 +2064,14 @@
   "name": "Bunga Arum Dani",
   "aliases": [
    "Bunga Arum Dani",
+   "Bunga Arum Dhani",
    "Bunga Arum"
   ],
   "peran": "Kebersihan",
   "transport": {
    "sesi1": "ELF 2",
-   "sesi2": "Bus 3"
+   "sesi2": "Bus 3",
+   "sesi3": "Bus 3"
   },
   "menginap": [
    {
