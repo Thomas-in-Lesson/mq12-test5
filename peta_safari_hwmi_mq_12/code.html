@@ -62,6 +62,19 @@
     border-radius: 14px;
     background: rgb(var(--c-surface-container));
   }
+  /* Baris tab hari memakai kelas yang sama dengan tab sesi, padahal jumlahnya
+     ikut jumlah peta: Sesi 2 dua, Sesi 3 empat. Grid 3 kolom membuat tab
+     keempat turun baris dan label panjangnya yang nowrap menjorok keluar
+     kolom di layar HP, jadi baris ini digulir mendatar saja. */
+  #hari-tabs {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  #hari-tabs::-webkit-scrollbar { display: none; }
+  #hari-tabs .sesi-tab { flex: 1 0 auto; padding-left: 12px; padding-right: 12px; }
+
   .sesi-tab {
     display: flex;
     align-items: center;
