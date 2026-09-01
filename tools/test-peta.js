@@ -60,10 +60,27 @@ assert.notStrictEqual(mids[0], mids[1], 'kedua hari Sesi 2 memakai peta yang sam
 switchSesi('sesi2', 9);
 assert.strictEqual(mid(peta.innerHTML), mids[0], 'indeks hari tak sah tidak jatuh ke hari pertama');
 
-// Sesi 3 belum ada petanya: tanpa iframe, tanpa baris hari.
-switchSesi('sesi3');
+// Sesi 3: empat penggal perjalanan, masing-masing peta sendiri.
+const mids3 = [];
+for (const i of [0, 1, 2, 3]) {
+  switchSesi('sesi3', i);
+  assert.strictEqual(baris.style.display, '', 'baris hari Sesi 3 tersembunyi');
+  assert.strictEqual((baris.innerHTML.match(/<button/g) || []).length, 4, 'tab Sesi 3 bukan empat');
+  const m = mid(peta.innerHTML);
+  assert.ok(m, `penggal ke-${i + 1} tanpa mid`);
+  assert.strictEqual(mid(tombol.href), m, `tombol Maps App penggal ke-${i + 1} menunjuk peta lain`);
+  mids3.push(m);
+}
+assert.strictEqual(new Set(mids3).size, 4, `empat penggal Sesi 3 memakai ${new Set(mids3).size} peta berbeda`);
+assert.strictEqual(new Set([...mids, ...mids3]).size, 6, 'ada peta Sesi 2 dan Sesi 3 yang tertukar');
+
+// Sesi tanpa peta tetap harus aman: semua sesi sudah punya peta, jadi
+// cabang itu diuji lewat sesi buatan, bukan dibiarkan tak teruji.
+vm.runInContext("sesiMapData.sesiUji = { title: 'Uji', active: false, embedUrl: '', mapsUrl: '' };", konteks);
+switchSesi('sesiUji');
 assert.strictEqual(baris.style.display, 'none', 'baris hari muncul di sesi tanpa peta');
 assert.ok(!peta.innerHTML.includes('<iframe'), 'sesi tanpa peta malah merender iframe');
 assert.strictEqual(tombol.style.display, 'none', 'tombol Maps App masih tampil di sesi tanpa peta');
 
 console.log('OK — baris tab hari, mid tiap hari, dan sesi tanpa peta semua benar.');
+console.log(`   Sesi 2: ${mids.length} peta. Sesi 3: ${mids3.length} peta, semuanya berbeda.`);

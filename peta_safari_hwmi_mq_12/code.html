@@ -202,7 +202,7 @@
         <span>SESI 2</span><span class="dot"></span>
       </button>
       <button id="btn-sesi-3" type="button" onclick="switchSesi('sesi3')" class="sesi-tab">
-        <span>SESI 3</span><span class="soon">Segera</span>
+        <span>SESI 3</span><span class="dot"></span>
       </button>
     </div>
     <!-- Baris tab hari, hanya muncul untuk sesi yang petanya terpisah per hari -->
@@ -276,11 +276,41 @@
       ]
     },
     sesi3: {
+      // Panitia memisah rutenya per penggal perjalanan, bukan per hari, jadi
+      // label tabnya menyebut kota asal-tujuan. Judul tiap peta disalin dari
+      // nama berkasnya di Google My Maps.
       title: "Rute Safari Sesi 3",
-      embedUrl: "",
-      mapsUrl: "",
-      active: false,
-      note: "Peta rute Sesi 3 sedang diselaraskan oleh Tim Panitia dan akan segera dirilis."
+      active: true,
+      days: [
+        {
+          // Berangkat: Ploso - Ngawi - Karanganyar - Solo - DIY - Magelang.
+          label: "PLOSO – MUNGKID",
+          title: "Rute Safari Sesi 3 (Ploso – Mungkid)",
+          embedUrl: "https://www.google.com/maps/d/embed?mid=11gFebdGmQMpSfRv4nllG8dbSv9096l4",
+          mapsUrl: "https://www.google.com/maps/d/viewer?mid=11gFebdGmQMpSfRv4nllG8dbSv9096l4&usp=sharing"
+        },
+        {
+          // Magelang - Kudus - Semarang - Cirebon - Cianjur - Pelabuhan Ratu - Jakarta.
+          label: "MUNGKID – JERUK PURUT",
+          title: "Rute Safari Sesi 3 (Mungkid – TPU Jeruk Purut)",
+          embedUrl: "https://www.google.com/maps/d/embed?mid=1dMva5W0wL4BM0fQAk9Hne5gD207Kdd4",
+          mapsUrl: "https://www.google.com/maps/d/viewer?mid=1dMva5W0wL4BM0fQAk9Hne5gD207Kdd4&usp=sharing"
+        },
+        {
+          // Pulang: Jakarta - Pemalang - Demak - Ploso.
+          label: "JERUK PURUT – PLOSO",
+          title: "Rute Safari Sesi 3 (Jeruk Purut – Ploso)",
+          embedUrl: "https://www.google.com/maps/d/embed?mid=1E-heCB7YsM6RLeQUfIPNIrn2-cGuBmo",
+          mapsUrl: "https://www.google.com/maps/d/viewer?mid=1E-heCB7YsM6RLeQUfIPNIrn2-cGuBmo&usp=sharing"
+        },
+        {
+          // Jalur jalan kaki dari parkiran menuju lokasi ziarah.
+          label: "JALAN KAKI",
+          title: "Rute Jalan Kaki Sesi 3",
+          embedUrl: "https://www.google.com/maps/d/embed?mid=11ph61NoGn7-PSSfLR4o_LO4gInoPy2k",
+          mapsUrl: "https://www.google.com/maps/d/viewer?mid=11ph61NoGn7-PSSfLR4o_LO4gInoPy2k&usp=sharing"
+        }
+      ]
     }
   };
 
