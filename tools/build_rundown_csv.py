@@ -38,7 +38,7 @@ KOLOM = {
     'NO': 'no', 'AGENDA': 'agenda', 'DAERAH': 'daerah', 'WAKTU': 'jam',
     'DURASI': 'durasi', 'KEGIATAN': 'kegiatan', 'CATATAN': 'kegiatan',
     'SERAGAM PESERTA': 'seragam', 'SERAGAM PENDAMPING': 'pendamping',
-    'JADWAL IMAM': 'imam',
+    'JADWAL IMAM': 'imam', 'JADWAL KOPER TURUN': 'koper',
 }
 
 # Peran mini ceremony ("Dirigen : ...") ditaruh panitia di kolom tanpa judul di
@@ -146,6 +146,8 @@ def baca_csv(path):
             'pendamping': pendamping,
             'imam': catatan_imam if NAMA_IMAM.match(catatan_imam) else '',
             'catatan': ' · '.join(x for x in ekstra if x),
+            # Koper turun/tidak: satu baris per hari, di agenda penginapan.
+            'koper': sel('koper').title(),
         })
 
     # --- kejanggalan yang perlu mata manusia

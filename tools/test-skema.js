@@ -100,14 +100,14 @@ setTimeout(() => {
   assert.ok(kanvas.every((c) => c.width > 0 && c.height > 0),
     'ada kanvas berukuran nol');
 
-  // Sesi 2 wajib jadi dokumen pertama dan berlencana jelas: itu sesi yang jalan
-  // 28 Agustus, sedangkan skema Sesi 3 versi terbaru belum turun.
+  // Sesi 3 wajib jadi dokumen pertama dan berlencana jelas: itu sesi yang jalan
+  // 2–9 September, sedangkan Sesi 2 tinggal arsip.
   const kepala = dibuat.filter((e) => typeof e.innerHTML === 'string' && e.innerHTML.includes('halaman ·'));
   assert.strictEqual(kepala.length, dok.length,
     `kartu kepala dokumen: ${kepala.length}, seharusnya ${dok.length}`);
-  assert.ok(kepala[0].innerHTML.includes('SESI 2'),
-    'dokumen pertama harus Skema Sesi 2 (yang dipakai lebih dulu)');
-  assert.ok(dok[0].includes('sesi2'), `dokumen pertama yang dibuka: ${dok[0]}`);
+  assert.ok(kepala[0].innerHTML.includes('SESI 3'),
+    'dokumen pertama harus Skema Sesi 3 (sesi yang sedang berjalan)');
+  assert.ok(dok[0].includes('sesi3'), `dokumen pertama yang dibuka: ${dok[0]}`);
 
   const badge = dibuat.filter((e) => /^Halaman \d+ \/ 15$/.test(e.innerText));
   assert.strictEqual(badge.length, dok.length * JUMLAH_HALAMAN, 'penanda nomor halaman tidak lengkap');

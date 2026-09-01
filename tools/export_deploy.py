@@ -34,7 +34,8 @@ root_files = [
     'og-cover.jpg',
     'denah-data.js',
     'denah-viewer.js',
-    'skema-foto-terbaru.pdf'
+    'skema-foto-sesi3.pdf',
+    'skema-foto-sesi2.pdf'
 ]
 
 for f in root_files:

@@ -125,8 +125,25 @@ assert.ok(peran.some((a) => /Dirigen/.test(a.catatan)), 'catatan Dirigen hilang'
 
 assert.ok(html.includes('`Imam: ${a.imam}`'), 'halaman tidak lagi menampilkan jadwal imam');
 
+// --- Jadwal koper: satu penanda per hari menginap, dan penandanya harus
+// keluar dari kolomnya sendiri, bukan nyampur ke catatan mini ceremony.
+const koper = rundownData.sesi3.hari.flatMap((h) => h.agenda).filter((a) => a.koper);
+assert.strictEqual(koper.length, 7, `penanda koper: ${koper.length}, seharusnya 7 (Hari 1-7)`);
+assert.ok(koper.every((a) => /^Koper (Tidak )?Turun$/.test(a.koper)),
+  `nilai koper di luar dugaan: ${koper.map((a) => a.koper).join(' | ')}`);
+assert.ok(!peran.some((a) => /koper/i.test(a.catatan)), 'jadwal koper masih bocor ke kolom catatan');
+// Kelas beda antara turun dan tidak: kalau keduanya sama, peserta tidak bisa
+// membedakannya sekilas — itu justru inti fiturnya.
+const tagKoper = new Function(`const tag = (k, i) => (i ? k : ''); ${ambilPotongan('const tagKoper =', "'tag-koper', isi);")}; return tagKoper;`)();
+assert.strictEqual(tagKoper('Koper Turun'), 'tag-koper');
+assert.strictEqual(tagKoper('Koper Tidak Turun'), 'tag-koper-tidak');
+assert.ok(html.includes('.tag-koper-tidak {') && html.includes('.tag-koper {'),
+  'CSS penanda koper belum ada — styles.css ter-purge, jadi class-nya tidak akan berefek');
+
 console.log(`OK — perbandingan seragam (${SAMA.length} sama, ${BEDA.length} beda), seragam baku, `
   + 'dan peringkasan tanggal semua lolos.');
 console.log(`   Jadwal imam: ${jumlahImam} baris, semuanya nama orang. Peran mini ceremony: ${peran.length}.`);
+console.log(`   Jadwal koper: ${koper.length} hari (${koper.filter((a) => !/Tidak/.test(a.koper)).length} turun, `
+  + `${koper.filter((a) => /Tidak/.test(a.koper)).length} tidak turun).`);
 console.log(`   ${hari} kartu hari: tag seragam turun dari ${tagLama} menjadi ${pengecualian} pengecualian `
   + `+ ${hari * 2} chip di kepala kartu.`);
