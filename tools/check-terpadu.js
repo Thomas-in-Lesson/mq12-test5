@@ -38,10 +38,11 @@ for (const o of orang) {
 const { kamar, bus2Seat, busSeat, elfSeat } = readSources();
 const masalah = [];
 const hilang = new Set();
-// Satu orang tercatat di dua kamar pada kota yang sama = salah di berkas
-// panitia, bukan di sini. Profilnya hanya bisa memegang satu, jadi selisihnya
-// dilaporkan terpisah supaya tidak menutupi ketidakcocokan yang sungguhan.
-const duplikat = new Set();
+// Kejanggalan yang asalnya dari berkas panitia, bukan dari generator: satu
+// orang di dua kamar, atau satu kota kekurangan orang. Dilaporkan terpisah dan
+// tidak menggagalkan pemeriksaan, supaya tidak menutupi ketidakcocokan yang
+// memang salah kita sendiri — dan supaya deploy tidak terhalang olehnya.
+const keSumber = new Set();
 const kamarPer = new Map();
 for (const b of kamar) {
   const k = `${kunci(b.nama)}|${b.kota}`;
@@ -78,7 +79,7 @@ for (const baris of kamar) {
       .map((m) => m.kamar).join(', ') || '(tidak ada)';
     const semua = kamarPer.get(`${kunci(baris.nama)}|${baris.kota}`);
     if (semua && semua.size > 1) {
-      duplikat.add(`${o.name}: ${baris.kota} kamar ${[...semua].sort().join(' & ')} `
+      keSumber.add(`${o.name}: ${baris.kota} kamar ${[...semua].sort().join(' & ')} `
         + `— profil memakai ${punya}`);
     } else {
       masalah.push(`${o.name}: halaman kamar ${baris.kota} menulis ${noKamar(baris.kamar)}, `
@@ -116,10 +117,34 @@ for (const o of orang) {
   }
 }
 
+// --- 4. Jumlah penghuni tiap kota harus sama
+// Rombongannya sama sepanjang perjalanan, jadi kota yang jumlahnya beda berarti
+// ada yang terlewat di berkasnya. Semarang pernah kurang satu orang tanpa
+// ketahuan: barisnya tetap 165 karena satu nama tertulis dua kali.
+{
+  const perKota = new Map();
+  for (const b of kamar) {
+    const o = profil(b.nama, `kamar ${b.kota}`);
+    if (!o) continue;
+    if (!perKota.has(b.kota)) perKota.set(b.kota, new Set());
+    perKota.get(b.kota).add(o.name);
+  }
+  const jumlah = [...perKota.values()].map((s) => s.size);
+  const lazim = jumlah.sort((a, b) =>
+    jumlah.filter((x) => x === b).length - jumlah.filter((x) => x === a).length)[0];
+  for (const [kota, isi] of perKota) {
+    if (isi.size === lazim) continue;
+    const semua = new Set([...perKota.values()].flatMap((s) => [...s]));
+    const kurang = [...semua].filter((n) => !isi.has(n));
+    keSumber.add(`${kota}: ${isi.size} orang, kota lain ${lazim}`
+      + (kurang.length ? ` — tidak ada di berkas kota ini: ${kurang.join(', ')}` : ''));
+  }
+}
+
 // --- Laporan
-if (duplikat.size) {
-  console.log(`${duplikat.size} duplikat di data sumber (perlu dikonfirmasi ke panitia):`);
-  for (const x of [...duplikat].sort()) console.log(`   ${x}`);
+if (keSumber.size) {
+  console.log(`${keSumber.size} hal di berkas panitia yang perlu dikonfirmasi:`);
+  for (const x of [...keSumber].sort()) console.log(`   ${x}`);
   console.log('');
 }
 if (hilang.size) {
@@ -136,4 +161,4 @@ assert.strictEqual(hilang.size, 0, `${hilang.size} nama di halaman tidak punya p
 
 console.log(`OK — ${kamarDicek} baris kamar dan ${dudukDicek} kursi di halaman `
   + `semuanya cocok dengan ${orang.length} profil di peserta.json.`);
-if (duplikat.size) console.log(`   ${duplikat.size} duplikat di data sumber dibiarkan apa adanya.`);
+if (keSumber.size) console.log(`   ${keSumber.size} hal menunggu konfirmasi panitia, dibiarkan apa adanya.`);
