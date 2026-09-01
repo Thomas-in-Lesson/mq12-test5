@@ -22,6 +22,7 @@ const HALAMAN = path.join(REPO, 'daftar_kamar_safari_hwmi_mq_12', 'code.html');
 const DIR_SUMBER = [
   path.join(os.homedir(), 'Documents', '#Experiment', 'Baru_data_hotel'),
   path.join(os.homedir(), 'Documents', '#Experiment', 'Data hotel baru'),
+  path.join(os.homedir(), 'Documents', '#Experiment'),
   path.join(os.homedir(), 'Downloads', 'Room list Hotel'),
   path.join(os.homedir(), 'Downloads', 'Room list Hotel '),  // spasi di ujung, pernah terjadi
   path.join(os.homedir(), 'Downloads'),
@@ -237,7 +238,7 @@ function main() {
     }
     const rooms = cfg.parse(baca(file)).filter((r) => r.occupants.length);
     for (const r of rooms) r.occupants = r.occupants.map(kanonik);
-    data[kota] = { name: h.name || cfg.name, rooms };
+    data[kota] = { name: cfg.name || h.name, rooms };
 
     const orang = rooms.reduce((n, r) => n + r.occupants.length, 0);
     const dulu = (h.rooms || []).reduce((n, r) => n + r.occupants.length, 0);

@@ -265,6 +265,9 @@
       padding-right: 4px;
       flex: 1;
     }
+    /* Daftar PIC kini bagian paling bawah panel; tanpa ini sudutnya menyiku
+       sendiri di atas sudut membulat panelnya. */
+    .site-sos-list-akhir { border-bottom-left-radius: 16px; border-bottom-right-radius: 16px; }
     .site-sos-section-title {
       font: 700 12px sans-serif;
       color: #E0B863 !important;
@@ -1177,13 +1180,7 @@
         <button id="sos-tab-sesi2" class="site-sos-tab-btn is-active" type="button">Sesi 2</button>
         <button id="sos-tab-sesi3" class="site-sos-tab-btn" type="button">Sesi 3</button>
       </div>
-      <div id="sos-pic-list-container" class="site-sos-list">
-      </div>
-      <div style="padding:10px 14px;text-align:center;border-top:1px solid rgba(87,66,62,0.3);background:rgba(34,5,3,0.4);border-bottom-left-radius:16px;border-bottom-right-radius:16px;">
-        <a href="${href('emergency')}" style="color:var(--c-primary);font-size:12px;font-weight:700;text-decoration:underline;display:inline-flex;align-items:center;gap:6px;">
-          <span>🆘</span>
-          <span>Buka Halaman Kontak Darurat (Statis / Luring) →</span>
-        </a>
+      <div id="sos-pic-list-container" class="site-sos-list site-sos-list-akhir">
       </div>
     </div>
   `;

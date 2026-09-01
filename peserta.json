@@ -35,7 +35,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "506",
     "tipe": "Superior",
     "urutan": 4
@@ -100,7 +100,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "912",
     "tipe": "Superior",
     "urutan": 4
@@ -165,7 +165,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "202",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -224,13 +224,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "143",
+    "kamar": "145",
     "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "915",
     "tipe": "Superior",
     "urutan": 4
@@ -295,7 +295,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "915",
     "tipe": "Superior",
     "urutan": 4
@@ -354,13 +354,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "160",
-    "tipe": "Superior · Double",
+    "kamar": "365",
+    "tipe": "Superior · Twin",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "310",
     "tipe": "Superior",
     "urutan": 4
@@ -425,7 +425,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "402",
     "tipe": "Superior",
     "urutan": 4
@@ -490,7 +490,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "715",
     "tipe": "Superior",
     "urutan": 4
@@ -555,7 +555,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "1101",
     "tipe": "Superior",
     "urutan": 4
@@ -587,7 +587,7 @@
   "name": "Ahmad Fikri Ulinnuha",
   "aliases": [
    "Ahmad Fikri Ulinnuha",
-   "A. Fikri Ulinnuha",
+   "A. Fikri Uinnuha",
    "A. Fikri Ulin Nuha"
   ],
   "peran": "Keamanan",
@@ -620,7 +620,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "703",
     "tipe": "Superior",
     "urutan": 4
@@ -684,7 +684,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "617",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -748,7 +748,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "307",
     "tipe": "Superior",
     "urutan": 4
@@ -813,7 +813,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "1008",
     "tipe": "Superior",
     "urutan": 4
@@ -877,7 +877,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "1101",
     "tipe": "Superior",
     "urutan": 4
@@ -909,14 +909,12 @@
   "name": "Alif Fiana Ahmad Fatih",
   "aliases": [
    "Alif Fiana Ahmad Fatih",
-   "Alifiyana Ahmad F",
    "Alfiyana Ahmad Fati"
   ],
   "peran": "Keamanan",
   "transport": {
    "sesi1": "ELF 3",
-   "sesi2": "Bus 3",
-   "sesi3": "Bus 3"
+   "sesi2": "Bus 3"
   },
   "menginap": [
    {
@@ -936,13 +934,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "364",
-    "tipe": "Superior · Twin",
+    "kamar": "160",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "610",
     "tipe": "Superior",
     "urutan": 4
@@ -1006,7 +1004,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "201",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -1071,7 +1069,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "1104",
     "tipe": "Exc. Suite · Extra bed",
     "urutan": 4
@@ -1130,13 +1128,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "355",
-    "tipe": "Superior · Double",
+    "kamar": "134",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "1107",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -1201,7 +1199,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "408",
     "tipe": "Exc. Suite · Extra bed",
     "urutan": 4
@@ -1260,13 +1258,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "354",
-    "tipe": "Superior · Double",
+    "kamar": "130",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "502",
     "tipe": "Superior",
     "urutan": 4
@@ -1330,7 +1328,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "1104",
     "tipe": "Exc. Suite · Extra bed",
     "urutan": 4
@@ -1395,7 +1393,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "509",
     "tipe": "Superior",
     "urutan": 4
@@ -1460,7 +1458,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "601",
     "tipe": "Superior · Extra bed",
     "urutan": 4
@@ -1525,7 +1523,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "305",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -1589,7 +1587,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "607",
     "tipe": "Exc. Suite · Extra bed",
     "urutan": 4
@@ -1621,7 +1619,7 @@
   "name": "Bagus Adib Khoiruddun",
   "aliases": [
    "Bagus Adib Khoiruddun",
-   "BAGUS ADIB K.",
+   "BAGUS ADIB K",
    "Bagus Adib"
   ],
   "peran": "Visual Audio",
@@ -1654,7 +1652,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "205",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -1711,13 +1709,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "134",
-    "tipe": "Deluxe · Twin",
+    "kamar": "355",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "306",
     "tipe": "Deluxe",
     "urutan": 4
@@ -1774,13 +1772,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "134",
-    "tipe": "Deluxe · Twin",
+    "kamar": "355",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "306",
     "tipe": "Deluxe",
     "urutan": 4
@@ -1837,13 +1835,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "130",
-    "tipe": "Deluxe · Twin",
+    "kamar": "354",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "314",
     "tipe": "Deluxe",
     "urutan": 4
@@ -1900,13 +1898,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "136",
-    "tipe": "Deluxe · Twin",
+    "kamar": "357",
+    "tipe": "Superior · Twin",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "315",
     "tipe": "Exc. Suite",
     "urutan": 4
@@ -1938,7 +1936,7 @@
   "name": "Bpk Zakiyyul Fuad",
   "aliases": [
    "Bpk Zakiyyul Fuad",
-   "BPK. M. ZAKIYYUL FUAD"
+   "BPK. M. ZAKIYUL FUAD"
   ],
   "peran": "",
   "transport": {
@@ -1963,13 +1961,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "136",
-    "tipe": "Deluxe · Twin",
+    "kamar": "357",
+    "tipe": "Superior · Twin",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "315",
     "tipe": "Exc. Suite",
     "urutan": 4
@@ -2026,13 +2024,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "130",
-    "tipe": "Deluxe · Twin",
+    "kamar": "354",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "314",
     "tipe": "Deluxe",
     "urutan": 4
@@ -2064,14 +2062,12 @@
   "name": "Bunga Arum Dani",
   "aliases": [
    "Bunga Arum Dani",
-   "Bunga Arum Dhani",
    "Bunga Arum"
   ],
   "peran": "Kebersihan",
   "transport": {
    "sesi1": "ELF 2",
-   "sesi2": "Bus 3",
-   "sesi3": "Bus 3"
+   "sesi2": "Bus 3"
   },
   "menginap": [
    {
@@ -2091,13 +2087,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "351",
-    "tipe": "Superior · Double",
+    "kamar": "121",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "517",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -2160,7 +2156,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "616",
     "tipe": "Superior",
     "urutan": 4
@@ -2224,7 +2220,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "506",
     "tipe": "Superior",
     "urutan": 4
@@ -2282,13 +2278,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "364",
-    "tipe": "Superior · Twin",
+    "kamar": "160",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "610",
     "tipe": "Superior",
     "urutan": 4
@@ -2347,13 +2343,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "125",
-    "tipe": "Deluxe · Double",
+    "kamar": "353",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "310",
     "tipe": "Superior",
     "urutan": 4
@@ -2412,13 +2408,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "353",
-    "tipe": "Superior · Double",
+    "kamar": "125",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "517",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -2482,7 +2478,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "606",
     "tipe": "Superior",
     "urutan": 4
@@ -2514,7 +2510,7 @@
   "name": "Dwi Ardiansyah Nur Rokhim",
   "aliases": [
    "Dwi Ardiansyah Nur Rokhim",
-   "DWI ARDIANSYAH NR.",
+   "DWI ARDIANSYAH",
    "Dwi Ardiansyah"
   ],
   "peran": "Konsumsi",
@@ -2547,7 +2543,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "204",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -2612,7 +2608,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "608",
     "tipe": "Exc. Suite · Extra bed",
     "urutan": 4
@@ -2677,7 +2673,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "715",
     "tipe": "Superior",
     "urutan": 4
@@ -2709,7 +2705,7 @@
   "name": "Fajriyatul Farichah",
   "aliases": [
    "Fajriyatul Farichah",
-   "Fariyatul Faricha",
+   "Fajriyatul Faricha",
    "Fariyatul Farichah"
   ],
   "peran": "Kebersihan",
@@ -2736,13 +2732,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "352",
-    "tipe": "Superior · Double",
+    "kamar": "123",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "602",
     "tipe": "Superior",
     "urutan": 4
@@ -2817,7 +2813,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "608",
     "tipe": "Exc. Suite · Extra bed",
     "urutan": 4
@@ -2892,7 +2888,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "1106",
     "tipe": "Exc. Suite · Extra bed",
     "urutan": 4
@@ -2924,14 +2920,13 @@
   "name": "Fathul Bahri Gilang AN",
   "aliases": [
    "Fathul Bahri Gilang AN",
-   "Fathul Bahri Gilang A.N",
-   "Fathul Bahri Gilang"
+   "Fathul Bahri Gilang A.N"
   ],
   "peran": "Kenyamanan Pendamping",
   "transport": {
    "sesi1": "ELF 1",
    "sesi2": "Bus 1",
-   "sesi3": "Bus 1"
+   "sesi3": "Bus 2"
   },
   "menginap": [
    {
@@ -2951,13 +2946,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "121",
-    "tipe": "Deluxe · Double",
+    "kamar": "351",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "317",
     "tipe": "Superior",
     "urutan": 4
@@ -3021,7 +3016,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "505",
     "tipe": "Superior",
     "urutan": 4
@@ -3086,7 +3081,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "415",
     "tipe": "Superior",
     "urutan": 4
@@ -3145,13 +3140,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "123",
-    "tipe": "Deluxe · Double",
+    "kamar": "352",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "312",
     "tipe": "Superior",
     "urutan": 4
@@ -3216,7 +3211,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "609",
     "tipe": "Superior",
     "urutan": 4
@@ -3277,7 +3272,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "608",
     "tipe": "Exc. Suite · Extra bed",
     "urutan": 4
@@ -3336,13 +3331,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "160",
-    "tipe": "Superior · Double",
+    "kamar": "365",
+    "tipe": "Superior · Twin",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "307",
     "tipe": "Superior",
     "urutan": 4
@@ -3401,13 +3396,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "145",
-    "tipe": "Deluxe · Double",
+    "kamar": "361",
+    "tipe": "Superior · Twin",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "308",
     "tipe": "Superior",
     "urutan": 4
@@ -3472,7 +3467,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "1008",
     "tipe": "Superior",
     "urutan": 4
@@ -3535,7 +3530,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "202",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -3592,13 +3587,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "354",
-    "tipe": "Superior · Double",
+    "kamar": "130",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "502",
     "tipe": "Superior",
     "urutan": 4
@@ -3662,7 +3657,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "505",
     "tipe": "Superior",
     "urutan": 4
@@ -3726,7 +3721,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "807",
     "tipe": "Exc. Suite · Extra bed",
     "urutan": 4
@@ -3791,7 +3786,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "304",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -3855,7 +3850,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "416",
     "tipe": "Superior",
     "urutan": 4
@@ -3912,13 +3907,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "365",
-    "tipe": "Superior · Twin",
+    "kamar": "143",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "503",
     "tipe": "Superior",
     "urutan": 4
@@ -3950,6 +3945,7 @@
   "name": "Ikhlasul Muttaqin",
   "aliases": [
    "Ikhlasul Muttaqin",
+   "Ikhlasul M",
    "M. Ikhlasul M."
   ],
   "peran": "Audio Visual",
@@ -3976,13 +3972,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "121",
-    "tipe": "Deluxe · Double",
+    "kamar": "351",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "318",
     "tipe": "Superior",
     "urutan": 4
@@ -4046,7 +4042,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "914",
     "tipe": "Superior",
     "urutan": 4
@@ -4111,7 +4107,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "410",
     "tipe": "Superior",
     "urutan": 4
@@ -4176,7 +4172,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "817",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -4240,7 +4236,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "302",
     "tipe": "Deluxe",
     "urutan": 4
@@ -4303,7 +4299,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "412",
     "tipe": "Superior · Extra bed",
     "urutan": 4
@@ -4366,7 +4362,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "304",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -4430,7 +4426,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "302",
     "tipe": "Deluxe",
     "urutan": 4
@@ -4495,7 +4491,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "1110",
     "tipe": "Exc. Suite · Extra bed",
     "urutan": 4
@@ -4560,7 +4556,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "605",
     "tipe": "Superior",
     "urutan": 4
@@ -4625,7 +4621,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "305",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -4684,13 +4680,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "352",
-    "tipe": "Superior · Double",
+    "kamar": "123",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "602",
     "tipe": "Superior",
     "urutan": 4
@@ -4747,7 +4743,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "603",
     "tipe": "Superior",
     "urutan": 4
@@ -4779,7 +4775,7 @@
   "name": "Lili Nur Rahma Wati",
   "aliases": [
    "Lili Nur Rahma Wati",
-   "LILI NUR R.",
+   "LILI NUR R",
    "Lili Nur Rahmawati"
   ],
   "peran": "Bendahara",
@@ -4812,7 +4808,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "415",
     "tipe": "Superior",
     "urutan": 4
@@ -4877,7 +4873,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "605",
     "tipe": "Superior",
     "urutan": 4
@@ -4940,7 +4936,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "309",
     "tipe": "Superior",
     "urutan": 4
@@ -4978,7 +4974,7 @@
   "transport": {
    "sesi1": "ELF 6",
    "sesi2": "Bus 4",
-   "sesi3": "Bus 2"
+   "sesi3": "Bus 3"
   },
   "menginap": [
    {
@@ -5004,7 +5000,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "807",
     "tipe": "Exc. Suite · Extra bed",
     "urutan": 4
@@ -5069,7 +5065,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "305",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -5101,7 +5097,7 @@
   "name": "Ma'rifatul Azal",
   "aliases": [
    "Ma'rifatul Azal",
-   "MA’RIFATUL AZAL"
+   "MA'RIFATUL AZAL"
   ],
   "peran": "Ketua",
   "transport": {
@@ -5127,13 +5123,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "142",
-    "tipe": "Deluxe · Triple",
+    "kamar": "359",
+    "tipe": "Superior · Triple",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "316",
     "tipe": "Superior",
     "urutan": 4
@@ -5198,7 +5194,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "414",
     "tipe": "Superior · Extra bed",
     "urutan": 4
@@ -5230,7 +5226,7 @@
   "name": "Melly Kayyisa Aidiana",
   "aliases": [
    "Melly Kayyisa Aidiana",
-   "Melly Kayisa A",
+   "Melly Kayyisa",
    "Melly Kayisa"
   ],
   "peran": "Penata Acara",
@@ -5263,7 +5259,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "414",
     "tipe": "Superior · Extra bed",
     "urutan": 4
@@ -5328,7 +5324,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "1112",
     "tipe": "Superior",
     "urutan": 4
@@ -5392,7 +5388,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "204",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -5424,6 +5420,7 @@
   "name": "Mochammad Rizky",
   "aliases": [
    "Mochammad Rizky",
+   "Moch. Risky",
    "Moch. Rizky"
   ],
   "peran": "Dokumentasi Audio Visual",
@@ -5456,7 +5453,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "702",
     "tipe": "Superior",
     "urutan": 4
@@ -5515,13 +5512,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "142",
-    "tipe": "Deluxe · Triple",
+    "kamar": "359",
+    "tipe": "Superior · Triple",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "317",
     "tipe": "Superior",
     "urutan": 4
@@ -5586,7 +5583,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "617",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -5645,13 +5642,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "361",
-    "tipe": "Superior · Twin",
+    "kamar": "145",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "616",
     "tipe": "Superior",
     "urutan": 4
@@ -5716,7 +5713,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "205",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -5781,7 +5778,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "703",
     "tipe": "Superior",
     "urutan": 4
@@ -5844,7 +5841,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "706",
     "tipe": "Superior",
     "urutan": 4
@@ -5909,7 +5906,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "1102",
     "tipe": "Superior",
     "urutan": 4
@@ -5968,13 +5965,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "361",
-    "tipe": "Superior · Twin",
+    "kamar": "146",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "1102",
     "tipe": "Superior",
     "urutan": 4
@@ -6039,7 +6036,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "617",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -6104,7 +6101,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "204",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -6169,7 +6166,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "1108",
     "tipe": "Superior",
     "urutan": 4
@@ -6234,7 +6231,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "309",
     "tipe": "Superior",
     "urutan": 4
@@ -6266,14 +6263,14 @@
   "name": "Muhammad Ikhlasul Abror Putra Djati",
   "aliases": [
    "Muhammad Ikhlasul Abror Putra Djati",
-   "IKHLASUL ABBOR P.A",
+   "M. Ikhlasul abror PD",
    "M. Ikhlasul Abror"
   ],
   "peran": "Transportasi",
   "transport": {
    "sesi1": "ELF 6",
    "sesi2": "Bus 2",
-   "sesi3": "Bus 3"
+   "sesi3": "Bus 2"
   },
   "menginap": [
    {
@@ -6299,7 +6296,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "817",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -6364,7 +6361,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "914",
     "tipe": "Superior",
     "urutan": 4
@@ -6429,7 +6426,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "205",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -6487,13 +6484,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "355",
-    "tipe": "Superior · Double",
+    "kamar": "134",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "1107",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -6552,13 +6549,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "145",
-    "tipe": "Deluxe · Double",
+    "kamar": "361",
+    "tipe": "Superior · Twin",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "308",
     "tipe": "Superior",
     "urutan": 4
@@ -6622,7 +6619,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "1107",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -6687,7 +6684,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "807",
     "tipe": "Exc. Suite · Extra bed",
     "urutan": 4
@@ -6752,7 +6749,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "303",
     "tipe": "Deluxe",
     "urutan": 4
@@ -6811,13 +6808,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "143",
-    "tipe": "Deluxe · Double",
+    "kamar": "364",
+    "tipe": "Superior · Twin",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "312",
     "tipe": "Superior",
     "urutan": 4
@@ -6881,7 +6878,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "1110",
     "tipe": "Exc. Suite · Extra bed",
     "urutan": 4
@@ -6939,13 +6936,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "146",
-    "tipe": "Deluxe · Double",
+    "kamar": "364",
+    "tipe": "Superior · Twin",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "311",
     "tipe": "Superior",
     "urutan": 4
@@ -7009,7 +7006,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "414",
     "tipe": "Superior · Extra bed",
     "urutan": 4
@@ -7073,7 +7070,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "702",
     "tipe": "Superior",
     "urutan": 4
@@ -7138,7 +7135,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "614",
     "tipe": "Superior",
     "urutan": 4
@@ -7202,7 +7199,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "607",
     "tipe": "Exc. Suite · Extra bed",
     "urutan": 4
@@ -7266,7 +7263,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "1104",
     "tipe": "Exc. Suite · Extra bed",
     "urutan": 4
@@ -7298,7 +7295,7 @@
   "name": "Nella Rodhiyah",
   "aliases": [
    "Nella Rodhiyah",
-   "Nella Rodliyah",
+   "Nella Rodliyyah",
    "Nela Rodliyah"
   ],
   "peran": "Konsumsi",
@@ -7331,7 +7328,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "609",
     "tipe": "Superior",
     "urutan": 4
@@ -7396,7 +7393,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "201",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -7460,7 +7457,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "411",
     "tipe": "Superior",
     "urutan": 4
@@ -7525,7 +7522,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "304",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -7590,7 +7587,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "201",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -7654,7 +7651,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "604",
     "tipe": "Superior",
     "urutan": 4
@@ -7717,7 +7714,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "1110",
     "tipe": "Exc. Suite · Extra bed",
     "urutan": 4
@@ -7782,7 +7779,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "1112",
     "tipe": "Superior",
     "urutan": 4
@@ -7847,7 +7844,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "601",
     "tipe": "Superior · Extra bed",
     "urutan": 4
@@ -7905,13 +7902,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "353",
-    "tipe": "Superior · Double",
+    "kamar": "125",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "411",
     "tipe": "Superior",
     "urutan": 4
@@ -7975,7 +7972,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "402",
     "tipe": "Superior",
     "urutan": 4
@@ -8039,7 +8036,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "409",
     "tipe": "Superior",
     "urutan": 4
@@ -8103,7 +8100,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "515",
     "tipe": "Superior",
     "urutan": 4
@@ -8135,7 +8132,7 @@
   "name": "Raka Biyan Pratama",
   "aliases": [
    "Raka Biyan Pratama",
-   "Raka Biyan P."
+   "Raka Biyan P"
   ],
   "peran": "Transportasi",
   "transport": {
@@ -8167,7 +8164,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "817",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -8241,7 +8238,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "615",
     "tipe": "Superior",
     "urutan": 4
@@ -8304,7 +8301,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "507",
     "tipe": "Exc. Suite · Extra bed",
     "urutan": 4
@@ -8367,7 +8364,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "507",
     "tipe": "Exc. Suite · Extra bed",
     "urutan": 4
@@ -8424,13 +8421,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "357",
-    "tipe": "Superior · Twin",
+    "kamar": "136",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "303",
     "tipe": "Deluxe",
     "urutan": 4
@@ -8495,7 +8492,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "604",
     "tipe": "Superior",
     "urutan": 4
@@ -8560,7 +8557,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "504",
     "tipe": "Superior",
     "urutan": 4
@@ -8625,7 +8622,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "612",
     "tipe": "Superior",
     "urutan": 4
@@ -8684,13 +8681,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "123",
-    "tipe": "Deluxe · Double",
+    "kamar": "352",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "311",
     "tipe": "Superior",
     "urutan": 4
@@ -8754,7 +8751,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "1106",
     "tipe": "Exc. Suite · Extra bed",
     "urutan": 4
@@ -8819,7 +8816,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "515",
     "tipe": "Superior",
     "urutan": 4
@@ -8883,7 +8880,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "612",
     "tipe": "Superior",
     "urutan": 4
@@ -8948,7 +8945,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "614",
     "tipe": "Superior",
     "urutan": 4
@@ -9007,13 +9004,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "357",
-    "tipe": "Superior · Twin",
+    "kamar": "136",
+    "tipe": "Deluxe · Twin",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "706",
     "tipe": "Superior",
     "urutan": 4
@@ -9078,7 +9075,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "409",
     "tipe": "Superior",
     "urutan": 4
@@ -9143,7 +9140,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "607",
     "tipe": "Exc. Suite · Extra bed",
     "urutan": 4
@@ -9201,13 +9198,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "359",
-    "tipe": "Superior · Twin",
+    "kamar": "142",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "408",
     "tipe": "Exc. Suite · Extra bed",
     "urutan": 4
@@ -9264,13 +9261,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "365",
-    "tipe": "Superior · Twin",
+    "kamar": "143",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "503",
     "tipe": "Superior",
     "urutan": 4
@@ -9345,7 +9342,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "504",
     "tipe": "Superior",
     "urutan": 4
@@ -9409,7 +9406,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "410",
     "tipe": "Superior",
     "urutan": 4
@@ -9467,13 +9464,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "359",
-    "tipe": "Superior · Twin",
+    "kamar": "142",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "507",
     "tipe": "Exc. Suite · Extra bed",
     "urutan": 4
@@ -9505,7 +9502,7 @@
   "name": "Sulalatin Nuriyyah",
   "aliases": [
    "Sulalatin Nuriyyah",
-   "Sulaatin N",
+   "Sulalatin N",
    "Sulaatin Nuryah"
   ],
   "peran": "Peserta",
@@ -9538,7 +9535,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "615",
     "tipe": "Superior",
     "urutan": 4
@@ -9596,13 +9593,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "142",
-    "tipe": "Deluxe · Triple",
+    "kamar": "359",
+    "tipe": "Superior · Triple",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "316",
     "tipe": "Superior",
     "urutan": 4
@@ -9666,7 +9663,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "912",
     "tipe": "Superior",
     "urutan": 4
@@ -9731,7 +9728,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "416",
     "tipe": "Superior",
     "urutan": 4
@@ -9796,7 +9793,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "606",
     "tipe": "Superior",
     "urutan": 4
@@ -9854,13 +9851,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "351",
-    "tipe": "Superior · Double",
+    "kamar": "121",
+    "tipe": "Deluxe · Double",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "517",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -9892,14 +9889,14 @@
   "name": "Thousan Ahmad Alin Hisan Syamsuddin",
   "aliases": [
    "Thousan Ahmad Alin Hisan Syamsuddin",
-   "THOUSAN AHMAD A.H.S",
+   "Thousan Ahmad",
    "Thousan Ahmad Alin"
   ],
   "peran": "Sekretaris",
   "transport": {
    "sesi1": "ELF 6",
    "sesi2": "Bus 1",
-   "sesi3": "Bus 2"
+   "sesi3": "Bus 1"
   },
   "menginap": [
    {
@@ -9925,7 +9922,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "1106",
     "tipe": "Exc. Suite · Extra bed",
     "urutan": 4
@@ -9990,7 +9987,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "509",
     "tipe": "Superior",
     "urutan": 4
@@ -10047,13 +10044,13 @@
    {
     "kota": "Pemalang",
     "hotel": "Hotel R-Gina Pemalang",
-    "kamar": "125",
-    "tipe": "Deluxe · Double",
+    "kamar": "353",
+    "tipe": "Superior · Double",
     "urutan": 3
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "318",
     "tipe": "Superior",
     "urutan": 4
@@ -10118,7 +10115,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "501",
     "tipe": "Superior",
     "urutan": 4
@@ -10182,7 +10179,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "501",
     "tipe": "Superior",
     "urutan": 4
@@ -10246,7 +10243,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "412",
     "tipe": "Superior · Extra bed",
     "urutan": 4
@@ -10310,7 +10307,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "412",
     "tipe": "Superior · Extra bed",
     "urutan": 4
@@ -10375,7 +10372,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "408",
     "tipe": "Exc. Suite · Extra bed",
     "urutan": 4
@@ -10408,7 +10405,7 @@
   "aliases": [
    "Yonsania Nur Fadila",
    "Yonsania Nurfadilla",
-   "Yonsania Nur F."
+   "Yonsania Nur F"
   ],
   "peran": "Dokumen Tulis",
   "transport": {
@@ -10440,7 +10437,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "603",
     "tipe": "Superior",
     "urutan": 4
@@ -10505,7 +10502,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "1108",
     "tipe": "Superior",
     "urutan": 4
@@ -10569,7 +10566,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "202",
     "tipe": "Deluxe · Extra bed",
     "urutan": 4
@@ -10632,7 +10629,7 @@
    },
    {
     "kota": "Solo",
-    "hotel": "Hotel Sahid Solo",
+    "hotel": "Hotel Sahid Jaya Solo",
     "kamar": "601",
     "tipe": "Superior · Extra bed",
     "urutan": 4

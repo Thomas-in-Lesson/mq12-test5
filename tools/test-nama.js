@@ -85,9 +85,10 @@ function cari(q) {
 }
 
 for (const varian of [
-  // 'Thousand A.H.S' dicoret: ejaan itu cuma ada di denah Bus Sesi 2 yang
-  // 26 Agu 2026 diganti nama lengkap, jadi tidak lagi jadi alias siapa pun.
-  ['Thousan Ahmad Alin Hisan Syamsuddin', 'Thousan Ahmad Alin', 'THOUSAN AHMAD A.H.S'],
+  // 'Thousand A.H.S' dicoret 26 Agu 2026 dan 'THOUSAN AHMAD A.H.S' 1 Sep 2026:
+  // dua-duanya ejaan denah bus yang sudah diganti nama lengkap di berkas sumber,
+  // jadi tidak lagi jadi alias siapa pun.
+  ['Thousan Ahmad Alin Hisan Syamsuddin', 'Thousan Ahmad Alin', 'Thousan Ahmad'],
   ['Yonsania Nur Fadhilah', 'Yonsania Nur Fadilah', 'Yonsania Nur Fadillah'],
   ["Lu'lu' Khoirunnisa'", "Lulu' Khoirunnisa", 'lulu khoirunisa'],
   ['M Ikhlasul Muttaqin', 'M.Ikhlasul Muttaqin', 'Muh. Ikhlasul Muttaqin'],
